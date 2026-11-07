@@ -1,0 +1,117 @@
+{
+  "cache_key": "66deb14bb8682886eebc5a4e6a7965b446745b61eadbabe8585ed0020a37e10c",
+  "source_case_id": "NTCW01",
+  "source_policy": "direct",
+  "output": {
+    "text": "Welcome to your new Pebble Press! To get started, place one blank card in the tray. Then, choose a pattern from the selection on the screen. The sample print you see uses the pattern you’ve chosen, so you’ll know exactly how it will look. Once you’re ready, tap ‘Start’ to begin your first impression. The Pebble Press is designed to make creating beautiful, decorative cards easy and fun. Enjoy crafting your unique designs with every press!"
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Welcome to your new Pebble Press! To get started, place one blank card in the tray. Then, choose a pattern from the selection on the screen. The sample print you see uses the pattern you’ve chosen, so you’ll know exactly how it will look. Once you’re ready, tap ‘Start’ to begin your first impression. The Pebble Press is designed to make creating beautiful, decorative cards easy and fun. Enjoy crafting your unique designs with every press!\"\n}",
+      "parsed": {
+        "text": "Welcome to your new Pebble Press! To get started, place one blank card in the tray. Then, choose a pattern from the selection on the screen. The sample print you see uses the pattern you’ve chosen, so you’ll know exactly how it will look. Once you’re ready, tap ‘Start’ to begin your first impression. The Pebble Press is designed to make creating beautiful, decorative cards easy and fun. Enjoy crafting your unique designs with every press!"
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Pebble Press",
+            "place one blank card",
+            "choose a pattern"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Include each of these exact strings: \"Pebble Press\", \"place one blank card\", \"choose a pattern\"."
+          }
+        ]
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "The full text must be between 50 and 80 words."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 76
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Pebble Press",
+            "place one blank card",
+            "choose a pattern"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 76
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Pebble Press",
+            "place one blank card",
+            "choose a pattern"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

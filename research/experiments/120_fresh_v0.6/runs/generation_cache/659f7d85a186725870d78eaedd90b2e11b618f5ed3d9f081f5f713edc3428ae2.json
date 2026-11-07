@@ -1,0 +1,76 @@
+{
+  "cache_key": "659f7d85a186725870d78eaedd90b2e11b618f5ed3d9f081f5f713edc3428ae2",
+  "source_case_id": "NDCW04",
+  "source_policy": "direct",
+  "output": {
+    "text": "Copper Lantern is proposed as the cultivar name to reflect its striking bronze petals and distinctive evening bloom. The name evokes both the rich metallic hue of the petals and the plant’s graceful emergence after dusk, when surrounding flowers have closed. Copper Lantern captures the ethereal quality of this nocturnal display, offering a unique sensory experience in the garden. This name honors the plant’s visual and temporal characteristics while aligning with the nursery’s tradition of evocative, nature-inspired designations. The combination of \"Copper Lantern\", \"bronze petals\", and \"evening bloom\" ensures the cultivar’s identity is memorable, accurate, and thematically cohesive."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Copper Lantern is proposed as the cultivar name to reflect its striking bronze petals and distinctive evening bloom. The name evokes both the rich metallic hue of the petals and the plant’s graceful emergence after dusk, when surrounding flowers have closed. Copper Lantern captures the ethereal quality of this nocturnal display, offering a unique sensory experience in the garden. This name honors the plant’s visual and temporal characteristics while aligning with the nursery’s tradition of evocative, nature-inspired designations. The combination of \\\"Copper Lantern\\\", \\\"bronze petals\\\", and \\\"evening bloom\\\" ensures the cultivar’s identity is memorable, accurate, and thematically cohesive.\"\n}",
+      "parsed": {
+        "text": "Copper Lantern is proposed as the cultivar name to reflect its striking bronze petals and distinctive evening bloom. The name evokes both the rich metallic hue of the petals and the plant’s graceful emergence after dusk, when surrounding flowers have closed. Copper Lantern captures the ethereal quality of this nocturnal display, offering a unique sensory experience in the garden. This name honors the plant’s visual and temporal characteristics while aligning with the nursery’s tradition of evocative, nature-inspired designations. The combination of \"Copper Lantern\", \"bronze petals\", and \"evening bloom\" ensures the cultivar’s identity is memorable, accurate, and thematically cohesive."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"Copper Lantern\", \"bronze petals\", \"evening bloom\"."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 98
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"Copper Lantern\", \"bronze petals\", \"evening bloom\"."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 98
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"Copper Lantern\", \"bronze petals\", \"evening bloom\"."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

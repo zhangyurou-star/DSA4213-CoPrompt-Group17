@@ -1,0 +1,55 @@
+{
+  "cache_key": "d7dde900c33eb13da914253c820785a8e3b0ee4d8d77f6098b365830d4af2498",
+  "source_case_id": "NVCW08",
+  "source_policy": "value_based",
+  "output": null,
+  "attempts": [
+    {
+      "raw": "{\"text\": \"I’m so sorry about the red scarf,\" Jamie said, holding up the torn fabric. \"I didn’t mean to ruin it. I just needed something warm and grabbed it without asking.\" Alex looked at the damage, then sighed. \"Next time, just ask. It’s not just about the scarf—it’s about respect.\" A pause. Then Jamie nodded. \"You’re right. But let’s not replace it. We can mend it. I’ll use my grandmother’s needle and thread. It’ll be a reminder to ask next time. And maybe even stronger than before. We can mend it—really, we can mend it.\"\"}",
+      "parsed": null,
+      "format_errors": [
+        "Response is not one strict JSON object"
+      ]
+    },
+    {
+      "raw": "{\"text\": \"I’m so sorry about the red scarf,\" Jamie said, holding up the torn fabric. \"I didn’t mean to ruin it. I just needed something warm and grabbed it without asking.\" Alex looked at the damage, then sighed. \"Next time, just ask. It’s not just about the scarf—it’s about respect.\" A pause. Then Jamie nodded. \"You’re right. But let’s not replace it. We can mend it. I’ll use my grandmother’s needle and thread. It’ll be a reminder to ask next time. And maybe even stronger than before. We can mend it—really, we can mend it.\"\"}",
+      "parsed": null,
+      "format_errors": [
+        "Response is not one strict JSON object"
+      ]
+    }
+  ],
+  "repaired": true,
+  "failed": true,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      },
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"the red scarf\", \"ask next time\", \"we can mend it\"."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": null,
+  "visible_measurements_final": null,
+  "summary_derivation": null
+}

@@ -1,0 +1,272 @@
+CoPrompt Fresh-120: Complete Experimental Methods
+Study: 120_fresh_v0.6 / v0.6.0+budget-precision-1
+Documentation date: 20 October 2026 (Asia/Singapore)
+English documentation edition: EN1
+
+This document describes the completed experiment using its saved protocol, executed code, configuration, and records. It is intended to be understandable without the earlier 80-case project. The detailed explanation was written after the experiment; EN1 is its English localization. Neither is a new preregistration or a new experiment. They do not change the cases, model prompts, scoring, threshold selection, or recorded findings.
+
+Unless stated otherwise, paths refer to experiments/120_fresh_v0.6/ in the English handoff. The original, unmodified execution evidence is preserved separately in audit/original_evidence.zip at the package root. This English view changes presentation and file locations after execution; it must not be described as the original frozen source. Exact historical prompt material, including the Chinese descriptions in the model-visible field catalog, remains in that audit archive. The initial requests, fixed clarification questions, simulated answers, and generated task outputs were in English; the original experiment was not entirely free of Chinese text.
+
+1. Research question, splits, and unit of comparison
+
+The research question is whether choosing clarification questions through "information importance x uncertainty - question-cost threshold" improves the trade-off between final hard-constraint satisfaction and the number of questions in constrained writing and study planning.
+
+The study uses 120 newly authored English cases: 40 design, 20 validation, and 60 test cases. Each split is equally divided between the two domains. Each case has a distinct registered task family. Distinct family identifiers are a data-design constraint; they do not establish complete semantic independence or representativeness of real users. The splits still share field structures and expression templates for dates, durations, word counts, and required wording.
+
+According to the author annotations, each initial request has zero to three unresolved fields and at least one mechanically verifiable critical hard constraint. Scored requirements must be available in the initial request or in an answer that may legitimately be released. An author-written feasible example is provided for offline checking. It establishes that the hard constraints can be jointly satisfied; it is not a gold answer for complete semantic quality. Annotated missing-field counts and author labels must not be used to correct runtime extraction.
+
+The missing-information allocation was fixed as follows:
+
+Category                                  Design (40)  Validation (20)  Test (60)
+Complete request                               8              4             12
+Critical field missing                         8              4             12
+Critical and optional fields missing           8              4             12
+Only optional fields missing                   6              4             10
+Unanswerable field present                     6              2              8
+Immediate execution requested                  4              2              6
+
+Execution order:
+
+1) Run direct and exhaustive on 12 fixed design cases, producing 24 trajectories. All 24 must be saved, and both final outputs must be parseable and scoreable for at least 10 of the 12 cases to pass the engineering pilot gate. A hard-constraint score of zero does not itself fail this gate.
+2) Run prompt_only and value_based on the same 12 cases, producing another 24 trajectories. The temporary design-stage threshold is lambda=0.25.
+3) Run all four policies on the other 28 design cases, producing 112 trajectories, again using lambda=0.25 for value_based.
+4) Run each of the three value-policy thresholds on all 20 validation cases, producing 60 trajectories for threshold selection. This is not the formal four-policy comparison split.
+5) Run all four main policies on all 60 test cases, producing 240 main trajectories. On a preselected subset of 20 test cases, also run one diagnostic variant that fixes importance at 1, producing 20 additional trajectories.
+
+There are 480 logical trajectories in total. The 12 pilot cases are part of the 40 design cases, and the 20 diagnostic cases are part of the 60 test cases. Neither adds independent cases. The method was fixed before outputs from the new cases were produced. The design split checked the workflow; the primary findings use only the 60 test cases.
+
+Evidence: data/allocation_plan.json, data/case_plan.json, the original frozen protocol; planned_jobs, pilot_gate, and load_dataset in coprompt/formal.py.
+
+2. Model, public inputs, and fixed fields
+
+All policies use the same hosted instruction model, qwen/qwen3-30b-a3b-instruct-2507, through OpenRouter. The provider route is fixed to nebius/fp8, with fallback routes disabled. Request settings are temperature=0, top_p=1, and seed=20261013. Maximum output lengths for extraction, decision, and generation are 512, 1024, and 1024 tokens, respectively. A fixed seed does not guarantee byte-identical hosted responses.
+
+The experiment does not train or fine-tune a model. Its trajectories do not use web retrieval, external application actions, or user memory across cases. Caching preserves and reuses the first response for exactly identical inputs.
+
+Each case's public input contains its domain, English initial request, reference_date, and user_control. The reference date is 2027-02-01. This is contextual information; it does not automatically become a study deadline.
+
+Constrained-writing fields, in catalog order:
+
+  audience: intended readers.
+  Fixed question: Who is the intended audience?
+
+  tone: desired tone.
+  Fixed question: What tone would you like?
+
+  length: word-count range for the entire text.
+  Fixed question: What word-count range should the full text follow?
+
+  required_content: facts or wording that must be included.
+  Fixed question: What information or exact wording must the text include?
+
+Study-planning fields, in catalog order:
+
+  deadline: last available study date, inclusive.
+  Fixed question: What is the last date available for study, inclusive?
+
+  available_time: daily limit in minutes.
+  Fixed question: How many minutes can you study per day at most?
+
+  topics: required topics and coverage/minimum-total-minute requirements.
+  Fixed question: Which topics must be covered, and are there minimum minutes for each?
+
+  priorities: topic priorities or additional minimum durations.
+  Fixed question: Do you have topic priorities or additional minimum-time requirements?
+
+All clarification policies choose from the same field IDs and use the same fixed questions. They do not generate questions freely. The simulated user is not another language model. The definitions above are an English explanation; they do not replace the exact field-catalog descriptions used in the original prompts.
+
+Evidence: config/openrouter.v0.6.formal.json, the original data/public/field_catalog.json; public_context, extraction_messages, decision_messages, and generation_messages in coprompt/prompts.py.
+
+3. Identifying information already provided
+
+The system performs one shared extraction for each initial request. It divides the original text into source units S1, S2, etc., using sentence-ending punctuation or line breaks, retaining each unit's exact text and offsets. The model returns a list of source-unit IDs for each of the four fields. A field that is not explicitly supplied must have an empty list. The model may not invent or paraphrase field values.
+
+The program checks the response structure, requires all four fields, verifies that every unit ID exists, rejects duplicate IDs, and checks their order against the source text. It resolves the IDs back to the original wording. It also applies limited English semantic rules, including:
+
+  - Audience evidence needs an explicit relation to intended readers.
+  - Deadline evidence needs an end-date or last-date cue; a start date is not a deadline.
+  - Available-time evidence needs both a daily qualifier and a duration or unlimited-time expression; a topic's minimum minutes are not a daily allowance.
+  - A promise to provide topics later does not establish actual topic names.
+
+A field that fails these checks remains unresolved, and the rejection reason is recorded. The program does not consult hidden annotations to correct it, and it does not request another extraction merely to obtain evidence that passes the semantic checks. Passing these limited rules does not establish complete semantic correctness.
+
+An extraction response with an invalid JSON structure receives at most one format-repair call. If it still fails, all four fields remain unresolved, while the original request stays available to subsequent decision and generation stages. Extraction is shared across policies within this study; it is not repeated independently for every policy.
+
+Evidence: source_units, evidence_errors, resolve_evidence, and _semantic_rejection in coprompt/grounding.py; formatted_call and extract in coprompt/runner.py; EXTRACT in coprompt/prompts.py.
+
+4. Eligible questions, simulated answers, and counting
+
+A field is eligible only if its current state is empty, it has not previously been asked, and it has not been marked unanswerable. Initial states come from public-evidence extraction and are updated after answers.
+
+A valid ASK reads only that case's prewritten answer for the requested field from data/private/*_answers.jsonl. An answer has status available, unknown, or declined. An available answer enters the visible state. An unknown or declined answer makes that field ineligible for later questions, while other candidates remain eligible. Answer release does not call a model and does not expose other answers, critical/optional labels, scoring rules, or feasible examples.
+
+Each ASK requests one field item, with a maximum of three items. An invalid field ID or repeated request still consumes one item and returns a fixed error message without releasing hidden answers. Question count measures requested information items, not API calls or question marks in the final output.
+
+Clarification stops for the direct policy; public user_control=execute_now; three requested items already used; no remaining candidate; an explicit policy ACT; or a decision response that remains invalid after one format repair. The deterministic limits, immediate-execution instruction, and absence of candidates lead directly to generation without another decision call.
+
+Evidence: run_trajectory and decision_errors in coprompt/runner.py; execute in coprompt/formal.py, whose answer_callback returns only the requested field.
+
+5. Four policies and the value formula
+
+direct
+  After shared extraction, immediately ACT with zero questions and no clarification-decision model call. Extraction is still recorded, but the final generator does not receive the structured extracted field state.
+
+exhaustive
+  At each step, ask the first eligible field in catalog order, including optional preferences. There is no clarification-decision model call. Generate when a shared stopping condition applies. "Exhaustive" is therefore still subject to the three-item cap and potentially incorrect extraction; it does not mean unlimited questioning.
+
+prompt_only
+  Given the initial request, released answers, current field states, candidate fields, and remaining question allowance, the model directly returns ASK+field_id or ACT. The prompt asks it to clarify only when the benefit merits another question and permits reasonable defaults for optional preferences. It does not explicitly calculate I, U, or lambda.
+
+value_based
+  At each step, one model response supplies an importance rating I, uncertainty rating U, and brief rationale for every candidate:
+
+    I=0: little impact.
+    I=0.5: mainly affects a local preference.
+    I=1: may change core content or feasibility.
+    U=0.5: a reasonable default exists.
+    U=1: different plausible answers may materially change the result.
+
+  These are predefined heuristic categories, not calibrated probabilities or values trained from real user utility.
+
+  The program calculates V(f)=I(f)*U(f)-lambda and chooses the candidate with the largest net value. It asks only if that value is strictly greater than zero; otherwise it ACTs. Ties use catalog order. After each valid or invalid ASK, it rechecks state and the question allowance and makes another decision if needed.
+
+  Possible I*U values are 0, 0.25, 0.5, and 1. The strict comparison means a value equal to lambda does not trigger a question. Lambda is applied by the program after receiving ratings; it is not included in the model prompt that elicits I/U.
+
+Decision-format errors receive at most one repair. A still-invalid response records controller_failure and ACTs. A syntactically valid but invalid/repeated prompt_only ASK counts toward both the allowance and interaction burden; it cannot be dropped to make question counts look lower. An ASK is not equivalent to one paid model call, and the simulated answer costs no model call.
+
+Evidence: PROMPT_ONLY, VALUE_BASED, and decision_messages in coprompt/prompts.py; rating_errors and run_trajectory in coprompt/runner.py.
+
+6. Threshold selection and the importance diagnostic
+
+Only the 20 validation cases are used to compare lambda in {0, 0.25, 0.5}. Every candidate must cover all 20 cases. First retain candidates averaging at most two requested field items. Among those, select in this order:
+
+  1) Highest mean hard-constraint score.
+  2) If tied, fewest mean questions.
+  3) If still tied, largest lambda.
+
+If no candidate meets the two-question target, select by fewest questions, then highest quality, then largest lambda, and report that the target was not met.
+
+Quality comparisons use exact fractions for each case's passed-constraint proportion so floating-point error cannot break a true tie. Complete validation selected lambda=0.25. The evidence is outputs/CoPrompt_validation_v0.6.0/lambda_selection.json. The original protocol's selected_lambda=null records the state before validation; it must not be rewritten to imply that selection had already occurred before the experiment.
+
+The two-question mean is a selection gate. It does not guarantee fewer questions than exhaustive, and it does not establish a general user preference. Test outputs must not be used to reselect lambda.
+
+The importance diagnostic uses 20 preselected test cases, ten per domain. Each domain contributes two complete requests, two with critical information missing, two with critical and optional information missing, two with optional information missing only, one unanswerable case, and one immediate-execution case. It requests the same I/U response format but overwrites all valid I values with 1 in the controller, retaining U, selected lambda, and the three-question allowance. It does not remove the rating call or substitute a different prompt.
+
+This is a paired comparison within the same test subset. With a small lambda, the diagnostic may structurally resemble exhaustive. Matching outputs and cache reuse are not additional independent model repetitions.
+
+Evidence: select_lambda, planned_jobs, and verified_selected_lambda in coprompt/formal.py; importance_override in coprompt/runner.py; data/case_plan.json; outputs/CoPrompt_validation_v0.6.0/lambda_selection.json.
+
+7. Shared generation, visible-constraint checks, and repair limits
+
+The four policies and diagnostic use exactly the same generation prompt and output format. The generator receives only the initial public request, domain/reference-date/control information, interactions already visible, a visible-constraint checklist, and the output schema. It does not receive the case ID, policy name, lambda, I/U ratings, extraction guesses, hidden answers, scoring annotations, or author-written feasible examples.
+
+Writing output must be exactly {"text":"..."}. Any title, greeting, body, or signature belongs inside text. Study-planning output must contain schedule and summary. The schedule is nonempty; each item contains only a real ISO date, a nonempty topic, and a positive integer minutes value. The summary is nonempty text. Additional JSON fields or invalid types are format errors.
+
+Fixed English patterns identify some explicit requirements in the initial request and released available answers and form a traceable visible_constraints checklist:
+
+  Writing: whole-text word-count ranges/exact counts and explicitly required quoted wording.
+  Planning: known start/end dates, daily-minute caps, topic coverage and minimum total minutes, and additional minimum durations for known topics.
+
+These rules do not consult private annotations and do not understand arbitrary English. Uncertain, conflicting, or unsupported expressions produce warnings. A requirement absent from the extracted checklist has not been removed from the original request. This checklist and the final offline scoring annotations are different objects.
+
+The generation-call limit is:
+
+  First call: initial generation.
+  Optional second call: one format repair, only if the initial JSON/structure is invalid.
+  One further optional call: one complete constraint revision if a valid draft violates a mechanically identifiable visible constraint.
+
+Thus a generation process uses at most three model calls. If the first output is valid but violates a constraint, it normally uses two. A constraint-revision response with invalid formatting gets no additional format repair. If both the initial output and its format repair fail, there is no valid draft to check and no constraint revision.
+
+The constraint-revision prompt includes the original visible materials, draft, violations, and complete measurements of the same public constraints, including satisfied ones. Writing measurements count all words. Planning measurements sum all scheduled minutes per date and per normalized topic name, jointly checking date limits, daily caps, and each topic's minimum total. A topic-specific minimum and a general minimum must both be satisfied; they are not mechanically added together.
+
+A format-valid revision is adopted even if some visible requirements remain violated or its eventual private score is lower. A format-invalid revision is discarded in favor of the prior valid draft. Private scores are never used to choose the draft versus revision, and the process does not retry until it reaches a perfect score.
+
+Finally, for every format-valid study plan, a deterministic routine recalculates the summary from the final schedule: total minutes, totals by date and topic, and whether identified visible constraints still fail. It replaces summary only. It does not change the schedule, add minutes, or raise the score. The model's original summary remains in the records. This prevents arithmetic disagreement between summary and schedule, but it does not establish pedagogical quality or satisfaction of every user requirement.
+
+Evidence: formatted_call, generate, and _parse_generation in coprompt/runner.py; GENERATE, generation_messages, and constraint_repair_messages in coprompt/prompts.py; build_constraints, check_constraints, visible_measurements, and derive_schedule_summary in coprompt/visible_constraints.py.
+
+8. What automatic scoring measures
+
+The private annotations are read for scoring only after the full generation process ends. Each registered critical hard constraint receives 0 or 1. Scores are averaged equally within each case, then equally across cases. Constraints from all cases are not pooled into one denominator.
+
+Writing checks:
+
+  word_count: the entire text's word count is within an inclusive interval. Text undergoes Unicode NFKC normalization, then words are counted as letter/digit sequences, with internal straight/curly apostrophes and hyphens allowed to join a word. Titles and signatures also count.
+
+  contains_all: all required wording occurs in the complete text. The check uses NFKC normalization, case folding, and collapsed whitespace before testing containment. It is therefore not a character-exact, case-sensitive match, and it does not verify sentence meaning, factual relationships, or narrative consistency.
+
+Study-planning checks:
+
+  date_window: every scheduled date falls within the inclusive start/end interval.
+  daily_minutes_cap: all minutes scheduled on the same date sum to no more than the cap.
+  topic_coverage: every listed topic reaches the shared minimum cumulative duration, with at least one minute required when no higher minimum is specified.
+  topic_minutes_min: a named topic reaches the separate minimum duration in that annotation.
+
+Topic comparisons likewise use complete names normalized by NFKC, case folding, and whitespace collapsing. Fuzzy semantic matching does not credit a different topic name as coverage.
+
+One contains_all or topic_coverage annotation may include several phrases/topics, but it earns one point only when all pass. Each phrase/topic does not receive a separate score. A final format failure scores zero and is separately flagged. An error in the scorer or annotations is recorded as unscored_pending_fix with quality=null and blocks completion; program errors cannot be counted as model zeroes.
+
+Automatic scores do not measure audience fit, appropriate tone, invented facts, study-method effectiveness, or overall usability. A question about an optional field may have content value even when that field does not affect the hard-constraint score.
+
+Evidence: validate_output, count_words, normalize_text, _check, and score_output in coprompt/scoring.py; data/private/*_annotations.jsonl.
+
+9. Paired analysis, caching, and reproducibility limits
+
+The main comparisons calculate quality and question-count differences within each test case: value_based minus direct, exhaustive, and prompt_only. Differences are formed within cases and then summarized over 60 cases. The 60 x 4 main trajectories are not 240 independent cases.
+
+The 95% intervals use a paired case bootstrap stratified by task domain: sample with replacement within each domain while retaining its sample size, repeat 10,000 times with seed 20261013, and take the 2.5th and 97.5th percentiles. Each case has one registered family; the current analysis rejects duplicate families rather than silently treating them as independent. The intervals describe case variation within this synthetic case distribution. They do not cover new model sampling, provider differences, or other models. There is no multiple-comparison adjustment. Diagnostic and main comparisons are not mutually independent evidence.
+
+The fresh study's caches started empty and retain three levels of reuse:
+
+  - Shared field-extraction results.
+  - The first successfully returned raw text for exactly identical public messages, call stage, repair type, and model settings.
+  - The first complete bounded generation process for exactly identical generation inputs, including unresolved failures.
+
+"Successfully returned raw text" may still be malformed and is retained rather than resampled for a more attractive answer. Network/service transport errors are not model-response cache entries. If a draft has already returned before a later repair interruption, resuming does not sample a replacement draft.
+
+Cache keys use exact request content and settings. They do not substitute semantically similar requests or select the highest-quality response. Policies that expose the same information may reuse the same generated output. Reports must therefore distinguish logical trajectories from actual API calls; cache hits are not independent samples.
+
+The data, executed code, model settings, and plans have frozen file fingerprints. Trajectories, stage manifests, and threshold selection also retain source fingerprints. Analysis rescoring checks completeness and provenance. The explanatory document and English presentation were added after execution and do not retrospectively become preregistered decisions. Original frozen files are verified from the separate audit archive.
+
+Evidence: paired_interval, checked_stage, and checked_selection in tools/analyze_fresh.py; DecisionReuseClient, verify_freeze, and verify_isolated_caches in coprompt/formal.py; extract and generate in coprompt/runner.py.
+
+10. Data isolation, authoring provenance, and budget
+
+The 120 cases' situations, facts, requests, and answers were newly authored. No other experiment's cases, model outputs, response caches, or selected threshold entered this experiment's execution or primary comparisons. Paid requests still used one cumulative budget ledger. Including historical expenses in accounting does not mean historical model outputs entered current generation or scoring.
+
+The two domain authors worked in separate blank-session contexts. They could receive the field catalog, schemas, fixed allocation, old family names/planning topics for exclusion, and scoring/validation code. They were not permitted to receive old initial requests, private answers, model outputs, performance statistics, or builders embedding old cases. The coordinator made documented offline data corrections before freezing and had seen historical experiment results.
+
+The accurate claim is therefore that the new data and results were isolated, and the method was fixed before new outputs. Method development incorporated prior experience; the coordinator was not unaware of historical results. Blank sessions are operational context separation, not proof of zero contamination or genuinely double-blind authoring.
+
+The current historical authorization is a cumulative US$2 cap including earlier expenses. Its authoritative record is runs/authorized_pilot_budget.json at the package root. The protocol/configuration's US$0.25 is a preparation-stage authorization snapshot, not the current cap. The configuration's max_cost_usd=0.1 is a per-session cap, in addition to per-request checks against the cumulative ledger. Failed/interrupted requests with unknown costs retain conservative reservations. The ledger must not be reset to erase historical spending.
+
+Evidence: authoring_provenance, information_boundary, and cache_policy in the original protocol; work/data_corrections_before_freeze.json; FreshBudgetLedger and ReservedApiClient in coprompt/formal.py; the saved budget authorization records. Exact original records remain in audit/original_evidence.zip.
+
+11. Human review and outstanding work
+
+The preselected 20 test cases contribute five outputs each: the four main policies plus the diagnostic, for 100 outputs. Two real reviewers should each independently assess all 100, producing 200 assessments in total. Two separately randomized packets hide policy identities and automatic scores. The coordinator retains a private identity mapping.
+
+Each output is to receive four scores from 1 to 5: usability, coherence, audience fit, and feasibility. Reviewers also count unsupported assumptions and unnecessary questions and provide notes. Actual scores and reviewer declarations are still pending. Hidden system identities and randomized materials do not prove that reviewers were previously unfamiliar with results or that independent blind review has occurred.
+
+Before review, the coordinator must confirm identities, involvement in case authoring/cross-checking, prior access to original outputs, and independent completion. The two reviewers were not fixed before case authoring; this deviation must be reported.
+
+After both independent reviews and before disagreement resolution, the proposal calls for linearly weighted Cohen's kappa for each of the four five-level scales. If undefined, report NA and exact agreement. For count items, report exact agreement and mean absolute difference. Preserve all original ratings. These steps have not yet been completed; automatic analysis does not certify completed human review or agreement calculation.
+
+Evidence: outputs/fresh120_analysis/review_forms/, reviewer_1_packet.json, reviewer_2_packet.json, and the private mapping; reviewer_documents and preserve_review_packets in tools/analyze_fresh.py; Section 5 of the original proposal.
+
+12. Relationship to the proposal and explicit deviations
+
+The experiment implements the proposal's 120-case scale: 40 design, 20 validation, and 60 test cases, including 12 design pilots and 20 test diagnostics. The four policies, shared extraction/generation, fixed fields and simulated answers, maximum of three questions, discrete I/U, three candidate thresholds, one format-error repair, case-level scoring, and paired analysis were all in the original plan.
+
+Implementation details or deviations that require separate disclosure:
+
+1) Extraction uses returned source-unit IDs followed by deterministic source checks and limited semantic checks. The proposal specified shared extraction and no correction from hidden annotations in broader terms.
+2) In addition to one format repair, the system adds one generation revision for visible-constraint violations and calculates plan summaries deterministically from final details. Both apply to every policy; repair calls count toward cost. Neither selects outputs by private scores.
+3) The proposal freezes prompts and scoring after the 40 design cases. Here the method was fixed before new outputs, and the design set checked the workflow. It must not be described as method development based on these fresh design outputs followed by a new independent validation of that development.
+4) The proposal assigns 24 cases to each of five members with cross-checking. Actual construction used authors in separated contexts, coordinator checks, and offline validation. Checking is not the proposed human cross-review.
+5) The proposal fixes two real reviewers before authoring. They were not fixed at that point, and human review remains incomplete. Anonymous forms do not replace that process.
+6) The proposal prefers fewer questions when quality ties. This implementation adds a deterministic final tie-break: larger lambda if both quality and question count still tie.
+7) The proposal budgets US$15, including US$3 for recovery and demonstration. Execution instead followed the user's cumulative US$2 hard cap, including historical expenses.
+8) The proposal includes a small Streamlit demonstration. This delivery contains experiment execution, analysis, and human-review materials. Fillable review pages and saved trajectories do not constitute that Streamlit demonstration.
+
+The original proposal is references/Group17_CoPrompt_Proposal_Final_edited.pdf at the package root. Understanding the present method does not require the full data or results of another experiment. Historical provenance is disclosed to describe the research boundary accurately, rather than using an earlier version's name as a substitute for method details.

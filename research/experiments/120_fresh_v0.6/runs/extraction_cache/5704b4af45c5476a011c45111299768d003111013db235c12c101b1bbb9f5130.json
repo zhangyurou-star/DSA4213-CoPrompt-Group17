@@ -1,0 +1,118 @@
+{
+  "cache_key": "5704b4af45c5476a011c45111299768d003111013db235c12c101b1bbb9f5130",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S5"
+    ],
+    "tone": [],
+    "length": [
+      "S6"
+    ],
+    "required_content": [
+      "S4"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 51,
+      "text": "Write a synopsis of an original play for a program."
+    },
+    {
+      "id": "S2",
+      "start": 52,
+      "end": 216,
+      "text": "Build the piece around these synthetic facts: The fictional play The Unsent Window follows a retired locksmith finding letters addressed to nobody in a wall cavity."
+    },
+    {
+      "id": "S3",
+      "start": 217,
+      "end": 310,
+      "text": "Describe the central conflict over whether to read them, without disclosing the final choice."
+    },
+    {
+      "id": "S4",
+      "start": 311,
+      "end": 416,
+      "text": "The text must contain \"The Unsent Window\", \"a retired locksmith\", \"letters addressed to nobody\" verbatim."
+    },
+    {
+      "id": "S5",
+      "start": 417,
+      "end": 473,
+      "text": "Address this to theatergoers choosing the invented play."
+    },
+    {
+      "id": "S6",
+      "start": 474,
+      "end": 531,
+      "text": "Use at least 60 words and no more than 90 words in total."
+    },
+    {
+      "id": "S7",
+      "start": 532,
+      "end": 595,
+      "text": "Please produce the text now without asking follow-up questions."
+    }
+  ],
+  "field_values": {
+    "audience": "Address this to theatergoers choosing the invented play.",
+    "tone": null,
+    "length": "Use at least 60 words and no more than 90 words in total.",
+    "required_content": "The text must contain \"The Unsent Window\", \"a retired locksmith\", \"letters addressed to nobody\" verbatim."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 417,
+        "end": 473,
+        "quote": "Address this to theatergoers choosing the invented play."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 474,
+        "end": 531,
+        "quote": "Use at least 60 words and no more than 90 words in total."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 311,
+        "end": 416,
+        "quote": "The text must contain \"The Unsent Window\", \"a retired locksmith\", \"letters addressed to nobody\" verbatim."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S5\"],\"tone\":[],\"length\":[\"S6\"],\"required_content\":[\"S4\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S5"
+          ],
+          "tone": [],
+          "length": [
+            "S6"
+          ],
+          "required_content": [
+            "S4"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

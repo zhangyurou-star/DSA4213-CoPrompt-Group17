@@ -1,0 +1,127 @@
+{
+  "cache_key": "1aa1c8c0691eca04850c6dbfd44395450237a6eb8be47c23d9126ddae6132d32",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S5"
+    ],
+    "available_time": [
+      "S4"
+    ],
+    "topics": [
+      "S6",
+      "S7"
+    ],
+    "priorities": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 65,
+      "text": "An art-history seminar will compare illuminated manuscript pages."
+    },
+    {
+      "id": "S2",
+      "start": 66,
+      "end": 117,
+      "text": "Please arrange my study of the workshop techniques."
+    },
+    {
+      "id": "S3",
+      "start": 118,
+      "end": 138,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 139,
+      "end": 208,
+      "text": "Keep each daily total at or below 60 minutes across all study blocks."
+    },
+    {
+      "id": "S5",
+      "start": 209,
+      "end": 284,
+      "text": "I can still study on 2027-02-05, but no study should be scheduled after it."
+    },
+    {
+      "id": "S6",
+      "start": 285,
+      "end": 393,
+      "text": "I need 15 minutes or more in total on each of \"Gold Leaf Grounds\", \"Pigment Layering\", \"Decorated Initials\"."
+    },
+    {
+      "id": "S7",
+      "start": 394,
+      "end": 430,
+      "text": "Those are the required topic labels."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": "Keep each daily total at or below 60 minutes across all study blocks.",
+    "topics": "I need 15 minutes or more in total on each of \"Gold Leaf Grounds\", \"Pigment Layering\", \"Decorated Initials\".\nThose are the required topic labels.",
+    "priorities": null
+  },
+  "evidence": {
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 139,
+        "end": 208,
+        "quote": "Keep each daily total at or below 60 minutes across all study blocks."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 285,
+        "end": 393,
+        "quote": "I need 15 minutes or more in total on each of \"Gold Leaf Grounds\", \"Pigment Layering\", \"Decorated Initials\"."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 394,
+        "end": 430,
+        "quote": "Those are the required topic labels."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "deadline",
+      "proposed_evidence": [
+        "S5"
+      ],
+      "proposed_value": "I can still study on 2027-02-05, but no study should be scheduled after it.",
+      "reason": "quote_has_no_explicit_endpoint_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S5\"],\"available_time\":[\"S4\"],\"topics\":[\"S6\",\"S7\"],\"priorities\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S5"
+          ],
+          "available_time": [
+            "S4"
+          ],
+          "topics": [
+            "S6",
+            "S7"
+          ],
+          "priorities": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

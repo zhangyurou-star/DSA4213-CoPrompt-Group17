@@ -1,0 +1,23 @@
+File retention and redundancy review - 28 October 2026
+
+No supplied source file was deleted. The purpose is a clear submission with working reproduction, not the smallest possible ZIP.
+
+Optional for the reader; retained for protected history
+1. work/handoff_fresh120/: 13 older packaging, translation and documentation/build copies. Multiple files are exact duplicates of active study documents. They have no current top-level reader role; the original source manifest still covers them.
+2. README.txt: older start guide. START_HERE.txt and README.md now clearly name the current entry, so the old guide is historical rather than a competing instruction.
+3. submission/verification/: 34 previous validation files, including 15 empty stdout/stderr captures. Empty streams add no narrative content but record what that prior command emitted. Preserve their timestamps and context; they do not need to be read to use the package.
+4. Earlier root modules, v0.4 configuration and root execution records, plus experiments/120_v0.5/: historical source/provenance. They are not a second active study and are not evidence of additional v0.6 samples.
+
+Do not remove as disposable or meaningless
+- work/fresh120_review_form/check_logic.cjs is explicitly referenced by the optional reviewer-form check in handoff/verify_handoff.py. The original inventory covers the remaining form-support files.
+- experiments/120_fresh_v0.6/work/ contains original case construction and audit provenance, not ordinary application cache.
+- Model-response/extraction/generation caches, session logs, trajectory JSONL, failures, cost reservations, data, configuration, original manifests and original nested ZIPs are reproducibility evidence.
+- An empty __init__.py is a Python package marker. It is not an empty log.
+- HTML, JSON and CSV projections of saved records serve different reading/analysis routes. Their overlap is deliberate and does not create new independent observations.
+- Human-review and case-analysis input copies intentionally preserve each existing script's original relative paths and source hashes. Their duplicated data does not add independent evidence.
+
+Candidate for a future optional archival split
+Older handoff copies and old process logs could be moved out of a separately redesigned minimal reader package. Such a split would require a new compatible verifier/index and an explicit mapping to the preserved original evidence. This revision does not silently alter the existing verifier or its frozen-source preservation contract to achieve deletion.
+
+There is no unconditional deletion list applied here. No operating-system metadata, virtual environment, Python bytecode or node_modules was found in the supplied ZIP.
+Only the two earlier Chinese narrative summaries were not imported as new material; their unchanged raw evidence, numeric results and original scripts are present, with English reader guides.

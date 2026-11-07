@@ -1,0 +1,496 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^N(?:D(?:CW|SP)(?:0[1-9]|1[0-9]|20)|V(?:CW|SP)(?:0[1-9]|10)|T(?:CW|SP)(?:0[1-9]|[12][0-9]|30))$"
+    },
+    "domain": {
+      "enum": [
+        "constrained_writing",
+        "study_planning"
+      ]
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "title_zh": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "split": {
+          "enum": [
+            "design",
+            "validation",
+            "test"
+          ]
+        },
+        "is_pilot": {
+          "type": "boolean"
+        },
+        "synthetic": {
+          "const": true
+        },
+        "family_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "omission_type": {
+          "enum": [
+            "complete",
+            "critical_and_optional",
+            "critical_omission",
+            "execute_now",
+            "optional_only",
+            "unavailable_answer"
+          ]
+        },
+        "initial_unresolved_fields": {
+          "type": "array",
+          "maxItems": 3,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "review_status": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "title_zh",
+        "split",
+        "is_pilot",
+        "synthetic",
+        "family_id",
+        "omission_type",
+        "initial_unresolved_fields",
+        "review_status"
+      ],
+      "additionalProperties": false
+    },
+    "field_annotations": {
+      "type": "object",
+      "minProperties": 4,
+      "maxProperties": 4,
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "initial_status": {
+            "enum": [
+              "resolved",
+              "unresolved"
+            ]
+          },
+          "critical": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "initial_status",
+          "critical"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "constraint_id": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "check_type": {
+                "const": "word_count"
+              },
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "min_words": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "max_words": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "min_words",
+                  "max_words"
+                ],
+                "additionalProperties": false
+              },
+              "source_field": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "source_stage": {
+                "enum": [
+                  "initial_request",
+                  "field_answer"
+                ]
+              }
+            },
+            "required": [
+              "constraint_id",
+              "check_type",
+              "parameters",
+              "source_field",
+              "source_stage"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "constraint_id": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "check_type": {
+                "const": "contains_all"
+              },
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "literals": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    }
+                  }
+                },
+                "required": [
+                  "literals"
+                ],
+                "additionalProperties": false
+              },
+              "source_field": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "source_stage": {
+                "enum": [
+                  "initial_request",
+                  "field_answer"
+                ]
+              }
+            },
+            "required": [
+              "constraint_id",
+              "check_type",
+              "parameters",
+              "source_field",
+              "source_stage"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "constraint_id": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "check_type": {
+                "const": "date_window"
+              },
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "start_date": {
+                    "type": "string",
+                    "format": "date",
+                    "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                  },
+                  "end_date": {
+                    "type": "string",
+                    "format": "date",
+                    "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                  }
+                },
+                "required": [
+                  "start_date",
+                  "end_date"
+                ],
+                "additionalProperties": false
+              },
+              "source_field": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "source_stage": {
+                "enum": [
+                  "initial_request",
+                  "field_answer"
+                ]
+              }
+            },
+            "required": [
+              "constraint_id",
+              "check_type",
+              "parameters",
+              "source_field",
+              "source_stage"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "constraint_id": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "check_type": {
+                "const": "daily_minutes_cap"
+              },
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "max_minutes": {
+                    "type": "integer",
+                    "minimum": 1
+                  }
+                },
+                "required": [
+                  "max_minutes"
+                ],
+                "additionalProperties": false
+              },
+              "source_field": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "source_stage": {
+                "enum": [
+                  "initial_request",
+                  "field_answer"
+                ]
+              }
+            },
+            "required": [
+              "constraint_id",
+              "check_type",
+              "parameters",
+              "source_field",
+              "source_stage"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "constraint_id": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "check_type": {
+                "const": "topic_coverage"
+              },
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "topics": {
+                    "type": "array",
+                    "minItems": 1,
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    }
+                  },
+                  "min_minutes_each": {
+                    "type": "integer",
+                    "minimum": 1
+                  }
+                },
+                "required": [
+                  "topics"
+                ],
+                "additionalProperties": false
+              },
+              "source_field": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "source_stage": {
+                "enum": [
+                  "initial_request",
+                  "field_answer"
+                ]
+              }
+            },
+            "required": [
+              "constraint_id",
+              "check_type",
+              "parameters",
+              "source_field",
+              "source_stage"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "constraint_id": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "check_type": {
+                "const": "topic_minutes_min"
+              },
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "topic": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "min_minutes": {
+                    "type": "integer",
+                    "minimum": 1
+                  }
+                },
+                "required": [
+                  "topic",
+                  "min_minutes"
+                ],
+                "additionalProperties": false
+              },
+              "source_field": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "source_stage": {
+                "enum": [
+                  "initial_request",
+                  "field_answer"
+                ]
+              }
+            },
+            "required": [
+              "constraint_id",
+              "check_type",
+              "parameters",
+              "source_field",
+              "source_stage"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      }
+    },
+    "feasible_example": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "required": [
+            "text"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "schedule": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "properties": {
+                  "date": {
+                    "type": "string",
+                    "format": "date",
+                    "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                  },
+                  "topic": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "minutes": {
+                    "type": "integer",
+                    "minimum": 1
+                  }
+                },
+                "required": [
+                  "date",
+                  "topic",
+                  "minutes"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "summary": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "required": [
+            "schedule",
+            "summary"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "case_notes": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    }
+  },
+  "required": [
+    "schema_version",
+    "case_id",
+    "domain",
+    "metadata",
+    "field_annotations",
+    "constraints",
+    "feasible_example",
+    "case_notes"
+  ],
+  "additionalProperties": false
+}

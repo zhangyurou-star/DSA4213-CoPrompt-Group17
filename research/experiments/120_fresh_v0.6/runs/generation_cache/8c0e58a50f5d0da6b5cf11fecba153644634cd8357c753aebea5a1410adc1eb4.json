@@ -1,0 +1,317 @@
+{
+  "cache_key": "8c0e58a50f5d0da6b5cf11fecba153644634cd8357c753aebea5a1410adc1eb4",
+  "source_case_id": "NDSP08",
+  "source_policy": "value_based",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Footway Width",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-01",
+        "topic": "Crossing Visibility",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Kerb Ramps",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Pedestrian Desire Lines",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Crossing Visibility",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Kerb Ramps",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Pedestrian Desire Lines",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Footway Width",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Crossing Visibility",
+        "minutes": 5
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Kerb Ramps",
+        "minutes": 5
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Pedestrian Desire Lines",
+        "minutes": 5
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Footway Width",
+        "minutes": 5
+      }
+    ],
+    "summary": "Calculated from the schedule: 160 minutes in total. Daily totals: 2027-02-01: 50 minutes; 2027-02-02: 50 minutes; 2027-02-03: 20 minutes; 2027-02-04: 20 minutes; 2027-02-05: 20 minutes. Topic totals: Crossing Visibility: 40 minutes; Footway Width: 40 minutes; Kerb Ramps: 40 minutes; Pedestrian Desire Lines: 40 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Footway Width\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Crossing Visibility\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Kerb Ramps\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Pedestrian Desire Lines\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Crossing Visibility\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Kerb Ramps\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Pedestrian Desire Lines\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Footway Width\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Crossing Visibility\",\n      \"minutes\": 5\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Kerb Ramps\",\n      \"minutes\": 5\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Pedestrian Desire Lines\",\n      \"minutes\": 5\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Footway Width\",\n      \"minutes\": 5\n    }\n  ],\n  \"summary\": \"All four topics—Crossing Visibility, Kerb Ramps, Pedestrian Desire Lines, and Footway Width—have been allocated a minimum of 25 minutes total across the study window from 2027-02-01 to 2027-02-05. The topic 'Footway Width' was prioritized early as requested. No single day exceeds 60 minutes of study time. All sessions are distributed within the available dates, with the final day used to complete remaining minutes.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Footway Width",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-01",
+            "topic": "Crossing Visibility",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Kerb Ramps",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Pedestrian Desire Lines",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Crossing Visibility",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Kerb Ramps",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Pedestrian Desire Lines",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Footway Width",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Crossing Visibility",
+            "minutes": 5
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Kerb Ramps",
+            "minutes": 5
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Pedestrian Desire Lines",
+            "minutes": 5
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Footway Width",
+            "minutes": 5
+          }
+        ],
+        "summary": "All four topics—Crossing Visibility, Kerb Ramps, Pedestrian Desire Lines, and Footway Width—have been allocated a minimum of 25 minutes total across the study window from 2027-02-01 to 2027-02-05. The topic 'Footway Width' was prioritized early as requested. No single day exceeds 60 minutes of study time. All sessions are distributed within the available dates, with the final day used to complete remaining minutes."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-05; that date is still available."
+        }
+      },
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 1,
+          "field_id": "deadline",
+          "quote": "My study window closes on 2027-02-05; that date is still available."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 160,
+      "daily_minutes": {
+        "2027-02-01": 50,
+        "2027-02-02": 50,
+        "2027-02-03": 20,
+        "2027-02-04": 20,
+        "2027-02-05": 20
+      },
+      "topic_minutes": [
+        {
+          "topic": "Crossing Visibility",
+          "normalized_topic": "crossing visibility",
+          "minutes": 40
+        },
+        {
+          "topic": "Footway Width",
+          "normalized_topic": "footway width",
+          "minutes": 40
+        },
+        {
+          "topic": "Kerb Ramps",
+          "normalized_topic": "kerb ramps",
+          "minutes": 40
+        },
+        {
+          "topic": "Pedestrian Desire Lines",
+          "normalized_topic": "pedestrian desire lines",
+          "minutes": 40
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-05; that date is still available."
+        }
+      },
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 1,
+          "field_id": "deadline",
+          "quote": "My study window closes on 2027-02-05; that date is still available."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 160,
+      "daily_minutes": {
+        "2027-02-01": 50,
+        "2027-02-02": 50,
+        "2027-02-03": 20,
+        "2027-02-04": 20,
+        "2027-02-05": 20
+      },
+      "topic_minutes": [
+        {
+          "topic": "Crossing Visibility",
+          "normalized_topic": "crossing visibility",
+          "minutes": 40
+        },
+        {
+          "topic": "Footway Width",
+          "normalized_topic": "footway width",
+          "minutes": 40
+        },
+        {
+          "topic": "Kerb Ramps",
+          "normalized_topic": "kerb ramps",
+          "minutes": 40
+        },
+        {
+          "topic": "Pedestrian Desire Lines",
+          "normalized_topic": "pedestrian desire lines",
+          "minutes": 40
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-05; that date is still available."
+        }
+      },
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 1,
+          "field_id": "deadline",
+          "quote": "My study window closes on 2027-02-05; that date is still available."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "All four topics—Crossing Visibility, Kerb Ramps, Pedestrian Desire Lines, and Footway Width—have been allocated a minimum of 25 minutes total across the study window from 2027-02-01 to 2027-02-05. The topic 'Footway Width' was prioritized early as requested. No single day exceeds 60 minutes of study time. All sessions are distributed within the available dates, with the final day used to complete remaining minutes.",
+    "derived_summary": "Calculated from the schedule: 160 minutes in total. Daily totals: 2027-02-01: 50 minutes; 2027-02-02: 50 minutes; 2027-02-03: 20 minutes; 2027-02-04: 20 minutes; 2027-02-05: 20 minutes. Topic totals: Crossing Visibility: 40 minutes; Footway Width: 40 minutes; Kerb Ramps: 40 minutes; Pedestrian Desire Lines: 40 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

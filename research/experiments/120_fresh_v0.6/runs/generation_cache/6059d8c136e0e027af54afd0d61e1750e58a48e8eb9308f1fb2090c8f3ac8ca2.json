@@ -1,0 +1,291 @@
+{
+  "cache_key": "6059d8c136e0e027af54afd0d61e1750e58a48e8eb9308f1fb2090c8f3ac8ca2",
+  "source_case_id": "NDSP12",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Introduction to Records Appraisal Principles",
+        "minutes": 60
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Legal and Regulatory Frameworks for Archival Retention",
+        "minutes": 60
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Disposal Documentation",
+        "minutes": 45
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Risk Assessment in Records Management",
+        "minutes": 60
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Functional Analysis of Records",
+        "minutes": 60
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Records Scheduling and Retention Timetables",
+        "minutes": 60
+      },
+      {
+        "date": "2027-02-07",
+        "topic": "Case Studies in Appraisal Decisions",
+        "minutes": 60
+      },
+      {
+        "date": "2027-02-08",
+        "topic": "Digital Records and Appraisal Challenges",
+        "minutes": 60
+      },
+      {
+        "date": "2027-02-09",
+        "topic": "Review and Integration of Appraisal Techniques",
+        "minutes": 45
+      }
+    ],
+    "summary": "Calculated from the schedule: 510 minutes in total. Daily totals: 2027-02-01: 60 minutes; 2027-02-02: 60 minutes; 2027-02-03: 45 minutes; 2027-02-04: 60 minutes; 2027-02-05: 60 minutes; 2027-02-06: 60 minutes; 2027-02-07: 60 minutes; 2027-02-08: 60 minutes; 2027-02-09: 45 minutes. Topic totals: Case Studies in Appraisal Decisions: 60 minutes; Digital Records and Appraisal Challenges: 60 minutes; Disposal Documentation: 45 minutes; Functional Analysis of Records: 60 minutes; Introduction to Records Appraisal Principles: 60 minutes; Legal and Regulatory Frameworks for Archival Retention: 60 minutes; Records Scheduling and Retention Timetables: 60 minutes; Review and Integration of Appraisal Techniques: 45 minutes; Risk Assessment in Records Management: 60 minutes. Recognized visible constraint checks passed; this does not verify every user requirement."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Introduction to Records Appraisal Principles\",\n      \"minutes\": 60\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Legal and Regulatory Frameworks for Archival Retention\",\n      \"minutes\": 60\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Disposal Documentation\",\n      \"minutes\": 45\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Risk Assessment in Records Management\",\n      \"minutes\": 60\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Functional Analysis of Records\",\n      \"minutes\": 60\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Records Scheduling and Retention Timetables\",\n      \"minutes\": 60\n    },\n    {\n      \"date\": \"2027-02-07\",\n      \"topic\": \"Case Studies in Appraisal Decisions\",\n      \"minutes\": 60\n    },\n    {\n      \"date\": \"2027-02-08\",\n      \"topic\": \"Digital Records and Appraisal Challenges\",\n      \"minutes\": 60\n    },\n    {\n      \"date\": \"2027-02-09\",\n      \"topic\": \"Review and Integration of Appraisal Techniques\",\n      \"minutes\": 45\n    }\n  ],\n  \"summary\": \"A 9-day revision timetable for records appraisal was developed starting on 2027-02-01, with a focus on foundational principles, legal frameworks, and practical application. 'Disposal Documentation' was prioritized early as suggested, allocated 45 minutes on 2027-02-03. All topics are covered with balanced daily study sessions, totaling 540 minutes across the schedule.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Introduction to Records Appraisal Principles",
+            "minutes": 60
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Legal and Regulatory Frameworks for Archival Retention",
+            "minutes": 60
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Disposal Documentation",
+            "minutes": 45
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Risk Assessment in Records Management",
+            "minutes": 60
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Functional Analysis of Records",
+            "minutes": 60
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Records Scheduling and Retention Timetables",
+            "minutes": 60
+          },
+          {
+            "date": "2027-02-07",
+            "topic": "Case Studies in Appraisal Decisions",
+            "minutes": 60
+          },
+          {
+            "date": "2027-02-08",
+            "topic": "Digital Records and Appraisal Challenges",
+            "minutes": 60
+          },
+          {
+            "date": "2027-02-09",
+            "topic": "Review and Integration of Appraisal Techniques",
+            "minutes": 45
+          }
+        ],
+        "summary": "A 9-day revision timetable for records appraisal was developed starting on 2027-02-01, with a focus on foundational principles, legal frameworks, and practical application. 'Disposal Documentation' was prioritized early as suggested, allocated 45 minutes on 2027-02-03. All topics are covered with balanced daily study sessions, totaling 540 minutes across the schedule."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 510,
+      "daily_minutes": {
+        "2027-02-01": 60,
+        "2027-02-02": 60,
+        "2027-02-03": 45,
+        "2027-02-04": 60,
+        "2027-02-05": 60,
+        "2027-02-06": 60,
+        "2027-02-07": 60,
+        "2027-02-08": 60,
+        "2027-02-09": 45
+      },
+      "topic_minutes": [
+        {
+          "topic": "Case Studies in Appraisal Decisions",
+          "normalized_topic": "case studies in appraisal decisions",
+          "minutes": 60
+        },
+        {
+          "topic": "Digital Records and Appraisal Challenges",
+          "normalized_topic": "digital records and appraisal challenges",
+          "minutes": 60
+        },
+        {
+          "topic": "Disposal Documentation",
+          "normalized_topic": "disposal documentation",
+          "minutes": 45
+        },
+        {
+          "topic": "Functional Analysis of Records",
+          "normalized_topic": "functional analysis of records",
+          "minutes": 60
+        },
+        {
+          "topic": "Introduction to Records Appraisal Principles",
+          "normalized_topic": "introduction to records appraisal principles",
+          "minutes": 60
+        },
+        {
+          "topic": "Legal and Regulatory Frameworks for Archival Retention",
+          "normalized_topic": "legal and regulatory frameworks for archival retention",
+          "minutes": 60
+        },
+        {
+          "topic": "Records Scheduling and Retention Timetables",
+          "normalized_topic": "records scheduling and retention timetables",
+          "minutes": 60
+        },
+        {
+          "topic": "Review and Integration of Appraisal Techniques",
+          "normalized_topic": "review and integration of appraisal techniques",
+          "minutes": 45
+        },
+        {
+          "topic": "Risk Assessment in Records Management",
+          "normalized_topic": "risk assessment in records management",
+          "minutes": 60
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 510,
+      "daily_minutes": {
+        "2027-02-01": 60,
+        "2027-02-02": 60,
+        "2027-02-03": 45,
+        "2027-02-04": 60,
+        "2027-02-05": 60,
+        "2027-02-06": 60,
+        "2027-02-07": 60,
+        "2027-02-08": 60,
+        "2027-02-09": 45
+      },
+      "topic_minutes": [
+        {
+          "topic": "Case Studies in Appraisal Decisions",
+          "normalized_topic": "case studies in appraisal decisions",
+          "minutes": 60
+        },
+        {
+          "topic": "Digital Records and Appraisal Challenges",
+          "normalized_topic": "digital records and appraisal challenges",
+          "minutes": 60
+        },
+        {
+          "topic": "Disposal Documentation",
+          "normalized_topic": "disposal documentation",
+          "minutes": 45
+        },
+        {
+          "topic": "Functional Analysis of Records",
+          "normalized_topic": "functional analysis of records",
+          "minutes": 60
+        },
+        {
+          "topic": "Introduction to Records Appraisal Principles",
+          "normalized_topic": "introduction to records appraisal principles",
+          "minutes": 60
+        },
+        {
+          "topic": "Legal and Regulatory Frameworks for Archival Retention",
+          "normalized_topic": "legal and regulatory frameworks for archival retention",
+          "minutes": 60
+        },
+        {
+          "topic": "Records Scheduling and Retention Timetables",
+          "normalized_topic": "records scheduling and retention timetables",
+          "minutes": 60
+        },
+        {
+          "topic": "Review and Integration of Appraisal Techniques",
+          "normalized_topic": "review and integration of appraisal techniques",
+          "minutes": 45
+        },
+        {
+          "topic": "Risk Assessment in Records Management",
+          "normalized_topic": "risk assessment in records management",
+          "minutes": 60
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "A 9-day revision timetable for records appraisal was developed starting on 2027-02-01, with a focus on foundational principles, legal frameworks, and practical application. 'Disposal Documentation' was prioritized early as suggested, allocated 45 minutes on 2027-02-03. All topics are covered with balanced daily study sessions, totaling 540 minutes across the schedule.",
+    "derived_summary": "Calculated from the schedule: 510 minutes in total. Daily totals: 2027-02-01: 60 minutes; 2027-02-02: 60 minutes; 2027-02-03: 45 minutes; 2027-02-04: 60 minutes; 2027-02-05: 60 minutes; 2027-02-06: 60 minutes; 2027-02-07: 60 minutes; 2027-02-08: 60 minutes; 2027-02-09: 45 minutes. Topic totals: Case Studies in Appraisal Decisions: 60 minutes; Digital Records and Appraisal Challenges: 60 minutes; Disposal Documentation: 45 minutes; Functional Analysis of Records: 60 minutes; Introduction to Records Appraisal Principles: 60 minutes; Legal and Regulatory Frameworks for Archival Retention: 60 minutes; Records Scheduling and Retention Timetables: 60 minutes; Review and Integration of Appraisal Techniques: 45 minutes; Risk Assessment in Records Management: 60 minutes. Recognized visible constraint checks passed; this does not verify every user requirement."
+  }
+}

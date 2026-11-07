@@ -1,0 +1,130 @@
+{
+  "cache_key": "158b313362f8c8c94b86166580428104a629d161f947d76290b8cca616665af4",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [],
+    "tone": [
+      "S2"
+    ],
+    "length": [
+      "S3"
+    ],
+    "required_content": [
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 57,
+      "text": "Explain the reasoning behind an invented riddle solution."
+    },
+    {
+      "id": "S2",
+      "start": 58,
+      "end": 91,
+      "text": "Make the voice clear and logical."
+    },
+    {
+      "id": "S3",
+      "start": 92,
+      "end": 148,
+      "text": "The total word count must fall from 55 to 85, inclusive."
+    },
+    {
+      "id": "S4",
+      "start": 149,
+      "end": 248,
+      "text": "Include the following invented details: The riddle describes silent roads and rivers without water."
+    },
+    {
+      "id": "S5",
+      "start": 249,
+      "end": 377,
+      "text": "Explain why the answer is a map: its marks represent routes and rivers rather than containing physical traffic or flowing water."
+    },
+    {
+      "id": "S6",
+      "start": 378,
+      "end": 470,
+      "text": "Preserve these exact phrases: \"the answer is a map\", \"silent roads\", \"rivers without water\"."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": "Make the voice clear and logical.",
+    "length": "The total word count must fall from 55 to 85, inclusive.",
+    "required_content": "Include the following invented details: The riddle describes silent roads and rivers without water.\nExplain why the answer is a map: its marks represent routes and rivers rather than containing physical traffic or flowing water.\nPreserve these exact phrases: \"the answer is a map\", \"silent roads\", \"rivers without water\"."
+  },
+  "evidence": {
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 58,
+        "end": 91,
+        "quote": "Make the voice clear and logical."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 92,
+        "end": 148,
+        "quote": "The total word count must fall from 55 to 85, inclusive."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 149,
+        "end": 248,
+        "quote": "Include the following invented details: The riddle describes silent roads and rivers without water."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 249,
+        "end": 377,
+        "quote": "Explain why the answer is a map: its marks represent routes and rivers rather than containing physical traffic or flowing water."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 378,
+        "end": 470,
+        "quote": "Preserve these exact phrases: \"the answer is a map\", \"silent roads\", \"rivers without water\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[],\"tone\":[\"S2\"],\"length\":[\"S3\"],\"required_content\":[\"S4\",\"S5\",\"S6\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [],
+          "tone": [
+            "S2"
+          ],
+          "length": [
+            "S3"
+          ],
+          "required_content": [
+            "S4",
+            "S5",
+            "S6"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

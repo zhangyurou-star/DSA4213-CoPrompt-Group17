@@ -1,0 +1,49 @@
+{
+  "cache_key": "5eee96f7f93ffddcd9cfeb3e201acba50c795c08cd8caed1dc724e3d0820d5fc",
+  "source_case_id": "NDCW10",
+  "source_policy": "prompt_only",
+  "output": {
+    "text": "Probe Lark\nMission Date: 2027-02-01\nTelemetry Log Entry: 14:37 UTC\n\nSignal reception confirmed during passive listening pass beneath icy ridge at 12:18 UTC. Seven pulses detected at regular intervals, consistent with artificial modulation. Pulse duration: 0.32 seconds; interval: 1.87 seconds. Source location estimated within 1.2 km of current position, below surface layer. No surface image obtained due to camera shutter remaining closed. Diagnostic check confirms actuator integrity; shutter status remains in locked position. No fault reported in imaging subsystem. Repeated command sequence issued; no response. Proceeding with repeat listening pass at 15:45 UTC. Plan to reattempt imaging after successful signal acquisition. Probe Lark remains on standby. Seven pulses received. No surface image. Repeat listening pass scheduled."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Probe Lark\\nMission Date: 2027-02-01\\nTelemetry Log Entry: 14:37 UTC\\n\\nSignal reception confirmed during passive listening pass beneath icy ridge at 12:18 UTC. Seven pulses detected at regular intervals, consistent with artificial modulation. Pulse duration: 0.32 seconds; interval: 1.87 seconds. Source location estimated within 1.2 km of current position, below surface layer. No surface image obtained due to camera shutter remaining closed. Diagnostic check confirms actuator integrity; shutter status remains in locked position. No fault reported in imaging subsystem. Repeated command sequence issued; no response. Proceeding with repeat listening pass at 15:45 UTC. Plan to reattempt imaging after successful signal acquisition. Probe Lark remains on standby. Seven pulses received. No surface image. Repeat listening pass scheduled.\"\n}",
+      "parsed": {
+        "text": "Probe Lark\nMission Date: 2027-02-01\nTelemetry Log Entry: 14:37 UTC\n\nSignal reception confirmed during passive listening pass beneath icy ridge at 12:18 UTC. Seven pulses detected at regular intervals, consistent with artificial modulation. Pulse duration: 0.32 seconds; interval: 1.87 seconds. Source location estimated within 1.2 km of current position, below surface layer. No surface image obtained due to camera shutter remaining closed. Diagnostic check confirms actuator integrity; shutter status remains in locked position. No fault reported in imaging subsystem. Repeated command sequence issued; no response. Proceeding with repeat listening pass at 15:45 UTC. Plan to reattempt imaging after successful signal acquisition. Probe Lark remains on standby. Seven pulses received. No surface image. Repeat listening pass scheduled."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 122
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 122
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

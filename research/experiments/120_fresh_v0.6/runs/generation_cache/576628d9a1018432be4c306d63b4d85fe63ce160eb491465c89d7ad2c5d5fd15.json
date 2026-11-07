@@ -1,0 +1,91 @@
+{
+  "cache_key": "576628d9a1018432be4c306d63b4d85fe63ce160eb491465c89d7ad2c5d5fd15",
+  "source_case_id": "NDCW02",
+  "source_policy": "direct",
+  "output": {
+    "text": "Welcome! To use your vending token, place it on the sensor pad. Wait for a beep and green light—this means it’s ready. Select your item on the touchscreen, then confirm. The token will deduct the cost, and your item will drop. If unsure, tap the help icon or ask staff. Your token is safe and reusable—keep it clean and dry. Enjoy your purchase!"
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"Welcome! To use your new vending token, simply place it on the machine’s sensor pad. Wait for a gentle beep and a green light—this means it’s ready. Select your item using the touchscreen, then confirm your choice. The token will automatically deduct the cost, and your item will drop into the tray. If you need help, look for the help icon on the screen or ask a staff member. Your token is safe and reusable—just keep it clean and dry. Enjoy your purchase!\"}",
+      "parsed": {
+        "text": "Welcome! To use your new vending token, simply place it on the machine’s sensor pad. Wait for a gentle beep and a green light—this means it’s ready. Select your item using the touchscreen, then confirm your choice. The token will automatically deduct the cost, and your item will drop into the tray. If you need help, look for the help icon on the screen or ask a staff member. Your token is safe and reusable—just keep it clean and dry. Enjoy your purchase!"
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Keep the complete piece to 50–80 words."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 85}"
+  ],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\"text\": \"Welcome! To use your vending token, place it on the sensor pad. Wait for a beep and green light—this means it’s ready. Select your item on the touchscreen, then confirm. The token will deduct the cost, and your item will drop. If unsure, tap the help icon or ask staff. Your token is safe and reusable—keep it clean and dry. Enjoy your purchase!\"}",
+    "parsed": {
+      "text": "Welcome! To use your vending token, place it on the sensor pad. Wait for a beep and green light—this means it’s ready. Select your item on the touchscreen, then confirm. The token will deduct the cost, and your item will drop. If unsure, tap the help icon or ask staff. Your token is safe and reusable—keep it clean and dry. Enjoy your purchase!"
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 85
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 85}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 65
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

@@ -1,0 +1,95 @@
+{
+  "cache_key": "346a6ed906394fe6d3cddb6f70142ee2c450d969612eea1503becf4e61ce9b43",
+  "source_case_id": "NDCW06",
+  "source_policy": "direct",
+  "output": {
+    "text": "First hint: Something that returns after being sent out, often heard again. Second hint: A repetition of sound, especially one that bounces off surfaces and comes back. Answer: echo. This word describes sound that reflects and is heard again. It occurs when sound waves hit a surface and return. The idea of return is key. Echoes are common in large spaces like caves or halls. The word itself mimics the sound it names. First hint: Something that returns after being sent out, often heard again. Second hint: A repetition of sound, especially one that bounces off surfaces and comes back. Answer: echo."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"First hint: Something that returns after being sent out, often heard again. Second hint: A repetition of sound, especially one that bounces off surfaces and comes back. Answer: echo. This word describes the phenomenon where sound waves reflect and are heard again after the original sound has ceased. It's commonly experienced in large halls, caves, or open spaces. The concept of return is central to its meaning, both physically and linguistically. Echoes are natural occurrences in acoustics, and the word itself is a perfect example of a sound that repeats. First hint: Something that returns after being sent out, often heard again. Second hint: A repetition of sound, especially one that bounces off surfaces and comes back. Answer: echo.\"\n}",
+      "parsed": {
+        "text": "First hint: Something that returns after being sent out, often heard again. Second hint: A repetition of sound, especially one that bounces off surfaces and comes back. Answer: echo. This word describes the phenomenon where sound waves reflect and are heard again after the original sound has ceased. It's commonly experienced in large halls, caves, or open spaces. The concept of return is central to its meaning, both physically and linguistically. Echoes are natural occurrences in acoustics, and the word itself is a perfect example of a sound that repeats. First hint: Something that returns after being sent out, often heard again. Second hint: A repetition of sound, especially one that bounces off surfaces and comes back. Answer: echo."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 45,
+          "max_words": 75
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "The full text must be between 45 and 75 words."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 75, \"min_words\": 45, \"observed_words\": 119}"
+  ],
+  "constraint_checks_final": [
+    "word_count: {\"max_words\": 75, \"min_words\": 45, \"observed_words\": 102}"
+  ],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"First hint: Something that returns after being sent out, often heard again. Second hint: A repetition of sound, especially one that bounces off surfaces and comes back. Answer: echo. This word describes sound that reflects and is heard again. It occurs when sound waves hit a surface and return. The idea of return is key. Echoes are common in large spaces like caves or halls. The word itself mimics the sound it names. First hint: Something that returns after being sent out, often heard again. Second hint: A repetition of sound, especially one that bounces off surfaces and comes back. Answer: echo.\"\n}",
+    "parsed": {
+      "text": "First hint: Something that returns after being sent out, often heard again. Second hint: A repetition of sound, especially one that bounces off surfaces and comes back. Answer: echo. This word describes sound that reflects and is heard again. It occurs when sound waves hit a surface and return. The idea of return is key. Echoes are common in large spaces like caves or halls. The word itself mimics the sound it names. First hint: Something that returns after being sent out, often heard again. Second hint: A repetition of sound, especially one that bounces off surfaces and comes back. Answer: echo."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 119
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 45,
+          "max_words": 75
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 75, \"min_words\": 45, \"observed_words\": 119}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 102
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 45,
+          "max_words": 75
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 75, \"min_words\": 45, \"observed_words\": 102}"
+    ],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

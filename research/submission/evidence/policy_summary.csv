@@ -1,0 +1,5 @@
+system_id,cases,mean_quality,mean_questions,total_questions,full_pass_cases,format_failures,questions_on_annotated_known_fields,invalid_question_items,within_trace_repeated_field_questions,constraint_revision_trajectories,public_check_violation_trajectories
+direct,60,0.7072222222222222,0,0,30,0,0,0,0,8,4
+exhaustive,60,0.7877777777777778,1.1833333333333333,71,35,0,19,0,0,12,5
+prompt_only,60,0.7794444444444445,1.0166666666666666,61,35,0,18,0,0,10,4
+value_based,60,0.7988888888888889,1.1833333333333333,71,36,0,19,0,0,11,4

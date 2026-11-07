@@ -1,0 +1,122 @@
+{
+  "cache_key": "e24d350d65da43186a2e9df321c84b9e5364e6a7a556f32863b0133c9e03e61b",
+  "source_case_id": "NDCW20",
+  "source_policy": "direct",
+  "output": {
+    "text": "Bring the marked corner to the center crease, pressing only the lower half of the fold. Keep the flap loose to allow it to open into a pocket in the next step. Do not flatten the upper portion; its flexibility is essential. Ensure the marked corner aligns precisely with the center crease. Maintain the loose flap throughout this stage. Handle the paper gently to preserve the fold. This step prepares the structure for the following phase. The center crease must remain clear and defined. Keep the flap loose to enable smooth progression. Follow each instruction carefully for correct assembly."
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"Begin by aligning the marked corner to the center crease, ensuring a crisp fold. Press only the lower half of the crease to maintain precision. Keep the flap loose so it remains flexible and can easily open into a pocket during the next step. Do not secure or flatten the upper portion; its looseness is essential for the following stage. Handle the paper gently to preserve the integrity of the fold. This careful approach ensures the structure will form correctly. Follow each instruction in sequence to achieve the intended result. The marked corner must meet the center crease exactly. Keep the flap loose throughout this phase.\"}",
+      "parsed": {
+        "text": "Begin by aligning the marked corner to the center crease, ensuring a crisp fold. Press only the lower half of the crease to maintain precision. Keep the flap loose so it remains flexible and can easily open into a pocket during the next step. Do not secure or flatten the upper portion; its looseness is essential for the following stage. Handle the paper gently to preserve the integrity of the fold. This careful approach ensures the structure will form correctly. Follow each instruction in sequence to achieve the intended result. The marked corner must meet the center crease exactly. Keep the flap loose throughout this phase."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Write 50 to 80 words altogether."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"marked corner\", \"center crease\", \"keep the flap loose\"."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 106}"
+  ],
+  "constraint_checks_final": [
+    "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 99}"
+  ],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\"text\": \"Bring the marked corner to the center crease, pressing only the lower half of the fold. Keep the flap loose to allow it to open into a pocket in the next step. Do not flatten the upper portion; its flexibility is essential. Ensure the marked corner aligns precisely with the center crease. Maintain the loose flap throughout this stage. Handle the paper gently to preserve the fold. This step prepares the structure for the following phase. The center crease must remain clear and defined. Keep the flap loose to enable smooth progression. Follow each instruction carefully for correct assembly.\"}",
+    "parsed": {
+      "text": "Bring the marked corner to the center crease, pressing only the lower half of the fold. Keep the flap loose to allow it to open into a pocket in the next step. Do not flatten the upper portion; its flexibility is essential. Ensure the marked corner aligns precisely with the center crease. Maintain the loose flap throughout this stage. Handle the paper gently to preserve the fold. This step prepares the structure for the following phase. The center crease must remain clear and defined. Keep the flap loose to enable smooth progression. Follow each instruction carefully for correct assembly."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 106
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 106}"
+    ],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"marked corner\", \"center crease\", \"keep the flap loose\"."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 99
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 99}"
+    ],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"marked corner\", \"center crease\", \"keep the flap loose\"."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

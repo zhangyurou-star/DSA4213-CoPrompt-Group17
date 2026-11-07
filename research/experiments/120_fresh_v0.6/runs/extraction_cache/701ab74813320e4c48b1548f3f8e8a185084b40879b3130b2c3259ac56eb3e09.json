@@ -1,0 +1,93 @@
+{
+  "cache_key": "701ab74813320e4c48b1548f3f8e8a185084b40879b3130b2c3259ac56eb3e09",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S4"
+    ],
+    "available_time": [
+      "S5"
+    ],
+    "topics": [],
+    "priorities": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 65,
+      "text": "Our maritime-history club is trying a semaphore-reading exercise."
+    },
+    {
+      "id": "S2",
+      "start": 66,
+      "end": 95,
+      "text": "I need a short practice plan."
+    },
+    {
+      "id": "S3",
+      "start": 96,
+      "end": 116,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 117,
+      "end": 200,
+      "text": "Keep the timetable within the window ending 2027-02-03, with the end date included."
+    },
+    {
+      "id": "S5",
+      "start": 201,
+      "end": 274,
+      "text": "My daily study allowance is 30 minutes maximum, not 30 minutes per topic."
+    }
+  ],
+  "field_values": {
+    "deadline": "Keep the timetable within the window ending 2027-02-03, with the end date included.",
+    "available_time": "My daily study allowance is 30 minutes maximum, not 30 minutes per topic.",
+    "topics": null,
+    "priorities": null
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 117,
+        "end": 200,
+        "quote": "Keep the timetable within the window ending 2027-02-03, with the end date included."
+      }
+    ],
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 201,
+        "end": 274,
+        "quote": "My daily study allowance is 30 minutes maximum, not 30 minutes per topic."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S4\"],\"available_time\":[\"S5\"],\"topics\":[],\"priorities\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S4"
+          ],
+          "available_time": [
+            "S5"
+          ],
+          "topics": [],
+          "priorities": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

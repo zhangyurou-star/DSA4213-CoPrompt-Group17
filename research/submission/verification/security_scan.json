@@ -1,0 +1,6 @@
+{
+  "scanned_file_occurrences": 2548,
+  "nested_archives_included": true,
+  "credential_pattern_hits": 0,
+  "scope": "Known credential signatures and excluded runtime filenames; not an exhaustive security audit."
+}

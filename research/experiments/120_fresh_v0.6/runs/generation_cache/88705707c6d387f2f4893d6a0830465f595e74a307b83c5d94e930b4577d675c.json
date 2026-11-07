@@ -1,0 +1,80 @@
+{
+  "cache_key": "88705707c6d387f2f4893d6a0830465f595e74a307b83c5d94e930b4577d675c",
+  "source_case_id": "NVCW02",
+  "source_policy": "value_based",
+  "output": {
+    "text": "A very punctual snail arrived at the annual Spring Blossom Festival on February 1st, 2027—exactly on time. The crowd gasped. It had taken a full year to get here! \"But how?\" they asked. The snail sighed. \"I followed the wrong calendar—my shell’s engraved with lunar cycles from a forgotten island.\" The audience paused. Then the snail added, grinning, \"Still early for next year.\"\n"
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"A very punctual snail arrived at the annual Spring Blossom Festival on February 1st, 2027—exactly on time. The crowd gasped. It had taken a full year to get here! \\\"But how?\\\" they asked. The snail sighed. \\\"I followed the wrong calendar—my shell’s engraved with lunar cycles from a forgotten island.\\\" The audience paused. Then the snail added, grinning, \\\"Still early for next year.\\\"\\n\"}",
+      "parsed": {
+        "text": "A very punctual snail arrived at the annual Spring Blossom Festival on February 1st, 2027—exactly on time. The crowd gasped. It had taken a full year to get here! \"But how?\" they asked. The snail sighed. \"I followed the wrong calendar—my shell’s engraved with lunar cycles from a forgotten island.\" The audience paused. Then the snail added, grinning, \"Still early for next year.\"\n"
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Keep the complete piece to 60–90 words."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 65
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 65
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

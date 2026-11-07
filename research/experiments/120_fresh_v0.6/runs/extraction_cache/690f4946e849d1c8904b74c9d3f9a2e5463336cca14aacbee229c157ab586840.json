@@ -1,0 +1,130 @@
+{
+  "cache_key": "690f4946e849d1c8904b74c9d3f9a2e5463336cca14aacbee229c157ab586840",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [],
+    "tone": [
+      "S2"
+    ],
+    "length": [
+      "S3"
+    ],
+    "required_content": [
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 49,
+      "text": "Discuss a translation choice in an invented poem."
+    },
+    {
+      "id": "S2",
+      "start": 50,
+      "end": 91,
+      "text": "Make the voice thoughtful and accessible."
+    },
+    {
+      "id": "S3",
+      "start": 92,
+      "end": 149,
+      "text": "Use at least 60 words and no more than 90 words in total."
+    },
+    {
+      "id": "S4",
+      "start": 150,
+      "end": 276,
+      "text": "Include the following invented details: The invented translation retains a pocket of rain because it conveys portable sadness."
+    },
+    {
+      "id": "S5",
+      "start": 277,
+      "end": 397,
+      "text": "Explain the choice using kept the image and lost the rhyme, and note that matching both would make the sentence awkward."
+    },
+    {
+      "id": "S6",
+      "start": 398,
+      "end": 483,
+      "text": "Preserve these exact phrases: \"a pocket of rain\", \"kept the image\", \"lost the rhyme\"."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": "Make the voice thoughtful and accessible.",
+    "length": "Use at least 60 words and no more than 90 words in total.",
+    "required_content": "Include the following invented details: The invented translation retains a pocket of rain because it conveys portable sadness.\nExplain the choice using kept the image and lost the rhyme, and note that matching both would make the sentence awkward.\nPreserve these exact phrases: \"a pocket of rain\", \"kept the image\", \"lost the rhyme\"."
+  },
+  "evidence": {
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 50,
+        "end": 91,
+        "quote": "Make the voice thoughtful and accessible."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 92,
+        "end": 149,
+        "quote": "Use at least 60 words and no more than 90 words in total."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 150,
+        "end": 276,
+        "quote": "Include the following invented details: The invented translation retains a pocket of rain because it conveys portable sadness."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 277,
+        "end": 397,
+        "quote": "Explain the choice using kept the image and lost the rhyme, and note that matching both would make the sentence awkward."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 398,
+        "end": 483,
+        "quote": "Preserve these exact phrases: \"a pocket of rain\", \"kept the image\", \"lost the rhyme\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[],\"tone\":[\"S2\"],\"length\":[\"S3\"],\"required_content\":[\"S4\",\"S5\",\"S6\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [],
+          "tone": [
+            "S2"
+          ],
+          "length": [
+            "S3"
+          ],
+          "required_content": [
+            "S4",
+            "S5",
+            "S6"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

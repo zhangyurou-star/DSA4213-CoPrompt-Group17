@@ -1,0 +1,89 @@
+{
+  "cache_key": "3be7200e7daa3d523b0cbbc8fc5f9aba64acf5e6024da552592f241eb03754e9",
+  "source_case_id": "NVCW09",
+  "source_policy": "value_based",
+  "output": {
+    "text": "The riddle describes silent roads and rivers without water, which cannot be physical features since they lack sound and flow. The answer is a map because it uses lines and symbols to represent routes and waterways, not actual traffic or liquid. These marks are static and silent, yet they convey movement and connection. Silent roads on a map are not traveled, and rivers without water are not flowing—yet both are essential to navigation. The answer is a map because it captures the idea of journey and geography through abstract representation, not physical reality. This logical interpretation aligns with the riddle’s imagery and constraints."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"The riddle describes silent roads and rivers without water, which cannot be physical features since they lack sound and flow. The answer is a map because it uses lines and symbols to represent routes and waterways, not actual traffic or liquid. These marks are static and silent, yet they convey movement and connection. Silent roads on a map are not traveled, and rivers without water are not flowing—yet both are essential to navigation. The answer is a map because it captures the idea of journey and geography through abstract representation, not physical reality. This logical interpretation aligns with the riddle’s imagery and constraints.\"\n}",
+      "parsed": {
+        "text": "The riddle describes silent roads and rivers without water, which cannot be physical features since they lack sound and flow. The answer is a map because it uses lines and symbols to represent routes and waterways, not actual traffic or liquid. These marks are static and silent, yet they convey movement and connection. Silent roads on a map are not traveled, and rivers without water are not flowing—yet both are essential to navigation. The answer is a map because it captures the idea of journey and geography through abstract representation, not physical reality. This logical interpretation aligns with the riddle’s imagery and constraints."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the answer is a map",
+            "silent roads",
+            "rivers without water"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Preserve these exact phrases: \"the answer is a map\", \"silent roads\", \"rivers without water\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 104
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the answer is a map",
+            "silent roads",
+            "rivers without water"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 104
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the answer is a map",
+            "silent roads",
+            "rivers without water"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

@@ -1,0 +1,132 @@
+{
+  "cache_key": "258469dd2c5d34bcdf40224b784e1590713bec1ecf0eb7a9cb14bf193319fe9d",
+  "source_case_id": "NVCW07",
+  "source_policy": "value_based",
+  "output": {
+    "text": "The imaginary currency centers on a woven sun, symbolizing shared work and collective effort. A violet border frames the note, representing unity and resilience. On the reverse, nine square windows reveal distinct city districts—each a unique district with its own character and purpose. These windows stand for transparency, opportunity, and interconnected urban life. The woven sun, crafted from gold and silver threads, shifts in appearance with the light, reinforcing collaboration. Together, the a woven sun, nine square windows, and violet border embody community, vision, and shared progress. This design celebrates cooperation, openness, and the strength found in unity."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"The imaginary currency features a woven sun at its center, symbolizing shared work and collective effort. Encircling the sun is a vibrant violet border, denoting unity and resilience. On the reverse, nine square windows reveal intricate depictions of the city’s districts—each a unique district with its own identity and function. These windows represent transparency, opportunity, and the interconnectedness of urban life. The woven sun, crafted with threads of gold and silver, reflects light in a way that changes with the angle, reinforcing the idea of collaborative creation. Together, the a woven sun, nine square windows, and violet border form a powerful emblem of community, vision, and shared progress.\"\n}",
+      "parsed": {
+        "text": "The imaginary currency features a woven sun at its center, symbolizing shared work and collective effort. Encircling the sun is a vibrant violet border, denoting unity and resilience. On the reverse, nine square windows reveal intricate depictions of the city’s districts—each a unique district with its own identity and function. These windows represent transparency, opportunity, and the interconnectedness of urban life. The woven sun, crafted with threads of gold and silver, reflects light in a way that changes with the angle, reinforcing the idea of collaborative creation. Together, the a woven sun, nine square windows, and violet border form a powerful emblem of community, vision, and shared progress."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "a woven sun",
+            "nine square windows",
+            "violet border"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Include each of these exact strings: \"a woven sun\", \"nine square windows\", \"violet border\"."
+          }
+        ]
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Keep the complete piece to 60–90 words."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 109}"
+  ],
+  "constraint_checks_final": [
+    "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 99}"
+  ],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"The imaginary currency centers on a woven sun, symbolizing shared work and collective effort. A violet border frames the note, representing unity and resilience. On the reverse, nine square windows reveal distinct city districts—each a unique district with its own character and purpose. These windows stand for transparency, opportunity, and interconnected urban life. The woven sun, crafted from gold and silver threads, shifts in appearance with the light, reinforcing collaboration. Together, the a woven sun, nine square windows, and violet border embody community, vision, and shared progress. This design celebrates cooperation, openness, and the strength found in unity.\"\n}",
+    "parsed": {
+      "text": "The imaginary currency centers on a woven sun, symbolizing shared work and collective effort. A violet border frames the note, representing unity and resilience. On the reverse, nine square windows reveal distinct city districts—each a unique district with its own character and purpose. These windows stand for transparency, opportunity, and interconnected urban life. The woven sun, crafted from gold and silver threads, shifts in appearance with the light, reinforcing collaboration. Together, the a woven sun, nine square windows, and violet border embody community, vision, and shared progress. This design celebrates cooperation, openness, and the strength found in unity."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 109
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "a woven sun",
+            "nine square windows",
+            "violet border"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 109}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 99
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "a woven sun",
+            "nine square windows",
+            "violet border"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 99}"
+    ],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

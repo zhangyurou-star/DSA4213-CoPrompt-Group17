@@ -1,0 +1,155 @@
+{
+  "cache_key": "944e65fa1f3e8d77355f3f45e937cb68efe02c73fea14b8443eb7ee28af9e997",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S8"
+    ],
+    "tone": [
+      "S2"
+    ],
+    "length": [
+      "S3"
+    ],
+    "required_content": [
+      "S4",
+      "S5",
+      "S7"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 62,
+      "text": "Explain the judging priorities of a fictional dessert contest."
+    },
+    {
+      "id": "S2",
+      "start": 63,
+      "end": 112,
+      "text": "A balanced and explanatory tone suits this piece."
+    },
+    {
+      "id": "S3",
+      "start": 113,
+      "end": 159,
+      "text": "The full text must be between 55 and 85 words."
+    },
+    {
+      "id": "S4",
+      "start": 160,
+      "end": 264,
+      "text": "Use this fictional material: The fictional dessert contest places texture first and presentation second."
+    },
+    {
+      "id": "S5",
+      "start": 265,
+      "end": 294,
+      "text": "There are no points for size."
+    },
+    {
+      "id": "S6",
+      "start": 295,
+      "end": 375,
+      "text": "Explain that a small, well-balanced entry can outperform a large decorative one."
+    },
+    {
+      "id": "S7",
+      "start": 376,
+      "end": 465,
+      "text": "Required wording, verbatim: \"texture first\", \"presentation second\", \"no points for size\"."
+    },
+    {
+      "id": "S8",
+      "start": 466,
+      "end": 526,
+      "text": "The audience is judges in the imaginary Crumb Crown contest."
+    }
+  ],
+  "field_values": {
+    "audience": "The audience is judges in the imaginary Crumb Crown contest.",
+    "tone": "A balanced and explanatory tone suits this piece.",
+    "length": "The full text must be between 55 and 85 words.",
+    "required_content": "Use this fictional material: The fictional dessert contest places texture first and presentation second.\nThere are no points for size.\nRequired wording, verbatim: \"texture first\", \"presentation second\", \"no points for size\"."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 466,
+        "end": 526,
+        "quote": "The audience is judges in the imaginary Crumb Crown contest."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 63,
+        "end": 112,
+        "quote": "A balanced and explanatory tone suits this piece."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 113,
+        "end": 159,
+        "quote": "The full text must be between 55 and 85 words."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 160,
+        "end": 264,
+        "quote": "Use this fictional material: The fictional dessert contest places texture first and presentation second."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 265,
+        "end": 294,
+        "quote": "There are no points for size."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 376,
+        "end": 465,
+        "quote": "Required wording, verbatim: \"texture first\", \"presentation second\", \"no points for size\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S8\"],\"tone\":[\"S2\"],\"length\":[\"S3\"],\"required_content\":[\"S4\",\"S5\",\"S7\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S8"
+          ],
+          "tone": [
+            "S2"
+          ],
+          "length": [
+            "S3"
+          ],
+          "required_content": [
+            "S4",
+            "S5",
+            "S7"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

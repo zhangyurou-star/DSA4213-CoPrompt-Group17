@@ -1,0 +1,134 @@
+{
+  "cache_key": "fa13f5882025e454386b63b350a7d199527950baa6dd398664da4f85d04b51e6",
+  "source_case_id": "NVCW07",
+  "source_policy": "value_based",
+  "output": {
+    "text": "This fictional banknote centers a woven sun, symbolizing shared work through intricate, interlaced threads. The reverse bears nine square windows, each representing a unique district in the imagined city—architectural fragments of civic life. A violet border encircles the note, lending it visual cohesion and symbolic depth. The woven sun glows subtly under light, emphasizing unity and collective effort. Each window is precisely etched, suggesting transparency and hidden stories. The design prioritizes clarity and precision for illustrators crafting film props. The violet border frames the composition, anchoring the symbolic elements. This currency is not merely exchangeable—it is a narrative artifact, where every detail reflects community and purpose."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"For illustrators designing props in a fictional film, this currency features a central woven sun, symbolizing shared labor and collective effort. The reverse side displays nine square windows, each representing a distinct district within the imagined city—architectural fragments of civic life. A deep violet border frames the note, lending it both elegance and a sense of mystery. The woven sun is rendered in metallic thread, catching light with subtle movement. Each window is precisely aligned, with etched borders suggesting transparency and hidden narratives. The design balances symbolic depth with visual precision, ensuring clarity under cinematic lighting. This currency is not just money—it is a map of community, history, and shared purpose.\"\n}",
+      "parsed": {
+        "text": "For illustrators designing props in a fictional film, this currency features a central woven sun, symbolizing shared labor and collective effort. The reverse side displays nine square windows, each representing a distinct district within the imagined city—architectural fragments of civic life. A deep violet border frames the note, lending it both elegance and a sense of mystery. The woven sun is rendered in metallic thread, catching light with subtle movement. Each window is precisely aligned, with etched borders suggesting transparency and hidden narratives. The design balances symbolic depth with visual precision, ensuring clarity under cinematic lighting. This currency is not just money—it is a map of community, history, and shared purpose."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "a woven sun",
+            "nine square windows",
+            "violet border"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Include each of these exact strings: \"a woven sun\", \"nine square windows\", \"violet border\"."
+          }
+        ]
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Keep the complete piece to 60–90 words."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "contains_all: {\"missing_literals\": [\"a woven sun\"]}",
+    "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 113}"
+  ],
+  "constraint_checks_final": [
+    "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 108}"
+  ],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"This fictional banknote centers a woven sun, symbolizing shared work through intricate, interlaced threads. The reverse bears nine square windows, each representing a unique district in the imagined city—architectural fragments of civic life. A violet border encircles the note, lending it visual cohesion and symbolic depth. The woven sun glows subtly under light, emphasizing unity and collective effort. Each window is precisely etched, suggesting transparency and hidden stories. The design prioritizes clarity and precision for illustrators crafting film props. The violet border frames the composition, anchoring the symbolic elements. This currency is not merely exchangeable—it is a narrative artifact, where every detail reflects community and purpose.\"\n}",
+    "parsed": {
+      "text": "This fictional banknote centers a woven sun, symbolizing shared work through intricate, interlaced threads. The reverse bears nine square windows, each representing a unique district in the imagined city—architectural fragments of civic life. A violet border encircles the note, lending it visual cohesion and symbolic depth. The woven sun glows subtly under light, emphasizing unity and collective effort. Each window is precisely etched, suggesting transparency and hidden stories. The design prioritizes clarity and precision for illustrators crafting film props. The violet border frames the composition, anchoring the symbolic elements. This currency is not merely exchangeable—it is a narrative artifact, where every detail reflects community and purpose."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 113
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "a woven sun",
+            "nine square windows",
+            "violet border"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [
+      "contains_all: {\"missing_literals\": [\"a woven sun\"]}",
+      "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 113}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 108
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "a woven sun",
+            "nine square windows",
+            "violet border"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 108}"
+    ],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

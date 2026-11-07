@@ -1,0 +1,117 @@
+{
+  "cache_key": "3ea5810cd51b5101b9ea9826d42eb73534830d99be7237387a0dc447ca1f94b8",
+  "source_case_id": "NVCW01",
+  "source_policy": "value_based",
+  "output": {
+    "text": "In the Marble Circuit, when participants tie in total points, the tiebreak is resolved by fewest retries. Mira and Sol each scored twelve points, but Mira used only one retry while Sol used three. Since the Marble Circuit prioritizes efficiency, the competitor with fewer retries is ranked higher. Therefore, Mira ranks first. This rule ensures that consistent performance is rewarded over repeated attempts. All participants should aim for precision to minimize retries and improve their standing in the Marble Circuit."
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"In the Marble Circuit, when participants tie in total points, the tiebreak is resolved by fewest retries. Mira and Sol each scored twelve points, but Mira used only one retry while Sol used three. Since the Marble Circuit prioritizes efficiency, the competitor with fewer retries is ranked higher. Therefore, Mira ranks first. This rule ensures that consistent performance is rewarded over repeated attempts. All participants should aim for precision to minimize retries and improve their standing in the Marble Circuit.\"}",
+      "parsed": {
+        "text": "In the Marble Circuit, when participants tie in total points, the tiebreak is resolved by fewest retries. Mira and Sol each scored twelve points, but Mira used only one retry while Sol used three. Since the Marble Circuit prioritizes efficiency, the competitor with fewer retries is ranked higher. Therefore, Mira ranks first. This rule ensures that consistent performance is rewarded over repeated attempts. All participants should aim for precision to minimize retries and improve their standing in the Marble Circuit."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "The full text must be between 55 and 85 words."
+          }
+        ]
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Marble Circuit",
+            "fewest retries",
+            "Mira ranks first"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Preserve these exact phrases: \"Marble Circuit\", \"fewest retries\", \"Mira ranks first\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 80
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Marble Circuit",
+            "fewest retries",
+            "Mira ranks first"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 80
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Marble Circuit",
+            "fewest retries",
+            "Mira ranks first"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

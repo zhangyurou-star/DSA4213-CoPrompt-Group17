@@ -1,0 +1,49 @@
+{
+  "cache_key": "200a4e49da6dfd241ad1475d6a85a7d77b8287ec123ed8ba7a4c5553dbed42bb",
+  "source_case_id": "NDCW12",
+  "source_policy": "direct",
+  "output": {
+    "text": "Welcome to your self-testing routine with the InventoCards deck—your personal toolkit for building confidence and clarity, one flashcard at a time. This routine is designed to be simple, sustainable, and deeply supportive, whether you're learning a new language, mastering a concept, or sharpening a skill. Here’s how to make the most of your practice sessions.\n\nStart by choosing a quiet, well-lit space where you can focus for 15 to 20 minutes. Shuffle your InventoCards deck thoroughly—this ensures variety and prevents memorization of order. Begin with a warm-up: pick five cards at random and test yourself without looking at the answer side. This primes your brain and builds momentum.\n\nNow, dive into your session. Pull one card at a time. Read the prompt or question aloud, then pause and say your answer out loud before flipping. If you’re unsure, take a moment to think—use context clues, break the problem down, or recall related ideas. When you flip, compare your answer to the card’s response. If you’re correct, give yourself a quiet ‘Yes!’—this small win builds motivation. If you’re wrong, don’t worry. Mark the card with a sticky note or a small dot, and note the reason: was it a misunderstanding, a missing detail, or a gap in knowledge?\n\nAfter every 10 cards, take a 2-minute break. Stand up, stretch, or sip water. This helps your brain consolidate what you’ve learned. At the end of your session, review all the marked cards. Re-test yourself on them, then shuffle them back into the deck. This reinforces the tricky ones without overwhelming you.\n\nRepeat this routine three times a week—consistency beats intensity. Over time, you’ll notice patterns: cards that once tripped you up become second nature. The InventoCards deck grows with you, and so do your skills.\n\nRemember: every card is a conversation with your future self. Be kind, be curious, and keep going. You’ve got this."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Welcome to your self-testing routine with the InventoCards deck—your personal toolkit for building confidence and clarity, one flashcard at a time. This routine is designed to be simple, sustainable, and deeply supportive, whether you're learning a new language, mastering a concept, or sharpening a skill. Here’s how to make the most of your practice sessions.\\n\\nStart by choosing a quiet, well-lit space where you can focus for 15 to 20 minutes. Shuffle your InventoCards deck thoroughly—this ensures variety and prevents memorization of order. Begin with a warm-up: pick five cards at random and test yourself without looking at the answer side. This primes your brain and builds momentum.\\n\\nNow, dive into your session. Pull one card at a time. Read the prompt or question aloud, then pause and say your answer out loud before flipping. If you’re unsure, take a moment to think—use context clues, break the problem down, or recall related ideas. When you flip, compare your answer to the card’s response. If you’re correct, give yourself a quiet ‘Yes!’—this small win builds motivation. If you’re wrong, don’t worry. Mark the card with a sticky note or a small dot, and note the reason: was it a misunderstanding, a missing detail, or a gap in knowledge?\\n\\nAfter every 10 cards, take a 2-minute break. Stand up, stretch, or sip water. This helps your brain consolidate what you’ve learned. At the end of your session, review all the marked cards. Re-test yourself on them, then shuffle them back into the deck. This reinforces the tricky ones without overwhelming you.\\n\\nRepeat this routine three times a week—consistency beats intensity. Over time, you’ll notice patterns: cards that once tripped you up become second nature. The InventoCards deck grows with you, and so do your skills.\\n\\nRemember: every card is a conversation with your future self. Be kind, be curious, and keep going. You’ve got this.\"\n}",
+      "parsed": {
+        "text": "Welcome to your self-testing routine with the InventoCards deck—your personal toolkit for building confidence and clarity, one flashcard at a time. This routine is designed to be simple, sustainable, and deeply supportive, whether you're learning a new language, mastering a concept, or sharpening a skill. Here’s how to make the most of your practice sessions.\n\nStart by choosing a quiet, well-lit space where you can focus for 15 to 20 minutes. Shuffle your InventoCards deck thoroughly—this ensures variety and prevents memorization of order. Begin with a warm-up: pick five cards at random and test yourself without looking at the answer side. This primes your brain and builds momentum.\n\nNow, dive into your session. Pull one card at a time. Read the prompt or question aloud, then pause and say your answer out loud before flipping. If you’re unsure, take a moment to think—use context clues, break the problem down, or recall related ideas. When you flip, compare your answer to the card’s response. If you’re correct, give yourself a quiet ‘Yes!’—this small win builds motivation. If you’re wrong, don’t worry. Mark the card with a sticky note or a small dot, and note the reason: was it a misunderstanding, a missing detail, or a gap in knowledge?\n\nAfter every 10 cards, take a 2-minute break. Stand up, stretch, or sip water. This helps your brain consolidate what you’ve learned. At the end of your session, review all the marked cards. Re-test yourself on them, then shuffle them back into the deck. This reinforces the tricky ones without overwhelming you.\n\nRepeat this routine three times a week—consistency beats intensity. Over time, you’ll notice patterns: cards that once tripped you up become second nature. The InventoCards deck grows with you, and so do your skills.\n\nRemember: every card is a conversation with your future self. Be kind, be curious, and keep going. You’ve got this."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 318
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 318
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

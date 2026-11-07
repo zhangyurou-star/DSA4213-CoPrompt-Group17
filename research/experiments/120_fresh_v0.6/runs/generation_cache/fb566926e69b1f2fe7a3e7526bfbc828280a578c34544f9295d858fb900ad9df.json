@@ -1,0 +1,107 @@
+{
+  "cache_key": "fb566926e69b1f2fe7a3e7526bfbc828280a578c34544f9295d858fb900ad9df",
+  "source_case_id": "NTCW02",
+  "source_policy": "direct",
+  "output": {
+    "text": "Hello neighbor! I’d like to propose a friendly barter: I offer two woven baskets in exchange for one lamp repair. I’m thinking Sunday afternoon might work well for the swap—quiet, relaxed, and convenient. If that timing doesn’t suit you, please feel free to suggest an alternative. I’m open to adjusting the arrangement to make it fair and easy for both of us. Looking forward to your thoughts and a chance to connect over a simple, honest exchange. Thank you!"
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"Hello neighbor! I’d like to propose a friendly barter: I offer two woven baskets in exchange for one lamp repair. I’m thinking Sunday afternoon might work well for the swap—quiet, relaxed, and convenient. If that timing doesn’t suit you, please feel free to suggest an alternative. I’m open to adjusting the arrangement to make it fair and easy for both of us. Looking forward to your thoughts and a chance to connect over a simple, honest exchange. Thank you!\"}",
+      "parsed": {
+        "text": "Hello neighbor! I’d like to propose a friendly barter: I offer two woven baskets in exchange for one lamp repair. I’m thinking Sunday afternoon might work well for the swap—quiet, relaxed, and convenient. If that timing doesn’t suit you, please feel free to suggest an alternative. I’m open to adjusting the arrangement to make it fair and easy for both of us. Looking forward to your thoughts and a chance to connect over a simple, honest exchange. Thank you!"
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Keep the complete piece to 55–85 words."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"two woven baskets\", \"one lamp repair\", \"Sunday afternoon\"."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 80
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"two woven baskets\", \"one lamp repair\", \"Sunday afternoon\"."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 80
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"two woven baskets\", \"one lamp repair\", \"Sunday afternoon\"."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

@@ -1,0 +1,130 @@
+{
+  "cache_key": "3bcce736815d1649d107651c3ea482fdd8b36ef121ee0737bed533a25612fb78",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S6"
+    ],
+    "tone": [],
+    "length": [
+      "S2"
+    ],
+    "required_content": [
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 55,
+      "text": "Give a naming rationale for an invented plant cultivar."
+    },
+    {
+      "id": "S2",
+      "start": 56,
+      "end": 112,
+      "text": "The total word count must fall from 50 to 80, inclusive."
+    },
+    {
+      "id": "S3",
+      "start": 113,
+      "end": 186,
+      "text": "Use this fictional material: Propose Copper Lantern as the cultivar name."
+    },
+    {
+      "id": "S4",
+      "start": 187,
+      "end": 293,
+      "text": "Its invented traits are bronze petals and an evening bloom that opens after the surrounding flowers close."
+    },
+    {
+      "id": "S5",
+      "start": 294,
+      "end": 373,
+      "text": "Required wording, verbatim: \"Copper Lantern\", \"bronze petals\", \"evening bloom\"."
+    },
+    {
+      "id": "S6",
+      "start": 374,
+      "end": 427,
+      "text": "The audience is a fictional nursery naming committee."
+    }
+  ],
+  "field_values": {
+    "audience": "The audience is a fictional nursery naming committee.",
+    "tone": null,
+    "length": "The total word count must fall from 50 to 80, inclusive.",
+    "required_content": "Use this fictional material: Propose Copper Lantern as the cultivar name.\nIts invented traits are bronze petals and an evening bloom that opens after the surrounding flowers close.\nRequired wording, verbatim: \"Copper Lantern\", \"bronze petals\", \"evening bloom\"."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 374,
+        "end": 427,
+        "quote": "The audience is a fictional nursery naming committee."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 56,
+        "end": 112,
+        "quote": "The total word count must fall from 50 to 80, inclusive."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 113,
+        "end": 186,
+        "quote": "Use this fictional material: Propose Copper Lantern as the cultivar name."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 187,
+        "end": 293,
+        "quote": "Its invented traits are bronze petals and an evening bloom that opens after the surrounding flowers close."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 294,
+        "end": 373,
+        "quote": "Required wording, verbatim: \"Copper Lantern\", \"bronze petals\", \"evening bloom\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S6\"],\"tone\":[],\"length\":[\"S2\"],\"required_content\":[\"S3\",\"S4\",\"S5\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S6"
+          ],
+          "tone": [],
+          "length": [
+            "S2"
+          ],
+          "required_content": [
+            "S3",
+            "S4",
+            "S5"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

@@ -1,0 +1,93 @@
+{
+  "cache_key": "ee6e65672eb58493383923ccabff5ff61196d50fb7c62f20ef191fd583f5fed3",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S5"
+    ],
+    "available_time": [],
+    "topics": [
+      "S4"
+    ],
+    "priorities": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 69,
+      "text": "I want to follow the stages shown in a traditional upholstery manual."
+    },
+    {
+      "id": "S2",
+      "start": 70,
+      "end": 106,
+      "text": "Prepare a compact learning schedule."
+    },
+    {
+      "id": "S3",
+      "start": 107,
+      "end": 127,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 128,
+      "end": 264,
+      "text": "The syllabus consists of \"Webbing Tension\", \"Spring Lashing\", \"Fabric Cutting\"; each named topic needs a minimum of 15 minutes in total."
+    },
+    {
+      "id": "S5",
+      "start": 265,
+      "end": 332,
+      "text": "My study window closes on 2027-02-05; that date is still available."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": null,
+    "topics": "The syllabus consists of \"Webbing Tension\", \"Spring Lashing\", \"Fabric Cutting\"; each named topic needs a minimum of 15 minutes in total.",
+    "priorities": null
+  },
+  "evidence": {
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 128,
+        "end": 264,
+        "quote": "The syllabus consists of \"Webbing Tension\", \"Spring Lashing\", \"Fabric Cutting\"; each named topic needs a minimum of 15 minutes in total."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "deadline",
+      "proposed_evidence": [
+        "S5"
+      ],
+      "proposed_value": "My study window closes on 2027-02-05; that date is still available.",
+      "reason": "quote_has_no_explicit_endpoint_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S5\"],\"available_time\":[],\"topics\":[\"S4\"],\"priorities\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S5"
+          ],
+          "available_time": [],
+          "topics": [
+            "S4"
+          ],
+          "priorities": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

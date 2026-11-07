@@ -1,0 +1,772 @@
+{
+  "version": "fresh120-0.6.0",
+  "registered_utc": "2026-10-19T14:38:01.883434+00:00",
+  "status": "allocation_fixed_before_new_case_authoring",
+  "case_count": 120,
+  "split_targets": {
+    "design": 40,
+    "validation": 20,
+    "test": 60
+  },
+  "pilot_case_ids": [
+    "NDCW01",
+    "NDCW02",
+    "NDCW03",
+    "NDCW04",
+    "NDCW05",
+    "NDCW06",
+    "NDSP01",
+    "NDSP02",
+    "NDSP03",
+    "NDSP04",
+    "NDSP05",
+    "NDSP06"
+  ],
+  "diagnostic_case_ids": [
+    "NTCW01",
+    "NTCW02",
+    "NTCW07",
+    "NTCW08",
+    "NTCW13",
+    "NTCW14",
+    "NTCW19",
+    "NTCW20",
+    "NTCW24",
+    "NTCW28",
+    "NTSP01",
+    "NTSP02",
+    "NTSP07",
+    "NTSP08",
+    "NTSP13",
+    "NTSP14",
+    "NTSP19",
+    "NTSP20",
+    "NTSP24",
+    "NTSP28"
+  ],
+  "diagnostic_rule": "Per domain first2 complete, first2 critical, first2 mixed, first2 optional, first1 unavailable, first1 execute_now; fixed before writing and all new outputs.",
+  "authoring_separation": "Domain authors start in separate empty-context sessions; receive task contracts and exclusions of earlier families/topics only, no prior model outputs or results. Coordinator has historical knowledge and documents this limitation.",
+  "cache_policy": "Empty new local caches; no legacy source or cache imports. Exact first-response reuse only within this fresh study.",
+  "cases": [
+    {
+      "case_id": "NDCW01",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NDCW02",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NDCW03",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NDCW04",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NDCW05",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NDCW06",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "execute_now"
+    },
+    {
+      "case_id": "NDCW07",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NDCW08",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NDCW09",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NDCW10",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NDCW11",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NDCW12",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NDCW13",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NDCW14",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NDCW15",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NDCW16",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NDCW17",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NDCW18",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NDCW19",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NDCW20",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "execute_now"
+    },
+    {
+      "case_id": "NDSP01",
+      "split": "design",
+      "domain": "study_planning",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NDSP02",
+      "split": "design",
+      "domain": "study_planning",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NDSP03",
+      "split": "design",
+      "domain": "study_planning",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NDSP04",
+      "split": "design",
+      "domain": "study_planning",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NDSP05",
+      "split": "design",
+      "domain": "study_planning",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NDSP06",
+      "split": "design",
+      "domain": "study_planning",
+      "omission_type": "execute_now"
+    },
+    {
+      "case_id": "NDSP07",
+      "split": "design",
+      "domain": "study_planning",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NDSP08",
+      "split": "design",
+      "domain": "study_planning",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NDSP09",
+      "split": "design",
+      "domain": "study_planning",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NDSP10",
+      "split": "design",
+      "domain": "study_planning",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NDSP11",
+      "split": "design",
+      "domain": "study_planning",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NDSP12",
+      "split": "design",
+      "domain": "study_planning",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NDSP13",
+      "split": "design",
+      "domain": "study_planning",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NDSP14",
+      "split": "design",
+      "domain": "study_planning",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NDSP15",
+      "split": "design",
+      "domain": "study_planning",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NDSP16",
+      "split": "design",
+      "domain": "study_planning",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NDSP17",
+      "split": "design",
+      "domain": "study_planning",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NDSP18",
+      "split": "design",
+      "domain": "study_planning",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NDSP19",
+      "split": "design",
+      "domain": "study_planning",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NDSP20",
+      "split": "design",
+      "domain": "study_planning",
+      "omission_type": "execute_now"
+    },
+    {
+      "case_id": "NVCW01",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NVCW02",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NVCW03",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NVCW04",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NVCW05",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NVCW06",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NVCW07",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NVCW08",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NVCW09",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NVCW10",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "execute_now"
+    },
+    {
+      "case_id": "NVSP01",
+      "split": "validation",
+      "domain": "study_planning",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NVSP02",
+      "split": "validation",
+      "domain": "study_planning",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NVSP03",
+      "split": "validation",
+      "domain": "study_planning",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NVSP04",
+      "split": "validation",
+      "domain": "study_planning",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NVSP05",
+      "split": "validation",
+      "domain": "study_planning",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NVSP06",
+      "split": "validation",
+      "domain": "study_planning",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NVSP07",
+      "split": "validation",
+      "domain": "study_planning",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NVSP08",
+      "split": "validation",
+      "domain": "study_planning",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NVSP09",
+      "split": "validation",
+      "domain": "study_planning",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NVSP10",
+      "split": "validation",
+      "domain": "study_planning",
+      "omission_type": "execute_now"
+    },
+    {
+      "case_id": "NTCW01",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NTCW02",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NTCW03",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NTCW04",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NTCW05",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NTCW06",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NTCW07",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NTCW08",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NTCW09",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NTCW10",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NTCW11",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NTCW12",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NTCW13",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NTCW14",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NTCW15",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NTCW16",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NTCW17",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NTCW18",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NTCW19",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NTCW20",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NTCW21",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NTCW22",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NTCW23",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NTCW24",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NTCW25",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NTCW26",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NTCW27",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NTCW28",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "execute_now"
+    },
+    {
+      "case_id": "NTCW29",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "execute_now"
+    },
+    {
+      "case_id": "NTCW30",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "execute_now"
+    },
+    {
+      "case_id": "NTSP01",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NTSP02",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NTSP03",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NTSP04",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NTSP05",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NTSP06",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NTSP07",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NTSP08",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NTSP09",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NTSP10",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NTSP11",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NTSP12",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NTSP13",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NTSP14",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NTSP15",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NTSP16",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NTSP17",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NTSP18",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NTSP19",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NTSP20",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NTSP21",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NTSP22",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NTSP23",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NTSP24",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NTSP25",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NTSP26",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NTSP27",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NTSP28",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "execute_now"
+    },
+    {
+      "case_id": "NTSP29",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "execute_now"
+    },
+    {
+      "case_id": "NTSP30",
+      "split": "test",
+      "domain": "study_planning",
+      "omission_type": "execute_now"
+    }
+  ]
+}

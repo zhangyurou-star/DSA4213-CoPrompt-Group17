@@ -1,0 +1,64 @@
+{
+  "key": "96f983b37261ccefe3aad188cb10e3ddfc247d9e354ba7c450eae313de687a87",
+  "raw": "{\"action\":\"ASK\",\"field_id\":\"available_time\"}",
+  "source_case_id": "NTSP16",
+  "source_variant": "prompt_only",
+  "response_sha256": "dfb7493308480033af95ccb58a14ad440cfcfd24c0ac1cf007ca3c2fca83201c",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "decision",
+    "repair": false,
+    "repair_kind": null,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Choose whether to clarify one unresolved field or act now to complete the user's task.\nAsk only when its likely benefit to the result justifies another question. Optional preferences may have reasonable defaults.\nConsider only the public request, visible exchanges, current field state, eligible fields and remaining question budget.\nReturn exactly {\"action\":\"ASK\",\"field_id\":\"one_field_id\"} or {\"action\":\"ACT\"}.\nNo explanation, extra keys or Markdown. Do not predict unavailable hidden answers."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"study_planning\", \"initial_request\": \"A craft group is comparing coiled baskets. I need a study plan for recognizing how they are constructed. Start on 2027-02-01. Use the exact labels \\\"Foundation Bundles\\\", \\\"Stitch Spacing\\\", \\\"Rim Finishing\\\" in the schedule, with at least 15 total minutes assigned to each. Within that coverage, \\\"Foundation Bundles\\\" needs at least 25 total minutes.\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [], \"field_values\": {\"deadline\": null, \"available_time\": null, \"topics\": \"Use the exact labels \\\"Foundation Bundles\\\", \\\"Stitch Spacing\\\", \\\"Rim Finishing\\\" in the schedule, with at least 15 total minutes assigned to each.\\nWithin that coverage, \\\"Foundation Bundles\\\" needs at least 25 total minutes.\", \"priorities\": \"Within that coverage, \\\"Foundation Bundles\\\" needs at least 25 total minutes.\"}, \"eligible_fields\": [\"deadline\", \"available_time\"], \"remaining_question_items\": 3, \"fields\": [{\"field_id\": \"deadline\", \"label_zh\": \"截止日\", \"description_zh\": \"最后可学习日期，包含当日。起始日始终在初始请求给定。\", \"question_template\": \"What is the last date available for study, inclusive?\"}, {\"field_id\": \"available_time\", \"label_zh\": \"每日时长\", \"description_zh\": \"每天可学习的分钟上限。本试跑采用统一每日上限。\", \"question_template\": \"How many minutes can you study per day at most?\"}, {\"field_id\": \"topics\", \"label_zh\": \"学习主题\", \"description_zh\": \"主题名称与覆盖要求，可含每个主题的最低总分钟数。\", \"question_template\": \"Which topics must be covered, and are there minimum minutes for each?\"}, {\"field_id\": \"priorities\", \"label_zh\": \"优先要求\", \"description_zh\": \"优先主题及相关硬性时长，或明确无偏好；软偏好不自动计分。\", \"question_template\": \"Do you have topic priorities or additional minimum-time requirements?\"}]}"
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

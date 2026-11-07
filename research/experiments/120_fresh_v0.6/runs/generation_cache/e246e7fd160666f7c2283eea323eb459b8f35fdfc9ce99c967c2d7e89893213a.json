@@ -1,0 +1,414 @@
+{
+  "cache_key": "e246e7fd160666f7c2283eea323eb459b8f35fdfc9ce99c967c2d7e89893213a",
+  "source_case_id": "NTSP15",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Introduction to Assembly Drawings in Stained Glass",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-01",
+        "topic": "Reading and Interpreting Assembly Drawing Symbols",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Understanding Component Layout in Assembly Drawings",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Material and Thickness Indications in Drawings",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Joinery Techniques and Their Representation",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Scale and Proportion in Assembly Drawings",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Assembly Sequence Planning from Drawings",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Common Errors in Drawing Interpretation",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Case Study: Full Assembly Drawing Breakdown",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Cross-Referencing with Material Lists",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Practice Session: Interpreting a Sample Drawing",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Review of Key Concepts and Questions",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-07",
+        "topic": "Final Review: Connecting Theory to Demonstration",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-07",
+        "topic": "Preparation for Live Demonstration",
+        "minutes": 20
+      }
+    ],
+    "summary": "Calculated from the schedule: 350 minutes in total. Daily totals: 2027-02-01: 50 minutes; 2027-02-02: 50 minutes; 2027-02-03: 50 minutes; 2027-02-04: 50 minutes; 2027-02-05: 50 minutes; 2027-02-06: 50 minutes; 2027-02-07: 50 minutes. Topic totals: Assembly Sequence Planning from Drawings: 30 minutes; Case Study: Full Assembly Drawing Breakdown: 30 minutes; Common Errors in Drawing Interpretation: 20 minutes; Cross-Referencing with Material Lists: 20 minutes; Final Review: Connecting Theory to Demonstration: 30 minutes; Introduction to Assembly Drawings in Stained Glass: 30 minutes; Joinery Techniques and Their Representation: 30 minutes; Material and Thickness Indications in Drawings: 20 minutes; Practice Session: Interpreting a Sample Drawing: 30 minutes; Preparation for Live Demonstration: 20 minutes; Reading and Interpreting Assembly Drawing Symbols: 20 minutes; Review of Key Concepts and Questions: 20 minutes; Scale and Proportion in Assembly Drawings: 20 minutes; Understanding Component Layout in Assembly Drawings: 30 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Introduction to Assembly Drawings in Stained Glass\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Reading and Interpreting Assembly Drawing Symbols\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Understanding Component Layout in Assembly Drawings\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Material and Thickness Indications in Drawings\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Joinery Techniques and Their Representation\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Scale and Proportion in Assembly Drawings\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Assembly Sequence Planning from Drawings\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Common Errors in Drawing Interpretation\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Case Study: Full Assembly Drawing Breakdown\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Cross-Referencing with Material Lists\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Practice Session: Interpreting a Sample Drawing\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Review of Key Concepts and Questions\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-07\",\n      \"topic\": \"Final Review: Connecting Theory to Demonstration\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-07\",\n      \"topic\": \"Preparation for Live Demonstration\",\n      \"minutes\": 20\n    }\n  ],\n  \"summary\": \"All theory learning on assembly drawings was scheduled before the demonstration, starting on 2027-02-01 and completing by 2027-02-07. Each day's sessions total no more than 50 minutes, with topics progressing logically from fundamentals to application. The final day includes a review and preparation for the demonstration, ensuring readiness.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Introduction to Assembly Drawings in Stained Glass",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-01",
+            "topic": "Reading and Interpreting Assembly Drawing Symbols",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Understanding Component Layout in Assembly Drawings",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Material and Thickness Indications in Drawings",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Joinery Techniques and Their Representation",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Scale and Proportion in Assembly Drawings",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Assembly Sequence Planning from Drawings",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Common Errors in Drawing Interpretation",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Case Study: Full Assembly Drawing Breakdown",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Cross-Referencing with Material Lists",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Practice Session: Interpreting a Sample Drawing",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Review of Key Concepts and Questions",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-07",
+            "topic": "Final Review: Connecting Theory to Demonstration",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-07",
+            "topic": "Preparation for Live Demonstration",
+            "minutes": 20
+          }
+        ],
+        "summary": "All theory learning on assembly drawings was scheduled before the demonstration, starting on 2027-02-01 and completing by 2027-02-07. Each day's sessions total no more than 50 minutes, with topics progressing logically from fundamentals to application. The final day includes a review and preparation for the demonstration, ensuring readiness."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Finish all scheduled study no later than 2027-02-07, inclusive."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 350,
+      "daily_minutes": {
+        "2027-02-01": 50,
+        "2027-02-02": 50,
+        "2027-02-03": 50,
+        "2027-02-04": 50,
+        "2027-02-05": 50,
+        "2027-02-06": 50,
+        "2027-02-07": 50
+      },
+      "topic_minutes": [
+        {
+          "topic": "Assembly Sequence Planning from Drawings",
+          "normalized_topic": "assembly sequence planning from drawings",
+          "minutes": 30
+        },
+        {
+          "topic": "Case Study: Full Assembly Drawing Breakdown",
+          "normalized_topic": "case study: full assembly drawing breakdown",
+          "minutes": 30
+        },
+        {
+          "topic": "Common Errors in Drawing Interpretation",
+          "normalized_topic": "common errors in drawing interpretation",
+          "minutes": 20
+        },
+        {
+          "topic": "Cross-Referencing with Material Lists",
+          "normalized_topic": "cross-referencing with material lists",
+          "minutes": 20
+        },
+        {
+          "topic": "Final Review: Connecting Theory to Demonstration",
+          "normalized_topic": "final review: connecting theory to demonstration",
+          "minutes": 30
+        },
+        {
+          "topic": "Introduction to Assembly Drawings in Stained Glass",
+          "normalized_topic": "introduction to assembly drawings in stained glass",
+          "minutes": 30
+        },
+        {
+          "topic": "Joinery Techniques and Their Representation",
+          "normalized_topic": "joinery techniques and their representation",
+          "minutes": 30
+        },
+        {
+          "topic": "Material and Thickness Indications in Drawings",
+          "normalized_topic": "material and thickness indications in drawings",
+          "minutes": 20
+        },
+        {
+          "topic": "Practice Session: Interpreting a Sample Drawing",
+          "normalized_topic": "practice session: interpreting a sample drawing",
+          "minutes": 30
+        },
+        {
+          "topic": "Preparation for Live Demonstration",
+          "normalized_topic": "preparation for live demonstration",
+          "minutes": 20
+        },
+        {
+          "topic": "Reading and Interpreting Assembly Drawing Symbols",
+          "normalized_topic": "reading and interpreting assembly drawing symbols",
+          "minutes": 20
+        },
+        {
+          "topic": "Review of Key Concepts and Questions",
+          "normalized_topic": "review of key concepts and questions",
+          "minutes": 20
+        },
+        {
+          "topic": "Scale and Proportion in Assembly Drawings",
+          "normalized_topic": "scale and proportion in assembly drawings",
+          "minutes": 20
+        },
+        {
+          "topic": "Understanding Component Layout in Assembly Drawings",
+          "normalized_topic": "understanding component layout in assembly drawings",
+          "minutes": 30
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Finish all scheduled study no later than 2027-02-07, inclusive."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 350,
+      "daily_minutes": {
+        "2027-02-01": 50,
+        "2027-02-02": 50,
+        "2027-02-03": 50,
+        "2027-02-04": 50,
+        "2027-02-05": 50,
+        "2027-02-06": 50,
+        "2027-02-07": 50
+      },
+      "topic_minutes": [
+        {
+          "topic": "Assembly Sequence Planning from Drawings",
+          "normalized_topic": "assembly sequence planning from drawings",
+          "minutes": 30
+        },
+        {
+          "topic": "Case Study: Full Assembly Drawing Breakdown",
+          "normalized_topic": "case study: full assembly drawing breakdown",
+          "minutes": 30
+        },
+        {
+          "topic": "Common Errors in Drawing Interpretation",
+          "normalized_topic": "common errors in drawing interpretation",
+          "minutes": 20
+        },
+        {
+          "topic": "Cross-Referencing with Material Lists",
+          "normalized_topic": "cross-referencing with material lists",
+          "minutes": 20
+        },
+        {
+          "topic": "Final Review: Connecting Theory to Demonstration",
+          "normalized_topic": "final review: connecting theory to demonstration",
+          "minutes": 30
+        },
+        {
+          "topic": "Introduction to Assembly Drawings in Stained Glass",
+          "normalized_topic": "introduction to assembly drawings in stained glass",
+          "minutes": 30
+        },
+        {
+          "topic": "Joinery Techniques and Their Representation",
+          "normalized_topic": "joinery techniques and their representation",
+          "minutes": 30
+        },
+        {
+          "topic": "Material and Thickness Indications in Drawings",
+          "normalized_topic": "material and thickness indications in drawings",
+          "minutes": 20
+        },
+        {
+          "topic": "Practice Session: Interpreting a Sample Drawing",
+          "normalized_topic": "practice session: interpreting a sample drawing",
+          "minutes": 30
+        },
+        {
+          "topic": "Preparation for Live Demonstration",
+          "normalized_topic": "preparation for live demonstration",
+          "minutes": 20
+        },
+        {
+          "topic": "Reading and Interpreting Assembly Drawing Symbols",
+          "normalized_topic": "reading and interpreting assembly drawing symbols",
+          "minutes": 20
+        },
+        {
+          "topic": "Review of Key Concepts and Questions",
+          "normalized_topic": "review of key concepts and questions",
+          "minutes": 20
+        },
+        {
+          "topic": "Scale and Proportion in Assembly Drawings",
+          "normalized_topic": "scale and proportion in assembly drawings",
+          "minutes": 20
+        },
+        {
+          "topic": "Understanding Component Layout in Assembly Drawings",
+          "normalized_topic": "understanding component layout in assembly drawings",
+          "minutes": 30
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Finish all scheduled study no later than 2027-02-07, inclusive."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "All theory learning on assembly drawings was scheduled before the demonstration, starting on 2027-02-01 and completing by 2027-02-07. Each day's sessions total no more than 50 minutes, with topics progressing logically from fundamentals to application. The final day includes a review and preparation for the demonstration, ensuring readiness.",
+    "derived_summary": "Calculated from the schedule: 350 minutes in total. Daily totals: 2027-02-01: 50 minutes; 2027-02-02: 50 minutes; 2027-02-03: 50 minutes; 2027-02-04: 50 minutes; 2027-02-05: 50 minutes; 2027-02-06: 50 minutes; 2027-02-07: 50 minutes. Topic totals: Assembly Sequence Planning from Drawings: 30 minutes; Case Study: Full Assembly Drawing Breakdown: 30 minutes; Common Errors in Drawing Interpretation: 20 minutes; Cross-Referencing with Material Lists: 20 minutes; Final Review: Connecting Theory to Demonstration: 30 minutes; Introduction to Assembly Drawings in Stained Glass: 30 minutes; Joinery Techniques and Their Representation: 30 minutes; Material and Thickness Indications in Drawings: 20 minutes; Practice Session: Interpreting a Sample Drawing: 30 minutes; Preparation for Live Demonstration: 20 minutes; Reading and Interpreting Assembly Drawing Symbols: 20 minutes; Review of Key Concepts and Questions: 20 minutes; Scale and Proportion in Assembly Drawings: 20 minutes; Understanding Component Layout in Assembly Drawings: 30 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

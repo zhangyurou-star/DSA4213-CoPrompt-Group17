@@ -1,0 +1,127 @@
+CoPrompt Fresh-120: Results, Interpretation, and Next Steps
+Review date: 20 October 2026 (Asia/Singapore)
+Experiment: v0.6.0+budget-precision-1
+English documentation edition: EN1, prepared after execution
+
+1. Completed work and method
+
+Automatic experiments and analysis are complete. Human content review is not complete.
+
+The 40 design cases produced 160 trajectories; 20 validation cases produced 60; and 60 test cases produced 240 main trajectories plus 20 diagnostics, for 480 logical trajectories. The 12 pilot cases belong to the design split, and the 20 diagnostic cases belong to the test split. They are not additional independent cases. Reanalysis checked the frozen files, complete execution records, all 120 case identities, rescored outputs, threshold selection, and cumulative costs.
+
+The study compares four clarification decisions under shared extraction and generation. Constrained writing uses audience, tone, length, and required_content; study planning uses deadline, available_time, topics, and priorities. The model selects explicit evidence from numbered source units. The program checks the evidence's source and limited semantics, leaving unconfirmed fields unresolved. Only unresolved, unasked fields not marked unanswerable are eligible. An asked field releases only its prewritten answer. Unknown and declined answers remain unavailable.
+
+direct asks no questions and enters shared generation. exhaustive asks eligible fields in catalog order. prompt_only asks the model to return ASK+field_id or ACT directly. value_based asks for importance I in {0, 0.5, 1} and uncertainty U in {0.5, 1} for each candidate. The program ranks I*U-lambda and asks only if the maximum is strictly positive, breaking ties by catalog order. I and U are heuristic categories, not probabilities. All clarification policies have a three-item allowance, including invalid/repeated ASK requests. They stop on ACT, no candidates, an immediate-execution instruction, an exhausted allowance, or a decision that remains invalid after one format repair. The importance_one diagnostic changes only the controller's effective I to 1, retaining U, lambda, and the question allowance.
+
+All policies share Qwen3-30B-A3B-Instruct-2507, the generation prompt, output schema, visible-constraint checks, and repair process. OpenRouter uses the fixed nebius/fp8 route with temperature=0, top_p=1, and seed=20261013. Generation receives the public request, reference date, released interactions, and constraints identified from those texts. Hidden scoring annotations and feasible examples do not enter the model. Invalid initial formatting gets at most one format repair; a valid draft violating identifiable visible constraints may receive one additional constraint revision. Generation therefore uses at most three model calls. A format-valid constraint revision is adopted even when its private score is lower; an invalid revision leaves the valid draft in place. There is no hidden-score selection. A study plan's summary is calculated from its final schedule, reporting total, daily, and topic minutes and visible-constraint status without changing scheduled items.
+
+The 40 design cases check the workflow; the 20 validation cases select lambda. For {0, 0.25, 0.5}, retain candidates averaging at most two questions, then choose higher hard-constraint score, fewer questions, and finally larger lambda. If none meets the gate, choose fewer questions, higher score, and larger lambda. Validation selected lambda=0.25 for the fixed 60-case test. All policies use the same private-annotation scorer: each case's score is the fraction of critical hard constraints passed, with invalid formatting scored zero. Writing checks word counts and required wording; planning checks dates, daily totals, topic coverage, and minimum minutes. Main comparisons use within-case policy differences and 10,000 domain-stratified paired case-bootstrap samples for 95% percentile intervals. Automatic scores cover only the checked hard constraints; human review is needed for broader content quality.
+
+All 120 cases were newly authored. Historical cases, model outputs, response caches, and selected thresholds were not imported. Exact requests within this study may reuse their first responses; such reuse is not an independent repetition. Method development incorporated historical experience, and the coordinator had seen historical results. This is disclosed provenance, but the present mechanisms can be understood without the 80-case files. Historical costs enter cumulative accounting only; historical performance is not combined with the present comparisons.
+
+Complete methods are in docs/METHODS.txt, with structured explanation in data/protocol_reading_edition.json. These documents explain a completed run. The original frozen protocol, configuration, and 71-file freeze are retained in audit/original_evidence.zip at the package root. EN1 changes presentation and paths after execution; it does not turn translated code or documentation into original preregistered evidence. Original model-visible field descriptions included Chinese text and have not been retroactively translated in the evidence. No model call is needed to prepare or verify this English handoff.
+
+2. Main results: the 60 fresh test cases only
+
+Policy          Mean hard-constraint score  Mean question items  All constraints passed
+direct                     0.7072                    0.000                 30/60
+exhaustive                 0.7878                    1.183                 35/60
+prompt_only                0.7794                    1.017                 35/60
+value_based                0.7989                    1.183                 36/60
+
+The mean score first averages critical constraint checks within each case, then averages cases. It is not an overall content-quality score and does not mean that all outputs are usable.
+
+value_based minus direct:
+  Mean score difference +0.0917, paired 95% interval [0.0306, 0.1569].
+  Under this case distribution, the result supports higher hard-constraint scores than direct generation, at a cost of 1.183 additional question items on average.
+
+value_based minus exhaustive:
+  Mean score difference +0.0111, paired 95% interval [-0.0111, 0.0389].
+  Question-count difference 0.
+  Current evidence does not establish better scores than exhaustive, and there is no question saving.
+
+value_based minus prompt_only:
+  Mean score difference +0.0194, paired 95% interval [-0.0236, 0.0625].
+  Mean question-count difference +0.167, paired 95% interval [0.0667, 0.2833].
+  There is no clear score advantage, while question burden increases.
+
+An interval containing zero does not prove complete equivalence. Failure to show an advantage must not be presented as a confirmed advantage.
+
+3. Why the value policy did not ask fewer questions
+
+value_based and exhaustive each requested 71 items over the 60 test cases, with equal counts in every case. Their requested-field sets match in 59/60 cases, and their order matches in 56/60. The one changed field set reflects a different priority under the three-item cap. Final outputs match in 56/60 cases; all 56 matching value-policy outputs reused generation results already available within this study. Ranking therefore had a local effect but saved no questions. Equal total counts do not imply identical complete trajectories.
+
+The value trajectories record 112 candidate net values, all positive: 85 equal 0.25 and 27 equal 0.75. There were no early stops from a value-policy ACT decision. Stopping reasons were no eligible fields in 47 cases, the three-question cap in 7, and immediate execution in 6. The score threshold filtered out no candidate questions in these records.
+
+Validation results on the 20 fresh cases:
+
+lambda=0:     mean score 0.754167, mean questions 1.15.
+lambda=0.25:  mean score 0.754167, mean questions 1.15.
+lambda=0.5:   mean score 0.750000, mean questions 0.45.
+
+All three passed the at-most-two-question gate. The rule then prioritized score. Lambda 0 and 0.25 tied in score and count; the larger-lambda tie-break selected 0.25. Lambda 0.5 asked substantially fewer questions but scored about 0.004167 lower, so it did not win under the predefined rule.
+
+Thus the question gate excluded no candidate, and the quality-first rule accepted more questions. This explanation comes from saved results; it cannot justify reselecting lambda on the same test set and claiming a new independent validation. A modified selection rule belongs in a separately identified follow-up study.
+
+4. Diagnostic findings and limits
+
+On the 20 preselected diagnostic cases, value_based, importance_one, and exhaustive have identical hard-constraint scores and question counts. The value policy and importance-one variant still differ in question order for two cases. All 20 diagnostic generation results reused this study's existing caches.
+
+This does not support a measurable additional benefit from importance ratings on these 20 cases. It is not another independent success result, and it does not prove that importance ratings are useless in every setting.
+
+Supported conclusion: for these new tasks and this fixed method, value_based improves mean hard-constraint scores over direct generation.
+
+Unestablished conclusion: value_based has a question-efficiency advantage over exhaustive. The experiment has not shown "fewer questions and better quality," or effectiveness for real users, arbitrary tasks, and other models.
+
+The cases are synthetic and share templates. Intervals resample paired cases within domains and do not cover variability from fresh model calls. Exact first-response reuse is not independent sampling. There is no multiple-comparison adjustment. All final outputs for the 60 cases x four main policies pass format checks, but valid formatting and hard-constraint scores do not establish factual correctness, coherence, audience fit, or practical usability.
+
+5. Costs
+
+Current study accounting:                  US$0.08404924
+  Provider-reported costs:                 US$0.08305670
+  Conservative unknown-cost reservation:   approximately US$0.00099254
+Earlier accounting:                       US$0.08857385
+Cumulative accounting:                    US$0.17262309
+Authorized cumulative cap:                US$2.00
+Remaining recorded allowance:             US$1.82737691
+
+There were 643 request attempts in this study, 642 successful. The unconfirmed cost was not deleted. These amounts are locally recorded costs plus a reservation; an unknown reservation must not be called a confirmed provider charge. Analysis, reporting, and English handoff preparation do not require new model calls. The historical US$2 authorization is not authorization for a recipient's new spending.
+
+6. Next steps
+
+Preserve the present data, code version, raw outputs, and failures. Do not overwrite them or rerun until a preferred outcome appears.
+
+Complete two real reviewers' independent content assessments: 20 preselected test cases x five variants, or 100 outputs per reviewer. Two independently ordered, policy-anonymized packets exist. Prepared materials do not mean review is complete. Reviewer eligibility and actual prior exposure to policy identities still need confirmation.
+
+Review should examine unsupported facts, summary-detail consistency, feasibility of study schedules, audience fit, readability, and whether optional-field questions have practical value.
+
+Combine human scores and failure analysis in the final report, retaining the result that no question-efficiency advantage was found. Stronger question-saving rules, if explored, need a separate follow-up version and must be distinguished from this experiment's conclusions.
+
+Evidence locations, relative to experiments/120_fresh_v0.6/:
+
+  docs/METHODS.txt
+    Full methods and explicit deviations from the proposal.
+
+  data/protocol_reading_edition.json
+    Post-run structured explanation; not the original frozen protocol.
+
+  outputs/fresh120_analysis/analysis.json
+    Full statistics, paired intervals, verification flags, costs, and source fingerprints.
+
+  outputs/fresh120_analysis/results_summary.txt
+    Concise analyzer-generated results.
+
+  outputs/CoPrompt_validation_v0.6.0/lambda_selection.json
+    Threshold-selection evidence from the 20 fresh validation cases.
+
+  runs/formal_v0.6.0_test/trajectories.jsonl
+    Original test and diagnostic records.
+
+  outputs/fresh120_analysis/reviewer_1_packet.json
+  outputs/fresh120_analysis/reviewer_2_packet.json
+    Pending content-review materials.
+
+  outputs/fresh120_analysis/private/reviewer_policy_mapping.json
+    Coordinator-only identity mapping; do not distribute to reviewers.
+
+The exact original file locations and frozen evidence are also retained in audit/original_evidence.zip at the package root.

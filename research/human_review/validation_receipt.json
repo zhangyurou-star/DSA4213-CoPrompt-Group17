@@ -1,0 +1,35 @@
+{
+  "returned_records": 200,
+  "confirmed_complete_assessments": 200,
+  "numeric_ratings_checked": 1200,
+  "missing_numeric_ratings": 0,
+  "matched_outputs": 100,
+  "distinct_cases": 20,
+  "variants": 5,
+  "cases_per_domain": {
+    "constrained_writing": 10,
+    "study_planning": 10
+  },
+  "immutable_materials_IDs_and_order_match_original_packets": true,
+  "packet_and_evidence_fingerprints_match": true,
+  "matching_key": [
+    "case_id",
+    "variant"
+  ],
+  "original_files_and_scores_modified": false,
+  "aggregation_crosscheck": "Per-output two-reviewer average equals pooled rating mean exactly.",
+  "kappa_crosscheck": "Exact-fraction confusion-matrix calculation equals direct-vector distance calculation.",
+  "semantic_count_warnings": [
+    {
+      "reviewer_slot": 2,
+      "review_item_id": "R2-002",
+      "case_id": "NTCW13",
+      "variant": "direct",
+      "dimension": "unnecessary_questions_count",
+      "reported_value": 3,
+      "visible_question_items": 0,
+      "treatment": "Original value retained in every statistic; no adjudication or correction."
+    }
+  ],
+  "warnings_do_not_change_input_ratings": true
+}

@@ -1,0 +1,80 @@
+{
+  "cache_key": "3e7233318f23675ea5691c9678bcb4936ecc45121ce7a384a9ac43cc6e597106",
+  "source_case_id": "NTCW17",
+  "source_policy": "direct",
+  "output": {
+    "text": "Imagine a world where every person’s moral decisions are instantly recorded and broadcast to all others. No secrets, no private intentions—only actions and their perceived consequences are visible. Would this eliminate hypocrisy, or would it merely transform it into a performance of virtue? If you knew your choices were always on display, would you act more ethically, or would you simply learn to manipulate appearances? Does moral worth depend on intention, outcome, or public perception? And if we could see every choice, would we still value the right to be wrong?"
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"Imagine a world where every person’s moral decisions are instantly recorded and broadcast to all others. No secrets, no private intentions—only actions and their perceived consequences are visible. Would this eliminate hypocrisy, or would it merely transform it into a performance of virtue? If you knew your choices were always on display, would you act more ethically, or would you simply learn to manipulate appearances? Does moral worth depend on intention, outcome, or public perception? And if we could see every choice, would we still value the right to be wrong?\"}",
+      "parsed": {
+        "text": "Imagine a world where every person’s moral decisions are instantly recorded and broadcast to all others. No secrets, no private intentions—only actions and their perceived consequences are visible. Would this eliminate hypocrisy, or would it merely transform it into a performance of virtue? If you knew your choices were always on display, would you act more ethically, or would you simply learn to manipulate appearances? Does moral worth depend on intention, outcome, or public perception? And if we could see every choice, would we still value the right to be wrong?"
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 65,
+          "max_words": 95
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Keep the complete piece to 65–95 words."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 92
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 65,
+          "max_words": 95
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 92
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 65,
+          "max_words": 95
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

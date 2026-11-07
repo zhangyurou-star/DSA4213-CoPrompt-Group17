@@ -1,0 +1,130 @@
+{
+  "cache_key": "ccdf7b3293a03f33d5ba795c804bf5830f570bab7ec0471cd0f0023ce348b258",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S6"
+    ],
+    "tone": [],
+    "length": [
+      "S2"
+    ],
+    "required_content": [
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 54,
+      "text": "Explain a metadata convention for an invented catalog."
+    },
+    {
+      "id": "S2",
+      "start": 55,
+      "end": 94,
+      "text": "Keep the complete piece to 55–85 words."
+    },
+    {
+      "id": "S3",
+      "start": 95,
+      "end": 236,
+      "text": "Use this fictional material: The catalog uses maker unknown when attribution is missing and date not recorded when no creation date survives."
+    },
+    {
+      "id": "S4",
+      "start": 237,
+      "end": 323,
+      "text": "Explain that blank is not a value because empty cells could also mean unfinished work."
+    },
+    {
+      "id": "S5",
+      "start": 324,
+      "end": 413,
+      "text": "Required wording, verbatim: \"maker unknown\", \"date not recorded\", \"blank is not a value\"."
+    },
+    {
+      "id": "S6",
+      "start": 414,
+      "end": 468,
+      "text": "The audience is editors of an invented object catalog."
+    }
+  ],
+  "field_values": {
+    "audience": "The audience is editors of an invented object catalog.",
+    "tone": null,
+    "length": "Keep the complete piece to 55–85 words.",
+    "required_content": "Use this fictional material: The catalog uses maker unknown when attribution is missing and date not recorded when no creation date survives.\nExplain that blank is not a value because empty cells could also mean unfinished work.\nRequired wording, verbatim: \"maker unknown\", \"date not recorded\", \"blank is not a value\"."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 414,
+        "end": 468,
+        "quote": "The audience is editors of an invented object catalog."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 55,
+        "end": 94,
+        "quote": "Keep the complete piece to 55–85 words."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 95,
+        "end": 236,
+        "quote": "Use this fictional material: The catalog uses maker unknown when attribution is missing and date not recorded when no creation date survives."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 237,
+        "end": 323,
+        "quote": "Explain that blank is not a value because empty cells could also mean unfinished work."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 324,
+        "end": 413,
+        "quote": "Required wording, verbatim: \"maker unknown\", \"date not recorded\", \"blank is not a value\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S6\"],\"tone\":[],\"length\":[\"S2\"],\"required_content\":[\"S3\",\"S4\",\"S5\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S6"
+          ],
+          "tone": [],
+          "length": [
+            "S2"
+          ],
+          "required_content": [
+            "S3",
+            "S4",
+            "S5"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

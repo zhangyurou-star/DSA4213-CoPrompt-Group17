@@ -1,0 +1,209 @@
+{
+  "created_utc": "2026-10-19T13:37:32.171923+00:00",
+  "status": "offline_read_only_forecast_not_spending_authorization",
+  "scope": "Existing 80 plus 10 design, 10 validation, 20 test; total 40/20/60; 20 preselected diagnostic cases. Existing lambda is not presumed to remain selected.",
+  "authorized_total_usd": 0.1,
+  "accounted_spend_usd": 0.08857385,
+  "remaining_usd": 0.01142615,
+  "historical_all_attempts": 776,
+  "historical_all_successful": 770,
+  "historical_all_provider_reported_usd": 0.083752,
+  "historical_all_unknown_cost_reserve_usd": 0.00482185,
+  "model": "qwen/qwen3-30b-a3b-instruct-2507",
+  "provider_routing": {
+    "order": [
+      "nebius/fp8"
+    ],
+    "only": [
+      "nebius/fp8"
+    ],
+    "allow_fallbacks": false,
+    "require_parameters": true,
+    "max_price": {
+      "prompt": 0.11,
+      "completion": 0.35
+    }
+  },
+  "formal_observed": {
+    "validation": {
+      "api_attempts": 40,
+      "successful_calls": 40,
+      "accounted_usd": 0.0053171,
+      "provider_reported_usd": 0.0053171,
+      "unknown_cost_reserve_usd": 0
+    },
+    "test": {
+      "api_attempts": 210,
+      "successful_calls": 207,
+      "accounted_usd": 0.02935475,
+      "provider_reported_usd": 0.0260338,
+      "unknown_cost_reserve_usd": 0.00332095
+    }
+  },
+  "historical_per_case_cost_at_price_caps_including_unknown_failure_reserves": {
+    "validation": {
+      "CW": {
+        "n": 5,
+        "p25_usd": 0.00054413,
+        "mean_usd": 0.00057829,
+        "p90_usd": 0.00065621,
+        "max_usd": 0.00070269
+      },
+      "SP": {
+        "n": 5,
+        "p25_usd": 0.00044945,
+        "mean_usd": 0.00060985,
+        "p90_usd": 0.00080347,
+        "max_usd": 0.00084428
+      }
+    },
+    "test": {
+      "CW": {
+        "n": 20,
+        "p25_usd": 0.00051376,
+        "mean_usd": 0.00083417,
+        "p90_usd": 0.0015002,
+        "max_usd": 0.0027373
+      },
+      "SP": {
+        "n": 20,
+        "p25_usd": 0.00040496,
+        "mean_usd": 0.0007778,
+        "p90_usd": 0.00139239,
+        "max_usd": 0.00184969
+      }
+    }
+  },
+  "formal_stage_cost_statistics_at_price_caps": {
+    "extraction": {
+      "n": 50,
+      "mean_cost_at_caps_usd": 0.00015251,
+      "p90_cost_at_caps_usd": 0.00016726,
+      "mean_input_tokens": 1295.88,
+      "mean_output_tokens": 28.46
+    },
+    "generation": {
+      "n": 92,
+      "mean_cost_at_caps_usd": 0.00017181,
+      "p90_cost_at_caps_usd": 0.00022106,
+      "mean_input_tokens": 917.5652173913044,
+      "mean_output_tokens": 202.5
+    },
+    "constraint_repair": {
+      "n": 21,
+      "mean_cost_at_caps_usd": 0.00020407,
+      "p90_cost_at_caps_usd": 0.00021631,
+      "mean_input_tokens": 1370.1904761904761,
+      "mean_output_tokens": 152.42857142857142
+    },
+    "value_decision": {
+      "n": 47,
+      "mean_cost_at_caps_usd": 9.554e-05,
+      "p90_cost_at_caps_usd": 0.00010597,
+      "mean_input_tokens": 605.7234042553191,
+      "mean_output_tokens": 82.59574468085107
+    },
+    "prompt_decision": {
+      "n": 36,
+      "mean_cost_at_caps_usd": 6.308e-05,
+      "p90_cost_at_caps_usd": 6.876e-05,
+      "mean_input_tokens": 539.3055555555555,
+      "mean_output_tokens": 10.722222222222221
+    },
+    "format_repair": {
+      "n": 1,
+      "mean_cost_at_caps_usd": 0.00057873,
+      "p90_cost_at_caps_usd": 0.00057873,
+      "mean_input_tokens": 2003,
+      "mean_output_tokens": 1024
+    }
+  },
+  "scenarios": {
+    "low": {
+      "new_design_offline_checks_usd": 0,
+      "new_validation_10_three_lambda_usd": 0.0049679,
+      "new_test_20_four_policies_usd": 0.0091872,
+      "new_diagnostic_4_increment_usd": 0,
+      "old_test_threshold_change_stress_allowance_usd": 0,
+      "extra_unknown_failure_reserve_usd": 0,
+      "total_additional_accounted_usd": 0.0141551,
+      "projected_cumulative_accounted_usd": 0.10272895,
+      "gap_over_current_remaining_usd": 0.00272895,
+      "within_current_authorization_scenario_only": false
+    },
+    "middle": {
+      "new_design_offline_checks_usd": 0,
+      "new_validation_10_three_lambda_usd": 0.00653477,
+      "new_test_20_four_policies_usd": 0.01773167,
+      "new_diagnostic_4_increment_usd": 0.00090084,
+      "old_test_threshold_change_stress_allowance_usd": 0,
+      "extra_unknown_failure_reserve_usd": 0,
+      "total_additional_accounted_usd": 0.02516728,
+      "projected_cumulative_accounted_usd": 0.11374113,
+      "gap_over_current_remaining_usd": 0.01374113,
+      "within_current_authorization_scenario_only": false
+    },
+    "conservative": {
+      "new_design_offline_checks_usd": 0,
+      "new_validation_10_three_lambda_usd": 0.00875808,
+      "new_test_20_four_policies_usd": 0.03471108,
+      "new_diagnostic_4_increment_usd": 0.00311669,
+      "old_test_threshold_change_stress_allowance_usd": 0.04988392,
+      "extra_unknown_failure_reserve_usd": 0.00974,
+      "total_additional_accounted_usd": 0.10620976,
+      "projected_cumulative_accounted_usd": 0.19478361,
+      "gap_over_current_remaining_usd": 0.09478361,
+      "within_current_authorization_scenario_only": false
+    }
+  },
+  "optional_new_design_10_four_policy_api_checks_additional_usd": {
+    "low": 0.0045936,
+    "middle": 0.00886584,
+    "conservative": 0.01735554
+  },
+  "naive_observed_provider_rates_increment_usd": 0.01828983,
+  "forecast_basis_zh": [
+    "不查询价格、不联网、不读取凭据。未来请求必须遵守已固定每百万token输入0.11/输出0.35美元路由上限；历史实际费率0.10/0.30不保证继续有效。",
+    "完整20例验证应生成60条逻辑轨迹；其中原10例30条可以严格同请求首响应缓存重放。完整60例测试主比较240条，另20诊断。逻辑轨迹数不等于新增付费调用数。",
+    "低情景使用领域内历史单案例成本下四分位，假设λ不变、新增4诊断完全缓存命中；不是总费用置信下限，也不保证可达到。",
+    "中情景使用领域内均值加10%，旧测试λ保持0.5；新增4诊断各额外1次评分、0.5次生成，按实测约束修复率计修复。均值已含旧测试限流未知费用预留。",
+    "保守情景使用各领域单案例成本p90加20%，不是总费用p90或数学上界；增加λ变动引发全部旧40价值策略及16诊断分叉的压力额度，每条2次新评分+1生成+1约束修复，额外5%格式修复和3%未知费用失败预留。旧完整/立即执行案例通常不分叉，因此该压力情景有意保守。",
+    "诊断选择假设原16例保留并新增4例；若重选20例，应重新预测缓存命中与评审影响。",
+    "新增10设计例默认只做离线数据、模式、可行解与反例技术检查，方法不调参，因此API成本0。若也跑四策略API试跑，另加optional字段估计；它仅近似借用正式测试成本，不表示必须执行。",
+    "最简单历史实际成功调用均值外推、不加新设计和λ变动，已高于剩余0.01142615美元；当前授权不能保证完成120扩展。",
+    "所有预算都需在新增案例和20例验证结束后按实际分布/选中λ再估计。绝不重置已有累计账本、清除失败预留或把proposal的15美元视为现有支出授权。"
+  ],
+  "cache_reuse_boundary_zh": [
+    "可复用严格同阶段/修复标志/公开消息/模型设置/有效provider路由的第一原始响应，包括格式错误，不能挑优或重抽。",
+    "原80数据/提示/评分/模型参数保持不变时，旧验证及相同λ下旧测试应大量或完全缓存重放。",
+    "20验证重新选λ，若λ变化需重建旧40价值策略及20诊断轨迹；直接/穷尽/prompt-only不受λ影响，仍需新版本完整记录及重评分。",
+    "新案例公开消息不同，不能把语义相似当精确缓存命中；不得跨请求手工复用模型输出。",
+    "新版本冻结hash不同，不直接复制旧轨迹文件冒充新版本完成，应通过严格缓存重放生成新元数据和来源记录。"
+  ],
+  "credential_entrypoints_zh": [
+    "coprompt/formal.py支持--key-stdin通过getpass隐藏输入，或读取COPROMPT_API_KEY环境变量。",
+    "本次只核查入口代码，没有读取环境变量、文件或历史中的凭据，也没有网络/API调用。",
+    "若后续要提高累计上限，需要用户明确授权新累计美元上限；凭据仍由用户本机隐藏输入。"
+  ],
+  "required_next_authorization_zh": "当前累计0.10美元授权有效。本任务可离线准备、冻结、重放缓存；实际新增付费调用必须保持原总上限，或在用户明确授权提高总上限后执行。不要把本报告情景数字当授权。",
+  "source_sha256": {
+    "runs/authorized_pilot_budget.json": "96a3bff77c4d8cf0195d8b73a91f4249365f5960a25062d9280569b288bf932d",
+    "config/openrouter.v0.4.formal.json": "30adac9a6e74faab0f9a875bfc6a1cde974cd9cf35f00fc32d316aecb51cd405",
+    "runs/pilot_20261013T063312_111392Z_session.jsonl": "212feb2666bb57bfad549ac653b54cfc439c41985075f43bf9e974ef11bf463c",
+    "runs/pilot_20261013T063631_294704Z_session.jsonl": "dea3d1f67db420635819ea67b496298b35f47cd0b51920d9fa9e97facfe00adb",
+    "runs/pilot_20261013T063808_883314Z_session.jsonl": "b2102fc8c4942d293685b1564914cb665be46fac6ff3d7732d43ecc23ca0478c",
+    "runs/pilot_20261013T063855_619863Z_session.jsonl": "898cb39b24168d8a41bfc35ccda23f7ed9561b645db032a2e4352c1040c24839",
+    "runs/pilot_20261013T070711_779583Z_session.jsonl": "8483e4d26a86618628abb4877e8082980874df2c0f29a29d81bce063d569f8b5",
+    "runs/extraction_20261013T071538_667982Z_session.jsonl": "5e2dac36742fc091ccf8add2dc2add23ab7b98f19b8f5a33e940771a67d9a0cd",
+    "runs/extraction_20261013T071708_835506Z_session.jsonl": "c046eedbd3d4c8f9418ba072954d044927b3b3fe694278e98c6c283e9020a859",
+    "runs/extraction_20261013T071916_179228Z_session.jsonl": "b3da2a2ef0c82b328df5c53da54e221bb97a8d5a9eb8c0fa22585217510a81a7",
+    "runs/pilot_20261013T072618_852972Z_session.jsonl": "3204622966d81e8c6aa106320760d49113f7b37562ab4f8db90bd752e0b11f27",
+    "runs/pilot_20261013T074702_295938Z_session.jsonl": "aa6c3d73f4de453daea4e44b67afc6606c891e2e864a424b52fc369cc85cd421",
+    "runs/pilot_20261013T083509_615141Z_session.jsonl": "405300ba81b3591810a5951eeda586acc8f0dbf70bc27c67f5e407e162aa0800",
+    "runs/formal_validation_20261013T120435_638315Z_session.jsonl": "ad5a50edff840df93877c58ae072ea8222f55b2425d07fd31338adf7772bc479",
+    "runs/formal_test_20261013T121643_032151Z_session.jsonl": "80d08d88d073ca6ee3d03c226579a57a414d110a056ff97de791be2ea065233e",
+    "runs/formal_test_20261013T122804_443205Z_session.jsonl": "f349d83daff27287324074f54def069c0b51c830428321eba0b12c89add6c733",
+    "runs/formal_test_20261013T124214_693128Z_session.jsonl": "dc9d0c3b602ef2387ce9698217c0a98ec5d4f88008c22255c90291eb166f3ee1",
+    "runs/formal_test_20261013T125141_073721Z_session.jsonl": "674f97fd184918dadfcdbe71019bf599ba4e5878c22a7b1a789977494c1cb7aa"
+  }
+}

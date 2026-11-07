@@ -1,0 +1,164 @@
+{
+  "cache_key": "72e2e09e5231fe95bb7c33e6148f4563dd852e9aedf833d458643dc53195523f",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [
+      "S3"
+    ],
+    "length": [
+      "S4"
+    ],
+    "required_content": [
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 50,
+      "text": "Clarify a disputed move in a fictional board game."
+    },
+    {
+      "id": "S2",
+      "start": 51,
+      "end": 109,
+      "text": "The intended readers are players who know the basic rules."
+    },
+    {
+      "id": "S3",
+      "start": 110,
+      "end": 146,
+      "text": "Keep the tone patient and impartial."
+    },
+    {
+      "id": "S4",
+      "start": 147,
+      "end": 193,
+      "text": "The full text must be between 55 and 85 words."
+    },
+    {
+      "id": "S5",
+      "start": 194,
+      "end": 297,
+      "text": "Include the following invented details: In Amber Gate, a player spends one lantern to inspect a bridge."
+    },
+    {
+      "id": "S6",
+      "start": 298,
+      "end": 376,
+      "text": "Inspection reveals its symbol but does not open it: the bridge remains closed."
+    },
+    {
+      "id": "S7",
+      "start": 377,
+      "end": 408,
+      "text": "A separate key action opens it."
+    },
+    {
+      "id": "S8",
+      "start": 409,
+      "end": 496,
+      "text": "Preserve these exact phrases: \"Amber Gate\", \"one lantern\", \"the bridge remains closed\"."
+    }
+  ],
+  "field_values": {
+    "audience": "The intended readers are players who know the basic rules.",
+    "tone": "Keep the tone patient and impartial.",
+    "length": "The full text must be between 55 and 85 words.",
+    "required_content": "Include the following invented details: In Amber Gate, a player spends one lantern to inspect a bridge.\nInspection reveals its symbol but does not open it: the bridge remains closed.\nA separate key action opens it.\nPreserve these exact phrases: \"Amber Gate\", \"one lantern\", \"the bridge remains closed\"."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 51,
+        "end": 109,
+        "quote": "The intended readers are players who know the basic rules."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 110,
+        "end": 146,
+        "quote": "Keep the tone patient and impartial."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 147,
+        "end": 193,
+        "quote": "The full text must be between 55 and 85 words."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 194,
+        "end": 297,
+        "quote": "Include the following invented details: In Amber Gate, a player spends one lantern to inspect a bridge."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 298,
+        "end": 376,
+        "quote": "Inspection reveals its symbol but does not open it: the bridge remains closed."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 377,
+        "end": 408,
+        "quote": "A separate key action opens it."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 409,
+        "end": 496,
+        "quote": "Preserve these exact phrases: \"Amber Gate\", \"one lantern\", \"the bridge remains closed\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[\"S3\"],\"length\":[\"S4\"],\"required_content\":[\"S5\",\"S6\",\"S7\",\"S8\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [
+            "S3"
+          ],
+          "length": [
+            "S4"
+          ],
+          "required_content": [
+            "S5",
+            "S6",
+            "S7",
+            "S8"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

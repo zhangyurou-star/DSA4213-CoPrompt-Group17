@@ -1,0 +1,186 @@
+{
+  "cache_key": "10daffd1a0f7f78fba7c46d61fc67a8dd2ca9dbe9fca802eb2259f394dddca13",
+  "source_case_id": "NTSP08",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Webbing Tension",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Spring Lashing",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Fabric Cutting",
+        "minutes": 15
+      }
+    ],
+    "summary": "Calculated from the schedule: 45 minutes in total. Daily totals: 2027-02-01: 15 minutes; 2027-02-02: 15 minutes; 2027-02-03: 15 minutes. Topic totals: Fabric Cutting: 15 minutes; Spring Lashing: 15 minutes; Webbing Tension: 15 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Webbing Tension\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Spring Lashing\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Fabric Cutting\",\n      \"minutes\": 15\n    }\n  ],\n  \"summary\": \"A compact learning schedule covering all three required topics—Webbing Tension, Spring Lashing, and Fabric Cutting—with a minimum of 15 minutes each, spread across three available days from 2027-02-01 to 2027-02-03, well within the study window closing on 2027-02-05.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Webbing Tension",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Spring Lashing",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Fabric Cutting",
+            "minutes": 15
+          }
+        ],
+        "summary": "A compact learning schedule covering all three required topics—Webbing Tension, Spring Lashing, and Fabric Cutting—with a minimum of 15 minutes each, spread across three available days from 2027-02-01 to 2027-02-03, well within the study window closing on 2027-02-05."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-05; that date is still available."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 45,
+      "daily_minutes": {
+        "2027-02-01": 15,
+        "2027-02-02": 15,
+        "2027-02-03": 15
+      },
+      "topic_minutes": [
+        {
+          "topic": "Fabric Cutting",
+          "normalized_topic": "fabric cutting",
+          "minutes": 15
+        },
+        {
+          "topic": "Spring Lashing",
+          "normalized_topic": "spring lashing",
+          "minutes": 15
+        },
+        {
+          "topic": "Webbing Tension",
+          "normalized_topic": "webbing tension",
+          "minutes": 15
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-05; that date is still available."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 45,
+      "daily_minutes": {
+        "2027-02-01": 15,
+        "2027-02-02": 15,
+        "2027-02-03": 15
+      },
+      "topic_minutes": [
+        {
+          "topic": "Fabric Cutting",
+          "normalized_topic": "fabric cutting",
+          "minutes": 15
+        },
+        {
+          "topic": "Spring Lashing",
+          "normalized_topic": "spring lashing",
+          "minutes": 15
+        },
+        {
+          "topic": "Webbing Tension",
+          "normalized_topic": "webbing tension",
+          "minutes": 15
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-05; that date is still available."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "A compact learning schedule covering all three required topics—Webbing Tension, Spring Lashing, and Fabric Cutting—with a minimum of 15 minutes each, spread across three available days from 2027-02-01 to 2027-02-03, well within the study window closing on 2027-02-05.",
+    "derived_summary": "Calculated from the schedule: 45 minutes in total. Daily totals: 2027-02-01: 15 minutes; 2027-02-02: 15 minutes; 2027-02-03: 15 minutes. Topic totals: Fabric Cutting: 15 minutes; Spring Lashing: 15 minutes; Webbing Tension: 15 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "cache_key": "5fddf4580795dce5edac44b23214cdee11ae0045aa973a3171583c4517301a15",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [],
+    "length": [],
+    "required_content": [
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 55,
+      "text": "Explain a shelving exception in an invented collection."
+    },
+    {
+      "id": "S2",
+      "start": 56,
+      "end": 136,
+      "text": "The intended readers are volunteer catalogers in a fictional reading collection."
+    },
+    {
+      "id": "S3",
+      "start": 137,
+      "end": 292,
+      "text": "Include the following invented details: The Atlas of Knots belongs on the craft shelf despite its atlas title because all its pages teach tying techniques."
+    },
+    {
+      "id": "S4",
+      "start": 293,
+      "end": 367,
+      "text": "Add a shelf note under geography so title-based searches still lead to it."
+    },
+    {
+      "id": "S5",
+      "start": 368,
+      "end": 448,
+      "text": "Preserve these exact phrases: \"The Atlas of Knots\", \"craft shelf\", \"shelf note\"."
+    }
+  ],
+  "field_values": {
+    "audience": "The intended readers are volunteer catalogers in a fictional reading collection.",
+    "tone": null,
+    "length": null,
+    "required_content": "Include the following invented details: The Atlas of Knots belongs on the craft shelf despite its atlas title because all its pages teach tying techniques.\nAdd a shelf note under geography so title-based searches still lead to it.\nPreserve these exact phrases: \"The Atlas of Knots\", \"craft shelf\", \"shelf note\"."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 56,
+        "end": 136,
+        "quote": "The intended readers are volunteer catalogers in a fictional reading collection."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 137,
+        "end": 292,
+        "quote": "Include the following invented details: The Atlas of Knots belongs on the craft shelf despite its atlas title because all its pages teach tying techniques."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 293,
+        "end": 367,
+        "quote": "Add a shelf note under geography so title-based searches still lead to it."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 368,
+        "end": 448,
+        "quote": "Preserve these exact phrases: \"The Atlas of Knots\", \"craft shelf\", \"shelf note\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[],\"length\":[],\"required_content\":[\"S3\",\"S4\",\"S5\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [],
+          "length": [],
+          "required_content": [
+            "S3",
+            "S4",
+            "S5"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

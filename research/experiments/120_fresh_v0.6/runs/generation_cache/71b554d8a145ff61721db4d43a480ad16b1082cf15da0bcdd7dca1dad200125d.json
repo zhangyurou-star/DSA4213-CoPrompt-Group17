@@ -1,0 +1,89 @@
+{
+  "cache_key": "71b554d8a145ff61721db4d43a480ad16b1082cf15da0bcdd7dca1dad200125d",
+  "source_case_id": "NTCW29",
+  "source_policy": "direct",
+  "output": {
+    "text": "This is Lantern Frequency, where stories after sunset come alive. A small lamp flickers in the dark, not to guide the way, but to welcome you in. Let its quiet glow remind you that you’re not alone. Tonight’s tale begins now. Stay a little longer."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"This is Lantern Frequency, where stories after sunset come alive. A small lamp flickers in the dark, not to guide the way, but to welcome you in. Let its quiet glow remind you that you’re not alone. Tonight’s tale begins now. Stay a little longer.\"\n}",
+      "parsed": {
+        "text": "This is Lantern Frequency, where stories after sunset come alive. A small lamp flickers in the dark, not to guide the way, but to welcome you in. Let its quiet glow remind you that you’re not alone. Tonight’s tale begins now. Stay a little longer."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Lantern Frequency",
+            "stories after sunset",
+            "stay a little longer"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Include each of these exact strings: \"Lantern Frequency\", \"stories after sunset\", \"stay a little longer\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 45
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Lantern Frequency",
+            "stories after sunset",
+            "stay a little longer"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 45
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Lantern Frequency",
+            "stories after sunset",
+            "stay a little longer"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

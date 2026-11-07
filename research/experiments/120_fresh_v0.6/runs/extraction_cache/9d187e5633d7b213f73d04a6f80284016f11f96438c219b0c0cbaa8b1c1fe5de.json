@@ -1,0 +1,149 @@
+{
+  "cache_key": "9d187e5633d7b213f73d04a6f80284016f11f96438c219b0c0cbaa8b1c1fe5de",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [
+      "S6"
+    ],
+    "length": [
+      "S7"
+    ],
+    "required_content": [
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 59,
+      "text": "Write a quest-giver speech for an imaginary adventure game."
+    },
+    {
+      "id": "S2",
+      "start": 60,
+      "end": 107,
+      "text": "Write for players receiving the invented quest."
+    },
+    {
+      "id": "S3",
+      "start": 108,
+      "end": 246,
+      "text": "These invented details are required: The quest asks players to enter the Lantern Orchard and collect three silver seeds from fallen fruit."
+    },
+    {
+      "id": "S4",
+      "start": 247,
+      "end": 352,
+      "text": "The instruction is \"do not wake the giant\"; the quest giver needs the seeds to relight the village clock."
+    },
+    {
+      "id": "S5",
+      "start": 353,
+      "end": 459,
+      "text": "Include each of these exact strings: \"the Lantern Orchard\", \"three silver seeds\", \"do not wake the giant\"."
+    },
+    {
+      "id": "S6",
+      "start": 460,
+      "end": 498,
+      "text": "Make the voice urgent and adventurous."
+    },
+    {
+      "id": "S7",
+      "start": 499,
+      "end": 531,
+      "text": "Write 60 to 90 words altogether."
+    }
+  ],
+  "field_values": {
+    "audience": "Write for players receiving the invented quest.",
+    "tone": "Make the voice urgent and adventurous.",
+    "length": "Write 60 to 90 words altogether.",
+    "required_content": "These invented details are required: The quest asks players to enter the Lantern Orchard and collect three silver seeds from fallen fruit.\nThe instruction is \"do not wake the giant\"; the quest giver needs the seeds to relight the village clock.\nInclude each of these exact strings: \"the Lantern Orchard\", \"three silver seeds\", \"do not wake the giant\"."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 60,
+        "end": 107,
+        "quote": "Write for players receiving the invented quest."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 460,
+        "end": 498,
+        "quote": "Make the voice urgent and adventurous."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 499,
+        "end": 531,
+        "quote": "Write 60 to 90 words altogether."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 108,
+        "end": 246,
+        "quote": "These invented details are required: The quest asks players to enter the Lantern Orchard and collect three silver seeds from fallen fruit."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 247,
+        "end": 352,
+        "quote": "The instruction is \"do not wake the giant\"; the quest giver needs the seeds to relight the village clock."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 353,
+        "end": 459,
+        "quote": "Include each of these exact strings: \"the Lantern Orchard\", \"three silver seeds\", \"do not wake the giant\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[\"S6\"],\"length\":[\"S7\"],\"required_content\":[\"S3\",\"S4\",\"S5\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [
+            "S6"
+          ],
+          "length": [
+            "S7"
+          ],
+          "required_content": [
+            "S3",
+            "S4",
+            "S5"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

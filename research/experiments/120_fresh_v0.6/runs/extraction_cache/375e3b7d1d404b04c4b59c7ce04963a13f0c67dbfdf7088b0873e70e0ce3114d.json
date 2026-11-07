@@ -1,0 +1,149 @@
+{
+  "cache_key": "375e3b7d1d404b04c4b59c7ce04963a13f0c67dbfdf7088b0873e70e0ce3114d",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S1"
+    ],
+    "tone": [
+      "S2"
+    ],
+    "length": [
+      "S3"
+    ],
+    "required_content": [
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 66,
+      "text": "Draft instructions to accompany an invented paper-folding diagram."
+    },
+    {
+      "id": "S2",
+      "start": 67,
+      "end": 97,
+      "text": "Use a calm and explicit voice."
+    },
+    {
+      "id": "S3",
+      "start": 98,
+      "end": 130,
+      "text": "Write 50 to 80 words altogether."
+    },
+    {
+      "id": "S4",
+      "start": 131,
+      "end": 229,
+      "text": "Use this fictional material: The paper-folding step brings the marked corner to the center crease."
+    },
+    {
+      "id": "S5",
+      "start": 230,
+      "end": 338,
+      "text": "Press only the lower half of the fold and keep the flap loose so it can open into a pocket in the next step."
+    },
+    {
+      "id": "S6",
+      "start": 339,
+      "end": 423,
+      "text": "Required wording, verbatim: \"marked corner\", \"center crease\", \"keep the flap loose\"."
+    },
+    {
+      "id": "S7",
+      "start": 424,
+      "end": 499,
+      "text": "Go ahead immediately; use your judgment for any remaining stylistic choice."
+    }
+  ],
+  "field_values": {
+    "audience": "Draft instructions to accompany an invented paper-folding diagram.",
+    "tone": "Use a calm and explicit voice.",
+    "length": "Write 50 to 80 words altogether.",
+    "required_content": "Use this fictional material: The paper-folding step brings the marked corner to the center crease.\nPress only the lower half of the fold and keep the flap loose so it can open into a pocket in the next step.\nRequired wording, verbatim: \"marked corner\", \"center crease\", \"keep the flap loose\"."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S1",
+        "start": 0,
+        "end": 66,
+        "quote": "Draft instructions to accompany an invented paper-folding diagram."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 67,
+        "end": 97,
+        "quote": "Use a calm and explicit voice."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 98,
+        "end": 130,
+        "quote": "Write 50 to 80 words altogether."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 131,
+        "end": 229,
+        "quote": "Use this fictional material: The paper-folding step brings the marked corner to the center crease."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 230,
+        "end": 338,
+        "quote": "Press only the lower half of the fold and keep the flap loose so it can open into a pocket in the next step."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 339,
+        "end": 423,
+        "quote": "Required wording, verbatim: \"marked corner\", \"center crease\", \"keep the flap loose\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S1\"],\"tone\":[\"S2\"],\"length\":[\"S3\"],\"required_content\":[\"S4\",\"S5\",\"S6\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S1"
+          ],
+          "tone": [
+            "S2"
+          ],
+          "length": [
+            "S3"
+          ],
+          "required_content": [
+            "S4",
+            "S5",
+            "S6"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

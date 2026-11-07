@@ -1,0 +1,111 @@
+{
+  "cache_key": "31c9c2bb6743f477f76dead50a8795b9f0989eeccd393c720f7af9045904612d",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [],
+    "tone": [],
+    "length": [
+      "S2"
+    ],
+    "required_content": [
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 60,
+      "text": "Compose the citation on a fictional achievement certificate."
+    },
+    {
+      "id": "S2",
+      "start": 61,
+      "end": 100,
+      "text": "Keep the complete piece to 50–80 words."
+    },
+    {
+      "id": "S3",
+      "start": 101,
+      "end": 234,
+      "text": "Include the following invented details: The fictional certificate recognizes patient experimentation in developing the paper turbine."
+    },
+    {
+      "id": "S4",
+      "start": 235,
+      "end": 366,
+      "text": "Praise turning questions into trials and recording failed versions as carefully as successful ones; do not claim an external prize."
+    },
+    {
+      "id": "S5",
+      "start": 367,
+      "end": 477,
+      "text": "Preserve these exact phrases: \"patient experimentation\", \"the paper turbine\", \"turning questions into trials\"."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": null,
+    "length": "Keep the complete piece to 50–80 words.",
+    "required_content": "Include the following invented details: The fictional certificate recognizes patient experimentation in developing the paper turbine.\nPraise turning questions into trials and recording failed versions as carefully as successful ones; do not claim an external prize.\nPreserve these exact phrases: \"patient experimentation\", \"the paper turbine\", \"turning questions into trials\"."
+  },
+  "evidence": {
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 61,
+        "end": 100,
+        "quote": "Keep the complete piece to 50–80 words."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 101,
+        "end": 234,
+        "quote": "Include the following invented details: The fictional certificate recognizes patient experimentation in developing the paper turbine."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 235,
+        "end": 366,
+        "quote": "Praise turning questions into trials and recording failed versions as carefully as successful ones; do not claim an external prize."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 367,
+        "end": 477,
+        "quote": "Preserve these exact phrases: \"patient experimentation\", \"the paper turbine\", \"turning questions into trials\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[],\"tone\":[],\"length\":[\"S2\"],\"required_content\":[\"S3\",\"S4\",\"S5\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [],
+          "tone": [],
+          "length": [
+            "S2"
+          ],
+          "required_content": [
+            "S3",
+            "S4",
+            "S5"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

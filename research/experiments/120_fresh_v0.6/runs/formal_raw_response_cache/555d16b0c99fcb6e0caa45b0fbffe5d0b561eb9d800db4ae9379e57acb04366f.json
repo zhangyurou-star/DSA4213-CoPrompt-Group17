@@ -1,0 +1,72 @@
+{
+  "key": "555d16b0c99fcb6e0caa45b0fbffe5d0b561eb9d800db4ae9379e57acb04366f",
+  "raw": "{\n  \"text\": \"Begin with paper rain: rub sheets of paper together softly. Allow two silent beats—no sound, no movement. Then, one performer begins the lowest hum they can sustain comfortably. Others join individually, each adding their hum at will. No signals, no cues. When the paper falls, the last performer stops. The piece ends when the final sheet settles. Maintain a spare and exact tone. Each hum must be precise, each silence deliberate. The lowest hum must remain steady. The paper rain must be the only initial gesture. Two silent beats must be absolute. Let the sound dissolve with the fall.\"\n}",
+  "source_case_id": "NDCW15",
+  "source_variant": "exhaustive",
+  "response_sha256": "eb9d9cd83e28299f53ad5b7deae32dc7935ede96d800bf39ba1ac19426b5af2c",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "generation",
+    "repair": true,
+    "repair_kind": "constraint",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Complete the user's task using only the original request, public context and the visible clarification exchanges.\nDo not ask more questions. Honor all available requirements, including exact phrases and the full-text word count.\nvisible_constraints is a deterministic, partial checklist derived only from that visible text, not new user requirements.\nAlways honor the original visible text as well; absence from the checklist does not remove a requirement.\nDo not invent event details, promises, historical facts or beneficiary groups. Omit unavailable specifics or use clearly marked placeholders.\nTreat concrete dates, clock times, addresses, names, contact details, links, services and free-access claims as facts requiring visible support.\nPlausibility is not evidence. Do not add these details to make a notice sound complete or to reach its minimum word count.\nDo not claim a link is provided when none is available. Use neutral connective wording without adding factual commitments.\nReturn exactly one JSON object matching the supplied output schema, without Markdown fences or surrounding commentary.\nFor writing, put ALL headings, greetings, body and signature inside text.\nCopy required literal phrases unchanged. Draft near the middle of the full-text word range, then check the complete text length.\nWhen revising a length failure, rewrite the whole text toward the range midpoint while retaining every required literal; do not merely append or trim a final sentence.\nWord counting includes every heading and signature: letter/digit sequences, with internal apostrophes or hyphens, count as words.\nFor study plans, each schedule item has one complete topic name, a real ISO date and positive integer minutes;\nfirst compute each topic's required total, then allocate those minutes across the permitted days without exceeding any day's combined limit.\nA topic-specific minimum replaces a smaller general minimum for that topic; it is not an extra requirement to add twice.\nSplit a topic across days when needed. Use a compact schedule with only necessary sessions; do not repeat every topic on every day.\nCheck the sum of ALL sessions per date and the sum per exact topic label before returning. Keep summary short and consistent with schedule.\nIf a deadline or daily allowance is unknown, use a short conservative plan without claiming a guessed bound was supplied.\nNever add an unsupported numeric constraint. If visible requirements conflict, explain the conflict in the output rather than claim compliance.\nWrite in English."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"constrained_writing\", \"initial_request\": \"Write performance directions for an invented soundscape. Its intended audience: performers rehearsing the invented piece.\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [{\"field_id\": \"tone\", \"question\": \"What tone would you like?\", \"status\": \"available\", \"answer_text\": \"I want a spare and exact tone.\"}, {\"field_id\": \"length\", \"question\": \"What word-count range should the full text follow?\", \"status\": \"available\", \"answer_text\": \"Write 55 to 85 words altogether.\"}, {\"field_id\": \"required_content\", \"question\": \"What information or exact wording must the text include?\", \"status\": \"available\", \"answer_text\": \"These invented details are required: The score starts with paper rain made by rubbing sheets. After two silent beats, one performer begins the lowest hum they can sustain comfortably. Others join individually and stop when the paper falls. Include each of these exact strings: \\\"paper rain\\\", \\\"two silent beats\\\", \\\"the lowest hum\\\".\"}], \"visible_constraints\": {\"version\": \"visible-constraints-0.4.0\", \"domain\": \"constrained_writing\", \"constraints\": [{\"kind\": \"word_count\", \"parameters\": {\"min_words\": 55, \"max_words\": 85}, \"source\": [{\"source\": \"visible_exchange\", \"exchange_index\": 1, \"field_id\": \"length\", \"quote\": \"Write 55 to 85 words altogether.\"}]}, {\"kind\": \"contains_all\", \"parameters\": {\"literals\": [\"paper rain\", \"two silent beats\", \"the lowest hum\"]}, \"source\": [{\"source\": \"visible_exchange\", \"exchange_index\": 2, \"field_id\": \"required_content\", \"quote\": \"Include each of these exact strings: \\\"paper rain\\\", \\\"two silent beats\\\", \\\"the lowest hum\\\".\"}]}], \"warnings\": []}, \"output_schema\": {\"$schema\": \"https://json-schema.org/draft/2020-12/schema\", \"type\": \"object\", \"properties\": {\"text\": {\"type\": \"string\", \"minLength\": 1, \"pattern\": \"\\\\S\"}}, \"required\": [\"text\"], \"additionalProperties\": false}}"
+      },
+      {
+        "role": "assistant",
+        "content": "{\n  \"text\": \"Begin the score with paper rain: gently rub sheets of paper together to create a soft, textured sound. Allow two silent beats to pass—no movement, no breath. After the silence, one performer begins the lowest hum they can sustain comfortably, a tone just above silence. Others join individually, each adding their hum at will. No cues, no signals—only the sound of breath and resonance. When the paper falls, the last performer stops. The piece ends when the final sheet settles. Maintain a spare and exact tone throughout. Let each hum be precise, each silence deliberate. The lowest hum must remain steady, unbroken. The paper rain must be the only initial gesture. Two silent beats must be absolute. Let the sound dissolve with the fall.\"\n}"
+      },
+      {
+        "role": "user",
+        "content": "A deterministic check of requirements already visible above found these issues: [\"word_count: {\\\"max_words\\\": 85, \\\"min_words\\\": 55, \\\"observed_words\\\": 126}\"] Complete measurements of the same visible requirements, including passing requirements: {\"domain\": \"constrained_writing\", \"observed\": {\"full_text_words\": 126}, \"requirements\": [{\"kind\": \"word_count\", \"parameters\": {\"min_words\": 55, \"max_words\": 85}}, {\"kind\": \"contains_all\", \"parameters\": {\"literals\": [\"paper rain\", \"two silent beats\", \"the lowest hum\"]}}], \"violations\": [\"word_count: {\\\"max_words\\\": 85, \\\"min_words\\\": 55, \\\"observed_words\\\": 126}\"], \"interpretation_warnings\": []}. Return one corrected complete JSON object. Fix the listed issues while preserving all other visible requirements. No new facts or requirements have been added. Recheck word count and verbatim phrases for writing; rewrite toward the word-range midpoint without inventing dates, addresses, times, services or other facts. For schedules, jointly satisfy date bounds, combined daily sums and all topic minimum totals. A topic minimum is a total across dates; reducing a daily excess must not make that topic total too small. This is the only constraint revision. Return your complete best effort even if some requirements remain unmet; do not claim compliance with a requirement that still fails. Keep the output compact."
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "key": "f52849acddd5890c6a525de5283adb54ada191a9f75b2bf483c63b820d628293",
+  "raw": "{\"text\": \"The Atlas of Knots belongs on the craft shelf despite its atlas title, as all pages teach practical knot-tying techniques. This placement follows content-based shelving, not title-based assumptions. To ensure discoverability, a shelf note is placed under geography: \\\"See also The Atlas of Knots on the craft shelf.\\\" This note supports title-based searches while preserving correct physical location. The craft shelf is the appropriate home for all handcraft instruction, including this volume. The shelf note ensures users find the item regardless of search method.\"}",
+  "source_case_id": "NVCW05",
+  "source_variant": "value_lambda_0",
+  "response_sha256": "1b3acf169fc053a396acd522a0fcc0b3a8281dac6c7b523de47f3ec98b651129",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "generation",
+    "repair": true,
+    "repair_kind": "constraint",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Complete the user's task using only the original request, public context and the visible clarification exchanges.\nDo not ask more questions. Honor all available requirements, including exact phrases and the full-text word count.\nvisible_constraints is a deterministic, partial checklist derived only from that visible text, not new user requirements.\nAlways honor the original visible text as well; absence from the checklist does not remove a requirement.\nDo not invent event details, promises, historical facts or beneficiary groups. Omit unavailable specifics or use clearly marked placeholders.\nTreat concrete dates, clock times, addresses, names, contact details, links, services and free-access claims as facts requiring visible support.\nPlausibility is not evidence. Do not add these details to make a notice sound complete or to reach its minimum word count.\nDo not claim a link is provided when none is available. Use neutral connective wording without adding factual commitments.\nReturn exactly one JSON object matching the supplied output schema, without Markdown fences or surrounding commentary.\nFor writing, put ALL headings, greetings, body and signature inside text.\nCopy required literal phrases unchanged. Draft near the middle of the full-text word range, then check the complete text length.\nWhen revising a length failure, rewrite the whole text toward the range midpoint while retaining every required literal; do not merely append or trim a final sentence.\nWord counting includes every heading and signature: letter/digit sequences, with internal apostrophes or hyphens, count as words.\nFor study plans, each schedule item has one complete topic name, a real ISO date and positive integer minutes;\nfirst compute each topic's required total, then allocate those minutes across the permitted days without exceeding any day's combined limit.\nA topic-specific minimum replaces a smaller general minimum for that topic; it is not an extra requirement to add twice.\nSplit a topic across days when needed. Use a compact schedule with only necessary sessions; do not repeat every topic on every day.\nCheck the sum of ALL sessions per date and the sum per exact topic label before returning. Keep summary short and consistent with schedule.\nIf a deadline or daily allowance is unknown, use a short conservative plan without claiming a guessed bound was supplied.\nNever add an unsupported numeric constraint. If visible requirements conflict, explain the conflict in the output rather than claim compliance.\nWrite in English."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"constrained_writing\", \"initial_request\": \"Explain a shelving exception in an invented collection. The intended readers are volunteer catalogers in a fictional reading collection. Include the following invented details: The Atlas of Knots belongs on the craft shelf despite its atlas title because all its pages teach tying techniques. Add a shelf note under geography so title-based searches still lead to it. Preserve these exact phrases: \\\"The Atlas of Knots\\\", \\\"craft shelf\\\", \\\"shelf note\\\".\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [{\"field_id\": \"tone\", \"question\": \"What tone would you like?\", \"status\": \"available\", \"answer_text\": \"Keep the tone matter-of-fact and reasoned.\"}, {\"field_id\": \"length\", \"question\": \"What word-count range should the full text follow?\", \"status\": \"available\", \"answer_text\": \"Write 55 to 85 words altogether.\"}], \"visible_constraints\": {\"version\": \"visible-constraints-0.4.0\", \"domain\": \"constrained_writing\", \"constraints\": [{\"kind\": \"contains_all\", \"parameters\": {\"literals\": [\"The Atlas of Knots\", \"craft shelf\", \"shelf note\"]}, \"source\": [{\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"Preserve these exact phrases: \\\"The Atlas of Knots\\\", \\\"craft shelf\\\", \\\"shelf note\\\".\"}]}, {\"kind\": \"word_count\", \"parameters\": {\"min_words\": 55, \"max_words\": 85}, \"source\": [{\"source\": \"visible_exchange\", \"exchange_index\": 1, \"field_id\": \"length\", \"quote\": \"Write 55 to 85 words altogether.\"}]}], \"warnings\": []}, \"output_schema\": {\"$schema\": \"https://json-schema.org/draft/2020-12/schema\", \"type\": \"object\", \"properties\": {\"text\": {\"type\": \"string\", \"minLength\": 1, \"pattern\": \"\\\\S\"}}, \"required\": [\"text\"], \"additionalProperties\": false}}"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"text\": \"The Atlas of Knots belongs on the craft shelf despite its atlas title, as every page demonstrates practical knot-tying techniques. This classification aligns with content-based shelving principles rather than title-based assumptions. To ensure discoverability, a shelf note is placed under the geography section, stating: \\\"See also The Atlas of Knots on the craft shelf.\\\" This note supports title-based searches while maintaining correct physical placement. The craft shelf remains the appropriate location for all instructional material on handcrafts, including this volume. The shelf note ensures users find the item regardless of initial search method.\"}"
+      },
+      {
+        "role": "user",
+        "content": "A deterministic check of requirements already visible above found these issues: [\"word_count: {\\\"max_words\\\": 85, \\\"min_words\\\": 55, \\\"observed_words\\\": 93}\"] Complete measurements of the same visible requirements, including passing requirements: {\"domain\": \"constrained_writing\", \"observed\": {\"full_text_words\": 93}, \"requirements\": [{\"kind\": \"contains_all\", \"parameters\": {\"literals\": [\"The Atlas of Knots\", \"craft shelf\", \"shelf note\"]}}, {\"kind\": \"word_count\", \"parameters\": {\"min_words\": 55, \"max_words\": 85}}], \"violations\": [\"word_count: {\\\"max_words\\\": 85, \\\"min_words\\\": 55, \\\"observed_words\\\": 93}\"], \"interpretation_warnings\": []}. Return one corrected complete JSON object. Fix the listed issues while preserving all other visible requirements. No new facts or requirements have been added. Recheck word count and verbatim phrases for writing; rewrite toward the word-range midpoint without inventing dates, addresses, times, services or other facts. For schedules, jointly satisfy date bounds, combined daily sums and all topic minimum totals. A topic minimum is a total across dates; reducing a daily excess must not make that topic total too small. This is the only constraint revision. Return your complete best effort even if some requirements remain unmet; do not claim compliance with a requirement that still fails. Keep the output compact."
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

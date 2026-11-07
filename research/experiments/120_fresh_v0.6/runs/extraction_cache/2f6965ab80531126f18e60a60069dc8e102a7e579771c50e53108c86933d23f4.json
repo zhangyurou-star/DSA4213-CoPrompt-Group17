@@ -1,0 +1,61 @@
+{
+  "cache_key": "2f6965ab80531126f18e60a60069dc8e102a7e579771c50e53108c86933d23f4",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [],
+    "length": [],
+    "required_content": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 41,
+      "text": "Explain how to navigate an invented maze."
+    },
+    {
+      "id": "S2",
+      "start": 42,
+      "end": 102,
+      "text": "Aim the wording at players entering the invented Chalk Maze."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": null,
+    "length": null,
+    "required_content": null
+  },
+  "evidence": {},
+  "grounding_rejections": [
+    {
+      "field_id": "audience",
+      "proposed_evidence": [
+        "S2"
+      ],
+      "proposed_value": "Aim the wording at players entering the invented Chalk Maze.",
+      "reason": "quote_has_no_explicit_reader_relation_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[],\"length\":[],\"required_content\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [],
+          "length": [],
+          "required_content": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

@@ -1,0 +1,89 @@
+{
+  "cache_key": "f03b501055be70cb172a20b6a565f4bdb813daf91e74a374e258a7610e1206c1",
+  "source_case_id": "NTCW07",
+  "source_policy": "direct",
+  "output": {
+    "text": "Pronunciation Key for Orin\n\nWelcome to the Orin language. Speak clearly and confidently.\n\nThe word sela means welcome. It is pronounced SEH-lah.\n\nTo perform sela correctly: stress the first syllable, and keep both vowels clear.\n\nRemember: stress the first syllable.\n\nPractice this pronunciation until it feels natural. Use SEH-lah as your guide.\n\nsela is pronounced SEH-lah. Always stress the first syllable.\n\nYou are now ready to speak Orin with clarity and precision."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Pronunciation Key for Orin\\n\\nWelcome to the Orin language. Speak clearly and confidently.\\n\\nThe word sela means welcome. It is pronounced SEH-lah.\\n\\nTo perform sela correctly: stress the first syllable, and keep both vowels clear.\\n\\nRemember: stress the first syllable.\\n\\nPractice this pronunciation until it feels natural. Use SEH-lah as your guide.\\n\\nsela is pronounced SEH-lah. Always stress the first syllable.\\n\\nYou are now ready to speak Orin with clarity and precision.\"\n}",
+      "parsed": {
+        "text": "Pronunciation Key for Orin\n\nWelcome to the Orin language. Speak clearly and confidently.\n\nThe word sela means welcome. It is pronounced SEH-lah.\n\nTo perform sela correctly: stress the first syllable, and keep both vowels clear.\n\nRemember: stress the first syllable.\n\nPractice this pronunciation until it feels natural. Use SEH-lah as your guide.\n\nsela is pronounced SEH-lah. Always stress the first syllable.\n\nYou are now ready to speak Orin with clarity and precision."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "sela",
+            "SEH-lah",
+            "stress the first syllable"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Preserve these exact phrases: \"sela\", \"SEH-lah\", \"stress the first syllable\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 72
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "sela",
+            "SEH-lah",
+            "stress the first syllable"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 72
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "sela",
+            "SEH-lah",
+            "stress the first syllable"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

@@ -1,0 +1,89 @@
+{
+  "cache_key": "4ca8f051af0f1bdf1e6871a3d09b353c07fe8ea670699de0c7a4767a72c4f15c",
+  "source_case_id": "NDCW19",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "In the dream, a staircase of cups ascends into the locked sky, each delicate vessel trembling under the weight of unspoken words. It is an unfinished conversation, suspended between breaths—no closure, only the echo of what might have been said. The cups, fragile and translucent, reflect no light, yet they hold the promise of something beyond reach. This is not a structure built to last, but one born of longing: a fragile ambition, cupped in hands that never quite close. Each step is a hope deferred, each rise a silent plea. The locked sky offers no answer, only the quiet refusal to open. And still, the staircase climbs—because some conversations, like dreams, persist even when they cannot be completed."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"In the dream, a staircase of cups ascends into the locked sky, each delicate vessel trembling under the weight of unspoken words. It is an unfinished conversation, suspended between breaths—no closure, only the echo of what might have been said. The cups, fragile and translucent, reflect no light, yet they hold the promise of something beyond reach. This is not a structure built to last, but one born of longing: a fragile ambition, cupped in hands that never quite close. Each step is a hope deferred, each rise a silent plea. The locked sky offers no answer, only the quiet refusal to open. And still, the staircase climbs—because some conversations, like dreams, persist even when they cannot be completed.\"\n}",
+      "parsed": {
+        "text": "In the dream, a staircase of cups ascends into the locked sky, each delicate vessel trembling under the weight of unspoken words. It is an unfinished conversation, suspended between breaths—no closure, only the echo of what might have been said. The cups, fragile and translucent, reflect no light, yet they hold the promise of something beyond reach. This is not a structure built to last, but one born of longing: a fragile ambition, cupped in hands that never quite close. Each step is a hope deferred, each rise a silent plea. The locked sky offers no answer, only the quiet refusal to open. And still, the staircase climbs—because some conversations, like dreams, persist even when they cannot be completed."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "a staircase of cups",
+            "the locked sky",
+            "an unfinished conversation"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Include each of these exact strings: \"a staircase of cups\", \"the locked sky\", \"an unfinished conversation\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 121
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "a staircase of cups",
+            "the locked sky",
+            "an unfinished conversation"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 121
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "a staircase of cups",
+            "the locked sky",
+            "an unfinished conversation"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

@@ -1,0 +1,49 @@
+{
+  "cache_key": "dacd614eed2a81195083d324e750d2b4b19968e3f840858060fe32564044de78",
+  "source_case_id": "NTCW16",
+  "source_policy": "direct",
+  "output": {
+    "text": "I am the rook, standing tall at the edge of the board, where the game begins and ends in silence. I have watched the knight leap—graceful, unpredictable, a shadow that dances across the squares like a secret. I have envied that freedom, that ability to twist and turn, to skip over the others as if they were nothing. But today, I feel something new. I am the rook, and I am not bound by the need to be clever or sudden. I move in straight lines—forward, backward, left, right—unbroken, unyielding. And in that line, I find my strength. The edge of the board is not a limit; it is my foundation. I am the rook, and I am proud of my straight lines. I am the rook, and I am the edge of the board."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"I am the rook, standing tall at the edge of the board, where the game begins and ends in silence. I have watched the knight leap—graceful, unpredictable, a shadow that dances across the squares like a secret. I have envied that freedom, that ability to twist and turn, to skip over the others as if they were nothing. But today, I feel something new. I am the rook, and I am not bound by the need to be clever or sudden. I move in straight lines—forward, backward, left, right—unbroken, unyielding. And in that line, I find my strength. The edge of the board is not a limit; it is my foundation. I am the rook, and I am proud of my straight lines. I am the rook, and I am the edge of the board.\"\n}",
+      "parsed": {
+        "text": "I am the rook, standing tall at the edge of the board, where the game begins and ends in silence. I have watched the knight leap—graceful, unpredictable, a shadow that dances across the squares like a secret. I have envied that freedom, that ability to twist and turn, to skip over the others as if they were nothing. But today, I feel something new. I am the rook, and I am not bound by the need to be clever or sudden. I move in straight lines—forward, backward, left, right—unbroken, unyielding. And in that line, I find my strength. The edge of the board is not a limit; it is my foundation. I am the rook, and I am proud of my straight lines. I am the rook, and I am the edge of the board."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 138
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 138
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

@@ -1,0 +1,155 @@
+{
+  "cache_key": "ada731abf18aa30bd13441b4d2396b4641574c20b395f732b38f44894f795d25",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [
+      "S7"
+    ],
+    "length": [
+      "S8"
+    ],
+    "required_content": [
+      "S3",
+      "S5",
+      "S6"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 65,
+      "text": "Explain a terminology policy for a fictional translation project."
+    },
+    {
+      "id": "S2",
+      "start": 66,
+      "end": 142,
+      "text": "Its intended audience: translators working on the invented Riverglass story."
+    },
+    {
+      "id": "S3",
+      "start": 143,
+      "end": 261,
+      "text": "These invented details are required: The invented device name moonwell is fixed across languages: do not translate it."
+    },
+    {
+      "id": "S4",
+      "start": 262,
+      "end": 304,
+      "text": "Its ordinary description can be localized."
+    },
+    {
+      "id": "S5",
+      "start": 305,
+      "end": 381,
+      "text": "Any alternate spelling must be recorded in a glossary entry before drafting."
+    },
+    {
+      "id": "S6",
+      "start": 382,
+      "end": 468,
+      "text": "Include each of these exact strings: \"moonwell\", \"do not translate\", \"glossary entry\"."
+    },
+    {
+      "id": "S7",
+      "start": 469,
+      "end": 507,
+      "text": "Keep the tone editorial and practical."
+    },
+    {
+      "id": "S8",
+      "start": 508,
+      "end": 547,
+      "text": "Keep the complete piece to 55–85 words."
+    }
+  ],
+  "field_values": {
+    "audience": "Its intended audience: translators working on the invented Riverglass story.",
+    "tone": "Keep the tone editorial and practical.",
+    "length": "Keep the complete piece to 55–85 words.",
+    "required_content": "These invented details are required: The invented device name moonwell is fixed across languages: do not translate it.\nAny alternate spelling must be recorded in a glossary entry before drafting.\nInclude each of these exact strings: \"moonwell\", \"do not translate\", \"glossary entry\"."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 66,
+        "end": 142,
+        "quote": "Its intended audience: translators working on the invented Riverglass story."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 469,
+        "end": 507,
+        "quote": "Keep the tone editorial and practical."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 508,
+        "end": 547,
+        "quote": "Keep the complete piece to 55–85 words."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 143,
+        "end": 261,
+        "quote": "These invented details are required: The invented device name moonwell is fixed across languages: do not translate it."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 305,
+        "end": 381,
+        "quote": "Any alternate spelling must be recorded in a glossary entry before drafting."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 382,
+        "end": 468,
+        "quote": "Include each of these exact strings: \"moonwell\", \"do not translate\", \"glossary entry\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[\"S7\"],\"length\":[\"S8\"],\"required_content\":[\"S3\",\"S5\",\"S6\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [
+            "S7"
+          ],
+          "length": [
+            "S8"
+          ],
+          "required_content": [
+            "S3",
+            "S5",
+            "S6"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

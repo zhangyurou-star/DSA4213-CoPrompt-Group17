@@ -1,0 +1,72 @@
+{
+  "key": "616674ebbaea9126257683d87f7cc853fd9268f115fd690e4ae8ae98db25cdd4",
+  "raw": "{\"text\": \"Welcome to Orin. For actors, clarity is key. The word sela means welcome and is pronounced SEH-lah. Always stress the first syllable. Keep both vowels clear—SEH (strong) and lah (soft). This is a fictional pronunciation convention for performance. Practice slowly: SEH-lah, stress the first syllable. Use this consistently. sela, SEH-lah, stress the first syllable. Let each word land with intention. Your delivery shapes the world. Speak with precision. sela, SEH-lah, stress the first syllable.\"}",
+  "source_case_id": "NTCW07",
+  "source_variant": "exhaustive",
+  "response_sha256": "3272f4bdfcb54cddb89388b31f8122513b8a720d43b861eee9369905e41eb420",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "generation",
+    "repair": true,
+    "repair_kind": "constraint",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Complete the user's task using only the original request, public context and the visible clarification exchanges.\nDo not ask more questions. Honor all available requirements, including exact phrases and the full-text word count.\nvisible_constraints is a deterministic, partial checklist derived only from that visible text, not new user requirements.\nAlways honor the original visible text as well; absence from the checklist does not remove a requirement.\nDo not invent event details, promises, historical facts or beneficiary groups. Omit unavailable specifics or use clearly marked placeholders.\nTreat concrete dates, clock times, addresses, names, contact details, links, services and free-access claims as facts requiring visible support.\nPlausibility is not evidence. Do not add these details to make a notice sound complete or to reach its minimum word count.\nDo not claim a link is provided when none is available. Use neutral connective wording without adding factual commitments.\nReturn exactly one JSON object matching the supplied output schema, without Markdown fences or surrounding commentary.\nFor writing, put ALL headings, greetings, body and signature inside text.\nCopy required literal phrases unchanged. Draft near the middle of the full-text word range, then check the complete text length.\nWhen revising a length failure, rewrite the whole text toward the range midpoint while retaining every required literal; do not merely append or trim a final sentence.\nWord counting includes every heading and signature: letter/digit sequences, with internal apostrophes or hyphens, count as words.\nFor study plans, each schedule item has one complete topic name, a real ISO date and positive integer minutes;\nfirst compute each topic's required total, then allocate those minutes across the permitted days without exceeding any day's combined limit.\nA topic-specific minimum replaces a smaller general minimum for that topic; it is not an extra requirement to add twice.\nSplit a topic across days when needed. Use a compact schedule with only necessary sessions; do not repeat every topic on every day.\nCheck the sum of ALL sessions per date and the sum per exact topic label before returning. Keep summary short and consistent with schedule.\nIf a deadline or daily allowance is unknown, use a short conservative plan without claiming a guessed bound was supplied.\nNever add an unsupported numeric constraint. If visible requirements conflict, explain the conflict in the output rather than claim compliance.\nWrite in English."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"constrained_writing\", \"initial_request\": \"Provide a pronunciation key for an invented language. Aim the wording at actors speaking the invented language Orin. Keep the tone instructive and uncluttered. Include the following invented details: The invented word sela means welcome and is pronounced SEH-lah. Instruct actors to stress the first syllable and keep both vowels clear. It is a fictional pronunciation convention, not a claim about a real language. Preserve these exact phrases: \\\"sela\\\", \\\"SEH-lah\\\", \\\"stress the first syllable\\\".\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [{\"field_id\": \"audience\", \"question\": \"Who is the intended audience?\", \"status\": \"available\", \"answer_text\": \"Aim the wording at actors speaking the invented language Orin.\"}, {\"field_id\": \"length\", \"question\": \"What word-count range should the full text follow?\", \"status\": \"available\", \"answer_text\": \"Keep the complete piece to 50–80 words.\"}], \"visible_constraints\": {\"version\": \"visible-constraints-0.4.0\", \"domain\": \"constrained_writing\", \"constraints\": [{\"kind\": \"contains_all\", \"parameters\": {\"literals\": [\"sela\", \"SEH-lah\", \"stress the first syllable\"]}, \"source\": [{\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"Preserve these exact phrases: \\\"sela\\\", \\\"SEH-lah\\\", \\\"stress the first syllable\\\".\"}]}, {\"kind\": \"word_count\", \"parameters\": {\"min_words\": 50, \"max_words\": 80}, \"source\": [{\"source\": \"visible_exchange\", \"exchange_index\": 1, \"field_id\": \"length\", \"quote\": \"Keep the complete piece to 50–80 words.\"}]}], \"warnings\": []}, \"output_schema\": {\"$schema\": \"https://json-schema.org/draft/2020-12/schema\", \"type\": \"object\", \"properties\": {\"text\": {\"type\": \"string\", \"minLength\": 1, \"pattern\": \"\\\\S\"}}, \"required\": [\"text\"], \"additionalProperties\": false}}"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"text\": \"Welcome to Orin, the language of the realm. For actors, clarity and precision are essential. The word sela means welcome and is pronounced SEH-lah. Always stress the first syllable. Keep both vowels clear and distinct—do not blend or mute them. Practice the syllables slowly: SEH (strong, bright) and lah (soft, open). This pronunciation convention is fictional and created for performance. Remember: sela, SEH-lah, stress the first syllable. Use this rule consistently across all dialogue. Let the rhythm of Orin emerge through deliberate articulation. Your delivery shapes the world. Speak with intention. sela, SEH-lah, stress the first syllable.\"}"
+      },
+      {
+        "role": "user",
+        "content": "A deterministic check of requirements already visible above found these issues: [\"word_count: {\\\"max_words\\\": 80, \\\"min_words\\\": 50, \\\"observed_words\\\": 98}\"] Complete measurements of the same visible requirements, including passing requirements: {\"domain\": \"constrained_writing\", \"observed\": {\"full_text_words\": 98}, \"requirements\": [{\"kind\": \"contains_all\", \"parameters\": {\"literals\": [\"sela\", \"SEH-lah\", \"stress the first syllable\"]}}, {\"kind\": \"word_count\", \"parameters\": {\"min_words\": 50, \"max_words\": 80}}], \"violations\": [\"word_count: {\\\"max_words\\\": 80, \\\"min_words\\\": 50, \\\"observed_words\\\": 98}\"], \"interpretation_warnings\": []}. Return one corrected complete JSON object. Fix the listed issues while preserving all other visible requirements. No new facts or requirements have been added. Recheck word count and verbatim phrases for writing; rewrite toward the word-range midpoint without inventing dates, addresses, times, services or other facts. For schedules, jointly satisfy date bounds, combined daily sums and all topic minimum totals. A topic minimum is a total across dates; reducing a daily excess must not make that topic total too small. This is the only constraint revision. Return your complete best effort even if some requirements remain unmet; do not claim compliance with a requirement that still fails. Keep the output compact."
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

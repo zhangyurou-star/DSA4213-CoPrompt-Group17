@@ -1,0 +1,230 @@
+{
+  "cache_key": "337275fdd51e59d17218432f01d06fd9a36ab1e7256ac228bcf8825b60e303b9",
+  "source_case_id": "NTSP18",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Introduction to Cheese Affinage Terminology",
+        "minutes": 45
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Key Terms: Aging, Ripening, and Maturation",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Microbial Influences on Cheese Development",
+        "minutes": 40
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Environmental Factors: Humidity, Temperature, and Airflow",
+        "minutes": 35
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Practical Vocabulary: Rind Formation, Cracks, and Flavor Development",
+        "minutes": 30
+      }
+    ],
+    "summary": "Calculated from the schedule: 180 minutes in total. Daily totals: 2027-02-01: 45 minutes; 2027-02-02: 30 minutes; 2027-02-03: 40 minutes; 2027-02-04: 35 minutes; 2027-02-05: 30 minutes. Topic totals: Environmental Factors: Humidity, Temperature, and Airflow: 35 minutes; Introduction to Cheese Affinage Terminology: 45 minutes; Key Terms: Aging, Ripening, and Maturation: 30 minutes; Microbial Influences on Cheese Development: 40 minutes; Practical Vocabulary: Rind Formation, Cracks, and Flavor Development: 30 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Introduction to Cheese Affinage Terminology\",\n      \"minutes\": 45\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Key Terms: Aging, Ripening, and Maturation\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Microbial Influences on Cheese Development\",\n      \"minutes\": 40\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Environmental Factors: Humidity, Temperature, and Airflow\",\n      \"minutes\": 35\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Practical Vocabulary: Rind Formation, Cracks, and Flavor Development\",\n      \"minutes\": 30\n    }\n  ],\n  \"summary\": \"A compact reading schedule covering essential cheese-affinage vocabulary from 2027-02-01 to 2027-02-05, with daily sessions totaling 180 minutes. All study is completed by the final allowed date, 2027-02-05.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Introduction to Cheese Affinage Terminology",
+            "minutes": 45
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Key Terms: Aging, Ripening, and Maturation",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Microbial Influences on Cheese Development",
+            "minutes": 40
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Environmental Factors: Humidity, Temperature, and Airflow",
+            "minutes": 35
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Practical Vocabulary: Rind Formation, Cracks, and Flavor Development",
+            "minutes": 30
+          }
+        ],
+        "summary": "A compact reading schedule covering essential cheese-affinage vocabulary from 2027-02-01 to 2027-02-05, with daily sessions totaling 180 minutes. All study is completed by the final allowed date, 2027-02-05."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-05, but no study should be scheduled after it."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 180,
+      "daily_minutes": {
+        "2027-02-01": 45,
+        "2027-02-02": 30,
+        "2027-02-03": 40,
+        "2027-02-04": 35,
+        "2027-02-05": 30
+      },
+      "topic_minutes": [
+        {
+          "topic": "Environmental Factors: Humidity, Temperature, and Airflow",
+          "normalized_topic": "environmental factors: humidity, temperature, and airflow",
+          "minutes": 35
+        },
+        {
+          "topic": "Introduction to Cheese Affinage Terminology",
+          "normalized_topic": "introduction to cheese affinage terminology",
+          "minutes": 45
+        },
+        {
+          "topic": "Key Terms: Aging, Ripening, and Maturation",
+          "normalized_topic": "key terms: aging, ripening, and maturation",
+          "minutes": 30
+        },
+        {
+          "topic": "Microbial Influences on Cheese Development",
+          "normalized_topic": "microbial influences on cheese development",
+          "minutes": 40
+        },
+        {
+          "topic": "Practical Vocabulary: Rind Formation, Cracks, and Flavor Development",
+          "normalized_topic": "practical vocabulary: rind formation, cracks, and flavor development",
+          "minutes": 30
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-05, but no study should be scheduled after it."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 180,
+      "daily_minutes": {
+        "2027-02-01": 45,
+        "2027-02-02": 30,
+        "2027-02-03": 40,
+        "2027-02-04": 35,
+        "2027-02-05": 30
+      },
+      "topic_minutes": [
+        {
+          "topic": "Environmental Factors: Humidity, Temperature, and Airflow",
+          "normalized_topic": "environmental factors: humidity, temperature, and airflow",
+          "minutes": 35
+        },
+        {
+          "topic": "Introduction to Cheese Affinage Terminology",
+          "normalized_topic": "introduction to cheese affinage terminology",
+          "minutes": 45
+        },
+        {
+          "topic": "Key Terms: Aging, Ripening, and Maturation",
+          "normalized_topic": "key terms: aging, ripening, and maturation",
+          "minutes": 30
+        },
+        {
+          "topic": "Microbial Influences on Cheese Development",
+          "normalized_topic": "microbial influences on cheese development",
+          "minutes": 40
+        },
+        {
+          "topic": "Practical Vocabulary: Rind Formation, Cracks, and Flavor Development",
+          "normalized_topic": "practical vocabulary: rind formation, cracks, and flavor development",
+          "minutes": 30
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-05, but no study should be scheduled after it."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "A compact reading schedule covering essential cheese-affinage vocabulary from 2027-02-01 to 2027-02-05, with daily sessions totaling 180 minutes. All study is completed by the final allowed date, 2027-02-05.",
+    "derived_summary": "Calculated from the schedule: 180 minutes in total. Daily totals: 2027-02-01: 45 minutes; 2027-02-02: 30 minutes; 2027-02-03: 40 minutes; 2027-02-04: 35 minutes; 2027-02-05: 30 minutes. Topic totals: Environmental Factors: Humidity, Temperature, and Airflow: 35 minutes; Introduction to Cheese Affinage Terminology: 45 minutes; Key Terms: Aging, Ripening, and Maturation: 30 minutes; Microbial Influences on Cheese Development: 40 minutes; Practical Vocabulary: Rind Formation, Cracks, and Flavor Development: 30 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

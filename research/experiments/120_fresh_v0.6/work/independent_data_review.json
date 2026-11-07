@@ -1,0 +1,49 @@
+{
+  "reviewed_utc": "2026-10-19T14:56:29.916134+00:00",
+  "review_type": "Independent case review plus coordinator resolution, not human assessment",
+  "scope": {
+    "all_cases": 120,
+    "hard_constraints": 334,
+    "all_writing_tasks_read": 60,
+    "authored_witnesses_rescored": 120
+  },
+  "checks": {
+    "hard_source_consistent": true,
+    "execute_now_cases": 12,
+    "execute_now_with_hidden_hard_constraints": 0,
+    "unavailable_fields_checked": 19,
+    "unavailable_fields_scored_as_hard": 0,
+    "hard_witnesses_scored_full_pass": 120,
+    "planning_hard_priority_constraints": 14
+  },
+  "issues_and_resolution": [
+    {
+      "case": "NTCW25",
+      "issue": "Explicit suspenseful tone adjective despite tone unanswered/declined.",
+      "resolution": "Remove explicit adjective from public task sentence; retain original registered family plan and record correction."
+    },
+    {
+      "cases": [
+        "NDSP20",
+        "NTSP30"
+      ],
+      "issue": "Identical normalized planning hard contract/field states/control after renaming topics.",
+      "resolution": "Change NTSP30 public window/cap/topic minimum before outputs. Re-audit all60 normalized contracts:60 distinct. Same split/family/omission category retained."
+    },
+    {
+      "cases": [
+        "NTCW05",
+        "NTCW09"
+      ],
+      "issue": "Two grammar defects.",
+      "resolution": "Fix wording only, preserving requirements and exact required literals."
+    }
+  ],
+  "corrections": "work/data_corrections_before_freeze.json",
+  "newness_comparison": "Coordinator compared new requests against all prior80+discarded40 authored requests, not their model outputs. Independent reviewer examined that report but did not rerun historical comparison.",
+  "limitations": [
+    "Shared planning and writing constraint templates remain across splits.",
+    "Different family IDs and no exact normalized duplicate do not prove statistical independence or unseen-template generalization.",
+    "Checks do not complete two-person human review or establish full content quality of a witness or future model result."
+  ]
+}

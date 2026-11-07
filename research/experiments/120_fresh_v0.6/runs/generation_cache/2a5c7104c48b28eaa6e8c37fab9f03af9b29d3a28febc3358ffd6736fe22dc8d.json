@@ -1,0 +1,122 @@
+{
+  "cache_key": "2a5c7104c48b28eaa6e8c37fab9f03af9b29d3a28febc3358ffd6736fe22dc8d",
+  "source_case_id": "NDCW16",
+  "source_policy": "direct",
+  "output": {
+    "text": "Dear Future Me,\n\nIf you’re reading this on February 1, 2037, I hope you’ve kept making room—both for what’s left undone and for what’s yet to begin. I still remember the quiet frustration of setting down tools beside the unfinished bench, wondering if I’d ever return. But I made one small promise: to come back, even if just to sand a single edge. That small promise became a thread pulling me forward. Don’t abandon your projects, even when they seem too big. Keep making room for growth, for repair, for the quiet joy of finishing something useful. The bench may still wait—but so do you. Keep making room."
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"Dear Future Me,\\n\\nIf you're reading this on February 1, 2037, I hope you’ve kept making room—both for what’s left undone and for what’s yet to begin. I still remember the quiet frustration of setting down tools beside the unfinished bench, wondering if I’d ever return. But I made one small promise: to come back, even if just to sand a single edge. That small promise became a thread pulling me forward. Don’t abandon your projects, even when they seem too big. Keep making room for growth, for repair, for the quiet joy of finishing something useful. The bench may still wait—but so do you. Keep making room.\"}",
+      "parsed": {
+        "text": "Dear Future Me,\n\nIf you're reading this on February 1, 2037, I hope you’ve kept making room—both for what’s left undone and for what’s yet to begin. I still remember the quiet frustration of setting down tools beside the unfinished bench, wondering if I’d ever return. But I made one small promise: to come back, even if just to sand a single edge. That small promise became a thread pulling me forward. Don’t abandon your projects, even when they seem too big. Keep making room for growth, for repair, for the quiet joy of finishing something useful. The bench may still wait—but so do you. Keep making room."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "The full text must be between 60 and 90 words."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"the unfinished bench\", \"one small promise\", \"keep making room\"."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 110}"
+  ],
+  "constraint_checks_final": [
+    "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 110}"
+  ],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\"text\": \"Dear Future Me,\\n\\nIf you’re reading this on February 1, 2037, I hope you’ve kept making room—both for what’s left undone and for what’s yet to begin. I still remember the quiet frustration of setting down tools beside the unfinished bench, wondering if I’d ever return. But I made one small promise: to come back, even if just to sand a single edge. That small promise became a thread pulling me forward. Don’t abandon your projects, even when they seem too big. Keep making room for growth, for repair, for the quiet joy of finishing something useful. The bench may still wait—but so do you. Keep making room.\"}",
+    "parsed": {
+      "text": "Dear Future Me,\n\nIf you’re reading this on February 1, 2037, I hope you’ve kept making room—both for what’s left undone and for what’s yet to begin. I still remember the quiet frustration of setting down tools beside the unfinished bench, wondering if I’d ever return. But I made one small promise: to come back, even if just to sand a single edge. That small promise became a thread pulling me forward. Don’t abandon your projects, even when they seem too big. Keep making room for growth, for repair, for the quiet joy of finishing something useful. The bench may still wait—but so do you. Keep making room."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 110
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 110}"
+    ],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"the unfinished bench\", \"one small promise\", \"keep making room\"."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 110
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 110}"
+    ],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"the unfinished bench\", \"one small promise\", \"keep making room\"."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

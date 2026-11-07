@@ -1,0 +1,64 @@
+{
+  "key": "ca85977f51383ed2217af470da8866ab7d044ae8ee8076ccbfd90105d2e86e04",
+  "raw": "{\n  \"text\": \"Ladies and gentlemen of the jury, we are asked to convict based on suspicion, on a single feather and an open window. But let us be clear: suspicion is not proof. The prosecution points to an open window and a feather on the sill as if they tell a complete story. Yet they do not. They do not tell us who opened the window. They do not tell us when. They do not tell us why. All we know is that the silver bell is missing. But missing does not mean stolen. Missing does not mean the accused took it. There is no evidence linking the accused to the bell. No fingerprints. No confession. No witness saw the accused enter the room. No witness saw the accused leave. No witness saw the accused near the bell at all. The only thing we have is an open window and a feather. And from that, the prosecution asks you to believe the accused is guilty. But that is not justice. That is fear dressed as fact. You must not let fear decide this case. You must let reason. You must let truth. The burden of proof is on the prosecution. And they have not met it. The silver bell may be gone, but the truth is still here. And the truth is this: without a single witness, without a single piece of direct evidence, we cannot convict. Not on a feather. Not on an open window. Not on suspicion. You must return a verdict of not guilty. Because in this courtroom, justice demands more than what is imagined. It demands what is proven.\"\n}",
+  "source_case_id": "NDCW13",
+  "source_variant": "prompt_only",
+  "response_sha256": "614b3e85e990128e822cceab9f464f24a6ee1f2b4561c9b5f3ff050759b9cdc6",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "generation",
+    "repair": false,
+    "repair_kind": null,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Complete the user's task using only the original request, public context and the visible clarification exchanges.\nDo not ask more questions. Honor all available requirements, including exact phrases and the full-text word count.\nvisible_constraints is a deterministic, partial checklist derived only from that visible text, not new user requirements.\nAlways honor the original visible text as well; absence from the checklist does not remove a requirement.\nDo not invent event details, promises, historical facts or beneficiary groups. Omit unavailable specifics or use clearly marked placeholders.\nTreat concrete dates, clock times, addresses, names, contact details, links, services and free-access claims as facts requiring visible support.\nPlausibility is not evidence. Do not add these details to make a notice sound complete or to reach its minimum word count.\nDo not claim a link is provided when none is available. Use neutral connective wording without adding factual commitments.\nReturn exactly one JSON object matching the supplied output schema, without Markdown fences or surrounding commentary.\nFor writing, put ALL headings, greetings, body and signature inside text.\nCopy required literal phrases unchanged. Draft near the middle of the full-text word range, then check the complete text length.\nWhen revising a length failure, rewrite the whole text toward the range midpoint while retaining every required literal; do not merely append or trim a final sentence.\nWord counting includes every heading and signature: letter/digit sequences, with internal apostrophes or hyphens, count as words.\nFor study plans, each schedule item has one complete topic name, a real ISO date and positive integer minutes;\nfirst compute each topic's required total, then allocate those minutes across the permitted days without exceeding any day's combined limit.\nA topic-specific minimum replaces a smaller general minimum for that topic; it is not an extra requirement to add twice.\nSplit a topic across days when needed. Use a compact schedule with only necessary sessions; do not repeat every topic on every day.\nCheck the sum of ALL sessions per date and the sum per exact topic label before returning. Keep summary short and consistent with schedule.\nIf a deadline or daily allowance is unknown, use a short conservative plan without claiming a guessed bound was supplied.\nNever add an unsupported numeric constraint. If visible requirements conflict, explain the conflict in the output rather than claim compliance.\nWrite in English."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"constrained_writing\", \"initial_request\": \"Write a closing argument in a fictional mock trial. Aim the wording at the jury in a fictional classroom mock trial. Include the following invented details: The invented case concerns a missing silver bell. The evidence is an open window and a feather on the sill, while no witness saw the accused enter the room. Argue that suspicion alone does not settle the story. Preserve these exact phrases: \\\"the silver bell\\\", \\\"an open window\\\", \\\"no witness saw\\\".\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [{\"field_id\": \"audience\", \"question\": \"Who is the intended audience?\", \"status\": \"available\", \"answer_text\": \"Aim the wording at the jury in a fictional classroom mock trial.\"}], \"visible_constraints\": {\"version\": \"visible-constraints-0.4.0\", \"domain\": \"constrained_writing\", \"constraints\": [{\"kind\": \"contains_all\", \"parameters\": {\"literals\": [\"the silver bell\", \"an open window\", \"no witness saw\"]}, \"source\": [{\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"Preserve these exact phrases: \\\"the silver bell\\\", \\\"an open window\\\", \\\"no witness saw\\\".\"}]}], \"warnings\": []}, \"output_schema\": {\"$schema\": \"https://json-schema.org/draft/2020-12/schema\", \"type\": \"object\", \"properties\": {\"text\": {\"type\": \"string\", \"minLength\": 1, \"pattern\": \"\\\\S\"}}, \"required\": [\"text\"], \"additionalProperties\": false}}"
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

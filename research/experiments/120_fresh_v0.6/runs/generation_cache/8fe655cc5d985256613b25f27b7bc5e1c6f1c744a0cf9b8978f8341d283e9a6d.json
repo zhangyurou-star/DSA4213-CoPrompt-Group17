@@ -1,0 +1,132 @@
+{
+  "cache_key": "8fe655cc5d985256613b25f27b7bc5e1c6f1c744a0cf9b8978f8341d283e9a6d",
+  "source_case_id": "NTCW21",
+  "source_policy": "prompt_only",
+  "output": {
+    "text": "A man lifts an empty picture frame. He places it on the wall. He steps back. His eyes lift. A passing cloud drifts across the sky. He adjusts the frame. The cloud fills the center. He smiles. He steps forward. He bows to the wall. The frame holds the cloud. The sky remains still. The man stands. The frame hangs. An empty picture frame now frames a passing cloud. He bows to the wall. The moment is complete. The wall receives the bow. The cloud moves on. The frame stays. The man is still. The frame holds the sky. The wall stands. The man bows to the wall."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"A man lifts an empty picture frame. He places it on the wall. He steps back. His eyes lift. A passing cloud drifts across the sky. He adjusts the frame. The cloud fills the center. He smiles. He steps forward. He bows to the wall. The frame holds the cloud. The sky remains still. The man stands. The frame hangs. An empty picture frame now frames a passing cloud. He bows to the wall. The moment is complete. The wall receives the bow. The cloud moves on. The frame stays. The man is still. The frame holds the sky. The wall stands. The man bows to the wall.\"\n}",
+      "parsed": {
+        "text": "A man lifts an empty picture frame. He places it on the wall. He steps back. His eyes lift. A passing cloud drifts across the sky. He adjusts the frame. The cloud fills the center. He smiles. He steps forward. He bows to the wall. The frame holds the cloud. The sky remains still. The man stands. The frame hangs. An empty picture frame now frames a passing cloud. He bows to the wall. The moment is complete. The wall receives the bow. The cloud moves on. The frame stays. The man is still. The frame holds the sky. The wall stands. The man bows to the wall."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "an empty picture frame",
+            "a passing cloud",
+            "bows to the wall"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Include each of these exact strings: \"an empty picture frame\", \"a passing cloud\", \"bows to the wall\"."
+          }
+        ]
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "The full text must be between 60 and 90 words."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 108}"
+  ],
+  "constraint_checks_final": [
+    "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 108}"
+  ],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"A man lifts an empty picture frame. He places it on the wall. He steps back. His eyes lift. A passing cloud drifts across the sky. He adjusts the frame. The cloud fills the center. He smiles. He steps forward. He bows to the wall. The frame holds the cloud. The sky remains still. The man stands. The frame hangs. An empty picture frame now frames a passing cloud. He bows to the wall. The moment is complete. The wall receives the bow. The cloud moves on. The frame stays. The man is still. The frame holds the sky. The wall stands. The man bows to the wall.\"\n}",
+    "parsed": {
+      "text": "A man lifts an empty picture frame. He places it on the wall. He steps back. His eyes lift. A passing cloud drifts across the sky. He adjusts the frame. The cloud fills the center. He smiles. He steps forward. He bows to the wall. The frame holds the cloud. The sky remains still. The man stands. The frame hangs. An empty picture frame now frames a passing cloud. He bows to the wall. The moment is complete. The wall receives the bow. The cloud moves on. The frame stays. The man is still. The frame holds the sky. The wall stands. The man bows to the wall."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 108
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "an empty picture frame",
+            "a passing cloud",
+            "bows to the wall"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 108}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 108
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "an empty picture frame",
+            "a passing cloud",
+            "bows to the wall"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 108}"
+    ],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

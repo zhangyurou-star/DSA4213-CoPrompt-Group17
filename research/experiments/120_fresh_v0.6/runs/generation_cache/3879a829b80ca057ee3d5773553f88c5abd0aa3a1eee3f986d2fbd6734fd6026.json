@@ -1,0 +1,79 @@
+{
+  "cache_key": "3879a829b80ca057ee3d5773553f88c5abd0aa3a1eee3f986d2fbd6734fd6026",
+  "source_case_id": "NVCW04",
+  "source_policy": "value_based",
+  "output": {
+    "text": "In the quiet hush of a workshop lit by dawn’s pale glow, a hand lifts a dry stick of ink. It is ancient, dense—born of soot and time. The maker lowers it into the black pool, a stillness waiting to be stirred. One drop at a time, water is added, each drop a breath, a pause, a memory. The ink stirs, deepens, begins to live. Then, the brush touches rice paper—thin, porous, alive. A line begins, hesitant, then sure. It flows, unbroken, across the surface. And as it travels, it grows—not just in length, but in meaning. A line becomes a river. The ink, once dry, now speaks. It remembers every drop, every moment, every silence between them."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"In the quiet hush of a workshop lit by dawn’s pale glow, a hand lifts a dry stick of ink. It is ancient, dense—born of soot and time. The maker lowers it into the black pool, a stillness waiting to be stirred. One drop at a time, water is added, each drop a breath, a pause, a memory. The ink stirs, deepens, begins to live. Then, the brush touches rice paper—thin, porous, alive. A line begins, hesitant, then sure. It flows, unbroken, across the surface. And as it travels, it grows—not just in length, but in meaning. A line becomes a river. The ink, once dry, now speaks. It remembers every drop, every moment, every silence between them.\"\n}",
+      "parsed": {
+        "text": "In the quiet hush of a workshop lit by dawn’s pale glow, a hand lifts a dry stick of ink. It is ancient, dense—born of soot and time. The maker lowers it into the black pool, a stillness waiting to be stirred. One drop at a time, water is added, each drop a breath, a pause, a memory. The ink stirs, deepens, begins to live. Then, the brush touches rice paper—thin, porous, alive. A line begins, hesitant, then sure. It flows, unbroken, across the surface. And as it travels, it grows—not just in length, but in meaning. A line becomes a river. The ink, once dry, now speaks. It remembers every drop, every moment, every silence between them."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "required_content",
+          "quote": "Required wording, verbatim: \"the black pool\", \"one drop at a time\", \"a line becomes a river\"."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 121
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "required_content",
+          "quote": "Required wording, verbatim: \"the black pool\", \"one drop at a time\", \"a line becomes a river\"."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 121
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "required_content",
+          "quote": "Required wording, verbatim: \"the black pool\", \"one drop at a time\", \"a line becomes a river\"."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

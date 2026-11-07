@@ -1,0 +1,64 @@
+{
+  "key": "085d360d5f82629ee28fa7f8321e4b047e5588b6414d96c748812199ef031e70",
+  "raw": "{\n  \"text\": \"Performance Directions for the Invented Soundscape: 'Echoes in the Hollow'\\n\\nIntended Audience: Performers Rehearsing the Piece\\n\\nDate: 2027-02-01\\n\\n1. General Atmosphere: The soundscape unfolds in a slow, meditative pulse. Maintain a sense of suspended time—each sound should linger as if resonating in an empty, cavernous space. Avoid abrupt transitions; all changes must be seamless and organic.\\n\\n2. Spatialization: Performers must be positioned in a semi-circle, facing inward. The sound sources (individual performers or pre-recorded elements) should be distributed across the perimeter. Use directional audio cues to simulate movement through the space—e.g., a low hum should appear to drift from left to right over 12 seconds.\\n\\n3. Dynamics: Begin at ppp (pianissimo) and sustain this level for the first 3 minutes. Gradually increase to mp (mezzo-piano) by minute 5, then hold for 2 minutes. At minute 7, introduce a sudden, sharp crescendo to ff (fortissimo) lasting exactly 15 seconds, then drop back to pp within 3 seconds. This dynamic arc must be precisely timed.\\n\\n4. Timing and Synchronization: All performers must use a shared metronome set to 52 BPM, but only the lead performer will initiate the first sound. The others must begin their cues within ±0.3 seconds of the lead’s signal. Use a visual cue (a hand gesture) to signal the ff crescendo.\\n\\n5. Instrumentation and Sound Sources: The piece requires three performers: one using a prepared piano (with rubber, screws, and paper inserted between strings), one using a granular synthesizer with field recordings of wind through stone canyons, and one using a voice modulated through a ring modulator to produce non-lexical, vowel-like tones. All sounds must be processed through a real-time reverb unit with a decay time of 8.5 seconds.\\n\\n6. Duration: The total performance time is 10 minutes and 17 seconds. Performers must rehearse with a stopwatch. The piece ends on a sustained, unmodulated low C from the prepared piano, fading out over 4 seconds.\\n\\n7. Rehearsal Protocol: Rehearse in silence for the first 10 minutes of each session to internalize the spatial and temporal structure. Use the provided audio reference track (file: 'echoes_hollow_ref_20270201.wav') for alignment. Mark all cue points with colored tape on the floor. Performers must report any timing discrepancies in writing after each rehearsal.\\n\\n8. Final Note: This piece is not about precision alone—it is about presence. Let the silence between sounds be as meaningful as the sound itself. Trust the space. Trust the moment.\"\n}",
+  "source_case_id": "NDCW15",
+  "source_variant": "direct",
+  "response_sha256": "16452a2850f7d6667fa5b7ead4500198d665eb84035b1911b50d5a7912c40408",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "generation",
+    "repair": false,
+    "repair_kind": null,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Complete the user's task using only the original request, public context and the visible clarification exchanges.\nDo not ask more questions. Honor all available requirements, including exact phrases and the full-text word count.\nvisible_constraints is a deterministic, partial checklist derived only from that visible text, not new user requirements.\nAlways honor the original visible text as well; absence from the checklist does not remove a requirement.\nDo not invent event details, promises, historical facts or beneficiary groups. Omit unavailable specifics or use clearly marked placeholders.\nTreat concrete dates, clock times, addresses, names, contact details, links, services and free-access claims as facts requiring visible support.\nPlausibility is not evidence. Do not add these details to make a notice sound complete or to reach its minimum word count.\nDo not claim a link is provided when none is available. Use neutral connective wording without adding factual commitments.\nReturn exactly one JSON object matching the supplied output schema, without Markdown fences or surrounding commentary.\nFor writing, put ALL headings, greetings, body and signature inside text.\nCopy required literal phrases unchanged. Draft near the middle of the full-text word range, then check the complete text length.\nWhen revising a length failure, rewrite the whole text toward the range midpoint while retaining every required literal; do not merely append or trim a final sentence.\nWord counting includes every heading and signature: letter/digit sequences, with internal apostrophes or hyphens, count as words.\nFor study plans, each schedule item has one complete topic name, a real ISO date and positive integer minutes;\nfirst compute each topic's required total, then allocate those minutes across the permitted days without exceeding any day's combined limit.\nA topic-specific minimum replaces a smaller general minimum for that topic; it is not an extra requirement to add twice.\nSplit a topic across days when needed. Use a compact schedule with only necessary sessions; do not repeat every topic on every day.\nCheck the sum of ALL sessions per date and the sum per exact topic label before returning. Keep summary short and consistent with schedule.\nIf a deadline or daily allowance is unknown, use a short conservative plan without claiming a guessed bound was supplied.\nNever add an unsupported numeric constraint. If visible requirements conflict, explain the conflict in the output rather than claim compliance.\nWrite in English."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"constrained_writing\", \"initial_request\": \"Write performance directions for an invented soundscape. Its intended audience: performers rehearsing the invented piece.\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [], \"visible_constraints\": {\"version\": \"visible-constraints-0.4.0\", \"domain\": \"constrained_writing\", \"constraints\": [], \"warnings\": []}, \"output_schema\": {\"$schema\": \"https://json-schema.org/draft/2020-12/schema\", \"type\": \"object\", \"properties\": {\"text\": {\"type\": \"string\", \"minLength\": 1, \"pattern\": \"\\\\S\"}}, \"required\": [\"text\"], \"additionalProperties\": false}}"
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

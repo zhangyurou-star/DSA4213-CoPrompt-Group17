@@ -1,0 +1,195 @@
+{
+  "cache_key": "c73bc7cc119058cbed4f72dd06a0543057f1deb683910070feeea21712df14ec",
+  "source_case_id": "NTSP09",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Gear Trains",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Balance Wheels",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Anchor Escapements",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-07",
+        "topic": "Gear Trains",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-09",
+        "topic": "Balance Wheels",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-11",
+        "topic": "Anchor Escapements",
+        "minutes": 30
+      }
+    ],
+    "summary": "Calculated from the schedule: 155 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-03: 30 minutes; 2027-02-05: 20 minutes; 2027-02-07: 25 minutes; 2027-02-09: 25 minutes; 2027-02-11: 30 minutes. Topic totals: Anchor Escapements: 50 minutes; Balance Wheels: 55 minutes; Gear Trains: 50 minutes. Recognized visible constraint checks passed; this does not verify every user requirement."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Gear Trains\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Balance Wheels\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Anchor Escapements\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-07\",\n      \"topic\": \"Gear Trains\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-09\",\n      \"topic\": \"Balance Wheels\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-11\",\n      \"topic\": \"Anchor Escapements\",\n      \"minutes\": 30\n    }\n  ],\n  \"summary\": \"The study plan spans six sessions from 2027-02-01 to 2027-02-11, covering all three required topics: \\\"Anchor Escapements\\\", \\\"Balance Wheels\\\", and \\\"Gear Trains\\\". Each topic receives at least 20 minutes of study time, with total durations of 50 minutes for Gear Trains, 55 minutes for Balance Wheels, and 50 minutes for Anchor Escapements. Sessions are spaced over multiple days with a varied order to support retention and engagement.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Gear Trains",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Balance Wheels",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Anchor Escapements",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-07",
+            "topic": "Gear Trains",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-09",
+            "topic": "Balance Wheels",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-11",
+            "topic": "Anchor Escapements",
+            "minutes": 30
+          }
+        ],
+        "summary": "The study plan spans six sessions from 2027-02-01 to 2027-02-11, covering all three required topics: \"Anchor Escapements\", \"Balance Wheels\", and \"Gear Trains\". Each topic receives at least 20 minutes of study time, with total durations of 50 minutes for Gear Trains, 55 minutes for Balance Wheels, and 50 minutes for Anchor Escapements. Sessions are spaced over multiple days with a varied order to support retention and engagement."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 155,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-03": 30,
+        "2027-02-05": 20,
+        "2027-02-07": 25,
+        "2027-02-09": 25,
+        "2027-02-11": 30
+      },
+      "topic_minutes": [
+        {
+          "topic": "Anchor Escapements",
+          "normalized_topic": "anchor escapements",
+          "minutes": 50
+        },
+        {
+          "topic": "Balance Wheels",
+          "normalized_topic": "balance wheels",
+          "minutes": 55
+        },
+        {
+          "topic": "Gear Trains",
+          "normalized_topic": "gear trains",
+          "minutes": 50
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 155,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-03": 30,
+        "2027-02-05": 20,
+        "2027-02-07": 25,
+        "2027-02-09": 25,
+        "2027-02-11": 30
+      },
+      "topic_minutes": [
+        {
+          "topic": "Anchor Escapements",
+          "normalized_topic": "anchor escapements",
+          "minutes": 50
+        },
+        {
+          "topic": "Balance Wheels",
+          "normalized_topic": "balance wheels",
+          "minutes": 55
+        },
+        {
+          "topic": "Gear Trains",
+          "normalized_topic": "gear trains",
+          "minutes": 50
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study plan spans six sessions from 2027-02-01 to 2027-02-11, covering all three required topics: \"Anchor Escapements\", \"Balance Wheels\", and \"Gear Trains\". Each topic receives at least 20 minutes of study time, with total durations of 50 minutes for Gear Trains, 55 minutes for Balance Wheels, and 50 minutes for Anchor Escapements. Sessions are spaced over multiple days with a varied order to support retention and engagement.",
+    "derived_summary": "Calculated from the schedule: 155 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-03: 30 minutes; 2027-02-05: 20 minutes; 2027-02-07: 25 minutes; 2027-02-09: 25 minutes; 2027-02-11: 30 minutes. Topic totals: Anchor Escapements: 50 minutes; Balance Wheels: 55 minutes; Gear Trains: 50 minutes. Recognized visible constraint checks passed; this does not verify every user requirement."
+  }
+}

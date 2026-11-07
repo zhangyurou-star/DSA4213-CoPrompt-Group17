@@ -1,0 +1,146 @@
+{
+  "cache_key": "7b59da83815ef50bab9670f9881e4ed6090dccb46e954cb9c0e6c78227336518",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S4"
+    ],
+    "available_time": [
+      "S7"
+    ],
+    "topics": [
+      "S5",
+      "S6"
+    ],
+    "priorities": [
+      "S8"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 83,
+      "text": "I am observing a canine scent-work class and want to understand its training terms."
+    },
+    {
+      "id": "S2",
+      "start": 84,
+      "end": 111,
+      "text": "Set up a theory-study plan."
+    },
+    {
+      "id": "S3",
+      "start": 112,
+      "end": 132,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 133,
+      "end": 216,
+      "text": "Keep the timetable within the window ending 2027-02-07, with the end date included."
+    },
+    {
+      "id": "S5",
+      "start": 217,
+      "end": 292,
+      "text": "Required coverage is \"Scent Imprinting\", \"Search Grids\", \"Indication Cues\"."
+    },
+    {
+      "id": "S6",
+      "start": 293,
+      "end": 368,
+      "text": "The minimum study allocation for each topic is 20 minutes across all dates."
+    },
+    {
+      "id": "S7",
+      "start": 369,
+      "end": 442,
+      "text": "My daily study allowance is 50 minutes maximum, not 50 minutes per topic."
+    },
+    {
+      "id": "S8",
+      "start": 443,
+      "end": 522,
+      "text": "I specifically require a minimum of 40 minutes altogether on \"Indication Cues\"."
+    }
+  ],
+  "field_values": {
+    "deadline": "Keep the timetable within the window ending 2027-02-07, with the end date included.",
+    "available_time": "My daily study allowance is 50 minutes maximum, not 50 minutes per topic.",
+    "topics": "Required coverage is \"Scent Imprinting\", \"Search Grids\", \"Indication Cues\".\nThe minimum study allocation for each topic is 20 minutes across all dates.",
+    "priorities": "I specifically require a minimum of 40 minutes altogether on \"Indication Cues\"."
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 133,
+        "end": 216,
+        "quote": "Keep the timetable within the window ending 2027-02-07, with the end date included."
+      }
+    ],
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 369,
+        "end": 442,
+        "quote": "My daily study allowance is 50 minutes maximum, not 50 minutes per topic."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 217,
+        "end": 292,
+        "quote": "Required coverage is \"Scent Imprinting\", \"Search Grids\", \"Indication Cues\"."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 293,
+        "end": 368,
+        "quote": "The minimum study allocation for each topic is 20 minutes across all dates."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 443,
+        "end": 522,
+        "quote": "I specifically require a minimum of 40 minutes altogether on \"Indication Cues\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S4\"],\"available_time\":[\"S7\"],\"topics\":[\"S5\",\"S6\"],\"priorities\":[\"S8\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S4"
+          ],
+          "available_time": [
+            "S7"
+          ],
+          "topics": [
+            "S5",
+            "S6"
+          ],
+          "priorities": [
+            "S8"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

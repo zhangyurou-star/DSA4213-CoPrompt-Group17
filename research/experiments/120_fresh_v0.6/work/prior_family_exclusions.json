@@ -1,0 +1,934 @@
+{
+  "purpose": "Avoid prior scenarios and topics; no model outputs, scores or response content",
+  "entries": [
+    {
+      "family_id": "cw_student_workshop_notice",
+      "title_zh": "学习技能工作坊通知",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_service_maintenance_email",
+      "title_zh": "云存储维护邮件",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_order_delay_email",
+      "title_zh": "订单延期邮件",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_school_visit_notice",
+      "title_zh": "学校参访通知",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_reading_room_opening_notice",
+      "title_zh": "社区阅览室开放通知",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_cleanup_volunteer_thanks_email",
+      "title_zh": "清洁活动志愿者感谢邮件",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_museum_exhibit_caption",
+      "title_zh": "博物馆展品说明牌",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_podcast_promotion",
+      "title_zh": "播客新集推广文案",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_equipment_pickup_message",
+      "title_zh": "借用设备领取消息",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_club_election_announcement",
+      "title_zh": "社团选举公告",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_refund_process_explanation",
+      "title_zh": "退款流程说明",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_garden_volunteer_invitation",
+      "title_zh": "花园志愿活动邀请",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_donation_acknowledgement",
+      "title_zh": "捐赠致谢留言",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_accessibility_notice",
+      "title_zh": "无障碍参观路线通知",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_survey_followup_reminder",
+      "title_zh": "问卷填写提醒",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "sp_arithmetic_refresher",
+      "title_zh": "基础算术复习",
+      "domain": "study_planning",
+      "topics": [
+        "Fractions",
+        "Decimals",
+        "Percentages"
+      ]
+    },
+    {
+      "family_id": "sp_intro_programming",
+      "title_zh": "编程入门复习",
+      "domain": "study_planning",
+      "topics": [
+        "Variables",
+        "Loops"
+      ]
+    },
+    {
+      "family_id": "sp_algorithms_review",
+      "title_zh": "算法入门复习",
+      "domain": "study_planning",
+      "topics": [
+        "Sorting",
+        "Searching"
+      ]
+    },
+    {
+      "family_id": "sp_spreadsheet_basics",
+      "title_zh": "电子表格基础复习",
+      "domain": "study_planning",
+      "topics": [
+        "Cell References",
+        "Basic Formulas"
+      ]
+    },
+    {
+      "family_id": "sp_discrete_logic",
+      "title_zh": "基础逻辑复习",
+      "domain": "study_planning",
+      "topics": [
+        "Boolean Logic",
+        "Truth Tables"
+      ]
+    },
+    {
+      "family_id": "sp_web_foundations",
+      "title_zh": "网页基础学习",
+      "domain": "study_planning",
+      "topics": [
+        "HTML Tags",
+        "CSS Selectors"
+      ]
+    },
+    {
+      "family_id": "sp_music_theory",
+      "title_zh": "乐理复习：紧凑时间容量",
+      "domain": "study_planning",
+      "topics": [
+        "Intervals",
+        "Key Signatures",
+        "Rhythm Patterns"
+      ]
+    },
+    {
+      "family_id": "sp_map_reading",
+      "title_zh": "地图阅读：缺少结束日期",
+      "domain": "study_planning",
+      "topics": [
+        "Grid References",
+        "Contour Lines",
+        "Map Scales"
+      ]
+    },
+    {
+      "family_id": "sp_photography_basics",
+      "title_zh": "摄影基础：累计时长不是每日容量",
+      "domain": "study_planning",
+      "topics": [
+        "Aperture",
+        "Shutter Speed"
+      ]
+    },
+    {
+      "family_id": "sp_bookkeeping_basics",
+      "title_zh": "记账基础：具体主题尚待补充",
+      "domain": "study_planning",
+      "topics": [
+        "Assets",
+        "Liabilities"
+      ]
+    },
+    {
+      "family_id": "sp_italian_revision",
+      "title_zh": "意大利语：缺少日期与每日容量",
+      "domain": "study_planning",
+      "topics": [
+        "Noun Gender",
+        "Verb Endings",
+        "Question Forms"
+      ]
+    },
+    {
+      "family_id": "sp_astronomy_review",
+      "title_zh": "天文学：每日容量未知且优先级可补充",
+      "domain": "study_planning",
+      "topics": [
+        "Constellations",
+        "Moon Phases"
+      ]
+    },
+    {
+      "family_id": "sp_botanical_taxonomy",
+      "title_zh": "植物分类：立即执行",
+      "domain": "study_planning",
+      "topics": [
+        "Plant Families",
+        "Leaf Margins"
+      ]
+    },
+    {
+      "family_id": "sp_punctuation_editing",
+      "title_zh": "标点编辑：仅可选顺序偏好缺失",
+      "domain": "study_planning",
+      "topics": [
+        "Commas",
+        "Apostrophes",
+        "Semicolons"
+      ]
+    },
+    {
+      "family_id": "sp_networking_fundamentals",
+      "title_zh": "网络基础：三个关键字段待补充",
+      "domain": "study_planning",
+      "topics": [
+        "IP Addresses",
+        "DNS",
+        "Routing"
+      ]
+    },
+    {
+      "family_id": "cw_bookbinding_care_guide",
+      "title_zh": "手工装订书养护说明",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_record_correction_request",
+      "title_zh": "登记信息更正申请",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_ballot_choice_explanation",
+      "title_zh": "投票选项说明",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_recipe_collection_introduction",
+      "title_zh": "家庭食谱集序言",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_supplier_comparison_memo",
+      "title_zh": "供应商送货频率比较",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "sp_oceanography_tides",
+      "title_zh": "海洋潮汐学习",
+      "domain": "study_planning",
+      "topics": [
+        "tidal cycles",
+        "ocean currents",
+        "wave formation"
+      ]
+    },
+    {
+      "family_id": "sp_meteorology_fronts",
+      "title_zh": "天气锋面学习",
+      "domain": "study_planning",
+      "topics": [
+        "warm fronts",
+        "cold fronts"
+      ]
+    },
+    {
+      "family_id": "sp_optical_instruments",
+      "title_zh": "光学仪器学习",
+      "domain": "study_planning",
+      "topics": [
+        "magnifying lenses",
+        "microscopes",
+        "telescopes"
+      ]
+    },
+    {
+      "family_id": "sp_archaeological_methods",
+      "title_zh": "考古方法学习",
+      "domain": "study_planning",
+      "topics": [
+        "site surveying",
+        "stratigraphy"
+      ]
+    },
+    {
+      "family_id": "sp_ceramic_glazing",
+      "title_zh": "陶瓷釉料学习",
+      "domain": "study_planning",
+      "topics": [
+        "glaze components",
+        "firing stages"
+      ]
+    },
+    {
+      "family_id": "cw_employee_handover_memo",
+      "title_zh": "员工交接备忘录",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_conference_reviewer_invitation",
+      "title_zh": "会议审稿人邀请",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_app_feature_release_note",
+      "title_zh": "应用功能更新说明",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_lost_property_reply",
+      "title_zh": "失物回复",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_neighborhood_noise_apology",
+      "title_zh": "邻里噪声致歉",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "sp_linear_algebra",
+      "title_zh": "线性代数复习",
+      "domain": "study_planning",
+      "topics": [
+        "matrix operations",
+        "vector spaces",
+        "eigenvalues"
+      ]
+    },
+    {
+      "family_id": "sp_statistics_sampling",
+      "title_zh": "统计抽样学习",
+      "domain": "study_planning",
+      "topics": [
+        "sampling methods",
+        "sampling bias"
+      ]
+    },
+    {
+      "family_id": "sp_robotics_basics",
+      "title_zh": "机器人基础学习",
+      "domain": "study_planning",
+      "topics": [
+        "sensors",
+        "actuators",
+        "feedback loops"
+      ]
+    },
+    {
+      "family_id": "sp_nutrition_science",
+      "title_zh": "营养科学学习",
+      "domain": "study_planning",
+      "topics": [
+        "macronutrients",
+        "food labels"
+      ]
+    },
+    {
+      "family_id": "sp_cartography_projections",
+      "title_zh": "地图投影学习",
+      "domain": "study_planning",
+      "topics": [
+        "map projections",
+        "scale and distortion"
+      ]
+    },
+    {
+      "family_id": "cw_recruitment_rejection_reply",
+      "title_zh": "落选申请者回复",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_laboratory_incident_brief",
+      "title_zh": "实验室事件简报",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_oral_history_project_pitch",
+      "title_zh": "口述史项目提案短文",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_community_grant_progress_update",
+      "title_zh": "社区资助项目进度更新",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_tutoring_session_recap",
+      "title_zh": "辅导课内容回顾",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "sp_linguistic_morphology",
+      "title_zh": "语言形态学学习",
+      "domain": "study_planning",
+      "topics": [
+        "morphemes",
+        "inflection",
+        "derivation"
+      ]
+    },
+    {
+      "family_id": "sp_thermal_energy",
+      "title_zh": "热能传递学习",
+      "domain": "study_planning",
+      "topics": [
+        "conduction",
+        "convection",
+        "radiation"
+      ]
+    },
+    {
+      "family_id": "sp_agricultural_soils",
+      "title_zh": "农业土壤学习",
+      "domain": "study_planning",
+      "topics": [
+        "soil texture",
+        "soil drainage"
+      ]
+    },
+    {
+      "family_id": "sp_civil_bridge_structures",
+      "title_zh": "桥梁结构学习",
+      "domain": "study_planning",
+      "topics": [
+        "beam bridges",
+        "arch bridges",
+        "suspension bridges"
+      ]
+    },
+    {
+      "family_id": "sp_cultural_anthropology",
+      "title_zh": "文化人类学学习",
+      "domain": "study_planning",
+      "topics": [
+        "participant observation",
+        "ethnographic interviews"
+      ]
+    },
+    {
+      "family_id": "cw_scholarship_reference_request",
+      "title_zh": "奖学金推荐信请求",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_tenant_inspection_notice",
+      "title_zh": "租客检查通知",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_research_participant_brief",
+      "title_zh": "研究参与者说明",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_warranty_claim_response",
+      "title_zh": "保修申请回复",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_staff_training_agenda",
+      "title_zh": "员工培训议程",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_membership_renewal_reminder",
+      "title_zh": "会员续费提醒",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_travel_itinerary_change",
+      "title_zh": "旅行行程变更",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_data_consent_explanation",
+      "title_zh": "数据同意说明",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_exhibition_artist_biography",
+      "title_zh": "展览艺术家简介",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_student_feedback_request",
+      "title_zh": "学生反馈请求",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_cafe_menu_change",
+      "title_zh": "咖啡馆菜单调整",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_sports_match_report",
+      "title_zh": "体育赛后报道",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_meeting_minutes_digest",
+      "title_zh": "会议纪要摘要",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_internship_offer_letter",
+      "title_zh": "实习录用通知",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_product_recall_notice",
+      "title_zh": "产品召回通知",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_community_pet_guidance",
+      "title_zh": "社区养宠提示",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_school_weather_closure",
+      "title_zh": "学校天气停课通知",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_public_transport_diversion",
+      "title_zh": "公交改道说明",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_energy_saving_instructions",
+      "title_zh": "节能操作提示",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_museum_audio_introduction",
+      "title_zh": "博物馆语音导览开场",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "sp_mechanics_vectors",
+      "title_zh": "力学向量复习",
+      "domain": "study_planning",
+      "topics": [
+        "vector components",
+        "force diagrams",
+        "resultant forces"
+      ]
+    },
+    {
+      "family_id": "sp_organic_chemistry",
+      "title_zh": "有机化学学习",
+      "domain": "study_planning",
+      "topics": [
+        "functional groups",
+        "isomerism"
+      ]
+    },
+    {
+      "family_id": "sp_cell_biology",
+      "title_zh": "细胞生物学复习",
+      "domain": "study_planning",
+      "topics": [
+        "membranes",
+        "organelles",
+        "cell division"
+      ]
+    },
+    {
+      "family_id": "sp_macroeconomics",
+      "title_zh": "宏观经济学复习",
+      "domain": "study_planning",
+      "topics": [
+        "inflation",
+        "unemployment",
+        "fiscal policy"
+      ]
+    },
+    {
+      "family_id": "sp_microeconomics",
+      "title_zh": "微观经济学学习",
+      "domain": "study_planning",
+      "topics": [
+        "supply and demand",
+        "elasticity"
+      ]
+    },
+    {
+      "family_id": "sp_geology_minerals",
+      "title_zh": "地质矿物学习",
+      "domain": "study_planning",
+      "topics": [
+        "mineral properties",
+        "mineral identification"
+      ]
+    },
+    {
+      "family_id": "sp_ecology_populations",
+      "title_zh": "生态种群复习",
+      "domain": "study_planning",
+      "topics": [
+        "population growth",
+        "carrying capacity",
+        "species interactions"
+      ]
+    },
+    {
+      "family_id": "sp_french_grammar",
+      "title_zh": "法语语法学习",
+      "domain": "study_planning",
+      "topics": [
+        "present tense",
+        "negation"
+      ]
+    },
+    {
+      "family_id": "sp_spanish_pronunciation",
+      "title_zh": "西班牙语发音练习",
+      "domain": "study_planning",
+      "topics": [
+        "vowel sounds",
+        "word stress"
+      ]
+    },
+    {
+      "family_id": "sp_german_cases",
+      "title_zh": "德语格变化复习",
+      "domain": "study_planning",
+      "topics": [
+        "nominative case",
+        "accusative case",
+        "dative case"
+      ]
+    },
+    {
+      "family_id": "sp_japanese_kana",
+      "title_zh": "日语假名练习",
+      "domain": "study_planning",
+      "topics": [
+        "hiragana",
+        "katakana"
+      ]
+    },
+    {
+      "family_id": "sp_chess_endgames",
+      "title_zh": "国际象棋残局练习",
+      "domain": "study_planning",
+      "topics": [
+        "king and pawn endings",
+        "rook endings",
+        "basic checkmates"
+      ]
+    },
+    {
+      "family_id": "sp_drawing_perspective",
+      "title_zh": "绘画透视学习",
+      "domain": "study_planning",
+      "topics": [
+        "one-point perspective",
+        "two-point perspective"
+      ]
+    },
+    {
+      "family_id": "sp_film_editing",
+      "title_zh": "电影剪辑学习",
+      "domain": "study_planning",
+      "topics": [
+        "continuity editing",
+        "pacing",
+        "shot transitions"
+      ]
+    },
+    {
+      "family_id": "sp_audio_engineering",
+      "title_zh": "音频工程学习",
+      "domain": "study_planning",
+      "topics": [
+        "signal flow",
+        "gain staging"
+      ]
+    },
+    {
+      "family_id": "sp_probability_distributions",
+      "title_zh": "概率分布复习",
+      "domain": "study_planning",
+      "topics": [
+        "binomial distribution",
+        "normal distribution",
+        "expected value"
+      ]
+    },
+    {
+      "family_id": "sp_geometry_proofs",
+      "title_zh": "几何证明复习",
+      "domain": "study_planning",
+      "topics": [
+        "triangle congruence",
+        "circle theorems"
+      ]
+    },
+    {
+      "family_id": "sp_data_visualization",
+      "title_zh": "数据可视化学习",
+      "domain": "study_planning",
+      "topics": [
+        "chart selection",
+        "axis design",
+        "color choices"
+      ]
+    },
+    {
+      "family_id": "sp_database_queries",
+      "title_zh": "数据库查询练习",
+      "domain": "study_planning",
+      "topics": [
+        "filtering rows",
+        "table joins",
+        "grouped summaries"
+      ]
+    },
+    {
+      "family_id": "sp_cybersecurity_principles",
+      "title_zh": "网络安全原则学习",
+      "domain": "study_planning",
+      "topics": [
+        "authentication",
+        "access control",
+        "risk assessment"
+      ]
+    },
+    {
+      "family_id": "cw_walking_trail_journal",
+      "title_zh": "步道观察日记",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_fiction_book_review",
+      "title_zh": "虚构小说短评",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_parcel_damage_report",
+      "title_zh": "包裹破损报告",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_meeting_facilitation_brief",
+      "title_zh": "会议主持准备简报",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_applicant_cover_email",
+      "title_zh": "职位申请附言邮件",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_venue_comparison_note",
+      "title_zh": "活动场地比较记录",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_recipe_adaptation_explanation",
+      "title_zh": "食谱调整说明",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_rehearsal_feedback",
+      "title_zh": "排练反馈",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_digital_archive_access_instructions",
+      "title_zh": "数字档案访问说明",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "cw_team_working_agreement",
+      "title_zh": "团队协作约定",
+      "domain": "constrained_writing",
+      "topics": []
+    },
+    {
+      "family_id": "sp_philosophy_argumentation",
+      "title_zh": "哲学论证学习",
+      "domain": "study_planning",
+      "topics": [
+        "premises and conclusions",
+        "deductive validity",
+        "counterexamples"
+      ]
+    },
+    {
+      "family_id": "sp_printmaking_processes",
+      "title_zh": "版画工艺学习",
+      "domain": "study_planning",
+      "topics": [
+        "relief printing",
+        "intaglio printing"
+      ]
+    },
+    {
+      "family_id": "sp_paleontology_fossils",
+      "title_zh": "古生物化石学习",
+      "domain": "study_planning",
+      "topics": [
+        "fossil preservation",
+        "relative dating"
+      ]
+    },
+    {
+      "family_id": "sp_korean_sentence_endings",
+      "title_zh": "韩语句末形式学习",
+      "domain": "study_planning",
+      "topics": [
+        "polite endings",
+        "question endings",
+        "past tense endings"
+      ]
+    },
+    {
+      "family_id": "sp_materials_crystals",
+      "title_zh": "材料晶体学习",
+      "domain": "study_planning",
+      "topics": [
+        "unit cells",
+        "lattice defects"
+      ]
+    },
+    {
+      "family_id": "sp_operations_queueing",
+      "title_zh": "运筹排队学习",
+      "domain": "study_planning",
+      "topics": [
+        "arrival rates",
+        "service rates",
+        "utilization"
+      ]
+    },
+    {
+      "family_id": "sp_world_poetic_forms",
+      "title_zh": "诗歌形式学习",
+      "domain": "study_planning",
+      "topics": [
+        "sonnets",
+        "haiku",
+        "free verse"
+      ]
+    },
+    {
+      "family_id": "sp_digital_circuit_logic",
+      "title_zh": "时序数字电路学习",
+      "domain": "study_planning",
+      "topics": [
+        "flip-flops",
+        "registers"
+      ]
+    },
+    {
+      "family_id": "sp_textile_weave_structures",
+      "title_zh": "纺织组织学习",
+      "domain": "study_planning",
+      "topics": [
+        "plain weave",
+        "twill weave",
+        "satin weave"
+      ]
+    },
+    {
+      "family_id": "sp_renewable_energy_systems",
+      "title_zh": "可再生能源学习",
+      "domain": "study_planning",
+      "topics": [
+        "solar photovoltaic systems",
+        "wind turbines"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "cache_key": "92cc39aab4f11b8d7f0afe609f5925f3399ce536c3a25782972612b4c5dfa557",
+  "source_case_id": "NTSP30",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Nib Alignment",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Feed Channels",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Sac Replacement",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Nib Alignment",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Feed Channels",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Sac Replacement",
+        "minutes": 15
+      }
+    ],
+    "summary": "Calculated from the schedule: 135 minutes in total. Daily totals: 2027-02-01: 30 minutes; 2027-02-02: 30 minutes; 2027-02-03: 30 minutes; 2027-02-04: 45 minutes. Topic totals: Feed Channels: 45 minutes; Nib Alignment: 45 minutes; Sac Replacement: 45 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Nib Alignment\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Feed Channels\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Sac Replacement\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Nib Alignment\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Feed Channels\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Sac Replacement\",\n      \"minutes\": 15\n    }\n  ],\n  \"summary\": \"The study schedule spans from 2027-02-01 to 2027-02-04, with all required topics covered. Each daily total remains under or equal to 45 minutes. The minimum 30-minute requirement is met for each of \\\"Nib Alignment\\\", \\\"Feed Channels\\\", and \\\"Sac Replacement\\\". No study is scheduled after 2027-02-04.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Nib Alignment",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Feed Channels",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Sac Replacement",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Nib Alignment",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Feed Channels",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Sac Replacement",
+            "minutes": 15
+          }
+        ],
+        "summary": "The study schedule spans from 2027-02-01 to 2027-02-04, with all required topics covered. Each daily total remains under or equal to 45 minutes. The minimum 30-minute requirement is met for each of \"Nib Alignment\", \"Feed Channels\", and \"Sac Replacement\". No study is scheduled after 2027-02-04."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-04, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Keep each daily total at or below 45 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 135,
+      "daily_minutes": {
+        "2027-02-01": 30,
+        "2027-02-02": 30,
+        "2027-02-03": 30,
+        "2027-02-04": 45
+      },
+      "topic_minutes": [
+        {
+          "topic": "Feed Channels",
+          "normalized_topic": "feed channels",
+          "minutes": 45
+        },
+        {
+          "topic": "Nib Alignment",
+          "normalized_topic": "nib alignment",
+          "minutes": 45
+        },
+        {
+          "topic": "Sac Replacement",
+          "normalized_topic": "sac replacement",
+          "minutes": 45
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-04, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Keep each daily total at or below 45 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 135,
+      "daily_minutes": {
+        "2027-02-01": 30,
+        "2027-02-02": 30,
+        "2027-02-03": 30,
+        "2027-02-04": 45
+      },
+      "topic_minutes": [
+        {
+          "topic": "Feed Channels",
+          "normalized_topic": "feed channels",
+          "minutes": 45
+        },
+        {
+          "topic": "Nib Alignment",
+          "normalized_topic": "nib alignment",
+          "minutes": 45
+        },
+        {
+          "topic": "Sac Replacement",
+          "normalized_topic": "sac replacement",
+          "minutes": 45
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-04, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Keep each daily total at or below 45 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study schedule spans from 2027-02-01 to 2027-02-04, with all required topics covered. Each daily total remains under or equal to 45 minutes. The minimum 30-minute requirement is met for each of \"Nib Alignment\", \"Feed Channels\", and \"Sac Replacement\". No study is scheduled after 2027-02-04.",
+    "derived_summary": "Calculated from the schedule: 135 minutes in total. Daily totals: 2027-02-01: 30 minutes; 2027-02-02: 30 minutes; 2027-02-03: 30 minutes; 2027-02-04: 45 minutes. Topic totals: Feed Channels: 45 minutes; Nib Alignment: 45 minutes; Sac Replacement: 45 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

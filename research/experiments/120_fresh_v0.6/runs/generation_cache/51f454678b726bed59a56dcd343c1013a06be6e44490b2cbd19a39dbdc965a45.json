@@ -1,0 +1,132 @@
+{
+  "cache_key": "51f454678b726bed59a56dcd343c1013a06be6e44490b2cbd19a39dbdc965a45",
+  "source_case_id": "NDCW01",
+  "source_policy": "direct",
+  "output": {
+    "text": "In Amber Gate, a player spends one lantern to inspect a bridge. This reveals the bridge's symbol but does not open it—the bridge remains closed. Inspection provides no access; it is purely informational. Opening the bridge requires a separate key action, which may depend on tokens, conditions, or timing. Players must not assume inspection grants entry. The bridge remains closed until the correct key action is taken. This rule preserves strategic depth and prevents unintended progress. Always confirm the bridge’s state before acting. The key action is distinct from inspection."
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"In Amber Gate, a player may spend one lantern to inspect a bridge. This action reveals the bridge's symbol but does not open it—the bridge remains closed. Inspection is purely informational; it does not trigger any mechanical change. To actually open the bridge, a separate key action is required, which may involve specific tokens, conditions, or timing. Players should not assume that inspection grants access. The bridge remains closed until the correct key action is performed. This distinction ensures strategic depth and prevents unintended progression. Always verify the current state before committing to a move.\"}",
+      "parsed": {
+        "text": "In Amber Gate, a player may spend one lantern to inspect a bridge. This action reveals the bridge's symbol but does not open it—the bridge remains closed. Inspection is purely informational; it does not trigger any mechanical change. To actually open the bridge, a separate key action is required, which may involve specific tokens, conditions, or timing. Players should not assume that inspection grants access. The bridge remains closed until the correct key action is performed. This distinction ensures strategic depth and prevents unintended progression. Always verify the current state before committing to a move."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "The full text must be between 55 and 85 words."
+          }
+        ]
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Amber Gate",
+            "one lantern",
+            "the bridge remains closed"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Preserve these exact phrases: \"Amber Gate\", \"one lantern\", \"the bridge remains closed\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 96}"
+  ],
+  "constraint_checks_final": [
+    "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 91}"
+  ],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\"text\": \"In Amber Gate, a player spends one lantern to inspect a bridge. This reveals the bridge's symbol but does not open it—the bridge remains closed. Inspection provides no access; it is purely informational. Opening the bridge requires a separate key action, which may depend on tokens, conditions, or timing. Players must not assume inspection grants entry. The bridge remains closed until the correct key action is taken. This rule preserves strategic depth and prevents unintended progress. Always confirm the bridge’s state before acting. The key action is distinct from inspection.\"}",
+    "parsed": {
+      "text": "In Amber Gate, a player spends one lantern to inspect a bridge. This reveals the bridge's symbol but does not open it—the bridge remains closed. Inspection provides no access; it is purely informational. Opening the bridge requires a separate key action, which may depend on tokens, conditions, or timing. Players must not assume inspection grants entry. The bridge remains closed until the correct key action is taken. This rule preserves strategic depth and prevents unintended progress. Always confirm the bridge’s state before acting. The key action is distinct from inspection."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 96
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Amber Gate",
+            "one lantern",
+            "the bridge remains closed"
+          ]
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 96}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 91
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Amber Gate",
+            "one lantern",
+            "the bridge remains closed"
+          ]
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 91}"
+    ],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

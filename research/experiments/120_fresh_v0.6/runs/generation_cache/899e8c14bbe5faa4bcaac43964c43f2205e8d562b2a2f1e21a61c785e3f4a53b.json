@@ -1,0 +1,89 @@
+{
+  "cache_key": "899e8c14bbe5faa4bcaac43964c43f2205e8d562b2a2f1e21a61c785e3f4a53b",
+  "source_case_id": "NTCW07",
+  "source_policy": "prompt_only",
+  "output": {
+    "text": "For the invented language Orin, pronounce the word sela as SEH-lah. Actors, stress the first syllable and keep both vowels clear. This is a fictional pronunciation convention, not a claim about a real language. Use sela to mean welcome in performance. Always say sela as SEH-lah, with emphasis on the first syllable. Remember to stress the first syllable in every delivery."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"For the invented language Orin, pronounce the word sela as SEH-lah. Actors, stress the first syllable and keep both vowels clear. This is a fictional pronunciation convention, not a claim about a real language. Use sela to mean welcome in performance. Always say sela as SEH-lah, with emphasis on the first syllable. Remember to stress the first syllable in every delivery.\"\n}",
+      "parsed": {
+        "text": "For the invented language Orin, pronounce the word sela as SEH-lah. Actors, stress the first syllable and keep both vowels clear. This is a fictional pronunciation convention, not a claim about a real language. Use sela to mean welcome in performance. Always say sela as SEH-lah, with emphasis on the first syllable. Remember to stress the first syllable in every delivery."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "sela",
+            "SEH-lah",
+            "stress the first syllable"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Preserve these exact phrases: \"sela\", \"SEH-lah\", \"stress the first syllable\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 61
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "sela",
+            "SEH-lah",
+            "stress the first syllable"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 61
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "sela",
+            "SEH-lah",
+            "stress the first syllable"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

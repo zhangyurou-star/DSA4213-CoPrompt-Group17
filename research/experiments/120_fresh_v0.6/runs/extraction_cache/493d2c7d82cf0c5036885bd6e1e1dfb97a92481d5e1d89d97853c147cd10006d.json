@@ -1,0 +1,121 @@
+{
+  "cache_key": "493d2c7d82cf0c5036885bd6e1e1dfb97a92481d5e1d89d97853c147cd10006d",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [],
+    "tone": [
+      "S2"
+    ],
+    "length": [
+      "S3"
+    ],
+    "required_content": [
+      "S4",
+      "S6"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 60,
+      "text": "Propose a desk arrangement for a fictional shared workspace."
+    },
+    {
+      "id": "S2",
+      "start": 61,
+      "end": 99,
+      "text": "Use a practical and considerate voice."
+    },
+    {
+      "id": "S3",
+      "start": 100,
+      "end": 146,
+      "text": "The full text must be between 55 and 85 words."
+    },
+    {
+      "id": "S4",
+      "start": 147,
+      "end": 332,
+      "text": "Use this fictional material: The layout places frequently shared stationery in a shared tray, drawing materials on the window side, and keeps a clear center for exchanging large sheets."
+    },
+    {
+      "id": "S5",
+      "start": 333,
+      "end": 372,
+      "text": "Each person retains one private corner."
+    },
+    {
+      "id": "S6",
+      "start": 373,
+      "end": 446,
+      "text": "Required wording, verbatim: \"shared tray\", \"window side\", \"clear center\"."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": "Use a practical and considerate voice.",
+    "length": "The full text must be between 55 and 85 words.",
+    "required_content": "Use this fictional material: The layout places frequently shared stationery in a shared tray, drawing materials on the window side, and keeps a clear center for exchanging large sheets.\nRequired wording, verbatim: \"shared tray\", \"window side\", \"clear center\"."
+  },
+  "evidence": {
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 61,
+        "end": 99,
+        "quote": "Use a practical and considerate voice."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 100,
+        "end": 146,
+        "quote": "The full text must be between 55 and 85 words."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 147,
+        "end": 332,
+        "quote": "Use this fictional material: The layout places frequently shared stationery in a shared tray, drawing materials on the window side, and keeps a clear center for exchanging large sheets."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 373,
+        "end": 446,
+        "quote": "Required wording, verbatim: \"shared tray\", \"window side\", \"clear center\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[],\"tone\":[\"S2\"],\"length\":[\"S3\"],\"required_content\":[\"S4\",\"S6\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [],
+          "tone": [
+            "S2"
+          ],
+          "length": [
+            "S3"
+          ],
+          "required_content": [
+            "S4",
+            "S6"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

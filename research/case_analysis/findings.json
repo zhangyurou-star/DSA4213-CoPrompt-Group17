@@ -1,0 +1,779 @@
+{
+  "analysis_date": "2026-10-27",
+  "timezone": "Asia/Singapore",
+  "scope": "Proposal sections 1, 4.1, 5 and 6: descriptive analysis of saved successful/failed trajectories and existing human assessments; no experiment extension.",
+  "main_test": [
+    {
+      "system": "direct",
+      "cases": 60,
+      "mean_quality": 0.7072222222222222,
+      "mean_questions": 0,
+      "total_questions": 0,
+      "fully_passing_cases": 30,
+      "cases_with_failed_constraints": 30,
+      "noncritical_question_items": 0,
+      "format_failures": 0,
+      "invalid_question_items": 0,
+      "generation_revision_trajectories": 8
+    },
+    {
+      "system": "exhaustive",
+      "cases": 60,
+      "mean_quality": 0.7877777777777778,
+      "mean_questions": 1.1833333333333333,
+      "total_questions": 71,
+      "fully_passing_cases": 35,
+      "cases_with_failed_constraints": 25,
+      "noncritical_question_items": 31,
+      "format_failures": 0,
+      "invalid_question_items": 0,
+      "generation_revision_trajectories": 12
+    },
+    {
+      "system": "prompt_only",
+      "cases": 60,
+      "mean_quality": 0.7794444444444445,
+      "mean_questions": 1.0166666666666666,
+      "total_questions": 61,
+      "fully_passing_cases": 35,
+      "cases_with_failed_constraints": 25,
+      "noncritical_question_items": 30,
+      "format_failures": 0,
+      "invalid_question_items": 0,
+      "generation_revision_trajectories": 10
+    },
+    {
+      "system": "value_based",
+      "cases": 60,
+      "mean_quality": 0.7988888888888889,
+      "mean_questions": 1.1833333333333333,
+      "total_questions": 71,
+      "fully_passing_cases": 36,
+      "cases_with_failed_constraints": 24,
+      "noncritical_question_items": 31,
+      "format_failures": 0,
+      "invalid_question_items": 0,
+      "generation_revision_trajectories": 11
+    }
+  ],
+  "domain_descriptive": [
+    {
+      "system": "direct",
+      "domain": "constrained_writing",
+      "cases": 30,
+      "mean_quality": 0.5666666666666667,
+      "mean_questions": 0,
+      "fully_passing_cases": 11
+    },
+    {
+      "system": "direct",
+      "domain": "study_planning",
+      "cases": 30,
+      "mean_quality": 0.8477777777777777,
+      "mean_questions": 0,
+      "fully_passing_cases": 19
+    },
+    {
+      "system": "exhaustive",
+      "domain": "constrained_writing",
+      "cases": 30,
+      "mean_quality": 0.65,
+      "mean_questions": 1.0666666666666667,
+      "fully_passing_cases": 11
+    },
+    {
+      "system": "exhaustive",
+      "domain": "study_planning",
+      "cases": 30,
+      "mean_quality": 0.9255555555555556,
+      "mean_questions": 1.3,
+      "fully_passing_cases": 24
+    },
+    {
+      "system": "prompt_only",
+      "domain": "constrained_writing",
+      "cases": 30,
+      "mean_quality": 0.65,
+      "mean_questions": 0.8666666666666667,
+      "fully_passing_cases": 12
+    },
+    {
+      "system": "prompt_only",
+      "domain": "study_planning",
+      "cases": 30,
+      "mean_quality": 0.9088888888888889,
+      "mean_questions": 1.1666666666666667,
+      "fully_passing_cases": 23
+    },
+    {
+      "system": "value_based",
+      "domain": "constrained_writing",
+      "cases": 30,
+      "mean_quality": 0.6833333333333333,
+      "mean_questions": 1.0666666666666667,
+      "fully_passing_cases": 13
+    },
+    {
+      "system": "value_based",
+      "domain": "study_planning",
+      "cases": 30,
+      "mean_quality": 0.9144444444444444,
+      "mean_questions": 1.3,
+      "fully_passing_cases": 23
+    }
+  ],
+  "constraint_failure_counts": [
+    {
+      "system": "direct",
+      "check_type": "word_count",
+      "failed_checks": 17,
+      "evaluated_checks": 30,
+      "cases_with_failure": 17,
+      "case_ids": "NTCW03;NTCW04;NTCW08;NTCW09;NTCW11;NTCW12;NTCW14;NTCW15;NTCW16;NTCW18;NTCW21;NTCW22;NTCW23;NTCW24;NTCW27;NTCW28;NTCW29"
+    },
+    {
+      "system": "direct",
+      "check_type": "contains_all",
+      "failed_checks": 9,
+      "evaluated_checks": 30,
+      "cases_with_failure": 9,
+      "case_ids": "NTCW08;NTCW09;NTCW11;NTCW12;NTCW14;NTCW15;NTCW17;NTCW18;NTCW20"
+    },
+    {
+      "system": "direct",
+      "check_type": "date_window",
+      "failed_checks": 5,
+      "evaluated_checks": 30,
+      "cases_with_failure": 5,
+      "case_ids": "NTSP09;NTSP11;NTSP13;NTSP16;NTSP17"
+    },
+    {
+      "system": "direct",
+      "check_type": "daily_minutes_cap",
+      "failed_checks": 2,
+      "evaluated_checks": 30,
+      "cases_with_failure": 2,
+      "case_ids": "NTSP06;NTSP12"
+    },
+    {
+      "system": "direct",
+      "check_type": "topic_coverage",
+      "failed_checks": 6,
+      "evaluated_checks": 30,
+      "cases_with_failure": 6,
+      "case_ids": "NTSP07;NTSP11;NTSP12;NTSP15;NTSP17;NTSP18"
+    },
+    {
+      "system": "direct",
+      "check_type": "topic_minutes_min",
+      "failed_checks": 3,
+      "evaluated_checks": 17,
+      "cases_with_failure": 3,
+      "case_ids": "NTSP07;NTSP08;NTSP11"
+    },
+    {
+      "system": "exhaustive",
+      "check_type": "word_count",
+      "failed_checks": 15,
+      "evaluated_checks": 30,
+      "cases_with_failure": 15,
+      "case_ids": "NTCW03;NTCW04;NTCW08;NTCW09;NTCW10;NTCW11;NTCW12;NTCW13;NTCW14;NTCW16;NTCW22;NTCW23;NTCW24;NTCW28;NTCW29"
+    },
+    {
+      "system": "exhaustive",
+      "check_type": "contains_all",
+      "failed_checks": 6,
+      "evaluated_checks": 30,
+      "cases_with_failure": 6,
+      "case_ids": "NTCW11;NTCW14;NTCW15;NTCW17;NTCW18;NTCW20"
+    },
+    {
+      "system": "exhaustive",
+      "check_type": "date_window",
+      "failed_checks": 0,
+      "evaluated_checks": 30,
+      "cases_with_failure": 0,
+      "case_ids": ""
+    },
+    {
+      "system": "exhaustive",
+      "check_type": "daily_minutes_cap",
+      "failed_checks": 2,
+      "evaluated_checks": 30,
+      "cases_with_failure": 2,
+      "case_ids": "NTSP06;NTSP11"
+    },
+    {
+      "system": "exhaustive",
+      "check_type": "topic_coverage",
+      "failed_checks": 5,
+      "evaluated_checks": 30,
+      "cases_with_failure": 5,
+      "case_ids": "NTSP07;NTSP11;NTSP15;NTSP17;NTSP18"
+    },
+    {
+      "system": "exhaustive",
+      "check_type": "topic_minutes_min",
+      "failed_checks": 1,
+      "evaluated_checks": 17,
+      "cases_with_failure": 1,
+      "case_ids": "NTSP07"
+    },
+    {
+      "system": "prompt_only",
+      "check_type": "word_count",
+      "failed_checks": 15,
+      "evaluated_checks": 30,
+      "cases_with_failure": 15,
+      "case_ids": "NTCW03;NTCW04;NTCW08;NTCW09;NTCW11;NTCW12;NTCW14;NTCW16;NTCW18;NTCW21;NTCW22;NTCW23;NTCW24;NTCW28;NTCW29"
+    },
+    {
+      "system": "prompt_only",
+      "check_type": "contains_all",
+      "failed_checks": 6,
+      "evaluated_checks": 30,
+      "cases_with_failure": 6,
+      "case_ids": "NTCW11;NTCW14;NTCW15;NTCW17;NTCW18;NTCW20"
+    },
+    {
+      "system": "prompt_only",
+      "check_type": "date_window",
+      "failed_checks": 2,
+      "evaluated_checks": 30,
+      "cases_with_failure": 2,
+      "case_ids": "NTSP11;NTSP13"
+    },
+    {
+      "system": "prompt_only",
+      "check_type": "daily_minutes_cap",
+      "failed_checks": 1,
+      "evaluated_checks": 30,
+      "cases_with_failure": 1,
+      "case_ids": "NTSP06"
+    },
+    {
+      "system": "prompt_only",
+      "check_type": "topic_coverage",
+      "failed_checks": 5,
+      "evaluated_checks": 30,
+      "cases_with_failure": 5,
+      "case_ids": "NTSP07;NTSP11;NTSP15;NTSP17;NTSP18"
+    },
+    {
+      "system": "prompt_only",
+      "check_type": "topic_minutes_min",
+      "failed_checks": 2,
+      "evaluated_checks": 17,
+      "cases_with_failure": 2,
+      "case_ids": "NTSP07;NTSP11"
+    },
+    {
+      "system": "value_based",
+      "check_type": "word_count",
+      "failed_checks": 14,
+      "evaluated_checks": 30,
+      "cases_with_failure": 14,
+      "case_ids": "NTCW03;NTCW04;NTCW08;NTCW09;NTCW10;NTCW11;NTCW13;NTCW14;NTCW16;NTCW22;NTCW23;NTCW24;NTCW28;NTCW29"
+    },
+    {
+      "system": "value_based",
+      "check_type": "contains_all",
+      "failed_checks": 5,
+      "evaluated_checks": 30,
+      "cases_with_failure": 5,
+      "case_ids": "NTCW11;NTCW14;NTCW17;NTCW18;NTCW20"
+    },
+    {
+      "system": "value_based",
+      "check_type": "date_window",
+      "failed_checks": 0,
+      "evaluated_checks": 30,
+      "cases_with_failure": 0,
+      "case_ids": ""
+    },
+    {
+      "system": "value_based",
+      "check_type": "daily_minutes_cap",
+      "failed_checks": 3,
+      "evaluated_checks": 30,
+      "cases_with_failure": 3,
+      "case_ids": "NTSP06;NTSP11;NTSP12"
+    },
+    {
+      "system": "value_based",
+      "check_type": "topic_coverage",
+      "failed_checks": 5,
+      "evaluated_checks": 30,
+      "cases_with_failure": 5,
+      "case_ids": "NTSP07;NTSP11;NTSP15;NTSP17;NTSP18"
+    },
+    {
+      "system": "value_based",
+      "check_type": "topic_minutes_min",
+      "failed_checks": 1,
+      "evaluated_checks": 17,
+      "cases_with_failure": 1,
+      "case_ids": "NTSP07"
+    }
+  ],
+  "threshold_diagnostic": {
+    "selected_lambda": 0.25,
+    "candidate_net_values": {
+      "0.25": 85,
+      "0.75": 27
+    },
+    "candidate_rating_pairs": [
+      {
+        "importance": 0.5,
+        "uncertainty": 1,
+        "count": 81
+      },
+      {
+        "importance": 1,
+        "uncertainty": 0.5,
+        "count": 4
+      },
+      {
+        "importance": 1,
+        "uncertainty": 1,
+        "count": 27
+      }
+    ],
+    "stop_reasons": {
+      "no_eligible_fields": 47,
+      "question_budget_exhausted": 7,
+      "execute_now": 6
+    },
+    "equal_question_counts_value_vs_exhaustive_cases": 60,
+    "equal_question_sets_value_vs_exhaustive_cases": 59,
+    "equal_question_orders_value_vs_exhaustive_cases": 56,
+    "equal_final_outputs_value_vs_exhaustive_cases": 56,
+    "diagnostic_20_all_equal_quality_and_question_count": true,
+    "paired_intervals_copied_from_existing_analysis": [
+      {
+        "left": "value_based",
+        "right": "direct",
+        "matched_cases": 60,
+        "quality_difference": 0.09166666666666666,
+        "quality_95pct_interval": [
+          0.030555555555555555,
+          0.15694444444444444
+        ],
+        "question_difference": 1.1833333333333333,
+        "question_95pct_interval": [
+          0.9333333333333333,
+          1.45
+        ],
+        "method": "domain-stratified matched-case percentile bootstrap; one family per case",
+        "resamples": 10000,
+        "seed": 20261013,
+        "limitation": "Case variation only, no independent model repeats or multiplicity correction; diagnostic subset contrasts are not independent evidence."
+      },
+      {
+        "left": "value_based",
+        "right": "exhaustive",
+        "matched_cases": 60,
+        "quality_difference": 0.01111111111111111,
+        "quality_95pct_interval": [
+          -0.011111111111111112,
+          0.03888888888888888
+        ],
+        "question_difference": 0,
+        "question_95pct_interval": [
+          0.0,
+          0.0
+        ],
+        "method": "domain-stratified matched-case percentile bootstrap; one family per case",
+        "resamples": 10000,
+        "seed": 20261013,
+        "limitation": "Case variation only, no independent model repeats or multiplicity correction; diagnostic subset contrasts are not independent evidence."
+      },
+      {
+        "left": "value_based",
+        "right": "prompt_only",
+        "matched_cases": 60,
+        "quality_difference": 0.019444444444444445,
+        "quality_95pct_interval": [
+          -0.023611111111111114,
+          0.0625
+        ],
+        "question_difference": 0.16666666666666666,
+        "question_95pct_interval": [
+          0.06666666666666667,
+          0.2833333333333333
+        ],
+        "method": "domain-stratified matched-case percentile bootstrap; one family per case",
+        "resamples": 10000,
+        "seed": 20261013,
+        "limitation": "Case variation only, no independent model repeats or multiplicity correction; diagnostic subset contrasts are not independent evidence."
+      }
+    ]
+  },
+  "human_review_existing_results": {
+    "system_summary": [
+      {
+        "system": "direct",
+        "cases": 20,
+        "outputs": 20,
+        "reviewers": 2,
+        "assessments": 40,
+        "usefulness_1_to_5_mean": 4.425,
+        "coherence_1_to_5_mean": 4.675,
+        "audience_fit_1_to_5_mean": 4.6,
+        "feasibility_1_to_5_mean": 4.525,
+        "unsupported_assumptions_count_mean": 0.075,
+        "unnecessary_questions_count_mean": 0.075
+      },
+      {
+        "system": "exhaustive",
+        "cases": 20,
+        "outputs": 20,
+        "reviewers": 2,
+        "assessments": 40,
+        "usefulness_1_to_5_mean": 4.4,
+        "coherence_1_to_5_mean": 4.675,
+        "audience_fit_1_to_5_mean": 4.55,
+        "feasibility_1_to_5_mean": 4.475,
+        "unsupported_assumptions_count_mean": 0.075,
+        "unnecessary_questions_count_mean": 0.45
+      },
+      {
+        "system": "prompt_only",
+        "cases": 20,
+        "outputs": 20,
+        "reviewers": 2,
+        "assessments": 40,
+        "usefulness_1_to_5_mean": 4.475,
+        "coherence_1_to_5_mean": 4.75,
+        "audience_fit_1_to_5_mean": 4.675,
+        "feasibility_1_to_5_mean": 4.6,
+        "unsupported_assumptions_count_mean": 0.075,
+        "unnecessary_questions_count_mean": 0.45
+      },
+      {
+        "system": "value_based",
+        "cases": 20,
+        "outputs": 20,
+        "reviewers": 2,
+        "assessments": 40,
+        "usefulness_1_to_5_mean": 4.4,
+        "coherence_1_to_5_mean": 4.675,
+        "audience_fit_1_to_5_mean": 4.575,
+        "feasibility_1_to_5_mean": 4.475,
+        "unsupported_assumptions_count_mean": 0.075,
+        "unnecessary_questions_count_mean": 0.45
+      },
+      {
+        "system": "importance_one",
+        "cases": 20,
+        "outputs": 20,
+        "reviewers": 2,
+        "assessments": 40,
+        "usefulness_1_to_5_mean": 4.4,
+        "coherence_1_to_5_mean": 4.675,
+        "audience_fit_1_to_5_mean": 4.575,
+        "feasibility_1_to_5_mean": 4.475,
+        "unsupported_assumptions_count_mean": 0.075,
+        "unnecessary_questions_count_mean": 0.45
+      }
+    ],
+    "agreement": {
+      "usefulness_1_to_5": {
+        "dimension": "usefulness_1_to_5",
+        "dimension_zh": "有用性",
+        "paired_outputs": 100,
+        "linearly_weighted_kappa": 0.7905759162303665,
+        "exact_agreement_count": 84,
+        "exact_agreement_proportion": 0.84,
+        "mean_absolute_difference_count_items_only": "",
+        "fixed_levels": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "agreement_weight": "1 - abs(i-j)/4",
+        "observed_weighted_disagreement": 0.04,
+        "expected_weighted_disagreement": 0.191,
+        "kappa_exact_fraction": "151/191",
+        "undefined_reason": null,
+        "confusion_matrix_rows_reviewer1_columns_reviewer2": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            7,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            8,
+            22,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            5,
+            55
+          ]
+        ]
+      },
+      "coherence_1_to_5": {
+        "dimension": "coherence_1_to_5",
+        "dimension_zh": "连贯性",
+        "paired_outputs": 100,
+        "linearly_weighted_kappa": 0.9226903749516815,
+        "exact_agreement_count": 96,
+        "exact_agreement_proportion": 0.96,
+        "mean_absolute_difference_count_items_only": "",
+        "fixed_levels": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "agreement_weight": "1 - abs(i-j)/4",
+        "observed_weighted_disagreement": 0.01,
+        "expected_weighted_disagreement": 0.12935,
+        "kappa_exact_fraction": "2387/2587",
+        "undefined_reason": null,
+        "confusion_matrix_rows_reviewer1_columns_reviewer2": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            12,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            79
+          ]
+        ]
+      },
+      "audience_fit_1_to_5": {
+        "dimension": "audience_fit_1_to_5",
+        "dimension_zh": "受众适配",
+        "paired_outputs": 100,
+        "linearly_weighted_kappa": 0.5992305226033985,
+        "exact_agreement_count": 75,
+        "exact_agreement_proportion": 0.75,
+        "mean_absolute_difference_count_items_only": "",
+        "fixed_levels": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "agreement_weight": "1 - abs(i-j)/4",
+        "observed_weighted_disagreement": 0.0625,
+        "expected_weighted_disagreement": 0.15595,
+        "kappa_exact_fraction": "1869/3119",
+        "undefined_reason": null,
+        "confusion_matrix_rows_reviewer1_columns_reviewer2": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            11,
+            10,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            10,
+            65
+          ]
+        ]
+      },
+      "feasibility_1_to_5": {
+        "dimension": "feasibility_1_to_5",
+        "dimension_zh": "可行性",
+        "paired_outputs": 100,
+        "linearly_weighted_kappa": 0.7304582210242587,
+        "exact_agreement_count": 80,
+        "exact_agreement_proportion": 0.8,
+        "mean_absolute_difference_count_items_only": "",
+        "fixed_levels": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "agreement_weight": "1 - abs(i-j)/4",
+        "observed_weighted_disagreement": 0.05,
+        "expected_weighted_disagreement": 0.1855,
+        "kappa_exact_fraction": "271/371",
+        "undefined_reason": null,
+        "confusion_matrix_rows_reviewer1_columns_reviewer2": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            7,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            13,
+            6,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            3,
+            67
+          ]
+        ]
+      },
+      "unsupported_assumptions_count": {
+        "dimension": "unsupported_assumptions_count",
+        "dimension_zh": "无依据假设数",
+        "paired_outputs": 100,
+        "linearly_weighted_kappa": "",
+        "exact_agreement_count": 90,
+        "exact_agreement_proportion": 0.9,
+        "mean_absolute_difference_count_items_only": 0.15
+      },
+      "unnecessary_questions_count": {
+        "dimension": "unnecessary_questions_count",
+        "dimension_zh": "不必要提问数",
+        "paired_outputs": 100,
+        "linearly_weighted_kappa": "",
+        "exact_agreement_count": 99,
+        "exact_agreement_proportion": 0.99,
+        "mean_absolute_difference_count_items_only": 0.03
+      }
+    },
+    "unresolved_original_count_warning": [
+      {
+        "reviewer_slot": 2,
+        "review_item_id": "R2-002",
+        "case_id": "NTCW13",
+        "variant": "direct",
+        "dimension": "unnecessary_questions_count",
+        "reported_value": 3,
+        "visible_question_items": 0,
+        "treatment": "Original value retained in every statistic; no adjudication or correction."
+      }
+    ]
+  },
+  "validation": {
+    "main_trajectories": 240,
+    "diagnostic_trajectories": 20,
+    "reviewed_outputs": 100,
+    "returned_assessments": 200,
+    "illustrative_cases": [
+      "NTSP13",
+      "NTSP02",
+      "NTSP07",
+      "NTCW13",
+      "NTCW20",
+      "NTCW24",
+      "NTCW08",
+      "NTSP28"
+    ],
+    "all_illustrations_within_existing_human_subset": true,
+    "review_material_matches_saved_trajectories": true,
+    "saved_scores_match_saved_constraint_checks": true,
+    "main_summaries_match_official_analysis": true,
+    "original_inputs_unchanged": true,
+    "new_model_calls": 0,
+    "new_ratings": 0,
+    "new_gold_labels": 0,
+    "new_significance_tests": 0,
+    "disagreements_adjudicated": 0
+  },
+  "interpretation_limits": [
+    "Constraint-type failures may overlap within a case; topic-minimum checks can occur more than once per case. They do not replace the original case-averaged primary metric.",
+    "Qualitative stage explanations are evidence-based interpretations, not causal effects estimated by new interventions.",
+    "All detailed examples are a purposive selection from the original 20-case subset; their selection does not estimate error prevalence.",
+    "Unasked answers are consulted only for offline scoring explanation, never applied to a reviewer who did not see them.",
+    "Human scores/notes retain AI-assistance history, disagreement, and the original inconsistent unnecessary-question count. No new LLM judge is used.",
+    "Cache-reused identical outputs and the importance-one diagnostic are not independent model replications."
+  ]
+}

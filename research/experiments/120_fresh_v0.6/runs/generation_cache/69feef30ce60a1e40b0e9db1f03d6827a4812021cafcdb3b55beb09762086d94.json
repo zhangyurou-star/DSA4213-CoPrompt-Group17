@@ -1,0 +1,122 @@
+{
+  "cache_key": "69feef30ce60a1e40b0e9db1f03d6827a4812021cafcdb3b55beb09762086d94",
+  "source_case_id": "NTCW22",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "Editors, follow these metadata conventions: use \"maker unknown\" when attribution is missing. Use \"date not recorded\" when no creation date survives. Note: blank is not a value. Empty cells may indicate unfinished work, not absence of data. Always distinguish between intentional omissions and incomplete entries. Maintain consistency across all catalog records. This ensures clarity and reliability in scholarly reference. Apply these rules uniformly to preserve data integrity. Remember: blank is not a value. Use only the designated terms. This standardization supports accurate retrieval and long-term usability of the catalog."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Editors, adhere to these metadata conventions: use \\\"maker unknown\\\" when attribution is missing. Use \\\"date not recorded\\\" when no creation date survives. Note: blank is not a value. Empty cells may indicate unfinished work, not absence of data. Always distinguish between intentional omissions and incomplete entries. Maintain consistency across all catalog records. This ensures clarity and reliability in scholarly reference. Apply these rules uniformly to preserve data integrity. Remember: blank is not a value. Use only the designated terms. This standardization supports accurate retrieval and long-term usability of the catalog.\"\n}",
+      "parsed": {
+        "text": "Editors, adhere to these metadata conventions: use \"maker unknown\" when attribution is missing. Use \"date not recorded\" when no creation date survives. Note: blank is not a value. Empty cells may indicate unfinished work, not absence of data. Always distinguish between intentional omissions and incomplete entries. Maintain consistency across all catalog records. This ensures clarity and reliability in scholarly reference. Apply these rules uniformly to preserve data integrity. Remember: blank is not a value. Use only the designated terms. This standardization supports accurate retrieval and long-term usability of the catalog."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Keep the complete piece to 55–85 words."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"maker unknown\", \"date not recorded\", \"blank is not a value\"."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 90}"
+  ],
+  "constraint_checks_final": [
+    "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 89}"
+  ],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"Editors, follow these metadata conventions: use \\\"maker unknown\\\" when attribution is missing. Use \\\"date not recorded\\\" when no creation date survives. Note: blank is not a value. Empty cells may indicate unfinished work, not absence of data. Always distinguish between intentional omissions and incomplete entries. Maintain consistency across all catalog records. This ensures clarity and reliability in scholarly reference. Apply these rules uniformly to preserve data integrity. Remember: blank is not a value. Use only the designated terms. This standardization supports accurate retrieval and long-term usability of the catalog.\"\n}",
+    "parsed": {
+      "text": "Editors, follow these metadata conventions: use \"maker unknown\" when attribution is missing. Use \"date not recorded\" when no creation date survives. Note: blank is not a value. Empty cells may indicate unfinished work, not absence of data. Always distinguish between intentional omissions and incomplete entries. Maintain consistency across all catalog records. This ensures clarity and reliability in scholarly reference. Apply these rules uniformly to preserve data integrity. Remember: blank is not a value. Use only the designated terms. This standardization supports accurate retrieval and long-term usability of the catalog."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 90
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 90}"
+    ],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"maker unknown\", \"date not recorded\", \"blank is not a value\"."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 89
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 89}"
+    ],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"maker unknown\", \"date not recorded\", \"blank is not a value\"."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

@@ -1,0 +1,49 @@
+{
+  "cache_key": "5ac107ca099dc1fd158ec438207fadc662005613b579b0329f338950681fd291",
+  "source_case_id": "NDCW15",
+  "source_policy": "direct",
+  "output": {
+    "text": "Performance Directions for the Invented Soundscape: 'Echoes in the Hollow'\n\nIntended Audience: Performers Rehearsing the Piece\n\nDate: 2027-02-01\n\n1. General Atmosphere: The soundscape unfolds in a slow, meditative pulse. Maintain a sense of suspended time—each sound should linger as if resonating in an empty, cavernous space. Avoid abrupt transitions; all changes must be seamless and organic.\n\n2. Spatialization: Performers must be positioned in a semi-circle, facing inward. The sound sources (individual performers or pre-recorded elements) should be distributed across the perimeter. Use directional audio cues to simulate movement through the space—e.g., a low hum should appear to drift from left to right over 12 seconds.\n\n3. Dynamics: Begin at ppp (pianissimo) and sustain this level for the first 3 minutes. Gradually increase to mp (mezzo-piano) by minute 5, then hold for 2 minutes. At minute 7, introduce a sudden, sharp crescendo to ff (fortissimo) lasting exactly 15 seconds, then drop back to pp within 3 seconds. This dynamic arc must be precisely timed.\n\n4. Timing and Synchronization: All performers must use a shared metronome set to 52 BPM, but only the lead performer will initiate the first sound. The others must begin their cues within ±0.3 seconds of the lead’s signal. Use a visual cue (a hand gesture) to signal the ff crescendo.\n\n5. Instrumentation and Sound Sources: The piece requires three performers: one using a prepared piano (with rubber, screws, and paper inserted between strings), one using a granular synthesizer with field recordings of wind through stone canyons, and one using a voice modulated through a ring modulator to produce non-lexical, vowel-like tones. All sounds must be processed through a real-time reverb unit with a decay time of 8.5 seconds.\n\n6. Duration: The total performance time is 10 minutes and 17 seconds. Performers must rehearse with a stopwatch. The piece ends on a sustained, unmodulated low C from the prepared piano, fading out over 4 seconds.\n\n7. Rehearsal Protocol: Rehearse in silence for the first 10 minutes of each session to internalize the spatial and temporal structure. Use the provided audio reference track (file: 'echoes_hollow_ref_20270201.wav') for alignment. Mark all cue points with colored tape on the floor. Performers must report any timing discrepancies in writing after each rehearsal.\n\n8. Final Note: This piece is not about precision alone—it is about presence. Let the silence between sounds be as meaningful as the sound itself. Trust the space. Trust the moment."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Performance Directions for the Invented Soundscape: 'Echoes in the Hollow'\\n\\nIntended Audience: Performers Rehearsing the Piece\\n\\nDate: 2027-02-01\\n\\n1. General Atmosphere: The soundscape unfolds in a slow, meditative pulse. Maintain a sense of suspended time—each sound should linger as if resonating in an empty, cavernous space. Avoid abrupt transitions; all changes must be seamless and organic.\\n\\n2. Spatialization: Performers must be positioned in a semi-circle, facing inward. The sound sources (individual performers or pre-recorded elements) should be distributed across the perimeter. Use directional audio cues to simulate movement through the space—e.g., a low hum should appear to drift from left to right over 12 seconds.\\n\\n3. Dynamics: Begin at ppp (pianissimo) and sustain this level for the first 3 minutes. Gradually increase to mp (mezzo-piano) by minute 5, then hold for 2 minutes. At minute 7, introduce a sudden, sharp crescendo to ff (fortissimo) lasting exactly 15 seconds, then drop back to pp within 3 seconds. This dynamic arc must be precisely timed.\\n\\n4. Timing and Synchronization: All performers must use a shared metronome set to 52 BPM, but only the lead performer will initiate the first sound. The others must begin their cues within ±0.3 seconds of the lead’s signal. Use a visual cue (a hand gesture) to signal the ff crescendo.\\n\\n5. Instrumentation and Sound Sources: The piece requires three performers: one using a prepared piano (with rubber, screws, and paper inserted between strings), one using a granular synthesizer with field recordings of wind through stone canyons, and one using a voice modulated through a ring modulator to produce non-lexical, vowel-like tones. All sounds must be processed through a real-time reverb unit with a decay time of 8.5 seconds.\\n\\n6. Duration: The total performance time is 10 minutes and 17 seconds. Performers must rehearse with a stopwatch. The piece ends on a sustained, unmodulated low C from the prepared piano, fading out over 4 seconds.\\n\\n7. Rehearsal Protocol: Rehearse in silence for the first 10 minutes of each session to internalize the spatial and temporal structure. Use the provided audio reference track (file: 'echoes_hollow_ref_20270201.wav') for alignment. Mark all cue points with colored tape on the floor. Performers must report any timing discrepancies in writing after each rehearsal.\\n\\n8. Final Note: This piece is not about precision alone—it is about presence. Let the silence between sounds be as meaningful as the sound itself. Trust the space. Trust the moment.\"\n}",
+      "parsed": {
+        "text": "Performance Directions for the Invented Soundscape: 'Echoes in the Hollow'\n\nIntended Audience: Performers Rehearsing the Piece\n\nDate: 2027-02-01\n\n1. General Atmosphere: The soundscape unfolds in a slow, meditative pulse. Maintain a sense of suspended time—each sound should linger as if resonating in an empty, cavernous space. Avoid abrupt transitions; all changes must be seamless and organic.\n\n2. Spatialization: Performers must be positioned in a semi-circle, facing inward. The sound sources (individual performers or pre-recorded elements) should be distributed across the perimeter. Use directional audio cues to simulate movement through the space—e.g., a low hum should appear to drift from left to right over 12 seconds.\n\n3. Dynamics: Begin at ppp (pianissimo) and sustain this level for the first 3 minutes. Gradually increase to mp (mezzo-piano) by minute 5, then hold for 2 minutes. At minute 7, introduce a sudden, sharp crescendo to ff (fortissimo) lasting exactly 15 seconds, then drop back to pp within 3 seconds. This dynamic arc must be precisely timed.\n\n4. Timing and Synchronization: All performers must use a shared metronome set to 52 BPM, but only the lead performer will initiate the first sound. The others must begin their cues within ±0.3 seconds of the lead’s signal. Use a visual cue (a hand gesture) to signal the ff crescendo.\n\n5. Instrumentation and Sound Sources: The piece requires three performers: one using a prepared piano (with rubber, screws, and paper inserted between strings), one using a granular synthesizer with field recordings of wind through stone canyons, and one using a voice modulated through a ring modulator to produce non-lexical, vowel-like tones. All sounds must be processed through a real-time reverb unit with a decay time of 8.5 seconds.\n\n6. Duration: The total performance time is 10 minutes and 17 seconds. Performers must rehearse with a stopwatch. The piece ends on a sustained, unmodulated low C from the prepared piano, fading out over 4 seconds.\n\n7. Rehearsal Protocol: Rehearse in silence for the first 10 minutes of each session to internalize the spatial and temporal structure. Use the provided audio reference track (file: 'echoes_hollow_ref_20270201.wav') for alignment. Mark all cue points with colored tape on the floor. Performers must report any timing discrepancies in writing after each rehearsal.\n\n8. Final Note: This piece is not about precision alone—it is about presence. Let the silence between sounds be as meaningful as the sound itself. Trust the space. Trust the moment."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 410
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 410
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

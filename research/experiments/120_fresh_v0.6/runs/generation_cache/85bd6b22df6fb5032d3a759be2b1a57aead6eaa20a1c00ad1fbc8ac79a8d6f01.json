@@ -1,0 +1,208 @@
+{
+  "cache_key": "85bd6b22df6fb5032d3a759be2b1a57aead6eaa20a1c00ad1fbc8ac79a8d6f01",
+  "source_case_id": "NTSP12",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Incident-Management Roles Overview",
+        "minutes": 60
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Tabletop Exercise Frameworks",
+        "minutes": 60
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Role-Specific Responsibilities in Unfamiliar Roles",
+        "minutes": 60
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Integration and Coordination Strategies",
+        "minutes": 60
+      }
+    ],
+    "summary": "Calculated from the schedule: 240 minutes in total. Daily totals: 2027-02-01: 60 minutes; 2027-02-02: 60 minutes; 2027-02-03: 60 minutes; 2027-02-04: 60 minutes. Topic totals: Incident-Management Roles Overview: 60 minutes; Integration and Coordination Strategies: 60 minutes; Role-Specific Responsibilities in Unfamiliar Roles: 60 minutes; Tabletop Exercise Frameworks: 60 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Incident-Management Roles Overview\",\n      \"minutes\": 60\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Tabletop Exercise Frameworks\",\n      \"minutes\": 60\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Role-Specific Responsibilities in Unfamiliar Roles\",\n      \"minutes\": 60\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Integration and Coordination Strategies\",\n      \"minutes\": 60\n    }\n  ],\n  \"summary\": \"A four-day study plan covering core concepts of unfamiliar incident-management roles in tabletop exercises, with one 60-minute session per day from February 1 to February 4, 2027. All sessions are scheduled within the allowed window, with no study after February 4.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Incident-Management Roles Overview",
+            "minutes": 60
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Tabletop Exercise Frameworks",
+            "minutes": 60
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Role-Specific Responsibilities in Unfamiliar Roles",
+            "minutes": 60
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Integration and Coordination Strategies",
+            "minutes": 60
+          }
+        ],
+        "summary": "A four-day study plan covering core concepts of unfamiliar incident-management roles in tabletop exercises, with one 60-minute session per day from February 1 to February 4, 2027. All sessions are scheduled within the allowed window, with no study after February 4."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-04, but no study should be scheduled after it."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 240,
+      "daily_minutes": {
+        "2027-02-01": 60,
+        "2027-02-02": 60,
+        "2027-02-03": 60,
+        "2027-02-04": 60
+      },
+      "topic_minutes": [
+        {
+          "topic": "Incident-Management Roles Overview",
+          "normalized_topic": "incident-management roles overview",
+          "minutes": 60
+        },
+        {
+          "topic": "Integration and Coordination Strategies",
+          "normalized_topic": "integration and coordination strategies",
+          "minutes": 60
+        },
+        {
+          "topic": "Role-Specific Responsibilities in Unfamiliar Roles",
+          "normalized_topic": "role-specific responsibilities in unfamiliar roles",
+          "minutes": 60
+        },
+        {
+          "topic": "Tabletop Exercise Frameworks",
+          "normalized_topic": "tabletop exercise frameworks",
+          "minutes": 60
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-04, but no study should be scheduled after it."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 240,
+      "daily_minutes": {
+        "2027-02-01": 60,
+        "2027-02-02": 60,
+        "2027-02-03": 60,
+        "2027-02-04": 60
+      },
+      "topic_minutes": [
+        {
+          "topic": "Incident-Management Roles Overview",
+          "normalized_topic": "incident-management roles overview",
+          "minutes": 60
+        },
+        {
+          "topic": "Integration and Coordination Strategies",
+          "normalized_topic": "integration and coordination strategies",
+          "minutes": 60
+        },
+        {
+          "topic": "Role-Specific Responsibilities in Unfamiliar Roles",
+          "normalized_topic": "role-specific responsibilities in unfamiliar roles",
+          "minutes": 60
+        },
+        {
+          "topic": "Tabletop Exercise Frameworks",
+          "normalized_topic": "tabletop exercise frameworks",
+          "minutes": 60
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-04, but no study should be scheduled after it."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "A four-day study plan covering core concepts of unfamiliar incident-management roles in tabletop exercises, with one 60-minute session per day from February 1 to February 4, 2027. All sessions are scheduled within the allowed window, with no study after February 4.",
+    "derived_summary": "Calculated from the schedule: 240 minutes in total. Daily totals: 2027-02-01: 60 minutes; 2027-02-02: 60 minutes; 2027-02-03: 60 minutes; 2027-02-04: 60 minutes. Topic totals: Incident-Management Roles Overview: 60 minutes; Integration and Coordination Strategies: 60 minutes; Role-Specific Responsibilities in Unfamiliar Roles: 60 minutes; Tabletop Exercise Frameworks: 60 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

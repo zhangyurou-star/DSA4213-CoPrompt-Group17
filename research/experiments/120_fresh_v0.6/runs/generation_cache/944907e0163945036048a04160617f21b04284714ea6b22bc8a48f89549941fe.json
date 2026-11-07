@@ -1,0 +1,118 @@
+{
+  "cache_key": "944907e0163945036048a04160617f21b04284714ea6b22bc8a48f89549941fe",
+  "source_case_id": "NTCW30",
+  "source_policy": "direct",
+  "output": {
+    "text": "Your shelf is empty. Tap Add a keepsake to begin. Each entry needs a title and a note. You can revise your first entry later. Start with a memory, a thought, or a moment worth keeping. A title and a note are all you need. This space grows with you. Add a keepsake now and build your collection, one entry at a time."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Your shelf is empty. Begin by adding a keepsake to start your collection. Each entry requires a title and a note to be saved. Don’t worry—your first entry can be revised later, so take your time crafting the perfect memory. Simply tap Add a keepsake to create your first item. A title and a note are all you need to begin. This space is yours to fill, one meaningful moment at a time. Your shelf is empty now, but it won’t stay that way for long.\"\n}",
+      "parsed": {
+        "text": "Your shelf is empty. Begin by adding a keepsake to start your collection. Each entry requires a title and a note to be saved. Don’t worry—your first entry can be revised later, so take your time crafting the perfect memory. Simply tap Add a keepsake to create your first item. A title and a note are all you need to begin. This space is yours to fill, one meaningful moment at a time. Your shelf is empty now, but it won’t stay that way for long."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Write 50 to 80 words altogether."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"Your shelf is empty\", \"Add a keepsake\", \"a title and a note\"."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 87}"
+  ],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"Your shelf is empty. Tap Add a keepsake to begin. Each entry needs a title and a note. You can revise your first entry later. Start with a memory, a thought, or a moment worth keeping. A title and a note are all you need. This space grows with you. Add a keepsake now and build your collection, one entry at a time.\"\n}",
+    "parsed": {
+      "text": "Your shelf is empty. Tap Add a keepsake to begin. Each entry needs a title and a note. You can revise your first entry later. Start with a memory, a thought, or a moment worth keeping. A title and a note are all you need. This space grows with you. Add a keepsake now and build your collection, one entry at a time."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 87
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 87}"
+    ],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"Your shelf is empty\", \"Add a keepsake\", \"a title and a note\"."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 63
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"Your shelf is empty\", \"Add a keepsake\", \"a title and a note\"."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

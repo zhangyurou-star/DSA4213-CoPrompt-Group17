@@ -1,0 +1,108 @@
+{
+  "cache_key": "cc0972cc07c5972503ca9e13fc1fb96e93832c1d48446626876064845a0ba0ae",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [],
+    "available_time": [],
+    "topics": [
+      "S4",
+      "S5"
+    ],
+    "priorities": [
+      "S6"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 66,
+      "text": "A horology club has shared diagrams of mechanical clock movements."
+    },
+    {
+      "id": "S2",
+      "start": 67,
+      "end": 105,
+      "text": "Plan my study of how the parts relate."
+    },
+    {
+      "id": "S3",
+      "start": 106,
+      "end": 126,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 127,
+      "end": 213,
+      "text": "Cover these exact topic labels: \"Anchor Escapements\", \"Balance Wheels\", \"Gear Trains\"."
+    },
+    {
+      "id": "S5",
+      "start": 214,
+      "end": 268,
+      "text": "Give each one at least 20 minutes over the whole plan."
+    },
+    {
+      "id": "S6",
+      "start": 269,
+      "end": 374,
+      "text": "A little variety in the ordering would be nice, but it is optional and adds no minimum-time requirements."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": null,
+    "topics": "Cover these exact topic labels: \"Anchor Escapements\", \"Balance Wheels\", \"Gear Trains\".\nGive each one at least 20 minutes over the whole plan.",
+    "priorities": "A little variety in the ordering would be nice, but it is optional and adds no minimum-time requirements."
+  },
+  "evidence": {
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 127,
+        "end": 213,
+        "quote": "Cover these exact topic labels: \"Anchor Escapements\", \"Balance Wheels\", \"Gear Trains\"."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 214,
+        "end": 268,
+        "quote": "Give each one at least 20 minutes over the whole plan."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 269,
+        "end": 374,
+        "quote": "A little variety in the ordering would be nice, but it is optional and adds no minimum-time requirements."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[],\"available_time\":[],\"topics\":[\"S4\",\"S5\"],\"priorities\":[\"S6\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [],
+          "available_time": [],
+          "topics": [
+            "S4",
+            "S5"
+          ],
+          "priorities": [
+            "S6"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

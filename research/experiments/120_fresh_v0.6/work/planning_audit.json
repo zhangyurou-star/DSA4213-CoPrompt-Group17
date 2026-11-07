@@ -1,0 +1,4408 @@
+{
+  "status": "passed_offline_validation",
+  "domain": "study_planning",
+  "authored_utc": "2026-10-19T14:55:25.318812+00:00",
+  "family_plan_registered_utc": "2026-10-19T14:41:55.087920+00:00",
+  "api_calls": 0,
+  "historical_requests_read": 0,
+  "historical_outputs_read": 0,
+  "case_count": 60,
+  "split_counts": {
+    "design": 20,
+    "validation": 10,
+    "test": 30
+  },
+  "omission_counts": {
+    "complete": 12,
+    "critical_omission": 12,
+    "critical_and_optional": 12,
+    "optional_only": 10,
+    "unavailable_answer": 8,
+    "execute_now": 6
+  },
+  "unresolved_count_distribution": {
+    "0": 12,
+    "1": 29,
+    "2": 11,
+    "3": 8
+  },
+  "constraint_count": 214,
+  "targeted_violations_detected": 214,
+  "schema_validation": "Original validate_contract definitions against all new study schemas; no main/validate execution.",
+  "novelty_checks": {
+    "unique_family_ids": 60,
+    "unique_topic_labels": 180,
+    "prior_exact_topic_overlap": 0,
+    "prior_exact_family_overlap": 0,
+    "cross_split_exact_topic_overlap": 0,
+    "semantic_scope_review": "All 60 are distinct subtopics; related broad disciplines use different named concepts, tasks and scenarios."
+  },
+  "limitation": "Authored deterministic feasibility witnesses are synthetic validation data, never experiment model responses.",
+  "case_results": [
+    {
+      "case_id": "NDSP01",
+      "split": "design",
+      "family_id": "nsp_apiary_inspection",
+      "omission_type": "complete",
+      "unresolved_fields": [],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 3,
+      "daily_cap": 25,
+      "daily_totals": {
+        "2027-02-01": 25,
+        "2027-02-02": 25,
+        "2027-02-03": 5
+      },
+      "topic_totals": {
+        "Brood Pattern Checks": 20,
+        "Queen Presence Signs": 10,
+        "Hive Recordkeeping": 25
+      },
+      "required_topic_minima": {
+        "Brood Pattern Checks": 20,
+        "Queen Presence Signs": 10,
+        "Hive Recordkeeping": 25
+      },
+      "minimum_required_minutes": 55,
+      "capacity_minutes": 75,
+      "schedule_rows": 5,
+      "constraint_checks": [
+        {
+          "constraint_id": "NDSP01_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP01_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP01_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NDSP01_04",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        },
+        {
+          "constraint_id": "NDSP01_05",
+          "source_field": "priorities",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NDSP02",
+      "split": "design",
+      "family_id": "nsp_railway_signalling",
+      "omission_type": "critical_omission",
+      "unresolved_fields": [
+        "deadline"
+      ],
+      "unresolved_critical_fields": [
+        "deadline"
+      ],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 4,
+      "daily_cap": 35,
+      "daily_totals": {
+        "2027-02-01": 35,
+        "2027-02-02": 10
+      },
+      "topic_totals": {
+        "Block Sections": 15,
+        "Interlocking": 15,
+        "Signal Aspects": 15
+      },
+      "required_topic_minima": {
+        "Block Sections": 15,
+        "Interlocking": 15,
+        "Signal Aspects": 15
+      },
+      "minimum_required_minutes": 45,
+      "capacity_minutes": 140,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NDSP02_01",
+          "source_field": "deadline",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP02_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP02_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NDSP03",
+      "split": "design",
+      "family_id": "nsp_collection_pest_monitoring",
+      "omission_type": "critical_and_optional",
+      "unresolved_fields": [
+        "available_time",
+        "priorities"
+      ],
+      "unresolved_critical_fields": [
+        "available_time"
+      ],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 5,
+      "daily_cap": 45,
+      "daily_totals": {
+        "2027-02-01": 45,
+        "2027-02-02": 15
+      },
+      "topic_totals": {
+        "Quarantine Checks": 20,
+        "Sticky Trap Logs": 20,
+        "Pest Evidence Recognition": 20
+      },
+      "required_topic_minima": {
+        "Quarantine Checks": 20,
+        "Sticky Trap Logs": 20,
+        "Pest Evidence Recognition": 20
+      },
+      "minimum_required_minutes": 60,
+      "capacity_minutes": 225,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NDSP03_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP03_02",
+          "source_field": "available_time",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP03_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NDSP04",
+      "split": "design",
+      "family_id": "nsp_stage_rigging_theory",
+      "omission_type": "optional_only",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 6,
+      "daily_cap": 30,
+      "daily_totals": {
+        "2027-02-01": 30,
+        "2027-02-02": 30,
+        "2027-02-03": 25
+      },
+      "topic_totals": {
+        "Rigging Inspections": 25,
+        "Load Paths": 35,
+        "Counterweight Systems": 25
+      },
+      "required_topic_minima": {
+        "Load Paths": 35,
+        "Counterweight Systems": 25,
+        "Rigging Inspections": 25
+      },
+      "minimum_required_minutes": 85,
+      "capacity_minutes": 180,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NDSP04_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP04_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP04_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NDSP04_04",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NDSP05",
+      "split": "design",
+      "family_id": "nsp_braille_literacy",
+      "omission_type": "unavailable_answer",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 7,
+      "daily_cap": 50,
+      "daily_totals": {
+        "2027-02-01": 20
+      },
+      "topic_totals": {
+        "Six-dot Cells": 10,
+        "Braille Contractions": 10
+      },
+      "required_topic_minima": {
+        "Six-dot Cells": 10,
+        "Braille Contractions": 10
+      },
+      "minimum_required_minutes": 20,
+      "capacity_minutes": 350,
+      "schedule_rows": 2,
+      "constraint_checks": [
+        {
+          "constraint_id": "NDSP05_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP05_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP05_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NDSP06",
+      "split": "design",
+      "family_id": "nsp_coffee_sensory",
+      "omission_type": "execute_now",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 3,
+      "daily_cap": 40,
+      "daily_totals": {
+        "2027-02-01": 40,
+        "2027-02-02": 5
+      },
+      "topic_totals": {
+        "Aroma Wheel": 15,
+        "Acidity Descriptors": 15,
+        "Cupping Protocol": 15
+      },
+      "required_topic_minima": {
+        "Aroma Wheel": 15,
+        "Acidity Descriptors": 15,
+        "Cupping Protocol": 15
+      },
+      "minimum_required_minutes": 45,
+      "capacity_minutes": 120,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NDSP06_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP06_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP06_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NDSP07",
+      "split": "design",
+      "family_id": "nsp_water_treatment",
+      "omission_type": "complete",
+      "unresolved_fields": [],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 4,
+      "daily_cap": 55,
+      "daily_totals": {
+        "2027-02-01": 55,
+        "2027-02-02": 30
+      },
+      "topic_totals": {
+        "Coagulation": 30,
+        "Sedimentation": 20,
+        "Disinfection": 35
+      },
+      "required_topic_minima": {
+        "Coagulation": 30,
+        "Sedimentation": 20,
+        "Disinfection": 35
+      },
+      "minimum_required_minutes": 85,
+      "capacity_minutes": 220,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NDSP07_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP07_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP07_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NDSP07_04",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        },
+        {
+          "constraint_id": "NDSP07_05",
+          "source_field": "priorities",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NDSP08",
+      "split": "design",
+      "family_id": "nsp_pedestrian_design",
+      "omission_type": "complete",
+      "unresolved_fields": [],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 5,
+      "daily_cap": 60,
+      "daily_totals": {
+        "2027-02-01": 60,
+        "2027-02-02": 40
+      },
+      "topic_totals": {
+        "Footway Width": 25,
+        "Crossing Visibility": 25,
+        "Kerb Ramps": 25,
+        "Pedestrian Desire Lines": 25
+      },
+      "required_topic_minima": {
+        "Crossing Visibility": 25,
+        "Kerb Ramps": 25,
+        "Pedestrian Desire Lines": 25,
+        "Footway Width": 25
+      },
+      "minimum_required_minutes": 100,
+      "capacity_minutes": 300,
+      "schedule_rows": 5,
+      "constraint_checks": [
+        {
+          "constraint_id": "NDSP08_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP08_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP08_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NDSP09",
+      "split": "design",
+      "family_id": "nsp_origami_foundations",
+      "omission_type": "complete",
+      "unresolved_fields": [],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 6,
+      "daily_cap": 65,
+      "daily_totals": {
+        "2027-02-01": 55
+      },
+      "topic_totals": {
+        "Valley Folds": 10,
+        "Mountain Folds": 10,
+        "Reverse Folds": 35
+      },
+      "required_topic_minima": {
+        "Valley Folds": 10,
+        "Mountain Folds": 10,
+        "Reverse Folds": 35
+      },
+      "minimum_required_minutes": 55,
+      "capacity_minutes": 390,
+      "schedule_rows": 3,
+      "constraint_checks": [
+        {
+          "constraint_id": "NDSP09_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP09_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP09_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NDSP09_04",
+          "source_field": "priorities",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NDSP10",
+      "split": "design",
+      "family_id": "nsp_bicycle_transmission",
+      "omission_type": "critical_omission",
+      "unresolved_fields": [
+        "available_time"
+      ],
+      "unresolved_critical_fields": [
+        "available_time"
+      ],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 7,
+      "daily_cap": 70,
+      "daily_totals": {
+        "2027-02-01": 70
+      },
+      "topic_totals": {
+        "Chain Wear": 25,
+        "Derailleur Indexing": 15,
+        "Cassette Inspection": 30
+      },
+      "required_topic_minima": {
+        "Chain Wear": 25,
+        "Derailleur Indexing": 15,
+        "Cassette Inspection": 30
+      },
+      "minimum_required_minutes": 70,
+      "capacity_minutes": 490,
+      "schedule_rows": 3,
+      "constraint_checks": [
+        {
+          "constraint_id": "NDSP10_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP10_02",
+          "source_field": "available_time",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP10_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NDSP10_04",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        },
+        {
+          "constraint_id": "NDSP10_05",
+          "source_field": "priorities",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NDSP11",
+      "split": "design",
+      "family_id": "nsp_semaphore_signalling",
+      "omission_type": "critical_omission",
+      "unresolved_fields": [
+        "topics",
+        "priorities"
+      ],
+      "unresolved_critical_fields": [
+        "topics",
+        "priorities"
+      ],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 3,
+      "daily_cap": 30,
+      "daily_totals": {
+        "2027-02-01": 30,
+        "2027-02-02": 30,
+        "2027-02-03": 20
+      },
+      "topic_totals": {
+        "Semaphore Positions": 20,
+        "Letter Pairs": 20,
+        "Message Breaks": 40
+      },
+      "required_topic_minima": {
+        "Semaphore Positions": 20,
+        "Letter Pairs": 20,
+        "Message Breaks": 40
+      },
+      "minimum_required_minutes": 80,
+      "capacity_minutes": 90,
+      "schedule_rows": 5,
+      "constraint_checks": [
+        {
+          "constraint_id": "NDSP11_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP11_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP11_03",
+          "source_field": "topics",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NDSP11_04",
+          "source_field": "priorities",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NDSP12",
+      "split": "design",
+      "family_id": "nsp_records_appraisal",
+      "omission_type": "critical_omission",
+      "unresolved_fields": [
+        "deadline",
+        "available_time",
+        "topics"
+      ],
+      "unresolved_critical_fields": [
+        "deadline",
+        "available_time",
+        "topics"
+      ],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 4,
+      "daily_cap": 35,
+      "daily_totals": {
+        "2027-02-01": 35,
+        "2027-02-02": 35,
+        "2027-02-03": 5
+      },
+      "topic_totals": {
+        "Disposal Documentation": 25,
+        "Retention Triggers": 25,
+        "Provenance Appraisal": 25
+      },
+      "required_topic_minima": {
+        "Retention Triggers": 25,
+        "Provenance Appraisal": 25,
+        "Disposal Documentation": 25
+      },
+      "minimum_required_minutes": 75,
+      "capacity_minutes": 140,
+      "schedule_rows": 5,
+      "constraint_checks": [
+        {
+          "constraint_id": "NDSP12_01",
+          "source_field": "deadline",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP12_02",
+          "source_field": "available_time",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP12_03",
+          "source_field": "topics",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NDSP13",
+      "split": "design",
+      "family_id": "nsp_palaeography",
+      "omission_type": "critical_and_optional",
+      "unresolved_fields": [
+        "deadline",
+        "priorities"
+      ],
+      "unresolved_critical_fields": [
+        "deadline"
+      ],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 5,
+      "daily_cap": 45,
+      "daily_totals": {
+        "2027-02-01": 30
+      },
+      "topic_totals": {
+        "Secretary Hand": 20,
+        "Abbreviation Marks": 10
+      },
+      "required_topic_minima": {
+        "Secretary Hand": 20,
+        "Abbreviation Marks": 10
+      },
+      "minimum_required_minutes": 30,
+      "capacity_minutes": 225,
+      "schedule_rows": 2,
+      "constraint_checks": [
+        {
+          "constraint_id": "NDSP13_01",
+          "source_field": "deadline",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP13_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP13_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NDSP13_04",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NDSP14",
+      "split": "design",
+      "family_id": "nsp_leather_stitching",
+      "omission_type": "critical_and_optional",
+      "unresolved_fields": [
+        "topics",
+        "priorities"
+      ],
+      "unresolved_critical_fields": [
+        "topics"
+      ],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 6,
+      "daily_cap": 30,
+      "daily_totals": {
+        "2027-02-01": 30,
+        "2027-02-02": 15
+      },
+      "topic_totals": {
+        "Saddle Stitching": 15,
+        "Stitching Grooves": 15,
+        "Edge Burnishing": 15
+      },
+      "required_topic_minima": {
+        "Saddle Stitching": 15,
+        "Stitching Grooves": 15,
+        "Edge Burnishing": 15
+      },
+      "minimum_required_minutes": 45,
+      "capacity_minutes": 180,
+      "schedule_rows": 3,
+      "constraint_checks": [
+        {
+          "constraint_id": "NDSP14_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP14_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP14_03",
+          "source_field": "topics",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NDSP15",
+      "split": "design",
+      "family_id": "nsp_tea_utensils",
+      "omission_type": "critical_and_optional",
+      "unresolved_fields": [
+        "deadline",
+        "available_time",
+        "priorities"
+      ],
+      "unresolved_critical_fields": [
+        "deadline",
+        "available_time"
+      ],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 7,
+      "daily_cap": 50,
+      "daily_totals": {
+        "2027-02-01": 50,
+        "2027-02-02": 10
+      },
+      "topic_totals": {
+        "Chawan Handling": 20,
+        "Chasen Care": 20,
+        "Utensil Placement": 20
+      },
+      "required_topic_minima": {
+        "Chawan Handling": 20,
+        "Chasen Care": 20,
+        "Utensil Placement": 20
+      },
+      "minimum_required_minutes": 60,
+      "capacity_minutes": 350,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NDSP15_01",
+          "source_field": "deadline",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP15_02",
+          "source_field": "available_time",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP15_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NDSP16",
+      "split": "design",
+      "family_id": "nsp_human_factors",
+      "omission_type": "optional_only",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 3,
+      "daily_cap": 40,
+      "daily_totals": {
+        "2027-02-01": 40,
+        "2027-02-02": 40,
+        "2027-02-03": 5
+      },
+      "topic_totals": {
+        "Workstation Reach": 25,
+        "Display Legibility": 35,
+        "Control Compatibility": 25
+      },
+      "required_topic_minima": {
+        "Display Legibility": 35,
+        "Control Compatibility": 25,
+        "Workstation Reach": 25
+      },
+      "minimum_required_minutes": 85,
+      "capacity_minutes": 120,
+      "schedule_rows": 5,
+      "constraint_checks": [
+        {
+          "constraint_id": "NDSP16_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP16_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP16_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NDSP16_04",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NDSP17",
+      "split": "design",
+      "family_id": "nsp_morse_listening",
+      "omission_type": "optional_only",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 4,
+      "daily_cap": 55,
+      "daily_totals": {
+        "2027-02-01": 30
+      },
+      "topic_totals": {
+        "Dot-dash Patterns": 10,
+        "Character Spacing": 10,
+        "Call-sign Copying": 10
+      },
+      "required_topic_minima": {
+        "Dot-dash Patterns": 10,
+        "Character Spacing": 10,
+        "Call-sign Copying": 10
+      },
+      "minimum_required_minutes": 30,
+      "capacity_minutes": 220,
+      "schedule_rows": 3,
+      "constraint_checks": [
+        {
+          "constraint_id": "NDSP17_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP17_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP17_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NDSP18",
+      "split": "design",
+      "family_id": "nsp_manuscript_illumination",
+      "omission_type": "unavailable_answer",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 5,
+      "daily_cap": 60,
+      "daily_totals": {
+        "2027-02-01": 45
+      },
+      "topic_totals": {
+        "Gold Leaf Grounds": 15,
+        "Pigment Layering": 15,
+        "Decorated Initials": 15
+      },
+      "required_topic_minima": {
+        "Gold Leaf Grounds": 15,
+        "Pigment Layering": 15,
+        "Decorated Initials": 15
+      },
+      "minimum_required_minutes": 45,
+      "capacity_minutes": 300,
+      "schedule_rows": 3,
+      "constraint_checks": [
+        {
+          "constraint_id": "NDSP18_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP18_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP18_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NDSP19",
+      "split": "design",
+      "family_id": "nsp_go_life_death",
+      "omission_type": "unavailable_answer",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 6,
+      "daily_cap": 65,
+      "daily_totals": {
+        "2027-02-01": 65,
+        "2027-02-02": 5
+      },
+      "topic_totals": {
+        "Eye Formation": 30,
+        "Capturing Races": 20,
+        "Seki": 20
+      },
+      "required_topic_minima": {
+        "Eye Formation": 30,
+        "Capturing Races": 20,
+        "Seki": 20
+      },
+      "minimum_required_minutes": 70,
+      "capacity_minutes": 390,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NDSP19_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP19_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP19_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NDSP19_04",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NDSP20",
+      "split": "design",
+      "family_id": "nsp_dry_stone_walling",
+      "omission_type": "execute_now",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 7,
+      "daily_cap": 70,
+      "daily_totals": {
+        "2027-02-01": 70,
+        "2027-02-02": 5
+      },
+      "topic_totals": {
+        "Hearting": 25,
+        "Batter Angles": 25,
+        "Through Stones": 25
+      },
+      "required_topic_minima": {
+        "Batter Angles": 25,
+        "Through Stones": 25,
+        "Hearting": 25
+      },
+      "minimum_required_minutes": 75,
+      "capacity_minutes": 490,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NDSP20_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP20_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NDSP20_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NVSP01",
+      "split": "validation",
+      "family_id": "nsp_rope_knots",
+      "omission_type": "complete",
+      "unresolved_fields": [],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 3,
+      "daily_cap": 25,
+      "daily_totals": {
+        "2027-02-01": 25,
+        "2027-02-02": 25,
+        "2027-02-03": 5
+      },
+      "topic_totals": {
+        "Bowline": 10,
+        "Clove Hitch": 10,
+        "Sheet Bend": 35
+      },
+      "required_topic_minima": {
+        "Bowline": 10,
+        "Clove Hitch": 10,
+        "Sheet Bend": 35
+      },
+      "minimum_required_minutes": 55,
+      "capacity_minutes": 75,
+      "schedule_rows": 5,
+      "constraint_checks": [
+        {
+          "constraint_id": "NVSP01_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NVSP01_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NVSP01_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NVSP01_04",
+          "source_field": "priorities",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NVSP02",
+      "split": "validation",
+      "family_id": "nsp_fungal_cultivation",
+      "omission_type": "complete",
+      "unresolved_fields": [],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 4,
+      "daily_cap": 35,
+      "daily_totals": {
+        "2027-02-01": 35,
+        "2027-02-02": 20
+      },
+      "topic_totals": {
+        "Sterile Inoculation": 25,
+        "Substrate Colonization": 15,
+        "Fruiting Conditions": 15
+      },
+      "required_topic_minima": {
+        "Sterile Inoculation": 25,
+        "Substrate Colonization": 15,
+        "Fruiting Conditions": 15
+      },
+      "minimum_required_minutes": 55,
+      "capacity_minutes": 140,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NVSP02_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NVSP02_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NVSP02_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NVSP02_04",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NVSP03",
+      "split": "validation",
+      "family_id": "nsp_typographic_anatomy",
+      "omission_type": "critical_omission",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [
+        "priorities"
+      ],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 5,
+      "daily_cap": 45,
+      "daily_totals": {
+        "2027-02-01": 45,
+        "2027-02-02": 35
+      },
+      "topic_totals": {
+        "Counters": 20,
+        "Ascenders": 20,
+        "Kerning": 40
+      },
+      "required_topic_minima": {
+        "Counters": 20,
+        "Ascenders": 20,
+        "Kerning": 40
+      },
+      "minimum_required_minutes": 80,
+      "capacity_minutes": 225,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NVSP03_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NVSP03_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NVSP03_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NVSP03_04",
+          "source_field": "priorities",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NVSP04",
+      "split": "validation",
+      "family_id": "nsp_bat_call_identification",
+      "omission_type": "critical_omission",
+      "unresolved_fields": [
+        "deadline",
+        "topics"
+      ],
+      "unresolved_critical_fields": [
+        "deadline",
+        "topics"
+      ],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 6,
+      "daily_cap": 30,
+      "daily_totals": {
+        "2027-02-01": 30,
+        "2027-02-02": 30,
+        "2027-02-03": 15
+      },
+      "topic_totals": {
+        "Feeding Buzzes": 25,
+        "Echolocation Calls": 25,
+        "Spectrogram Shapes": 25
+      },
+      "required_topic_minima": {
+        "Echolocation Calls": 25,
+        "Spectrogram Shapes": 25,
+        "Feeding Buzzes": 25
+      },
+      "minimum_required_minutes": 75,
+      "capacity_minutes": 180,
+      "schedule_rows": 5,
+      "constraint_checks": [
+        {
+          "constraint_id": "NVSP04_01",
+          "source_field": "deadline",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NVSP04_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NVSP04_03",
+          "source_field": "topics",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NVSP05",
+      "split": "validation",
+      "family_id": "nsp_forensic_linguistics",
+      "omission_type": "critical_and_optional",
+      "unresolved_fields": [
+        "deadline",
+        "topics",
+        "priorities"
+      ],
+      "unresolved_critical_fields": [
+        "deadline",
+        "topics"
+      ],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 7,
+      "daily_cap": 50,
+      "daily_totals": {
+        "2027-02-01": 40
+      },
+      "topic_totals": {
+        "Authorship Markers": 20,
+        "Register Shifts": 10,
+        "Idiolect Features": 10
+      },
+      "required_topic_minima": {
+        "Authorship Markers": 20,
+        "Register Shifts": 10,
+        "Idiolect Features": 10
+      },
+      "minimum_required_minutes": 40,
+      "capacity_minutes": 350,
+      "schedule_rows": 3,
+      "constraint_checks": [
+        {
+          "constraint_id": "NVSP05_01",
+          "source_field": "deadline",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NVSP05_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NVSP05_03",
+          "source_field": "topics",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NVSP05_04",
+          "source_field": "topics",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NVSP06",
+      "split": "validation",
+      "family_id": "nsp_electrochemical_cells",
+      "omission_type": "critical_and_optional",
+      "unresolved_fields": [
+        "available_time",
+        "topics",
+        "priorities"
+      ],
+      "unresolved_critical_fields": [
+        "available_time",
+        "topics"
+      ],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 3,
+      "daily_cap": 40,
+      "daily_totals": {
+        "2027-02-01": 40,
+        "2027-02-02": 5
+      },
+      "topic_totals": {
+        "Electrode Reactions": 15,
+        "Electrolytes": 15,
+        "Cell Voltage": 15
+      },
+      "required_topic_minima": {
+        "Electrode Reactions": 15,
+        "Electrolytes": 15,
+        "Cell Voltage": 15
+      },
+      "minimum_required_minutes": 45,
+      "capacity_minutes": 120,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NVSP06_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NVSP06_02",
+          "source_field": "available_time",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NVSP06_03",
+          "source_field": "topics",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NVSP07",
+      "split": "validation",
+      "family_id": "nsp_mask_acting",
+      "omission_type": "optional_only",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 4,
+      "daily_cap": 55,
+      "daily_totals": {
+        "2027-02-01": 55,
+        "2027-02-02": 5
+      },
+      "topic_totals": {
+        "Mask Focus": 20,
+        "Neutral Mask Posture": 20,
+        "Gesture Economy": 20
+      },
+      "required_topic_minima": {
+        "Mask Focus": 20,
+        "Neutral Mask Posture": 20,
+        "Gesture Economy": 20
+      },
+      "minimum_required_minutes": 60,
+      "capacity_minutes": 220,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NVSP07_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NVSP07_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NVSP07_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NVSP08",
+      "split": "validation",
+      "family_id": "nsp_dance_floorcraft",
+      "omission_type": "optional_only",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 5,
+      "daily_cap": 60,
+      "daily_totals": {
+        "2027-02-01": 60,
+        "2027-02-02": 25
+      },
+      "topic_totals": {
+        "Partner Signalling": 25,
+        "Line of Dance": 35,
+        "Spatial Awareness": 25
+      },
+      "required_topic_minima": {
+        "Line of Dance": 35,
+        "Spatial Awareness": 25,
+        "Partner Signalling": 25
+      },
+      "minimum_required_minutes": 85,
+      "capacity_minutes": 300,
+      "schedule_rows": 3,
+      "constraint_checks": [
+        {
+          "constraint_id": "NVSP08_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NVSP08_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NVSP08_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NVSP08_04",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NVSP09",
+      "split": "validation",
+      "family_id": "nsp_numismatics",
+      "omission_type": "unavailable_answer",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 6,
+      "daily_cap": 65,
+      "daily_totals": {
+        "2027-02-01": 30
+      },
+      "topic_totals": {
+        "Mint Marks": 10,
+        "Coin Legends": 10,
+        "Die Varieties": 10
+      },
+      "required_topic_minima": {
+        "Mint Marks": 10,
+        "Coin Legends": 10,
+        "Die Varieties": 10
+      },
+      "minimum_required_minutes": 30,
+      "capacity_minutes": 390,
+      "schedule_rows": 3,
+      "constraint_checks": [
+        {
+          "constraint_id": "NVSP09_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NVSP09_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NVSP09_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NVSP10",
+      "split": "validation",
+      "family_id": "nsp_juggling_cascade",
+      "omission_type": "execute_now",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 7,
+      "daily_cap": 70,
+      "daily_totals": {
+        "2027-02-01": 45
+      },
+      "topic_totals": {
+        "Cascade Pattern": 15,
+        "Throw Height": 15,
+        "Catch Timing": 15
+      },
+      "required_topic_minima": {
+        "Cascade Pattern": 15,
+        "Throw Height": 15,
+        "Catch Timing": 15
+      },
+      "minimum_required_minutes": 45,
+      "capacity_minutes": 490,
+      "schedule_rows": 3,
+      "constraint_checks": [
+        {
+          "constraint_id": "NVSP10_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NVSP10_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NVSP10_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP01",
+      "split": "test",
+      "family_id": "nsp_volcanology",
+      "omission_type": "complete",
+      "unresolved_fields": [],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 3,
+      "daily_cap": 30,
+      "daily_totals": {
+        "2027-02-01": 30,
+        "2027-02-02": 30,
+        "2027-02-03": 25
+      },
+      "topic_totals": {
+        "Magma Viscosity": 30,
+        "Eruption Styles": 20,
+        "Volcanic Deposits": 35
+      },
+      "required_topic_minima": {
+        "Magma Viscosity": 30,
+        "Eruption Styles": 20,
+        "Volcanic Deposits": 35
+      },
+      "minimum_required_minutes": 85,
+      "capacity_minutes": 90,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP01_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP01_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP01_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NTSP01_04",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        },
+        {
+          "constraint_id": "NTSP01_05",
+          "source_field": "priorities",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP02",
+      "split": "test",
+      "family_id": "nsp_glaciology",
+      "omission_type": "complete",
+      "unresolved_fields": [],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 4,
+      "daily_cap": 35,
+      "daily_totals": {
+        "2027-02-01": 35,
+        "2027-02-02": 35,
+        "2027-02-03": 5
+      },
+      "topic_totals": {
+        "Basal Sliding": 25,
+        "Glacier Mass Balance": 25,
+        "Crevasse Formation": 25
+      },
+      "required_topic_minima": {
+        "Glacier Mass Balance": 25,
+        "Crevasse Formation": 25,
+        "Basal Sliding": 25
+      },
+      "minimum_required_minutes": 75,
+      "capacity_minutes": 140,
+      "schedule_rows": 5,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP02_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP02_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP02_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP03",
+      "split": "test",
+      "family_id": "nsp_groundwater_hydrology",
+      "omission_type": "complete",
+      "unresolved_fields": [],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 5,
+      "daily_cap": 45,
+      "daily_totals": {
+        "2027-02-01": 45,
+        "2027-02-02": 10
+      },
+      "topic_totals": {
+        "Aquifer Recharge": 10,
+        "Hydraulic Head": 10,
+        "Well Drawdown": 35
+      },
+      "required_topic_minima": {
+        "Aquifer Recharge": 10,
+        "Hydraulic Head": 10,
+        "Well Drawdown": 35
+      },
+      "minimum_required_minutes": 55,
+      "capacity_minutes": 225,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP03_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP03_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP03_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NTSP03_04",
+          "source_field": "priorities",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP04",
+      "split": "test",
+      "family_id": "nsp_heraldry",
+      "omission_type": "complete",
+      "unresolved_fields": [],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 6,
+      "daily_cap": 30,
+      "daily_totals": {
+        "2027-02-01": 30,
+        "2027-02-02": 25
+      },
+      "topic_totals": {
+        "Tinctures": 25,
+        "Shield Divisions": 15,
+        "Heraldic Charges": 15
+      },
+      "required_topic_minima": {
+        "Tinctures": 25,
+        "Shield Divisions": 15,
+        "Heraldic Charges": 15
+      },
+      "minimum_required_minutes": 55,
+      "capacity_minutes": 180,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP04_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP04_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP04_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NTSP04_04",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP05",
+      "split": "test",
+      "family_id": "nsp_canine_scent_work",
+      "omission_type": "complete",
+      "unresolved_fields": [],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 7,
+      "daily_cap": 50,
+      "daily_totals": {
+        "2027-02-01": 50,
+        "2027-02-02": 30
+      },
+      "topic_totals": {
+        "Scent Imprinting": 20,
+        "Search Grids": 20,
+        "Indication Cues": 40
+      },
+      "required_topic_minima": {
+        "Scent Imprinting": 20,
+        "Search Grids": 20,
+        "Indication Cues": 40
+      },
+      "minimum_required_minutes": 80,
+      "capacity_minutes": 350,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP05_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP05_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP05_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NTSP05_04",
+          "source_field": "priorities",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP06",
+      "split": "test",
+      "family_id": "nsp_cnc_milling",
+      "omission_type": "complete",
+      "unresolved_fields": [],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 3,
+      "daily_cap": 40,
+      "daily_totals": {
+        "2027-02-01": 40,
+        "2027-02-02": 40,
+        "2027-02-03": 20
+      },
+      "topic_totals": {
+        "Climb Milling": 25,
+        "Work Offsets": 25,
+        "Tool Compensation": 25,
+        "Stepovers": 25
+      },
+      "required_topic_minima": {
+        "Work Offsets": 25,
+        "Tool Compensation": 25,
+        "Stepovers": 25,
+        "Climb Milling": 25
+      },
+      "minimum_required_minutes": 100,
+      "capacity_minutes": 120,
+      "schedule_rows": 6,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP06_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP06_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP06_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP07",
+      "split": "test",
+      "family_id": "nsp_consecutive_interpreting",
+      "omission_type": "critical_omission",
+      "unresolved_fields": [
+        "topics"
+      ],
+      "unresolved_critical_fields": [
+        "topics"
+      ],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 4,
+      "daily_cap": 55,
+      "daily_totals": {
+        "2027-02-01": 55
+      },
+      "topic_totals": {
+        "Idea Units": 20,
+        "Note Symbols": 10,
+        "Reformulation": 25
+      },
+      "required_topic_minima": {
+        "Idea Units": 20,
+        "Note Symbols": 10,
+        "Reformulation": 25
+      },
+      "minimum_required_minutes": 55,
+      "capacity_minutes": 220,
+      "schedule_rows": 3,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP07_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP07_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP07_03",
+          "source_field": "topics",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NTSP07_04",
+          "source_field": "topics",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        },
+        {
+          "constraint_id": "NTSP07_05",
+          "source_field": "priorities",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP08",
+      "split": "test",
+      "family_id": "nsp_furniture_upholstery",
+      "omission_type": "critical_omission",
+      "unresolved_fields": [
+        "available_time",
+        "priorities"
+      ],
+      "unresolved_critical_fields": [
+        "available_time",
+        "priorities"
+      ],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 5,
+      "daily_cap": 60,
+      "daily_totals": {
+        "2027-02-01": 60,
+        "2027-02-02": 5
+      },
+      "topic_totals": {
+        "Webbing Tension": 15,
+        "Spring Lashing": 15,
+        "Fabric Cutting": 35
+      },
+      "required_topic_minima": {
+        "Webbing Tension": 15,
+        "Spring Lashing": 15,
+        "Fabric Cutting": 35
+      },
+      "minimum_required_minutes": 65,
+      "capacity_minutes": 300,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP08_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP08_02",
+          "source_field": "available_time",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP08_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NTSP08_04",
+          "source_field": "priorities",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP09",
+      "split": "test",
+      "family_id": "nsp_clock_escapements",
+      "omission_type": "critical_omission",
+      "unresolved_fields": [
+        "deadline",
+        "available_time"
+      ],
+      "unresolved_critical_fields": [
+        "deadline",
+        "available_time"
+      ],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 6,
+      "daily_cap": 65,
+      "daily_totals": {
+        "2027-02-01": 60
+      },
+      "topic_totals": {
+        "Anchor Escapements": 20,
+        "Balance Wheels": 20,
+        "Gear Trains": 20
+      },
+      "required_topic_minima": {
+        "Anchor Escapements": 20,
+        "Balance Wheels": 20,
+        "Gear Trains": 20
+      },
+      "minimum_required_minutes": 60,
+      "capacity_minutes": 390,
+      "schedule_rows": 3,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP09_01",
+          "source_field": "deadline",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP09_02",
+          "source_field": "available_time",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP09_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP10",
+      "split": "test",
+      "family_id": "nsp_dental_anatomy",
+      "omission_type": "critical_omission",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [
+        "priorities"
+      ],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 7,
+      "daily_cap": 70,
+      "daily_totals": {
+        "2027-02-01": 70,
+        "2027-02-02": 30
+      },
+      "topic_totals": {
+        "Incisors": 35,
+        "Premolars": 25,
+        "Molars": 40
+      },
+      "required_topic_minima": {
+        "Incisors": 35,
+        "Premolars": 25,
+        "Molars": 40
+      },
+      "minimum_required_minutes": 100,
+      "capacity_minutes": 490,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP10_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP10_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP10_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NTSP10_04",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        },
+        {
+          "constraint_id": "NTSP10_05",
+          "source_field": "priorities",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP11",
+      "split": "test",
+      "family_id": "nsp_contract_bridge_bidding",
+      "omission_type": "critical_omission",
+      "unresolved_fields": [
+        "deadline",
+        "topics",
+        "priorities"
+      ],
+      "unresolved_critical_fields": [
+        "deadline",
+        "topics",
+        "priorities"
+      ],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 3,
+      "daily_cap": 25,
+      "daily_totals": {
+        "2027-02-01": 25,
+        "2027-02-02": 25
+      },
+      "topic_totals": {
+        "Opening Bids": 10,
+        "Response Bids": 10,
+        "Competitive Auctions": 30
+      },
+      "required_topic_minima": {
+        "Opening Bids": 10,
+        "Response Bids": 10,
+        "Competitive Auctions": 30
+      },
+      "minimum_required_minutes": 50,
+      "capacity_minutes": 75,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP11_01",
+          "source_field": "deadline",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP11_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP11_03",
+          "source_field": "topics",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NTSP11_04",
+          "source_field": "priorities",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP12",
+      "split": "test",
+      "family_id": "nsp_incident_coordination",
+      "omission_type": "critical_omission",
+      "unresolved_fields": [
+        "available_time",
+        "topics"
+      ],
+      "unresolved_critical_fields": [
+        "available_time",
+        "topics"
+      ],
+      "unresolved_optional_fields": [],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 4,
+      "daily_cap": 35,
+      "daily_totals": {
+        "2027-02-01": 35,
+        "2027-02-02": 10
+      },
+      "topic_totals": {
+        "Incident Roles": 15,
+        "Resource Staging": 15,
+        "Situation Reports": 15
+      },
+      "required_topic_minima": {
+        "Incident Roles": 15,
+        "Resource Staging": 15,
+        "Situation Reports": 15
+      },
+      "minimum_required_minutes": 45,
+      "capacity_minutes": 140,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP12_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP12_02",
+          "source_field": "available_time",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP12_03",
+          "source_field": "topics",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP13",
+      "split": "test",
+      "family_id": "nsp_scientific_peer_review",
+      "omission_type": "critical_and_optional",
+      "unresolved_fields": [
+        "deadline",
+        "priorities"
+      ],
+      "unresolved_critical_fields": [
+        "deadline"
+      ],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 5,
+      "daily_cap": 45,
+      "daily_totals": {
+        "2027-02-01": 45,
+        "2027-02-02": 25
+      },
+      "topic_totals": {
+        "Methods Appraisal": 30,
+        "Reviewer Conflicts": 20,
+        "Constructive Reports": 20
+      },
+      "required_topic_minima": {
+        "Methods Appraisal": 30,
+        "Reviewer Conflicts": 20,
+        "Constructive Reports": 20
+      },
+      "minimum_required_minutes": 70,
+      "capacity_minutes": 225,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP13_01",
+          "source_field": "deadline",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP13_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP13_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NTSP13_04",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP14",
+      "split": "test",
+      "family_id": "nsp_insurance_concepts",
+      "omission_type": "critical_and_optional",
+      "unresolved_fields": [
+        "available_time",
+        "priorities"
+      ],
+      "unresolved_critical_fields": [
+        "available_time"
+      ],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 6,
+      "daily_cap": 30,
+      "daily_totals": {
+        "2027-02-01": 30,
+        "2027-02-02": 30,
+        "2027-02-03": 15
+      },
+      "topic_totals": {
+        "Subrogation": 25,
+        "Indemnity": 25,
+        "Insurable Interest": 25
+      },
+      "required_topic_minima": {
+        "Indemnity": 25,
+        "Insurable Interest": 25,
+        "Subrogation": 25
+      },
+      "minimum_required_minutes": 75,
+      "capacity_minutes": 180,
+      "schedule_rows": 5,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP14_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP14_02",
+          "source_field": "available_time",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP14_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP15",
+      "split": "test",
+      "family_id": "nsp_stained_glass",
+      "omission_type": "critical_and_optional",
+      "unresolved_fields": [
+        "topics",
+        "priorities"
+      ],
+      "unresolved_critical_fields": [
+        "topics"
+      ],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 7,
+      "daily_cap": 50,
+      "daily_totals": {
+        "2027-02-01": 30
+      },
+      "topic_totals": {
+        "Copper Foiling": 10,
+        "Solder Seams": 10,
+        "Panel Reinforcement": 10
+      },
+      "required_topic_minima": {
+        "Copper Foiling": 10,
+        "Solder Seams": 10,
+        "Panel Reinforcement": 10
+      },
+      "minimum_required_minutes": 30,
+      "capacity_minutes": 350,
+      "schedule_rows": 3,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP15_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP15_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP15_03",
+          "source_field": "topics",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP16",
+      "split": "test",
+      "family_id": "nsp_coiled_basketry",
+      "omission_type": "critical_and_optional",
+      "unresolved_fields": [
+        "deadline",
+        "available_time",
+        "priorities"
+      ],
+      "unresolved_critical_fields": [
+        "deadline",
+        "available_time"
+      ],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 3,
+      "daily_cap": 40,
+      "daily_totals": {
+        "2027-02-01": 40,
+        "2027-02-02": 15
+      },
+      "topic_totals": {
+        "Foundation Bundles": 25,
+        "Stitch Spacing": 15,
+        "Rim Finishing": 15
+      },
+      "required_topic_minima": {
+        "Foundation Bundles": 25,
+        "Stitch Spacing": 15,
+        "Rim Finishing": 15
+      },
+      "minimum_required_minutes": 55,
+      "capacity_minutes": 120,
+      "schedule_rows": 3,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP16_01",
+          "source_field": "deadline",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP16_02",
+          "source_field": "available_time",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP16_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NTSP16_04",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP17",
+      "split": "test",
+      "family_id": "nsp_pastry_lamination",
+      "omission_type": "critical_and_optional",
+      "unresolved_fields": [
+        "deadline",
+        "topics",
+        "priorities"
+      ],
+      "unresolved_critical_fields": [
+        "deadline",
+        "topics"
+      ],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 4,
+      "daily_cap": 55,
+      "daily_totals": {
+        "2027-02-01": 55,
+        "2027-02-02": 5
+      },
+      "topic_totals": {
+        "Butter Lock-in": 20,
+        "Letter Folds": 20,
+        "Dough Resting": 20
+      },
+      "required_topic_minima": {
+        "Butter Lock-in": 20,
+        "Letter Folds": 20,
+        "Dough Resting": 20
+      },
+      "minimum_required_minutes": 60,
+      "capacity_minutes": 220,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP17_01",
+          "source_field": "deadline",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP17_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP17_03",
+          "source_field": "topics",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP18",
+      "split": "test",
+      "family_id": "nsp_cheese_affinage",
+      "omission_type": "critical_and_optional",
+      "unresolved_fields": [
+        "available_time",
+        "topics",
+        "priorities"
+      ],
+      "unresolved_critical_fields": [
+        "available_time",
+        "topics"
+      ],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 5,
+      "daily_cap": 60,
+      "daily_totals": {
+        "2027-02-01": 60,
+        "2027-02-02": 15
+      },
+      "topic_totals": {
+        "Ripening Microbes": 25,
+        "Rind Development": 25,
+        "Affinage Humidity": 25
+      },
+      "required_topic_minima": {
+        "Rind Development": 25,
+        "Affinage Humidity": 25,
+        "Ripening Microbes": 25
+      },
+      "minimum_required_minutes": 75,
+      "capacity_minutes": 300,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP18_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP18_02",
+          "source_field": "available_time",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP18_03",
+          "source_field": "topics",
+          "source_stage": "field_answer",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP19",
+      "split": "test",
+      "family_id": "nsp_perfume_structure",
+      "omission_type": "optional_only",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 6,
+      "daily_cap": 65,
+      "daily_totals": {
+        "2027-02-01": 40
+      },
+      "topic_totals": {
+        "Top Notes": 20,
+        "Heart Notes": 10,
+        "Base Notes": 10
+      },
+      "required_topic_minima": {
+        "Top Notes": 20,
+        "Heart Notes": 10,
+        "Base Notes": 10
+      },
+      "minimum_required_minutes": 40,
+      "capacity_minutes": 390,
+      "schedule_rows": 3,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP19_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP19_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP19_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NTSP19_04",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP20",
+      "split": "test",
+      "family_id": "nsp_brush_calligraphy",
+      "omission_type": "optional_only",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 7,
+      "daily_cap": 70,
+      "daily_totals": {
+        "2027-02-01": 45
+      },
+      "topic_totals": {
+        "Stroke Entry": 15,
+        "Ink Loading": 15,
+        "Brush Pressure": 15
+      },
+      "required_topic_minima": {
+        "Stroke Entry": 15,
+        "Ink Loading": 15,
+        "Brush Pressure": 15
+      },
+      "minimum_required_minutes": 45,
+      "capacity_minutes": 490,
+      "schedule_rows": 3,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP20_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP20_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP20_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP21",
+      "split": "test",
+      "family_id": "nsp_dance_notation",
+      "omission_type": "optional_only",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 3,
+      "daily_cap": 25,
+      "daily_totals": {
+        "2027-02-01": 25,
+        "2027-02-02": 25,
+        "2027-02-03": 10
+      },
+      "topic_totals": {
+        "Movement Symbols": 20,
+        "Staff Layout": 20,
+        "Direction Signs": 20
+      },
+      "required_topic_minima": {
+        "Movement Symbols": 20,
+        "Staff Layout": 20,
+        "Direction Signs": 20
+      },
+      "minimum_required_minutes": 60,
+      "capacity_minutes": 75,
+      "schedule_rows": 5,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP21_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP21_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP21_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP22",
+      "split": "test",
+      "family_id": "nsp_rugby_officiating",
+      "omission_type": "optional_only",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 4,
+      "daily_cap": 35,
+      "daily_totals": {
+        "2027-02-01": 35,
+        "2027-02-02": 35,
+        "2027-02-03": 15
+      },
+      "topic_totals": {
+        "Restart Procedures": 25,
+        "Advantage Decisions": 35,
+        "Offside Lines": 25
+      },
+      "required_topic_minima": {
+        "Advantage Decisions": 35,
+        "Offside Lines": 25,
+        "Restart Procedures": 25
+      },
+      "minimum_required_minutes": 85,
+      "capacity_minutes": 140,
+      "schedule_rows": 5,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP22_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP22_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP22_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NTSP22_04",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP23",
+      "split": "test",
+      "family_id": "nsp_sign_language_space",
+      "omission_type": "optional_only",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 5,
+      "daily_cap": 45,
+      "daily_totals": {
+        "2027-02-01": 30
+      },
+      "topic_totals": {
+        "Referent Placement": 10,
+        "Classifier Handshapes": 10,
+        "Role Shifts": 10
+      },
+      "required_topic_minima": {
+        "Referent Placement": 10,
+        "Classifier Handshapes": 10,
+        "Role Shifts": 10
+      },
+      "minimum_required_minutes": 30,
+      "capacity_minutes": 225,
+      "schedule_rows": 3,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP23_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP23_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP23_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP24",
+      "split": "test",
+      "family_id": "nsp_inventory_operations",
+      "omission_type": "unavailable_answer",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 6,
+      "daily_cap": 30,
+      "daily_totals": {
+        "2027-02-01": 30,
+        "2027-02-02": 15
+      },
+      "topic_totals": {
+        "Stock Counts": 15,
+        "Reorder Points": 15,
+        "Safety Stock": 15
+      },
+      "required_topic_minima": {
+        "Stock Counts": 15,
+        "Reorder Points": 15,
+        "Safety Stock": 15
+      },
+      "minimum_required_minutes": 45,
+      "capacity_minutes": 180,
+      "schedule_rows": 3,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP24_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP24_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP24_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP25",
+      "split": "test",
+      "family_id": "nsp_aircraft_marshalling",
+      "omission_type": "unavailable_answer",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 7,
+      "daily_cap": 50,
+      "daily_totals": {
+        "2027-02-01": 50,
+        "2027-02-02": 20
+      },
+      "topic_totals": {
+        "Wand Signals": 30,
+        "Stand Clearances": 20,
+        "Pushback Coordination": 20
+      },
+      "required_topic_minima": {
+        "Wand Signals": 30,
+        "Stand Clearances": 20,
+        "Pushback Coordination": 20
+      },
+      "minimum_required_minutes": 70,
+      "capacity_minutes": 350,
+      "schedule_rows": 3,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP25_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP25_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP25_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NTSP25_04",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP26",
+      "split": "test",
+      "family_id": "nsp_usability_testing",
+      "omission_type": "unavailable_answer",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 3,
+      "daily_cap": 40,
+      "daily_totals": {
+        "2027-02-01": 40,
+        "2027-02-02": 35
+      },
+      "topic_totals": {
+        "Usability Findings": 25,
+        "Task Scenarios": 25,
+        "Think-aloud Prompts": 25
+      },
+      "required_topic_minima": {
+        "Task Scenarios": 25,
+        "Think-aloud Prompts": 25,
+        "Usability Findings": 25
+      },
+      "minimum_required_minutes": 75,
+      "capacity_minutes": 120,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP26_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP26_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP26_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP27",
+      "split": "test",
+      "family_id": "nsp_drum_tuning",
+      "omission_type": "unavailable_answer",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 4,
+      "daily_cap": 55,
+      "daily_totals": {
+        "2027-02-01": 30
+      },
+      "topic_totals": {
+        "Lug Sequencing": 10,
+        "Head Seating": 10,
+        "Resonant Head Tension": 10
+      },
+      "required_topic_minima": {
+        "Lug Sequencing": 10,
+        "Head Seating": 10,
+        "Resonant Head Tension": 10
+      },
+      "minimum_required_minutes": 30,
+      "capacity_minutes": 220,
+      "schedule_rows": 3,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP27_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP27_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP27_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP28",
+      "split": "test",
+      "family_id": "nsp_stain_removal_chemistry",
+      "omission_type": "execute_now",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 5,
+      "daily_cap": 60,
+      "daily_totals": {
+        "2027-02-01": 55
+      },
+      "topic_totals": {
+        "Protein Stains": 25,
+        "Oil Emulsification": 15,
+        "Dye Transfer": 15
+      },
+      "required_topic_minima": {
+        "Protein Stains": 25,
+        "Oil Emulsification": 15,
+        "Dye Transfer": 15
+      },
+      "minimum_required_minutes": 55,
+      "capacity_minutes": 300,
+      "schedule_rows": 3,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP28_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP28_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP28_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        },
+        {
+          "constraint_id": "NTSP28_04",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": []
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP29",
+      "split": "test",
+      "family_id": "nsp_hockey_tactics",
+      "omission_type": "execute_now",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 6,
+      "daily_cap": 65,
+      "daily_totals": {
+        "2027-02-01": 60
+      },
+      "topic_totals": {
+        "Forechecking": 20,
+        "Defensive Zones": 20,
+        "Line Changes": 20
+      },
+      "required_topic_minima": {
+        "Forechecking": 20,
+        "Defensive Zones": 20,
+        "Line Changes": 20
+      },
+      "minimum_required_minutes": 60,
+      "capacity_minutes": 390,
+      "schedule_rows": 3,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP29_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP29_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP29_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "NTSP30",
+      "split": "test",
+      "family_id": "nsp_fountain_pen_restoration",
+      "omission_type": "execute_now",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "unresolved_critical_fields": [],
+      "unresolved_optional_fields": [
+        "priorities"
+      ],
+      "schema_valid": true,
+      "source_valid": true,
+      "classification_valid": true,
+      "witness_pass": true,
+      "window_days": 4,
+      "daily_cap": 45,
+      "daily_totals": {
+        "2027-02-01": 45,
+        "2027-02-02": 45
+      },
+      "topic_totals": {
+        "Sac Replacement": 30,
+        "Nib Alignment": 30,
+        "Feed Channels": 30
+      },
+      "required_topic_minima": {
+        "Nib Alignment": 30,
+        "Feed Channels": 30,
+        "Sac Replacement": 30
+      },
+      "minimum_required_minutes": 90,
+      "capacity_minutes": 180,
+      "schedule_rows": 4,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP30_01",
+          "source_field": "deadline",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "after_end_date_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP30_02",
+          "source_field": "available_time",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "multiple_rows_aggregate_over_cap_detected"
+          ]
+        },
+        {
+          "constraint_id": "NTSP30_03",
+          "source_field": "topics",
+          "source_stage": "initial_request",
+          "provenance_checked": true,
+          "targeted_violation_detected": true,
+          "additional_checks": [
+            "substring_topic_label_does_not_count_as_exact_coverage"
+          ]
+        }
+      ]
+    }
+  ]
+}

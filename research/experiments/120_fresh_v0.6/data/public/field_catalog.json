@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.1.0",
+  "case_language": "en",
+  "question_budget": 3,
+  "domains": {
+    "constrained_writing": {
+      "field_order": [
+        "audience",
+        "tone",
+        "length",
+        "required_content"
+      ],
+      "fields": [
+        {
+          "field_id": "audience",
+          "label_zh": "受众",
+          "description_zh": "目标读者或收件人。不得凭体裁猜测具体受众。",
+          "question_template": "Who is the intended audience?"
+        },
+        {
+          "field_id": "tone",
+          "label_zh": "语气",
+          "description_zh": "语气或明确无偏好。缺省语气不视为已提供。",
+          "question_template": "What tone would you like?"
+        },
+        {
+          "field_id": "length",
+          "label_zh": "长度",
+          "description_zh": "全文英文词数范围或明确无长度要求。",
+          "question_template": "What word-count range should the full text follow?"
+        },
+        {
+          "field_id": "required_content",
+          "label_zh": "必含内容",
+          "description_zh": "用户明确要求的具体事实或逐字内容。仅有主题或体裁不算已提供；明确无必含内容则算已解决。",
+          "question_template": "What information or exact wording must the text include?"
+        }
+      ]
+    },
+    "study_planning": {
+      "field_order": [
+        "deadline",
+        "available_time",
+        "topics",
+        "priorities"
+      ],
+      "fields": [
+        {
+          "field_id": "deadline",
+          "label_zh": "截止日",
+          "description_zh": "最后可学习日期，包含当日。起始日始终在初始请求给定。",
+          "question_template": "What is the last date available for study, inclusive?"
+        },
+        {
+          "field_id": "available_time",
+          "label_zh": "每日时长",
+          "description_zh": "每天可学习的分钟上限。本试跑采用统一每日上限。",
+          "question_template": "How many minutes can you study per day at most?"
+        },
+        {
+          "field_id": "topics",
+          "label_zh": "学习主题",
+          "description_zh": "主题名称与覆盖要求，可含每个主题的最低总分钟数。",
+          "question_template": "Which topics must be covered, and are there minimum minutes for each?"
+        },
+        {
+          "field_id": "priorities",
+          "label_zh": "优先要求",
+          "description_zh": "优先主题及相关硬性时长，或明确无偏好；软偏好不自动计分。",
+          "question_template": "Do you have topic priorities or additional minimum-time requirements?"
+        }
+      ]
+    }
+  }
+}

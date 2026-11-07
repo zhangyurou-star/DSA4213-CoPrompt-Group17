@@ -1,0 +1,384 @@
+{
+  "cache_key": "388d77047c7b37dde72d7d6195517e728f4682573f42b759e6e5bcce96d95f2c",
+  "source_case_id": "NTSP18",
+  "source_policy": "exhaustive",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Ripening Microbes",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-01",
+        "topic": "Cheese Aging Terminology",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Moisture and pH in Affinage",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Temperature and Humidity Control",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Surface Molds and Rinds",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Curing and Turning Practices",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Flavor Development Pathways",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Case Study: Blue Cheese Affinage",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Case Study: Washed-Rind Cheese",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Review and Vocabulary Consolidation",
+        "minutes": 30
+      }
+    ],
+    "summary": "Calculated from the schedule: 300 minutes in total. Daily totals: 2027-02-01: 60 minutes; 2027-02-02: 60 minutes; 2027-02-03: 60 minutes; 2027-02-04: 60 minutes; 2027-02-05: 60 minutes. Topic totals: Case Study: Blue Cheese Affinage: 30 minutes; Case Study: Washed-Rind Cheese: 30 minutes; Cheese Aging Terminology: 30 minutes; Curing and Turning Practices: 30 minutes; Flavor Development Pathways: 30 minutes; Moisture and pH in Affinage: 30 minutes; Review and Vocabulary Consolidation: 30 minutes; Ripening Microbes: 30 minutes; Surface Molds and Rinds: 30 minutes; Temperature and Humidity Control: 30 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Ripening Microbes\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Cheese Aging Terminology\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Moisture and pH in Affinage\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Temperature and Humidity Control\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Surface Molds and Rinds\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Curing and Turning Practices\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Flavor Development Pathways\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Case Study: Blue Cheese Affinage\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Case Study: Washed-Rind Cheese\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Review and Vocabulary Consolidation\",\n      \"minutes\": 30\n    }\n  ],\n  \"summary\": \"A compact 5-day study plan (2027-02-01 to 2027-02-05) covers all key vocabulary topics from a cheese-affinage lecture. Each day’s total is capped at 60 minutes. The topic \\\"Ripening Microbes\\\" is prioritized on the first day as requested. All sessions are scheduled within the allowed window, with no study after 2027-02-05.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Ripening Microbes",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-01",
+            "topic": "Cheese Aging Terminology",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Moisture and pH in Affinage",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Temperature and Humidity Control",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Surface Molds and Rinds",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Curing and Turning Practices",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Flavor Development Pathways",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Case Study: Blue Cheese Affinage",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Case Study: Washed-Rind Cheese",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Review and Vocabulary Consolidation",
+            "minutes": 30
+          }
+        ],
+        "summary": "A compact 5-day study plan (2027-02-01 to 2027-02-05) covers all key vocabulary topics from a cheese-affinage lecture. Each day’s total is capped at 60 minutes. The topic \"Ripening Microbes\" is prioritized on the first day as requested. All sessions are scheduled within the allowed window, with no study after 2027-02-05."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-05, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "I can still study on 2027-02-05, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 1,
+          "field_id": "available_time",
+          "quote": "Keep each daily total at or below 60 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 300,
+      "daily_minutes": {
+        "2027-02-01": 60,
+        "2027-02-02": 60,
+        "2027-02-03": 60,
+        "2027-02-04": 60,
+        "2027-02-05": 60
+      },
+      "topic_minutes": [
+        {
+          "topic": "Case Study: Blue Cheese Affinage",
+          "normalized_topic": "case study: blue cheese affinage",
+          "minutes": 30
+        },
+        {
+          "topic": "Case Study: Washed-Rind Cheese",
+          "normalized_topic": "case study: washed-rind cheese",
+          "minutes": 30
+        },
+        {
+          "topic": "Cheese Aging Terminology",
+          "normalized_topic": "cheese aging terminology",
+          "minutes": 30
+        },
+        {
+          "topic": "Curing and Turning Practices",
+          "normalized_topic": "curing and turning practices",
+          "minutes": 30
+        },
+        {
+          "topic": "Flavor Development Pathways",
+          "normalized_topic": "flavor development pathways",
+          "minutes": 30
+        },
+        {
+          "topic": "Moisture and pH in Affinage",
+          "normalized_topic": "moisture and ph in affinage",
+          "minutes": 30
+        },
+        {
+          "topic": "Review and Vocabulary Consolidation",
+          "normalized_topic": "review and vocabulary consolidation",
+          "minutes": 30
+        },
+        {
+          "topic": "Ripening Microbes",
+          "normalized_topic": "ripening microbes",
+          "minutes": 30
+        },
+        {
+          "topic": "Surface Molds and Rinds",
+          "normalized_topic": "surface molds and rinds",
+          "minutes": 30
+        },
+        {
+          "topic": "Temperature and Humidity Control",
+          "normalized_topic": "temperature and humidity control",
+          "minutes": 30
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-05, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "I can still study on 2027-02-05, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 1,
+          "field_id": "available_time",
+          "quote": "Keep each daily total at or below 60 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 300,
+      "daily_minutes": {
+        "2027-02-01": 60,
+        "2027-02-02": 60,
+        "2027-02-03": 60,
+        "2027-02-04": 60,
+        "2027-02-05": 60
+      },
+      "topic_minutes": [
+        {
+          "topic": "Case Study: Blue Cheese Affinage",
+          "normalized_topic": "case study: blue cheese affinage",
+          "minutes": 30
+        },
+        {
+          "topic": "Case Study: Washed-Rind Cheese",
+          "normalized_topic": "case study: washed-rind cheese",
+          "minutes": 30
+        },
+        {
+          "topic": "Cheese Aging Terminology",
+          "normalized_topic": "cheese aging terminology",
+          "minutes": 30
+        },
+        {
+          "topic": "Curing and Turning Practices",
+          "normalized_topic": "curing and turning practices",
+          "minutes": 30
+        },
+        {
+          "topic": "Flavor Development Pathways",
+          "normalized_topic": "flavor development pathways",
+          "minutes": 30
+        },
+        {
+          "topic": "Moisture and pH in Affinage",
+          "normalized_topic": "moisture and ph in affinage",
+          "minutes": 30
+        },
+        {
+          "topic": "Review and Vocabulary Consolidation",
+          "normalized_topic": "review and vocabulary consolidation",
+          "minutes": 30
+        },
+        {
+          "topic": "Ripening Microbes",
+          "normalized_topic": "ripening microbes",
+          "minutes": 30
+        },
+        {
+          "topic": "Surface Molds and Rinds",
+          "normalized_topic": "surface molds and rinds",
+          "minutes": 30
+        },
+        {
+          "topic": "Temperature and Humidity Control",
+          "normalized_topic": "temperature and humidity control",
+          "minutes": 30
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-05, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "I can still study on 2027-02-05, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 1,
+          "field_id": "available_time",
+          "quote": "Keep each daily total at or below 60 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "A compact 5-day study plan (2027-02-01 to 2027-02-05) covers all key vocabulary topics from a cheese-affinage lecture. Each day’s total is capped at 60 minutes. The topic \"Ripening Microbes\" is prioritized on the first day as requested. All sessions are scheduled within the allowed window, with no study after 2027-02-05.",
+    "derived_summary": "Calculated from the schedule: 300 minutes in total. Daily totals: 2027-02-01: 60 minutes; 2027-02-02: 60 minutes; 2027-02-03: 60 minutes; 2027-02-04: 60 minutes; 2027-02-05: 60 minutes. Topic totals: Case Study: Blue Cheese Affinage: 30 minutes; Case Study: Washed-Rind Cheese: 30 minutes; Cheese Aging Terminology: 30 minutes; Curing and Turning Practices: 30 minutes; Flavor Development Pathways: 30 minutes; Moisture and pH in Affinage: 30 minutes; Review and Vocabulary Consolidation: 30 minutes; Ripening Microbes: 30 minutes; Surface Molds and Rinds: 30 minutes; Temperature and Humidity Control: 30 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

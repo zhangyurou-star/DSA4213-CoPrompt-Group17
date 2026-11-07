@@ -1,0 +1,179 @@
+{
+  "cache_key": "58cfbeb56190202c2e4d841d5e769396609c4ef832c6c495162928d46c6e4029",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S4"
+    ],
+    "available_time": [
+      "S5"
+    ],
+    "topics": [
+      "S6",
+      "S7",
+      "S8",
+      "S9"
+    ],
+    "priorities": [
+      "S8",
+      "S9"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 54,
+      "text": "I am reading an illustrated introduction to volcanoes."
+    },
+    {
+      "id": "S2",
+      "start": 55,
+      "end": 105,
+      "text": "Arrange revision of the eruption processes for me."
+    },
+    {
+      "id": "S3",
+      "start": 106,
+      "end": 126,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 127,
+      "end": 203,
+      "text": "Use only dates from 2027-02-01 through 2027-02-03, including the final date."
+    },
+    {
+      "id": "S5",
+      "start": 204,
+      "end": 274,
+      "text": "I can spare at most 30 minutes per day, counting every topic together."
+    },
+    {
+      "id": "S6",
+      "start": 275,
+      "end": 366,
+      "text": "Include \"Magma Viscosity\", \"Eruption Styles\", \"Volcanic Deposits\", using those topic names."
+    },
+    {
+      "id": "S7",
+      "start": 367,
+      "end": 422,
+      "text": "Allocate at least 20 cumulative minutes to every topic."
+    },
+    {
+      "id": "S8",
+      "start": 423,
+      "end": 495,
+      "text": "Within that coverage, \"Magma Viscosity\" needs at least 30 total minutes."
+    },
+    {
+      "id": "S9",
+      "start": 496,
+      "end": 577,
+      "text": "I specifically require a minimum of 35 minutes altogether on \"Volcanic Deposits\"."
+    }
+  ],
+  "field_values": {
+    "deadline": "Use only dates from 2027-02-01 through 2027-02-03, including the final date.",
+    "available_time": "I can spare at most 30 minutes per day, counting every topic together.",
+    "topics": "Include \"Magma Viscosity\", \"Eruption Styles\", \"Volcanic Deposits\", using those topic names.\nAllocate at least 20 cumulative minutes to every topic.\nWithin that coverage, \"Magma Viscosity\" needs at least 30 total minutes.\nI specifically require a minimum of 35 minutes altogether on \"Volcanic Deposits\".",
+    "priorities": "Within that coverage, \"Magma Viscosity\" needs at least 30 total minutes.\nI specifically require a minimum of 35 minutes altogether on \"Volcanic Deposits\"."
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 127,
+        "end": 203,
+        "quote": "Use only dates from 2027-02-01 through 2027-02-03, including the final date."
+      }
+    ],
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 204,
+        "end": 274,
+        "quote": "I can spare at most 30 minutes per day, counting every topic together."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 275,
+        "end": 366,
+        "quote": "Include \"Magma Viscosity\", \"Eruption Styles\", \"Volcanic Deposits\", using those topic names."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 367,
+        "end": 422,
+        "quote": "Allocate at least 20 cumulative minutes to every topic."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 423,
+        "end": 495,
+        "quote": "Within that coverage, \"Magma Viscosity\" needs at least 30 total minutes."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S9",
+        "start": 496,
+        "end": 577,
+        "quote": "I specifically require a minimum of 35 minutes altogether on \"Volcanic Deposits\"."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 423,
+        "end": 495,
+        "quote": "Within that coverage, \"Magma Viscosity\" needs at least 30 total minutes."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S9",
+        "start": 496,
+        "end": 577,
+        "quote": "I specifically require a minimum of 35 minutes altogether on \"Volcanic Deposits\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S4\"],\"available_time\":[\"S5\"],\"topics\":[\"S6\",\"S7\",\"S8\",\"S9\"],\"priorities\":[\"S8\",\"S9\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S4"
+          ],
+          "available_time": [
+            "S5"
+          ],
+          "topics": [
+            "S6",
+            "S7",
+            "S8",
+            "S9"
+          ],
+          "priorities": [
+            "S8",
+            "S9"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

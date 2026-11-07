@@ -1,0 +1,80 @@
+{
+  "cache_key": "41ed5eaa00fda689b65910eee45e839a9165dffcbc08e3e3311317c9dd4d5677",
+  "source_case_id": "NTCW17",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "Imagine a society where every person’s memories are stored in a shared digital archive, accessible to all. You discover your own memories have been altered—your childhood friend never existed, yet others recall them vividly. Is the truth of your past defined by collective memory, or by personal experience? If altering memories prevents suffering, is it ethical to rewrite them, even without consent? What if the 'real' you is the version shaped by these changes? In this world, who decides what is authentic, and at what cost?"
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"Imagine a society where every person’s memories are stored in a shared digital archive, accessible to all. You discover your own memories have been altered—your childhood friend never existed, yet others recall them vividly. Is the truth of your past defined by collective memory, or by personal experience? If altering memories prevents suffering, is it ethical to rewrite them, even without consent? What if the 'real' you is the version shaped by these changes? In this world, who decides what is authentic, and at what cost?\"}",
+      "parsed": {
+        "text": "Imagine a society where every person’s memories are stored in a shared digital archive, accessible to all. You discover your own memories have been altered—your childhood friend never existed, yet others recall them vividly. Is the truth of your past defined by collective memory, or by personal experience? If altering memories prevents suffering, is it ethical to rewrite them, even without consent? What if the 'real' you is the version shaped by these changes? In this world, who decides what is authentic, and at what cost?"
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 65,
+          "max_words": 95
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Keep the complete piece to 65–95 words."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 87
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 65,
+          "max_words": 95
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 87
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 65,
+          "max_words": 95
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

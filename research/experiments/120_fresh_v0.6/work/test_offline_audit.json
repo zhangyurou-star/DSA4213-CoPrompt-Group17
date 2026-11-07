@@ -1,0 +1,1520 @@
+{
+  "dataset": "test",
+  "status": "passed_offline_validation",
+  "api_calls": 0,
+  "case_count": 60,
+  "domain_counts": {
+    "constrained_writing": 30,
+    "study_planning": 30
+  },
+  "constraint_count": 167,
+  "targeted_violations_detected": 167,
+  "schema_validation": "all JSON-schema features used in these project contracts; standard-library validator",
+  "file_hashes": {
+    "data/public/test_requests.jsonl": "545b91dbc822d922e2216b6b625d780f8a8dd06a2ccf2bb9648ccb385d7bb2a9",
+    "data/private/test_answers.jsonl": "32ad6222bd6b2c148a7d5d594e8363e2d9c720d9d47671bf138cebbff5928dea",
+    "data/private/test_annotations.jsonl": "98457b4ee5b61e7e303457ea3eece37539b4cc2deb42d0b4b160e5efc8f8d0e5"
+  },
+  "case_results": [
+    {
+      "case_id": "NTCW01",
+      "domain": "constrained_writing",
+      "unresolved_fields": [],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW01_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW01_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 63
+    },
+    {
+      "case_id": "NTCW02",
+      "domain": "constrained_writing",
+      "unresolved_fields": [],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW02_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW02_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 71
+    },
+    {
+      "case_id": "NTCW03",
+      "domain": "constrained_writing",
+      "unresolved_fields": [],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW03_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW03_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 68
+    },
+    {
+      "case_id": "NTCW04",
+      "domain": "constrained_writing",
+      "unresolved_fields": [],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW04_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW04_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 73
+    },
+    {
+      "case_id": "NTCW05",
+      "domain": "constrained_writing",
+      "unresolved_fields": [],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW05_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW05_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 70
+    },
+    {
+      "case_id": "NTCW06",
+      "domain": "constrained_writing",
+      "unresolved_fields": [],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW06_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW06_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 72
+    },
+    {
+      "case_id": "NTCW07",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "length"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW07_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW07_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 62
+    },
+    {
+      "case_id": "NTCW08",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "required_content"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW08_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW08_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 68
+    },
+    {
+      "case_id": "NTCW09",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "length",
+        "required_content"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW09_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW09_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 68
+    },
+    {
+      "case_id": "NTCW10",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "length"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW10_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW10_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 61
+    },
+    {
+      "case_id": "NTCW11",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "required_content"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW11_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW11_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 76
+    },
+    {
+      "case_id": "NTCW12",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "length",
+        "required_content"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW12_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW12_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 65
+    },
+    {
+      "case_id": "NTCW13",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "tone",
+        "length"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW13_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW13_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 61
+    },
+    {
+      "case_id": "NTCW14",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "audience",
+        "required_content"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW14_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW14_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 76
+    },
+    {
+      "case_id": "NTCW15",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "tone",
+        "length",
+        "required_content"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW15_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW15_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 65
+    },
+    {
+      "case_id": "NTCW16",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "tone",
+        "length"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW16_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW16_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 71
+    },
+    {
+      "case_id": "NTCW17",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "audience",
+        "required_content"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW17_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW17_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 79
+    },
+    {
+      "case_id": "NTCW18",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "tone",
+        "length",
+        "required_content"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW18_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW18_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 69
+    },
+    {
+      "case_id": "NTCW19",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "tone"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW19_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW19_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 69
+    },
+    {
+      "case_id": "NTCW20",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "tone"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW20_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW20_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 73
+    },
+    {
+      "case_id": "NTCW21",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "audience",
+        "tone"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW21_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW21_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 66
+    },
+    {
+      "case_id": "NTCW22",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "tone"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW22_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW22_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 66
+    },
+    {
+      "case_id": "NTCW23",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "audience"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW23_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW23_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 70
+    },
+    {
+      "case_id": "NTCW24",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "audience",
+        "tone"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW24_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW24_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 73
+    },
+    {
+      "case_id": "NTCW25",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "tone"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW25_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW25_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 68
+    },
+    {
+      "case_id": "NTCW26",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "audience"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW26_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW26_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 70
+    },
+    {
+      "case_id": "NTCW27",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "audience",
+        "tone"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW27_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW27_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 70
+    },
+    {
+      "case_id": "NTCW28",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "tone"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW28_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW28_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 76
+    },
+    {
+      "case_id": "NTCW29",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "audience"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW29_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW29_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 67
+    },
+    {
+      "case_id": "NTCW30",
+      "domain": "constrained_writing",
+      "unresolved_fields": [
+        "audience",
+        "tone"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTCW30_word_count",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTCW30_required_content",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": 67
+    },
+    {
+      "case_id": "NTSP01",
+      "domain": "study_planning",
+      "unresolved_fields": [],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP01_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP01_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP01_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP01_04",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP01_05",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP02",
+      "domain": "study_planning",
+      "unresolved_fields": [],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP02_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP02_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP02_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP03",
+      "domain": "study_planning",
+      "unresolved_fields": [],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP03_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP03_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP03_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP03_04",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP04",
+      "domain": "study_planning",
+      "unresolved_fields": [],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP04_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP04_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP04_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP04_04",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP05",
+      "domain": "study_planning",
+      "unresolved_fields": [],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP05_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP05_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP05_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP05_04",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP06",
+      "domain": "study_planning",
+      "unresolved_fields": [],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP06_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP06_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP06_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP07",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "topics"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP07_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP07_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP07_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP07_04",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP07_05",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP08",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "available_time",
+        "priorities"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP08_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP08_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP08_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP08_04",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP09",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "deadline",
+        "available_time"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP09_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP09_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP09_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP10",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP10_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP10_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP10_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP10_04",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP10_05",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP11",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "deadline",
+        "topics",
+        "priorities"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP11_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP11_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP11_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP11_04",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP12",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "available_time",
+        "topics"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP12_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP12_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP12_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP13",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "deadline",
+        "priorities"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP13_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP13_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP13_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP13_04",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP14",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "available_time",
+        "priorities"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP14_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP14_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP14_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP15",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "topics",
+        "priorities"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP15_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP15_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP15_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP16",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "deadline",
+        "available_time",
+        "priorities"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP16_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP16_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP16_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP16_04",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP17",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "deadline",
+        "topics",
+        "priorities"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP17_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP17_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP17_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP18",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "available_time",
+        "topics",
+        "priorities"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP18_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP18_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP18_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP19",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP19_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP19_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP19_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP19_04",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP20",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP20_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP20_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP20_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP21",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP21_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP21_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP21_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP22",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP22_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP22_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP22_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP22_04",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP23",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP23_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP23_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP23_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP24",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP24_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP24_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP24_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP25",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP25_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP25_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP25_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP25_04",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP26",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP26_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP26_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP26_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP27",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP27_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP27_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP27_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP28",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP28_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP28_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP28_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP28_04",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP29",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP29_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP29_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP29_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    },
+    {
+      "case_id": "NTSP30",
+      "domain": "study_planning",
+      "unresolved_fields": [
+        "priorities"
+      ],
+      "witness_pass": true,
+      "constraint_checks": [
+        {
+          "constraint_id": "NTSP30_01",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP30_02",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        },
+        {
+          "constraint_id": "NTSP30_03",
+          "provenance_checked": true,
+          "targeted_violation_detected": true
+        }
+      ],
+      "witness_word_count": null
+    }
+  ],
+  "limitation": "Feasible examples are authored data checks, never real model outputs."
+}

@@ -1,0 +1,117 @@
+{
+  "cache_key": "361214dae12b60309e331440a8617d174043334f147afdde1c5ee120b0010773",
+  "source_case_id": "NTCW21",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "A man stands before a blank wall. He lifts an empty picture frame, adjusts its position. Sunlight glints off the glass. A passing cloud drifts across the sky. He tilts the frame, tracking the cloud’s path. The cloud fills the center. He pauses. The frame is perfectly aligned. He steps back. With quiet reverence, he bows to the wall. The frame holds the cloud like a captured moment. Silence. The man remains bowed. An empty picture frame now frames a passing cloud. He bows to the wall."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"A man stands before a blank wall. He lifts an empty picture frame, adjusts its position. Sunlight glints off the glass. A passing cloud drifts across the sky. He tilts the frame, tracking the cloud’s path. The cloud fills the center. He pauses. The frame is perfectly aligned. He steps back. With quiet reverence, he bows to the wall. The frame holds the cloud like a captured moment. Silence. The man remains bowed. An empty picture frame now frames a passing cloud. He bows to the wall.\"\n}",
+      "parsed": {
+        "text": "A man stands before a blank wall. He lifts an empty picture frame, adjusts its position. Sunlight glints off the glass. A passing cloud drifts across the sky. He tilts the frame, tracking the cloud’s path. The cloud fills the center. He pauses. The frame is perfectly aligned. He steps back. With quiet reverence, he bows to the wall. The frame holds the cloud like a captured moment. Silence. The man remains bowed. An empty picture frame now frames a passing cloud. He bows to the wall."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "an empty picture frame",
+            "a passing cloud",
+            "bows to the wall"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Include each of these exact strings: \"an empty picture frame\", \"a passing cloud\", \"bows to the wall\"."
+          }
+        ]
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "The full text must be between 60 and 90 words."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 87
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "an empty picture frame",
+            "a passing cloud",
+            "bows to the wall"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 87
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "an empty picture frame",
+            "a passing cloud",
+            "bows to the wall"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

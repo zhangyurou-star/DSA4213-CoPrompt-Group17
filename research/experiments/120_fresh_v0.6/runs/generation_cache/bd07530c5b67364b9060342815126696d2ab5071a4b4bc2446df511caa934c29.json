@@ -1,0 +1,118 @@
+{
+  "cache_key": "bd07530c5b67364b9060342815126696d2ab5071a4b4bc2446df511caa934c29",
+  "source_case_id": "NTCW06",
+  "source_policy": "direct",
+  "output": {
+    "text": "To the judges of the Crumb Crown contest: texture first is our core standard. Presentation second enhances the experience without dominating it. No points for size—volume does not determine merit. A small, well-balanced dessert with exceptional texture can outperform a large, decorative entry. Focus on mouthfeel, harmony, and intention. The true winner is not the largest, but the most satisfying. Remember: texture first, presentation second, no points for size. These principles guide every decision. Let your senses reflect the craft behind each bite."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"To the esteemed judges of the Crumb Crown contest: remember that texture first is our guiding principle. Presentation second follows closely, enhancing the experience without overshadowing the core. No points for size—this is not a competition of volume. A small, thoughtfully crafted dessert with layered textures can surpass a large, overly decorative entry. Balance and intention matter most. Let your palates guide you toward excellence in mouthfeel, not mass. The true crown rests on harmony, not height. Texture first, presentation second, no points for size—these are our unwavering standards.\"\n}",
+      "parsed": {
+        "text": "To the esteemed judges of the Crumb Crown contest: remember that texture first is our guiding principle. Presentation second follows closely, enhancing the experience without overshadowing the core. No points for size—this is not a competition of volume. A small, thoughtfully crafted dessert with layered textures can surpass a large, overly decorative entry. Balance and intention matter most. Let your palates guide you toward excellence in mouthfeel, not mass. The true crown rests on harmony, not height. Texture first, presentation second, no points for size—these are our unwavering standards."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "The full text must be between 55 and 85 words."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"texture first\", \"presentation second\", \"no points for size\"."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 91}"
+  ],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"To the judges of the Crumb Crown contest: texture first is our core standard. Presentation second enhances the experience without dominating it. No points for size—volume does not determine merit. A small, well-balanced dessert with exceptional texture can outperform a large, decorative entry. Focus on mouthfeel, harmony, and intention. The true winner is not the largest, but the most satisfying. Remember: texture first, presentation second, no points for size. These principles guide every decision. Let your senses reflect the craft behind each bite.\"\n}",
+    "parsed": {
+      "text": "To the judges of the Crumb Crown contest: texture first is our core standard. Presentation second enhances the experience without dominating it. No points for size—volume does not determine merit. A small, well-balanced dessert with exceptional texture can outperform a large, decorative entry. Focus on mouthfeel, harmony, and intention. The true winner is not the largest, but the most satisfying. Remember: texture first, presentation second, no points for size. These principles guide every decision. Let your senses reflect the craft behind each bite."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 91
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 91}"
+    ],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"texture first\", \"presentation second\", \"no points for size\"."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 84
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"texture first\", \"presentation second\", \"no points for size\"."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

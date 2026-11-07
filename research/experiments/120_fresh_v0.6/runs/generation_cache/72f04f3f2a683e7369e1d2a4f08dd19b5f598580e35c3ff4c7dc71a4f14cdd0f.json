@@ -1,0 +1,116 @@
+{
+  "cache_key": "72f04f3f2a683e7369e1d2a4f08dd19b5f598580e35c3ff4c7dc71a4f14cdd0f",
+  "source_case_id": "NTCW03",
+  "source_policy": "direct",
+  "output": {
+    "text": "We gather at the common table, not as strangers, but as stewards of shared space and voice. We promise to listen before speaking, honoring each word with presence and care. We pledge to leave a place—empty, expectant—for someone not yet present, a future voice, a stranger who may one day join us. May our silence be respectful, our speech kind, and our table always open. Let this moment bind us not by law, but by choice, by courage, and by the quiet hope that tomorrow’s guest will find a seat. We stand together, in trust, at the common table."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"We gather at the common table, not as strangers, but as stewards of shared space and voice. We promise to listen before speaking, honoring each word with presence and care. We pledge to leave a place—empty, expectant—for someone not yet present, a future voice, a stranger who may one day join us. May our silence be respectful, our speech kind, and our table always open. Let this moment bind us not by law, but by choice, by courage, and by the quiet hope that tomorrow’s guest will find a seat. We stand together, in trust, at the common table.\"\n}",
+      "parsed": {
+        "text": "We gather at the common table, not as strangers, but as stewards of shared space and voice. We promise to listen before speaking, honoring each word with presence and care. We pledge to leave a place—empty, expectant—for someone not yet present, a future voice, a stranger who may one day join us. May our silence be respectful, our speech kind, and our table always open. Let this moment bind us not by law, but by choice, by courage, and by the quiet hope that tomorrow’s guest will find a seat. We stand together, in trust, at the common table."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the common table",
+            "listen before speaking",
+            "leave a place"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Preserve these exact phrases: \"the common table\", \"listen before speaking\", \"leave a place\"."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 55 words and no more than 85 words in total."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 101
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the common table",
+            "listen before speaking",
+            "leave a place"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 55 words and no more than 85 words in total."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 101
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the common table",
+            "listen before speaking",
+            "leave a place"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 55 words and no more than 85 words in total."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

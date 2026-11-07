@@ -1,0 +1,89 @@
+{
+  "cache_key": "3ad4761e6e45ad2379b79eaa8ad99e0e9cd812805de9e0c3e17cc23f0c2a7037",
+  "source_case_id": "NVCW05",
+  "source_policy": "value_based",
+  "output": {
+    "text": "The Atlas of Knots belongs on the craft shelf despite its atlas title because all its pages teach tying techniques. This classification ensures that the collection's practical focus remains clear to users. To maintain discoverability through title-based searches, a shelf note has been added under the geography section. The shelf note reads: 'See also the craft shelf for detailed knot-tying instructions.' This note directs users to the correct location while preserving the integrity of the cataloging system. The Atlas of Knots is thus correctly shelved on the craft shelf, with a shelf note ensuring it remains accessible via geography-based queries."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"The Atlas of Knots belongs on the craft shelf despite its atlas title because all its pages teach tying techniques. This classification ensures that the collection's practical focus remains clear to users. To maintain discoverability through title-based searches, a shelf note has been added under the geography section. The shelf note reads: 'See also the craft shelf for detailed knot-tying instructions.' This note directs users to the correct location while preserving the integrity of the cataloging system. The Atlas of Knots is thus correctly shelved on the craft shelf, with a shelf note ensuring it remains accessible via geography-based queries.\"\n}",
+      "parsed": {
+        "text": "The Atlas of Knots belongs on the craft shelf despite its atlas title because all its pages teach tying techniques. This classification ensures that the collection's practical focus remains clear to users. To maintain discoverability through title-based searches, a shelf note has been added under the geography section. The shelf note reads: 'See also the craft shelf for detailed knot-tying instructions.' This note directs users to the correct location while preserving the integrity of the cataloging system. The Atlas of Knots is thus correctly shelved on the craft shelf, with a shelf note ensuring it remains accessible via geography-based queries."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "The Atlas of Knots",
+            "craft shelf",
+            "shelf note"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Preserve these exact phrases: \"The Atlas of Knots\", \"craft shelf\", \"shelf note\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 100
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "The Atlas of Knots",
+            "craft shelf",
+            "shelf note"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 100
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "The Atlas of Knots",
+            "craft shelf",
+            "shelf note"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

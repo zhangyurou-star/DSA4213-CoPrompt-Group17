@@ -1,0 +1,113 @@
+{
+  "cache_key": "2b334385883f3df56882c958ed3b820f300bc6c19286abe3374c6f316ba02839",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [
+      "S3"
+    ],
+    "length": [
+      "S4"
+    ],
+    "required_content": [
+      "S1"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 62,
+      "text": "Explain the internal logic of an invented time-travel paradox."
+    },
+    {
+      "id": "S2",
+      "start": 63,
+      "end": 129,
+      "text": "The intended readers are readers of a fictional speculative essay."
+    },
+    {
+      "id": "S3",
+      "start": 130,
+      "end": 165,
+      "text": "Make the voice curious and precise."
+    },
+    {
+      "id": "S4",
+      "start": 166,
+      "end": 212,
+      "text": "The full text must be between 65 and 95 words."
+    }
+  ],
+  "field_values": {
+    "audience": "The intended readers are readers of a fictional speculative essay.",
+    "tone": "Make the voice curious and precise.",
+    "length": "The full text must be between 65 and 95 words.",
+    "required_content": "Explain the internal logic of an invented time-travel paradox."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 63,
+        "end": 129,
+        "quote": "The intended readers are readers of a fictional speculative essay."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 130,
+        "end": 165,
+        "quote": "Make the voice curious and precise."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 166,
+        "end": 212,
+        "quote": "The full text must be between 65 and 95 words."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S1",
+        "start": 0,
+        "end": 62,
+        "quote": "Explain the internal logic of an invented time-travel paradox."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[\"S3\"],\"length\":[\"S4\"],\"required_content\":[\"S1\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [
+            "S3"
+          ],
+          "length": [
+            "S4"
+          ],
+          "required_content": [
+            "S1"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

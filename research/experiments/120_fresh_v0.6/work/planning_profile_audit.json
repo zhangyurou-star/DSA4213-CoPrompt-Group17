@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-10-19T14:55:46.454142+00:00",
+  "status": "passed",
+  "cases": 60,
+  "unique_normalized_contracts": 60,
+  "duplicate_groups": [],
+  "normalization": "Replace each case topic label by its ordinal position; retain complete hard-rule parameters/source fields/source stages, field states and criticality, control and answer statuses.",
+  "correction_record": "work/data_corrections_before_freeze.json",
+  "limitation": "No exact normalized duplicates does not remove shared task templates or establish semantic/statistical independence.",
+  "api_calls": 0
+}

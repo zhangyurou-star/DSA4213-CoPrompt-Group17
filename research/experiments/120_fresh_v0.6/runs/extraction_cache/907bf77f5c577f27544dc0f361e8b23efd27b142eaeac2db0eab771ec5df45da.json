@@ -1,0 +1,155 @@
+{
+  "cache_key": "907bf77f5c577f27544dc0f361e8b23efd27b142eaeac2db0eab771ec5df45da",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S4"
+    ],
+    "available_time": [
+      "S5"
+    ],
+    "topics": [
+      "S6",
+      "S7",
+      "S8"
+    ],
+    "priorities": [
+      "S8"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 74,
+      "text": "A ground-operations classroom exercise uses aircraft-marshalling diagrams."
+    },
+    {
+      "id": "S2",
+      "start": 75,
+      "end": 103,
+      "text": "Organize my theory revision."
+    },
+    {
+      "id": "S3",
+      "start": 104,
+      "end": 124,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 125,
+      "end": 201,
+      "text": "Use only dates from 2027-02-01 through 2027-02-07, including the final date."
+    },
+    {
+      "id": "S5",
+      "start": 202,
+      "end": 272,
+      "text": "I can spare at most 50 minutes per day, counting every topic together."
+    },
+    {
+      "id": "S6",
+      "start": 273,
+      "end": 366,
+      "text": "Include \"Wand Signals\", \"Stand Clearances\", \"Pushback Coordination\", using those topic names."
+    },
+    {
+      "id": "S7",
+      "start": 367,
+      "end": 422,
+      "text": "Allocate at least 20 cumulative minutes to every topic."
+    },
+    {
+      "id": "S8",
+      "start": 423,
+      "end": 492,
+      "text": "Within that coverage, \"Wand Signals\" needs at least 30 total minutes."
+    }
+  ],
+  "field_values": {
+    "deadline": "Use only dates from 2027-02-01 through 2027-02-07, including the final date.",
+    "available_time": "I can spare at most 50 minutes per day, counting every topic together.",
+    "topics": "Include \"Wand Signals\", \"Stand Clearances\", \"Pushback Coordination\", using those topic names.\nAllocate at least 20 cumulative minutes to every topic.\nWithin that coverage, \"Wand Signals\" needs at least 30 total minutes.",
+    "priorities": "Within that coverage, \"Wand Signals\" needs at least 30 total minutes."
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 125,
+        "end": 201,
+        "quote": "Use only dates from 2027-02-01 through 2027-02-07, including the final date."
+      }
+    ],
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 202,
+        "end": 272,
+        "quote": "I can spare at most 50 minutes per day, counting every topic together."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 273,
+        "end": 366,
+        "quote": "Include \"Wand Signals\", \"Stand Clearances\", \"Pushback Coordination\", using those topic names."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 367,
+        "end": 422,
+        "quote": "Allocate at least 20 cumulative minutes to every topic."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 423,
+        "end": 492,
+        "quote": "Within that coverage, \"Wand Signals\" needs at least 30 total minutes."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 423,
+        "end": 492,
+        "quote": "Within that coverage, \"Wand Signals\" needs at least 30 total minutes."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S4\"],\"available_time\":[\"S5\"],\"topics\":[\"S6\",\"S7\",\"S8\"],\"priorities\":[\"S8\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S4"
+          ],
+          "available_time": [
+            "S5"
+          ],
+          "topics": [
+            "S6",
+            "S7",
+            "S8"
+          ],
+          "priorities": [
+            "S8"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

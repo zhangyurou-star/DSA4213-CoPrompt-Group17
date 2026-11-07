@@ -1,0 +1,222 @@
+{
+  "cache_key": "b085238d8fbad5193c02c68be3a18accb9e5655393da1b6f4fb3f5b756e21490",
+  "source_case_id": "NDSP04",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Load Paths",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Load Paths",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Load Paths",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Counterweight Systems",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Counterweight Systems",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Rigging Inspections",
+        "minutes": 30
+      }
+    ],
+    "summary": "Calculated from the schedule: 180 minutes in total. Daily totals: 2027-02-01: 30 minutes; 2027-02-02: 30 minutes; 2027-02-03: 30 minutes; 2027-02-04: 30 minutes; 2027-02-05: 30 minutes; 2027-02-06: 30 minutes. Topic totals: Counterweight Systems: 60 minutes; Load Paths: 90 minutes; Rigging Inspections: 30 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Load Paths\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Load Paths\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Load Paths\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Counterweight Systems\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Counterweight Systems\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Rigging Inspections\",\n      \"minutes\": 30\n    }\n  ],\n  \"summary\": \"The study schedule covers all required topics—Load Paths, Counterweight Systems, and Rigging Inspections—with a total of at least 35 minutes for Load Paths and at least 25 minutes each for the other two topics. All sessions are within the 30-minute daily limit and fall between 2027-02-01 and 2027-02-06, inclusive.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Load Paths",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Load Paths",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Load Paths",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Counterweight Systems",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Counterweight Systems",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Rigging Inspections",
+            "minutes": 30
+          }
+        ],
+        "summary": "The study schedule covers all required topics—Load Paths, Counterweight Systems, and Rigging Inspections—with a total of at least 35 minutes for Load Paths and at least 25 minutes each for the other two topics. All sessions are within the 30-minute daily limit and fall between 2027-02-01 and 2027-02-06, inclusive."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "The last usable study date is 2027-02-06, and sessions may fall on that day."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 180,
+      "daily_minutes": {
+        "2027-02-01": 30,
+        "2027-02-02": 30,
+        "2027-02-03": 30,
+        "2027-02-04": 30,
+        "2027-02-05": 30,
+        "2027-02-06": 30
+      },
+      "topic_minutes": [
+        {
+          "topic": "Counterweight Systems",
+          "normalized_topic": "counterweight systems",
+          "minutes": 60
+        },
+        {
+          "topic": "Load Paths",
+          "normalized_topic": "load paths",
+          "minutes": 90
+        },
+        {
+          "topic": "Rigging Inspections",
+          "normalized_topic": "rigging inspections",
+          "minutes": 30
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "The last usable study date is 2027-02-06, and sessions may fall on that day."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 180,
+      "daily_minutes": {
+        "2027-02-01": 30,
+        "2027-02-02": 30,
+        "2027-02-03": 30,
+        "2027-02-04": 30,
+        "2027-02-05": 30,
+        "2027-02-06": 30
+      },
+      "topic_minutes": [
+        {
+          "topic": "Counterweight Systems",
+          "normalized_topic": "counterweight systems",
+          "minutes": 60
+        },
+        {
+          "topic": "Load Paths",
+          "normalized_topic": "load paths",
+          "minutes": 90
+        },
+        {
+          "topic": "Rigging Inspections",
+          "normalized_topic": "rigging inspections",
+          "minutes": 30
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "The last usable study date is 2027-02-06, and sessions may fall on that day."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study schedule covers all required topics—Load Paths, Counterweight Systems, and Rigging Inspections—with a total of at least 35 minutes for Load Paths and at least 25 minutes each for the other two topics. All sessions are within the 30-minute daily limit and fall between 2027-02-01 and 2027-02-06, inclusive.",
+    "derived_summary": "Calculated from the schedule: 180 minutes in total. Daily totals: 2027-02-01: 30 minutes; 2027-02-02: 30 minutes; 2027-02-03: 30 minutes; 2027-02-04: 30 minutes; 2027-02-05: 30 minutes; 2027-02-06: 30 minutes. Topic totals: Counterweight Systems: 60 minutes; Load Paths: 90 minutes; Rigging Inspections: 30 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

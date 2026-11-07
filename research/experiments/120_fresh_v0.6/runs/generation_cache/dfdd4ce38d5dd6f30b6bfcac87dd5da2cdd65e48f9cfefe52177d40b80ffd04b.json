@@ -1,0 +1,422 @@
+{
+  "cache_key": "dfdd4ce38d5dd6f30b6bfcac87dd5da2cdd65e48f9cfefe52177d40b80ffd04b",
+  "source_case_id": "NVSP05",
+  "source_policy": "value_based",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Idiolect Features",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-01",
+        "topic": "Lexical Diversity",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Syntactic Patterns",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Punctuation and Capitalization",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Function Word Frequency",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Sentence Length Distribution",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Stylistic Markers and Repetition",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Named Entity Usage",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Discourse Structure",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Tone and Register Analysis",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Comparative Case Study: Document Pairs",
+        "minutes": 40
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Statistical Tools Overview",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-07",
+        "topic": "Synthesis and Seminar Preparation",
+        "minutes": 50
+      }
+    ],
+    "summary": "Calculated from the schedule: 350 minutes in total. Daily totals: 2027-02-01: 50 minutes; 2027-02-02: 50 minutes; 2027-02-03: 50 minutes; 2027-02-04: 50 minutes; 2027-02-05: 50 minutes; 2027-02-06: 50 minutes; 2027-02-07: 50 minutes. Topic totals: Comparative Case Study: Document Pairs: 40 minutes; Discourse Structure: 30 minutes; Function Word Frequency: 30 minutes; Idiolect Features: 30 minutes; Lexical Diversity: 20 minutes; Named Entity Usage: 20 minutes; Punctuation and Capitalization: 20 minutes; Sentence Length Distribution: 20 minutes; Statistical Tools Overview: 10 minutes; Stylistic Markers and Repetition: 30 minutes; Syntactic Patterns: 30 minutes; Synthesis and Seminar Preparation: 50 minutes; Tone and Register Analysis: 20 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Idiolect Features\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Lexical Diversity\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Syntactic Patterns\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Punctuation and Capitalization\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Function Word Frequency\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Sentence Length Distribution\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Stylistic Markers and Repetition\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Named Entity Usage\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Discourse Structure\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Tone and Register Analysis\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Comparative Case Study: Document Pairs\",\n      \"minutes\": 40\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Statistical Tools Overview\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-07\",\n      \"topic\": \"Synthesis and Seminar Preparation\",\n      \"minutes\": 50\n    }\n  ],\n  \"summary\": \"The study plan covers core authorship analysis topics from 2027-02-01 to 2027-02-07, with a preference for starting with Idiolect Features. All sessions respect the 50-minute daily limit, totaling 350 minutes across 7 days. Topics are distributed to ensure balanced daily workloads and logical progression toward seminar readiness.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Idiolect Features",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-01",
+            "topic": "Lexical Diversity",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Syntactic Patterns",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Punctuation and Capitalization",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Function Word Frequency",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Sentence Length Distribution",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Stylistic Markers and Repetition",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Named Entity Usage",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Discourse Structure",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Tone and Register Analysis",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Comparative Case Study: Document Pairs",
+            "minutes": 40
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Statistical Tools Overview",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-07",
+            "topic": "Synthesis and Seminar Preparation",
+            "minutes": 50
+          }
+        ],
+        "summary": "The study plan covers core authorship analysis topics from 2027-02-01 to 2027-02-07, with a preference for starting with Idiolect Features. All sessions respect the 50-minute daily limit, totaling 350 minutes across 7 days. Topics are distributed to ensure balanced daily workloads and logical progression toward seminar readiness."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 50
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "I can spare at most 50 minutes per day, counting every topic together."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "Use only dates from 2027-02-01 through 2027-02-07, including the final date."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 350,
+      "daily_minutes": {
+        "2027-02-01": 50,
+        "2027-02-02": 50,
+        "2027-02-03": 50,
+        "2027-02-04": 50,
+        "2027-02-05": 50,
+        "2027-02-06": 50,
+        "2027-02-07": 50
+      },
+      "topic_minutes": [
+        {
+          "topic": "Comparative Case Study: Document Pairs",
+          "normalized_topic": "comparative case study: document pairs",
+          "minutes": 40
+        },
+        {
+          "topic": "Discourse Structure",
+          "normalized_topic": "discourse structure",
+          "minutes": 30
+        },
+        {
+          "topic": "Function Word Frequency",
+          "normalized_topic": "function word frequency",
+          "minutes": 30
+        },
+        {
+          "topic": "Idiolect Features",
+          "normalized_topic": "idiolect features",
+          "minutes": 30
+        },
+        {
+          "topic": "Lexical Diversity",
+          "normalized_topic": "lexical diversity",
+          "minutes": 20
+        },
+        {
+          "topic": "Named Entity Usage",
+          "normalized_topic": "named entity usage",
+          "minutes": 20
+        },
+        {
+          "topic": "Punctuation and Capitalization",
+          "normalized_topic": "punctuation and capitalization",
+          "minutes": 20
+        },
+        {
+          "topic": "Sentence Length Distribution",
+          "normalized_topic": "sentence length distribution",
+          "minutes": 20
+        },
+        {
+          "topic": "Statistical Tools Overview",
+          "normalized_topic": "statistical tools overview",
+          "minutes": 10
+        },
+        {
+          "topic": "Stylistic Markers and Repetition",
+          "normalized_topic": "stylistic markers and repetition",
+          "minutes": 30
+        },
+        {
+          "topic": "Syntactic Patterns",
+          "normalized_topic": "syntactic patterns",
+          "minutes": 30
+        },
+        {
+          "topic": "Synthesis and Seminar Preparation",
+          "normalized_topic": "synthesis and seminar preparation",
+          "minutes": 50
+        },
+        {
+          "topic": "Tone and Register Analysis",
+          "normalized_topic": "tone and register analysis",
+          "minutes": 20
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 50
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "Use only dates from 2027-02-01 through 2027-02-07, including the final date."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 350,
+      "daily_minutes": {
+        "2027-02-01": 50,
+        "2027-02-02": 50,
+        "2027-02-03": 50,
+        "2027-02-04": 50,
+        "2027-02-05": 50,
+        "2027-02-06": 50,
+        "2027-02-07": 50
+      },
+      "topic_minutes": [
+        {
+          "topic": "Comparative Case Study: Document Pairs",
+          "normalized_topic": "comparative case study: document pairs",
+          "minutes": 40
+        },
+        {
+          "topic": "Discourse Structure",
+          "normalized_topic": "discourse structure",
+          "minutes": 30
+        },
+        {
+          "topic": "Function Word Frequency",
+          "normalized_topic": "function word frequency",
+          "minutes": 30
+        },
+        {
+          "topic": "Idiolect Features",
+          "normalized_topic": "idiolect features",
+          "minutes": 30
+        },
+        {
+          "topic": "Lexical Diversity",
+          "normalized_topic": "lexical diversity",
+          "minutes": 20
+        },
+        {
+          "topic": "Named Entity Usage",
+          "normalized_topic": "named entity usage",
+          "minutes": 20
+        },
+        {
+          "topic": "Punctuation and Capitalization",
+          "normalized_topic": "punctuation and capitalization",
+          "minutes": 20
+        },
+        {
+          "topic": "Sentence Length Distribution",
+          "normalized_topic": "sentence length distribution",
+          "minutes": 20
+        },
+        {
+          "topic": "Statistical Tools Overview",
+          "normalized_topic": "statistical tools overview",
+          "minutes": 10
+        },
+        {
+          "topic": "Stylistic Markers and Repetition",
+          "normalized_topic": "stylistic markers and repetition",
+          "minutes": 30
+        },
+        {
+          "topic": "Syntactic Patterns",
+          "normalized_topic": "syntactic patterns",
+          "minutes": 30
+        },
+        {
+          "topic": "Synthesis and Seminar Preparation",
+          "normalized_topic": "synthesis and seminar preparation",
+          "minutes": 50
+        },
+        {
+          "topic": "Tone and Register Analysis",
+          "normalized_topic": "tone and register analysis",
+          "minutes": 20
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 50
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "Use only dates from 2027-02-01 through 2027-02-07, including the final date."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study plan covers core authorship analysis topics from 2027-02-01 to 2027-02-07, with a preference for starting with Idiolect Features. All sessions respect the 50-minute daily limit, totaling 350 minutes across 7 days. Topics are distributed to ensure balanced daily workloads and logical progression toward seminar readiness.",
+    "derived_summary": "Calculated from the schedule: 350 minutes in total. Daily totals: 2027-02-01: 50 minutes; 2027-02-02: 50 minutes; 2027-02-03: 50 minutes; 2027-02-04: 50 minutes; 2027-02-05: 50 minutes; 2027-02-06: 50 minutes; 2027-02-07: 50 minutes. Topic totals: Comparative Case Study: Document Pairs: 40 minutes; Discourse Structure: 30 minutes; Function Word Frequency: 30 minutes; Idiolect Features: 30 minutes; Lexical Diversity: 20 minutes; Named Entity Usage: 20 minutes; Punctuation and Capitalization: 20 minutes; Sentence Length Distribution: 20 minutes; Statistical Tools Overview: 10 minutes; Stylistic Markers and Repetition: 30 minutes; Syntactic Patterns: 30 minutes; Synthesis and Seminar Preparation: 50 minutes; Tone and Register Analysis: 20 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "cache_key": "1dbc80596600728cca5aab9a578929bc4769d2486ee72f7c38a4d3c645a25d35",
+  "source_case_id": "NTCW10",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "To you, who kept the spare chair beside your lamp through every late night, listening to every unfinished page—your quiet presence was my first audience. You never turned away, even when the words faltered. You waited, not for perfection, but for me. This book is yours, in every sentence, in every breath. I write it because you believed in the story before I did. Thank you for waiting, for holding space, for being there. With all my heart, I thank you."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"To you, who kept the spare chair beside your lamp through every late night, listening not just to the words I spoke but to the silence between them—thank you. You heard every unfinished page, held space for the doubts I couldn’t name, and never turned away. Your quiet presence was the first audience I ever knew. You waited, not for perfection, but for me. This book is yours, in every sentence, in every breath. I write it because you believed in the story before I did. With all my heart, thank you for waiting.\"\n}",
+      "parsed": {
+        "text": "To you, who kept the spare chair beside your lamp through every late night, listening not just to the words I spoke but to the silence between them—thank you. You heard every unfinished page, held space for the doubts I couldn’t name, and never turned away. Your quiet presence was the first audience I ever knew. You waited, not for perfection, but for me. This book is yours, in every sentence, in every breath. I write it because you believed in the story before I did. With all my heart, thank you for waiting."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        },
+        "source": [
+          {
+            "source": "visible_exchange",
+            "exchange_index": 0,
+            "field_id": "length",
+            "quote": "Write 50 to 80 words altogether."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"the spare chair\", \"every unfinished page\", \"you waited\"."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 95}"
+  ],
+  "constraint_checks_final": [
+    "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 82}"
+  ],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"To you, who kept the spare chair beside your lamp through every late night, listening to every unfinished page—your quiet presence was my first audience. You never turned away, even when the words faltered. You waited, not for perfection, but for me. This book is yours, in every sentence, in every breath. I write it because you believed in the story before I did. Thank you for waiting, for holding space, for being there. With all my heart, I thank you.\"\n}",
+    "parsed": {
+      "text": "To you, who kept the spare chair beside your lamp through every late night, listening to every unfinished page—your quiet presence was my first audience. You never turned away, even when the words faltered. You waited, not for perfection, but for me. This book is yours, in every sentence, in every breath. I write it because you believed in the story before I did. Thank you for waiting, for holding space, for being there. With all my heart, I thank you."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 95
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 95}"
+    ],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"the spare chair\", \"every unfinished page\", \"you waited\"."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 82
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 82}"
+    ],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"the spare chair\", \"every unfinished page\", \"you waited\"."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

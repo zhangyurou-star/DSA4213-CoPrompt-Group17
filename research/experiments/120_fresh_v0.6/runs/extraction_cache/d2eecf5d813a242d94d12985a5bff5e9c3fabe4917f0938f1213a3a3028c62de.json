@@ -1,0 +1,100 @@
+{
+  "cache_key": "d2eecf5d813a242d94d12985a5bff5e9c3fabe4917f0938f1213a3a3028c62de",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [
+      "S4"
+    ],
+    "length": [
+      "S3"
+    ],
+    "required_content": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 46,
+      "text": "Explain how a fictional vending token is used."
+    },
+    {
+      "id": "S2",
+      "start": 47,
+      "end": 88,
+      "text": "Address this to first-time machine users."
+    },
+    {
+      "id": "S3",
+      "start": 89,
+      "end": 128,
+      "text": "Keep the complete piece to 50–80 words."
+    },
+    {
+      "id": "S4",
+      "start": 129,
+      "end": 162,
+      "text": "Use a clear and reassuring voice."
+    }
+  ],
+  "field_values": {
+    "audience": "Address this to first-time machine users.",
+    "tone": "Use a clear and reassuring voice.",
+    "length": "Keep the complete piece to 50–80 words.",
+    "required_content": null
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 47,
+        "end": 88,
+        "quote": "Address this to first-time machine users."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 129,
+        "end": 162,
+        "quote": "Use a clear and reassuring voice."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 89,
+        "end": 128,
+        "quote": "Keep the complete piece to 50–80 words."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[\"S4\"],\"length\":[\"S3\"],\"required_content\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [
+            "S4"
+          ],
+          "length": [
+            "S3"
+          ],
+          "required_content": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

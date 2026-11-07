@@ -1,0 +1,72 @@
+{
+  "date_local": "2026-10-27",
+  "timezone": "Asia/Singapore",
+  "sources": [
+    {
+      "copied_path": "inputs/test_trajectories.jsonl",
+      "original_path": "/Users/klesmad/Documents/Codex/2026-10-27/gao/work/project/CoPrompt_Fresh120_v0.6.0_EN1_2026-10-20/experiments/120_fresh_v0.6/runs/formal_v0.6.0_test/trajectories.jsonl",
+      "bytes": 2888024,
+      "sha256": "6427594dca5c8e801f15ac0c2c1c24d6c6617e4aaea929aae15f13df7a64c513"
+    },
+    {
+      "copied_path": "inputs/test_requests.jsonl",
+      "original_path": "/Users/klesmad/Documents/Codex/2026-10-27/gao/work/project/CoPrompt_Fresh120_v0.6.0_EN1_2026-10-20/experiments/120_fresh_v0.6/data/public/test_requests.jsonl",
+      "bytes": 34588,
+      "sha256": "545b91dbc822d922e2216b6b625d780f8a8dd06a2ccf2bb9648ccb385d7bb2a9"
+    },
+    {
+      "copied_path": "inputs/test_answers.jsonl",
+      "original_path": "/Users/klesmad/Documents/Codex/2026-10-27/gao/work/project/CoPrompt_Fresh120_v0.6.0_EN1_2026-10-20/experiments/120_fresh_v0.6/data/private/test_answers.jsonl",
+      "bytes": 42285,
+      "sha256": "32ad6222bd6b2c148a7d5d594e8363e2d9c720d9d47671bf138cebbff5928dea"
+    },
+    {
+      "copied_path": "inputs/test_annotations.jsonl",
+      "original_path": "/Users/klesmad/Documents/Codex/2026-10-27/gao/work/project/CoPrompt_Fresh120_v0.6.0_EN1_2026-10-20/experiments/120_fresh_v0.6/data/private/test_annotations.jsonl",
+      "bytes": 127991,
+      "sha256": "98457b4ee5b61e7e303457ea3eece37539b4cc2deb42d0b4b160e5efc8f8d0e5"
+    },
+    {
+      "copied_path": "inputs/official_analysis.json",
+      "original_path": "/Users/klesmad/Documents/Codex/2026-10-27/gao/work/project/CoPrompt_Fresh120_v0.6.0_EN1_2026-10-20/experiments/120_fresh_v0.6/outputs/fresh120_analysis/analysis.json",
+      "bytes": 26354,
+      "sha256": "cd7c3ff74172be1a12d624d10d6834bced4af8bb6cdf0b94564a2e01daeac06a"
+    },
+    {
+      "copied_path": "inputs/lambda_selection.json",
+      "original_path": "/Users/klesmad/Documents/Codex/2026-10-27/gao/work/project/CoPrompt_Fresh120_v0.6.0_EN1_2026-10-20/experiments/120_fresh_v0.6/outputs/CoPrompt_validation_v0.6.0/lambda_selection.json",
+      "bytes": 1069,
+      "sha256": "56ffbd218f3d66d7589a1104a6a43cb12c6f8406cd5ed5eaf08aeab7c00d18b8"
+    },
+    {
+      "copied_path": "inputs/human_statistics.json",
+      "original_path": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/statistics.json",
+      "bytes": 17183,
+      "sha256": "c71cb5e02a5c8e250f813c1c3bdc89659fa5aa2831dbee8ce73ebca68432bee8"
+    },
+    {
+      "copied_path": "inputs/reviewer_1_returned.json",
+      "original_path": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/inputs/reviewer_1_returned.json",
+      "bytes": 436587,
+      "sha256": "c993ad1a047f1bf4f6876383adfb6b6710ae64653804fbc4089c79418a7c2535"
+    },
+    {
+      "copied_path": "inputs/reviewer_2_returned.json",
+      "original_path": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/inputs/reviewer_2_returned.json",
+      "bytes": 386842,
+      "sha256": "9379cfa3c8495e6168663872bef582e24a7372b086311ae9a75113a3245abf68"
+    },
+    {
+      "copied_path": "inputs/reviewer_policy_mapping.json",
+      "original_path": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/inputs/reviewer_policy_mapping.json",
+      "bytes": 49760,
+      "sha256": "7223c32cfc1fd09c50f8d20dcee12639ebd83b640a2a37a37594c12638f54944"
+    },
+    {
+      "copied_path": "inputs/proposal.pdf",
+      "original_path": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/inputs/proposal.pdf",
+      "bytes": 148654,
+      "sha256": "15aea481997f6d6ab31be96585627f4bd32f082c8db657fcbcd73f79d52c795f"
+    }
+  ]
+}

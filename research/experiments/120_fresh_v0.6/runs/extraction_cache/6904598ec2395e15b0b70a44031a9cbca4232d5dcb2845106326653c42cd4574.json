@@ -1,0 +1,93 @@
+{
+  "cache_key": "6904598ec2395e15b0b70a44031a9cbca4232d5dcb2845106326653c42cd4574",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [],
+    "tone": [],
+    "length": [
+      "S4"
+    ],
+    "required_content": [
+      "S3"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 58,
+      "text": "Write a panel-by-panel script for an original short comic."
+    },
+    {
+      "id": "S2",
+      "start": 59,
+      "end": 269,
+      "text": "Build the piece around these synthetic facts: The three-panel comic shows a child taping a paper moon onto a window, a cat trying to catch its reflection, then the child moving the moon so the cat can reach it."
+    },
+    {
+      "id": "S3",
+      "start": 270,
+      "end": 357,
+      "text": "The text must contain \"Panel one\", \"Panel two\", \"Panel three\", \"a paper moon\" verbatim."
+    },
+    {
+      "id": "S4",
+      "start": 358,
+      "end": 390,
+      "text": "Write 65 to 95 words altogether."
+    },
+    {
+      "id": "S5",
+      "start": 391,
+      "end": 438,
+      "text": "Execute now and do not pause for clarification."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": null,
+    "length": "Write 65 to 95 words altogether.",
+    "required_content": "The text must contain \"Panel one\", \"Panel two\", \"Panel three\", \"a paper moon\" verbatim."
+  },
+  "evidence": {
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 358,
+        "end": 390,
+        "quote": "Write 65 to 95 words altogether."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 270,
+        "end": 357,
+        "quote": "The text must contain \"Panel one\", \"Panel two\", \"Panel three\", \"a paper moon\" verbatim."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[],\"tone\":[],\"length\":[\"S4\"],\"required_content\":[\"S3\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [],
+          "tone": [],
+          "length": [
+            "S4"
+          ],
+          "required_content": [
+            "S3"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

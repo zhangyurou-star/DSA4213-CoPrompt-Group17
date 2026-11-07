@@ -1,0 +1,105 @@
+{
+  "cache_key": "cf38a3e2b8d1589918ca02588adab487ebaf79a513e5a5ecdeed4074b8550402",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S4"
+    ],
+    "available_time": [
+      "S5"
+    ],
+    "topics": [
+      "S1"
+    ],
+    "priorities": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 90,
+      "text": "I want to follow a leather hand-stitching demonstration without losing track of the terms."
+    },
+    {
+      "id": "S2",
+      "start": 91,
+      "end": 120,
+      "text": "Arrange my learning sessions."
+    },
+    {
+      "id": "S3",
+      "start": 121,
+      "end": 141,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 142,
+      "end": 209,
+      "text": "My study window closes on 2027-02-06; that date is still available."
+    },
+    {
+      "id": "S5",
+      "start": 210,
+      "end": 279,
+      "text": "The total of all sessions on any one date must not exceed 30 minutes."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": null,
+    "topics": "I want to follow a leather hand-stitching demonstration without losing track of the terms.",
+    "priorities": null
+  },
+  "evidence": {
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S1",
+        "start": 0,
+        "end": 90,
+        "quote": "I want to follow a leather hand-stitching demonstration without losing track of the terms."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "deadline",
+      "proposed_evidence": [
+        "S4"
+      ],
+      "proposed_value": "My study window closes on 2027-02-06; that date is still available.",
+      "reason": "quote_has_no_explicit_endpoint_cue"
+    },
+    {
+      "field_id": "available_time",
+      "proposed_evidence": [
+        "S5"
+      ],
+      "proposed_value": "The total of all sessions on any one date must not exceed 30 minutes.",
+      "reason": "quote_has_no_daily_time_allowance_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S4\"],\"available_time\":[\"S5\"],\"topics\":[\"S1\"],\"priorities\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S4"
+          ],
+          "available_time": [
+            "S5"
+          ],
+          "topics": [
+            "S1"
+          ],
+          "priorities": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

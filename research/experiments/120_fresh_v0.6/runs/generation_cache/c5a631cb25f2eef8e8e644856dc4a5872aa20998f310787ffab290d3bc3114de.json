@@ -1,0 +1,132 @@
+{
+  "cache_key": "c5a631cb25f2eef8e8e644856dc4a5872aa20998f310787ffab290d3bc3114de",
+  "source_case_id": "NTCW21",
+  "source_policy": "direct",
+  "output": {
+    "text": "A figure stands before a blank wall, holding an empty picture frame. He lifts it, aligning its edge with the wall. Through the frame’s open center, a passing cloud drifts across the sky. He tilts the frame, adjusting its angle. The cloud now fits perfectly within the border. He steps back, studies the composition, then repositions the frame once more. Satisfied, he bows to the wall. The empty picture frame now holds the sky. A silent moment. The passing cloud drifts on. He bows to the wall, as if honoring the moment."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"A lone figure stands before a blank wall, holding an empty picture frame. He lifts it, aligning its edge with the wall’s corner. Through the frame’s open center, a passing cloud drifts across the sky. He tilts the frame slightly, adjusting its angle. The cloud now fits perfectly within the border. He steps back, studies the composition, then repositions the frame once more. Satisfied, he bows to the wall. The empty picture frame now holds the sky. A silent moment. The passing cloud drifts on. He bows to the wall, as if honoring the moment.\"\n}",
+      "parsed": {
+        "text": "A lone figure stands before a blank wall, holding an empty picture frame. He lifts it, aligning its edge with the wall’s corner. Through the frame’s open center, a passing cloud drifts across the sky. He tilts the frame slightly, adjusting its angle. The cloud now fits perfectly within the border. He steps back, studies the composition, then repositions the frame once more. Satisfied, he bows to the wall. The empty picture frame now holds the sky. A silent moment. The passing cloud drifts on. He bows to the wall, as if honoring the moment."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "an empty picture frame",
+            "a passing cloud",
+            "bows to the wall"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Include each of these exact strings: \"an empty picture frame\", \"a passing cloud\", \"bows to the wall\"."
+          }
+        ]
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "The full text must be between 60 and 90 words."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 95}"
+  ],
+  "constraint_checks_final": [
+    "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 92}"
+  ],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"A figure stands before a blank wall, holding an empty picture frame. He lifts it, aligning its edge with the wall. Through the frame’s open center, a passing cloud drifts across the sky. He tilts the frame, adjusting its angle. The cloud now fits perfectly within the border. He steps back, studies the composition, then repositions the frame once more. Satisfied, he bows to the wall. The empty picture frame now holds the sky. A silent moment. The passing cloud drifts on. He bows to the wall, as if honoring the moment.\"\n}",
+    "parsed": {
+      "text": "A figure stands before a blank wall, holding an empty picture frame. He lifts it, aligning its edge with the wall. Through the frame’s open center, a passing cloud drifts across the sky. He tilts the frame, adjusting its angle. The cloud now fits perfectly within the border. He steps back, studies the composition, then repositions the frame once more. Satisfied, he bows to the wall. The empty picture frame now holds the sky. A silent moment. The passing cloud drifts on. He bows to the wall, as if honoring the moment."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 95
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "an empty picture frame",
+            "a passing cloud",
+            "bows to the wall"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 95}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 92
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "an empty picture frame",
+            "a passing cloud",
+            "bows to the wall"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 92}"
+    ],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

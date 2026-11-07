@@ -1,0 +1,186 @@
+{
+  "cache_key": "4b1dd0e1b8610ea551e703f57259222d1ffa1e323b4396c0eda0758ff18c243b",
+  "source_case_id": "NTSP14",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Indemnity",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Insurable Interest",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Subrogation",
+        "minutes": 25
+      }
+    ],
+    "summary": "Calculated from the schedule: 75 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 25 minutes; 2027-02-03: 25 minutes. Topic totals: Indemnity: 25 minutes; Insurable Interest: 25 minutes; Subrogation: 25 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Indemnity\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Insurable Interest\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Subrogation\",\n      \"minutes\": 25\n    }\n  ],\n  \"summary\": \"The revision schedule allocates 25 minutes to each of the three core concepts—Indemnity, Insurable Interest, and Subrogation—across three consecutive days starting on 2027-02-01 and completing by 2027-02-03, well within the study window closing on 2027-02-06.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Indemnity",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Insurable Interest",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Subrogation",
+            "minutes": 25
+          }
+        ],
+        "summary": "The revision schedule allocates 25 minutes to each of the three core concepts—Indemnity, Insurable Interest, and Subrogation—across three consecutive days starting on 2027-02-01 and completing by 2027-02-03, well within the study window closing on 2027-02-06."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-06; that date is still available."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 75,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 25,
+        "2027-02-03": 25
+      },
+      "topic_minutes": [
+        {
+          "topic": "Indemnity",
+          "normalized_topic": "indemnity",
+          "minutes": 25
+        },
+        {
+          "topic": "Insurable Interest",
+          "normalized_topic": "insurable interest",
+          "minutes": 25
+        },
+        {
+          "topic": "Subrogation",
+          "normalized_topic": "subrogation",
+          "minutes": 25
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-06; that date is still available."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 75,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 25,
+        "2027-02-03": 25
+      },
+      "topic_minutes": [
+        {
+          "topic": "Indemnity",
+          "normalized_topic": "indemnity",
+          "minutes": 25
+        },
+        {
+          "topic": "Insurable Interest",
+          "normalized_topic": "insurable interest",
+          "minutes": 25
+        },
+        {
+          "topic": "Subrogation",
+          "normalized_topic": "subrogation",
+          "minutes": 25
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-06; that date is still available."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The revision schedule allocates 25 minutes to each of the three core concepts—Indemnity, Insurable Interest, and Subrogation—across three consecutive days starting on 2027-02-01 and completing by 2027-02-03, well within the study window closing on 2027-02-06.",
+    "derived_summary": "Calculated from the schedule: 75 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 25 minutes; 2027-02-03: 25 minutes. Topic totals: Indemnity: 25 minutes; Insurable Interest: 25 minutes; Subrogation: 25 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

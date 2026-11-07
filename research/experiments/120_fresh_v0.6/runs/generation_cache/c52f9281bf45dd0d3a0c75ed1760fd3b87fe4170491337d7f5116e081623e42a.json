@@ -1,0 +1,92 @@
+{
+  "cache_key": "c52f9281bf45dd0d3a0c75ed1760fd3b87fe4170491337d7f5116e081623e42a",
+  "source_case_id": "NTCW12",
+  "source_policy": "value_based",
+  "output": {
+    "text": "Dear Seekers of Sunshine in the Storm, behold the Upside Umbrella—the only umbrella that collects sunshine in its handle and releases it at rainy birthdays! When skies weep and cake gets damp, this magical marvel beams golden joy from its core. No more soggy celebrations—just sparkling cheer! The Upside Umbrella turns gloom into glow, one rainy birthday at a time. Why wait for the sun? Carry it with you. The Upside Umbrella: because even storms deserve sparkle."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Dear Dreamers of the Damp and Dancers of the Drizzle, meet the Upside Umbrella—the only umbrella that collects sunshine in its handle and releases it at rainy birthdays! Yes, you heard right: when clouds weep and cake gets soggy, this whimsical wonder beams golden warmth from its core. Perfect for turning gloomy gatherings into glittering celebrations. The Upside Umbrella doesn’t just shield you from rain—it turns rainy birthdays into radiant revelries. Why wait for the sun? Carry it with you. The Upside Umbrella: because even storms deserve sparkle.\"\n}",
+      "parsed": {
+        "text": "Dear Dreamers of the Damp and Dancers of the Drizzle, meet the Upside Umbrella—the only umbrella that collects sunshine in its handle and releases it at rainy birthdays! Yes, you heard right: when clouds weep and cake gets soggy, this whimsical wonder beams golden warmth from its core. Perfect for turning gloomy gatherings into glittering celebrations. The Upside Umbrella doesn’t just shield you from rain—it turns rainy birthdays into radiant revelries. Why wait for the sun? Carry it with you. The Upside Umbrella: because even storms deserve sparkle."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        },
+        "source": [
+          {
+            "source": "visible_exchange",
+            "exchange_index": 1,
+            "field_id": "length",
+            "quote": "Keep the complete piece to 55–85 words."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 90}"
+  ],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"Dear Seekers of Sunshine in the Storm, behold the Upside Umbrella—the only umbrella that collects sunshine in its handle and releases it at rainy birthdays! When skies weep and cake gets damp, this magical marvel beams golden joy from its core. No more soggy celebrations—just sparkling cheer! The Upside Umbrella turns gloom into glow, one rainy birthday at a time. Why wait for the sun? Carry it with you. The Upside Umbrella: because even storms deserve sparkle.\"\n}",
+    "parsed": {
+      "text": "Dear Seekers of Sunshine in the Storm, behold the Upside Umbrella—the only umbrella that collects sunshine in its handle and releases it at rainy birthdays! When skies weep and cake gets damp, this magical marvel beams golden joy from its core. No more soggy celebrations—just sparkling cheer! The Upside Umbrella turns gloom into glow, one rainy birthday at a time. Why wait for the sun? Carry it with you. The Upside Umbrella: because even storms deserve sparkle."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 90
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 90}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 79
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

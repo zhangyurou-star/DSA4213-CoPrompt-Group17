@@ -1,0 +1,318 @@
+{
+  "cache_key": "9688141848c27eb0e9db44a9b9138f4e29513d6c44251ce66117ab70ad508dbc",
+  "source_case_id": "NDSP12",
+  "source_policy": "prompt_only",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Disposal Documentation",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-01",
+        "topic": "Records Appraisal Principles",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Legal and Regulatory Frameworks",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Functional Analysis of Records",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Historical Value Assessment",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Retention Schedules",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Appraisal Case Studies",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Review and Integration",
+        "minutes": 20
+      }
+    ],
+    "summary": "Calculated from the schedule: 140 minutes in total. Daily totals: 2027-02-01: 35 minutes; 2027-02-02: 35 minutes; 2027-02-03: 35 minutes; 2027-02-04: 35 minutes. Topic totals: Appraisal Case Studies: 15 minutes; Disposal Documentation: 15 minutes; Functional Analysis of Records: 20 minutes; Historical Value Assessment: 15 minutes; Legal and Regulatory Frameworks: 15 minutes; Records Appraisal Principles: 20 minutes; Retention Schedules: 20 minutes; Review and Integration: 20 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Disposal Documentation\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Records Appraisal Principles\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Legal and Regulatory Frameworks\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Functional Analysis of Records\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Historical Value Assessment\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Retention Schedules\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Appraisal Case Studies\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Review and Integration\",\n      \"minutes\": 20\n    }\n  ],\n  \"summary\": \"The revision timetable spans four days from 2027-02-01 to 2027-02-04, with each day's total study time at or below 35 minutes. 'Disposal Documentation' is addressed early on 2027-02-01 as preferred. All core topics in records appraisal are covered, with balanced allocation across the available window.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Disposal Documentation",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-01",
+            "topic": "Records Appraisal Principles",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Legal and Regulatory Frameworks",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Functional Analysis of Records",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Historical Value Assessment",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Retention Schedules",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Appraisal Case Studies",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Review and Integration",
+            "minutes": 20
+          }
+        ],
+        "summary": "The revision timetable spans four days from 2027-02-01 to 2027-02-04, with each day's total study time at or below 35 minutes. 'Disposal Documentation' is addressed early on 2027-02-01 as preferred. All core topics in records appraisal are covered, with balanced allocation across the available window."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 1,
+          "field_id": "deadline",
+          "quote": "I can still study on 2027-02-04, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "available_time",
+          "quote": "Keep each daily total at or below 35 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 140,
+      "daily_minutes": {
+        "2027-02-01": 35,
+        "2027-02-02": 35,
+        "2027-02-03": 35,
+        "2027-02-04": 35
+      },
+      "topic_minutes": [
+        {
+          "topic": "Appraisal Case Studies",
+          "normalized_topic": "appraisal case studies",
+          "minutes": 15
+        },
+        {
+          "topic": "Disposal Documentation",
+          "normalized_topic": "disposal documentation",
+          "minutes": 15
+        },
+        {
+          "topic": "Functional Analysis of Records",
+          "normalized_topic": "functional analysis of records",
+          "minutes": 20
+        },
+        {
+          "topic": "Historical Value Assessment",
+          "normalized_topic": "historical value assessment",
+          "minutes": 15
+        },
+        {
+          "topic": "Legal and Regulatory Frameworks",
+          "normalized_topic": "legal and regulatory frameworks",
+          "minutes": 15
+        },
+        {
+          "topic": "Records Appraisal Principles",
+          "normalized_topic": "records appraisal principles",
+          "minutes": 20
+        },
+        {
+          "topic": "Retention Schedules",
+          "normalized_topic": "retention schedules",
+          "minutes": 20
+        },
+        {
+          "topic": "Review and Integration",
+          "normalized_topic": "review and integration",
+          "minutes": 20
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 1,
+          "field_id": "deadline",
+          "quote": "I can still study on 2027-02-04, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "available_time",
+          "quote": "Keep each daily total at or below 35 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 140,
+      "daily_minutes": {
+        "2027-02-01": 35,
+        "2027-02-02": 35,
+        "2027-02-03": 35,
+        "2027-02-04": 35
+      },
+      "topic_minutes": [
+        {
+          "topic": "Appraisal Case Studies",
+          "normalized_topic": "appraisal case studies",
+          "minutes": 15
+        },
+        {
+          "topic": "Disposal Documentation",
+          "normalized_topic": "disposal documentation",
+          "minutes": 15
+        },
+        {
+          "topic": "Functional Analysis of Records",
+          "normalized_topic": "functional analysis of records",
+          "minutes": 20
+        },
+        {
+          "topic": "Historical Value Assessment",
+          "normalized_topic": "historical value assessment",
+          "minutes": 15
+        },
+        {
+          "topic": "Legal and Regulatory Frameworks",
+          "normalized_topic": "legal and regulatory frameworks",
+          "minutes": 15
+        },
+        {
+          "topic": "Records Appraisal Principles",
+          "normalized_topic": "records appraisal principles",
+          "minutes": 20
+        },
+        {
+          "topic": "Retention Schedules",
+          "normalized_topic": "retention schedules",
+          "minutes": 20
+        },
+        {
+          "topic": "Review and Integration",
+          "normalized_topic": "review and integration",
+          "minutes": 20
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 1,
+          "field_id": "deadline",
+          "quote": "I can still study on 2027-02-04, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "available_time",
+          "quote": "Keep each daily total at or below 35 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The revision timetable spans four days from 2027-02-01 to 2027-02-04, with each day's total study time at or below 35 minutes. 'Disposal Documentation' is addressed early on 2027-02-01 as preferred. All core topics in records appraisal are covered, with balanced allocation across the available window.",
+    "derived_summary": "Calculated from the schedule: 140 minutes in total. Daily totals: 2027-02-01: 35 minutes; 2027-02-02: 35 minutes; 2027-02-03: 35 minutes; 2027-02-04: 35 minutes. Topic totals: Appraisal Case Studies: 15 minutes; Disposal Documentation: 15 minutes; Functional Analysis of Records: 20 minutes; Historical Value Assessment: 15 minutes; Legal and Regulatory Frameworks: 15 minutes; Records Appraisal Principles: 20 minutes; Retention Schedules: 20 minutes; Review and Integration: 20 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

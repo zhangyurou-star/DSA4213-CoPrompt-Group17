@@ -1,0 +1,179 @@
+{
+  "cache_key": "d739836239a0fe9a6d73ce4993dc2dfeed8bd9e57d1ee6e3e90529da12eadf59",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S4"
+    ],
+    "available_time": [
+      "S5"
+    ],
+    "topics": [
+      "S6",
+      "S7",
+      "S8",
+      "S9"
+    ],
+    "priorities": [
+      "S8",
+      "S9"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 71,
+      "text": "A waterworks visitor course gives me several process diagrams to learn."
+    },
+    {
+      "id": "S2",
+      "start": 72,
+      "end": 113,
+      "text": "Divide that learning into study sessions."
+    },
+    {
+      "id": "S3",
+      "start": 114,
+      "end": 134,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 135,
+      "end": 211,
+      "text": "Use only dates from 2027-02-01 through 2027-02-04, including the final date."
+    },
+    {
+      "id": "S5",
+      "start": 212,
+      "end": 282,
+      "text": "I can spare at most 55 minutes per day, counting every topic together."
+    },
+    {
+      "id": "S6",
+      "start": 283,
+      "end": 363,
+      "text": "Include \"Coagulation\", \"Sedimentation\", \"Disinfection\", using those topic names."
+    },
+    {
+      "id": "S7",
+      "start": 364,
+      "end": 419,
+      "text": "Allocate at least 20 cumulative minutes to every topic."
+    },
+    {
+      "id": "S8",
+      "start": 420,
+      "end": 488,
+      "text": "Within that coverage, \"Coagulation\" needs at least 30 total minutes."
+    },
+    {
+      "id": "S9",
+      "start": 489,
+      "end": 565,
+      "text": "I specifically require a minimum of 35 minutes altogether on \"Disinfection\"."
+    }
+  ],
+  "field_values": {
+    "deadline": "Use only dates from 2027-02-01 through 2027-02-04, including the final date.",
+    "available_time": "I can spare at most 55 minutes per day, counting every topic together.",
+    "topics": "Include \"Coagulation\", \"Sedimentation\", \"Disinfection\", using those topic names.\nAllocate at least 20 cumulative minutes to every topic.\nWithin that coverage, \"Coagulation\" needs at least 30 total minutes.\nI specifically require a minimum of 35 minutes altogether on \"Disinfection\".",
+    "priorities": "Within that coverage, \"Coagulation\" needs at least 30 total minutes.\nI specifically require a minimum of 35 minutes altogether on \"Disinfection\"."
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 135,
+        "end": 211,
+        "quote": "Use only dates from 2027-02-01 through 2027-02-04, including the final date."
+      }
+    ],
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 212,
+        "end": 282,
+        "quote": "I can spare at most 55 minutes per day, counting every topic together."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 283,
+        "end": 363,
+        "quote": "Include \"Coagulation\", \"Sedimentation\", \"Disinfection\", using those topic names."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 364,
+        "end": 419,
+        "quote": "Allocate at least 20 cumulative minutes to every topic."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 420,
+        "end": 488,
+        "quote": "Within that coverage, \"Coagulation\" needs at least 30 total minutes."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S9",
+        "start": 489,
+        "end": 565,
+        "quote": "I specifically require a minimum of 35 minutes altogether on \"Disinfection\"."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 420,
+        "end": 488,
+        "quote": "Within that coverage, \"Coagulation\" needs at least 30 total minutes."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S9",
+        "start": 489,
+        "end": 565,
+        "quote": "I specifically require a minimum of 35 minutes altogether on \"Disinfection\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S4\"],\"available_time\":[\"S5\"],\"topics\":[\"S6\",\"S7\",\"S8\",\"S9\"],\"priorities\":[\"S8\",\"S9\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S4"
+          ],
+          "available_time": [
+            "S5"
+          ],
+          "topics": [
+            "S6",
+            "S7",
+            "S8",
+            "S9"
+          ],
+          "priorities": [
+            "S8",
+            "S9"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

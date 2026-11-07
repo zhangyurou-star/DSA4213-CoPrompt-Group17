@@ -1,0 +1,249 @@
+{
+  "cache_key": "29708ff113b2948571ebc723e41dcfe462d7a185ed3bd5ec029ab872a129df20",
+  "source_case_id": "NTSP14",
+  "source_policy": "prompt_only",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Subrogation",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Indemnity",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Insurable Interest",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Indemnity",
+        "minutes": 5
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Insurable Interest",
+        "minutes": 5
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Subrogation",
+        "minutes": 5
+      }
+    ],
+    "summary": "Calculated from the schedule: 90 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 25 minutes; 2027-02-03: 25 minutes; 2027-02-04: 5 minutes; 2027-02-05: 5 minutes; 2027-02-06: 5 minutes. Topic totals: Indemnity: 30 minutes; Insurable Interest: 30 minutes; Subrogation: 30 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Subrogation\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Indemnity\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Insurable Interest\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Indemnity\",\n      \"minutes\": 5\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Insurable Interest\",\n      \"minutes\": 5\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Subrogation\",\n      \"minutes\": 5\n    }\n  ],\n  \"summary\": \"The schedule allocates a minimum of 25 minutes per topic as required, with Subrogation introduced early per preference. All sessions fit within the 30-minute daily limit and conclude by the final study date, 2027-02-06.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Subrogation",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Indemnity",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Insurable Interest",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Indemnity",
+            "minutes": 5
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Insurable Interest",
+            "minutes": 5
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Subrogation",
+            "minutes": 5
+          }
+        ],
+        "summary": "The schedule allocates a minimum of 25 minutes per topic as required, with Subrogation introduced early per preference. All sessions fit within the 30-minute daily limit and conclude by the final study date, 2027-02-06."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-06; that date is still available."
+        }
+      },
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 1,
+          "field_id": "deadline",
+          "quote": "My study window closes on 2027-02-06; that date is still available."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 90,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 25,
+        "2027-02-03": 25,
+        "2027-02-04": 5,
+        "2027-02-05": 5,
+        "2027-02-06": 5
+      },
+      "topic_minutes": [
+        {
+          "topic": "Indemnity",
+          "normalized_topic": "indemnity",
+          "minutes": 30
+        },
+        {
+          "topic": "Insurable Interest",
+          "normalized_topic": "insurable interest",
+          "minutes": 30
+        },
+        {
+          "topic": "Subrogation",
+          "normalized_topic": "subrogation",
+          "minutes": 30
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-06; that date is still available."
+        }
+      },
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 1,
+          "field_id": "deadline",
+          "quote": "My study window closes on 2027-02-06; that date is still available."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 90,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 25,
+        "2027-02-03": 25,
+        "2027-02-04": 5,
+        "2027-02-05": 5,
+        "2027-02-06": 5
+      },
+      "topic_minutes": [
+        {
+          "topic": "Indemnity",
+          "normalized_topic": "indemnity",
+          "minutes": 30
+        },
+        {
+          "topic": "Insurable Interest",
+          "normalized_topic": "insurable interest",
+          "minutes": 30
+        },
+        {
+          "topic": "Subrogation",
+          "normalized_topic": "subrogation",
+          "minutes": 30
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-06; that date is still available."
+        }
+      },
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 1,
+          "field_id": "deadline",
+          "quote": "My study window closes on 2027-02-06; that date is still available."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The schedule allocates a minimum of 25 minutes per topic as required, with Subrogation introduced early per preference. All sessions fit within the 30-minute daily limit and conclude by the final study date, 2027-02-06.",
+    "derived_summary": "Calculated from the schedule: 90 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 25 minutes; 2027-02-03: 25 minutes; 2027-02-04: 5 minutes; 2027-02-05: 5 minutes; 2027-02-06: 5 minutes. Topic totals: Indemnity: 30 minutes; Insurable Interest: 30 minutes; Subrogation: 30 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

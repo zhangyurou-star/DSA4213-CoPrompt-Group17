@@ -1,0 +1,26 @@
+{
+  "main_trajectories": 240,
+  "diagnostic_trajectories": 20,
+  "reviewed_outputs": 100,
+  "returned_assessments": 200,
+  "illustrative_cases": [
+    "NTSP13",
+    "NTSP02",
+    "NTSP07",
+    "NTCW13",
+    "NTCW20",
+    "NTCW24",
+    "NTCW08",
+    "NTSP28"
+  ],
+  "all_illustrations_within_existing_human_subset": true,
+  "review_material_matches_saved_trajectories": true,
+  "saved_scores_match_saved_constraint_checks": true,
+  "main_summaries_match_official_analysis": true,
+  "original_inputs_unchanged": true,
+  "new_model_calls": 0,
+  "new_ratings": 0,
+  "new_gold_labels": 0,
+  "new_significance_tests": 0,
+  "disagreements_adjudicated": 0
+}

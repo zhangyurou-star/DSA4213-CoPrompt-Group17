@@ -1,0 +1,129 @@
+{
+  "cache_key": "f4a196f76ccd6376a411d1f5351d9a10edf13b68000421afd40273e6265211f3",
+  "source_case_id": "NVCW05",
+  "source_policy": "value_based",
+  "output": {
+    "text": "The Atlas of Knots belongs on the craft shelf despite its atlas title, as all pages teach practical knot-tying techniques. This placement follows content-based shelving, not title-based assumptions. To ensure discoverability, a shelf note is placed under geography: \"See also The Atlas of Knots on the craft shelf.\" This note supports title-based searches while preserving correct physical location. The craft shelf is the appropriate home for all handcraft instruction, including this volume. The shelf note ensures users find the item regardless of search method."
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"The Atlas of Knots belongs on the craft shelf despite its atlas title, as every page demonstrates practical knot-tying techniques. This classification aligns with content-based shelving principles rather than title-based assumptions. To ensure discoverability, a shelf note is placed under the geography section, stating: \\\"See also The Atlas of Knots on the craft shelf.\\\" This note supports title-based searches while maintaining correct physical placement. The craft shelf remains the appropriate location for all instructional material on handcrafts, including this volume. The shelf note ensures users find the item regardless of initial search method.\"}",
+      "parsed": {
+        "text": "The Atlas of Knots belongs on the craft shelf despite its atlas title, as every page demonstrates practical knot-tying techniques. This classification aligns with content-based shelving principles rather than title-based assumptions. To ensure discoverability, a shelf note is placed under the geography section, stating: \"See also The Atlas of Knots on the craft shelf.\" This note supports title-based searches while maintaining correct physical placement. The craft shelf remains the appropriate location for all instructional material on handcrafts, including this volume. The shelf note ensures users find the item regardless of initial search method."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "The Atlas of Knots",
+            "craft shelf",
+            "shelf note"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Preserve these exact phrases: \"The Atlas of Knots\", \"craft shelf\", \"shelf note\"."
+          }
+        ]
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        },
+        "source": [
+          {
+            "source": "visible_exchange",
+            "exchange_index": 1,
+            "field_id": "length",
+            "quote": "Write 55 to 85 words altogether."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 93}"
+  ],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\"text\": \"The Atlas of Knots belongs on the craft shelf despite its atlas title, as all pages teach practical knot-tying techniques. This placement follows content-based shelving, not title-based assumptions. To ensure discoverability, a shelf note is placed under geography: \\\"See also The Atlas of Knots on the craft shelf.\\\" This note supports title-based searches while preserving correct physical location. The craft shelf is the appropriate home for all handcraft instruction, including this volume. The shelf note ensures users find the item regardless of search method.\"}",
+    "parsed": {
+      "text": "The Atlas of Knots belongs on the craft shelf despite its atlas title, as all pages teach practical knot-tying techniques. This placement follows content-based shelving, not title-based assumptions. To ensure discoverability, a shelf note is placed under geography: \"See also The Atlas of Knots on the craft shelf.\" This note supports title-based searches while preserving correct physical location. The craft shelf is the appropriate home for all handcraft instruction, including this volume. The shelf note ensures users find the item regardless of search method."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 93
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "The Atlas of Knots",
+            "craft shelf",
+            "shelf note"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 93}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 84
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "The Atlas of Knots",
+            "craft shelf",
+            "shelf note"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

@@ -1,0 +1,79 @@
+{
+  "cache_key": "f8cd9a8dc211413a822486f8bb7c06b564fcb721f6ceea7461a0fdfbeaec772f",
+  "source_case_id": "NDCW03",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "In a quiet village nestled between hills, there lived a shadow named Silas. Unlike others, he did not follow the sun but wandered alone at twilight. The children laughed, calling him a ghost, but Silas only watched, thoughtful and still. One evening, a lost kitten cried beneath the old oak. Silas crept forward, soft as mist, and wrapped the tiny creature in gentle darkness. The kitten purred, safe and warm. From then on, the villagers saw him not as a stranger, but as a friend. For shadows, too, can hold love in their quiet embrace."
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"In a quiet village nestled between hills, there lived a shadow named Silas. Unlike others, he did not follow the sun but wandered alone at twilight. The children laughed, calling him a ghost, but Silas only watched, thoughtful and still. One evening, a lost kitten cried beneath the old oak. Silas crept forward, soft as mist, and wrapped the tiny creature in gentle darkness. The kitten purred, safe and warm. From then on, the villagers saw him not as a stranger, but as a friend. For shadows, too, can hold love in their quiet embrace.\"}",
+      "parsed": {
+        "text": "In a quiet village nestled between hills, there lived a shadow named Silas. Unlike others, he did not follow the sun but wandered alone at twilight. The children laughed, calling him a ghost, but Silas only watched, thoughtful and still. One evening, a lost kitten cried beneath the old oak. Silas crept forward, soft as mist, and wrapped the tiny creature in gentle darkness. The kitten purred, safe and warm. From then on, the villagers saw him not as a stranger, but as a friend. For shadows, too, can hold love in their quiet embrace."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 1,
+          "field_id": "length",
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 95
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 1,
+          "field_id": "length",
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 95
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 1,
+          "field_id": "length",
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

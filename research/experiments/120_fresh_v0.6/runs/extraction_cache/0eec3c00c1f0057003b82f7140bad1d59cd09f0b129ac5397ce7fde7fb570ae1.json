@@ -1,0 +1,133 @@
+{
+  "cache_key": "0eec3c00c1f0057003b82f7140bad1d59cd09f0b129ac5397ce7fde7fb570ae1",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S4"
+    ],
+    "available_time": [
+      "S7"
+    ],
+    "topics": [
+      "S5",
+      "S6"
+    ],
+    "priorities": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 68,
+      "text": "I am reviewing ice-hockey game diagrams before a tactics discussion."
+    },
+    {
+      "id": "S2",
+      "start": 69,
+      "end": 101,
+      "text": "Build a compact study timetable."
+    },
+    {
+      "id": "S3",
+      "start": 102,
+      "end": 122,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 123,
+      "end": 206,
+      "text": "Keep the timetable within the window ending 2027-02-06, with the end date included."
+    },
+    {
+      "id": "S5",
+      "start": 207,
+      "end": 278,
+      "text": "Required coverage is \"Forechecking\", \"Defensive Zones\", \"Line Changes\"."
+    },
+    {
+      "id": "S6",
+      "start": 279,
+      "end": 354,
+      "text": "The minimum study allocation for each topic is 20 minutes across all dates."
+    },
+    {
+      "id": "S7",
+      "start": 355,
+      "end": 428,
+      "text": "My daily study allowance is 65 minutes maximum, not 65 minutes per topic."
+    },
+    {
+      "id": "S8",
+      "start": 429,
+      "end": 499,
+      "text": "Please produce the schedule now without asking me follow-up questions."
+    }
+  ],
+  "field_values": {
+    "deadline": "Keep the timetable within the window ending 2027-02-06, with the end date included.",
+    "available_time": "My daily study allowance is 65 minutes maximum, not 65 minutes per topic.",
+    "topics": "Required coverage is \"Forechecking\", \"Defensive Zones\", \"Line Changes\".\nThe minimum study allocation for each topic is 20 minutes across all dates.",
+    "priorities": null
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 123,
+        "end": 206,
+        "quote": "Keep the timetable within the window ending 2027-02-06, with the end date included."
+      }
+    ],
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 355,
+        "end": 428,
+        "quote": "My daily study allowance is 65 minutes maximum, not 65 minutes per topic."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 207,
+        "end": 278,
+        "quote": "Required coverage is \"Forechecking\", \"Defensive Zones\", \"Line Changes\"."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 279,
+        "end": 354,
+        "quote": "The minimum study allocation for each topic is 20 minutes across all dates."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S4\"],\"available_time\":[\"S7\"],\"topics\":[\"S5\",\"S6\"],\"priorities\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S4"
+          ],
+          "available_time": [
+            "S7"
+          ],
+          "topics": [
+            "S5",
+            "S6"
+          ],
+          "priorities": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

@@ -1,0 +1,21 @@
+{
+  "status": "completed",
+  "statistics": {
+    "direct": {
+      "n": 12,
+      "quality": 0.6805555555555555,
+      "questions": 0.0,
+      "fully_passed": 5
+    },
+    "exhaustive": {
+      "n": 12,
+      "quality": 0.7638888888888888,
+      "questions": 0.9166666666666666,
+      "fully_passed": 7
+    }
+  },
+  "completed_trajectories": 24,
+  "planned_trajectories": 24,
+  "cumulative_accounted_usd": 0.09547169,
+  "remaining_usd": 1.90452831
+}

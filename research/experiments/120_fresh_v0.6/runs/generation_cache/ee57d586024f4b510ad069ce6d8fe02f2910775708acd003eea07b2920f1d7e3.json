@@ -1,0 +1,49 @@
+{
+  "cache_key": "ee57d586024f4b510ad069ce6d8fe02f2910775708acd003eea07b2920f1d7e3",
+  "source_case_id": "NTCW24",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "The imaginary clock features thin silver hands over a pale dial, creating a delicate aesthetic. However, the weak visual contrast between the hands and the dial reduces legibility, especially in low light. To improve readability without compromising the uncluttered face, a darker hour hand is recommended. This adjustment would enhance the distinction between the hour and minute indicators while maintaining the design’s minimalist appeal. The thin silver hands remain unchanged, preserving the elegant simplicity. A darker hour hand ensures the time is easier to read at a glance, fulfilling both function and form. The pale dial continues to provide a serene backdrop, now more effectively highlighting the essential time-telling elements."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"The imaginary clock features thin silver hands over a pale dial, creating a delicate aesthetic. However, the weak visual contrast between the hands and the dial reduces legibility, especially in low light. To improve readability without compromising the uncluttered face, a darker hour hand is recommended. This adjustment would enhance the distinction between the hour and minute indicators while maintaining the design’s minimalist appeal. The thin silver hands remain unchanged, preserving the elegant simplicity. A darker hour hand ensures the time is easier to read at a glance, fulfilling both function and form. The pale dial continues to provide a serene backdrop, now more effectively highlighting the essential time-telling elements.\"\n}",
+      "parsed": {
+        "text": "The imaginary clock features thin silver hands over a pale dial, creating a delicate aesthetic. However, the weak visual contrast between the hands and the dial reduces legibility, especially in low light. To improve readability without compromising the uncluttered face, a darker hour hand is recommended. This adjustment would enhance the distinction between the hour and minute indicators while maintaining the design’s minimalist appeal. The thin silver hands remain unchanged, preserving the elegant simplicity. A darker hour hand ensures the time is easier to read at a glance, fulfilling both function and form. The pale dial continues to provide a serene backdrop, now more effectively highlighting the essential time-telling elements."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 110
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 110
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

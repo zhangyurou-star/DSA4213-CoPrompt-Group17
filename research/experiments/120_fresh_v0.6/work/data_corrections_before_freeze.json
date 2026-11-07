@@ -1,0 +1,48 @@
+{
+  "recorded_utc": "2026-10-19T14:53:51.862385+00:00",
+  "status": "offline_data_consistency_corrections_before_freeze_and_all_model_outputs",
+  "api_calls": 0,
+  "original_family_registration_preserved": true,
+  "writing_family_plan_sha256": "18a72be5fdfdca9ccdc5234db90cc7c145592945c2b15021a5015461657270a8",
+  "changes": [
+    {
+      "case_id": "NTCW25",
+      "field": "initial_request.task_sentence",
+      "before": "Write the final suspenseful beat of an original audio drama.",
+      "after": "Write the final scene of an original audio drama.",
+      "reason": "Explicit suspenseful adjective would disclose a tone goal despite tone being unresolved/declined; leave narrative facts and all answers/constraints unchanged."
+    },
+    {
+      "case_id": "NTCW05",
+      "field": "required_content factual wording in public request and fixed answer",
+      "before": "They must do not wake the giant;",
+      "after": "The instruction is \"do not wake the giant\";",
+      "reason": "Grammar only; same required literal and quest instruction."
+    },
+    {
+      "case_id": "NTCW09",
+      "field": "tone wording",
+      "before": "Use a analytical voice.",
+      "after": "Use an analytical voice.",
+      "reason": "Grammar only; no preference or classification change."
+    },
+    {
+      "case_id": "NTSP30",
+      "field": "public timing contract and corresponding fixed answers/annotations/witness",
+      "before": {
+        "days": 7,
+        "daily_minutes_cap": 70,
+        "minimum_per_topic": 25
+      },
+      "after": {
+        "days": 4,
+        "daily_minutes_cap": 45,
+        "minimum_per_topic": 30
+      },
+      "reason": "Independent offline audit found exact hard-constraint/state/control equivalence with design NDSP20 after topic renaming. Remove this exact structural duplicate before any model output. Same family, split, execute_now status and topics; all hard requirements still initially public.",
+      "recorded_utc": "2026-10-19T14:55:25.278086+00:00"
+    }
+  ],
+  "split_or_selection_changes": false,
+  "limitations": "These are data consistency checks, not human review or evidence of model performance."
+}

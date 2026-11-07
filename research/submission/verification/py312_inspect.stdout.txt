@@ -1,0 +1,496 @@
+{
+  "request": {
+    "schema_version": "0.1.0",
+    "case_id": "NTSP07",
+    "domain": "study_planning",
+    "initial_request": "I am practising consecutive interpreting with short recordings. Help me schedule the note-taking skills. Start on 2027-02-01. Use only dates from 2027-02-01 through 2027-02-04, including the final date. I can spare at most 55 minutes per day, counting every topic together. Give \"Reformulation\" at least 25 minutes in total; this is a firm extra requirement.",
+    "reference_date": "2027-02-01",
+    "user_control": "continue"
+  },
+  "trajectory": {
+    "case_id": "NTSP07",
+    "domain": "study_planning",
+    "system_id": "value_based",
+    "prompt_version": "pilot-0.2.3",
+    "extraction": {
+      "cache_key": "b6e9789cddb09739862fef81a86c7c48b1b3b1fb85c78734322e22f5aea027b4",
+      "grounding_version": "source-unit-evidence-0.3.0",
+      "raw_field_evidence": {
+        "deadline": [
+          "S4"
+        ],
+        "available_time": [
+          "S5"
+        ],
+        "topics": [
+          "S1",
+          "S2",
+          "S6"
+        ],
+        "priorities": [
+          "S6"
+        ]
+      },
+      "source_units": [
+        {
+          "id": "S1",
+          "start": 0,
+          "end": 63,
+          "text": "I am practising consecutive interpreting with short recordings."
+        },
+        {
+          "id": "S2",
+          "start": 64,
+          "end": 104,
+          "text": "Help me schedule the note-taking skills."
+        },
+        {
+          "id": "S3",
+          "start": 105,
+          "end": 125,
+          "text": "Start on 2027-02-01."
+        },
+        {
+          "id": "S4",
+          "start": 126,
+          "end": 202,
+          "text": "Use only dates from 2027-02-01 through 2027-02-04, including the final date."
+        },
+        {
+          "id": "S5",
+          "start": 203,
+          "end": 273,
+          "text": "I can spare at most 55 minutes per day, counting every topic together."
+        },
+        {
+          "id": "S6",
+          "start": 274,
+          "end": 358,
+          "text": "Give \"Reformulation\" at least 25 minutes in total; this is a firm extra requirement."
+        }
+      ],
+      "field_values": {
+        "deadline": "Use only dates from 2027-02-01 through 2027-02-04, including the final date.",
+        "available_time": "I can spare at most 55 minutes per day, counting every topic together.",
+        "topics": "I am practising consecutive interpreting with short recordings.\nHelp me schedule the note-taking skills.\nGive \"Reformulation\" at least 25 minutes in total; this is a firm extra requirement.",
+        "priorities": "Give \"Reformulation\" at least 25 minutes in total; this is a firm extra requirement."
+      },
+      "evidence": {
+        "deadline": [
+          {
+            "source": "initial_request",
+            "unit_id": "S4",
+            "start": 126,
+            "end": 202,
+            "quote": "Use only dates from 2027-02-01 through 2027-02-04, including the final date."
+          }
+        ],
+        "available_time": [
+          {
+            "source": "initial_request",
+            "unit_id": "S5",
+            "start": 203,
+            "end": 273,
+            "quote": "I can spare at most 55 minutes per day, counting every topic together."
+          }
+        ],
+        "topics": [
+          {
+            "source": "initial_request",
+            "unit_id": "S1",
+            "start": 0,
+            "end": 63,
+            "quote": "I am practising consecutive interpreting with short recordings."
+          },
+          {
+            "source": "initial_request",
+            "unit_id": "S2",
+            "start": 64,
+            "end": 104,
+            "quote": "Help me schedule the note-taking skills."
+          },
+          {
+            "source": "initial_request",
+            "unit_id": "S6",
+            "start": 274,
+            "end": 358,
+            "quote": "Give \"Reformulation\" at least 25 minutes in total; this is a firm extra requirement."
+          }
+        ],
+        "priorities": [
+          {
+            "source": "initial_request",
+            "unit_id": "S6",
+            "start": 274,
+            "end": 358,
+            "quote": "Give \"Reformulation\" at least 25 minutes in total; this is a firm extra requirement."
+          }
+        ]
+      },
+      "grounding_rejections": [],
+      "attempts": [
+        {
+          "raw": "{\"field_evidence\":{\"deadline\":[\"S4\"],\"available_time\":[\"S5\"],\"topics\":[\"S1\",\"S2\",\"S6\"],\"priorities\":[\"S6\"]}}",
+          "parsed": {
+            "field_evidence": {
+              "deadline": [
+                "S4"
+              ],
+              "available_time": [
+                "S5"
+              ],
+              "topics": [
+                "S1",
+                "S2",
+                "S6"
+              ],
+              "priorities": [
+                "S6"
+              ]
+            }
+          },
+          "format_errors": []
+        }
+      ],
+      "repaired": false,
+      "failed": false
+    },
+    "extraction_cache_hit": true,
+    "decisions": [
+      {
+        "action": "ACT",
+        "stop_reason": "no_eligible_fields",
+        "decision_call_skipped": true
+      }
+    ],
+    "visible_exchanges": [],
+    "question_items": 0,
+    "valid_question_items": 0,
+    "invalid_question_items": 0,
+    "generation": {
+      "cache_key": "b7f7d7a6ee94c1e614d77e37a58b0047217420e8e6158f32e90d7e8d6e1c88a1",
+      "source_case_id": "NTSP07",
+      "source_policy": "direct",
+      "output": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Reformulation",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Reformulation",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Reformulation",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Note-Taking Techniques",
+            "minutes": 55
+          }
+        ],
+        "summary": "Calculated from the schedule: 110 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 20 minutes; 2027-02-03: 10 minutes; 2027-02-04: 55 minutes. Topic totals: Note-Taking Techniques: 55 minutes; Reformulation: 55 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+      },
+      "attempts": [
+        {
+          "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Reformulation\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Reformulation\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Reformulation\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Note-Taking Techniques\",\n      \"minutes\": 55\n    }\n  ],\n  \"summary\": \"Reformulation is allocated a total of 55 minutes across the first three days, meeting the 25-minute minimum requirement. The final day is dedicated to Note-Taking Techniques, using the full 55-minute daily cap. All sessions fall within the specified date window and respect the daily 55-minute limit.\"\n}",
+          "parsed": {
+            "schedule": [
+              {
+                "date": "2027-02-01",
+                "topic": "Reformulation",
+                "minutes": 25
+              },
+              {
+                "date": "2027-02-02",
+                "topic": "Reformulation",
+                "minutes": 20
+              },
+              {
+                "date": "2027-02-03",
+                "topic": "Reformulation",
+                "minutes": 10
+              },
+              {
+                "date": "2027-02-04",
+                "topic": "Note-Taking Techniques",
+                "minutes": 55
+              }
+            ],
+            "summary": "Reformulation is allocated a total of 55 minutes across the first three days, meeting the 25-minute minimum requirement. The final day is dedicated to Note-Taking Techniques, using the full 55-minute daily cap. All sessions fall within the specified date window and respect the daily 55-minute limit."
+          },
+          "format_errors": []
+        }
+      ],
+      "repaired": false,
+      "failed": false,
+      "constraint_version": "visible-constraints-0.4.0",
+      "constraint_contract": {
+        "version": "visible-constraints-0.4.0",
+        "domain": "study_planning",
+        "constraints": [
+          {
+            "kind": "date_window",
+            "parameters": {
+              "start_date": "2027-02-01"
+            },
+            "source": [
+              {
+                "source": "initial_request",
+                "field_id": null,
+                "quote": "Start on 2027-02-01."
+              }
+            ]
+          },
+          {
+            "kind": "daily_minutes_cap",
+            "parameters": {
+              "max_minutes": 55
+            },
+            "source": [
+              {
+                "source": "initial_request",
+                "field_id": null,
+                "quote": "I can spare at most 55 minutes per day, counting every topic together."
+              }
+            ]
+          }
+        ],
+        "warnings": [
+          {
+            "reason": "date_without_unambiguous_study_window_role",
+            "source": {
+              "source": "initial_request",
+              "field_id": null,
+              "quote": "Use only dates from 2027-02-01 through 2027-02-04, including the final date."
+            }
+          }
+        ]
+      },
+      "constraint_checks_initial": [],
+      "constraint_checks_final": [],
+      "constraint_repair_attempted": false,
+      "constraint_repair": null,
+      "visible_measurements_initial": {
+        "domain": "study_planning",
+        "observed": {
+          "total_minutes": 110,
+          "daily_minutes": {
+            "2027-02-01": 25,
+            "2027-02-02": 20,
+            "2027-02-03": 10,
+            "2027-02-04": 55
+          },
+          "topic_minutes": [
+            {
+              "topic": "Note-Taking Techniques",
+              "normalized_topic": "note-taking techniques",
+              "minutes": 55
+            },
+            {
+              "topic": "Reformulation",
+              "normalized_topic": "reformulation",
+              "minutes": 55
+            }
+          ]
+        },
+        "requirements": [
+          {
+            "kind": "date_window",
+            "parameters": {
+              "start_date": "2027-02-01"
+            }
+          },
+          {
+            "kind": "daily_minutes_cap",
+            "parameters": {
+              "max_minutes": 55
+            }
+          }
+        ],
+        "violations": [],
+        "interpretation_warnings": [
+          {
+            "reason": "date_without_unambiguous_study_window_role",
+            "source": {
+              "source": "initial_request",
+              "field_id": null,
+              "quote": "Use only dates from 2027-02-01 through 2027-02-04, including the final date."
+            }
+          }
+        ]
+      },
+      "visible_measurements_final": {
+        "domain": "study_planning",
+        "observed": {
+          "total_minutes": 110,
+          "daily_minutes": {
+            "2027-02-01": 25,
+            "2027-02-02": 20,
+            "2027-02-03": 10,
+            "2027-02-04": 55
+          },
+          "topic_minutes": [
+            {
+              "topic": "Note-Taking Techniques",
+              "normalized_topic": "note-taking techniques",
+              "minutes": 55
+            },
+            {
+              "topic": "Reformulation",
+              "normalized_topic": "reformulation",
+              "minutes": 55
+            }
+          ]
+        },
+        "requirements": [
+          {
+            "kind": "date_window",
+            "parameters": {
+              "start_date": "2027-02-01"
+            }
+          },
+          {
+            "kind": "daily_minutes_cap",
+            "parameters": {
+              "max_minutes": 55
+            }
+          }
+        ],
+        "violations": [],
+        "interpretation_warnings": [
+          {
+            "reason": "date_without_unambiguous_study_window_role",
+            "source": {
+              "source": "initial_request",
+              "field_id": null,
+              "quote": "Use only dates from 2027-02-01 through 2027-02-04, including the final date."
+            }
+          }
+        ]
+      },
+      "summary_derivation": {
+        "version": "schedule-summary-0.4.0",
+        "original_summary": "Reformulation is allocated a total of 55 minutes across the first three days, meeting the 25-minute minimum requirement. The final day is dedicated to Note-Taking Techniques, using the full 55-minute daily cap. All sessions fall within the specified date window and respect the daily 55-minute limit.",
+        "derived_summary": "Calculated from the schedule: 110 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 20 minutes; 2027-02-03: 10 minutes; 2027-02-04: 55 minutes. Topic totals: Note-Taking Techniques: 55 minutes; Reformulation: 55 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+      }
+    },
+    "generation_cache_hit": true,
+    "output": {
+      "schedule": [
+        {
+          "date": "2027-02-01",
+          "topic": "Reformulation",
+          "minutes": 25
+        },
+        {
+          "date": "2027-02-02",
+          "topic": "Reformulation",
+          "minutes": 20
+        },
+        {
+          "date": "2027-02-03",
+          "topic": "Reformulation",
+          "minutes": 10
+        },
+        {
+          "date": "2027-02-04",
+          "topic": "Note-Taking Techniques",
+          "minutes": 55
+        }
+      ],
+      "summary": "Calculated from the schedule: 110 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 20 minutes; 2027-02-03: 10 minutes; 2027-02-04: 55 minutes. Topic totals: Note-Taking Techniques: 55 minutes; Reformulation: 55 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+    },
+    "underlying_policy": "value_based",
+    "lambda_value": 0.25,
+    "importance_override": null,
+    "split": "test",
+    "freeze_sha256": "37a3d9472a7d722c3eef2f9b85205c982f2dd3fcdd24e11b373151689dcdfa0f",
+    "family_id": "nsp_consecutive_interpreting",
+    "decision_cache_hits": 0,
+    "raw_response_cache_hits": 0,
+    "score": {
+      "status": "scored",
+      "quality": 0.6,
+      "format_failure": false,
+      "constraint_results": [
+        {
+          "constraint_id": "NTSP07_01",
+          "check_type": "date_window",
+          "passed": true,
+          "score": 1,
+          "details": {
+            "outside_dates": [],
+            "start_date": "2027-02-01",
+            "end_date": "2027-02-04"
+          }
+        },
+        {
+          "constraint_id": "NTSP07_02",
+          "check_type": "daily_minutes_cap",
+          "passed": true,
+          "score": 1,
+          "details": {
+            "daily_totals": {
+              "2027-02-01": 25,
+              "2027-02-02": 20,
+              "2027-02-03": 10,
+              "2027-02-04": 55
+            },
+            "max_minutes": 55,
+            "over_cap": {}
+          }
+        },
+        {
+          "constraint_id": "NTSP07_03",
+          "check_type": "topic_coverage",
+          "passed": false,
+          "score": 0,
+          "details": {
+            "topic_minutes": {
+              "Idea Units": 0,
+              "Note Symbols": 0,
+              "Reformulation": 55
+            },
+            "min_minutes_each": 10,
+            "below_minimum": [
+              "Idea Units",
+              "Note Symbols"
+            ]
+          }
+        },
+        {
+          "constraint_id": "NTSP07_04",
+          "check_type": "topic_minutes_min",
+          "passed": false,
+          "score": 0,
+          "details": {
+            "topic": "Idea Units",
+            "minutes": 0,
+            "min_minutes": 20
+          }
+        },
+        {
+          "constraint_id": "NTSP07_05",
+          "check_type": "topic_minutes_min",
+          "passed": true,
+          "score": 1,
+          "details": {
+            "topic": "Reformulation",
+            "minutes": 55,
+            "min_minutes": 25
+          }
+        }
+      ],
+      "errors": []
+    },
+    "record_sha256": "d483eacea86858858403eadbdd364b93d46799806e4d102b832981ec682609b3"
+  },
+  "source_file": "experiments/120_fresh_v0.6/runs/formal_v0.6.0_test/trajectories.jsonl",
+  "source_line": 160
+}

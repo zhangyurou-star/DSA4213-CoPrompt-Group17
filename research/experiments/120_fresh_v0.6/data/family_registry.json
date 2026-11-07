@@ -1,0 +1,1086 @@
+{
+  "version": "fresh120-0.6.0",
+  "registered_families": [
+    {
+      "family_id": "fresh_cw_board_game_dispute",
+      "title_zh": "桌游争议规则裁定",
+      "domain": "constrained_writing",
+      "split": "design",
+      "case_ids": [
+        "NDCW01"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_vending_token_explanation",
+      "title_zh": "虚构自动售货代币说明",
+      "domain": "constrained_writing",
+      "split": "design",
+      "case_ids": [
+        "NDCW02"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_shadow_fable",
+      "title_zh": "影子寓言",
+      "domain": "constrained_writing",
+      "split": "design",
+      "case_ids": [
+        "NDCW03"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_cultivar_name_rationale",
+      "title_zh": "植物品种命名理由",
+      "domain": "constrained_writing",
+      "split": "design",
+      "case_ids": [
+        "NDCW04"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_fantasy_map_commission",
+      "title_zh": "幻想地图委托简述",
+      "domain": "constrained_writing",
+      "split": "design",
+      "case_ids": [
+        "NDCW05"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_crossword_hint_ladder",
+      "title_zh": "填字谜分层提示",
+      "domain": "constrained_writing",
+      "split": "design",
+      "case_ids": [
+        "NDCW06"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_translation_glossary_policy",
+      "title_zh": "翻译词汇一致性说明",
+      "domain": "constrained_writing",
+      "split": "design",
+      "case_ids": [
+        "NDCW07"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_sewing_layout_instruction",
+      "title_zh": "缝纫布料布局步骤",
+      "domain": "constrained_writing",
+      "split": "design",
+      "case_ids": [
+        "NDCW08"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_soap_package_story",
+      "title_zh": "手工皂包装故事",
+      "domain": "constrained_writing",
+      "split": "design",
+      "case_ids": [
+        "NDCW09"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_space_probe_log",
+      "title_zh": "太空探测器日志",
+      "domain": "constrained_writing",
+      "split": "design",
+      "case_ids": [
+        "NDCW10"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_court_herald_proclamation",
+      "title_zh": "宫廷传令官宣告",
+      "domain": "constrained_writing",
+      "split": "design",
+      "case_ids": [
+        "NDCW11"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_flashcard_self_test",
+      "title_zh": "自测卡片使用提示",
+      "domain": "constrained_writing",
+      "split": "design",
+      "case_ids": [
+        "NDCW12"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_fictional_closing_argument",
+      "title_zh": "虚构审判结案陈词",
+      "domain": "constrained_writing",
+      "split": "design",
+      "case_ids": [
+        "NDCW13"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_escape_room_premise",
+      "title_zh": "密室开场情节",
+      "domain": "constrained_writing",
+      "split": "design",
+      "case_ids": [
+        "NDCW14"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_soundscape_score",
+      "title_zh": "声景演出指令",
+      "domain": "constrained_writing",
+      "split": "design",
+      "case_ids": [
+        "NDCW15"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_future_self_letter",
+      "title_zh": "给未来自己的信",
+      "domain": "constrained_writing",
+      "split": "design",
+      "case_ids": [
+        "NDCW16"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_bridge_retirement_elegy",
+      "title_zh": "桥梁退役挽歌",
+      "domain": "constrained_writing",
+      "split": "design",
+      "case_ids": [
+        "NDCW17"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_fabrication_exception_rationale",
+      "title_zh": "制造公差例外理由",
+      "domain": "constrained_writing",
+      "split": "design",
+      "case_ids": [
+        "NDCW18"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_dream_sequence_interpretation",
+      "title_zh": "梦境创作阐释",
+      "domain": "constrained_writing",
+      "split": "design",
+      "case_ids": [
+        "NDCW19"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_origami_step_caption",
+      "title_zh": "折纸图步骤说明",
+      "domain": "constrained_writing",
+      "split": "design",
+      "case_ids": [
+        "NDCW20"
+      ]
+    },
+    {
+      "family_id": "nsp_apiary_inspection",
+      "title_zh": "蜂箱巡检入门",
+      "domain": "study_planning",
+      "split": "design",
+      "case_ids": [
+        "NDSP01"
+      ]
+    },
+    {
+      "family_id": "nsp_railway_signalling",
+      "title_zh": "铁路信号原理",
+      "domain": "study_planning",
+      "split": "design",
+      "case_ids": [
+        "NDSP02"
+      ]
+    },
+    {
+      "family_id": "nsp_collection_pest_monitoring",
+      "title_zh": "藏品虫害监测",
+      "domain": "study_planning",
+      "split": "design",
+      "case_ids": [
+        "NDSP03"
+      ]
+    },
+    {
+      "family_id": "nsp_stage_rigging_theory",
+      "title_zh": "舞台吊挂理论",
+      "domain": "study_planning",
+      "split": "design",
+      "case_ids": [
+        "NDSP04"
+      ]
+    },
+    {
+      "family_id": "nsp_braille_literacy",
+      "title_zh": "盲文识读入门",
+      "domain": "study_planning",
+      "split": "design",
+      "case_ids": [
+        "NDSP05"
+      ]
+    },
+    {
+      "family_id": "nsp_coffee_sensory",
+      "title_zh": "咖啡感官训练",
+      "domain": "study_planning",
+      "split": "design",
+      "case_ids": [
+        "NDSP06"
+      ]
+    },
+    {
+      "family_id": "nsp_water_treatment",
+      "title_zh": "净水流程学习",
+      "domain": "study_planning",
+      "split": "design",
+      "case_ids": [
+        "NDSP07"
+      ]
+    },
+    {
+      "family_id": "nsp_pedestrian_design",
+      "title_zh": "步行空间设计",
+      "domain": "study_planning",
+      "split": "design",
+      "case_ids": [
+        "NDSP08"
+      ]
+    },
+    {
+      "family_id": "nsp_origami_foundations",
+      "title_zh": "折纸技法学习",
+      "domain": "study_planning",
+      "split": "design",
+      "case_ids": [
+        "NDSP09"
+      ]
+    },
+    {
+      "family_id": "nsp_bicycle_transmission",
+      "title_zh": "自行车传动检修理论",
+      "domain": "study_planning",
+      "split": "design",
+      "case_ids": [
+        "NDSP10"
+      ]
+    },
+    {
+      "family_id": "nsp_semaphore_signalling",
+      "title_zh": "旗语通信训练",
+      "domain": "study_planning",
+      "split": "design",
+      "case_ids": [
+        "NDSP11"
+      ]
+    },
+    {
+      "family_id": "nsp_records_appraisal",
+      "title_zh": "档案价值鉴定",
+      "domain": "study_planning",
+      "split": "design",
+      "case_ids": [
+        "NDSP12"
+      ]
+    },
+    {
+      "family_id": "nsp_palaeography",
+      "title_zh": "历史手稿识读",
+      "domain": "study_planning",
+      "split": "design",
+      "case_ids": [
+        "NDSP13"
+      ]
+    },
+    {
+      "family_id": "nsp_leather_stitching",
+      "title_zh": "皮革手缝学习",
+      "domain": "study_planning",
+      "split": "design",
+      "case_ids": [
+        "NDSP14"
+      ]
+    },
+    {
+      "family_id": "nsp_tea_utensils",
+      "title_zh": "茶道器具学习",
+      "domain": "study_planning",
+      "split": "design",
+      "case_ids": [
+        "NDSP15"
+      ]
+    },
+    {
+      "family_id": "nsp_human_factors",
+      "title_zh": "人因设计入门",
+      "domain": "study_planning",
+      "split": "design",
+      "case_ids": [
+        "NDSP16"
+      ]
+    },
+    {
+      "family_id": "nsp_morse_listening",
+      "title_zh": "摩尔斯听辨训练",
+      "domain": "study_planning",
+      "split": "design",
+      "case_ids": [
+        "NDSP17"
+      ]
+    },
+    {
+      "family_id": "nsp_manuscript_illumination",
+      "title_zh": "手稿彩饰工艺",
+      "domain": "study_planning",
+      "split": "design",
+      "case_ids": [
+        "NDSP18"
+      ]
+    },
+    {
+      "family_id": "nsp_go_life_death",
+      "title_zh": "围棋死活练习",
+      "domain": "study_planning",
+      "split": "design",
+      "case_ids": [
+        "NDSP19"
+      ]
+    },
+    {
+      "family_id": "nsp_dry_stone_walling",
+      "title_zh": "干砌石墙理论",
+      "domain": "study_planning",
+      "split": "design",
+      "case_ids": [
+        "NDSP20"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_tournament_tiebreak_example",
+      "title_zh": "比赛同分规则算例",
+      "domain": "constrained_writing",
+      "split": "validation",
+      "case_ids": [
+        "NVCW01"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_joke_night_anecdote",
+      "title_zh": "笑话之夜段子",
+      "domain": "constrained_writing",
+      "split": "validation",
+      "case_ids": [
+        "NVCW02"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_stage_prop_specification",
+      "title_zh": "舞台道具制作规范",
+      "domain": "constrained_writing",
+      "split": "validation",
+      "case_ids": [
+        "NVCW03"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_ink_documentary_voiceover",
+      "title_zh": "墨水微纪录片旁白",
+      "domain": "constrained_writing",
+      "split": "validation",
+      "case_ids": [
+        "NVCW04"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_shelving_exception_reason",
+      "title_zh": "书架分类例外说明",
+      "domain": "constrained_writing",
+      "split": "validation",
+      "case_ids": [
+        "NVCW05"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_tabletop_drill_scenario",
+      "title_zh": "桌面演练情境注入",
+      "domain": "constrained_writing",
+      "split": "validation",
+      "case_ids": [
+        "NVCW06"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_fictional_currency_design",
+      "title_zh": "虚构货币视觉设计",
+      "domain": "constrained_writing",
+      "split": "validation",
+      "case_ids": [
+        "NVCW07"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_sibling_reconciliation_dialogue",
+      "title_zh": "手足和解对话",
+      "domain": "constrained_writing",
+      "split": "validation",
+      "case_ids": [
+        "NVCW08"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_riddle_solution_reasoning",
+      "title_zh": "谜题解法推理",
+      "domain": "constrained_writing",
+      "split": "validation",
+      "case_ids": [
+        "NVCW09"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_comic_panel_script",
+      "title_zh": "漫画分镜脚本",
+      "domain": "constrained_writing",
+      "split": "validation",
+      "case_ids": [
+        "NVCW10"
+      ]
+    },
+    {
+      "family_id": "nsp_rope_knots",
+      "title_zh": "绳结识别练习",
+      "domain": "study_planning",
+      "split": "validation",
+      "case_ids": [
+        "NVSP01"
+      ]
+    },
+    {
+      "family_id": "nsp_fungal_cultivation",
+      "title_zh": "食用菌栽培流程",
+      "domain": "study_planning",
+      "split": "validation",
+      "case_ids": [
+        "NVSP02"
+      ]
+    },
+    {
+      "family_id": "nsp_typographic_anatomy",
+      "title_zh": "字体结构学习",
+      "domain": "study_planning",
+      "split": "validation",
+      "case_ids": [
+        "NVSP03"
+      ]
+    },
+    {
+      "family_id": "nsp_bat_call_identification",
+      "title_zh": "蝙蝠声学识别",
+      "domain": "study_planning",
+      "split": "validation",
+      "case_ids": [
+        "NVSP04"
+      ]
+    },
+    {
+      "family_id": "nsp_forensic_linguistics",
+      "title_zh": "文本作者特征分析",
+      "domain": "study_planning",
+      "split": "validation",
+      "case_ids": [
+        "NVSP05"
+      ]
+    },
+    {
+      "family_id": "nsp_electrochemical_cells",
+      "title_zh": "电化学电池原理",
+      "domain": "study_planning",
+      "split": "validation",
+      "case_ids": [
+        "NVSP06"
+      ]
+    },
+    {
+      "family_id": "nsp_mask_acting",
+      "title_zh": "面具表演训练",
+      "domain": "study_planning",
+      "split": "validation",
+      "case_ids": [
+        "NVSP07"
+      ]
+    },
+    {
+      "family_id": "nsp_dance_floorcraft",
+      "title_zh": "社交舞舞池意识",
+      "domain": "study_planning",
+      "split": "validation",
+      "case_ids": [
+        "NVSP08"
+      ]
+    },
+    {
+      "family_id": "nsp_numismatics",
+      "title_zh": "钱币辨识学习",
+      "domain": "study_planning",
+      "split": "validation",
+      "case_ids": [
+        "NVSP09"
+      ]
+    },
+    {
+      "family_id": "nsp_juggling_cascade",
+      "title_zh": "三球杂耍分解练习",
+      "domain": "study_planning",
+      "split": "validation",
+      "case_ids": [
+        "NVSP10"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_appliance_first_use_microcopy",
+      "title_zh": "虚构家电首次使用文案",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW01"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_barter_negotiation_offer",
+      "title_zh": "物物交换协商提议",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW02"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_civic_ceremonial_oath",
+      "title_zh": "虚构城市仪式誓言",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW03"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_fairytale_alternate_ending",
+      "title_zh": "童话改写结尾",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW04"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_game_quest_instruction",
+      "title_zh": "游戏任务引导台词",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW05"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_contest_rubric_preface",
+      "title_zh": "甜点评比规则导言",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW06"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_invented_language_sound_key",
+      "title_zh": "虚构语言发音说明",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW07"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_alien_weather_bulletin",
+      "title_zh": "外星天气播报",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW08"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_packing_puzzle_strategy",
+      "title_zh": "装箱谜题策略说明",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW09"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_book_dedication",
+      "title_zh": "虚构书籍题献",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW10"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_time_travel_paradox",
+      "title_zh": "时间旅行悖论阐释",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW11"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_impossible_umbrella_ad",
+      "title_zh": "不可能雨伞广告",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW12"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_counting_rhyme",
+      "title_zh": "原创数数短诗",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW13"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_fictional_invention_abstract",
+      "title_zh": "虚构发明摘要",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW14"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_maze_navigation_instruction",
+      "title_zh": "迷宫行动指示",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW15"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_chess_piece_monologue",
+      "title_zh": "棋子独白",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW16"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_moral_thought_experiment",
+      "title_zh": "道德思想实验",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW17"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_proverb_interpretation",
+      "title_zh": "虚构谚语解读",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW18"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_naming_ceremony_toast",
+      "title_zh": "命名仪式祝酒词",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW19"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_penpal_introduction",
+      "title_zh": "虚构笔友自我介绍",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW20"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_silent_film_scene",
+      "title_zh": "默片场景动作脚本",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW21"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_metadata_policy_snippet",
+      "title_zh": "藏品元数据编目政策",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW22"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_poem_translation_commentary",
+      "title_zh": "诗歌翻译取舍说明",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW23"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_clock_face_design_critique",
+      "title_zh": "钟面设计评议",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW24"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_audio_drama_cliffhanger",
+      "title_zh": "广播剧悬念结尾",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW25"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_desk_layout_proposal",
+      "title_zh": "工作桌布局提案",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW26"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_achievement_certificate_citation",
+      "title_zh": "成就证书表彰语",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW27"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_theatrical_synopsis",
+      "title_zh": "虚构戏剧梗概",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW28"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_radio_station_identifier",
+      "title_zh": "虚构电台台呼",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW29"
+      ]
+    },
+    {
+      "family_id": "fresh_cw_empty_state_guidance",
+      "title_zh": "空白收藏页引导",
+      "domain": "constrained_writing",
+      "split": "test",
+      "case_ids": [
+        "NTCW30"
+      ]
+    },
+    {
+      "family_id": "nsp_volcanology",
+      "title_zh": "火山过程学习",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP01"
+      ]
+    },
+    {
+      "family_id": "nsp_glaciology",
+      "title_zh": "冰川运动学习",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP02"
+      ]
+    },
+    {
+      "family_id": "nsp_groundwater_hydrology",
+      "title_zh": "地下水水文学",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP03"
+      ]
+    },
+    {
+      "family_id": "nsp_heraldry",
+      "title_zh": "纹章识读学习",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP04"
+      ]
+    },
+    {
+      "family_id": "nsp_canine_scent_work",
+      "title_zh": "犬类嗅闻训练理论",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP05"
+      ]
+    },
+    {
+      "family_id": "nsp_cnc_milling",
+      "title_zh": "数控铣削路径理论",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP06"
+      ]
+    },
+    {
+      "family_id": "nsp_consecutive_interpreting",
+      "title_zh": "交替传译笔记",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP07"
+      ]
+    },
+    {
+      "family_id": "nsp_furniture_upholstery",
+      "title_zh": "家具软包工艺",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP08"
+      ]
+    },
+    {
+      "family_id": "nsp_clock_escapements",
+      "title_zh": "机械钟擒纵原理",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP09"
+      ]
+    },
+    {
+      "family_id": "nsp_dental_anatomy",
+      "title_zh": "牙齿形态识别",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP10"
+      ]
+    },
+    {
+      "family_id": "nsp_contract_bridge_bidding",
+      "title_zh": "桥牌叫牌学习",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP11"
+      ]
+    },
+    {
+      "family_id": "nsp_incident_coordination",
+      "title_zh": "事件协调角色学习",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP12"
+      ]
+    },
+    {
+      "family_id": "nsp_scientific_peer_review",
+      "title_zh": "论文同行评审学习",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP13"
+      ]
+    },
+    {
+      "family_id": "nsp_insurance_concepts",
+      "title_zh": "保险基础概念学习",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP14"
+      ]
+    },
+    {
+      "family_id": "nsp_stained_glass",
+      "title_zh": "彩色玻璃拼接理论",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP15"
+      ]
+    },
+    {
+      "family_id": "nsp_coiled_basketry",
+      "title_zh": "盘筑篮编工艺",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP16"
+      ]
+    },
+    {
+      "family_id": "nsp_pastry_lamination",
+      "title_zh": "起酥面团层压学习",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP17"
+      ]
+    },
+    {
+      "family_id": "nsp_cheese_affinage",
+      "title_zh": "奶酪熟成学习",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP18"
+      ]
+    },
+    {
+      "family_id": "nsp_perfume_structure",
+      "title_zh": "香水结构学习",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP19"
+      ]
+    },
+    {
+      "family_id": "nsp_brush_calligraphy",
+      "title_zh": "毛笔运笔训练",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP20"
+      ]
+    },
+    {
+      "family_id": "nsp_dance_notation",
+      "title_zh": "舞蹈记谱识读",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP21"
+      ]
+    },
+    {
+      "family_id": "nsp_rugby_officiating",
+      "title_zh": "橄榄球判罚学习",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP22"
+      ]
+    },
+    {
+      "family_id": "nsp_sign_language_space",
+      "title_zh": "手语空间表达学习",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP23"
+      ]
+    },
+    {
+      "family_id": "nsp_inventory_operations",
+      "title_zh": "零售库存管理学习",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP24"
+      ]
+    },
+    {
+      "family_id": "nsp_aircraft_marshalling",
+      "title_zh": "机场地面引导理论",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP25"
+      ]
+    },
+    {
+      "family_id": "nsp_usability_testing",
+      "title_zh": "产品可用性测试学习",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP26"
+      ]
+    },
+    {
+      "family_id": "nsp_drum_tuning",
+      "title_zh": "鼓面调音学习",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP27"
+      ]
+    },
+    {
+      "family_id": "nsp_stain_removal_chemistry",
+      "title_zh": "衣物污渍化学学习",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP28"
+      ]
+    },
+    {
+      "family_id": "nsp_hockey_tactics",
+      "title_zh": "冰球战术学习",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP29"
+      ]
+    },
+    {
+      "family_id": "nsp_fountain_pen_restoration",
+      "title_zh": "钢笔修复结构学习",
+      "domain": "study_planning",
+      "split": "test",
+      "case_ids": [
+        "NTSP30"
+      ]
+    }
+  ],
+  "limitation": "One case per registered task family. Registration is a partitioning convention, not proof of semantic independence."
+}

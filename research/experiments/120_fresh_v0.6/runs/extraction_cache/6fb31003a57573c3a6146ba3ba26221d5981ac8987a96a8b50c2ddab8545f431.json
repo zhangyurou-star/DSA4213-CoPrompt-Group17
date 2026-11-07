@@ -1,0 +1,87 @@
+{
+  "cache_key": "6fb31003a57573c3a6146ba3ba26221d5981ac8987a96a8b50c2ddab8545f431",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S4"
+    ],
+    "available_time": [],
+    "topics": [
+      "S2"
+    ],
+    "priorities": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 59,
+      "text": "Battery diagrams in my chemistry workbook still confuse me."
+    },
+    {
+      "id": "S2",
+      "start": 60,
+      "end": 106,
+      "text": "Put the cell-theory revision into a timetable."
+    },
+    {
+      "id": "S3",
+      "start": 107,
+      "end": 127,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 128,
+      "end": 195,
+      "text": "My study window closes on 2027-02-03; that date is still available."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": null,
+    "topics": "Put the cell-theory revision into a timetable.",
+    "priorities": null
+  },
+  "evidence": {
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 60,
+        "end": 106,
+        "quote": "Put the cell-theory revision into a timetable."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "deadline",
+      "proposed_evidence": [
+        "S4"
+      ],
+      "proposed_value": "My study window closes on 2027-02-03; that date is still available.",
+      "reason": "quote_has_no_explicit_endpoint_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S4\"],\"available_time\":[],\"topics\":[\"S2\"],\"priorities\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S4"
+          ],
+          "available_time": [],
+          "topics": [
+            "S2"
+          ],
+          "priorities": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

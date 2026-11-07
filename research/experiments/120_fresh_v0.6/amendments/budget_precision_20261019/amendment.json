@@ -1,0 +1,53 @@
+{
+  "revision": "budget-precision-1",
+  "recorded_utc": "2026-10-19T15:13:26.447466+00:00",
+  "kind": "accounting_only_implementation_fix",
+  "original_freeze_sha256": "ac80ddaf91e7345c4e96ca0c92dfa118a67abac1baa7bc41be11d5b3edd73bb7",
+  "original_frozen_sources_archive": "amendments/budget_precision_20261019/before/original_frozen_sources.zip",
+  "original_frozen_sources_archive_sha256": "d763e49949114ce63e542fb3b76c65a4505028fbc1335d947f2d4b766f5b2d25",
+  "reason": "JSON float(total) stored0.08956639 while exact sum of original decimal log values was0.0895663899999999999. Strict comparison against an unrepresentable total rejected settlement and restart.",
+  "fix": "Only ledger serialization comparisons use the exact projection Decimal(str(float(exact_log_sum))). Transactions derive both before and after checks from authoritative exact log totals. All cap and remaining-budget arithmetic retains the unrounded Decimal sum. No epsilon allowance.",
+  "changed_sources": {
+    "coprompt/formal.py": {
+      "before": "e4ae7b9554e936eb2c1cbd7c403780816992733d2f04672fdb29754d9da224e4",
+      "after": "0714beb2a40a81ab0a3db5966295274f107dafac18983810706cf3e09eeb2abd"
+    },
+    "tools/analyze_fresh.py": {
+      "before": "70372f8d0773117c106644a42d7bfe7ff1bedb0415694f1a6868abc533bf67ba",
+      "after": "81560d7f73b39159e87f9422a0bf4bde9082cc14ac8eb5048dac9bac1568ab60"
+    }
+  },
+  "regression_tests": "tests/test_budget_precision.py",
+  "offline_tests_passed": 65,
+  "expense_evidence": {
+    "stored_total_usd": 0.08956639,
+    "exact_log_total_usd": "0.0895663899999999999",
+    "authorized_total_usd": 2.0,
+    "ledger_sha256_unchanged": "56406ffcefd32d11feeca45645c3ae8a0182af33d940633bfa3a0728d3b739b0",
+    "session_log_hashes_unchanged": {
+      "runs/pilot_20261013T063312_111392Z_session.jsonl": "212feb2666bb57bfad549ac653b54cfc439c41985075f43bf9e974ef11bf463c",
+      "runs/pilot_20261013T063631_294704Z_session.jsonl": "dea3d1f67db420635819ea67b496298b35f47cd0b51920d9fa9e97facfe00adb",
+      "runs/pilot_20261013T063808_883314Z_session.jsonl": "b2102fc8c4942d293685b1564914cb665be46fac6ff3d7732d43ecc23ca0478c",
+      "runs/pilot_20261013T063855_619863Z_session.jsonl": "898cb39b24168d8a41bfc35ccda23f7ed9561b645db032a2e4352c1040c24839",
+      "runs/pilot_20261013T070711_779583Z_session.jsonl": "8483e4d26a86618628abb4877e8082980874df2c0f29a29d81bce063d569f8b5",
+      "runs/extraction_20261013T071538_667982Z_session.jsonl": "5e2dac36742fc091ccf8add2dc2add23ab7b98f19b8f5a33e940771a67d9a0cd",
+      "runs/extraction_20261013T071708_835506Z_session.jsonl": "c046eedbd3d4c8f9418ba072954d044927b3b3fe694278e98c6c283e9020a859",
+      "runs/extraction_20261013T071916_179228Z_session.jsonl": "b3da2a2ef0c82b328df5c53da54e221bb97a8d5a9eb8c0fa22585217510a81a7",
+      "runs/pilot_20261013T072618_852972Z_session.jsonl": "3204622966d81e8c6aa106320760d49113f7b37562ab4f8db90bd752e0b11f27",
+      "runs/pilot_20261013T074702_295938Z_session.jsonl": "aa6c3d73f4de453daea4e44b67afc6606c891e2e864a424b52fc369cc85cd421",
+      "runs/pilot_20261013T083509_615141Z_session.jsonl": "405300ba81b3591810a5951eeda586acc8f0dbf70bc27c67f5e407e162aa0800",
+      "runs/formal_validation_20261013T120435_638315Z_session.jsonl": "ad5a50edff840df93877c58ae072ea8222f55b2425d07fd31338adf7772bc479",
+      "runs/formal_test_20261013T121643_032151Z_session.jsonl": "80d08d88d073ca6ee3d03c226579a57a414d110a056ff97de791be2ea065233e",
+      "runs/formal_test_20261013T122804_443205Z_session.jsonl": "f349d83daff27287324074f54def069c0b51c830428321eba0b12c89add6c733",
+      "runs/formal_test_20261013T124214_693128Z_session.jsonl": "dc9d0c3b602ef2387ce9698217c0a98ec5d4f88008c22255c90291eb166f3ee1",
+      "runs/formal_test_20261013T125141_073721Z_session.jsonl": "674f97fd184918dadfcdbe71019bf599ba4e5878c22a7b1a789977494c1cb7aa",
+      "experiments/120_fresh_v0.6/runs/formal_pilot_a_20261019T150527_807702Z_session.jsonl": "9aaee63e5dcacf5aaa224b4844eccf83da3948fbdea8669700d19d7495d51898"
+    },
+    "unsettled_reserve_retained": true
+  },
+  "run_evidence": "One prior request attempt reached a logging failure; response/actual charge unavailable. The full unknown-cost reserve is retained. No committed or pending trajectories, raw responses, extraction results or generation results exist.",
+  "freeze_handling": "Original freeze and all68 original frozen source files archived before editing. New source hashes recorded as an explicit accounting revision; dataset, model/settings, prompts, scorer, allocation, threshold rules and case IDs remain byte-for-byte unchanged.",
+  "migration": "Only zero-output pilot manifest source hashes/plan hash and empty-cache scope updated; original copies retained. All session refs, timestamps, error and expense records preserved.",
+  "api_calls_by_repair": 0,
+  "no_human_review_claim": true
+}

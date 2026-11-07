@@ -1,0 +1,221 @@
+{
+  "cache_key": "33ea6a93bb703d8e16c9f28c339040efb22882d3046234886d6688583202225e",
+  "source_case_id": "NTSP01",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Magma Viscosity",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Eruption Styles",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Volcanic Deposits",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Volcanic Deposits",
+        "minutes": 25
+      }
+    ],
+    "summary": "Calculated from the schedule: 85 minutes in total. Daily totals: 2027-02-01: 30 minutes; 2027-02-02: 30 minutes; 2027-02-03: 25 minutes. Topic totals: Eruption Styles: 20 minutes; Magma Viscosity: 30 minutes; Volcanic Deposits: 35 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Magma Viscosity\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Eruption Styles\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Volcanic Deposits\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Volcanic Deposits\",\n      \"minutes\": 25\n    }\n  ],\n  \"summary\": \"The revision schedule covers all required topics—Magma Viscosity, Eruption Styles, and Volcanic Deposits—within the date window from 2027-02-01 to 2027-02-03. Magma Viscosity is allocated 30 minutes on 2027-02-01, meeting its minimum of 30 minutes. Eruption Styles receives 20 minutes on 2027-02-02, satisfying the 20-minute cumulative minimum. Volcanic Deposits is covered with 10 minutes on 2027-02-02 and 25 minutes on 2027-02-03, totaling 35 minutes, fulfilling the specific 35-minute requirement. Daily limits of 30 minutes are respected, with no day exceeding the cap. All topics meet or exceed their minimum cumulative time requirements.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Magma Viscosity",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Eruption Styles",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Volcanic Deposits",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Volcanic Deposits",
+            "minutes": 25
+          }
+        ],
+        "summary": "The revision schedule covers all required topics—Magma Viscosity, Eruption Styles, and Volcanic Deposits—within the date window from 2027-02-01 to 2027-02-03. Magma Viscosity is allocated 30 minutes on 2027-02-01, meeting its minimum of 30 minutes. Eruption Styles receives 20 minutes on 2027-02-02, satisfying the 20-minute cumulative minimum. Volcanic Deposits is covered with 10 minutes on 2027-02-02 and 25 minutes on 2027-02-03, totaling 35 minutes, fulfilling the specific 35-minute requirement. Daily limits of 30 minutes are respected, with no day exceeding the cap. All topics meet or exceed their minimum cumulative time requirements."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 30
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "I can spare at most 30 minutes per day, counting every topic together."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use only dates from 2027-02-01 through 2027-02-03, including the final date."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 85,
+      "daily_minutes": {
+        "2027-02-01": 30,
+        "2027-02-02": 30,
+        "2027-02-03": 25
+      },
+      "topic_minutes": [
+        {
+          "topic": "Eruption Styles",
+          "normalized_topic": "eruption styles",
+          "minutes": 20
+        },
+        {
+          "topic": "Magma Viscosity",
+          "normalized_topic": "magma viscosity",
+          "minutes": 30
+        },
+        {
+          "topic": "Volcanic Deposits",
+          "normalized_topic": "volcanic deposits",
+          "minutes": 35
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 30
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use only dates from 2027-02-01 through 2027-02-03, including the final date."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 85,
+      "daily_minutes": {
+        "2027-02-01": 30,
+        "2027-02-02": 30,
+        "2027-02-03": 25
+      },
+      "topic_minutes": [
+        {
+          "topic": "Eruption Styles",
+          "normalized_topic": "eruption styles",
+          "minutes": 20
+        },
+        {
+          "topic": "Magma Viscosity",
+          "normalized_topic": "magma viscosity",
+          "minutes": 30
+        },
+        {
+          "topic": "Volcanic Deposits",
+          "normalized_topic": "volcanic deposits",
+          "minutes": 35
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 30
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use only dates from 2027-02-01 through 2027-02-03, including the final date."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The revision schedule covers all required topics—Magma Viscosity, Eruption Styles, and Volcanic Deposits—within the date window from 2027-02-01 to 2027-02-03. Magma Viscosity is allocated 30 minutes on 2027-02-01, meeting its minimum of 30 minutes. Eruption Styles receives 20 minutes on 2027-02-02, satisfying the 20-minute cumulative minimum. Volcanic Deposits is covered with 10 minutes on 2027-02-02 and 25 minutes on 2027-02-03, totaling 35 minutes, fulfilling the specific 35-minute requirement. Daily limits of 30 minutes are respected, with no day exceeding the cap. All topics meet or exceed their minimum cumulative time requirements.",
+    "derived_summary": "Calculated from the schedule: 85 minutes in total. Daily totals: 2027-02-01: 30 minutes; 2027-02-02: 30 minutes; 2027-02-03: 25 minutes. Topic totals: Eruption Styles: 20 minutes; Magma Viscosity: 30 minutes; Volcanic Deposits: 35 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

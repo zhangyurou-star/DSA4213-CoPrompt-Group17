@@ -1,0 +1,94 @@
+{
+  "cache_key": "ffce2e98d41e14dc01f6fcf5519c8f9e02a3080b22d286d2cf1286db1112f857",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [],
+    "tone": [
+      "S2"
+    ],
+    "length": [
+      "S3"
+    ],
+    "required_content": [
+      "S1"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 59,
+      "text": "Write a plain-language abstract for an imaginary invention."
+    },
+    {
+      "id": "S2",
+      "start": 60,
+      "end": 94,
+      "text": "Use a plain and informative voice."
+    },
+    {
+      "id": "S3",
+      "start": 95,
+      "end": 151,
+      "text": "The total word count must fall from 65 to 95, inclusive."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": "Use a plain and informative voice.",
+    "length": "The total word count must fall from 65 to 95, inclusive.",
+    "required_content": "Write a plain-language abstract for an imaginary invention."
+  },
+  "evidence": {
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 60,
+        "end": 94,
+        "quote": "Use a plain and informative voice."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 95,
+        "end": 151,
+        "quote": "The total word count must fall from 65 to 95, inclusive."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S1",
+        "start": 0,
+        "end": 59,
+        "quote": "Write a plain-language abstract for an imaginary invention."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[],\"tone\":[\"S2\"],\"length\":[\"S3\"],\"required_content\":[\"S1\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [],
+          "tone": [
+            "S2"
+          ],
+          "length": [
+            "S3"
+          ],
+          "required_content": [
+            "S1"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

@@ -1,0 +1,139 @@
+{
+  "cache_key": "c459cdb104f551b3e360a7df3f5304173052bd6df976bf046829b058aff3bfa5",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S1",
+      "S5"
+    ],
+    "tone": [],
+    "length": [
+      "S6"
+    ],
+    "required_content": [
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 54,
+      "text": "Write a personal introduction to an imaginary pen pal."
+    },
+    {
+      "id": "S2",
+      "start": 55,
+      "end": 229,
+      "text": "Build the piece around these synthetic facts: The fictional writer collects odd buttons, rides a yellow bicycle, and wants to hear about the smallest adventure in Ren's week."
+    },
+    {
+      "id": "S3",
+      "start": 230,
+      "end": 300,
+      "text": "Mention that the button collection began with a coat pocket discovery."
+    },
+    {
+      "id": "S4",
+      "start": 301,
+      "end": 403,
+      "text": "The text must contain \"collecting odd buttons\", \"a yellow bicycle\", \"the smallest adventure\" verbatim."
+    },
+    {
+      "id": "S5",
+      "start": 404,
+      "end": 455,
+      "text": "Address this to an imaginary new pen pal named Ren."
+    },
+    {
+      "id": "S6",
+      "start": 456,
+      "end": 488,
+      "text": "Write 60 to 90 words altogether."
+    }
+  ],
+  "field_values": {
+    "audience": "Write a personal introduction to an imaginary pen pal.\nAddress this to an imaginary new pen pal named Ren.",
+    "tone": null,
+    "length": "Write 60 to 90 words altogether.",
+    "required_content": "Build the piece around these synthetic facts: The fictional writer collects odd buttons, rides a yellow bicycle, and wants to hear about the smallest adventure in Ren's week.\nMention that the button collection began with a coat pocket discovery.\nThe text must contain \"collecting odd buttons\", \"a yellow bicycle\", \"the smallest adventure\" verbatim."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S1",
+        "start": 0,
+        "end": 54,
+        "quote": "Write a personal introduction to an imaginary pen pal."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 404,
+        "end": 455,
+        "quote": "Address this to an imaginary new pen pal named Ren."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 456,
+        "end": 488,
+        "quote": "Write 60 to 90 words altogether."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 55,
+        "end": 229,
+        "quote": "Build the piece around these synthetic facts: The fictional writer collects odd buttons, rides a yellow bicycle, and wants to hear about the smallest adventure in Ren's week."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 230,
+        "end": 300,
+        "quote": "Mention that the button collection began with a coat pocket discovery."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 301,
+        "end": 403,
+        "quote": "The text must contain \"collecting odd buttons\", \"a yellow bicycle\", \"the smallest adventure\" verbatim."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S1\",\"S5\"],\"tone\":[],\"length\":[\"S6\"],\"required_content\":[\"S2\",\"S3\",\"S4\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S1",
+            "S5"
+          ],
+          "tone": [],
+          "length": [
+            "S6"
+          ],
+          "required_content": [
+            "S2",
+            "S3",
+            "S4"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

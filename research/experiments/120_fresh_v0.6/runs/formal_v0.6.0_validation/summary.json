@@ -1,0 +1,27 @@
+{
+  "status": "completed",
+  "statistics": {
+    "value_lambda_0": {
+      "n": 20,
+      "quality": 0.7541666666666667,
+      "questions": 1.15,
+      "fully_passed": 10
+    },
+    "value_lambda_0.25": {
+      "n": 20,
+      "quality": 0.7541666666666667,
+      "questions": 1.15,
+      "fully_passed": 10
+    },
+    "value_lambda_0.5": {
+      "n": 20,
+      "quality": 0.75,
+      "questions": 0.45,
+      "fully_passed": 9
+    }
+  },
+  "completed_trajectories": 60,
+  "planned_trajectories": 60,
+  "cumulative_accounted_usd": 0.13026709,
+  "remaining_usd": 1.86973291
+}

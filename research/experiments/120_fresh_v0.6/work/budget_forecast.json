@@ -1,0 +1,51 @@
+{
+  "created_utc": "2026-10-19T14:45:20.852137+00:00",
+  "status": "offline_forecast_not_guarantee_or_spending_authorization",
+  "scope": "All120 newly authored; no historical case or cached-response reuse. Pilot12 is inside40 design, not added twice. Exact first-response reuse within fresh study is expected but not guaranteed.",
+  "model": "qwen/qwen3-30b-a3b-instruct-2507",
+  "history_used_for": "Cost planning only, not case selection or method tuning. Historical small-sample and previously cached operation may underestimate fresh-case needs.",
+  "source_cost_statistics_sha256": "bf7ff8bacdac94b32d38ae4519011e46d1401ba9badb8023d9cf7d3d2c670676",
+  "authorized_cumulative_total_usd": 0.25,
+  "prior_accounted_usd": 0.08857385,
+  "remaining_usd": 0.16142615,
+  "scenarios": {
+    "low": {
+      "new_design40_all_four_policies_including_pilot_usd": 0.0183744,
+      "new_validation20_three_thresholds_usd": 0.0099358,
+      "new_test60_four_policies_usd": 0.0275616,
+      "additional_diagnostic20_allowance_usd": 0,
+      "additional_failure_and_repair_stress_reserve_usd": 0,
+      "additional_accounted_usd": 0.0558718,
+      "projected_cumulative_accounted_usd": 0.14444565,
+      "within_current_cap_in_this_scenario": true
+    },
+    "middle": {
+      "new_design40_all_four_policies_including_pilot_usd": 0.04029925,
+      "new_validation20_three_thresholds_usd": 0.01306954,
+      "new_test60_four_policies_usd": 0.05319501,
+      "additional_diagnostic20_allowance_usd": 0.00450418,
+      "additional_failure_and_repair_stress_reserve_usd": 0,
+      "additional_accounted_usd": 0.11106798,
+      "projected_cumulative_accounted_usd": 0.19964183,
+      "within_current_cap_in_this_scenario": true
+    },
+    "stress": {
+      "new_design40_all_four_policies_including_pilot_usd": 0.07809993,
+      "new_validation20_three_thresholds_usd": 0.01751616,
+      "new_test60_four_policies_usd": 0.10413324,
+      "additional_diagnostic20_allowance_usd": 0.0129862,
+      "additional_failure_and_repair_stress_reserve_usd": 0.01063678,
+      "additional_accounted_usd": 0.22337231,
+      "projected_cumulative_accounted_usd": 0.31194616,
+      "within_current_cap_in_this_scenario": false
+    }
+  },
+  "assumptions_en": [
+    "Historical within-domain cost statistics are used only for cost estimation. No cases or responses are inherited; all 120 cases require new requests.",
+    "The low scenario uses the lower quartile of per-case cost and assumes complete internal reuse for diagnostics. The middle scenario uses the mean, adding 25% for design and 10% for validation/test, with one decision call and half a generation-and-repair allowance per diagnostic case.",
+    "The stress scenario uses per-case p90 times 1.35 for design or 1.2 for formal stages, adds two decision calls, one generation, and one constraint repair per diagnostic case, and adds a further 5% for failures and repairs. It is not the 90th percentile of total cost, a confidence interval, or a strict upper bound.",
+    "Historical test costs aggregated by case may include diagnostic costs, so the additional diagnostic allowance partly duplicates costs conservatively. New request length, thresholds, retries, actual provider rates, and internal cache hits all affect cost.",
+    "At forecast preparation time, the remaining USD 0.16142615 might cover the middle scenario, but completion was not guaranteed. The program enforced the then-authorized cumulative USD 0.25 limit before each request and saved progress and stopped when funds were insufficient; it never automatically raised or reset the limit.",
+    "Only offline scripts were run: no network access, no key reading, and no additional API spending."
+  ]
+}

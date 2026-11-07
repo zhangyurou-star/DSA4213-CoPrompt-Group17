@@ -1,0 +1,315 @@
+case_id,domain,field,annotation_known,raw_nonempty_evidence,final_known,annotated_known_missed,annotated_unresolved_accepted,raw_evidence_ids,rejection_reasons,accepted_value,asked_by
+NTCW01,constrained_writing,audience,True,True,True,False,False,"[""S2""]",[],Its intended audience: new owners of the imaginary Pebble Press.,
+NTCW01,constrained_writing,tone,True,True,True,False,False,"[""S7""]",[],Keep the tone friendly and concise.,
+NTCW01,constrained_writing,length,True,True,True,False,False,"[""S8""]",[],The full text must be between 50 and 80 words.,
+NTCW01,constrained_writing,required_content,True,True,True,False,False,"[""S3"", ""S4"", ""S5"", ""S6""]",[],"These invented details are required: The fictional Pebble Press stamps decorative cards.
+First place one blank card in the tray, then choose a pattern.
+Its first-use screen should explain that the sample print uses the selected pattern and invite the user to start.
+Include each of these exact strings: ""Pebble Press"", ""place one blank card"", ""choose a pattern"".",
+NTCW02,constrained_writing,audience,True,True,True,False,False,"[""S7""]",[],Use wording suitable for the other participant in a fictional neighborhood exchange.,
+NTCW02,constrained_writing,tone,True,True,True,False,False,"[""S2""]",[],Use a courteous and open voice.,
+NTCW02,constrained_writing,length,True,True,True,False,False,"[""S3""]",[],Keep the complete piece to 55–85 words.,
+NTCW02,constrained_writing,required_content,True,True,True,False,False,"[""S4"", ""S5"", ""S6""]",[],"Use this fictional material: The speaker offers two woven baskets in exchange for one lamp repair.
+Suggest Sunday afternoon for the exchange, and make clear the other person can propose a different arrangement.
+Required wording, verbatim: ""two woven baskets"", ""one lamp repair"", ""Sunday afternoon"".",
+NTCW03,constrained_writing,audience,True,True,True,False,False,"[""S2""]",[],The intended readers are participants taking part in the invented city ceremony.,
+NTCW03,constrained_writing,tone,True,True,True,False,False,"[""S3""]",[],I want a solemn and inclusive tone.,
+NTCW03,constrained_writing,length,True,True,True,False,False,"[""S4""]",[],Use at least 55 words and no more than 85 words in total.,
+NTCW03,constrained_writing,required_content,True,True,True,False,False,"[""S5"", ""S7""]",[],"Include the following invented details: The oath centers the common table, promises to listen before speaking, and pledges to leave a place for someone not yet present.
+Preserve these exact phrases: ""the common table"", ""listen before speaking"", ""leave a place"".",
+NTCW04,constrained_writing,audience,True,True,True,False,False,"[""S5""]",[],Address this to readers who know the invented tale of the glass fox.,
+NTCW04,constrained_writing,tone,True,True,True,False,False,"[""S7""]",[],The style should feel lyrical and hopeful.,
+NTCW04,constrained_writing,length,True,True,True,False,False,"[""S6""]",[],"The total word count must fall from 60 to 90, inclusive.",
+NTCW04,constrained_writing,required_content,True,True,True,False,False,"[""S2"", ""S3"", ""S4""]",[],"Build the piece around these synthetic facts: The alternate ending has the glass fox give up its jeweled key and use an ordinary stone to hold open the tower door.
+Include the conclusion the door stayed open.
+The text must contain ""the glass fox"", ""an ordinary stone"", ""the door stayed open"" verbatim.",
+NTCW05,constrained_writing,audience,True,True,True,False,False,"[""S2""]",[],Write for players receiving the invented quest.,
+NTCW05,constrained_writing,tone,True,True,True,False,False,"[""S6""]",[],Make the voice urgent and adventurous.,
+NTCW05,constrained_writing,length,True,True,True,False,False,"[""S7""]",[],Write 60 to 90 words altogether.,
+NTCW05,constrained_writing,required_content,True,True,True,False,False,"[""S3"", ""S4"", ""S5""]",[],"These invented details are required: The quest asks players to enter the Lantern Orchard and collect three silver seeds from fallen fruit.
+The instruction is ""do not wake the giant""; the quest giver needs the seeds to relight the village clock.
+Include each of these exact strings: ""the Lantern Orchard"", ""three silver seeds"", ""do not wake the giant"".",
+NTCW06,constrained_writing,audience,True,True,True,False,False,"[""S8""]",[],The audience is judges in the imaginary Crumb Crown contest.,
+NTCW06,constrained_writing,tone,True,True,True,False,False,"[""S2""]",[],A balanced and explanatory tone suits this piece.,
+NTCW06,constrained_writing,length,True,True,True,False,False,"[""S3""]",[],The full text must be between 55 and 85 words.,
+NTCW06,constrained_writing,required_content,True,True,True,False,False,"[""S4"", ""S5"", ""S7""]",[],"Use this fictional material: The fictional dessert contest places texture first and presentation second.
+There are no points for size.
+Required wording, verbatim: ""texture first"", ""presentation second"", ""no points for size"".",
+NTCW07,constrained_writing,audience,True,True,False,True,False,"[""S2""]","[""quote_has_no_explicit_reader_relation_cue""]",,"exhaustive,prompt_only,value_based"
+NTCW07,constrained_writing,tone,True,True,True,False,False,"[""S3""]",[],Keep the tone instructive and uncluttered.,
+NTCW07,constrained_writing,length,False,False,False,False,False,[],[],,"exhaustive,value_based"
+NTCW07,constrained_writing,required_content,True,True,True,False,False,"[""S4"", ""S5"", ""S6"", ""S7""]",[],"Include the following invented details: The invented word sela means welcome and is pronounced SEH-lah.
+Instruct actors to stress the first syllable and keep both vowels clear.
+It is a fictional pronunciation convention, not a claim about a real language.
+Preserve these exact phrases: ""sela"", ""SEH-lah"", ""stress the first syllable"".",
+NTCW08,constrained_writing,audience,True,True,False,True,False,"[""S2""]","[""quote_has_no_explicit_reader_relation_cue""]",,"exhaustive,prompt_only,value_based"
+NTCW08,constrained_writing,tone,True,True,True,False,False,"[""S4""]",[],Use a composed and vivid voice.,
+NTCW08,constrained_writing,length,True,True,True,False,False,"[""S3""]",[],Use at least 60 words and no more than 90 words in total.,
+NTCW08,constrained_writing,required_content,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW09,constrained_writing,audience,True,True,True,False,False,"[""S2""]",[],Its intended audience: players attempting the invented Box Garden puzzle.,
+NTCW09,constrained_writing,tone,True,True,True,False,False,"[""S3""]",[],I want an analytical and approachable tone.,
+NTCW09,constrained_writing,length,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW09,constrained_writing,required_content,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW10,constrained_writing,audience,True,True,True,False,False,"[""S6""]",[],Use wording suitable for the fictional author's older sister.,
+NTCW10,constrained_writing,tone,True,True,True,False,False,"[""S2""]",[],The style should feel intimate and grateful.,
+NTCW10,constrained_writing,length,False,False,False,False,False,[],[],,"exhaustive,value_based"
+NTCW10,constrained_writing,required_content,True,True,True,False,False,"[""S3"", ""S4"", ""S5""]",[],"Use this fictional material: The dedication recalls an older sister keeping the spare chair beside her lamp and listening to every unfinished page.
+The author thanks her with the words you waited.
+Required wording, verbatim: ""the spare chair"", ""every unfinished page"", ""you waited"".",
+NTCW11,constrained_writing,audience,True,True,True,False,False,"[""S2""]",[],The intended readers are readers of a fictional speculative essay.,
+NTCW11,constrained_writing,tone,True,True,True,False,False,"[""S3""]",[],Make the voice curious and precise.,
+NTCW11,constrained_writing,length,True,True,True,False,False,"[""S4""]",[],The full text must be between 65 and 95 words.,
+NTCW11,constrained_writing,required_content,False,True,True,False,True,"[""S1""]",[],Explain the internal logic of an invented time-travel paradox.,
+NTCW12,constrained_writing,audience,True,True,True,False,False,"[""S2""]",[],Address this to readers of an imaginary novelty magazine.,
+NTCW12,constrained_writing,tone,True,True,True,False,False,"[""S3""]",[],A whimsical and exuberant tone suits this piece.,
+NTCW12,constrained_writing,length,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW12,constrained_writing,required_content,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW13,constrained_writing,audience,True,True,True,False,False,"[""S2""]",[],Write for children enjoying an invented read-aloud verse.,
+NTCW13,constrained_writing,tone,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW13,constrained_writing,length,False,False,False,False,False,[],[],,"exhaustive,value_based"
+NTCW13,constrained_writing,required_content,True,True,True,False,False,"[""S3"", ""S5""]",[],"These invented details are required: The rhyme must count one copper beetle, two velvet moths, and three sleepy stars in that order.
+Include each of these exact strings: ""one copper beetle"", ""two velvet moths"", ""three sleepy stars"".",
+NTCW14,constrained_writing,audience,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW14,constrained_writing,tone,True,True,True,False,False,"[""S2""]",[],Use a plain and informative voice.,
+NTCW14,constrained_writing,length,True,True,True,False,False,"[""S3""]",[],"The total word count must fall from 65 to 95, inclusive.",
+NTCW14,constrained_writing,required_content,False,True,True,False,True,"[""S1""]",[],Write a plain-language abstract for an imaginary invention.,
+NTCW15,constrained_writing,audience,True,True,False,True,False,"[""S2""]","[""quote_has_no_explicit_reader_relation_cue""]",,"exhaustive,prompt_only,value_based"
+NTCW15,constrained_writing,tone,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW15,constrained_writing,length,False,False,False,False,False,[],[],,"exhaustive,prompt_only"
+NTCW15,constrained_writing,required_content,False,False,False,False,False,[],[],,value_based
+NTCW16,constrained_writing,audience,True,True,True,False,False,"[""S5""]",[],This will be read by readers of an original miniature monologue.,
+NTCW16,constrained_writing,tone,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW16,constrained_writing,length,False,False,False,False,False,[],[],,"exhaustive,value_based"
+NTCW16,constrained_writing,required_content,True,True,True,False,False,"[""S3"", ""S4""]",[],"Include I am the rook and the edge of the board.
+The text must contain ""I am the rook"", ""straight lines"", ""the edge of the board"" verbatim.",
+NTCW17,constrained_writing,audience,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW17,constrained_writing,tone,True,True,True,False,False,"[""S2""]",[],Make the voice neutral and questioning.,
+NTCW17,constrained_writing,length,True,True,True,False,False,"[""S3""]",[],Keep the complete piece to 65–95 words.,
+NTCW17,constrained_writing,required_content,False,True,True,False,True,"[""S1""]",[],Present an original moral thought experiment without resolving it.,
+NTCW18,constrained_writing,audience,True,True,True,False,False,"[""S2""]",[],Use wording suitable for readers of an imaginary collection of sayings.,
+NTCW18,constrained_writing,tone,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW18,constrained_writing,length,False,False,False,False,False,[],[],,"exhaustive,value_based"
+NTCW18,constrained_writing,required_content,False,True,True,False,True,"[""S1""]",[],Interpret an invented proverb with a concrete example.,
+NTCW19,constrained_writing,audience,True,True,True,False,False,"[""S2""]",[],The intended readers are guests at an invented boat naming ceremony.,
+NTCW19,constrained_writing,tone,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW19,constrained_writing,length,True,True,True,False,False,"[""S3""]",[],"The total word count must fall from 55 to 85, inclusive.",
+NTCW19,constrained_writing,required_content,True,True,True,False,False,"[""S4"", ""S5"", ""S6""]",[],"Include the following invented details: The fictional boat is named Small Tomorrow.
+The toast wishes it a steady harbor and room for wonder, connecting the modest name to journeys that begin with a small step.
+Preserve these exact phrases: ""Small Tomorrow"", ""a steady harbor"", ""room for wonder"".",
+NTCW20,constrained_writing,audience,True,True,True,False,False,"[""S1"", ""S5""]",[],"Write a personal introduction to an imaginary pen pal.
+Address this to an imaginary new pen pal named Ren.",
+NTCW20,constrained_writing,tone,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW20,constrained_writing,length,True,True,True,False,False,"[""S6""]",[],Write 60 to 90 words altogether.,
+NTCW20,constrained_writing,required_content,True,True,True,False,False,"[""S2"", ""S3"", ""S4""]",[],"Build the piece around these synthetic facts: The fictional writer collects odd buttons, rides a yellow bicycle, and wants to hear about the smallest adventure in Ren's week.
+Mention that the button collection began with a coat pocket discovery.
+The text must contain ""collecting odd buttons"", ""a yellow bicycle"", ""the smallest adventure"" verbatim.",
+NTCW21,constrained_writing,audience,False,False,False,False,False,[],[],,"exhaustive,value_based"
+NTCW21,constrained_writing,tone,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW21,constrained_writing,length,True,True,True,False,False,"[""S5""]",[],The full text must be between 60 and 90 words.,
+NTCW21,constrained_writing,required_content,True,True,True,False,False,"[""S2"", ""S3"", ""S4""]",[],"These invented details are required: The scene shows a person hanging an empty picture frame, noticing a passing cloud through its open center, and repositioning it until the cloud is framed.
+End with the person bows to the wall.
+Include each of these exact strings: ""an empty picture frame"", ""a passing cloud"", ""bows to the wall"".",
+NTCW22,constrained_writing,audience,True,True,True,False,False,"[""S6""]",[],The audience is editors of an invented object catalog.,
+NTCW22,constrained_writing,tone,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW22,constrained_writing,length,True,True,True,False,False,"[""S2""]",[],Keep the complete piece to 55–85 words.,
+NTCW22,constrained_writing,required_content,True,True,True,False,False,"[""S3"", ""S4"", ""S5""]",[],"Use this fictional material: The catalog uses maker unknown when attribution is missing and date not recorded when no creation date survives.
+Explain that blank is not a value because empty cells could also mean unfinished work.
+Required wording, verbatim: ""maker unknown"", ""date not recorded"", ""blank is not a value"".",
+NTCW23,constrained_writing,audience,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW23,constrained_writing,tone,True,True,True,False,False,"[""S2""]",[],Make the voice thoughtful and accessible.,
+NTCW23,constrained_writing,length,True,True,True,False,False,"[""S3""]",[],Use at least 60 words and no more than 90 words in total.,
+NTCW23,constrained_writing,required_content,True,True,True,False,False,"[""S4"", ""S5"", ""S6""]",[],"Include the following invented details: The invented translation retains a pocket of rain because it conveys portable sadness.
+Explain the choice using kept the image and lost the rhyme, and note that matching both would make the sentence awkward.
+Preserve these exact phrases: ""a pocket of rain"", ""kept the image"", ""lost the rhyme"".",
+NTCW24,constrained_writing,audience,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW24,constrained_writing,tone,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW24,constrained_writing,length,True,True,True,False,False,"[""S6""]",[],"The total word count must fall from 60 to 90, inclusive.",
+NTCW24,constrained_writing,required_content,True,True,True,False,False,"[""S2"", ""S3"", ""S4"", ""S5""]",[],"Build the piece around these synthetic facts: The imaginary clock uses thin silver hands over a pale dial.
+Critique the weak visual contrast and suggest a darker hour hand while preserving the uncluttered face.
+Do not invent test results.
+The text must contain ""thin silver hands"", ""pale dial"", ""a darker hour hand"" verbatim.",
+NTCW25,constrained_writing,audience,True,True,True,False,False,"[""S2""]",[],Its intended audience: listeners at the end of an original drama episode.,
+NTCW25,constrained_writing,tone,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW25,constrained_writing,length,True,True,True,False,False,"[""S7""]",[],Write 60 to 90 words altogether.,
+NTCW25,constrained_writing,required_content,True,True,True,False,False,"[""S3"", ""S4"", ""S5"", ""S6""]",[],"These invented details are required: The final scene has three knocks on a sealed door.
+The protagonist hears her own voice from behind it saying Do not open it, although she is standing outside.
+End before the door opens.
+Include each of these exact strings: ""three knocks"", ""her own voice"", ""Do not open it"".",
+NTCW26,constrained_writing,audience,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW26,constrained_writing,tone,True,True,True,False,False,"[""S2""]",[],Use a practical and considerate voice.,
+NTCW26,constrained_writing,length,True,True,True,False,False,"[""S3""]",[],The full text must be between 55 and 85 words.,
+NTCW26,constrained_writing,required_content,True,True,True,False,False,"[""S4"", ""S6""]",[],"Use this fictional material: The layout places frequently shared stationery in a shared tray, drawing materials on the window side, and keeps a clear center for exchanging large sheets.
+Required wording, verbatim: ""shared tray"", ""window side"", ""clear center"".",
+NTCW27,constrained_writing,audience,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW27,constrained_writing,tone,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTCW27,constrained_writing,length,True,True,True,False,False,"[""S2""]",[],Keep the complete piece to 50–80 words.,
+NTCW27,constrained_writing,required_content,True,True,True,False,False,"[""S3"", ""S4"", ""S5""]",[],"Include the following invented details: The fictional certificate recognizes patient experimentation in developing the paper turbine.
+Praise turning questions into trials and recording failed versions as carefully as successful ones; do not claim an external prize.
+Preserve these exact phrases: ""patient experimentation"", ""the paper turbine"", ""turning questions into trials"".",
+NTCW28,constrained_writing,audience,True,True,True,False,False,"[""S5""]",[],Address this to theatergoers choosing the invented play.,
+NTCW28,constrained_writing,tone,False,False,False,False,False,[],[],,
+NTCW28,constrained_writing,length,True,True,True,False,False,"[""S6""]",[],Use at least 60 words and no more than 90 words in total.,
+NTCW28,constrained_writing,required_content,True,True,True,False,False,"[""S4""]",[],"The text must contain ""The Unsent Window"", ""a retired locksmith"", ""letters addressed to nobody"" verbatim.",
+NTCW29,constrained_writing,audience,False,False,False,False,False,[],[],,
+NTCW29,constrained_writing,tone,True,True,True,False,False,"[""S5""]",[],Make the voice calm and companionable.,
+NTCW29,constrained_writing,length,True,True,True,False,False,"[""S6""]",[],"The total word count must fall from 50 to 80, inclusive.",
+NTCW29,constrained_writing,required_content,True,True,True,False,False,"[""S2"", ""S3"", ""S4""]",[],"These invented details are required: The imaginary station is Lantern Frequency, carrying stories after sunset.
+Its identification script should connect a small lamp image with listening and close with stay a little longer.
+Include each of these exact strings: ""Lantern Frequency"", ""stories after sunset"", ""stay a little longer"".",
+NTCW30,constrained_writing,audience,False,False,False,False,False,[],[],,
+NTCW30,constrained_writing,tone,False,False,False,False,False,[],[],,
+NTCW30,constrained_writing,length,True,True,True,False,False,"[""S2""]",[],Write 50 to 80 words altogether.,
+NTCW30,constrained_writing,required_content,True,True,True,False,False,"[""S3"", ""S4"", ""S5""]",[],"Use this fictional material: The empty collection screen should say Your shelf is empty and offer Add a keepsake.
+Explain that each entry needs a title and a note, and that the first entry can be revised later.
+Required wording, verbatim: ""Your shelf is empty"", ""Add a keepsake"", ""a title and a note"".",
+NTSP01,study_planning,deadline,True,True,True,False,False,"[""S4""]",[],"Use only dates from 2027-02-01 through 2027-02-03, including the final date.",
+NTSP01,study_planning,available_time,True,True,True,False,False,"[""S5""]",[],"I can spare at most 30 minutes per day, counting every topic together.",
+NTSP01,study_planning,topics,True,True,True,False,False,"[""S6"", ""S7"", ""S8"", ""S9""]",[],"Include ""Magma Viscosity"", ""Eruption Styles"", ""Volcanic Deposits"", using those topic names.
+Allocate at least 20 cumulative minutes to every topic.
+Within that coverage, ""Magma Viscosity"" needs at least 30 total minutes.
+I specifically require a minimum of 35 minutes altogether on ""Volcanic Deposits"".",
+NTSP01,study_planning,priorities,True,True,True,False,False,"[""S8"", ""S9""]",[],"Within that coverage, ""Magma Viscosity"" needs at least 30 total minutes.
+I specifically require a minimum of 35 minutes altogether on ""Volcanic Deposits"".",
+NTSP02,study_planning,deadline,True,True,False,True,False,"[""S5""]","[""quote_has_no_explicit_endpoint_cue""]",,"exhaustive,prompt_only,value_based"
+NTSP02,study_planning,available_time,True,True,False,True,False,"[""S7""]","[""quote_has_no_daily_time_allowance_cue""]",,"exhaustive,prompt_only,value_based"
+NTSP02,study_planning,topics,True,True,True,False,False,"[""S4""]",[],"The syllabus consists of ""Glacier Mass Balance"", ""Crevasse Formation"", ""Basal Sliding""; each named topic needs a minimum of 25 minutes in total.",
+NTSP02,study_planning,priorities,True,True,True,False,False,"[""S6""]",[],"I would prefer to encounter ""Basal Sliding"" early; treat that as a suggestion only, not a time requirement.",
+NTSP03,study_planning,deadline,True,True,True,False,False,"[""S7""]",[],"Finish all scheduled study no later than 2027-02-05, inclusive.",
+NTSP03,study_planning,available_time,True,True,True,False,False,"[""S4""]",[],"Even if a day has several short sessions, their combined length must stay within 45 minutes.",
+NTSP03,study_planning,topics,True,True,True,False,False,"[""S5"", ""S6"", ""S8""]",[],"Cover these exact topic labels: ""Aquifer Recharge"", ""Hydraulic Head"", ""Well Drawdown"".
+Give each one at least 10 minutes over the whole plan.
+Give ""Well Drawdown"" at least 35 minutes in total; this is a firm extra requirement.",
+NTSP03,study_planning,priorities,True,True,True,False,False,"[""S8""]",[],"Give ""Well Drawdown"" at least 35 minutes in total; this is a firm extra requirement.",
+NTSP04,study_planning,deadline,True,True,True,False,False,"[""S8""]",[],"The last usable study date is 2027-02-06, and sessions may fall on that day.",
+NTSP04,study_planning,available_time,True,True,False,True,False,"[""S7""]","[""quote_has_no_daily_time_allowance_cue""]",,"exhaustive,prompt_only,value_based"
+NTSP04,study_planning,topics,True,True,True,False,False,"[""S4"", ""S5""]",[],"Use the exact labels ""Tinctures"", ""Shield Divisions"", ""Heraldic Charges"" in the schedule, with at least 15 total minutes assigned to each.
+Within that coverage, ""Tinctures"" needs at least 25 total minutes.",
+NTSP04,study_planning,priorities,True,True,True,False,False,"[""S6""]",[],I have no preferred topic order and no additional minimum-time requirements.,
+NTSP05,study_planning,deadline,True,True,True,False,False,"[""S4""]",[],"Keep the timetable within the window ending 2027-02-07, with the end date included.",
+NTSP05,study_planning,available_time,True,True,True,False,False,"[""S7""]",[],"My daily study allowance is 50 minutes maximum, not 50 minutes per topic.",
+NTSP05,study_planning,topics,True,True,True,False,False,"[""S5"", ""S6""]",[],"Required coverage is ""Scent Imprinting"", ""Search Grids"", ""Indication Cues"".
+The minimum study allocation for each topic is 20 minutes across all dates.",
+NTSP05,study_planning,priorities,True,True,True,False,False,"[""S8""]",[],"I specifically require a minimum of 40 minutes altogether on ""Indication Cues"".",
+NTSP06,study_planning,deadline,True,True,False,True,False,"[""S5""]","[""quote_has_no_explicit_endpoint_cue""]",,"exhaustive,prompt_only,value_based"
+NTSP06,study_planning,available_time,True,True,True,False,False,"[""S4""]",[],Keep each daily total at or below 40 minutes across all study blocks.,
+NTSP06,study_planning,topics,True,True,True,False,False,"[""S6"", ""S7""]",[],"I need 25 minutes or more in total on each of ""Work Offsets"", ""Tool Compensation"", ""Stepovers"", ""Climb Milling"".
+Those are the required topic labels.",
+NTSP06,study_planning,priorities,True,False,False,True,False,[],[],,"exhaustive,prompt_only,value_based"
+NTSP07,study_planning,deadline,True,True,True,False,False,"[""S4""]",[],"Use only dates from 2027-02-01 through 2027-02-04, including the final date.",
+NTSP07,study_planning,available_time,True,True,True,False,False,"[""S5""]",[],"I can spare at most 55 minutes per day, counting every topic together.",
+NTSP07,study_planning,topics,False,True,True,False,True,"[""S1"", ""S2"", ""S6""]",[],"I am practising consecutive interpreting with short recordings.
+Help me schedule the note-taking skills.
+Give ""Reformulation"" at least 25 minutes in total; this is a firm extra requirement.",
+NTSP07,study_planning,priorities,True,True,True,False,False,"[""S6""]",[],"Give ""Reformulation"" at least 25 minutes in total; this is a firm extra requirement.",
+NTSP08,study_planning,deadline,True,True,False,True,False,"[""S5""]","[""quote_has_no_explicit_endpoint_cue""]",,"exhaustive,prompt_only,value_based"
+NTSP08,study_planning,available_time,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTSP08,study_planning,topics,True,True,True,False,False,"[""S4""]",[],"The syllabus consists of ""Webbing Tension"", ""Spring Lashing"", ""Fabric Cutting""; each named topic needs a minimum of 15 minutes in total.",
+NTSP08,study_planning,priorities,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTSP09,study_planning,deadline,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTSP09,study_planning,available_time,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTSP09,study_planning,topics,True,True,True,False,False,"[""S4"", ""S5""]",[],"Cover these exact topic labels: ""Anchor Escapements"", ""Balance Wheels"", ""Gear Trains"".
+Give each one at least 20 minutes over the whole plan.",
+NTSP09,study_planning,priorities,True,True,True,False,False,"[""S6""]",[],"A little variety in the ordering would be nice, but it is optional and adds no minimum-time requirements.",
+NTSP10,study_planning,deadline,True,True,True,False,False,"[""S7""]",[],"The last usable study date is 2027-02-07, and sessions may fall on that day.",
+NTSP10,study_planning,available_time,True,True,False,True,False,"[""S6""]","[""quote_has_no_daily_time_allowance_cue""]",,"exhaustive,prompt_only,value_based"
+NTSP10,study_planning,topics,True,True,True,False,False,"[""S4"", ""S5""]",[],"Use the exact labels ""Incisors"", ""Premolars"", ""Molars"" in the schedule, with at least 25 total minutes assigned to each.
+Within that coverage, ""Incisors"" needs at least 35 total minutes.",
+NTSP10,study_planning,priorities,False,True,True,False,True,"[""S5""]",[],"Within that coverage, ""Incisors"" needs at least 35 total minutes.",
+NTSP11,study_planning,deadline,False,False,False,False,False,[],[],,"exhaustive,value_based"
+NTSP11,study_planning,available_time,True,True,True,False,False,"[""S4""]",[],"My daily study allowance is 25 minutes maximum, not 25 minutes per topic.",
+NTSP11,study_planning,topics,False,True,True,False,True,"[""S1"", ""S2""]",[],"I want to make sense of a beginner contract-bridge bidding lesson.
+Divide the revision into study sessions.",
+NTSP11,study_planning,priorities,False,False,False,False,False,[],[],,"exhaustive,value_based"
+NTSP12,study_planning,deadline,True,True,False,True,False,"[""S4""]","[""quote_has_no_explicit_endpoint_cue""]",,"exhaustive,value_based"
+NTSP12,study_planning,available_time,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTSP12,study_planning,topics,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTSP12,study_planning,priorities,True,True,True,False,False,"[""S5""]",[],I have no preferred topic order and no additional minimum-time requirements.,
+NTSP13,study_planning,deadline,False,False,False,False,False,[],[],,"exhaustive,value_based"
+NTSP13,study_planning,available_time,True,True,True,False,False,"[""S4""]",[],"I can spare at most 45 minutes per day, counting every topic together.",
+NTSP13,study_planning,topics,True,True,True,False,False,"[""S5"", ""S6"", ""S7""]",[],"Include ""Methods Appraisal"", ""Reviewer Conflicts"", ""Constructive Reports"", using those topic names.
+Allocate at least 20 cumulative minutes to every topic.
+Within that coverage, ""Methods Appraisal"" needs at least 30 total minutes.",
+NTSP13,study_planning,priorities,False,True,True,False,True,"[""S7""]",[],"Within that coverage, ""Methods Appraisal"" needs at least 30 total minutes.",
+NTSP14,study_planning,deadline,True,True,False,True,False,"[""S5""]","[""quote_has_no_explicit_endpoint_cue""]",,"exhaustive,prompt_only,value_based"
+NTSP14,study_planning,available_time,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTSP14,study_planning,topics,True,True,True,False,False,"[""S4""]",[],"The syllabus consists of ""Indemnity"", ""Insurable Interest"", ""Subrogation""; each named topic needs a minimum of 25 minutes in total.",
+NTSP14,study_planning,priorities,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTSP15,study_planning,deadline,True,True,True,False,False,"[""S5""]",[],"Finish all scheduled study no later than 2027-02-07, inclusive.",
+NTSP15,study_planning,available_time,True,True,True,False,False,"[""S4""]",[],"Even if a day has several short sessions, their combined length must stay within 50 minutes.",
+NTSP15,study_planning,topics,False,True,True,False,True,"[""S1"", ""S2""]",[],"I want to understand the assembly drawings in a stained-glass course.
+Schedule the theory learning before the demonstration.",
+NTSP15,study_planning,priorities,False,True,True,False,True,"[""S2""]",[],Schedule the theory learning before the demonstration.,
+NTSP16,study_planning,deadline,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTSP16,study_planning,available_time,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTSP16,study_planning,topics,True,True,True,False,False,"[""S4"", ""S5""]",[],"Use the exact labels ""Foundation Bundles"", ""Stitch Spacing"", ""Rim Finishing"" in the schedule, with at least 15 total minutes assigned to each.
+Within that coverage, ""Foundation Bundles"" needs at least 25 total minutes.",
+NTSP16,study_planning,priorities,False,True,True,False,True,"[""S5""]",[],"Within that coverage, ""Foundation Bundles"" needs at least 25 total minutes.",
+NTSP17,study_planning,deadline,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTSP17,study_planning,available_time,True,True,True,False,False,"[""S4""]",[],"My daily study allowance is 55 minutes maximum, not 55 minutes per topic.",
+NTSP17,study_planning,topics,False,True,True,False,True,"[""S1"", ""S2""]",[],"I am reviewing lesson diagrams about laminated pastry.
+Arrange the preparation as a few study sessions.",
+NTSP17,study_planning,priorities,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTSP18,study_planning,deadline,True,True,False,True,False,"[""S4""]","[""quote_has_no_explicit_endpoint_cue""]",,"exhaustive,prompt_only,value_based"
+NTSP18,study_planning,available_time,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTSP18,study_planning,topics,False,True,True,False,True,"[""S1""]",[],I want to understand the vocabulary used in a cheese-affinage lecture.,
+NTSP18,study_planning,priorities,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTSP19,study_planning,deadline,True,True,True,False,False,"[""S4""]",[],"Use only dates from 2027-02-01 through 2027-02-06, including the final date.",
+NTSP19,study_planning,available_time,True,True,True,False,False,"[""S5""]",[],"I can spare at most 65 minutes per day, counting every topic together.",
+NTSP19,study_planning,topics,True,True,True,False,False,"[""S6"", ""S7"", ""S8""]",[],"Include ""Top Notes"", ""Heart Notes"", ""Base Notes"", using those topic names.
+Allocate at least 10 cumulative minutes to every topic.
+Within that coverage, ""Top Notes"" needs at least 20 total minutes.",
+NTSP19,study_planning,priorities,False,True,True,False,True,"[""S8""]",[],"Within that coverage, ""Top Notes"" needs at least 20 total minutes.",
+NTSP20,study_planning,deadline,True,True,False,True,False,"[""S5""]","[""quote_has_no_explicit_endpoint_cue""]",,"exhaustive,prompt_only,value_based"
+NTSP20,study_planning,available_time,True,True,False,True,False,"[""S6""]","[""quote_has_no_daily_time_allowance_cue""]",,"exhaustive,prompt_only,value_based"
+NTSP20,study_planning,topics,True,True,True,False,False,"[""S4""]",[],"The syllabus consists of ""Stroke Entry"", ""Ink Loading"", ""Brush Pressure""; each named topic needs a minimum of 15 minutes in total.",
+NTSP20,study_planning,priorities,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTSP21,study_planning,deadline,True,True,True,False,False,"[""S7""]",[],"Finish all scheduled study no later than 2027-02-03, inclusive.",
+NTSP21,study_planning,available_time,True,True,True,False,False,"[""S4""]",[],"Even if a day has several short sessions, their combined length must stay within 25 minutes.",
+NTSP21,study_planning,topics,True,True,True,False,False,"[""S5"", ""S6""]",[],"Cover these exact topic labels: ""Movement Symbols"", ""Staff Layout"", ""Direction Signs"".
+Give each one at least 20 minutes over the whole plan.",
+NTSP21,study_planning,priorities,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTSP22,study_planning,deadline,True,True,True,False,False,"[""S7""]",[],"The last usable study date is 2027-02-04, and sessions may fall on that day.",
+NTSP22,study_planning,available_time,True,True,False,True,False,"[""S6""]","[""quote_has_no_daily_time_allowance_cue""]",,"exhaustive,prompt_only,value_based"
+NTSP22,study_planning,topics,True,True,True,False,False,"[""S4"", ""S5""]",[],"Use the exact labels ""Advantage Decisions"", ""Offside Lines"", ""Restart Procedures"" in the schedule, with at least 25 total minutes assigned to each.
+Within that coverage, ""Advantage Decisions"" needs at least 35 total minutes.",
+NTSP22,study_planning,priorities,False,True,True,False,True,"[""S5""]",[],"Within that coverage, ""Advantage Decisions"" needs at least 35 total minutes.",
+NTSP23,study_planning,deadline,True,True,True,False,False,"[""S4""]",[],"Keep the timetable within the window ending 2027-02-05, with the end date included.",
+NTSP23,study_planning,available_time,True,True,True,False,False,"[""S7""]",[],"My daily study allowance is 45 minutes maximum, not 45 minutes per topic.",
+NTSP23,study_planning,topics,True,True,True,False,False,"[""S5"", ""S6""]",[],"Required coverage is ""Referent Placement"", ""Classifier Handshapes"", ""Role Shifts"".
+The minimum study allocation for each topic is 10 minutes across all dates.",
+NTSP23,study_planning,priorities,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTSP24,study_planning,deadline,True,True,False,True,False,"[""S5""]","[""quote_has_no_explicit_endpoint_cue""]",,"exhaustive,prompt_only,value_based"
+NTSP24,study_planning,available_time,True,True,True,False,False,"[""S4""]",[],Keep each daily total at or below 30 minutes across all study blocks.,
+NTSP24,study_planning,topics,True,True,True,False,False,"[""S6"", ""S7""]",[],"I need 15 minutes or more in total on each of ""Stock Counts"", ""Reorder Points"", ""Safety Stock"".
+Those are the required topic labels.",
+NTSP24,study_planning,priorities,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTSP25,study_planning,deadline,True,True,True,False,False,"[""S4""]",[],"Use only dates from 2027-02-01 through 2027-02-07, including the final date.",
+NTSP25,study_planning,available_time,True,True,True,False,False,"[""S5""]",[],"I can spare at most 50 minutes per day, counting every topic together.",
+NTSP25,study_planning,topics,True,True,True,False,False,"[""S6"", ""S7"", ""S8""]",[],"Include ""Wand Signals"", ""Stand Clearances"", ""Pushback Coordination"", using those topic names.
+Allocate at least 20 cumulative minutes to every topic.
+Within that coverage, ""Wand Signals"" needs at least 30 total minutes.",
+NTSP25,study_planning,priorities,False,True,True,False,True,"[""S8""]",[],"Within that coverage, ""Wand Signals"" needs at least 30 total minutes.",
+NTSP26,study_planning,deadline,True,True,False,True,False,"[""S5""]","[""quote_has_no_explicit_endpoint_cue""]",,"exhaustive,prompt_only,value_based"
+NTSP26,study_planning,available_time,True,True,False,True,False,"[""S6""]","[""quote_has_no_daily_time_allowance_cue""]",,"exhaustive,prompt_only,value_based"
+NTSP26,study_planning,topics,True,True,True,False,False,"[""S4""]",[],"The syllabus consists of ""Task Scenarios"", ""Think-aloud Prompts"", ""Usability Findings""; each named topic needs a minimum of 25 minutes in total.",
+NTSP26,study_planning,priorities,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTSP27,study_planning,deadline,True,True,True,False,False,"[""S7""]",[],"Finish all scheduled study no later than 2027-02-04, inclusive.",
+NTSP27,study_planning,available_time,True,True,True,False,False,"[""S4""]",[],"Even if a day has several short sessions, their combined length must stay within 55 minutes.",
+NTSP27,study_planning,topics,True,True,True,False,False,"[""S5"", ""S6""]",[],"Cover these exact topic labels: ""Lug Sequencing"", ""Head Seating"", ""Resonant Head Tension"".
+Give each one at least 10 minutes over the whole plan.",
+NTSP27,study_planning,priorities,False,False,False,False,False,[],[],,"exhaustive,prompt_only,value_based"
+NTSP28,study_planning,deadline,True,True,True,False,False,"[""S7""]",[],"The last usable study date is 2027-02-05, and sessions may fall on that day.",
+NTSP28,study_planning,available_time,True,True,False,True,False,"[""S6""]","[""quote_has_no_daily_time_allowance_cue""]",,
+NTSP28,study_planning,topics,True,True,True,False,False,"[""S4"", ""S5""]",[],"Use the exact labels ""Protein Stains"", ""Oil Emulsification"", ""Dye Transfer"" in the schedule, with at least 15 total minutes assigned to each.
+Within that coverage, ""Protein Stains"" needs at least 25 total minutes.",
+NTSP28,study_planning,priorities,False,True,True,False,True,"[""S5""]",[],"Within that coverage, ""Protein Stains"" needs at least 25 total minutes.",
+NTSP29,study_planning,deadline,True,True,True,False,False,"[""S4""]",[],"Keep the timetable within the window ending 2027-02-06, with the end date included.",
+NTSP29,study_planning,available_time,True,True,True,False,False,"[""S7""]",[],"My daily study allowance is 65 minutes maximum, not 65 minutes per topic.",
+NTSP29,study_planning,topics,True,True,True,False,False,"[""S5"", ""S6""]",[],"Required coverage is ""Forechecking"", ""Defensive Zones"", ""Line Changes"".
+The minimum study allocation for each topic is 20 minutes across all dates.",
+NTSP29,study_planning,priorities,False,False,False,False,False,[],[],,
+NTSP30,study_planning,deadline,True,True,False,True,False,"[""S5""]","[""quote_has_no_explicit_endpoint_cue""]",,
+NTSP30,study_planning,available_time,True,True,True,False,False,"[""S4""]",[],Keep each daily total at or below 45 minutes across all study blocks.,
+NTSP30,study_planning,topics,True,True,True,False,False,"[""S6"", ""S7""]",[],"I need 30 minutes or more in total on each of ""Nib Alignment"", ""Feed Channels"", ""Sac Replacement"".
+Those are the required topic labels.",
+NTSP30,study_planning,priorities,False,False,False,False,False,[],[],,

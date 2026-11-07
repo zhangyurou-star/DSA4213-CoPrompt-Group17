@@ -1,0 +1,234 @@
+{
+  "cache_key": "eeef71251a103d1227d04e8230986fd9108f6c49a2fc52777c80346ab5021488",
+  "source_case_id": "NDSP20",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Batter Angles",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Through Stones",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Hearting",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Batter Angles",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Through Stones",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Hearting",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-07",
+        "topic": "Batter Angles",
+        "minutes": 25
+      }
+    ],
+    "summary": "Calculated from the schedule: 175 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 25 minutes; 2027-02-03: 25 minutes; 2027-02-04: 25 minutes; 2027-02-05: 25 minutes; 2027-02-06: 25 minutes; 2027-02-07: 25 minutes. Topic totals: Batter Angles: 75 minutes; Hearting: 50 minutes; Through Stones: 50 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Batter Angles\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Through Stones\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Hearting\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Batter Angles\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Through Stones\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Hearting\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-07\",\n      \"topic\": \"Batter Angles\",\n      \"minutes\": 25\n    }\n  ],\n  \"summary\": \"All three topics—Batter Angles, Through Stones, and Hearting—have been allocated a minimum of 25 minutes each, with sessions distributed across the available study window from 2027-02-01 to 2027-02-07. No single day exceeds the 70-minute limit. The total study time is 175 minutes, fully compliant with all constraints.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Batter Angles",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Through Stones",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Hearting",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Batter Angles",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Through Stones",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Hearting",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-07",
+            "topic": "Batter Angles",
+            "minutes": 25
+          }
+        ],
+        "summary": "All three topics—Batter Angles, Through Stones, and Hearting—have been allocated a minimum of 25 minutes each, with sessions distributed across the available study window from 2027-02-01 to 2027-02-07. No single day exceeds the 70-minute limit. The total study time is 175 minutes, fully compliant with all constraints."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-07; that date is still available."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 175,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 25,
+        "2027-02-03": 25,
+        "2027-02-04": 25,
+        "2027-02-05": 25,
+        "2027-02-06": 25,
+        "2027-02-07": 25
+      },
+      "topic_minutes": [
+        {
+          "topic": "Batter Angles",
+          "normalized_topic": "batter angles",
+          "minutes": 75
+        },
+        {
+          "topic": "Hearting",
+          "normalized_topic": "hearting",
+          "minutes": 50
+        },
+        {
+          "topic": "Through Stones",
+          "normalized_topic": "through stones",
+          "minutes": 50
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-07; that date is still available."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 175,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 25,
+        "2027-02-03": 25,
+        "2027-02-04": 25,
+        "2027-02-05": 25,
+        "2027-02-06": 25,
+        "2027-02-07": 25
+      },
+      "topic_minutes": [
+        {
+          "topic": "Batter Angles",
+          "normalized_topic": "batter angles",
+          "minutes": 75
+        },
+        {
+          "topic": "Hearting",
+          "normalized_topic": "hearting",
+          "minutes": 50
+        },
+        {
+          "topic": "Through Stones",
+          "normalized_topic": "through stones",
+          "minutes": 50
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-07; that date is still available."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "All three topics—Batter Angles, Through Stones, and Hearting—have been allocated a minimum of 25 minutes each, with sessions distributed across the available study window from 2027-02-01 to 2027-02-07. No single day exceeds the 70-minute limit. The total study time is 175 minutes, fully compliant with all constraints.",
+    "derived_summary": "Calculated from the schedule: 175 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 25 minutes; 2027-02-03: 25 minutes; 2027-02-04: 25 minutes; 2027-02-05: 25 minutes; 2027-02-06: 25 minutes; 2027-02-07: 25 minutes. Topic totals: Batter Angles: 75 minutes; Hearting: 50 minutes; Through Stones: 50 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

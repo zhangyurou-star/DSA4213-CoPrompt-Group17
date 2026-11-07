@@ -1,0 +1,49 @@
+{
+  "cache_key": "a109dcc33d63002deb39c1dbd99ad39f4215fdbff242a22f117d08f74be229fd",
+  "source_case_id": "NDCW10",
+  "source_policy": "direct",
+  "output": {
+    "text": "Probe Lark\nMission Analysts,\n\nAt 2027-02-01T03:17:42 UTC, Probe Lark detected seven pulses originating from beneath an icy ridge at coordinates 67.3°S, 142.1°W. Signal characteristics indicate non-random timing and consistent amplitude, suggesting potential artificial modulation. No surface image was obtained due to the camera shutter remaining closed during the approach phase. Diagnostic logs confirm the shutter actuator received no command to open; no mechanical fault was detected in the imaging system. The absence of surface image precludes visual correlation with the pulse source. A repeat listening pass is scheduled for 2027-02-01T04:05:00 UTC to verify signal persistence and refine source localization. All other systems remain nominal. Probe Lark"
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Probe Lark\\nMission Analysts,\\n\\nAt 2027-02-01T03:17:42 UTC, Probe Lark detected seven pulses originating from beneath an icy ridge at coordinates 67.3°S, 142.1°W. Signal characteristics indicate non-random timing and consistent amplitude, suggesting potential artificial modulation. No surface image was obtained due to the camera shutter remaining closed during the approach phase. Diagnostic logs confirm the shutter actuator received no command to open; no mechanical fault was detected in the imaging system. The absence of surface image precludes visual correlation with the pulse source. A repeat listening pass is scheduled for 2027-02-01T04:05:00 UTC to verify signal persistence and refine source localization. All other systems remain nominal. Probe Lark\"\n}",
+      "parsed": {
+        "text": "Probe Lark\nMission Analysts,\n\nAt 2027-02-01T03:17:42 UTC, Probe Lark detected seven pulses originating from beneath an icy ridge at coordinates 67.3°S, 142.1°W. Signal characteristics indicate non-random timing and consistent amplitude, suggesting potential artificial modulation. No surface image was obtained due to the camera shutter remaining closed during the approach phase. Diagnostic logs confirm the shutter actuator received no command to open; no mechanical fault was detected in the imaging system. The absence of surface image precludes visual correlation with the pulse source. A repeat listening pass is scheduled for 2027-02-01T04:05:00 UTC to verify signal persistence and refine source localization. All other systems remain nominal. Probe Lark"
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 114
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 114
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

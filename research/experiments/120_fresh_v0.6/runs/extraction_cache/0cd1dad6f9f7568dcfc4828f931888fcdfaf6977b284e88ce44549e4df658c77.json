@@ -1,0 +1,130 @@
+{
+  "cache_key": "0cd1dad6f9f7568dcfc4828f931888fcdfaf6977b284e88ce44549e4df658c77",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S5"
+    ],
+    "available_time": [
+      "S7"
+    ],
+    "topics": [
+      "S4"
+    ],
+    "priorities": [
+      "S6"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 54,
+      "text": "A geography lesson includes photographs of moving ice."
+    },
+    {
+      "id": "S2",
+      "start": 55,
+      "end": 100,
+      "text": "Build a study timetable for glacier dynamics."
+    },
+    {
+      "id": "S3",
+      "start": 101,
+      "end": 121,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 122,
+      "end": 266,
+      "text": "The syllabus consists of \"Glacier Mass Balance\", \"Crevasse Formation\", \"Basal Sliding\"; each named topic needs a minimum of 25 minutes in total."
+    },
+    {
+      "id": "S5",
+      "start": 267,
+      "end": 334,
+      "text": "My study window closes on 2027-02-04; that date is still available."
+    },
+    {
+      "id": "S6",
+      "start": 335,
+      "end": 442,
+      "text": "I would prefer to encounter \"Basal Sliding\" early; treat that as a suggestion only, not a time requirement."
+    },
+    {
+      "id": "S7",
+      "start": 443,
+      "end": 512,
+      "text": "The total of all sessions on any one date must not exceed 35 minutes."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": null,
+    "topics": "The syllabus consists of \"Glacier Mass Balance\", \"Crevasse Formation\", \"Basal Sliding\"; each named topic needs a minimum of 25 minutes in total.",
+    "priorities": "I would prefer to encounter \"Basal Sliding\" early; treat that as a suggestion only, not a time requirement."
+  },
+  "evidence": {
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 122,
+        "end": 266,
+        "quote": "The syllabus consists of \"Glacier Mass Balance\", \"Crevasse Formation\", \"Basal Sliding\"; each named topic needs a minimum of 25 minutes in total."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 335,
+        "end": 442,
+        "quote": "I would prefer to encounter \"Basal Sliding\" early; treat that as a suggestion only, not a time requirement."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "deadline",
+      "proposed_evidence": [
+        "S5"
+      ],
+      "proposed_value": "My study window closes on 2027-02-04; that date is still available.",
+      "reason": "quote_has_no_explicit_endpoint_cue"
+    },
+    {
+      "field_id": "available_time",
+      "proposed_evidence": [
+        "S7"
+      ],
+      "proposed_value": "The total of all sessions on any one date must not exceed 35 minutes.",
+      "reason": "quote_has_no_daily_time_allowance_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S5\"],\"available_time\":[\"S7\"],\"topics\":[\"S4\"],\"priorities\":[\"S6\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S5"
+          ],
+          "available_time": [
+            "S7"
+          ],
+          "topics": [
+            "S4"
+          ],
+          "priorities": [
+            "S6"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

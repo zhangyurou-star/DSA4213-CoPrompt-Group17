@@ -1,0 +1,33 @@
+CoPrompt Fresh 120-Case Analysis
+
+Fresh cases: 40 design, 20 validation, and 60 test. The two phases of the 12-case pilot produced 48 trajectories; the other 28 design cases produced 112, for 160 design trajectories in total.
+All 60 validation, 240 formal test, and 20 diagnostic trajectories are complete. No previous case outputs or caches were imported.
+Pilot gate: both direct and exhaustive outputs were parseable and scored successfully in 12/12 cases.
+All 20 validation cases selected lambda=0.25.
+
+60 Fresh Test Cases
+direct: mean hard-constraint score 0.7072; mean questions 0.000; all constraints passed 30/60.
+exhaustive: mean hard-constraint score 0.7878; mean questions 1.183; all constraints passed 35/60.
+prompt_only: mean hard-constraint score 0.7794; mean questions 1.017; all constraints passed 35/60.
+value_based: mean hard-constraint score 0.7989; mean questions 1.183; all constraints passed 36/60.
+The following differences are value_based minus the comparison strategy. A negative question difference means that value_based asked fewer questions.
+Versus direct: quality difference 0.0917, 95% interval [0.030555555555555555, 0.15694444444444444]; question difference 1.183, 95% interval [0.9333333333333333, 1.45].
+Versus exhaustive: quality difference 0.0111, 95% interval [-0.011111111111111112, 0.03888888888888888]; question difference 0.000, 95% interval [0.0, 0.0].
+Versus prompt_only: quality difference 0.0194, 95% interval [-0.023611111111111114, 0.0625]; question difference 0.167, 95% interval [0.06666666666666667, 0.2833333333333333].
+
+The 20-case diagnostic comparison uses the same cases and is not an additional independent replication.
+value_based minus importance_one: quality difference 0.0000, 95% interval [0.0, 0.0]; question difference 0.000, 95% interval [0.0, 0.0].
+importance_one minus exhaustive: quality difference 0.0000, 95% interval [0.0, 0.0]; question difference 0.000, 95% interval [0.0, 0.0].
+
+Fresh study accounted cost $0.08404924; prior cost $0.08857385; cumulative cost $0.17262309; authorized cumulative limit $2.00000000; remaining $1.82737691.
+Reserves for unknown costs of failed calls remain included. Cache hits are neither new billed calls nor independent model samples.
+
+Human review materials: two separately randomized packets with 100 outputs each. Strategy names and automatic quality scores are hidden. The private mapping is for the coordinator only and must not be given to reviewers.
+Ratings and reviewer declarations are initially blank. Re-running the analysis preserves human-entered fields and does not claim that two-person review or actual blinding has been completed or confirmed.
+
+This study uses 120 newly authored cases: 40 design cases for workflow checks, 20 validation cases for selecting lambda, and 60 new test cases for the primary comparison.
+The 20 diagnostic cases are a subset of the 60 test cases and are not additional independent replications.
+The 95% intervals reflect variation across this case distribution only. Each exact input retains one first model response; the intervals do not cover variability from new model samples. No multiple-comparison correction was applied.
+Automatic hard-constraint scores do not establish overall content quality or actual user utility. Do not report human ratings or inter-rater agreement until the two-person review is completed.
+Actual assignment timing, authorship and cross-review exclusions, reviewer independence, and blinding must be confirmed by people. Masked materials alone do not prove that reviewers have not previously seen the outputs.
+Isolated authoring of new cases does not mean that the coordinator was unaware of historical results. Report this limitation as stated in the registration documents.

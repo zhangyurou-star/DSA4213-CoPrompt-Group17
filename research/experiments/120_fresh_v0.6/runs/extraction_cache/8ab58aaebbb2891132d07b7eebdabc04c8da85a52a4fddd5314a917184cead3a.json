@@ -1,0 +1,102 @@
+{
+  "cache_key": "8ab58aaebbb2891132d07b7eebdabc04c8da85a52a4fddd5314a917184cead3a",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [],
+    "available_time": [],
+    "topics": [
+      "S4",
+      "S5"
+    ],
+    "priorities": [
+      "S5"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 42,
+      "text": "A craft group is comparing coiled baskets."
+    },
+    {
+      "id": "S2",
+      "start": 43,
+      "end": 104,
+      "text": "I need a study plan for recognizing how they are constructed."
+    },
+    {
+      "id": "S3",
+      "start": 105,
+      "end": 125,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 126,
+      "end": 268,
+      "text": "Use the exact labels \"Foundation Bundles\", \"Stitch Spacing\", \"Rim Finishing\" in the schedule, with at least 15 total minutes assigned to each."
+    },
+    {
+      "id": "S5",
+      "start": 269,
+      "end": 344,
+      "text": "Within that coverage, \"Foundation Bundles\" needs at least 25 total minutes."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": null,
+    "topics": "Use the exact labels \"Foundation Bundles\", \"Stitch Spacing\", \"Rim Finishing\" in the schedule, with at least 15 total minutes assigned to each.\nWithin that coverage, \"Foundation Bundles\" needs at least 25 total minutes.",
+    "priorities": "Within that coverage, \"Foundation Bundles\" needs at least 25 total minutes."
+  },
+  "evidence": {
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 126,
+        "end": 268,
+        "quote": "Use the exact labels \"Foundation Bundles\", \"Stitch Spacing\", \"Rim Finishing\" in the schedule, with at least 15 total minutes assigned to each."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 269,
+        "end": 344,
+        "quote": "Within that coverage, \"Foundation Bundles\" needs at least 25 total minutes."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 269,
+        "end": 344,
+        "quote": "Within that coverage, \"Foundation Bundles\" needs at least 25 total minutes."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[],\"available_time\":[],\"topics\":[\"S4\",\"S5\"],\"priorities\":[\"S5\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [],
+          "available_time": [],
+          "topics": [
+            "S4",
+            "S5"
+          ],
+          "priorities": [
+            "S5"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

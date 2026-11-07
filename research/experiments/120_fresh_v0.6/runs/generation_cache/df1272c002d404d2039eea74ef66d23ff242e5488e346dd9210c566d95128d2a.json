@@ -1,0 +1,89 @@
+{
+  "cache_key": "df1272c002d404d2039eea74ef66d23ff242e5488e346dd9210c566d95128d2a",
+  "source_case_id": "NDCW13",
+  "source_policy": "direct",
+  "output": {
+    "text": "Ladies and gentlemen of the jury, I stand before you not to accuse, but to challenge the weight of suspicion. The prosecution has built a story around a single, unproven assumption: that because the silver bell is missing, and because an open window was found, the accused must be guilty. But let me remind you—this is not a case of proof, but of inference. There is no evidence that the accused touched the silver bell. There is no testimony that they were ever in the room. In fact, no witness saw them enter. No witness saw them leave. No witness saw them near the bell at all.\n\nAn open window does not mean a thief. It could be a breeze. It could be a forgotten moment. And a feather on the sill? That is not a clue—it is a coincidence. A feather could have drifted in from anywhere. It does not point to guilt. It does not even suggest intent.\n\nWe are asked to believe that the absence of evidence is evidence of absence. But that is not how justice works. Justice demands more than suspicion. It demands proof. And here, there is none. The silver bell is gone, yes—but so is the truth of who took it. Until we have more than an open window and a feather, we cannot convict. Let us not let fear of the unknown become the foundation of a verdict. The burden of proof rests with the prosecution. And that burden has not been met. Thank you."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Ladies and gentlemen of the jury, I stand before you not to accuse, but to challenge the weight of suspicion. The prosecution has built a story around a single, unproven assumption: that because the silver bell is missing, and because an open window was found, the accused must be guilty. But let me remind you—this is not a case of proof, but of inference. There is no evidence that the accused touched the silver bell. There is no testimony that they were ever in the room. In fact, no witness saw them enter. No witness saw them leave. No witness saw them near the bell at all.\\n\\nAn open window does not mean a thief. It could be a breeze. It could be a forgotten moment. And a feather on the sill? That is not a clue—it is a coincidence. A feather could have drifted in from anywhere. It does not point to guilt. It does not even suggest intent.\\n\\nWe are asked to believe that the absence of evidence is evidence of absence. But that is not how justice works. Justice demands more than suspicion. It demands proof. And here, there is none. The silver bell is gone, yes—but so is the truth of who took it. Until we have more than an open window and a feather, we cannot convict. Let us not let fear of the unknown become the foundation of a verdict. The burden of proof rests with the prosecution. And that burden has not been met. Thank you.\"\n}",
+      "parsed": {
+        "text": "Ladies and gentlemen of the jury, I stand before you not to accuse, but to challenge the weight of suspicion. The prosecution has built a story around a single, unproven assumption: that because the silver bell is missing, and because an open window was found, the accused must be guilty. But let me remind you—this is not a case of proof, but of inference. There is no evidence that the accused touched the silver bell. There is no testimony that they were ever in the room. In fact, no witness saw them enter. No witness saw them leave. No witness saw them near the bell at all.\n\nAn open window does not mean a thief. It could be a breeze. It could be a forgotten moment. And a feather on the sill? That is not a clue—it is a coincidence. A feather could have drifted in from anywhere. It does not point to guilt. It does not even suggest intent.\n\nWe are asked to believe that the absence of evidence is evidence of absence. But that is not how justice works. Justice demands more than suspicion. It demands proof. And here, there is none. The silver bell is gone, yes—but so is the truth of who took it. Until we have more than an open window and a feather, we cannot convict. Let us not let fear of the unknown become the foundation of a verdict. The burden of proof rests with the prosecution. And that burden has not been met. Thank you."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the silver bell",
+            "an open window",
+            "no witness saw"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Preserve these exact phrases: \"the silver bell\", \"an open window\", \"no witness saw\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 256
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the silver bell",
+            "an open window",
+            "no witness saw"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 256
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the silver bell",
+            "an open window",
+            "no witness saw"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

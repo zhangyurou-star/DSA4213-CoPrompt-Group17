@@ -1,0 +1,96 @@
+{
+  "cache_key": "29f5b33336408319012f98ccd68d16fa641b75f54f7d0e5a51d0061f4acda24c",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [],
+    "available_time": [
+      "S4"
+    ],
+    "topics": [
+      "S1",
+      "S2"
+    ],
+    "priorities": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 66,
+      "text": "I have a seminar on comparing the language of anonymous documents."
+    },
+    {
+      "id": "S2",
+      "start": 67,
+      "end": 114,
+      "text": "Plan my introductory authorship-analysis study."
+    },
+    {
+      "id": "S3",
+      "start": 115,
+      "end": 135,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 136,
+      "end": 206,
+      "text": "I can spare at most 50 minutes per day, counting every topic together."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": "I can spare at most 50 minutes per day, counting every topic together.",
+    "topics": "I have a seminar on comparing the language of anonymous documents.\nPlan my introductory authorship-analysis study.",
+    "priorities": null
+  },
+  "evidence": {
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 136,
+        "end": 206,
+        "quote": "I can spare at most 50 minutes per day, counting every topic together."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S1",
+        "start": 0,
+        "end": 66,
+        "quote": "I have a seminar on comparing the language of anonymous documents."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 67,
+        "end": 114,
+        "quote": "Plan my introductory authorship-analysis study."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[],\"available_time\":[\"S4\"],\"topics\":[\"S1\",\"S2\"],\"priorities\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [],
+          "available_time": [
+            "S4"
+          ],
+          "topics": [
+            "S1",
+            "S2"
+          ],
+          "priorities": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

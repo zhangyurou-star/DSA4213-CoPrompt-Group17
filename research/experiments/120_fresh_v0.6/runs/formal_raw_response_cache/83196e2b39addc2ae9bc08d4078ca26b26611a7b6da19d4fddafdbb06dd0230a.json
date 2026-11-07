@@ -1,0 +1,64 @@
+{
+  "key": "83196e2b39addc2ae9bc08d4078ca26b26611a7b6da19d4fddafdbb06dd0230a",
+  "raw": "{\n  \"text\": \"Your shelf is empty. Begin by adding a keepsake to start your collection. Each entry requires a title and a note to be saved. Don’t worry—your first entry can be revised later, so take your time crafting the perfect memory. Simply tap Add a keepsake to create your first item. A title and a note are all you need to begin. This space is yours to fill, one meaningful moment at a time. Your shelf is empty now, but it won’t stay that way for long.\"\n}",
+  "source_case_id": "NTCW30",
+  "source_variant": "direct",
+  "response_sha256": "9f636214cd3a3afd9c53465b8360d3cf4cfd9d8eaaeee288156ac97da7f4b009",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "generation",
+    "repair": false,
+    "repair_kind": null,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Complete the user's task using only the original request, public context and the visible clarification exchanges.\nDo not ask more questions. Honor all available requirements, including exact phrases and the full-text word count.\nvisible_constraints is a deterministic, partial checklist derived only from that visible text, not new user requirements.\nAlways honor the original visible text as well; absence from the checklist does not remove a requirement.\nDo not invent event details, promises, historical facts or beneficiary groups. Omit unavailable specifics or use clearly marked placeholders.\nTreat concrete dates, clock times, addresses, names, contact details, links, services and free-access claims as facts requiring visible support.\nPlausibility is not evidence. Do not add these details to make a notice sound complete or to reach its minimum word count.\nDo not claim a link is provided when none is available. Use neutral connective wording without adding factual commitments.\nReturn exactly one JSON object matching the supplied output schema, without Markdown fences or surrounding commentary.\nFor writing, put ALL headings, greetings, body and signature inside text.\nCopy required literal phrases unchanged. Draft near the middle of the full-text word range, then check the complete text length.\nWhen revising a length failure, rewrite the whole text toward the range midpoint while retaining every required literal; do not merely append or trim a final sentence.\nWord counting includes every heading and signature: letter/digit sequences, with internal apostrophes or hyphens, count as words.\nFor study plans, each schedule item has one complete topic name, a real ISO date and positive integer minutes;\nfirst compute each topic's required total, then allocate those minutes across the permitted days without exceeding any day's combined limit.\nA topic-specific minimum replaces a smaller general minimum for that topic; it is not an extra requirement to add twice.\nSplit a topic across days when needed. Use a compact schedule with only necessary sessions; do not repeat every topic on every day.\nCheck the sum of ALL sessions per date and the sum per exact topic label before returning. Keep summary short and consistent with schedule.\nIf a deadline or daily allowance is unknown, use a short conservative plan without claiming a guessed bound was supplied.\nNever add an unsupported numeric constraint. If visible requirements conflict, explain the conflict in the output rather than claim compliance.\nWrite in English."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"constrained_writing\", \"initial_request\": \"Write empty-state guidance for a fictional collection interface. Write 50 to 80 words altogether. Use this fictional material: The empty collection screen should say Your shelf is empty and offer Add a keepsake. Explain that each entry needs a title and a note, and that the first entry can be revised later. Required wording, verbatim: \\\"Your shelf is empty\\\", \\\"Add a keepsake\\\", \\\"a title and a note\\\". Execute now and do not pause for clarification.\", \"reference_date\": \"2027-02-01\", \"user_control\": \"execute_now\", \"clarifications\": [], \"visible_constraints\": {\"version\": \"visible-constraints-0.4.0\", \"domain\": \"constrained_writing\", \"constraints\": [{\"kind\": \"word_count\", \"parameters\": {\"min_words\": 50, \"max_words\": 80}, \"source\": [{\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"Write 50 to 80 words altogether.\"}]}], \"warnings\": [{\"reason\": \"quoted_text_not_clearly_a_positive_literal_requirement\", \"source\": {\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"Required wording, verbatim: \\\"Your shelf is empty\\\", \\\"Add a keepsake\\\", \\\"a title and a note\\\".\"}}]}, \"output_schema\": {\"$schema\": \"https://json-schema.org/draft/2020-12/schema\", \"type\": \"object\", \"properties\": {\"text\": {\"type\": \"string\", \"minLength\": 1, \"pattern\": \"\\\\S\"}}, \"required\": [\"text\"], \"additionalProperties\": false}}"
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

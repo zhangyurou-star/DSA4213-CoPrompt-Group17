@@ -1,0 +1,128 @@
+{
+  "cache_key": "c013b3599acde8505bebb3cdec459e5f3eb456baf0eb5b0ab1fdbef6bd33a2ea",
+  "source_case_id": "NTCW27",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "This certificate recognizes outstanding patient experimentation in the development of the paper turbine. The recipient exemplified turning questions into trials, approaching each challenge with curiosity and rigor. Failed versions were documented as diligently as successful ones, reflecting a deep commitment to learning through iteration. The paper turbine stands as a symbol of perseverance, creativity, and methodical inquiry. This achievement celebrates the journey of discovery, where every attempt contributed to meaningful progress—without external prize or recognition."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"This certificate honors exceptional dedication in the development of the paper turbine. Through patient experimentation, the recipient transformed curiosity into progress, turning questions into trials with unwavering focus. Each failed version was recorded with the same care as every success, demonstrating a profound commitment to learning. The paper turbine stands as a testament to resilience, innovation, and the value of meticulous inquiry. This achievement reflects a journey where persistence and methodical exploration led to meaningful discovery, without external recognition or prize.\"\n}",
+      "parsed": {
+        "text": "This certificate honors exceptional dedication in the development of the paper turbine. Through patient experimentation, the recipient transformed curiosity into progress, turning questions into trials with unwavering focus. Each failed version was recorded with the same care as every success, demonstrating a profound commitment to learning. The paper turbine stands as a testament to resilience, innovation, and the value of meticulous inquiry. This achievement reflects a journey where persistence and methodical exploration led to meaningful discovery, without external recognition or prize."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Keep the complete piece to 50–80 words."
+          }
+        ]
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "patient experimentation",
+            "the paper turbine",
+            "turning questions into trials"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Preserve these exact phrases: \"patient experimentation\", \"the paper turbine\", \"turning questions into trials\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 81}"
+  ],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"This certificate recognizes outstanding patient experimentation in the development of the paper turbine. The recipient exemplified turning questions into trials, approaching each challenge with curiosity and rigor. Failed versions were documented as diligently as successful ones, reflecting a deep commitment to learning through iteration. The paper turbine stands as a symbol of perseverance, creativity, and methodical inquiry. This achievement celebrates the journey of discovery, where every attempt contributed to meaningful progress—without external prize or recognition.\"\n}",
+    "parsed": {
+      "text": "This certificate recognizes outstanding patient experimentation in the development of the paper turbine. The recipient exemplified turning questions into trials, approaching each challenge with curiosity and rigor. Failed versions were documented as diligently as successful ones, reflecting a deep commitment to learning through iteration. The paper turbine stands as a symbol of perseverance, creativity, and methodical inquiry. This achievement celebrates the journey of discovery, where every attempt contributed to meaningful progress—without external prize or recognition."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 81
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        }
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "patient experimentation",
+            "the paper turbine",
+            "turning questions into trials"
+          ]
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 81}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 76
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        }
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "patient experimentation",
+            "the paper turbine",
+            "turning questions into trials"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

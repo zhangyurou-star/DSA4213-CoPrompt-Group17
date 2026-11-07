@@ -1,0 +1,159 @@
+{
+  "cache_key": "cd16c2c86788b5210034b9083e64801e830131a8bd325a261cdaa105f604ff66",
+  "source_case_id": "NDSP02",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Block Sections",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Interlocking",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Signal Aspects",
+        "minutes": 15
+      }
+    ],
+    "summary": "Calculated from the schedule: 45 minutes in total. Daily totals: 2027-02-01: 15 minutes; 2027-02-02: 15 minutes; 2027-02-03: 15 minutes. Topic totals: Block Sections: 15 minutes; Interlocking: 15 minutes; Signal Aspects: 15 minutes. Recognized visible constraint checks passed; this does not verify every user requirement."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Block Sections\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Interlocking\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Signal Aspects\",\n      \"minutes\": 15\n    }\n  ],\n  \"summary\": \"The study schedule covers all three required topics—Block Sections, Interlocking, and Signal Aspects—each with a minimum of 15 minutes, starting on 2027-02-01. Each session is scheduled on a separate day, with no more than 35 minutes of study per day, satisfying all constraints.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Block Sections",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Interlocking",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Signal Aspects",
+            "minutes": 15
+          }
+        ],
+        "summary": "The study schedule covers all three required topics—Block Sections, Interlocking, and Signal Aspects—each with a minimum of 15 minutes, starting on 2027-02-01. Each session is scheduled on a separate day, with no more than 35 minutes of study per day, satisfying all constraints."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 45,
+      "daily_minutes": {
+        "2027-02-01": 15,
+        "2027-02-02": 15,
+        "2027-02-03": 15
+      },
+      "topic_minutes": [
+        {
+          "topic": "Block Sections",
+          "normalized_topic": "block sections",
+          "minutes": 15
+        },
+        {
+          "topic": "Interlocking",
+          "normalized_topic": "interlocking",
+          "minutes": 15
+        },
+        {
+          "topic": "Signal Aspects",
+          "normalized_topic": "signal aspects",
+          "minutes": 15
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 45,
+      "daily_minutes": {
+        "2027-02-01": 15,
+        "2027-02-02": 15,
+        "2027-02-03": 15
+      },
+      "topic_minutes": [
+        {
+          "topic": "Block Sections",
+          "normalized_topic": "block sections",
+          "minutes": 15
+        },
+        {
+          "topic": "Interlocking",
+          "normalized_topic": "interlocking",
+          "minutes": 15
+        },
+        {
+          "topic": "Signal Aspects",
+          "normalized_topic": "signal aspects",
+          "minutes": 15
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study schedule covers all three required topics—Block Sections, Interlocking, and Signal Aspects—each with a minimum of 15 minutes, starting on 2027-02-01. Each session is scheduled on a separate day, with no more than 35 minutes of study per day, satisfying all constraints.",
+    "derived_summary": "Calculated from the schedule: 45 minutes in total. Daily totals: 2027-02-01: 15 minutes; 2027-02-02: 15 minutes; 2027-02-03: 15 minutes. Topic totals: Block Sections: 15 minutes; Interlocking: 15 minutes; Signal Aspects: 15 minutes. Recognized visible constraint checks passed; this does not verify every user requirement."
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "cache_key": "038d16ea452e05b5e703d3620b6f90b1e59439428b796e5728080739874040e2",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [
+      "S3"
+    ],
+    "length": [],
+    "required_content": [
+      "S4",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 53,
+      "text": "Provide a pronunciation key for an invented language."
+    },
+    {
+      "id": "S2",
+      "start": 54,
+      "end": 116,
+      "text": "Aim the wording at actors speaking the invented language Orin."
+    },
+    {
+      "id": "S3",
+      "start": 117,
+      "end": 159,
+      "text": "Keep the tone instructive and uncluttered."
+    },
+    {
+      "id": "S4",
+      "start": 160,
+      "end": 263,
+      "text": "Include the following invented details: The invented word sela means welcome and is pronounced SEH-lah."
+    },
+    {
+      "id": "S5",
+      "start": 264,
+      "end": 336,
+      "text": "Instruct actors to stress the first syllable and keep both vowels clear."
+    },
+    {
+      "id": "S6",
+      "start": 337,
+      "end": 415,
+      "text": "It is a fictional pronunciation convention, not a claim about a real language."
+    },
+    {
+      "id": "S7",
+      "start": 416,
+      "end": 493,
+      "text": "Preserve these exact phrases: \"sela\", \"SEH-lah\", \"stress the first syllable\"."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": "Keep the tone instructive and uncluttered.",
+    "length": null,
+    "required_content": "Include the following invented details: The invented word sela means welcome and is pronounced SEH-lah.\nInstruct actors to stress the first syllable and keep both vowels clear.\nIt is a fictional pronunciation convention, not a claim about a real language.\nPreserve these exact phrases: \"sela\", \"SEH-lah\", \"stress the first syllable\"."
+  },
+  "evidence": {
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 117,
+        "end": 159,
+        "quote": "Keep the tone instructive and uncluttered."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 160,
+        "end": 263,
+        "quote": "Include the following invented details: The invented word sela means welcome and is pronounced SEH-lah."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 264,
+        "end": 336,
+        "quote": "Instruct actors to stress the first syllable and keep both vowels clear."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 337,
+        "end": 415,
+        "quote": "It is a fictional pronunciation convention, not a claim about a real language."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 416,
+        "end": 493,
+        "quote": "Preserve these exact phrases: \"sela\", \"SEH-lah\", \"stress the first syllable\"."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "audience",
+      "proposed_evidence": [
+        "S2"
+      ],
+      "proposed_value": "Aim the wording at actors speaking the invented language Orin.",
+      "reason": "quote_has_no_explicit_reader_relation_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[\"S3\"],\"length\":[],\"required_content\":[\"S4\",\"S5\",\"S6\",\"S7\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [
+            "S3"
+          ],
+          "length": [],
+          "required_content": [
+            "S4",
+            "S5",
+            "S6",
+            "S7"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

@@ -1,0 +1,129 @@
+{
+  "cache_key": "1611991ef5b8877d0687f7eb07b8276739ce2f83fae9c158b4efc042634f997c",
+  "source_case_id": "NTCW07",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "Welcome to Orin. For actors, clarity is key. The word sela means welcome and is pronounced SEH-lah. Always stress the first syllable. Keep both vowels clear—SEH (strong) and lah (soft). This is a fictional pronunciation convention for performance. Practice slowly: SEH-lah, stress the first syllable. Use this consistently. sela, SEH-lah, stress the first syllable. Let each word land with intention. Your delivery shapes the world. Speak with precision. sela, SEH-lah, stress the first syllable."
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"Welcome to Orin, the language of the realm. For actors, clarity and precision are essential. The word sela means welcome and is pronounced SEH-lah. Always stress the first syllable. Keep both vowels clear and distinct—do not blend or mute them. Practice the syllables slowly: SEH (strong, bright) and lah (soft, open). This pronunciation convention is fictional and created for performance. Remember: sela, SEH-lah, stress the first syllable. Use this rule consistently across all dialogue. Let the rhythm of Orin emerge through deliberate articulation. Your delivery shapes the world. Speak with intention. sela, SEH-lah, stress the first syllable.\"}",
+      "parsed": {
+        "text": "Welcome to Orin, the language of the realm. For actors, clarity and precision are essential. The word sela means welcome and is pronounced SEH-lah. Always stress the first syllable. Keep both vowels clear and distinct—do not blend or mute them. Practice the syllables slowly: SEH (strong, bright) and lah (soft, open). This pronunciation convention is fictional and created for performance. Remember: sela, SEH-lah, stress the first syllable. Use this rule consistently across all dialogue. Let the rhythm of Orin emerge through deliberate articulation. Your delivery shapes the world. Speak with intention. sela, SEH-lah, stress the first syllable."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "sela",
+            "SEH-lah",
+            "stress the first syllable"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Preserve these exact phrases: \"sela\", \"SEH-lah\", \"stress the first syllable\"."
+          }
+        ]
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        },
+        "source": [
+          {
+            "source": "visible_exchange",
+            "exchange_index": 1,
+            "field_id": "length",
+            "quote": "Keep the complete piece to 50–80 words."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 98}"
+  ],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\"text\": \"Welcome to Orin. For actors, clarity is key. The word sela means welcome and is pronounced SEH-lah. Always stress the first syllable. Keep both vowels clear—SEH (strong) and lah (soft). This is a fictional pronunciation convention for performance. Practice slowly: SEH-lah, stress the first syllable. Use this consistently. sela, SEH-lah, stress the first syllable. Let each word land with intention. Your delivery shapes the world. Speak with precision. sela, SEH-lah, stress the first syllable.\"}",
+    "parsed": {
+      "text": "Welcome to Orin. For actors, clarity is key. The word sela means welcome and is pronounced SEH-lah. Always stress the first syllable. Keep both vowels clear—SEH (strong) and lah (soft). This is a fictional pronunciation convention for performance. Practice slowly: SEH-lah, stress the first syllable. Use this consistently. sela, SEH-lah, stress the first syllable. Let each word land with intention. Your delivery shapes the world. Speak with precision. sela, SEH-lah, stress the first syllable."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 98
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "sela",
+            "SEH-lah",
+            "stress the first syllable"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 98}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 75
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "sela",
+            "SEH-lah",
+            "stress the first syllable"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

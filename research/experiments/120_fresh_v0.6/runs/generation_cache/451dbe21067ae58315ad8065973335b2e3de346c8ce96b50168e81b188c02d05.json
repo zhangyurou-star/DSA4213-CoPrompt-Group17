@@ -1,0 +1,89 @@
+{
+  "cache_key": "451dbe21067ae58315ad8065973335b2e3de346c8ce96b50168e81b188c02d05",
+  "source_case_id": "NTCW13",
+  "source_policy": "direct",
+  "output": {
+    "text": "One copper beetle, shiny and small,\nTiptoes out to join the parade at all.\nTwo velvet moths, soft as a sigh,\nFloat through the night with wings that fly.\nThree sleepy stars, blinking slow,\nWatch the tiny parade below.\nOne copper beetle, two velvet moths, three sleepy stars—\nA nighttime show beneath the darkened bars."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"One copper beetle, shiny and small,\\nTiptoes out to join the parade at all.\\nTwo velvet moths, soft as a sigh,\\nFloat through the night with wings that fly.\\nThree sleepy stars, blinking slow,\\nWatch the tiny parade below.\\nOne copper beetle, two velvet moths, three sleepy stars—\\nA nighttime show beneath the darkened bars.\"\n}",
+      "parsed": {
+        "text": "One copper beetle, shiny and small,\nTiptoes out to join the parade at all.\nTwo velvet moths, soft as a sigh,\nFloat through the night with wings that fly.\nThree sleepy stars, blinking slow,\nWatch the tiny parade below.\nOne copper beetle, two velvet moths, three sleepy stars—\nA nighttime show beneath the darkened bars."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "one copper beetle",
+            "two velvet moths",
+            "three sleepy stars"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Include each of these exact strings: \"one copper beetle\", \"two velvet moths\", \"three sleepy stars\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 55
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "one copper beetle",
+            "two velvet moths",
+            "three sleepy stars"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 55
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "one copper beetle",
+            "two velvet moths",
+            "three sleepy stars"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

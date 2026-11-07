@@ -1,0 +1,131 @@
+{
+  "cache_key": "b907a87b01344492775b402aefbe7be78fdbddda1f68ee365fd238fc7d59a43e",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S5"
+    ],
+    "tone": [
+      "S7"
+    ],
+    "length": [
+      "S6"
+    ],
+    "required_content": [
+      "S4"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 44,
+      "text": "Write an original anecdote with a punchline."
+    },
+    {
+      "id": "S2",
+      "start": 45,
+      "end": 195,
+      "text": "Build the piece around these synthetic facts: The anecdote concerns a very punctual snail arriving a year late because it followed the wrong calendar."
+    },
+    {
+      "id": "S3",
+      "start": 196,
+      "end": 255,
+      "text": "The punchline should claim it is still early for next year."
+    },
+    {
+      "id": "S4",
+      "start": 256,
+      "end": 348,
+      "text": "The text must contain \"a very punctual snail\", \"the wrong calendar\", \"still early\" verbatim."
+    },
+    {
+      "id": "S5",
+      "start": 349,
+      "end": 415,
+      "text": "This will be read by an audience at an invented storytelling club."
+    },
+    {
+      "id": "S6",
+      "start": 416,
+      "end": 455,
+      "text": "Keep the complete piece to 60–90 words."
+    },
+    {
+      "id": "S7",
+      "start": 456,
+      "end": 496,
+      "text": "The style should feel light and playful."
+    }
+  ],
+  "field_values": {
+    "audience": "This will be read by an audience at an invented storytelling club.",
+    "tone": "The style should feel light and playful.",
+    "length": "Keep the complete piece to 60–90 words.",
+    "required_content": "The text must contain \"a very punctual snail\", \"the wrong calendar\", \"still early\" verbatim."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 349,
+        "end": 415,
+        "quote": "This will be read by an audience at an invented storytelling club."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 456,
+        "end": 496,
+        "quote": "The style should feel light and playful."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 416,
+        "end": 455,
+        "quote": "Keep the complete piece to 60–90 words."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 256,
+        "end": 348,
+        "quote": "The text must contain \"a very punctual snail\", \"the wrong calendar\", \"still early\" verbatim."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S5\"],\"tone\":[\"S7\"],\"length\":[\"S6\"],\"required_content\":[\"S4\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S5"
+          ],
+          "tone": [
+            "S7"
+          ],
+          "length": [
+            "S6"
+          ],
+          "required_content": [
+            "S4"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

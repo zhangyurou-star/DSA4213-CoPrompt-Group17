@@ -1,0 +1,140 @@
+{
+  "cache_key": "47ac46cce1c6c3984268d1e9bc8c0a9385ce7ce067b2d9b8829a32b1ffc2d774",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [
+      "S3"
+    ],
+    "length": [
+      "S4"
+    ],
+    "required_content": [
+      "S5",
+      "S7"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 47,
+      "text": "Compose an oath for an invented civic ceremony."
+    },
+    {
+      "id": "S2",
+      "start": 48,
+      "end": 128,
+      "text": "The intended readers are participants taking part in the invented city ceremony."
+    },
+    {
+      "id": "S3",
+      "start": 129,
+      "end": 164,
+      "text": "I want a solemn and inclusive tone."
+    },
+    {
+      "id": "S4",
+      "start": 165,
+      "end": 222,
+      "text": "Use at least 55 words and no more than 85 words in total."
+    },
+    {
+      "id": "S5",
+      "start": 223,
+      "end": 391,
+      "text": "Include the following invented details: The oath centers the common table, promises to listen before speaking, and pledges to leave a place for someone not yet present."
+    },
+    {
+      "id": "S6",
+      "start": 392,
+      "end": 437,
+      "text": "Do not attach the oath to a real institution."
+    },
+    {
+      "id": "S7",
+      "start": 438,
+      "end": 530,
+      "text": "Preserve these exact phrases: \"the common table\", \"listen before speaking\", \"leave a place\"."
+    }
+  ],
+  "field_values": {
+    "audience": "The intended readers are participants taking part in the invented city ceremony.",
+    "tone": "I want a solemn and inclusive tone.",
+    "length": "Use at least 55 words and no more than 85 words in total.",
+    "required_content": "Include the following invented details: The oath centers the common table, promises to listen before speaking, and pledges to leave a place for someone not yet present.\nPreserve these exact phrases: \"the common table\", \"listen before speaking\", \"leave a place\"."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 48,
+        "end": 128,
+        "quote": "The intended readers are participants taking part in the invented city ceremony."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 129,
+        "end": 164,
+        "quote": "I want a solemn and inclusive tone."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 165,
+        "end": 222,
+        "quote": "Use at least 55 words and no more than 85 words in total."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 223,
+        "end": 391,
+        "quote": "Include the following invented details: The oath centers the common table, promises to listen before speaking, and pledges to leave a place for someone not yet present."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 438,
+        "end": 530,
+        "quote": "Preserve these exact phrases: \"the common table\", \"listen before speaking\", \"leave a place\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[\"S3\"],\"length\":[\"S4\"],\"required_content\":[\"S5\",\"S7\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [
+            "S3"
+          ],
+          "length": [
+            "S4"
+          ],
+          "required_content": [
+            "S5",
+            "S7"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

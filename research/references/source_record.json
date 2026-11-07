@@ -1,0 +1,11 @@
+{
+  "recovered_date": "2026-10-19",
+  "source_path": "/Users/klesmad/Documents/Codex/2026-09-27/ba/outputs/Group17_CoPrompt_Proposal_Final_edited.pdf",
+  "included_path": "references/Group17_CoPrompt_Proposal_Final_edited.pdf",
+  "sha256": "15aea481997f6d6ab31be96585627f4bd32f082c8db657fcbcd73f79d52c795f",
+  "pages": 6,
+  "comparison": "Normalized extracted text exactly matches work/proposal.txt after stripping whitespace and added PAGE markers.",
+  "original_wechat_temporary_path": "no longer exists",
+  "byte_identity_to_original_temporary_file": "not independently verified because original temporary file is unavailable",
+  "copy_unchanged": true
+}

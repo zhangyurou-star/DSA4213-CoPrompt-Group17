@@ -1,0 +1,145 @@
+{
+  "cache_key": "1c490d7fec27f64183c4fd38cfe3ed01ea478cc61d3bd0691df974015d1c5291",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [],
+    "length": [
+      "S7"
+    ],
+    "required_content": [
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 49,
+      "text": "Write the final scene of an original audio drama."
+    },
+    {
+      "id": "S2",
+      "start": 50,
+      "end": 123,
+      "text": "Its intended audience: listeners at the end of an original drama episode."
+    },
+    {
+      "id": "S3",
+      "start": 124,
+      "end": 211,
+      "text": "These invented details are required: The final scene has three knocks on a sealed door."
+    },
+    {
+      "id": "S4",
+      "start": 212,
+      "end": 319,
+      "text": "The protagonist hears her own voice from behind it saying Do not open it, although she is standing outside."
+    },
+    {
+      "id": "S5",
+      "start": 320,
+      "end": 346,
+      "text": "End before the door opens."
+    },
+    {
+      "id": "S6",
+      "start": 347,
+      "end": 434,
+      "text": "Include each of these exact strings: \"three knocks\", \"her own voice\", \"Do not open it\"."
+    },
+    {
+      "id": "S7",
+      "start": 435,
+      "end": 467,
+      "text": "Write 60 to 90 words altogether."
+    }
+  ],
+  "field_values": {
+    "audience": "Its intended audience: listeners at the end of an original drama episode.",
+    "tone": null,
+    "length": "Write 60 to 90 words altogether.",
+    "required_content": "These invented details are required: The final scene has three knocks on a sealed door.\nThe protagonist hears her own voice from behind it saying Do not open it, although she is standing outside.\nEnd before the door opens.\nInclude each of these exact strings: \"three knocks\", \"her own voice\", \"Do not open it\"."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 50,
+        "end": 123,
+        "quote": "Its intended audience: listeners at the end of an original drama episode."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 435,
+        "end": 467,
+        "quote": "Write 60 to 90 words altogether."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 124,
+        "end": 211,
+        "quote": "These invented details are required: The final scene has three knocks on a sealed door."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 212,
+        "end": 319,
+        "quote": "The protagonist hears her own voice from behind it saying Do not open it, although she is standing outside."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 320,
+        "end": 346,
+        "quote": "End before the door opens."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 347,
+        "end": 434,
+        "quote": "Include each of these exact strings: \"three knocks\", \"her own voice\", \"Do not open it\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[],\"length\":[\"S7\"],\"required_content\":[\"S3\",\"S4\",\"S5\",\"S6\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [],
+          "length": [
+            "S7"
+          ],
+          "required_content": [
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

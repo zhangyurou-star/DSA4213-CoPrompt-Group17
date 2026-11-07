@@ -1,0 +1,755 @@
+{
+  "status": "complete_fresh_120_analysis",
+  "created_utc": "2026-10-20T05:58:16.656860+00:00",
+  "freeze_sha256": "37a3d9472a7d722c3eef2f9b85205c982f2dd3fcdd24e11b373151689dcdfa0f",
+  "dataset_cases": {
+    "design": 40,
+    "validation": 20,
+    "test": 60,
+    "total": 120
+  },
+  "completed_trajectories": {
+    "pilot_a": 24,
+    "pilot_b": 24,
+    "remaining_design": 112,
+    "all_design": 160,
+    "validation": 60,
+    "main_test": 240,
+    "diagnostic": 20,
+    "total": 480
+  },
+  "pilot_gate": {
+    "passed": true,
+    "paired_scored_cases": 12,
+    "required_cases": 10,
+    "total_cases": 12,
+    "passed_case_ids": [
+      "NDCW01",
+      "NDCW02",
+      "NDCW03",
+      "NDCW04",
+      "NDCW05",
+      "NDCW06",
+      "NDSP01",
+      "NDSP02",
+      "NDSP03",
+      "NDSP04",
+      "NDSP05",
+      "NDSP06"
+    ],
+    "rule": "Both direct and exhaustive final outputs parse and score successfully; no minimum quality."
+  },
+  "design_statistics_descriptive_only": {
+    "direct": {
+      "n": 40,
+      "mean_quality": 0.6583333333333333,
+      "mean_questions": 0,
+      "total_questions": 0,
+      "full_pass": 16,
+      "format_failures": 0,
+      "noncritical_questions": 0,
+      "domains": {
+        "constrained_writing": {
+          "n": 20,
+          "mean_quality": 0.45,
+          "mean_questions": 0
+        },
+        "study_planning": {
+          "n": 20,
+          "mean_quality": 0.8666666666666667,
+          "mean_questions": 0
+        }
+      }
+    },
+    "exhaustive": {
+      "n": 40,
+      "mean_quality": 0.75,
+      "mean_questions": 1.15,
+      "total_questions": 46,
+      "full_pass": 20,
+      "format_failures": 0,
+      "noncritical_questions": 19,
+      "domains": {
+        "constrained_writing": {
+          "n": 20,
+          "mean_quality": 0.575,
+          "mean_questions": 1.1
+        },
+        "study_planning": {
+          "n": 20,
+          "mean_quality": 0.925,
+          "mean_questions": 1.2
+        }
+      }
+    },
+    "prompt_only": {
+      "n": 40,
+      "mean_quality": 0.73125,
+      "mean_questions": 0.975,
+      "total_questions": 39,
+      "full_pass": 18,
+      "format_failures": 0,
+      "noncritical_questions": 17,
+      "domains": {
+        "constrained_writing": {
+          "n": 20,
+          "mean_quality": 0.55,
+          "mean_questions": 0.9
+        },
+        "study_planning": {
+          "n": 20,
+          "mean_quality": 0.9125,
+          "mean_questions": 1.05
+        }
+      }
+    },
+    "value_based": {
+      "n": 40,
+      "mean_quality": 0.7291666666666666,
+      "mean_questions": 1.15,
+      "total_questions": 46,
+      "full_pass": 18,
+      "format_failures": 0,
+      "noncritical_questions": 19,
+      "domains": {
+        "constrained_writing": {
+          "n": 20,
+          "mean_quality": 0.55,
+          "mean_questions": 1.1
+        },
+        "study_planning": {
+          "n": 20,
+          "mean_quality": 0.9083333333333333,
+          "mean_questions": 1.2
+        }
+      }
+    }
+  },
+  "validation_selection": {
+    "selected_lambda": 0.25,
+    "target_mean_questions": 2,
+    "target_met": true,
+    "candidate_statistics": [
+      {
+        "lambda_value": 0,
+        "mean_quality": 0.7541666666666667,
+        "mean_question_items": 1.15,
+        "case_count": 20
+      },
+      {
+        "lambda_value": 0.25,
+        "mean_quality": 0.7541666666666667,
+        "mean_question_items": 1.15,
+        "case_count": 20
+      },
+      {
+        "lambda_value": 0.5,
+        "mean_quality": 0.75,
+        "mean_question_items": 0.45,
+        "case_count": 20
+      }
+    ],
+    "arithmetic": "exact fractions from per-case constraint passes; decimal-exact fallback for quality-only fixtures",
+    "selection_rule": "quality_desc, questions_asc, lambda_desc among questions<=2; otherwise questions_asc, quality_desc, lambda_desc",
+    "freeze_sha256": "37a3d9472a7d722c3eef2f9b85205c982f2dd3fcdd24e11b373151689dcdfa0f",
+    "validation_run": "runs/formal_v0.6.0_validation",
+    "validation_trajectories_sha256": "2dbb8d4d651bf5a6b1a9d30f334848220edddd97ca70032cccf072d643ef60d5",
+    "selected_utc": "2026-10-19T15:28:42.284457+00:00"
+  },
+  "cohorts": {
+    "fresh_test": {
+      "case_ids": [
+        "NTCW01",
+        "NTCW02",
+        "NTCW03",
+        "NTCW04",
+        "NTCW05",
+        "NTCW06",
+        "NTCW07",
+        "NTCW08",
+        "NTCW09",
+        "NTCW10",
+        "NTCW11",
+        "NTCW12",
+        "NTCW13",
+        "NTCW14",
+        "NTCW15",
+        "NTCW16",
+        "NTCW17",
+        "NTCW18",
+        "NTCW19",
+        "NTCW20",
+        "NTCW21",
+        "NTCW22",
+        "NTCW23",
+        "NTCW24",
+        "NTCW25",
+        "NTCW26",
+        "NTCW27",
+        "NTCW28",
+        "NTCW29",
+        "NTCW30",
+        "NTSP01",
+        "NTSP02",
+        "NTSP03",
+        "NTSP04",
+        "NTSP05",
+        "NTSP06",
+        "NTSP07",
+        "NTSP08",
+        "NTSP09",
+        "NTSP10",
+        "NTSP11",
+        "NTSP12",
+        "NTSP13",
+        "NTSP14",
+        "NTSP15",
+        "NTSP16",
+        "NTSP17",
+        "NTSP18",
+        "NTSP19",
+        "NTSP20",
+        "NTSP21",
+        "NTSP22",
+        "NTSP23",
+        "NTSP24",
+        "NTSP25",
+        "NTSP26",
+        "NTSP27",
+        "NTSP28",
+        "NTSP29",
+        "NTSP30"
+      ],
+      "independent_case_count": 60,
+      "statistics": {
+        "direct": {
+          "n": 60,
+          "mean_quality": 0.7072222222222222,
+          "mean_questions": 0,
+          "total_questions": 0,
+          "full_pass": 30,
+          "format_failures": 0,
+          "noncritical_questions": 0,
+          "domains": {
+            "constrained_writing": {
+              "n": 30,
+              "mean_quality": 0.5666666666666667,
+              "mean_questions": 0
+            },
+            "study_planning": {
+              "n": 30,
+              "mean_quality": 0.8477777777777777,
+              "mean_questions": 0
+            }
+          }
+        },
+        "exhaustive": {
+          "n": 60,
+          "mean_quality": 0.7877777777777778,
+          "mean_questions": 1.1833333333333333,
+          "total_questions": 71,
+          "full_pass": 35,
+          "format_failures": 0,
+          "noncritical_questions": 31,
+          "domains": {
+            "constrained_writing": {
+              "n": 30,
+              "mean_quality": 0.65,
+              "mean_questions": 1.0666666666666667
+            },
+            "study_planning": {
+              "n": 30,
+              "mean_quality": 0.9255555555555556,
+              "mean_questions": 1.3
+            }
+          }
+        },
+        "prompt_only": {
+          "n": 60,
+          "mean_quality": 0.7794444444444445,
+          "mean_questions": 1.0166666666666666,
+          "total_questions": 61,
+          "full_pass": 35,
+          "format_failures": 0,
+          "noncritical_questions": 30,
+          "domains": {
+            "constrained_writing": {
+              "n": 30,
+              "mean_quality": 0.65,
+              "mean_questions": 0.8666666666666667
+            },
+            "study_planning": {
+              "n": 30,
+              "mean_quality": 0.9088888888888889,
+              "mean_questions": 1.1666666666666667
+            }
+          }
+        },
+        "value_based": {
+          "n": 60,
+          "mean_quality": 0.7988888888888889,
+          "mean_questions": 1.1833333333333333,
+          "total_questions": 71,
+          "full_pass": 36,
+          "format_failures": 0,
+          "noncritical_questions": 31,
+          "domains": {
+            "constrained_writing": {
+              "n": 30,
+              "mean_quality": 0.6833333333333333,
+              "mean_questions": 1.0666666666666667
+            },
+            "study_planning": {
+              "n": 30,
+              "mean_quality": 0.9144444444444444,
+              "mean_questions": 1.3
+            }
+          }
+        }
+      },
+      "paired_comparisons": [
+        {
+          "left": "value_based",
+          "right": "direct",
+          "matched_cases": 60,
+          "quality_difference": 0.09166666666666666,
+          "quality_95pct_interval": [
+            0.030555555555555555,
+            0.15694444444444444
+          ],
+          "question_difference": 1.1833333333333333,
+          "question_95pct_interval": [
+            0.9333333333333333,
+            1.45
+          ],
+          "method": "domain-stratified matched-case percentile bootstrap; one family per case",
+          "resamples": 10000,
+          "seed": 20261013,
+          "limitation": "Case variation only, no independent model repeats or multiplicity correction; diagnostic subset contrasts are not independent evidence."
+        },
+        {
+          "left": "value_based",
+          "right": "exhaustive",
+          "matched_cases": 60,
+          "quality_difference": 0.01111111111111111,
+          "quality_95pct_interval": [
+            -0.011111111111111112,
+            0.03888888888888888
+          ],
+          "question_difference": 0,
+          "question_95pct_interval": [
+            0.0,
+            0.0
+          ],
+          "method": "domain-stratified matched-case percentile bootstrap; one family per case",
+          "resamples": 10000,
+          "seed": 20261013,
+          "limitation": "Case variation only, no independent model repeats or multiplicity correction; diagnostic subset contrasts are not independent evidence."
+        },
+        {
+          "left": "value_based",
+          "right": "prompt_only",
+          "matched_cases": 60,
+          "quality_difference": 0.019444444444444445,
+          "quality_95pct_interval": [
+            -0.023611111111111114,
+            0.0625
+          ],
+          "question_difference": 0.16666666666666666,
+          "question_95pct_interval": [
+            0.06666666666666667,
+            0.2833333333333333
+          ],
+          "method": "domain-stratified matched-case percentile bootstrap; one family per case",
+          "resamples": 10000,
+          "seed": 20261013,
+          "limitation": "Case variation only, no independent model repeats or multiplicity correction; diagnostic subset contrasts are not independent evidence."
+        }
+      ]
+    }
+  },
+  "costs": {
+    "authorized_total_usd": 2.0,
+    "cumulative_accounted_usd": 0.17262309,
+    "remaining_usd": 1.82737691,
+    "fresh_accounted_usd": 0.08404924,
+    "prior_accounted_usd": 0.08857385,
+    "counts_and_costs": {
+      "cumulative": {
+        "attempts": 1419,
+        "successes": 1412,
+        "failures": 7,
+        "input_tokens_reported": 1174083,
+        "output_tokens_reported": 164668,
+        "calls_missing_token_counts": 7,
+        "api_latency_seconds_reported": 4684.906988423347,
+        "calls_missing_latency": 1,
+        "accounted_usd": 0.17262309,
+        "provider_reported_usd": 0.1668087,
+        "unknown_reserve_usd": 0.00581439
+      },
+      "fresh": {
+        "attempts": 643,
+        "successes": 642,
+        "failures": 1,
+        "input_tokens_reported": 590048,
+        "output_tokens_reported": 80173,
+        "calls_missing_token_counts": 1,
+        "api_latency_seconds_reported": 1918.6646289679047,
+        "calls_missing_latency": 1,
+        "accounted_usd": 0.08404924,
+        "provider_reported_usd": 0.0830567,
+        "unknown_reserve_usd": 0.0009925399999999999
+      },
+      "prior": {
+        "attempts": 776,
+        "successes": 770,
+        "failures": 6,
+        "input_tokens_reported": 584035,
+        "output_tokens_reported": 84495,
+        "calls_missing_token_counts": 6,
+        "api_latency_seconds_reported": 2766.242359455442,
+        "calls_missing_latency": 0,
+        "accounted_usd": 0.08857385,
+        "provider_reported_usd": 0.083752,
+        "unknown_reserve_usd": 0.00482185
+      },
+      "pilot_a": {
+        "attempts": 38,
+        "successes": 37,
+        "failures": 1,
+        "input_tokens_reported": 41182,
+        "output_tokens_reported": 5957,
+        "calls_missing_token_counts": 1,
+        "api_latency_seconds_reported": 191.80560383596458,
+        "calls_missing_latency": 1,
+        "accounted_usd": 0.00689784,
+        "provider_reported_usd": 0.0059053,
+        "unknown_reserve_usd": 0.0009925399999999999
+      },
+      "pilot_b": {
+        "attempts": 25,
+        "successes": 25,
+        "failures": 0,
+        "input_tokens_reported": 16270,
+        "output_tokens_reported": 1709,
+        "calls_missing_token_counts": 0,
+        "api_latency_seconds_reported": 40.91469087306177,
+        "calls_missing_latency": 0,
+        "accounted_usd": 0.0021397,
+        "provider_reported_usd": 0.0021397,
+        "unknown_reserve_usd": 0.0
+      },
+      "design": {
+        "attempts": 163,
+        "successes": 163,
+        "failures": 0,
+        "input_tokens_reported": 148681,
+        "output_tokens_reported": 22327,
+        "calls_missing_token_counts": 0,
+        "api_latency_seconds_reported": 354.58725992168183,
+        "calls_missing_latency": 0,
+        "accounted_usd": 0.0215662,
+        "provider_reported_usd": 0.0215662,
+        "unknown_reserve_usd": 0.0
+      },
+      "validation": {
+        "attempts": 79,
+        "successes": 79,
+        "failures": 0,
+        "input_tokens_reported": 78117,
+        "output_tokens_reported": 10926,
+        "calls_missing_token_counts": 0,
+        "api_latency_seconds_reported": 191.95561037727748,
+        "calls_missing_latency": 0,
+        "accounted_usd": 0.0110895,
+        "provider_reported_usd": 0.0110895,
+        "unknown_reserve_usd": 0.0
+      },
+      "test": {
+        "attempts": 338,
+        "successes": 338,
+        "failures": 0,
+        "input_tokens_reported": 305798,
+        "output_tokens_reported": 39254,
+        "calls_missing_token_counts": 0,
+        "api_latency_seconds_reported": 1139.401463959919,
+        "calls_missing_latency": 0,
+        "accounted_usd": 0.042356,
+        "provider_reported_usd": 0.042356,
+        "unknown_reserve_usd": 0.0
+      }
+    },
+    "ledger_path": "/Users/klesmad/Documents/Codex/2026-10-09/gu/outputs/CoPrompt_Fresh120_v0.6.0_EN1_2026-10-20/runs/authorized_pilot_budget.json",
+    "ledger_sha256": "34e165fb3ce93b5f0d8b61ba162c14b7ffb09758953a299fe5ff9ec812ae46f6",
+    "session_sha256": {
+      "runs/pilot_20261013T063312_111392Z_session.jsonl": "212feb2666bb57bfad549ac653b54cfc439c41985075f43bf9e974ef11bf463c",
+      "runs/pilot_20261013T063631_294704Z_session.jsonl": "dea3d1f67db420635819ea67b496298b35f47cd0b51920d9fa9e97facfe00adb",
+      "runs/pilot_20261013T063808_883314Z_session.jsonl": "b2102fc8c4942d293685b1564914cb665be46fac6ff3d7732d43ecc23ca0478c",
+      "runs/pilot_20261013T063855_619863Z_session.jsonl": "898cb39b24168d8a41bfc35ccda23f7ed9561b645db032a2e4352c1040c24839",
+      "runs/pilot_20261013T070711_779583Z_session.jsonl": "8483e4d26a86618628abb4877e8082980874df2c0f29a29d81bce063d569f8b5",
+      "runs/extraction_20261013T071538_667982Z_session.jsonl": "5e2dac36742fc091ccf8add2dc2add23ab7b98f19b8f5a33e940771a67d9a0cd",
+      "runs/extraction_20261013T071708_835506Z_session.jsonl": "c046eedbd3d4c8f9418ba072954d044927b3b3fe694278e98c6c283e9020a859",
+      "runs/extraction_20261013T071916_179228Z_session.jsonl": "b3da2a2ef0c82b328df5c53da54e221bb97a8d5a9eb8c0fa22585217510a81a7",
+      "runs/pilot_20261013T072618_852972Z_session.jsonl": "3204622966d81e8c6aa106320760d49113f7b37562ab4f8db90bd752e0b11f27",
+      "runs/pilot_20261013T074702_295938Z_session.jsonl": "aa6c3d73f4de453daea4e44b67afc6606c891e2e864a424b52fc369cc85cd421",
+      "runs/pilot_20261013T083509_615141Z_session.jsonl": "405300ba81b3591810a5951eeda586acc8f0dbf70bc27c67f5e407e162aa0800",
+      "runs/formal_validation_20261013T120435_638315Z_session.jsonl": "ad5a50edff840df93877c58ae072ea8222f55b2425d07fd31338adf7772bc479",
+      "runs/formal_test_20261013T121643_032151Z_session.jsonl": "80d08d88d073ca6ee3d03c226579a57a414d110a056ff97de791be2ea065233e",
+      "runs/formal_test_20261013T122804_443205Z_session.jsonl": "f349d83daff27287324074f54def069c0b51c830428321eba0b12c89add6c733",
+      "runs/formal_test_20261013T124214_693128Z_session.jsonl": "dc9d0c3b602ef2387ce9698217c0a98ec5d4f88008c22255c90291eb166f3ee1",
+      "runs/formal_test_20261013T125141_073721Z_session.jsonl": "674f97fd184918dadfcdbe71019bf599ba4e5878c22a7b1a789977494c1cb7aa",
+      "experiments/120_fresh_v0.6/runs/formal_pilot_a_20261019T150527_807702Z_session.jsonl": "9aaee63e5dcacf5aaa224b4844eccf83da3948fbdea8669700d19d7495d51898",
+      "experiments/120_fresh_v0.6/runs/formal_pilot_a_20261019T151444_648929Z_session.jsonl": "57b1575a4b123c8bcd4160467d65064b32eab312f19f051fea75c7ccda970141",
+      "experiments/120_fresh_v0.6/runs/formal_pilot_b_20261019T151802_426951Z_session.jsonl": "5279efa6906163fa682e138aa668f3ab592ddf24b2a47b0ba38f156b3aaae37e",
+      "experiments/120_fresh_v0.6/runs/formal_design_20261019T151847_194310Z_session.jsonl": "adf986861e6780576c9c1211b28c842303b9bf5d27e49ef2c0817b8dc86b377e",
+      "experiments/120_fresh_v0.6/runs/formal_validation_20261019T152515_350191Z_session.jsonl": "c02d3cd312e751b6de924a36575246017012878e1e1390d4e8312488fa421b66",
+      "experiments/120_fresh_v0.6/runs/formal_test_20261019T152842_397165Z_session.jsonl": "572066bb9a4f61826e4582088d99d800f18251e27728581228d1d8e5ea3bbd52"
+    },
+    "note": "Unknown-cost failures retain conservative reserves. Tokens and latency sum only reported API events, not cache hits, full elapsed run time or missing usage. Costs are by execution stage, not a fair strategy cost ranking. Logical cache-replayed trajectories are not new billed calls or independent draws."
+  },
+  "cache_evidence": {
+    "scope_marker_sha256": "62a5bd5e73e09eb18ed70640c4b05204ae53121dfbc2fc9a2d9b612b147c255a",
+    "verified_raw_records": 642,
+    "stages": {
+      "pilot_a": {
+        "event_log_sha256": null,
+        "event_count": 0,
+        "raw_response_hit_events": 0,
+        "raw_hit_events_by_stage": {}
+      },
+      "pilot_b": {
+        "event_log_sha256": null,
+        "event_count": 0,
+        "raw_response_hit_events": 0,
+        "raw_hit_events_by_stage": {}
+      },
+      "design": {
+        "event_log_sha256": null,
+        "event_count": 0,
+        "raw_response_hit_events": 0,
+        "raw_hit_events_by_stage": {}
+      },
+      "validation": {
+        "event_log_sha256": "2a85cc6961aaafcc697087218163486b49a72f84580da91471967b18707e06cf",
+        "event_count": 43,
+        "raw_response_hit_events": 43,
+        "raw_hit_events_by_stage": {
+          "decision": 43
+        }
+      },
+      "test": {
+        "event_log_sha256": "db4d6204feee9a8c143da33c9ff04a72dff7029873b8f4acc474f2f434016543",
+        "event_count": 21,
+        "raw_response_hit_events": 21,
+        "raw_hit_events_by_stage": {
+          "decision": 21
+        }
+      }
+    },
+    "scope": "Only this fresh experiment; exact first-response records and their hit references verified. Complete generation-pipeline hits bypass raw-event logging; cache reuse is not an independent model repeat or a new billed call."
+  },
+  "checks": {
+    "freeze_verified": true,
+    "complete_committed_manifests_verified": true,
+    "all_scores_replayed": true,
+    "all_120_registered_cases_verified": true,
+    "one_case_per_family_all_120": true,
+    "pilot_gate_verified": true,
+    "parent_cumulative_ledger_reconciled": true
+  },
+  "source_evidence_sha256": {
+    "runs/formal_v0.6.0_pilot_a/manifest.json": "c1057abaadd60e52bcb832c75dd05795554e714a9d83ae4db55433d3536d4d67",
+    "runs/formal_v0.6.0_pilot_a/trajectories.jsonl": "be046a2e9d3b36dee49ec8c691c2428770de15215a1311e082c925d1d726c4e9",
+    "runs/formal_v0.6.0_pilot_b/manifest.json": "b933a738698ba03b0b61c7c6c355bb1085cde9103cf946bf4ae7472f903e1b27",
+    "runs/formal_v0.6.0_pilot_b/trajectories.jsonl": "219d9c1878e872d3123cb90fd482421cceed815b336f42f09f32be8e61256462",
+    "runs/formal_v0.6.0_design/manifest.json": "07fcac051ab777ffe9afc4a7dcc2cc57fe5972b7660e4d6b71fecfc29eae0560",
+    "runs/formal_v0.6.0_design/trajectories.jsonl": "1c30fe6cb6ce7c71273858326dfa64744eef3fecf71513585a430317858123a1",
+    "runs/formal_v0.6.0_validation/manifest.json": "71abc38ab50b1fb1e93432ed11cd5cc6bf93fd6d992248843926218398d68efd",
+    "runs/formal_v0.6.0_validation/trajectories.jsonl": "2dbb8d4d651bf5a6b1a9d30f334848220edddd97ca70032cccf072d643ef60d5",
+    "runs/formal_v0.6.0_test/manifest.json": "47584d4ff6aa0902c2afd7f88de5c32945800f0623d086e020c153098c023743",
+    "runs/formal_v0.6.0_test/trajectories.jsonl": "ed283e956ce273f7cc72d1918d42b0e4a3effb12092752bbe8905d96ab810060"
+  },
+  "human_review_status": "Two independently ordered, identity-masked packets for 100 outputs are prepared or preserved. No human ratings, reviewer eligibility, actual blinding or inter-rater agreement are certified by this analysis.",
+  "limitations_en": [
+    "This study uses 120 newly authored cases: 40 design cases for workflow checks, 20 validation cases for selecting lambda, and 60 new test cases for the primary comparison.",
+    "The 20 diagnostic cases are a subset of the 60 test cases and are not additional independent replications.",
+    "The 95% intervals reflect variation across this case distribution only. Each exact input retains one first model response; the intervals do not cover variability from new model samples. No multiple-comparison correction was applied.",
+    "Automatic hard-constraint scores do not establish overall content quality or actual user utility. Do not report human ratings or inter-rater agreement until the two-person review is completed.",
+    "Actual assignment timing, authorship and cross-review exclusions, reviewer independence, and blinding must be confirmed by people. Masked materials alone do not prove that reviewers have not previously seen the outputs.",
+    "Isolated authoring of new cases does not mean that the coordinator was unaware of historical results. Report this limitation as stated in the registration documents."
+  ],
+  "diagnostic": {
+    "case_ids": [
+      "NTCW01",
+      "NTCW02",
+      "NTCW07",
+      "NTCW08",
+      "NTCW13",
+      "NTCW14",
+      "NTCW19",
+      "NTCW20",
+      "NTCW24",
+      "NTCW28",
+      "NTSP01",
+      "NTSP02",
+      "NTSP07",
+      "NTSP08",
+      "NTSP13",
+      "NTSP14",
+      "NTSP19",
+      "NTSP20",
+      "NTSP24",
+      "NTSP28"
+    ],
+    "matched_cases": 20,
+    "statistics_on_same_20": {
+      "direct": {
+        "n": 20,
+        "mean_quality": 0.78,
+        "mean_questions": 0,
+        "total_questions": 0,
+        "full_pass": 12,
+        "format_failures": 0,
+        "noncritical_questions": 0,
+        "domains": {
+          "constrained_writing": {
+            "n": 10,
+            "mean_quality": 0.65,
+            "mean_questions": 0
+          },
+          "study_planning": {
+            "n": 10,
+            "mean_quality": 0.91,
+            "mean_questions": 0
+          }
+        }
+      },
+      "exhaustive": {
+        "n": 20,
+        "mean_quality": 0.805,
+        "mean_questions": 1.25,
+        "total_questions": 25,
+        "full_pass": 13,
+        "format_failures": 0,
+        "noncritical_questions": 11,
+        "domains": {
+          "constrained_writing": {
+            "n": 10,
+            "mean_quality": 0.65,
+            "mean_questions": 1.1
+          },
+          "study_planning": {
+            "n": 10,
+            "mean_quality": 0.96,
+            "mean_questions": 1.4
+          }
+        }
+      },
+      "prompt_only": {
+        "n": 20,
+        "mean_quality": 0.8175,
+        "mean_questions": 1.1,
+        "total_questions": 22,
+        "full_pass": 13,
+        "format_failures": 0,
+        "noncritical_questions": 11,
+        "domains": {
+          "constrained_writing": {
+            "n": 10,
+            "mean_quality": 0.7,
+            "mean_questions": 0.9
+          },
+          "study_planning": {
+            "n": 10,
+            "mean_quality": 0.935,
+            "mean_questions": 1.3
+          }
+        }
+      },
+      "value_based": {
+        "n": 20,
+        "mean_quality": 0.805,
+        "mean_questions": 1.25,
+        "total_questions": 25,
+        "full_pass": 13,
+        "format_failures": 0,
+        "noncritical_questions": 11,
+        "domains": {
+          "constrained_writing": {
+            "n": 10,
+            "mean_quality": 0.65,
+            "mean_questions": 1.1
+          },
+          "study_planning": {
+            "n": 10,
+            "mean_quality": 0.96,
+            "mean_questions": 1.4
+          }
+        }
+      },
+      "importance_one": {
+        "n": 20,
+        "mean_quality": 0.805,
+        "mean_questions": 1.25,
+        "total_questions": 25,
+        "full_pass": 13,
+        "format_failures": 0,
+        "noncritical_questions": 11,
+        "domains": {
+          "constrained_writing": {
+            "n": 10,
+            "mean_quality": 0.65,
+            "mean_questions": 1.1
+          },
+          "study_planning": {
+            "n": 10,
+            "mean_quality": 0.96,
+            "mean_questions": 1.4
+          }
+        }
+      }
+    },
+    "paired_comparisons": [
+      {
+        "left": "value_based",
+        "right": "importance_one",
+        "matched_cases": 20,
+        "quality_difference": 0.0,
+        "quality_95pct_interval": [
+          0.0,
+          0.0
+        ],
+        "question_difference": 0,
+        "question_95pct_interval": [
+          0.0,
+          0.0
+        ],
+        "method": "domain-stratified matched-case percentile bootstrap; one family per case",
+        "resamples": 10000,
+        "seed": 20261013,
+        "limitation": "Case variation only, no independent model repeats or multiplicity correction; diagnostic subset contrasts are not independent evidence."
+      },
+      {
+        "left": "importance_one",
+        "right": "exhaustive",
+        "matched_cases": 20,
+        "quality_difference": 0.0,
+        "quality_95pct_interval": [
+          0.0,
+          0.0
+        ],
+        "question_difference": 0,
+        "question_95pct_interval": [
+          0.0,
+          0.0
+        ],
+        "method": "domain-stratified matched-case percentile bootstrap; one family per case",
+        "resamples": 10000,
+        "seed": 20261013,
+        "limitation": "Case variation only, no independent model repeats or multiplicity correction; diagnostic subset contrasts are not independent evidence."
+      }
+    ],
+    "not_independent_repeats": true
+  }
+}

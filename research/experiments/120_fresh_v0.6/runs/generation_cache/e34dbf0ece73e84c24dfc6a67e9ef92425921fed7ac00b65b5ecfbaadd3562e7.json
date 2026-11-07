@@ -1,0 +1,49 @@
+{
+  "cache_key": "e34dbf0ece73e84c24dfc6a67e9ef92425921fed7ac00b65b5ecfbaadd3562e7",
+  "source_case_id": "NDCW10",
+  "source_policy": "value_based",
+  "output": {
+    "text": "Probe Lark\nTelemetry Log: 2027-02-01\n\nMission analysts,\n\nProbe Lark has completed its initial descent pass over the designated ridge region. During the low-altitude flyby, the onboard receiver detected seven pulses originating from beneath the icy ridge structure. Signal characteristics suggest a non-random, periodic emission pattern, though no associated thermal or seismic anomalies were recorded in the immediate vicinity. The source location remains unresolved due to signal attenuation through the ice layer.\n\nNo surface image was acquired. The camera shutter remained closed throughout the pass, as per the pre-programmed sequence. Diagnostic logs confirm the shutter actuator received the command to open, but no mechanical response was registered. The imaging system remains in standby mode pending further diagnostics.\n\nA repeat listening pass is scheduled for 2027-02-02 at 06:15 UTC. The probe will maintain a stable hover above the ridge crest for 12 minutes, with the receiver array active and the camera shutter command reissued prior to the pass. This will allow for a second data acquisition window under identical conditions.\n\nEnd of log."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Probe Lark\\nTelemetry Log: 2027-02-01\\n\\nMission analysts,\\n\\nProbe Lark has completed its initial descent pass over the designated ridge region. During the low-altitude flyby, the onboard receiver detected seven pulses originating from beneath the icy ridge structure. Signal characteristics suggest a non-random, periodic emission pattern, though no associated thermal or seismic anomalies were recorded in the immediate vicinity. The source location remains unresolved due to signal attenuation through the ice layer.\\n\\nNo surface image was acquired. The camera shutter remained closed throughout the pass, as per the pre-programmed sequence. Diagnostic logs confirm the shutter actuator received the command to open, but no mechanical response was registered. The imaging system remains in standby mode pending further diagnostics.\\n\\nA repeat listening pass is scheduled for 2027-02-02 at 06:15 UTC. The probe will maintain a stable hover above the ridge crest for 12 minutes, with the receiver array active and the camera shutter command reissued prior to the pass. This will allow for a second data acquisition window under identical conditions.\\n\\nEnd of log.\"\n}",
+      "parsed": {
+        "text": "Probe Lark\nTelemetry Log: 2027-02-01\n\nMission analysts,\n\nProbe Lark has completed its initial descent pass over the designated ridge region. During the low-altitude flyby, the onboard receiver detected seven pulses originating from beneath the icy ridge structure. Signal characteristics suggest a non-random, periodic emission pattern, though no associated thermal or seismic anomalies were recorded in the immediate vicinity. The source location remains unresolved due to signal attenuation through the ice layer.\n\nNo surface image was acquired. The camera shutter remained closed throughout the pass, as per the pre-programmed sequence. Diagnostic logs confirm the shutter actuator received the command to open, but no mechanical response was registered. The imaging system remains in standby mode pending further diagnostics.\n\nA repeat listening pass is scheduled for 2027-02-02 at 06:15 UTC. The probe will maintain a stable hover above the ridge crest for 12 minutes, with the receiver array active and the camera shutter command reissued prior to the pass. This will allow for a second data acquisition window under identical conditions.\n\nEnd of log."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 172
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 172
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

@@ -1,0 +1,133 @@
+{
+  "cache_key": "18bf9cfab0a884a49d59f7f86fe036398c5ba21097d6a4108feefda7a2dc75a9",
+  "source_case_id": "NDCW11",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "By royal decree, the Day of Open Doors is established as a sacred observance across the Kingdom of Reeds. On this day, every courtyard shall welcome a guest, fostering kinship and shared joy. Let the gates remain open, the fires burn bright, and the hearts of our people be unbarred. At dusk, when the reeds whisper in the wind, we shall not hear a royal speech, but instead sing one shared song—united in voice and spirit. May this day remind us that openness is our strength, and song our bond. Long live the Kingdom of Reeds."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"By decree of the Sovereign of Reeds, it is hereby proclaimed that the Day of Open Doors shall be observed with solemn joy throughout our realm. On this sacred day, every courtyard shall welcome a guest from afar, bearing gifts of song and story. Let the gates stand wide, the hearths burn bright, and the hearts of our people open. At twilight, when the sun dips below the reed-fringed hills, we shall gather not for a royal speech, but to sing one shared song—united in harmony, bound by kinship. Let this be our vow: to open, to receive, to sing as one. Long live the Kingdom of Reeds.\"\n}",
+      "parsed": {
+        "text": "By decree of the Sovereign of Reeds, it is hereby proclaimed that the Day of Open Doors shall be observed with solemn joy throughout our realm. On this sacred day, every courtyard shall welcome a guest from afar, bearing gifts of song and story. Let the gates stand wide, the hearths burn bright, and the hearts of our people open. At twilight, when the sun dips below the reed-fringed hills, we shall gather not for a royal speech, but to sing one shared song—united in harmony, bound by kinship. Let this be our vow: to open, to receive, to sing as one. Long live the Kingdom of Reeds."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "The full text must be between 55 and 85 words."
+          }
+        ]
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Day of Open Doors",
+            "every courtyard",
+            "one shared song"
+          ]
+        },
+        "source": [
+          {
+            "source": "visible_exchange",
+            "exchange_index": 0,
+            "field_id": "required_content",
+            "quote": "Include each of these exact strings: \"Day of Open Doors\", \"every courtyard\", \"one shared song\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 109}"
+  ],
+  "constraint_checks_final": [
+    "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 97}"
+  ],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"By royal decree, the Day of Open Doors is established as a sacred observance across the Kingdom of Reeds. On this day, every courtyard shall welcome a guest, fostering kinship and shared joy. Let the gates remain open, the fires burn bright, and the hearts of our people be unbarred. At dusk, when the reeds whisper in the wind, we shall not hear a royal speech, but instead sing one shared song—united in voice and spirit. May this day remind us that openness is our strength, and song our bond. Long live the Kingdom of Reeds.\"\n}",
+    "parsed": {
+      "text": "By royal decree, the Day of Open Doors is established as a sacred observance across the Kingdom of Reeds. On this day, every courtyard shall welcome a guest, fostering kinship and shared joy. Let the gates remain open, the fires burn bright, and the hearts of our people be unbarred. At dusk, when the reeds whisper in the wind, we shall not hear a royal speech, but instead sing one shared song—united in voice and spirit. May this day remind us that openness is our strength, and song our bond. Long live the Kingdom of Reeds."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 109
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Day of Open Doors",
+            "every courtyard",
+            "one shared song"
+          ]
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 109}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 97
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Day of Open Doors",
+            "every courtyard",
+            "one shared song"
+          ]
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 97}"
+    ],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

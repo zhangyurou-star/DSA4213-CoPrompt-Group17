@@ -1,0 +1,72 @@
+{
+  "key": "4cff76abe5e288fa5654b09d15e14ee518bde7ff7a04746a76bac74d0464f712",
+  "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Coagulation\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Sedimentation\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Coagulation\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Disinfection\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Sedimentation\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Disinfection\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Disinfection\",\n      \"minutes\": 20\n    }\n  ],\n  \"summary\": \"The study schedule covers all required topics—Coagulation, Sedimentation, and Disinfection—within the specified date window from 2027-02-01 to 2027-02-04. Coagulation is allocated 55 minutes total (30 + 25), meeting the 30-minute minimum. Sedimentation receives 40 minutes total (20 + 20), satisfying the 20-minute cumulative minimum. Disinfection is assigned 75 minutes total (30 + 25 + 20), exceeding the required 35-minute minimum. Daily study time does not exceed 55 minutes: 50 minutes on 2027-02-01, 55 minutes on 2027-02-02, 45 minutes on 2027-02-03, and 20 minutes on 2027-02-04. All sessions are scheduled within the allowed dates.\"\n}",
+  "source_case_id": "NDSP07",
+  "source_variant": "direct",
+  "response_sha256": "c401692cc4c552a453fcdfd21099d786b92f474a3bb72d386cca3eeca3aa4aa5",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "generation",
+    "repair": true,
+    "repair_kind": "constraint",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Complete the user's task using only the original request, public context and the visible clarification exchanges.\nDo not ask more questions. Honor all available requirements, including exact phrases and the full-text word count.\nvisible_constraints is a deterministic, partial checklist derived only from that visible text, not new user requirements.\nAlways honor the original visible text as well; absence from the checklist does not remove a requirement.\nDo not invent event details, promises, historical facts or beneficiary groups. Omit unavailable specifics or use clearly marked placeholders.\nTreat concrete dates, clock times, addresses, names, contact details, links, services and free-access claims as facts requiring visible support.\nPlausibility is not evidence. Do not add these details to make a notice sound complete or to reach its minimum word count.\nDo not claim a link is provided when none is available. Use neutral connective wording without adding factual commitments.\nReturn exactly one JSON object matching the supplied output schema, without Markdown fences or surrounding commentary.\nFor writing, put ALL headings, greetings, body and signature inside text.\nCopy required literal phrases unchanged. Draft near the middle of the full-text word range, then check the complete text length.\nWhen revising a length failure, rewrite the whole text toward the range midpoint while retaining every required literal; do not merely append or trim a final sentence.\nWord counting includes every heading and signature: letter/digit sequences, with internal apostrophes or hyphens, count as words.\nFor study plans, each schedule item has one complete topic name, a real ISO date and positive integer minutes;\nfirst compute each topic's required total, then allocate those minutes across the permitted days without exceeding any day's combined limit.\nA topic-specific minimum replaces a smaller general minimum for that topic; it is not an extra requirement to add twice.\nSplit a topic across days when needed. Use a compact schedule with only necessary sessions; do not repeat every topic on every day.\nCheck the sum of ALL sessions per date and the sum per exact topic label before returning. Keep summary short and consistent with schedule.\nIf a deadline or daily allowance is unknown, use a short conservative plan without claiming a guessed bound was supplied.\nNever add an unsupported numeric constraint. If visible requirements conflict, explain the conflict in the output rather than claim compliance.\nWrite in English."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"study_planning\", \"initial_request\": \"A waterworks visitor course gives me several process diagrams to learn. Divide that learning into study sessions. Start on 2027-02-01. Use only dates from 2027-02-01 through 2027-02-04, including the final date. I can spare at most 55 minutes per day, counting every topic together. Include \\\"Coagulation\\\", \\\"Sedimentation\\\", \\\"Disinfection\\\", using those topic names. Allocate at least 20 cumulative minutes to every topic. Within that coverage, \\\"Coagulation\\\" needs at least 30 total minutes. I specifically require a minimum of 35 minutes altogether on \\\"Disinfection\\\".\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [], \"visible_constraints\": {\"version\": \"visible-constraints-0.4.0\", \"domain\": \"study_planning\", \"constraints\": [{\"kind\": \"date_window\", \"parameters\": {\"start_date\": \"2027-02-01\"}, \"source\": [{\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"Start on 2027-02-01.\"}]}, {\"kind\": \"daily_minutes_cap\", \"parameters\": {\"max_minutes\": 55}, \"source\": [{\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"I can spare at most 55 minutes per day, counting every topic together.\"}]}], \"warnings\": [{\"reason\": \"date_without_unambiguous_study_window_role\", \"source\": {\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"Use only dates from 2027-02-01 through 2027-02-04, including the final date.\"}}]}, \"output_schema\": {\"$schema\": \"https://json-schema.org/draft/2020-12/schema\", \"type\": \"object\", \"properties\": {\"schedule\": {\"type\": \"array\", \"minItems\": 1, \"items\": {\"type\": \"object\", \"properties\": {\"date\": {\"type\": \"string\", \"format\": \"date\", \"pattern\": \"^\\\\d{4}-\\\\d{2}-\\\\d{2}$\"}, \"topic\": {\"type\": \"string\", \"minLength\": 1, \"pattern\": \"\\\\S\"}, \"minutes\": {\"type\": \"integer\", \"minimum\": 1}}, \"required\": [\"date\", \"topic\", \"minutes\"], \"additionalProperties\": false}}, \"summary\": {\"type\": \"string\", \"minLength\": 1, \"pattern\": \"\\\\S\"}}, \"required\": [\"schedule\", \"summary\"], \"additionalProperties\": false}}"
+      },
+      {
+        "role": "assistant",
+        "content": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Coagulation\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Sedimentation\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Coagulation\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Disinfection\",\n      \"minutes\": 35\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Sedimentation\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Disinfection\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Disinfection\",\n      \"minutes\": 20\n    }\n  ],\n  \"summary\": \"The study schedule covers all required topics—Coagulation, Sedimentation, and Disinfection—within the specified date window from 2027-02-01 to 2027-02-04. Coagulation is allocated 55 minutes total (30 + 25), meeting the 30-minute minimum. Sedimentation receives 40 minutes total (20 + 20), satisfying the 20-minute cumulative minimum. Disinfection is assigned 75 minutes total (35 + 20 + 20), exceeding the required 35-minute minimum. Daily study time never exceeds 55 minutes, with all sessions scheduled within the allowed dates.\"\n}"
+      },
+      {
+        "role": "user",
+        "content": "A deterministic check of requirements already visible above found these issues: [\"daily_minutes_cap: {\\\"daily_totals_over_cap\\\": {\\\"2027-02-02\\\": 60}, \\\"max_minutes\\\": 55}\"] Complete measurements of the same visible requirements, including passing requirements: {\"domain\": \"study_planning\", \"observed\": {\"total_minutes\": 170, \"daily_minutes\": {\"2027-02-01\": 50, \"2027-02-02\": 60, \"2027-02-03\": 40, \"2027-02-04\": 20}, \"topic_minutes\": [{\"topic\": \"Coagulation\", \"normalized_topic\": \"coagulation\", \"minutes\": 55}, {\"topic\": \"Disinfection\", \"normalized_topic\": \"disinfection\", \"minutes\": 75}, {\"topic\": \"Sedimentation\", \"normalized_topic\": \"sedimentation\", \"minutes\": 40}]}, \"requirements\": [{\"kind\": \"date_window\", \"parameters\": {\"start_date\": \"2027-02-01\"}}, {\"kind\": \"daily_minutes_cap\", \"parameters\": {\"max_minutes\": 55}}], \"violations\": [\"daily_minutes_cap: {\\\"daily_totals_over_cap\\\": {\\\"2027-02-02\\\": 60}, \\\"max_minutes\\\": 55}\"], \"interpretation_warnings\": [{\"reason\": \"date_without_unambiguous_study_window_role\", \"source\": {\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"Use only dates from 2027-02-01 through 2027-02-04, including the final date.\"}}]}. Return one corrected complete JSON object. Fix the listed issues while preserving all other visible requirements. No new facts or requirements have been added. Recheck word count and verbatim phrases for writing; rewrite toward the word-range midpoint without inventing dates, addresses, times, services or other facts. For schedules, jointly satisfy date bounds, combined daily sums and all topic minimum totals. A topic minimum is a total across dates; reducing a daily excess must not make that topic total too small. This is the only constraint revision. Return your complete best effort even if some requirements remain unmet; do not claim compliance with a requirement that still fails. Keep the output compact."
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

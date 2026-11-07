@@ -1,0 +1,130 @@
+{
+  "cache_key": "3d4686d0fc16b0a4b4f386c00f8deabd556ddbb905e95e0ff9d700fc7eb91f83",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [],
+    "length": [
+      "S3"
+    ],
+    "required_content": [
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 48,
+      "text": "Compose a toast for a fictional naming ceremony."
+    },
+    {
+      "id": "S2",
+      "start": 49,
+      "end": 117,
+      "text": "The intended readers are guests at an invented boat naming ceremony."
+    },
+    {
+      "id": "S3",
+      "start": 118,
+      "end": 174,
+      "text": "The total word count must fall from 55 to 85, inclusive."
+    },
+    {
+      "id": "S4",
+      "start": 175,
+      "end": 258,
+      "text": "Include the following invented details: The fictional boat is named Small Tomorrow."
+    },
+    {
+      "id": "S5",
+      "start": 259,
+      "end": 384,
+      "text": "The toast wishes it a steady harbor and room for wonder, connecting the modest name to journeys that begin with a small step."
+    },
+    {
+      "id": "S6",
+      "start": 385,
+      "end": 470,
+      "text": "Preserve these exact phrases: \"Small Tomorrow\", \"a steady harbor\", \"room for wonder\"."
+    }
+  ],
+  "field_values": {
+    "audience": "The intended readers are guests at an invented boat naming ceremony.",
+    "tone": null,
+    "length": "The total word count must fall from 55 to 85, inclusive.",
+    "required_content": "Include the following invented details: The fictional boat is named Small Tomorrow.\nThe toast wishes it a steady harbor and room for wonder, connecting the modest name to journeys that begin with a small step.\nPreserve these exact phrases: \"Small Tomorrow\", \"a steady harbor\", \"room for wonder\"."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 49,
+        "end": 117,
+        "quote": "The intended readers are guests at an invented boat naming ceremony."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 118,
+        "end": 174,
+        "quote": "The total word count must fall from 55 to 85, inclusive."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 175,
+        "end": 258,
+        "quote": "Include the following invented details: The fictional boat is named Small Tomorrow."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 259,
+        "end": 384,
+        "quote": "The toast wishes it a steady harbor and room for wonder, connecting the modest name to journeys that begin with a small step."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 385,
+        "end": 470,
+        "quote": "Preserve these exact phrases: \"Small Tomorrow\", \"a steady harbor\", \"room for wonder\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[],\"length\":[\"S3\"],\"required_content\":[\"S4\",\"S5\",\"S6\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [],
+          "length": [
+            "S3"
+          ],
+          "required_content": [
+            "S4",
+            "S5",
+            "S6"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

@@ -1,0 +1,81 @@
+{
+  "cache_key": "aff53d1ee6c03682bb718da4f41f0597ceba9a2ec2c24615b42e7fe3cf5488e1",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [
+      "S3"
+    ],
+    "length": [],
+    "required_content": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 50,
+      "text": "Explain a strategy for an invented packing puzzle."
+    },
+    {
+      "id": "S2",
+      "start": 51,
+      "end": 124,
+      "text": "Its intended audience: players attempting the invented Box Garden puzzle."
+    },
+    {
+      "id": "S3",
+      "start": 125,
+      "end": 168,
+      "text": "I want an analytical and approachable tone."
+    }
+  ],
+  "field_values": {
+    "audience": "Its intended audience: players attempting the invented Box Garden puzzle.",
+    "tone": "I want an analytical and approachable tone.",
+    "length": null,
+    "required_content": null
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 51,
+        "end": 124,
+        "quote": "Its intended audience: players attempting the invented Box Garden puzzle."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 125,
+        "end": 168,
+        "quote": "I want an analytical and approachable tone."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[\"S3\"],\"length\":[],\"required_content\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [
+            "S3"
+          ],
+          "length": [],
+          "required_content": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

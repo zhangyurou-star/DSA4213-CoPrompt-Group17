@@ -1,0 +1,64 @@
+{
+  "key": "2b51adddaacc4a888c7d2a3b12885fef22c8d5aaa28242f7d33be7550823c36d",
+  "raw": "{\"ratings\":[{\"field_id\":\"length\",\"importance\":0.5,\"uncertainty\":1,\"reason\":\"The absence of a specified word count range means the length is undefined, which could affect how concise or detailed the pronunciation key becomes, but a reasonable default length for such a guide is plausible.\"}]}",
+  "source_case_id": "NTCW07",
+  "source_variant": "value_based",
+  "response_sha256": "41d3a3453b128fcc791a73ca157860b7104fda01e59cde07274cd3e8dcc8b4e4",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "decision",
+    "repair": false,
+    "repair_kind": null,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Rate EVERY eligible unresolved field using the public request and visible interaction only.\nImportance I: 0 = little effect; 0.5 = local preference; 1 = could change core content or feasibility.\nUncertainty U: 0.5 = a reasonable default exists; 1 = different possible answers may materially change the result.\nThese are heuristic levels, not calibrated probabilities. Never inspect or infer hidden answer availability or grading labels.\nReturn exactly {\"ratings\":[{\"field_id\":\"...\",\"importance\":0.5,\"uncertainty\":1,\"reason\":\"brief rationale\"}, ...]}.\nCover each eligible field exactly once. Importance must be 0, 0.5 or 1. Uncertainty must be 0.5 or 1.\nNo action recommendation, extra keys or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"constrained_writing\", \"initial_request\": \"Provide a pronunciation key for an invented language. Aim the wording at actors speaking the invented language Orin. Keep the tone instructive and uncluttered. Include the following invented details: The invented word sela means welcome and is pronounced SEH-lah. Instruct actors to stress the first syllable and keep both vowels clear. It is a fictional pronunciation convention, not a claim about a real language. Preserve these exact phrases: \\\"sela\\\", \\\"SEH-lah\\\", \\\"stress the first syllable\\\".\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [{\"field_id\": \"audience\", \"question\": \"Who is the intended audience?\", \"status\": \"available\", \"answer_text\": \"Aim the wording at actors speaking the invented language Orin.\"}], \"field_values\": {\"audience\": \"Aim the wording at actors speaking the invented language Orin.\", \"tone\": \"Keep the tone instructive and uncluttered.\", \"length\": null, \"required_content\": \"Include the following invented details: The invented word sela means welcome and is pronounced SEH-lah.\\nInstruct actors to stress the first syllable and keep both vowels clear.\\nIt is a fictional pronunciation convention, not a claim about a real language.\\nPreserve these exact phrases: \\\"sela\\\", \\\"SEH-lah\\\", \\\"stress the first syllable\\\".\"}, \"eligible_fields\": [\"length\"], \"remaining_question_items\": 2, \"fields\": [{\"field_id\": \"audience\", \"label_zh\": \"受众\", \"description_zh\": \"目标读者或收件人。不得凭体裁猜测具体受众。\", \"question_template\": \"Who is the intended audience?\"}, {\"field_id\": \"tone\", \"label_zh\": \"语气\", \"description_zh\": \"语气或明确无偏好。缺省语气不视为已提供。\", \"question_template\": \"What tone would you like?\"}, {\"field_id\": \"length\", \"label_zh\": \"长度\", \"description_zh\": \"全文英文词数范围或明确无长度要求。\", \"question_template\": \"What word-count range should the full text follow?\"}, {\"field_id\": \"required_content\", \"label_zh\": \"必含内容\", \"description_zh\": \"用户明确要求的具体事实或逐字内容。仅有主题或体裁不算已提供；明确无必含内容则算已解决。\", \"question_template\": \"What information or exact wording must the text include?\"}]}"
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

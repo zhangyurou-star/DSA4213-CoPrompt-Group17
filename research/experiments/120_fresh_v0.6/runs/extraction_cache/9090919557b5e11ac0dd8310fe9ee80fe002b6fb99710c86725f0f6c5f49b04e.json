@@ -1,0 +1,126 @@
+{
+  "cache_key": "9090919557b5e11ac0dd8310fe9ee80fe002b6fb99710c86725f0f6c5f49b04e",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [],
+    "tone": [],
+    "length": [
+      "S6"
+    ],
+    "required_content": [
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 53,
+      "text": "Critique the legibility of an imaginary clock design."
+    },
+    {
+      "id": "S2",
+      "start": 54,
+      "end": 160,
+      "text": "Build the piece around these synthetic facts: The imaginary clock uses thin silver hands over a pale dial."
+    },
+    {
+      "id": "S3",
+      "start": 161,
+      "end": 264,
+      "text": "Critique the weak visual contrast and suggest a darker hour hand while preserving the uncluttered face."
+    },
+    {
+      "id": "S4",
+      "start": 265,
+      "end": 292,
+      "text": "Do not invent test results."
+    },
+    {
+      "id": "S5",
+      "start": 293,
+      "end": 379,
+      "text": "The text must contain \"thin silver hands\", \"pale dial\", \"a darker hour hand\" verbatim."
+    },
+    {
+      "id": "S6",
+      "start": 380,
+      "end": 436,
+      "text": "The total word count must fall from 60 to 90, inclusive."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": null,
+    "length": "The total word count must fall from 60 to 90, inclusive.",
+    "required_content": "Build the piece around these synthetic facts: The imaginary clock uses thin silver hands over a pale dial.\nCritique the weak visual contrast and suggest a darker hour hand while preserving the uncluttered face.\nDo not invent test results.\nThe text must contain \"thin silver hands\", \"pale dial\", \"a darker hour hand\" verbatim."
+  },
+  "evidence": {
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 380,
+        "end": 436,
+        "quote": "The total word count must fall from 60 to 90, inclusive."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 54,
+        "end": 160,
+        "quote": "Build the piece around these synthetic facts: The imaginary clock uses thin silver hands over a pale dial."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 161,
+        "end": 264,
+        "quote": "Critique the weak visual contrast and suggest a darker hour hand while preserving the uncluttered face."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 265,
+        "end": 292,
+        "quote": "Do not invent test results."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 293,
+        "end": 379,
+        "quote": "The text must contain \"thin silver hands\", \"pale dial\", \"a darker hour hand\" verbatim."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[],\"tone\":[],\"length\":[\"S6\"],\"required_content\":[\"S2\",\"S3\",\"S4\",\"S5\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [],
+          "tone": [],
+          "length": [
+            "S6"
+          ],
+          "required_content": [
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

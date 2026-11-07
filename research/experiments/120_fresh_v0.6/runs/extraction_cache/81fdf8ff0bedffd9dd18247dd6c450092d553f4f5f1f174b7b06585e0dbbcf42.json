@@ -1,0 +1,140 @@
+{
+  "cache_key": "81fdf8ff0bedffd9dd18247dd6c450092d553f4f5f1f174b7b06585e0dbbcf42",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S7"
+    ],
+    "available_time": [
+      "S6"
+    ],
+    "topics": [
+      "S4",
+      "S5"
+    ],
+    "priorities": [
+      "S5"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 62,
+      "text": "I want to understand how social dancers share a crowded floor."
+    },
+    {
+      "id": "S2",
+      "start": 63,
+      "end": 113,
+      "text": "Break the floorcraft learning into short sessions."
+    },
+    {
+      "id": "S3",
+      "start": 114,
+      "end": 134,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 135,
+      "end": 280,
+      "text": "Use the exact labels \"Line of Dance\", \"Spatial Awareness\", \"Partner Signalling\" in the schedule, with at least 25 total minutes assigned to each."
+    },
+    {
+      "id": "S5",
+      "start": 281,
+      "end": 351,
+      "text": "Within that coverage, \"Line of Dance\" needs at least 35 total minutes."
+    },
+    {
+      "id": "S6",
+      "start": 352,
+      "end": 409,
+      "text": "There is a firm ceiling of 60 study minutes on each date."
+    },
+    {
+      "id": "S7",
+      "start": 410,
+      "end": 486,
+      "text": "The last usable study date is 2027-02-05, and sessions may fall on that day."
+    }
+  ],
+  "field_values": {
+    "deadline": "The last usable study date is 2027-02-05, and sessions may fall on that day.",
+    "available_time": null,
+    "topics": "Use the exact labels \"Line of Dance\", \"Spatial Awareness\", \"Partner Signalling\" in the schedule, with at least 25 total minutes assigned to each.\nWithin that coverage, \"Line of Dance\" needs at least 35 total minutes.",
+    "priorities": "Within that coverage, \"Line of Dance\" needs at least 35 total minutes."
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 410,
+        "end": 486,
+        "quote": "The last usable study date is 2027-02-05, and sessions may fall on that day."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 135,
+        "end": 280,
+        "quote": "Use the exact labels \"Line of Dance\", \"Spatial Awareness\", \"Partner Signalling\" in the schedule, with at least 25 total minutes assigned to each."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 281,
+        "end": 351,
+        "quote": "Within that coverage, \"Line of Dance\" needs at least 35 total minutes."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 281,
+        "end": 351,
+        "quote": "Within that coverage, \"Line of Dance\" needs at least 35 total minutes."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "available_time",
+      "proposed_evidence": [
+        "S6"
+      ],
+      "proposed_value": "There is a firm ceiling of 60 study minutes on each date.",
+      "reason": "quote_has_no_daily_time_allowance_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S7\"],\"available_time\":[\"S6\"],\"topics\":[\"S4\",\"S5\"],\"priorities\":[\"S5\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S7"
+          ],
+          "available_time": [
+            "S6"
+          ],
+          "topics": [
+            "S4",
+            "S5"
+          ],
+          "priorities": [
+            "S5"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

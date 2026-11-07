@@ -1,0 +1,225 @@
+{
+  "cache_key": "123bbcdb23baa94a9758dd11cf560084f22ad9ee978dd15db175709b6f5823e0",
+  "source_case_id": "NTSP09",
+  "source_policy": "exhaustive",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Anchor Escapements",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Balance Wheels",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Gear Trains",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Anchor Escapements",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Balance Wheels",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Gear Trains",
+        "minutes": 25
+      }
+    ],
+    "summary": "Calculated from the schedule: 145 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 30 minutes; 2027-02-03: 20 minutes; 2027-02-04: 20 minutes; 2027-02-05: 25 minutes; 2027-02-06: 25 minutes. Topic totals: Anchor Escapements: 45 minutes; Balance Wheels: 55 minutes; Gear Trains: 45 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Anchor Escapements\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Balance Wheels\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Gear Trains\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Anchor Escapements\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Balance Wheels\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Gear Trains\",\n      \"minutes\": 25\n    }\n  ],\n  \"summary\": \"The study plan covers all three required topics—Anchor Escapements, Balance Wheels, and Gear Trains—with a total of at least 20 minutes per topic. Sessions are distributed across the available dates from 2027-02-01 to 2027-02-06, with no day exceeding 65 minutes of combined study time. The order introduces variety while meeting all constraints.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Anchor Escapements",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Balance Wheels",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Gear Trains",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Anchor Escapements",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Balance Wheels",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Gear Trains",
+            "minutes": 25
+          }
+        ],
+        "summary": "The study plan covers all three required topics—Anchor Escapements, Balance Wheels, and Gear Trains—with a total of at least 20 minutes per topic. Sessions are distributed across the available dates from 2027-02-01 to 2027-02-06, with no day exceeding 65 minutes of combined study time. The order introduces variety while meeting all constraints."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "Finish all scheduled study no later than 2027-02-06, inclusive."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 145,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 30,
+        "2027-02-03": 20,
+        "2027-02-04": 20,
+        "2027-02-05": 25,
+        "2027-02-06": 25
+      },
+      "topic_minutes": [
+        {
+          "topic": "Anchor Escapements",
+          "normalized_topic": "anchor escapements",
+          "minutes": 45
+        },
+        {
+          "topic": "Balance Wheels",
+          "normalized_topic": "balance wheels",
+          "minutes": 55
+        },
+        {
+          "topic": "Gear Trains",
+          "normalized_topic": "gear trains",
+          "minutes": 45
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "Finish all scheduled study no later than 2027-02-06, inclusive."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 145,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 30,
+        "2027-02-03": 20,
+        "2027-02-04": 20,
+        "2027-02-05": 25,
+        "2027-02-06": 25
+      },
+      "topic_minutes": [
+        {
+          "topic": "Anchor Escapements",
+          "normalized_topic": "anchor escapements",
+          "minutes": 45
+        },
+        {
+          "topic": "Balance Wheels",
+          "normalized_topic": "balance wheels",
+          "minutes": 55
+        },
+        {
+          "topic": "Gear Trains",
+          "normalized_topic": "gear trains",
+          "minutes": 45
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "Finish all scheduled study no later than 2027-02-06, inclusive."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study plan covers all three required topics—Anchor Escapements, Balance Wheels, and Gear Trains—with a total of at least 20 minutes per topic. Sessions are distributed across the available dates from 2027-02-01 to 2027-02-06, with no day exceeding 65 minutes of combined study time. The order introduces variety while meeting all constraints.",
+    "derived_summary": "Calculated from the schedule: 145 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 30 minutes; 2027-02-03: 20 minutes; 2027-02-04: 20 minutes; 2027-02-05: 25 minutes; 2027-02-06: 25 minutes. Topic totals: Anchor Escapements: 45 minutes; Balance Wheels: 55 minutes; Gear Trains: 45 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

@@ -1,0 +1,416 @@
+{
+  "scope": "Post-hoc offline description of supplied v0.6 test evidence; no new model runs or human review.",
+  "case_count": 60,
+  "main_trajectories": 240,
+  "diagnostic_trajectories": 20,
+  "policy_summary": [
+    {
+      "system_id": "direct",
+      "cases": 60,
+      "mean_quality": 0.7072222222222222,
+      "mean_questions": 0,
+      "total_questions": 0,
+      "full_pass_cases": 30,
+      "format_failures": 0,
+      "questions_on_annotated_known_fields": 0,
+      "invalid_question_items": 0,
+      "within_trace_repeated_field_questions": 0,
+      "constraint_revision_trajectories": 8,
+      "public_check_violation_trajectories": 4
+    },
+    {
+      "system_id": "exhaustive",
+      "cases": 60,
+      "mean_quality": 0.7877777777777778,
+      "mean_questions": 1.1833333333333333,
+      "total_questions": 71,
+      "full_pass_cases": 35,
+      "format_failures": 0,
+      "questions_on_annotated_known_fields": 19,
+      "invalid_question_items": 0,
+      "within_trace_repeated_field_questions": 0,
+      "constraint_revision_trajectories": 12,
+      "public_check_violation_trajectories": 5
+    },
+    {
+      "system_id": "prompt_only",
+      "cases": 60,
+      "mean_quality": 0.7794444444444445,
+      "mean_questions": 1.0166666666666666,
+      "total_questions": 61,
+      "full_pass_cases": 35,
+      "format_failures": 0,
+      "questions_on_annotated_known_fields": 18,
+      "invalid_question_items": 0,
+      "within_trace_repeated_field_questions": 0,
+      "constraint_revision_trajectories": 10,
+      "public_check_violation_trajectories": 4
+    },
+    {
+      "system_id": "value_based",
+      "cases": 60,
+      "mean_quality": 0.7988888888888889,
+      "mean_questions": 1.1833333333333333,
+      "total_questions": 71,
+      "full_pass_cases": 36,
+      "format_failures": 0,
+      "questions_on_annotated_known_fields": 19,
+      "invalid_question_items": 0,
+      "within_trace_repeated_field_questions": 0,
+      "constraint_revision_trajectories": 11,
+      "public_check_violation_trajectories": 4
+    }
+  ],
+  "field_summary": [
+    {
+      "domain": "constrained_writing",
+      "field": "audience",
+      "cases": 30,
+      "annotated_known": 21,
+      "annotated_unresolved": 9,
+      "raw_empty_on_annotated_known": 0,
+      "known_missed_after_validation": 3,
+      "unresolved_accepted_after_validation": 0
+    },
+    {
+      "domain": "constrained_writing",
+      "field": "length",
+      "cases": 30,
+      "annotated_known": 22,
+      "annotated_unresolved": 8,
+      "raw_empty_on_annotated_known": 0,
+      "known_missed_after_validation": 0,
+      "unresolved_accepted_after_validation": 0
+    },
+    {
+      "domain": "constrained_writing",
+      "field": "required_content",
+      "cases": 30,
+      "annotated_known": 22,
+      "annotated_unresolved": 8,
+      "raw_empty_on_annotated_known": 0,
+      "known_missed_after_validation": 0,
+      "unresolved_accepted_after_validation": 4
+    },
+    {
+      "domain": "constrained_writing",
+      "field": "tone",
+      "cases": 30,
+      "annotated_known": 17,
+      "annotated_unresolved": 13,
+      "raw_empty_on_annotated_known": 0,
+      "known_missed_after_validation": 0,
+      "unresolved_accepted_after_validation": 0
+    },
+    {
+      "domain": "study_planning",
+      "field": "available_time",
+      "cases": 30,
+      "annotated_known": 24,
+      "annotated_unresolved": 6,
+      "raw_empty_on_annotated_known": 0,
+      "known_missed_after_validation": 7,
+      "unresolved_accepted_after_validation": 0
+    },
+    {
+      "domain": "study_planning",
+      "field": "deadline",
+      "cases": 30,
+      "annotated_known": 25,
+      "annotated_unresolved": 5,
+      "raw_empty_on_annotated_known": 0,
+      "known_missed_after_validation": 10,
+      "unresolved_accepted_after_validation": 0
+    },
+    {
+      "domain": "study_planning",
+      "field": "priorities",
+      "cases": 30,
+      "annotated_known": 9,
+      "annotated_unresolved": 21,
+      "raw_empty_on_annotated_known": 1,
+      "known_missed_after_validation": 1,
+      "unresolved_accepted_after_validation": 8
+    },
+    {
+      "domain": "study_planning",
+      "field": "topics",
+      "cases": 30,
+      "annotated_known": 24,
+      "annotated_unresolved": 6,
+      "raw_empty_on_annotated_known": 0,
+      "known_missed_after_validation": 0,
+      "unresolved_accepted_after_validation": 5
+    }
+  ],
+  "known_field_misses": 21,
+  "known_misses_with_model_evidence_then_rejection": 20,
+  "unresolved_field_acceptances": 17,
+  "candidate_rating_observations": 112,
+  "candidate_products": {
+    "0.5": 85,
+    "1": 27
+  },
+  "candidates_not_exceeding_threshold": 0,
+  "value_vs_exhaustive_equal_question_counts_cases": 60,
+  "value_vs_exhaustive_identical_asked_field_order_cases": 56,
+  "failed_constraint_instances_main": {
+    "word_count": 61,
+    "contains_all": 26,
+    "daily_minutes_cap": 8,
+    "topic_coverage": 21,
+    "topic_minutes_min": 7,
+    "date_window": 7
+  },
+  "paired_comparisons": [
+    {
+      "left": "value_based",
+      "right": "direct",
+      "matched_cases": 60,
+      "quality_difference": 0.09166666666666666,
+      "quality_95pct_interval": [
+        0.030555555555555555,
+        0.15694444444444444
+      ],
+      "question_difference": 1.1833333333333333,
+      "question_95pct_interval": [
+        0.9333333333333333,
+        1.45
+      ],
+      "method": "domain-stratified matched-case percentile bootstrap; one family per case",
+      "resamples": 10000,
+      "seed": 20261013,
+      "limitation": "Case variation only, no independent model repeats or multiplicity correction; diagnostic subset contrasts are not independent evidence."
+    },
+    {
+      "left": "value_based",
+      "right": "exhaustive",
+      "matched_cases": 60,
+      "quality_difference": 0.01111111111111111,
+      "quality_95pct_interval": [
+        -0.011111111111111112,
+        0.03888888888888888
+      ],
+      "question_difference": 0,
+      "question_95pct_interval": [
+        0.0,
+        0.0
+      ],
+      "method": "domain-stratified matched-case percentile bootstrap; one family per case",
+      "resamples": 10000,
+      "seed": 20261013,
+      "limitation": "Case variation only, no independent model repeats or multiplicity correction; diagnostic subset contrasts are not independent evidence."
+    },
+    {
+      "left": "value_based",
+      "right": "prompt_only",
+      "matched_cases": 60,
+      "quality_difference": 0.019444444444444445,
+      "quality_95pct_interval": [
+        -0.023611111111111114,
+        0.0625
+      ],
+      "question_difference": 0.16666666666666666,
+      "question_95pct_interval": [
+        0.06666666666666667,
+        0.2833333333333333
+      ],
+      "method": "domain-stratified matched-case percentile bootstrap; one family per case",
+      "resamples": 10000,
+      "seed": 20261013,
+      "limitation": "Case variation only, no independent model repeats or multiplicity correction; diagnostic subset contrasts are not independent evidence."
+    }
+  ],
+  "diagnostic": {
+    "case_ids": [
+      "NTCW01",
+      "NTCW02",
+      "NTCW07",
+      "NTCW08",
+      "NTCW13",
+      "NTCW14",
+      "NTCW19",
+      "NTCW20",
+      "NTCW24",
+      "NTCW28",
+      "NTSP01",
+      "NTSP02",
+      "NTSP07",
+      "NTSP08",
+      "NTSP13",
+      "NTSP14",
+      "NTSP19",
+      "NTSP20",
+      "NTSP24",
+      "NTSP28"
+    ],
+    "matched_cases": 20,
+    "statistics_on_same_20": {
+      "direct": {
+        "n": 20,
+        "mean_quality": 0.78,
+        "mean_questions": 0,
+        "total_questions": 0,
+        "full_pass": 12,
+        "format_failures": 0,
+        "noncritical_questions": 0,
+        "domains": {
+          "constrained_writing": {
+            "n": 10,
+            "mean_quality": 0.65,
+            "mean_questions": 0
+          },
+          "study_planning": {
+            "n": 10,
+            "mean_quality": 0.91,
+            "mean_questions": 0
+          }
+        }
+      },
+      "exhaustive": {
+        "n": 20,
+        "mean_quality": 0.805,
+        "mean_questions": 1.25,
+        "total_questions": 25,
+        "full_pass": 13,
+        "format_failures": 0,
+        "noncritical_questions": 11,
+        "domains": {
+          "constrained_writing": {
+            "n": 10,
+            "mean_quality": 0.65,
+            "mean_questions": 1.1
+          },
+          "study_planning": {
+            "n": 10,
+            "mean_quality": 0.96,
+            "mean_questions": 1.4
+          }
+        }
+      },
+      "prompt_only": {
+        "n": 20,
+        "mean_quality": 0.8175,
+        "mean_questions": 1.1,
+        "total_questions": 22,
+        "full_pass": 13,
+        "format_failures": 0,
+        "noncritical_questions": 11,
+        "domains": {
+          "constrained_writing": {
+            "n": 10,
+            "mean_quality": 0.7,
+            "mean_questions": 0.9
+          },
+          "study_planning": {
+            "n": 10,
+            "mean_quality": 0.935,
+            "mean_questions": 1.3
+          }
+        }
+      },
+      "value_based": {
+        "n": 20,
+        "mean_quality": 0.805,
+        "mean_questions": 1.25,
+        "total_questions": 25,
+        "full_pass": 13,
+        "format_failures": 0,
+        "noncritical_questions": 11,
+        "domains": {
+          "constrained_writing": {
+            "n": 10,
+            "mean_quality": 0.65,
+            "mean_questions": 1.1
+          },
+          "study_planning": {
+            "n": 10,
+            "mean_quality": 0.96,
+            "mean_questions": 1.4
+          }
+        }
+      },
+      "importance_one": {
+        "n": 20,
+        "mean_quality": 0.805,
+        "mean_questions": 1.25,
+        "total_questions": 25,
+        "full_pass": 13,
+        "format_failures": 0,
+        "noncritical_questions": 11,
+        "domains": {
+          "constrained_writing": {
+            "n": 10,
+            "mean_quality": 0.65,
+            "mean_questions": 1.1
+          },
+          "study_planning": {
+            "n": 10,
+            "mean_quality": 0.96,
+            "mean_questions": 1.4
+          }
+        }
+      }
+    },
+    "paired_comparisons": [
+      {
+        "left": "value_based",
+        "right": "importance_one",
+        "matched_cases": 20,
+        "quality_difference": 0.0,
+        "quality_95pct_interval": [
+          0.0,
+          0.0
+        ],
+        "question_difference": 0,
+        "question_95pct_interval": [
+          0.0,
+          0.0
+        ],
+        "method": "domain-stratified matched-case percentile bootstrap; one family per case",
+        "resamples": 10000,
+        "seed": 20261013,
+        "limitation": "Case variation only, no independent model repeats or multiplicity correction; diagnostic subset contrasts are not independent evidence."
+      },
+      {
+        "left": "importance_one",
+        "right": "exhaustive",
+        "matched_cases": 20,
+        "quality_difference": 0.0,
+        "quality_95pct_interval": [
+          0.0,
+          0.0
+        ],
+        "question_difference": 0,
+        "question_95pct_interval": [
+          0.0,
+          0.0
+        ],
+        "method": "domain-stratified matched-case percentile bootstrap; one family per case",
+        "resamples": 10000,
+        "seed": 20261013,
+        "limitation": "Case variation only, no independent model repeats or multiplicity correction; diagnostic subset contrasts are not independent evidence."
+      }
+    ],
+    "not_independent_repeats": true
+  },
+  "costs": {
+    "attempts": 643,
+    "successes": 642,
+    "failures": 1,
+    "input_tokens_reported": 590048,
+    "output_tokens_reported": 80173,
+    "calls_missing_token_counts": 1,
+    "api_latency_seconds_reported": 1918.6646289679047,
+    "calls_missing_latency": 1,
+    "accounted_usd": 0.08404924,
+    "provider_reported_usd": 0.0830567,
+    "unknown_reserve_usd": 0.0009925399999999999
+  },
+  "source_sha256": {
+    "experiments/120_fresh_v0.6/data/public/test_requests.jsonl": "545b91dbc822d922e2216b6b625d780f8a8dd06a2ccf2bb9648ccb385d7bb2a9",
+    "experiments/120_fresh_v0.6/data/private/test_annotations.jsonl": "98457b4ee5b61e7e303457ea3eece37539b4cc2deb42d0b4b160e5efc8f8d0e5",
+    "experiments/120_fresh_v0.6/runs/formal_v0.6.0_test/trajectories.jsonl": "ed283e956ce273f7cc72d1918d42b0e4a3effb12092752bbe8905d96ab810060",
+    "experiments/120_fresh_v0.6/outputs/fresh120_analysis/analysis.json": "e756075caa81b2880dbbb894a836e0a9049692e0b1eb84a2c2d2d90850a4c42a"
+  }
+}

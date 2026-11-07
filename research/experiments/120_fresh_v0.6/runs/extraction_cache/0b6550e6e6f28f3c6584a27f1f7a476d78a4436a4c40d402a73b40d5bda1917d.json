@@ -1,0 +1,133 @@
+{
+  "cache_key": "0b6550e6e6f28f3c6584a27f1f7a476d78a4436a4c40d402a73b40d5bda1917d",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S5"
+    ],
+    "available_time": [
+      "S4"
+    ],
+    "topics": [
+      "S6",
+      "S7"
+    ],
+    "priorities": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 69,
+      "text": "Before a supervised CNC class, I need to read toolpath illustrations."
+    },
+    {
+      "id": "S2",
+      "start": 70,
+      "end": 111,
+      "text": "Lay out my study of the milling concepts."
+    },
+    {
+      "id": "S3",
+      "start": 112,
+      "end": 132,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 133,
+      "end": 202,
+      "text": "Keep each daily total at or below 40 minutes across all study blocks."
+    },
+    {
+      "id": "S5",
+      "start": 203,
+      "end": 278,
+      "text": "I can still study on 2027-02-03, but no study should be scheduled after it."
+    },
+    {
+      "id": "S6",
+      "start": 279,
+      "end": 391,
+      "text": "I need 25 minutes or more in total on each of \"Work Offsets\", \"Tool Compensation\", \"Stepovers\", \"Climb Milling\"."
+    },
+    {
+      "id": "S7",
+      "start": 392,
+      "end": 428,
+      "text": "Those are the required topic labels."
+    },
+    {
+      "id": "S8",
+      "start": 429,
+      "end": 536,
+      "text": "I would prefer to encounter \"Climb Milling\" early; treat that as a suggestion only, not a time requirement."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": "Keep each daily total at or below 40 minutes across all study blocks.",
+    "topics": "I need 25 minutes or more in total on each of \"Work Offsets\", \"Tool Compensation\", \"Stepovers\", \"Climb Milling\".\nThose are the required topic labels.",
+    "priorities": null
+  },
+  "evidence": {
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 133,
+        "end": 202,
+        "quote": "Keep each daily total at or below 40 minutes across all study blocks."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 279,
+        "end": 391,
+        "quote": "I need 25 minutes or more in total on each of \"Work Offsets\", \"Tool Compensation\", \"Stepovers\", \"Climb Milling\"."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 392,
+        "end": 428,
+        "quote": "Those are the required topic labels."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "deadline",
+      "proposed_evidence": [
+        "S5"
+      ],
+      "proposed_value": "I can still study on 2027-02-03, but no study should be scheduled after it.",
+      "reason": "quote_has_no_explicit_endpoint_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S5\"],\"available_time\":[\"S4\"],\"topics\":[\"S6\",\"S7\"],\"priorities\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S5"
+          ],
+          "available_time": [
+            "S4"
+          ],
+          "topics": [
+            "S6",
+            "S7"
+          ],
+          "priorities": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

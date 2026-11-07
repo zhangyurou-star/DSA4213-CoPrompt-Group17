@@ -1,0 +1,220 @@
+{
+  "cache_key": "4a78b974d8c3413403155e9e5a5c00c61e990d54c5579aa8461fc1a214e3716e",
+  "source_case_id": "NTSP28",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Protein Stains",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Oil Emulsification",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Dye Transfer",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Protein Stains",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Oil Emulsification",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Dye Transfer",
+        "minutes": 15
+      }
+    ],
+    "summary": "Calculated from the schedule: 120 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 20 minutes; 2027-02-03: 20 minutes; 2027-02-04: 20 minutes; 2027-02-05: 35 minutes. Topic totals: Dye Transfer: 35 minutes; Oil Emulsification: 40 minutes; Protein Stains: 45 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Protein Stains\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Oil Emulsification\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Dye Transfer\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Protein Stains\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Oil Emulsification\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Dye Transfer\",\n      \"minutes\": 15\n    }\n  ],\n  \"summary\": \"Revised all required topics: Protein Stains (45 minutes total), Oil Emulsification (40 minutes total), and Dye Transfer (35 minutes total), within the 60-minute daily limit and by the final date of 2027-02-05. All topics meet minimum time requirements.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Protein Stains",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Oil Emulsification",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Dye Transfer",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Protein Stains",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Oil Emulsification",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Dye Transfer",
+            "minutes": 15
+          }
+        ],
+        "summary": "Revised all required topics: Protein Stains (45 minutes total), Oil Emulsification (40 minutes total), and Dye Transfer (35 minutes total), within the 60-minute daily limit and by the final date of 2027-02-05. All topics meet minimum time requirements."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "The last usable study date is 2027-02-05, and sessions may fall on that day."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 120,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 20,
+        "2027-02-03": 20,
+        "2027-02-04": 20,
+        "2027-02-05": 35
+      },
+      "topic_minutes": [
+        {
+          "topic": "Dye Transfer",
+          "normalized_topic": "dye transfer",
+          "minutes": 35
+        },
+        {
+          "topic": "Oil Emulsification",
+          "normalized_topic": "oil emulsification",
+          "minutes": 40
+        },
+        {
+          "topic": "Protein Stains",
+          "normalized_topic": "protein stains",
+          "minutes": 45
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "The last usable study date is 2027-02-05, and sessions may fall on that day."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 120,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 20,
+        "2027-02-03": 20,
+        "2027-02-04": 20,
+        "2027-02-05": 35
+      },
+      "topic_minutes": [
+        {
+          "topic": "Dye Transfer",
+          "normalized_topic": "dye transfer",
+          "minutes": 35
+        },
+        {
+          "topic": "Oil Emulsification",
+          "normalized_topic": "oil emulsification",
+          "minutes": 40
+        },
+        {
+          "topic": "Protein Stains",
+          "normalized_topic": "protein stains",
+          "minutes": 45
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "The last usable study date is 2027-02-05, and sessions may fall on that day."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "Revised all required topics: Protein Stains (45 minutes total), Oil Emulsification (40 minutes total), and Dye Transfer (35 minutes total), within the 60-minute daily limit and by the final date of 2027-02-05. All topics meet minimum time requirements.",
+    "derived_summary": "Calculated from the schedule: 120 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 20 minutes; 2027-02-03: 20 minutes; 2027-02-04: 20 minutes; 2027-02-05: 35 minutes. Topic totals: Dye Transfer: 35 minutes; Oil Emulsification: 40 minutes; Protein Stains: 45 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

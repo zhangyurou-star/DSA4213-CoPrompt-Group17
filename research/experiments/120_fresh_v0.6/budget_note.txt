@@ -1,0 +1,7 @@
+Budget history
+At 2026-10-19T15:04:30.455262+00:00, the user raised the cumulative cap to USD 2.00,
+including previous spending. At that moment USD 0.08857385 was accounted.
+Those figures are a historical snapshot. Final cumulative accounted cost is
+USD 0.17262309, including the fresh study USD 0.08404924 and an unknown-cost reserve.
+Authoritative records: project-root runs/authorized_pilot_budget.json and
+runs/budget_authorization_changes.jsonl. No additional spend is authorized by EN1.

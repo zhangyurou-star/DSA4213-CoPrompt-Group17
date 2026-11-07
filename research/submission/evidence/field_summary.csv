@@ -1,0 +1,9 @@
+domain,field,cases,annotated_known,annotated_unresolved,raw_empty_on_annotated_known,known_missed_after_validation,unresolved_accepted_after_validation
+constrained_writing,audience,30,21,9,0,3,0
+constrained_writing,length,30,22,8,0,0,0
+constrained_writing,required_content,30,22,8,0,0,4
+constrained_writing,tone,30,17,13,0,0,0
+study_planning,available_time,30,24,6,0,7,0
+study_planning,deadline,30,25,5,0,10,0
+study_planning,priorities,30,9,21,1,1,8
+study_planning,topics,30,24,6,0,0,5

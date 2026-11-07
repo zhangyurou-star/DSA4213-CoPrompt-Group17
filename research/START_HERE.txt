@@ -1,0 +1,20 @@
+Group 17 CoPrompt v0.6 - research artifacts
+Read README.md for the current workflow and platform limits.
+
+Fastest route, without installation:
+1. Open submission/evidence/trace_viewer.html in a desktop browser.
+2. Read submission/EVALUATION_EVIDENCE.md and submission/ERROR_ANALYSIS.md.
+3. Read human_review/README.txt for the completed returned assessments.
+4. Read case_analysis/case_error_analysis_en.md for the existing case analysis.
+
+Offline integrity check, from this folder:
+  macOS/Linux/WSL: python3 -B submission.py verify
+  Native Windows: py -3.12 -B submission.py verify
+
+Full offline reproduction: macOS/Linux/WSL only; see README.md.
+No API key or model request is needed for these offline tasks.
+
+File roles: delivery/DIRECTORY_GUIDE_EN.txt and delivery/FILE_INVENTORY_EN.txt.
+Retention review: delivery/FILE_REVIEW_EN.txt.
+README.txt is the retained historical handoff guide, not the current entry.
+The presentation PDF and Streamlit demo are separate artifacts.

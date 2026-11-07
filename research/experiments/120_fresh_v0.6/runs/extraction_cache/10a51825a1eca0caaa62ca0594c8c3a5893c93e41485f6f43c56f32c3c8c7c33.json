@@ -1,0 +1,127 @@
+{
+  "cache_key": "10a51825a1eca0caaa62ca0594c8c3a5893c93e41485f6f43c56f32c3c8c7c33",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S4"
+    ],
+    "available_time": [
+      "S7"
+    ],
+    "topics": [
+      "S5",
+      "S6"
+    ],
+    "priorities": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 77,
+      "text": "I am working through a sign-language lesson on using space to convey meaning."
+    },
+    {
+      "id": "S2",
+      "start": 78,
+      "end": 107,
+      "text": "Plan short revision sessions."
+    },
+    {
+      "id": "S3",
+      "start": 108,
+      "end": 128,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 129,
+      "end": 212,
+      "text": "Keep the timetable within the window ending 2027-02-05, with the end date included."
+    },
+    {
+      "id": "S5",
+      "start": 213,
+      "end": 295,
+      "text": "Required coverage is \"Referent Placement\", \"Classifier Handshapes\", \"Role Shifts\"."
+    },
+    {
+      "id": "S6",
+      "start": 296,
+      "end": 371,
+      "text": "The minimum study allocation for each topic is 10 minutes across all dates."
+    },
+    {
+      "id": "S7",
+      "start": 372,
+      "end": 445,
+      "text": "My daily study allowance is 45 minutes maximum, not 45 minutes per topic."
+    }
+  ],
+  "field_values": {
+    "deadline": "Keep the timetable within the window ending 2027-02-05, with the end date included.",
+    "available_time": "My daily study allowance is 45 minutes maximum, not 45 minutes per topic.",
+    "topics": "Required coverage is \"Referent Placement\", \"Classifier Handshapes\", \"Role Shifts\".\nThe minimum study allocation for each topic is 10 minutes across all dates.",
+    "priorities": null
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 129,
+        "end": 212,
+        "quote": "Keep the timetable within the window ending 2027-02-05, with the end date included."
+      }
+    ],
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 372,
+        "end": 445,
+        "quote": "My daily study allowance is 45 minutes maximum, not 45 minutes per topic."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 213,
+        "end": 295,
+        "quote": "Required coverage is \"Referent Placement\", \"Classifier Handshapes\", \"Role Shifts\"."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 296,
+        "end": 371,
+        "quote": "The minimum study allocation for each topic is 10 minutes across all dates."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S4\"],\"available_time\":[\"S7\"],\"topics\":[\"S5\",\"S6\"],\"priorities\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S4"
+          ],
+          "available_time": [
+            "S7"
+          ],
+          "topics": [
+            "S5",
+            "S6"
+          ],
+          "priorities": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

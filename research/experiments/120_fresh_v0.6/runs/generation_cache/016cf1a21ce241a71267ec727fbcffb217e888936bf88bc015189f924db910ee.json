@@ -1,0 +1,96 @@
+{
+  "cache_key": "016cf1a21ce241a71267ec727fbcffb217e888936bf88bc015189f924db910ee",
+  "source_case_id": "NDCW12",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "Try this self-testing routine with your fictional flashcards: shuffle your deck, then pick 5 cards at random. Study each for 30 seconds, then cover the answer and recall it aloud. After each, check your response. If correct, set it aside; if not, review and return it to the deck. Repeat until all cards are mastered. Use this daily for 10 minutes—consistency beats length. Celebrate small wins! This routine builds confidence and sharpens recall, turning study time into progress. You've got this!"
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"Try this self-testing routine with your fictional flashcards: shuffle your deck, then pick 5 cards at random. Study each for 30 seconds, then cover the answer and recall it aloud. After each, check your response. If correct, set it aside; if not, review the card and place it back in the deck. Repeat until all cards are mastered. Use this daily for 10 minutes—consistency beats length. Celebrate small wins! This routine builds confidence and sharpens recall, turning study time into progress. You've got this!\"}",
+      "parsed": {
+        "text": "Try this self-testing routine with your fictional flashcards: shuffle your deck, then pick 5 cards at random. Study each for 30 seconds, then cover the answer and recall it aloud. After each, check your response. If correct, set it aside; if not, review the card and place it back in the deck. Repeat until all cards are mastered. Use this daily for 10 minutes—consistency beats length. Celebrate small wins! This routine builds confidence and sharpens recall, turning study time into progress. You've got this!"
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        },
+        "source": [
+          {
+            "source": "visible_exchange",
+            "exchange_index": 0,
+            "field_id": "length",
+            "quote": "Keep the complete piece to 50–80 words."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 85}"
+  ],
+  "constraint_checks_final": [
+    "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 82}"
+  ],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\"text\": \"Try this self-testing routine with your fictional flashcards: shuffle your deck, then pick 5 cards at random. Study each for 30 seconds, then cover the answer and recall it aloud. After each, check your response. If correct, set it aside; if not, review and return it to the deck. Repeat until all cards are mastered. Use this daily for 10 minutes—consistency beats length. Celebrate small wins! This routine builds confidence and sharpens recall, turning study time into progress. You've got this!\"}",
+    "parsed": {
+      "text": "Try this self-testing routine with your fictional flashcards: shuffle your deck, then pick 5 cards at random. Study each for 30 seconds, then cover the answer and recall it aloud. After each, check your response. If correct, set it aside; if not, review and return it to the deck. Repeat until all cards are mastered. Use this daily for 10 minutes—consistency beats length. Celebrate small wins! This routine builds confidence and sharpens recall, turning study time into progress. You've got this!"
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 85
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 85}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 82
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 82}"
+    ],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

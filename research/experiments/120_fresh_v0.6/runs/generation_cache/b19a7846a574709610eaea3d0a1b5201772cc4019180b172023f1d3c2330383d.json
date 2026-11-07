@@ -1,0 +1,49 @@
+{
+  "cache_key": "b19a7846a574709610eaea3d0a1b5201772cc4019180b172023f1d3c2330383d",
+  "source_case_id": "NDCW03",
+  "source_policy": "direct",
+  "output": {
+    "text": "In the quiet village of Elmsworth, where the sun painted golden paths across the cobblestone streets each morning, there lived a shadow named Silas. Unlike other shadows, Silas was not bound to a single body. He slipped between trees, danced on walls, and whispered secrets to the wind. The children loved him, but the adults feared him—\"Shadows are empty,\" they said. \"They have no heart, no voice, no soul.\"\n\nOne autumn evening, a great storm rolled in. The sky turned black, the trees bent low, and the village lights flickered out. In the chaos, little Mira, who had always believed in Silas, ran into the woods to find her lost kitten. Thunder cracked, and the path vanished beneath swirling leaves.\n\n\"Help!\" she cried.\n\nFrom the darkness, Silas uncurled. Not as a shape, but as a presence—cool, steady, and kind. \"I am here,\" he said, not with words, but with warmth in the air, a soft glow in the dark.\n\nHe led her through the storm, guiding her with a gentle pull on her sleeve, a soft nudge when she hesitated. When she reached the trembling kitten, Silas wrapped around it like a blanket, keeping it safe from the wind.\n\nAs dawn broke, the storm passed. Mira looked at Silas, who was fading into the morning light. \"Why did you help me?\" she asked.\n\nSilas smiled—not with a face, but with the way the sun touched the grass. \"Because shadows are not empty. We are the quiet love that stays when the light leaves. We are the memory of warmth. We are the space between the world and the world’s edge. And you, Mira, saw me. That is enough.\"\n\nFrom that day on, the villagers no longer feared shadows. They learned that even the quietest presence can hold the greatest courage. And on still evenings, if you listen closely, you might hear Silas whispering to the trees, reminding them: \"Even in darkness, you are not alone.\"\n\nThe end."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"In the quiet village of Elmsworth, where the sun painted golden paths across the cobblestone streets each morning, there lived a shadow named Silas. Unlike other shadows, Silas was not bound to a single body. He slipped between trees, danced on walls, and whispered secrets to the wind. The children loved him, but the adults feared him—\\\"Shadows are empty,\\\" they said. \\\"They have no heart, no voice, no soul.\\\"\\n\\nOne autumn evening, a great storm rolled in. The sky turned black, the trees bent low, and the village lights flickered out. In the chaos, little Mira, who had always believed in Silas, ran into the woods to find her lost kitten. Thunder cracked, and the path vanished beneath swirling leaves.\\n\\n\\\"Help!\\\" she cried.\\n\\nFrom the darkness, Silas uncurled. Not as a shape, but as a presence—cool, steady, and kind. \\\"I am here,\\\" he said, not with words, but with warmth in the air, a soft glow in the dark.\\n\\nHe led her through the storm, guiding her with a gentle pull on her sleeve, a soft nudge when she hesitated. When she reached the trembling kitten, Silas wrapped around it like a blanket, keeping it safe from the wind.\\n\\nAs dawn broke, the storm passed. Mira looked at Silas, who was fading into the morning light. \\\"Why did you help me?\\\" she asked.\\n\\nSilas smiled—not with a face, but with the way the sun touched the grass. \\\"Because shadows are not empty. We are the quiet love that stays when the light leaves. We are the memory of warmth. We are the space between the world and the world’s edge. And you, Mira, saw me. That is enough.\\\"\\n\\nFrom that day on, the villagers no longer feared shadows. They learned that even the quietest presence can hold the greatest courage. And on still evenings, if you listen closely, you might hear Silas whispering to the trees, reminding them: \\\"Even in darkness, you are not alone.\\\"\\n\\nThe end.\"\n}",
+      "parsed": {
+        "text": "In the quiet village of Elmsworth, where the sun painted golden paths across the cobblestone streets each morning, there lived a shadow named Silas. Unlike other shadows, Silas was not bound to a single body. He slipped between trees, danced on walls, and whispered secrets to the wind. The children loved him, but the adults feared him—\"Shadows are empty,\" they said. \"They have no heart, no voice, no soul.\"\n\nOne autumn evening, a great storm rolled in. The sky turned black, the trees bent low, and the village lights flickered out. In the chaos, little Mira, who had always believed in Silas, ran into the woods to find her lost kitten. Thunder cracked, and the path vanished beneath swirling leaves.\n\n\"Help!\" she cried.\n\nFrom the darkness, Silas uncurled. Not as a shape, but as a presence—cool, steady, and kind. \"I am here,\" he said, not with words, but with warmth in the air, a soft glow in the dark.\n\nHe led her through the storm, guiding her with a gentle pull on her sleeve, a soft nudge when she hesitated. When she reached the trembling kitten, Silas wrapped around it like a blanket, keeping it safe from the wind.\n\nAs dawn broke, the storm passed. Mira looked at Silas, who was fading into the morning light. \"Why did you help me?\" she asked.\n\nSilas smiled—not with a face, but with the way the sun touched the grass. \"Because shadows are not empty. We are the quiet love that stays when the light leaves. We are the memory of warmth. We are the space between the world and the world’s edge. And you, Mira, saw me. That is enough.\"\n\nFrom that day on, the villagers no longer feared shadows. They learned that even the quietest presence can hold the greatest courage. And on still evenings, if you listen closely, you might hear Silas whispering to the trees, reminding them: \"Even in darkness, you are not alone.\"\n\nThe end."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 330
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 330
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

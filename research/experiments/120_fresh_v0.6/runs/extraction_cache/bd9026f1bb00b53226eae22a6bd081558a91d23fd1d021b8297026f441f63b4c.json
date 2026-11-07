@@ -1,0 +1,96 @@
+{
+  "cache_key": "bd9026f1bb00b53226eae22a6bd081558a91d23fd1d021b8297026f441f63b4c",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [],
+    "available_time": [
+      "S4"
+    ],
+    "topics": [
+      "S1",
+      "S2"
+    ],
+    "priorities": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 66,
+      "text": "I want to make sense of a beginner contract-bridge bidding lesson."
+    },
+    {
+      "id": "S2",
+      "start": 67,
+      "end": 107,
+      "text": "Divide the revision into study sessions."
+    },
+    {
+      "id": "S3",
+      "start": 108,
+      "end": 128,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 129,
+      "end": 202,
+      "text": "My daily study allowance is 25 minutes maximum, not 25 minutes per topic."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": "My daily study allowance is 25 minutes maximum, not 25 minutes per topic.",
+    "topics": "I want to make sense of a beginner contract-bridge bidding lesson.\nDivide the revision into study sessions.",
+    "priorities": null
+  },
+  "evidence": {
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 129,
+        "end": 202,
+        "quote": "My daily study allowance is 25 minutes maximum, not 25 minutes per topic."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S1",
+        "start": 0,
+        "end": 66,
+        "quote": "I want to make sense of a beginner contract-bridge bidding lesson."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 67,
+        "end": 107,
+        "quote": "Divide the revision into study sessions."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[],\"available_time\":[\"S4\"],\"topics\":[\"S1\",\"S2\"],\"priorities\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [],
+          "available_time": [
+            "S4"
+          ],
+          "topics": [
+            "S1",
+            "S2"
+          ],
+          "priorities": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

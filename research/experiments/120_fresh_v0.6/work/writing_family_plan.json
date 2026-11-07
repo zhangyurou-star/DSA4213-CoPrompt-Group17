@@ -1,0 +1,551 @@
+{
+  "version": "fresh-writing-family-plan-1",
+  "registered_utc": "2026-10-19T14:40:57.605798+00:00",
+  "status": "families_registered_before_case_authoring",
+  "family_count": 60,
+  "allowed_inputs_only": true,
+  "historical_case_or_output_access": false,
+  "allocation_sha256": "377a2449ff5f6bfd9fbda45afc859127c24fdf77dcc5bcd2697c70abdc05c79b",
+  "families": [
+    {
+      "case_id": "NDCW01",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_board_game_dispute",
+      "title_zh": "桌游争议规则裁定",
+      "task_intent": "Clarify a disputed move in a fictional board game."
+    },
+    {
+      "case_id": "NDCW02",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_vending_token_explanation",
+      "title_zh": "虚构自动售货代币说明",
+      "task_intent": "Explain how a fictional vending token is used."
+    },
+    {
+      "case_id": "NDCW03",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_shadow_fable",
+      "title_zh": "影子寓言",
+      "task_intent": "Compose a fable about a shadow."
+    },
+    {
+      "case_id": "NDCW04",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only",
+      "family_id": "fresh_cw_cultivar_name_rationale",
+      "title_zh": "植物品种命名理由",
+      "task_intent": "Give a naming rationale for an invented plant cultivar."
+    },
+    {
+      "case_id": "NDCW05",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer",
+      "family_id": "fresh_cw_fantasy_map_commission",
+      "title_zh": "幻想地图委托简述",
+      "task_intent": "Draft a creative commission brief for a fantasy map."
+    },
+    {
+      "case_id": "NDCW06",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "execute_now",
+      "family_id": "fresh_cw_crossword_hint_ladder",
+      "title_zh": "填字谜分层提示",
+      "task_intent": "Write a graduated hint card for an invented crossword answer."
+    },
+    {
+      "case_id": "NDCW07",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_translation_glossary_policy",
+      "title_zh": "翻译词汇一致性说明",
+      "task_intent": "Explain a terminology policy for a fictional translation project."
+    },
+    {
+      "case_id": "NDCW08",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_sewing_layout_instruction",
+      "title_zh": "缝纫布料布局步骤",
+      "task_intent": "Describe a cutting layout for a fictional sewing pattern."
+    },
+    {
+      "case_id": "NDCW09",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_soap_package_story",
+      "title_zh": "手工皂包装故事",
+      "task_intent": "Write an origin story for an imaginary soap package."
+    },
+    {
+      "case_id": "NDCW10",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_space_probe_log",
+      "title_zh": "太空探测器日志",
+      "task_intent": "Write an entry in a fictional space probe log."
+    },
+    {
+      "case_id": "NDCW11",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_court_herald_proclamation",
+      "title_zh": "宫廷传令官宣告",
+      "task_intent": "Compose a ceremonial proclamation for an invented kingdom."
+    },
+    {
+      "case_id": "NDCW12",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_flashcard_self_test",
+      "title_zh": "自测卡片使用提示",
+      "task_intent": "Explain a self-testing routine using invented flashcards."
+    },
+    {
+      "case_id": "NDCW13",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_fictional_closing_argument",
+      "title_zh": "虚构审判结案陈词",
+      "task_intent": "Write a closing argument in a fictional mock trial."
+    },
+    {
+      "case_id": "NDCW14",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_escape_room_premise",
+      "title_zh": "密室开场情节",
+      "task_intent": "Create the opening premise for an imaginary escape room."
+    },
+    {
+      "case_id": "NDCW15",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_soundscape_score",
+      "title_zh": "声景演出指令",
+      "task_intent": "Write performance directions for an invented soundscape."
+    },
+    {
+      "case_id": "NDCW16",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only",
+      "family_id": "fresh_cw_future_self_letter",
+      "title_zh": "给未来自己的信",
+      "task_intent": "Write a letter addressed to a future self."
+    },
+    {
+      "case_id": "NDCW17",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only",
+      "family_id": "fresh_cw_bridge_retirement_elegy",
+      "title_zh": "桥梁退役挽歌",
+      "task_intent": "Compose a prose elegy for an imaginary bridge."
+    },
+    {
+      "case_id": "NDCW18",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer",
+      "family_id": "fresh_cw_fabrication_exception_rationale",
+      "title_zh": "制造公差例外理由",
+      "task_intent": "Explain an exception in a fictional fabrication specification."
+    },
+    {
+      "case_id": "NDCW19",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer",
+      "family_id": "fresh_cw_dream_sequence_interpretation",
+      "title_zh": "梦境创作阐释",
+      "task_intent": "Offer a literary interpretation of an invented dream sequence."
+    },
+    {
+      "case_id": "NDCW20",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "execute_now",
+      "family_id": "fresh_cw_origami_step_caption",
+      "title_zh": "折纸图步骤说明",
+      "task_intent": "Draft instructions to accompany an invented paper-folding diagram."
+    },
+    {
+      "case_id": "NVCW01",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_tournament_tiebreak_example",
+      "title_zh": "比赛同分规则算例",
+      "task_intent": "Explain a fictional tournament tiebreak using a worked example."
+    },
+    {
+      "case_id": "NVCW02",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_joke_night_anecdote",
+      "title_zh": "笑话之夜段子",
+      "task_intent": "Write an original anecdote with a punchline."
+    },
+    {
+      "case_id": "NVCW03",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_stage_prop_specification",
+      "title_zh": "舞台道具制作规范",
+      "task_intent": "Describe a fictional stage prop for a fabricator."
+    },
+    {
+      "case_id": "NVCW04",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_ink_documentary_voiceover",
+      "title_zh": "墨水微纪录片旁白",
+      "task_intent": "Create narration for a fictional microdocumentary about ink."
+    },
+    {
+      "case_id": "NVCW05",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_shelving_exception_reason",
+      "title_zh": "书架分类例外说明",
+      "task_intent": "Explain a shelving exception in an invented collection."
+    },
+    {
+      "case_id": "NVCW06",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_tabletop_drill_scenario",
+      "title_zh": "桌面演练情境注入",
+      "task_intent": "Write a scenario inject for a fictional tabletop exercise."
+    },
+    {
+      "case_id": "NVCW07",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only",
+      "family_id": "fresh_cw_fictional_currency_design",
+      "title_zh": "虚构货币视觉设计",
+      "task_intent": "Describe a design concept for imaginary currency."
+    },
+    {
+      "case_id": "NVCW08",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only",
+      "family_id": "fresh_cw_sibling_reconciliation_dialogue",
+      "title_zh": "手足和解对话",
+      "task_intent": "Write a dialogue in which two fictional siblings resolve a disagreement."
+    },
+    {
+      "case_id": "NVCW09",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer",
+      "family_id": "fresh_cw_riddle_solution_reasoning",
+      "title_zh": "谜题解法推理",
+      "task_intent": "Explain the reasoning behind an invented riddle solution."
+    },
+    {
+      "case_id": "NVCW10",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "execute_now",
+      "family_id": "fresh_cw_comic_panel_script",
+      "title_zh": "漫画分镜脚本",
+      "task_intent": "Write a panel-by-panel script for an original short comic."
+    },
+    {
+      "case_id": "NTCW01",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_appliance_first_use_microcopy",
+      "title_zh": "虚构家电首次使用文案",
+      "task_intent": "Draft first-use screen copy for an imaginary appliance."
+    },
+    {
+      "case_id": "NTCW02",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_barter_negotiation_offer",
+      "title_zh": "物物交换协商提议",
+      "task_intent": "Write an opening proposal for a fictional barter exchange."
+    },
+    {
+      "case_id": "NTCW03",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_civic_ceremonial_oath",
+      "title_zh": "虚构城市仪式誓言",
+      "task_intent": "Compose an oath for an invented civic ceremony."
+    },
+    {
+      "case_id": "NTCW04",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_fairytale_alternate_ending",
+      "title_zh": "童话改写结尾",
+      "task_intent": "Write an alternative ending for an original fairy tale."
+    },
+    {
+      "case_id": "NTCW05",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_game_quest_instruction",
+      "title_zh": "游戏任务引导台词",
+      "task_intent": "Write a quest-giver speech for an imaginary adventure game."
+    },
+    {
+      "case_id": "NTCW06",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_contest_rubric_preface",
+      "title_zh": "甜点评比规则导言",
+      "task_intent": "Explain the judging priorities of a fictional dessert contest."
+    },
+    {
+      "case_id": "NTCW07",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_invented_language_sound_key",
+      "title_zh": "虚构语言发音说明",
+      "task_intent": "Provide a pronunciation key for an invented language."
+    },
+    {
+      "case_id": "NTCW08",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_alien_weather_bulletin",
+      "title_zh": "外星天气播报",
+      "task_intent": "Write a weather bulletin set on an imaginary planet."
+    },
+    {
+      "case_id": "NTCW09",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_packing_puzzle_strategy",
+      "title_zh": "装箱谜题策略说明",
+      "task_intent": "Explain a strategy for an invented packing puzzle."
+    },
+    {
+      "case_id": "NTCW10",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_book_dedication",
+      "title_zh": "虚构书籍题献",
+      "task_intent": "Compose a dedication for an imaginary book."
+    },
+    {
+      "case_id": "NTCW11",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_time_travel_paradox",
+      "title_zh": "时间旅行悖论阐释",
+      "task_intent": "Explain the internal logic of an invented time-travel paradox."
+    },
+    {
+      "case_id": "NTCW12",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_impossible_umbrella_ad",
+      "title_zh": "不可能雨伞广告",
+      "task_intent": "Write an advertisement for a fantastical umbrella."
+    },
+    {
+      "case_id": "NTCW13",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_counting_rhyme",
+      "title_zh": "原创数数短诗",
+      "task_intent": "Compose an original counting rhyme."
+    },
+    {
+      "case_id": "NTCW14",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_fictional_invention_abstract",
+      "title_zh": "虚构发明摘要",
+      "task_intent": "Write a plain-language abstract for an imaginary invention."
+    },
+    {
+      "case_id": "NTCW15",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_maze_navigation_instruction",
+      "title_zh": "迷宫行动指示",
+      "task_intent": "Explain how to navigate an invented maze."
+    },
+    {
+      "case_id": "NTCW16",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_chess_piece_monologue",
+      "title_zh": "棋子独白",
+      "task_intent": "Write a monologue spoken by an imaginary chess piece."
+    },
+    {
+      "case_id": "NTCW17",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_moral_thought_experiment",
+      "title_zh": "道德思想实验",
+      "task_intent": "Present an original moral thought experiment without resolving it."
+    },
+    {
+      "case_id": "NTCW18",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_proverb_interpretation",
+      "title_zh": "虚构谚语解读",
+      "task_intent": "Interpret an invented proverb with a concrete example."
+    },
+    {
+      "case_id": "NTCW19",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only",
+      "family_id": "fresh_cw_naming_ceremony_toast",
+      "title_zh": "命名仪式祝酒词",
+      "task_intent": "Compose a toast for a fictional naming ceremony."
+    },
+    {
+      "case_id": "NTCW20",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only",
+      "family_id": "fresh_cw_penpal_introduction",
+      "title_zh": "虚构笔友自我介绍",
+      "task_intent": "Write a personal introduction to an imaginary pen pal."
+    },
+    {
+      "case_id": "NTCW21",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only",
+      "family_id": "fresh_cw_silent_film_scene",
+      "title_zh": "默片场景动作脚本",
+      "task_intent": "Write a silent-film scene using visible actions."
+    },
+    {
+      "case_id": "NTCW22",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only",
+      "family_id": "fresh_cw_metadata_policy_snippet",
+      "title_zh": "藏品元数据编目政策",
+      "task_intent": "Explain a metadata convention for an invented catalog."
+    },
+    {
+      "case_id": "NTCW23",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only",
+      "family_id": "fresh_cw_poem_translation_commentary",
+      "title_zh": "诗歌翻译取舍说明",
+      "task_intent": "Discuss a translation choice in an invented poem."
+    },
+    {
+      "case_id": "NTCW24",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer",
+      "family_id": "fresh_cw_clock_face_design_critique",
+      "title_zh": "钟面设计评议",
+      "task_intent": "Critique the legibility of an imaginary clock design."
+    },
+    {
+      "case_id": "NTCW25",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer",
+      "family_id": "fresh_cw_audio_drama_cliffhanger",
+      "title_zh": "广播剧悬念结尾",
+      "task_intent": "Write the final suspenseful beat of an original audio drama."
+    },
+    {
+      "case_id": "NTCW26",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer",
+      "family_id": "fresh_cw_desk_layout_proposal",
+      "title_zh": "工作桌布局提案",
+      "task_intent": "Propose a desk arrangement for a fictional shared workspace."
+    },
+    {
+      "case_id": "NTCW27",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer",
+      "family_id": "fresh_cw_achievement_certificate_citation",
+      "title_zh": "成就证书表彰语",
+      "task_intent": "Compose the citation on a fictional achievement certificate."
+    },
+    {
+      "case_id": "NTCW28",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "execute_now",
+      "family_id": "fresh_cw_theatrical_synopsis",
+      "title_zh": "虚构戏剧梗概",
+      "task_intent": "Write a synopsis of an original play for a program."
+    },
+    {
+      "case_id": "NTCW29",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "execute_now",
+      "family_id": "fresh_cw_radio_station_identifier",
+      "title_zh": "虚构电台台呼",
+      "task_intent": "Create a station identification script for an imaginary radio channel."
+    },
+    {
+      "case_id": "NTCW30",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "execute_now",
+      "family_id": "fresh_cw_empty_state_guidance",
+      "title_zh": "空白收藏页引导",
+      "task_intent": "Write empty-state guidance for a fictional collection interface."
+    }
+  ]
+}

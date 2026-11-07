@@ -1,0 +1,198 @@
+{
+  "cache_key": "0128050e0e8e332f061db23a5447f3b6a39f913cc43c0ea9ff254de2f1c52696",
+  "source_case_id": "NTSP02",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Basal Sliding",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Glacier Mass Balance",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Crevasse Formation",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Glacier Mass Balance",
+        "minutes": 10
+      }
+    ],
+    "summary": "Calculated from the schedule: 85 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 25 minutes; 2027-02-03: 25 minutes; 2027-02-04: 10 minutes. Topic totals: Basal Sliding: 25 minutes; Crevasse Formation: 25 minutes; Glacier Mass Balance: 35 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Basal Sliding\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Glacier Mass Balance\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Crevasse Formation\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Glacier Mass Balance\",\n      \"minutes\": 10\n    }\n  ],\n  \"summary\": \"The study timetable covers all three required topics—Basal Sliding, Glacier Mass Balance, and Crevasse Formation—with a minimum of 25 minutes each. Basal Sliding is scheduled first as preferred. The total study time per day does not exceed 35 minutes. Glacier Mass Balance is completed with an additional 10 minutes on the final day to meet the minimum requirement.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Basal Sliding",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Glacier Mass Balance",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Crevasse Formation",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Glacier Mass Balance",
+            "minutes": 10
+          }
+        ],
+        "summary": "The study timetable covers all three required topics—Basal Sliding, Glacier Mass Balance, and Crevasse Formation—with a minimum of 25 minutes each. Basal Sliding is scheduled first as preferred. The total study time per day does not exceed 35 minutes. Glacier Mass Balance is completed with an additional 10 minutes on the final day to meet the minimum requirement."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-04; that date is still available."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 85,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 25,
+        "2027-02-03": 25,
+        "2027-02-04": 10
+      },
+      "topic_minutes": [
+        {
+          "topic": "Basal Sliding",
+          "normalized_topic": "basal sliding",
+          "minutes": 25
+        },
+        {
+          "topic": "Crevasse Formation",
+          "normalized_topic": "crevasse formation",
+          "minutes": 25
+        },
+        {
+          "topic": "Glacier Mass Balance",
+          "normalized_topic": "glacier mass balance",
+          "minutes": 35
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-04; that date is still available."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 85,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 25,
+        "2027-02-03": 25,
+        "2027-02-04": 10
+      },
+      "topic_minutes": [
+        {
+          "topic": "Basal Sliding",
+          "normalized_topic": "basal sliding",
+          "minutes": 25
+        },
+        {
+          "topic": "Crevasse Formation",
+          "normalized_topic": "crevasse formation",
+          "minutes": 25
+        },
+        {
+          "topic": "Glacier Mass Balance",
+          "normalized_topic": "glacier mass balance",
+          "minutes": 35
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-04; that date is still available."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study timetable covers all three required topics—Basal Sliding, Glacier Mass Balance, and Crevasse Formation—with a minimum of 25 minutes each. Basal Sliding is scheduled first as preferred. The total study time per day does not exceed 35 minutes. Glacier Mass Balance is completed with an additional 10 minutes on the final day to meet the minimum requirement.",
+    "derived_summary": "Calculated from the schedule: 85 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 25 minutes; 2027-02-03: 25 minutes; 2027-02-04: 10 minutes. Topic totals: Basal Sliding: 25 minutes; Crevasse Formation: 25 minutes; Glacier Mass Balance: 35 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

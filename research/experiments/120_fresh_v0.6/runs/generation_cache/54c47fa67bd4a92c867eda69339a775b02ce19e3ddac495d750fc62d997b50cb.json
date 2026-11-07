@@ -1,0 +1,225 @@
+{
+  "cache_key": "54c47fa67bd4a92c867eda69339a775b02ce19e3ddac495d750fc62d997b50cb",
+  "source_case_id": "NTSP12",
+  "source_policy": "prompt_only",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Incident Roles",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Resource Staging",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Situation Reports",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Incident Roles",
+        "minutes": 20
+      }
+    ],
+    "summary": "Calculated from the schedule: 65 minutes in total. Daily totals: 2027-02-01: 15 minutes; 2027-02-02: 15 minutes; 2027-02-03: 15 minutes; 2027-02-04: 20 minutes. Topic totals: Incident Roles: 35 minutes; Resource Staging: 15 minutes; Situation Reports: 15 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Incident Roles\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Resource Staging\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Situation Reports\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Incident Roles\",\n      \"minutes\": 20\n    }\n  ],\n  \"summary\": \"All required topics—Incident Roles, Resource Staging, and Situation Reports—have been covered with at least 15 minutes each. Study sessions are scheduled across four days, with no daily total exceeding 35 minutes. The final session ends on 2027-02-04 as required.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Incident Roles",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Resource Staging",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Situation Reports",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Incident Roles",
+            "minutes": 20
+          }
+        ],
+        "summary": "All required topics—Incident Roles, Resource Staging, and Situation Reports—have been covered with at least 15 minutes each. Study sessions are scheduled across four days, with no daily total exceeding 35 minutes. The final session ends on 2027-02-04 as required."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-04, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "available_time",
+          "quote": "Keep each daily total at or below 35 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 65,
+      "daily_minutes": {
+        "2027-02-01": 15,
+        "2027-02-02": 15,
+        "2027-02-03": 15,
+        "2027-02-04": 20
+      },
+      "topic_minutes": [
+        {
+          "topic": "Incident Roles",
+          "normalized_topic": "incident roles",
+          "minutes": 35
+        },
+        {
+          "topic": "Resource Staging",
+          "normalized_topic": "resource staging",
+          "minutes": 15
+        },
+        {
+          "topic": "Situation Reports",
+          "normalized_topic": "situation reports",
+          "minutes": 15
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-04, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "available_time",
+          "quote": "Keep each daily total at or below 35 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 65,
+      "daily_minutes": {
+        "2027-02-01": 15,
+        "2027-02-02": 15,
+        "2027-02-03": 15,
+        "2027-02-04": 20
+      },
+      "topic_minutes": [
+        {
+          "topic": "Incident Roles",
+          "normalized_topic": "incident roles",
+          "minutes": 35
+        },
+        {
+          "topic": "Resource Staging",
+          "normalized_topic": "resource staging",
+          "minutes": 15
+        },
+        {
+          "topic": "Situation Reports",
+          "normalized_topic": "situation reports",
+          "minutes": 15
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-04, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "available_time",
+          "quote": "Keep each daily total at or below 35 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "All required topics—Incident Roles, Resource Staging, and Situation Reports—have been covered with at least 15 minutes each. Study sessions are scheduled across four days, with no daily total exceeding 35 minutes. The final session ends on 2027-02-04 as required.",
+    "derived_summary": "Calculated from the schedule: 65 minutes in total. Daily totals: 2027-02-01: 15 minutes; 2027-02-02: 15 minutes; 2027-02-03: 15 minutes; 2027-02-04: 20 minutes. Topic totals: Incident Roles: 35 minutes; Resource Staging: 15 minutes; Situation Reports: 15 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

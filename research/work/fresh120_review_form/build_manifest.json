@@ -1,0 +1,39 @@
+{
+  "form_version": "fresh120-review-form-1",
+  "interface_language": "en",
+  "sources": [
+    {
+      "file": "reviewer_1_packet.json",
+      "sha256": "cb2a6c5a348091c01c1c92865997729cd20c58a235261af272b7dd4ff755cf4e",
+      "records_sha256": "a9d5fb0bb17c1c58b7b51fea8343083ef51b395f9ce702dae6d3560514a7167a",
+      "source_evidence_sha256": "0e67069c1b86e875d437cc25ca2e088b40ef91d4c4ab1f64b7a7d8568c53489b",
+      "compatible_source_packet_sha256": [
+        "2db50ca20f7395727a9dbd845dea532e7b4576a948d97f829a112670809feae2"
+      ]
+    },
+    {
+      "file": "reviewer_2_packet.json",
+      "sha256": "efc300559f335507a9b0f49a4e0c79d6b37571256bbecc31b196e4200057c76f",
+      "records_sha256": "6805d4cc5f5ddd383accb780f73f80c91110724b3f6b7dc50ee839a1df7439a2",
+      "source_evidence_sha256": "0e67069c1b86e875d437cc25ca2e088b40ef91d4c4ab1f64b7a7d8568c53489b",
+      "compatible_source_packet_sha256": [
+        "850327a99334506f988be846664f9daba035a841fd3acb1a721170b01d344f9c"
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "file": "reviewer_1.html",
+      "sha256": "c11992cbdbc25988c476f717e3d1ef92b9e4f00a594ad346fe5e87aa871d5813",
+      "records": 100
+    },
+    {
+      "file": "reviewer_2.html",
+      "sha256": "026bb698d35db8e57500f9549a6084663aaef557c42412f252163f7670b9ae62",
+      "records": 100
+    }
+  ],
+  "model_calls": 0,
+  "original_packets_modified": false,
+  "private_strategy_mapping_included": false
+}

@@ -1,0 +1,64 @@
+{
+  "key": "c71933b65c70d922e66eefbe08e30ed273d9bfc48ee71ba12327613d501bbcf5",
+  "raw": "{\n  \"text\": \"The imaginary currency features a woven sun at its center, symbolizing shared work and collective effort. Encircling the sun is a vibrant violet border, denoting unity and resilience. On the reverse, nine square windows reveal intricate depictions of the city’s districts—each a unique district with its own identity and function. These windows represent transparency, opportunity, and the interconnectedness of urban life. The woven sun, crafted with threads of gold and silver, reflects light in a way that changes with the angle, reinforcing the idea of collaborative creation. Together, the a woven sun, nine square windows, and violet border form a powerful emblem of community, vision, and shared progress.\"\n}",
+  "source_case_id": "NVCW07",
+  "source_variant": "value_lambda_0.5",
+  "response_sha256": "b4a63e1ae0643faf10893c87bbaf5c8fc96252fbc5024e37630540297ed854fb",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "generation",
+    "repair": false,
+    "repair_kind": null,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Complete the user's task using only the original request, public context and the visible clarification exchanges.\nDo not ask more questions. Honor all available requirements, including exact phrases and the full-text word count.\nvisible_constraints is a deterministic, partial checklist derived only from that visible text, not new user requirements.\nAlways honor the original visible text as well; absence from the checklist does not remove a requirement.\nDo not invent event details, promises, historical facts or beneficiary groups. Omit unavailable specifics or use clearly marked placeholders.\nTreat concrete dates, clock times, addresses, names, contact details, links, services and free-access claims as facts requiring visible support.\nPlausibility is not evidence. Do not add these details to make a notice sound complete or to reach its minimum word count.\nDo not claim a link is provided when none is available. Use neutral connective wording without adding factual commitments.\nReturn exactly one JSON object matching the supplied output schema, without Markdown fences or surrounding commentary.\nFor writing, put ALL headings, greetings, body and signature inside text.\nCopy required literal phrases unchanged. Draft near the middle of the full-text word range, then check the complete text length.\nWhen revising a length failure, rewrite the whole text toward the range midpoint while retaining every required literal; do not merely append or trim a final sentence.\nWord counting includes every heading and signature: letter/digit sequences, with internal apostrophes or hyphens, count as words.\nFor study plans, each schedule item has one complete topic name, a real ISO date and positive integer minutes;\nfirst compute each topic's required total, then allocate those minutes across the permitted days without exceeding any day's combined limit.\nA topic-specific minimum replaces a smaller general minimum for that topic; it is not an extra requirement to add twice.\nSplit a topic across days when needed. Use a compact schedule with only necessary sessions; do not repeat every topic on every day.\nCheck the sum of ALL sessions per date and the sum per exact topic label before returning. Keep summary short and consistent with schedule.\nIf a deadline or daily allowance is unknown, use a short conservative plan without claiming a guessed bound was supplied.\nNever add an unsupported numeric constraint. If visible requirements conflict, explain the conflict in the output rather than claim compliance.\nWrite in English."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"constrained_writing\", \"initial_request\": \"Describe a design concept for imaginary currency. These invented details are required: The imaginary banknote centers a woven sun, carries nine square windows on its reverse, and uses a violet border. The sun represents shared work; the windows represent the invented city districts. Include each of these exact strings: \\\"a woven sun\\\", \\\"nine square windows\\\", \\\"violet border\\\". Keep the complete piece to 60–90 words.\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [], \"visible_constraints\": {\"version\": \"visible-constraints-0.4.0\", \"domain\": \"constrained_writing\", \"constraints\": [{\"kind\": \"contains_all\", \"parameters\": {\"literals\": [\"a woven sun\", \"nine square windows\", \"violet border\"]}, \"source\": [{\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"Include each of these exact strings: \\\"a woven sun\\\", \\\"nine square windows\\\", \\\"violet border\\\".\"}]}, {\"kind\": \"word_count\", \"parameters\": {\"min_words\": 60, \"max_words\": 90}, \"source\": [{\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"Keep the complete piece to 60–90 words.\"}]}], \"warnings\": []}, \"output_schema\": {\"$schema\": \"https://json-schema.org/draft/2020-12/schema\", \"type\": \"object\", \"properties\": {\"text\": {\"type\": \"string\", \"minLength\": 1, \"pattern\": \"\\\\S\"}}, \"required\": [\"text\"], \"additionalProperties\": false}}"
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "key": "228e73c49afac6f5d76c23ce0369bbbe834e88b880b5e30984478567e03d94ee",
+  "raw": "{\"text\": \"Dear Future Me,\\n\\nIf you’re reading this on February 1, 2037, I hope you’ve kept making room—both for what’s left undone and for what’s yet to begin. I still remember the quiet frustration of setting down tools beside the unfinished bench, wondering if I’d ever return. But I made one small promise: to come back, even if just to sand a single edge. That small promise became a thread pulling me forward. Don’t abandon your projects, even when they seem too big. Keep making room for growth, for repair, for the quiet joy of finishing something useful. The bench may still wait—but so do you. Keep making room.\"}",
+  "source_case_id": "NDCW16",
+  "source_variant": "direct",
+  "response_sha256": "c8fa803864b232a452045da5efd6834d53d41d2eeb7c7ff538f3c9cf1b437e5f",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "generation",
+    "repair": true,
+    "repair_kind": "constraint",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Complete the user's task using only the original request, public context and the visible clarification exchanges.\nDo not ask more questions. Honor all available requirements, including exact phrases and the full-text word count.\nvisible_constraints is a deterministic, partial checklist derived only from that visible text, not new user requirements.\nAlways honor the original visible text as well; absence from the checklist does not remove a requirement.\nDo not invent event details, promises, historical facts or beneficiary groups. Omit unavailable specifics or use clearly marked placeholders.\nTreat concrete dates, clock times, addresses, names, contact details, links, services and free-access claims as facts requiring visible support.\nPlausibility is not evidence. Do not add these details to make a notice sound complete or to reach its minimum word count.\nDo not claim a link is provided when none is available. Use neutral connective wording without adding factual commitments.\nReturn exactly one JSON object matching the supplied output schema, without Markdown fences or surrounding commentary.\nFor writing, put ALL headings, greetings, body and signature inside text.\nCopy required literal phrases unchanged. Draft near the middle of the full-text word range, then check the complete text length.\nWhen revising a length failure, rewrite the whole text toward the range midpoint while retaining every required literal; do not merely append or trim a final sentence.\nWord counting includes every heading and signature: letter/digit sequences, with internal apostrophes or hyphens, count as words.\nFor study plans, each schedule item has one complete topic name, a real ISO date and positive integer minutes;\nfirst compute each topic's required total, then allocate those minutes across the permitted days without exceeding any day's combined limit.\nA topic-specific minimum replaces a smaller general minimum for that topic; it is not an extra requirement to add twice.\nSplit a topic across days when needed. Use a compact schedule with only necessary sessions; do not repeat every topic on every day.\nCheck the sum of ALL sessions per date and the sum per exact topic label before returning. Keep summary short and consistent with schedule.\nIf a deadline or daily allowance is unknown, use a short conservative plan without claiming a guessed bound was supplied.\nNever add an unsupported numeric constraint. If visible requirements conflict, explain the conflict in the output rather than claim compliance.\nWrite in English."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"constrained_writing\", \"initial_request\": \"Write a letter addressed to a future self. The full text must be between 60 and 90 words. Use this fictional material: The speaker is building an unfinished bench and worries about abandoning it. Refer to one small promise to finish a useful thing, and close with keep making room. Required wording, verbatim: \\\"the unfinished bench\\\", \\\"one small promise\\\", \\\"keep making room\\\". Use wording suitable for myself opening the letter ten years later.\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [], \"visible_constraints\": {\"version\": \"visible-constraints-0.4.0\", \"domain\": \"constrained_writing\", \"constraints\": [{\"kind\": \"word_count\", \"parameters\": {\"min_words\": 60, \"max_words\": 90}, \"source\": [{\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"The full text must be between 60 and 90 words.\"}]}], \"warnings\": [{\"reason\": \"quoted_text_not_clearly_a_positive_literal_requirement\", \"source\": {\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"Required wording, verbatim: \\\"the unfinished bench\\\", \\\"one small promise\\\", \\\"keep making room\\\".\"}}]}, \"output_schema\": {\"$schema\": \"https://json-schema.org/draft/2020-12/schema\", \"type\": \"object\", \"properties\": {\"text\": {\"type\": \"string\", \"minLength\": 1, \"pattern\": \"\\\\S\"}}, \"required\": [\"text\"], \"additionalProperties\": false}}"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"text\": \"Dear Future Me,\\n\\nIf you're reading this on February 1, 2037, I hope you’ve kept making room—both for what’s left undone and for what’s yet to begin. I still remember the quiet frustration of setting down tools beside the unfinished bench, wondering if I’d ever return. But I made one small promise: to come back, even if just to sand a single edge. That small promise became a thread pulling me forward. Don’t abandon your projects, even when they seem too big. Keep making room for growth, for repair, for the quiet joy of finishing something useful. The bench may still wait—but so do you. Keep making room.\"}"
+      },
+      {
+        "role": "user",
+        "content": "A deterministic check of requirements already visible above found these issues: [\"word_count: {\\\"max_words\\\": 90, \\\"min_words\\\": 60, \\\"observed_words\\\": 110}\"] Complete measurements of the same visible requirements, including passing requirements: {\"domain\": \"constrained_writing\", \"observed\": {\"full_text_words\": 110}, \"requirements\": [{\"kind\": \"word_count\", \"parameters\": {\"min_words\": 60, \"max_words\": 90}}], \"violations\": [\"word_count: {\\\"max_words\\\": 90, \\\"min_words\\\": 60, \\\"observed_words\\\": 110}\"], \"interpretation_warnings\": [{\"reason\": \"quoted_text_not_clearly_a_positive_literal_requirement\", \"source\": {\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"Required wording, verbatim: \\\"the unfinished bench\\\", \\\"one small promise\\\", \\\"keep making room\\\".\"}}]}. Return one corrected complete JSON object. Fix the listed issues while preserving all other visible requirements. No new facts or requirements have been added. Recheck word count and verbatim phrases for writing; rewrite toward the word-range midpoint without inventing dates, addresses, times, services or other facts. For schedules, jointly satisfy date bounds, combined daily sums and all topic minimum totals. A topic minimum is a total across dates; reducing a daily excess must not make that topic total too small. This is the only constraint revision. Return your complete best effort even if some requirements remain unmet; do not claim compliance with a requirement that still fails. Keep the output compact."
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": "review-packet-compatibility-v1",
+  "purpose": "Allow imports from the original interface only when the reviewer slot, immutable records, record order, and evidence fingerprint remain identical. Original ratings are blank.",
+  "reviewer_slots": {
+    "1": {
+      "source_packet_sha256": "0ff13d971bb4ef18561e54f9e2d29e031db9f1b6e77dc8ad525447851a3712eb",
+      "source_evidence_sha256": "2ba4b8f5b8d02d6309a92dfb6a258ec5fde1ec4f7f80c5b073238feec5081098",
+      "records_sha256": "a9d5fb0bb17c1c58b7b51fea8343083ef51b395f9ce702dae6d3560514a7167a"
+    },
+    "2": {
+      "source_packet_sha256": "36c59101cf76679f6c7ad0dff1df6d2c8e8d3c1a2317bab21e9276f01fef9942",
+      "source_evidence_sha256": "2ba4b8f5b8d02d6309a92dfb6a258ec5fde1ec4f7f80c5b073238feec5081098",
+      "records_sha256": "6805d4cc5f5ddd383accb780f73f80c91110724b3f6b7dc50ee839a1df7439a2"
+    }
+  }
+}

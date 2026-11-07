@@ -1,0 +1,140 @@
+{
+  "cache_key": "c51d8fa217020a29d09acc0951c59cbd70e179bbffd5bdcfd8ba44ce70b376b0",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S7"
+    ],
+    "available_time": [
+      "S6"
+    ],
+    "topics": [
+      "S4",
+      "S5"
+    ],
+    "priorities": [
+      "S5"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 66,
+      "text": "I have to evaluate a workstation mock-up in a human-factors class."
+    },
+    {
+      "id": "S2",
+      "start": 67,
+      "end": 99,
+      "text": "Set out a short study timetable."
+    },
+    {
+      "id": "S3",
+      "start": 100,
+      "end": 120,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 121,
+      "end": 274,
+      "text": "Use the exact labels \"Display Legibility\", \"Control Compatibility\", \"Workstation Reach\" in the schedule, with at least 25 total minutes assigned to each."
+    },
+    {
+      "id": "S5",
+      "start": 275,
+      "end": 350,
+      "text": "Within that coverage, \"Display Legibility\" needs at least 35 total minutes."
+    },
+    {
+      "id": "S6",
+      "start": 351,
+      "end": 408,
+      "text": "There is a firm ceiling of 40 study minutes on each date."
+    },
+    {
+      "id": "S7",
+      "start": 409,
+      "end": 485,
+      "text": "The last usable study date is 2027-02-03, and sessions may fall on that day."
+    }
+  ],
+  "field_values": {
+    "deadline": "The last usable study date is 2027-02-03, and sessions may fall on that day.",
+    "available_time": null,
+    "topics": "Use the exact labels \"Display Legibility\", \"Control Compatibility\", \"Workstation Reach\" in the schedule, with at least 25 total minutes assigned to each.\nWithin that coverage, \"Display Legibility\" needs at least 35 total minutes.",
+    "priorities": "Within that coverage, \"Display Legibility\" needs at least 35 total minutes."
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 409,
+        "end": 485,
+        "quote": "The last usable study date is 2027-02-03, and sessions may fall on that day."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 121,
+        "end": 274,
+        "quote": "Use the exact labels \"Display Legibility\", \"Control Compatibility\", \"Workstation Reach\" in the schedule, with at least 25 total minutes assigned to each."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 275,
+        "end": 350,
+        "quote": "Within that coverage, \"Display Legibility\" needs at least 35 total minutes."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 275,
+        "end": 350,
+        "quote": "Within that coverage, \"Display Legibility\" needs at least 35 total minutes."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "available_time",
+      "proposed_evidence": [
+        "S6"
+      ],
+      "proposed_value": "There is a firm ceiling of 40 study minutes on each date.",
+      "reason": "quote_has_no_daily_time_allowance_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S7\"],\"available_time\":[\"S6\"],\"topics\":[\"S4\",\"S5\"],\"priorities\":[\"S5\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S7"
+          ],
+          "available_time": [
+            "S6"
+          ],
+          "topics": [
+            "S4",
+            "S5"
+          ],
+          "priorities": [
+            "S5"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

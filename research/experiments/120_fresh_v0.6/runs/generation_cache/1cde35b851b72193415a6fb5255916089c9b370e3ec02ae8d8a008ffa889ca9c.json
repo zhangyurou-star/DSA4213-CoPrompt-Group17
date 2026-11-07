@@ -1,0 +1,49 @@
+{
+  "cache_key": "1cde35b851b72193415a6fb5255916089c9b370e3ec02ae8d8a008ffa889ca9c",
+  "source_case_id": "NDCW14",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "Welcome, seeker of stars, to the Sleepless Observatory—where time stands still and the heavens whisper secrets. Four sealed drawers hold fragments of a forgotten sky chart, each one a key to a celestial riddle. Before dawn breaks, you must piece them together, for the keeper awaits the return of a missing constellation. The stars are watching. Begin."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Welcome, seeker of stars, to the Sleepless Observatory—where time stands still and the heavens whisper secrets. Four sealed drawers hold fragments of a forgotten sky chart, each one a key to a celestial riddle. Before dawn breaks, you must piece them together, for the keeper awaits the return of a missing constellation. The stars are watching. Begin.\"\n}",
+      "parsed": {
+        "text": "Welcome, seeker of stars, to the Sleepless Observatory—where time stands still and the heavens whisper secrets. Four sealed drawers hold fragments of a forgotten sky chart, each one a key to a celestial riddle. Before dawn breaks, you must piece them together, for the keeper awaits the return of a missing constellation. The stars are watching. Begin."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 58
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 58
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

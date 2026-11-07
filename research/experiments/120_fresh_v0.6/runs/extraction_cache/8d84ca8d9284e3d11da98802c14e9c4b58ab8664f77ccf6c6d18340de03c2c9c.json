@@ -1,0 +1,87 @@
+{
+  "cache_key": "8d84ca8d9284e3d11da98802c14e9c4b58ab8664f77ccf6c6d18340de03c2c9c",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S4"
+    ],
+    "available_time": [],
+    "topics": [
+      "S1"
+    ],
+    "priorities": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 70,
+      "text": "I want to understand the vocabulary used in a cheese-affinage lecture."
+    },
+    {
+      "id": "S2",
+      "start": 71,
+      "end": 104,
+      "text": "Build a compact reading schedule."
+    },
+    {
+      "id": "S3",
+      "start": 105,
+      "end": 125,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 126,
+      "end": 201,
+      "text": "I can still study on 2027-02-05, but no study should be scheduled after it."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": null,
+    "topics": "I want to understand the vocabulary used in a cheese-affinage lecture.",
+    "priorities": null
+  },
+  "evidence": {
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S1",
+        "start": 0,
+        "end": 70,
+        "quote": "I want to understand the vocabulary used in a cheese-affinage lecture."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "deadline",
+      "proposed_evidence": [
+        "S4"
+      ],
+      "proposed_value": "I can still study on 2027-02-05, but no study should be scheduled after it.",
+      "reason": "quote_has_no_explicit_endpoint_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S4\"],\"available_time\":[],\"topics\":[\"S1\"],\"priorities\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S4"
+          ],
+          "available_time": [],
+          "topics": [
+            "S1"
+          ],
+          "priorities": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

@@ -1,0 +1,262 @@
+Every delivered directory and its current role
+Counts include all descendant files.
+
+.
+  Files: 1287
+  Purpose: Current submission root: offline entry, current guides and original/current manifests.
+
+audit
+  Files: 2
+  Purpose: Immutable nested original evidence and language-boundary note.
+
+case_analysis
+  Files: 24
+  Purpose: Existing English human-informed case analysis with tables and reproduction.
+
+case_analysis/inputs
+  Files: 11
+  Purpose: Unchanged self-contained source copies for the existing case-analysis script.
+
+config
+  Files: 1
+  Purpose: Older root source/configuration/data/execution material, retained for historical provenance and integrity.
+
+coprompt
+  Files: 8
+  Purpose: Older root source/configuration/data/execution material, retained for historical provenance and integrity.
+
+data
+  Files: 3
+  Purpose: Older root source/configuration/data/execution material, retained for historical provenance and integrity.
+
+data/public
+  Files: 1
+  Purpose: Older root source/configuration/data/execution material, retained for historical provenance and integrity.
+
+data/schemas
+  Files: 2
+  Purpose: Older root source/configuration/data/execution material, retained for historical provenance and integrity.
+
+delivery
+  Files: 8
+  Purpose: Current role catalogue, source treatment and actual validation records.
+
+experiments
+  Files: 1119
+  Purpose: Active v0.6 study plus explicitly provenance-only older study.
+
+experiments/120_fresh_v0.6
+  Files: 1111
+  Purpose: Active completed/frozen Fresh-120 v0.6 study.
+
+experiments/120_fresh_v0.6/amendments
+  Files: 13
+  Purpose: Historical recorded amendments and before-state copies; preserve to explain the original execution.
+
+experiments/120_fresh_v0.6/amendments/budget_precision_20261019
+  Files: 12
+  Purpose: Historical recorded amendments and before-state copies; preserve to explain the original execution.
+
+experiments/120_fresh_v0.6/amendments/budget_precision_20261019/before
+  Files: 9
+  Purpose: Historical recorded amendments and before-state copies; preserve to explain the original execution.
+
+experiments/120_fresh_v0.6/amendments/budget_precision_20261019/before/coprompt
+  Files: 1
+  Purpose: Historical recorded amendments and before-state copies; preserve to explain the original execution.
+
+experiments/120_fresh_v0.6/amendments/budget_precision_20261019/before/runs
+  Files: 4
+  Purpose: Historical recorded amendments and before-state copies; preserve to explain the original execution.
+
+experiments/120_fresh_v0.6/amendments/budget_precision_20261019/before/runs/formal_v0.6.0_pilot_a
+  Files: 2
+  Purpose: Historical recorded amendments and before-state copies; preserve to explain the original execution.
+
+experiments/120_fresh_v0.6/amendments/budget_precision_20261019/before/tools
+  Files: 1
+  Purpose: Historical recorded amendments and before-state copies; preserve to explain the original execution.
+
+experiments/120_fresh_v0.6/amendments/method_documentation_20261020
+  Files: 1
+  Purpose: Historical recorded amendments and before-state copies; preserve to explain the original execution.
+
+experiments/120_fresh_v0.6/config
+  Files: 1
+  Purpose: Actual frozen provider/model/inference settings.
+
+experiments/120_fresh_v0.6/coprompt
+  Files: 10
+  Purpose: Original active-study implementation; no source edits in this revision.
+
+experiments/120_fresh_v0.6/data
+  Files: 27
+  Purpose: Frozen protocol, allocation, catalogues and metadata.
+
+experiments/120_fresh_v0.6/data/private
+  Files: 6
+  Purpose: Original hidden simulator answers and offline scoring annotations.
+
+experiments/120_fresh_v0.6/data/public
+  Files: 4
+  Purpose: Original public requests and fields; model-visible information boundary.
+
+experiments/120_fresh_v0.6/data/schemas
+  Files: 7
+  Purpose: Original protocol, request, answer, extraction and output schemas.
+
+experiments/120_fresh_v0.6/docs
+  Files: 1
+  Purpose: Completed-study method explanation.
+
+experiments/120_fresh_v0.6/outputs
+  Files: 12
+  Purpose: Original automatic analyses and historical review distribution material.
+
+experiments/120_fresh_v0.6/outputs/CoPrompt_validation_v0.6.0
+  Files: 1
+  Purpose: Existing validation candidates and pre-test lambda selection.
+
+experiments/120_fresh_v0.6/outputs/fresh120_analysis
+  Files: 11
+  Purpose: Original automatic analyses and historical review distribution material.
+
+experiments/120_fresh_v0.6/outputs/fresh120_analysis/private
+  Files: 1
+  Purpose: Original coordinator-only review policy mapping.
+
+experiments/120_fresh_v0.6/outputs/fresh120_analysis/review_forms
+  Files: 3
+  Purpose: Original review collection forms, distinct from completed returns.
+
+experiments/120_fresh_v0.6/runs
+  Files: 1009
+  Purpose: Original stage trajectories/manifests, costs, failures and response reuse.
+
+experiments/120_fresh_v0.6/runs/extraction_cache
+  Files: 120
+  Purpose: Saved extractor result/cache-reuse evidence.
+
+experiments/120_fresh_v0.6/runs/formal_raw_response_cache
+  Files: 642
+  Purpose: Original exact-request provider responses, not disposable runtime cache.
+
+experiments/120_fresh_v0.6/runs/formal_v0.6.0_design
+  Files: 3
+  Purpose: Original stage trajectories/manifests, costs, failures and response reuse.
+
+experiments/120_fresh_v0.6/runs/formal_v0.6.0_pilot_a
+  Files: 3
+  Purpose: Original stage trajectories/manifests, costs, failures and response reuse.
+
+experiments/120_fresh_v0.6/runs/formal_v0.6.0_pilot_b
+  Files: 3
+  Purpose: Original stage trajectories/manifests, costs, failures and response reuse.
+
+experiments/120_fresh_v0.6/runs/formal_v0.6.0_test
+  Files: 4
+  Purpose: Original stage trajectories/manifests, costs, failures and response reuse.
+
+experiments/120_fresh_v0.6/runs/formal_v0.6.0_validation
+  Files: 4
+  Purpose: Original stage trajectories/manifests, costs, failures and response reuse.
+
+experiments/120_fresh_v0.6/runs/generation_cache
+  Files: 223
+  Purpose: Saved generation/revision response/cache-reuse evidence.
+
+experiments/120_fresh_v0.6/tests
+  Files: 5
+  Purpose: Original 65-test study suite.
+
+experiments/120_fresh_v0.6/tools
+  Files: 4
+  Purpose: Existing offline validation, status, preflight and analysis tools.
+
+experiments/120_fresh_v0.6/work
+  Files: 25
+  Purpose: Original data construction, separation and audit evidence; not normal reader workflow.
+
+experiments/120_v0.5
+  Files: 7
+  Purpose: Older provenance-only data; not current test evidence.
+
+experiments/120_v0.5/data
+  Files: 6
+  Purpose: Older provenance-only data; not current test evidence.
+
+experiments/120_v0.5/data/private
+  Files: 3
+  Purpose: Older provenance-only data; not current test evidence.
+
+experiments/120_v0.5/data/public
+  Files: 3
+  Purpose: Older provenance-only data; not current test evidence.
+
+handoff
+  Files: 2
+  Purpose: Existing verifier used by the offline entry; supplied Windows-fixed bytes retained.
+
+human_review
+  Files: 17
+  Purpose: Completed review returns, fixed statistics and original numeric reproduction.
+
+human_review/inputs
+  Files: 7
+  Purpose: Unchanged human-review source packets, returns, mappings and proposal for original reproduction.
+
+references
+  Files: 2
+  Purpose: Original proposal and source record.
+
+runs
+  Files: 18
+  Purpose: Older root source/configuration/data/execution material, retained for historical provenance and integrity.
+
+submission
+  Files: 54
+  Purpose: Existing offline supplement, readable automatic diagnostics and evidence exports.
+
+submission/evidence
+  Files: 9
+  Purpose: Saved-data HTML, JSON and CSV formats; no live generation.
+
+submission/provenance
+  Files: 3
+  Purpose: Historical source inventories and comparison records; not regenerated historical claims.
+
+submission/tests
+  Files: 1
+  Purpose: Five original supplemental exporter tests.
+
+submission/verification
+  Files: 34
+  Purpose: Prior 27 October command/check history; current check summary is under delivery/.
+
+tools
+  Files: 1
+  Purpose: Older root source/configuration/data/execution material, retained for historical provenance and integrity.
+
+work
+  Files: 20
+  Purpose: Earlier authoring/handoff work; do not delete wholesale because of manifest and optional form-check dependencies.
+
+work/fresh120_review_form
+  Files: 6
+  Purpose: Original form construction/support; optional verifier invokes check_logic.cjs here.
+
+work/handoff_fresh120
+  Files: 13
+  Purpose: Older handoff construction and duplicate copies; no current reader need, retained as protected history.
+
+work/handoff_fresh120/docs
+  Files: 3
+  Purpose: Older handoff construction and duplicate copies; no current reader need, retained as protected history.
+
+work/handoff_fresh120/review_forms
+  Files: 5
+  Purpose: Older handoff construction and duplicate copies; no current reader need, retained as protected history.
+
+work/handoff_fresh120/source_translation
+  Files: 2
+  Purpose: Older handoff construction and duplicate copies; no current reader need, retained as protected history.

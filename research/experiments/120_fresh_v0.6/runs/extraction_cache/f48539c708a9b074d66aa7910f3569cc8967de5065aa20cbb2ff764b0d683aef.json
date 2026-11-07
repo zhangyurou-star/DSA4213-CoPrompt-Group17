@@ -1,0 +1,149 @@
+{
+  "cache_key": "f48539c708a9b074d66aa7910f3569cc8967de5065aa20cbb2ff764b0d683aef",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S7"
+    ],
+    "tone": [
+      "S2"
+    ],
+    "length": [
+      "S3"
+    ],
+    "required_content": [
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 58,
+      "text": "Write an opening proposal for a fictional barter exchange."
+    },
+    {
+      "id": "S2",
+      "start": 59,
+      "end": 90,
+      "text": "Use a courteous and open voice."
+    },
+    {
+      "id": "S3",
+      "start": 91,
+      "end": 130,
+      "text": "Keep the complete piece to 55–85 words."
+    },
+    {
+      "id": "S4",
+      "start": 131,
+      "end": 229,
+      "text": "Use this fictional material: The speaker offers two woven baskets in exchange for one lamp repair."
+    },
+    {
+      "id": "S5",
+      "start": 230,
+      "end": 341,
+      "text": "Suggest Sunday afternoon for the exchange, and make clear the other person can propose a different arrangement."
+    },
+    {
+      "id": "S6",
+      "start": 342,
+      "end": 429,
+      "text": "Required wording, verbatim: \"two woven baskets\", \"one lamp repair\", \"Sunday afternoon\"."
+    },
+    {
+      "id": "S7",
+      "start": 430,
+      "end": 514,
+      "text": "Use wording suitable for the other participant in a fictional neighborhood exchange."
+    }
+  ],
+  "field_values": {
+    "audience": "Use wording suitable for the other participant in a fictional neighborhood exchange.",
+    "tone": "Use a courteous and open voice.",
+    "length": "Keep the complete piece to 55–85 words.",
+    "required_content": "Use this fictional material: The speaker offers two woven baskets in exchange for one lamp repair.\nSuggest Sunday afternoon for the exchange, and make clear the other person can propose a different arrangement.\nRequired wording, verbatim: \"two woven baskets\", \"one lamp repair\", \"Sunday afternoon\"."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 430,
+        "end": 514,
+        "quote": "Use wording suitable for the other participant in a fictional neighborhood exchange."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 59,
+        "end": 90,
+        "quote": "Use a courteous and open voice."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 91,
+        "end": 130,
+        "quote": "Keep the complete piece to 55–85 words."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 131,
+        "end": 229,
+        "quote": "Use this fictional material: The speaker offers two woven baskets in exchange for one lamp repair."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 230,
+        "end": 341,
+        "quote": "Suggest Sunday afternoon for the exchange, and make clear the other person can propose a different arrangement."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 342,
+        "end": 429,
+        "quote": "Required wording, verbatim: \"two woven baskets\", \"one lamp repair\", \"Sunday afternoon\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S7\"],\"tone\":[\"S2\"],\"length\":[\"S3\"],\"required_content\":[\"S4\",\"S5\",\"S6\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S7"
+          ],
+          "tone": [
+            "S2"
+          ],
+          "length": [
+            "S3"
+          ],
+          "required_content": [
+            "S4",
+            "S5",
+            "S6"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

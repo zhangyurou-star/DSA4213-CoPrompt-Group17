@@ -1,0 +1,49 @@
+{
+  "cache_key": "7ca5cb4ec93aa3766f417269e46cfece8ea7764e03c1ab1510fab97200b5993f",
+  "source_case_id": "NTCW16",
+  "source_policy": "prompt_only",
+  "output": {
+    "text": "I am the rook, and I have spent my life along the edge of the board, where the corners are sharp and the silence is deep. I am the rook, and I have watched the knight leap—three squares this way, two that—like a rumor that refuses to stay still. I envied that chaos, the way he danced over the squares like he owned the whole game. I thought my straight lines were prison, my rigid paths a sentence. But then, one afternoon, the light caught the edge of the board just right, and I saw my shadow stretch—long, unbroken, true. I realized: my strength is not in the leap, but in the line. I am the rook, and I am the edge of the board. And in that straight line, I found pride. Not in what I could not be, but in what I am."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"I am the rook, and I have spent my life along the edge of the board, where the corners are sharp and the silence is deep. I am the rook, and I have watched the knight leap—three squares this way, two that—like a rumor that refuses to stay still. I envied that chaos, the way he danced over the squares like he owned the whole game. I thought my straight lines were prison, my rigid paths a sentence. But then, one afternoon, the light caught the edge of the board just right, and I saw my shadow stretch—long, unbroken, true. I realized: my strength is not in the leap, but in the line. I am the rook, and I am the edge of the board. And in that straight line, I found pride. Not in what I could not be, but in what I am.\"\n}",
+      "parsed": {
+        "text": "I am the rook, and I have spent my life along the edge of the board, where the corners are sharp and the silence is deep. I am the rook, and I have watched the knight leap—three squares this way, two that—like a rumor that refuses to stay still. I envied that chaos, the way he danced over the squares like he owned the whole game. I thought my straight lines were prison, my rigid paths a sentence. But then, one afternoon, the light caught the edge of the board just right, and I saw my shadow stretch—long, unbroken, true. I realized: my strength is not in the leap, but in the line. I am the rook, and I am the edge of the board. And in that straight line, I found pride. Not in what I could not be, but in what I am."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 148
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 148
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

@@ -1,0 +1,35 @@
+{
+  "status": "english_handoff_verified",
+  "verified_utc": "2026-10-20T05:58:27.759565+00:00",
+  "verified_manifest_sha256": "dae78b38f4320ccef74eb86f9dc6bf5f33f6ebb025a5f105b823210087381766",
+  "files_verified": 1178,
+  "unchanged_model_data_and_run_files": 1055,
+  "revision": "EN1",
+  "api_calls": 0,
+  "original_package_modified": false,
+  "english_user_facing_source_and_paths": true,
+  "review_records_ids_order_ratings_unchanged": true,
+  "localized_tests": "----------------------------------------------------------------------\nRan 65 tests in 3.095s\n\nOK",
+  "original_tests": "----------------------------------------------------------------------\nRan 65 tests in 3.061s\n\nOK",
+  "review_form_checks": {
+    "status": "passed",
+    "assertions": 394,
+    "coverage": "Offline JavaScript logic and content tests using a minimal DOM stub. No browser rendering or native download/dialog behavior certified.",
+    "real_ratings_written": 0,
+    "model_calls": 0
+  },
+  "completed_logical_trajectories": 480,
+  "dataset_cases": {
+    "design": 40,
+    "validation": 20,
+    "test": 60,
+    "total": 120
+  },
+  "selected_lambda": 0.25,
+  "cumulative_accounted_usd": 0.17262309,
+  "original_and_english_analyses_equivalent": true,
+  "original_frozen_files_verified": 71,
+  "localized_freeze_tamper_rejected": true,
+  "human_review": "pending_actual_reviewers",
+  "browser_rendering": "not_certified; local browser preview was previously blocked"
+}

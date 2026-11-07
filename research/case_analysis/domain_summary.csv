@@ -1,0 +1,9 @@
+﻿system,domain,cases,mean_quality,mean_questions,fully_passing_cases
+direct,constrained_writing,30,0.5666666666666667,0,11
+direct,study_planning,30,0.8477777777777777,0,19
+exhaustive,constrained_writing,30,0.65,1.0666666666666667,11
+exhaustive,study_planning,30,0.9255555555555556,1.3,24
+prompt_only,constrained_writing,30,0.65,0.8666666666666667,12
+prompt_only,study_planning,30,0.9088888888888889,1.1666666666666667,23
+value_based,constrained_writing,30,0.6833333333333333,1.0666666666666667,13
+value_based,study_planning,30,0.9144444444444444,1.3,23

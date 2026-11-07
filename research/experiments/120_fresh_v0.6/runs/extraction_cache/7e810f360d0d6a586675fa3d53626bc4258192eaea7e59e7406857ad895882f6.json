@@ -1,0 +1,146 @@
+{
+  "cache_key": "7e810f360d0d6a586675fa3d53626bc4258192eaea7e59e7406857ad895882f6",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S8"
+    ],
+    "available_time": [
+      "S7"
+    ],
+    "topics": [
+      "S4",
+      "S5"
+    ],
+    "priorities": [
+      "S6"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 73,
+      "text": "I am preparing for a classroom discussion of edible mushroom cultivation."
+    },
+    {
+      "id": "S2",
+      "start": 74,
+      "end": 119,
+      "text": "Schedule my reading of the production stages."
+    },
+    {
+      "id": "S3",
+      "start": 120,
+      "end": 140,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 141,
+      "end": 298,
+      "text": "Use the exact labels \"Sterile Inoculation\", \"Substrate Colonization\", \"Fruiting Conditions\" in the schedule, with at least 15 total minutes assigned to each."
+    },
+    {
+      "id": "S5",
+      "start": 299,
+      "end": 375,
+      "text": "Within that coverage, \"Sterile Inoculation\" needs at least 25 total minutes."
+    },
+    {
+      "id": "S6",
+      "start": 376,
+      "end": 452,
+      "text": "I have no preferred topic order and no additional minimum-time requirements."
+    },
+    {
+      "id": "S7",
+      "start": 453,
+      "end": 510,
+      "text": "There is a firm ceiling of 35 study minutes on each date."
+    },
+    {
+      "id": "S8",
+      "start": 511,
+      "end": 587,
+      "text": "The last usable study date is 2027-02-04, and sessions may fall on that day."
+    }
+  ],
+  "field_values": {
+    "deadline": "The last usable study date is 2027-02-04, and sessions may fall on that day.",
+    "available_time": null,
+    "topics": "Use the exact labels \"Sterile Inoculation\", \"Substrate Colonization\", \"Fruiting Conditions\" in the schedule, with at least 15 total minutes assigned to each.\nWithin that coverage, \"Sterile Inoculation\" needs at least 25 total minutes.",
+    "priorities": "I have no preferred topic order and no additional minimum-time requirements."
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 511,
+        "end": 587,
+        "quote": "The last usable study date is 2027-02-04, and sessions may fall on that day."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 141,
+        "end": 298,
+        "quote": "Use the exact labels \"Sterile Inoculation\", \"Substrate Colonization\", \"Fruiting Conditions\" in the schedule, with at least 15 total minutes assigned to each."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 299,
+        "end": 375,
+        "quote": "Within that coverage, \"Sterile Inoculation\" needs at least 25 total minutes."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 376,
+        "end": 452,
+        "quote": "I have no preferred topic order and no additional minimum-time requirements."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "available_time",
+      "proposed_evidence": [
+        "S7"
+      ],
+      "proposed_value": "There is a firm ceiling of 35 study minutes on each date.",
+      "reason": "quote_has_no_daily_time_allowance_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S8\"],\"available_time\":[\"S7\"],\"topics\":[\"S4\",\"S5\"],\"priorities\":[\"S6\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S8"
+          ],
+          "available_time": [
+            "S7"
+          ],
+          "topics": [
+            "S4",
+            "S5"
+          ],
+          "priorities": [
+            "S6"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

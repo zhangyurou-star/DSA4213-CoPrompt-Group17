@@ -1,0 +1,140 @@
+{
+  "cache_key": "f68d3561a73ac39a20843a5d53f9b4279bb0f479c0067e63ac36d79235f5ba1b",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S7"
+    ],
+    "available_time": [
+      "S6"
+    ],
+    "topics": [
+      "S4",
+      "S5"
+    ],
+    "priorities": [
+      "S5"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 61,
+      "text": "I have a tooth-identification worksheet for an anatomy class."
+    },
+    {
+      "id": "S2",
+      "start": 62,
+      "end": 96,
+      "text": "Arrange a short revision schedule."
+    },
+    {
+      "id": "S3",
+      "start": 97,
+      "end": 117,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 118,
+      "end": 238,
+      "text": "Use the exact labels \"Incisors\", \"Premolars\", \"Molars\" in the schedule, with at least 25 total minutes assigned to each."
+    },
+    {
+      "id": "S5",
+      "start": 239,
+      "end": 304,
+      "text": "Within that coverage, \"Incisors\" needs at least 35 total minutes."
+    },
+    {
+      "id": "S6",
+      "start": 305,
+      "end": 362,
+      "text": "There is a firm ceiling of 70 study minutes on each date."
+    },
+    {
+      "id": "S7",
+      "start": 363,
+      "end": 439,
+      "text": "The last usable study date is 2027-02-07, and sessions may fall on that day."
+    }
+  ],
+  "field_values": {
+    "deadline": "The last usable study date is 2027-02-07, and sessions may fall on that day.",
+    "available_time": null,
+    "topics": "Use the exact labels \"Incisors\", \"Premolars\", \"Molars\" in the schedule, with at least 25 total minutes assigned to each.\nWithin that coverage, \"Incisors\" needs at least 35 total minutes.",
+    "priorities": "Within that coverage, \"Incisors\" needs at least 35 total minutes."
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 363,
+        "end": 439,
+        "quote": "The last usable study date is 2027-02-07, and sessions may fall on that day."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 118,
+        "end": 238,
+        "quote": "Use the exact labels \"Incisors\", \"Premolars\", \"Molars\" in the schedule, with at least 25 total minutes assigned to each."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 239,
+        "end": 304,
+        "quote": "Within that coverage, \"Incisors\" needs at least 35 total minutes."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 239,
+        "end": 304,
+        "quote": "Within that coverage, \"Incisors\" needs at least 35 total minutes."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "available_time",
+      "proposed_evidence": [
+        "S6"
+      ],
+      "proposed_value": "There is a firm ceiling of 70 study minutes on each date.",
+      "reason": "quote_has_no_daily_time_allowance_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S7\"],\"available_time\":[\"S6\"],\"topics\":[\"S4\",\"S5\"],\"priorities\":[\"S5\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S7"
+          ],
+          "available_time": [
+            "S6"
+          ],
+          "topics": [
+            "S4",
+            "S5"
+          ],
+          "priorities": [
+            "S5"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

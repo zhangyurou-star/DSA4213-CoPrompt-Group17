@@ -1,0 +1,259 @@
+{
+  "cache_key": "6a15ca0832850c980ce4d0416c4fdc0e2a40b963c1f5f8c2801d41b755806faa",
+  "source_case_id": "NTSP25",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Wand Signals",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Stand Clearances",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Pushback Coordination",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Wand Signals",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Stand Clearances",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Pushback Coordination",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-07",
+        "topic": "Wand Signals",
+        "minutes": 10
+      }
+    ],
+    "summary": "Calculated from the schedule: 140 minutes in total. Daily totals: 2027-02-01: 30 minutes; 2027-02-02: 20 minutes; 2027-02-03: 20 minutes; 2027-02-04: 20 minutes; 2027-02-05: 20 minutes; 2027-02-06: 20 minutes; 2027-02-07: 10 minutes. Topic totals: Pushback Coordination: 40 minutes; Stand Clearances: 40 minutes; Wand Signals: 60 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Wand Signals\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Stand Clearances\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Pushback Coordination\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Wand Signals\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Stand Clearances\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Pushback Coordination\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-07\",\n      \"topic\": \"Wand Signals\",\n      \"minutes\": 10\n    }\n  ],\n  \"summary\": \"The study schedule covers all required topics—Wand Signals, Stand Clearances, and Pushback Coordination—within the specified date window from 2027-02-01 to 2027-02-07. Total time allocated is 120 minutes, with no day exceeding 50 minutes. Wand Signals receives 60 minutes (meeting the 30-minute minimum), Stand Clearances receives 40 minutes (meeting the 20-minute minimum), and Pushback Coordination receives 40 minutes (meeting the 20-minute minimum).\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Wand Signals",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Stand Clearances",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Pushback Coordination",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Wand Signals",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Stand Clearances",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Pushback Coordination",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-07",
+            "topic": "Wand Signals",
+            "minutes": 10
+          }
+        ],
+        "summary": "The study schedule covers all required topics—Wand Signals, Stand Clearances, and Pushback Coordination—within the specified date window from 2027-02-01 to 2027-02-07. Total time allocated is 120 minutes, with no day exceeding 50 minutes. Wand Signals receives 60 minutes (meeting the 30-minute minimum), Stand Clearances receives 40 minutes (meeting the 20-minute minimum), and Pushback Coordination receives 40 minutes (meeting the 20-minute minimum)."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 50
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "I can spare at most 50 minutes per day, counting every topic together."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use only dates from 2027-02-01 through 2027-02-07, including the final date."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 140,
+      "daily_minutes": {
+        "2027-02-01": 30,
+        "2027-02-02": 20,
+        "2027-02-03": 20,
+        "2027-02-04": 20,
+        "2027-02-05": 20,
+        "2027-02-06": 20,
+        "2027-02-07": 10
+      },
+      "topic_minutes": [
+        {
+          "topic": "Pushback Coordination",
+          "normalized_topic": "pushback coordination",
+          "minutes": 40
+        },
+        {
+          "topic": "Stand Clearances",
+          "normalized_topic": "stand clearances",
+          "minutes": 40
+        },
+        {
+          "topic": "Wand Signals",
+          "normalized_topic": "wand signals",
+          "minutes": 60
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 50
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use only dates from 2027-02-01 through 2027-02-07, including the final date."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 140,
+      "daily_minutes": {
+        "2027-02-01": 30,
+        "2027-02-02": 20,
+        "2027-02-03": 20,
+        "2027-02-04": 20,
+        "2027-02-05": 20,
+        "2027-02-06": 20,
+        "2027-02-07": 10
+      },
+      "topic_minutes": [
+        {
+          "topic": "Pushback Coordination",
+          "normalized_topic": "pushback coordination",
+          "minutes": 40
+        },
+        {
+          "topic": "Stand Clearances",
+          "normalized_topic": "stand clearances",
+          "minutes": 40
+        },
+        {
+          "topic": "Wand Signals",
+          "normalized_topic": "wand signals",
+          "minutes": 60
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 50
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use only dates from 2027-02-01 through 2027-02-07, including the final date."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study schedule covers all required topics—Wand Signals, Stand Clearances, and Pushback Coordination—within the specified date window from 2027-02-01 to 2027-02-07. Total time allocated is 120 minutes, with no day exceeding 50 minutes. Wand Signals receives 60 minutes (meeting the 30-minute minimum), Stand Clearances receives 40 minutes (meeting the 20-minute minimum), and Pushback Coordination receives 40 minutes (meeting the 20-minute minimum).",
+    "derived_summary": "Calculated from the schedule: 140 minutes in total. Daily totals: 2027-02-01: 30 minutes; 2027-02-02: 20 minutes; 2027-02-03: 20 minutes; 2027-02-04: 20 minutes; 2027-02-05: 20 minutes; 2027-02-06: 20 minutes; 2027-02-07: 10 minutes. Topic totals: Pushback Coordination: 40 minutes; Stand Clearances: 40 minutes; Wand Signals: 60 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

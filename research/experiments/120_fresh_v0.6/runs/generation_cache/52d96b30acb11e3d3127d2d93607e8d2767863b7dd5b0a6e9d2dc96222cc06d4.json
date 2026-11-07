@@ -1,0 +1,195 @@
+{
+  "cache_key": "52d96b30acb11e3d3127d2d93607e8d2767863b7dd5b0a6e9d2dc96222cc06d4",
+  "source_case_id": "NTSP16",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Foundation Bundles",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Stitch Spacing",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Rim Finishing",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Foundation Bundles",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Stitch Spacing",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Rim Finishing",
+        "minutes": 10
+      }
+    ],
+    "summary": "Calculated from the schedule: 85 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 15 minutes; 2027-02-03: 15 minutes; 2027-02-04: 10 minutes; 2027-02-05: 10 minutes; 2027-02-06: 10 minutes. Topic totals: Foundation Bundles: 35 minutes; Rim Finishing: 25 minutes; Stitch Spacing: 25 minutes. Recognized visible constraint checks passed; this does not verify every user requirement."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Foundation Bundles\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Stitch Spacing\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Rim Finishing\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Foundation Bundles\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Stitch Spacing\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Rim Finishing\",\n      \"minutes\": 10\n    }\n  ],\n  \"summary\": \"The study plan covers the construction of coiled baskets with a focus on Foundation Bundles (25 minutes total), Stitch Spacing (25 minutes total), and Rim Finishing (25 minutes total), starting on 2027-02-01. All required topics are addressed across six sessions, meeting the minimum time requirements.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Foundation Bundles",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Stitch Spacing",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Rim Finishing",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Foundation Bundles",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Stitch Spacing",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Rim Finishing",
+            "minutes": 10
+          }
+        ],
+        "summary": "The study plan covers the construction of coiled baskets with a focus on Foundation Bundles (25 minutes total), Stitch Spacing (25 minutes total), and Rim Finishing (25 minutes total), starting on 2027-02-01. All required topics are addressed across six sessions, meeting the minimum time requirements."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 85,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 15,
+        "2027-02-03": 15,
+        "2027-02-04": 10,
+        "2027-02-05": 10,
+        "2027-02-06": 10
+      },
+      "topic_minutes": [
+        {
+          "topic": "Foundation Bundles",
+          "normalized_topic": "foundation bundles",
+          "minutes": 35
+        },
+        {
+          "topic": "Rim Finishing",
+          "normalized_topic": "rim finishing",
+          "minutes": 25
+        },
+        {
+          "topic": "Stitch Spacing",
+          "normalized_topic": "stitch spacing",
+          "minutes": 25
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 85,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 15,
+        "2027-02-03": 15,
+        "2027-02-04": 10,
+        "2027-02-05": 10,
+        "2027-02-06": 10
+      },
+      "topic_minutes": [
+        {
+          "topic": "Foundation Bundles",
+          "normalized_topic": "foundation bundles",
+          "minutes": 35
+        },
+        {
+          "topic": "Rim Finishing",
+          "normalized_topic": "rim finishing",
+          "minutes": 25
+        },
+        {
+          "topic": "Stitch Spacing",
+          "normalized_topic": "stitch spacing",
+          "minutes": 25
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study plan covers the construction of coiled baskets with a focus on Foundation Bundles (25 minutes total), Stitch Spacing (25 minutes total), and Rim Finishing (25 minutes total), starting on 2027-02-01. All required topics are addressed across six sessions, meeting the minimum time requirements.",
+    "derived_summary": "Calculated from the schedule: 85 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 15 minutes; 2027-02-03: 15 minutes; 2027-02-04: 10 minutes; 2027-02-05: 10 minutes; 2027-02-06: 10 minutes. Topic totals: Foundation Bundles: 35 minutes; Rim Finishing: 25 minutes; Stitch Spacing: 25 minutes. Recognized visible constraint checks passed; this does not verify every user requirement."
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "cache_key": "0b9ae7a6bdd72016280781e3b4c7698ada842653919a14cf38df526d4eb0186a",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S5"
+    ],
+    "available_time": [
+      "S4"
+    ],
+    "topics": [
+      "S6",
+      "S7"
+    ],
+    "priorities": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 90,
+      "text": "I am attending a coffee tasting and want to recognize the vocabulary in the tasting notes."
+    },
+    {
+      "id": "S2",
+      "start": 91,
+      "end": 111,
+      "text": "Plan my preparation."
+    },
+    {
+      "id": "S3",
+      "start": 112,
+      "end": 132,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 133,
+      "end": 202,
+      "text": "Keep each daily total at or below 40 minutes across all study blocks."
+    },
+    {
+      "id": "S5",
+      "start": 203,
+      "end": 278,
+      "text": "I can still study on 2027-02-03, but no study should be scheduled after it."
+    },
+    {
+      "id": "S6",
+      "start": 279,
+      "end": 382,
+      "text": "I need 15 minutes or more in total on each of \"Aroma Wheel\", \"Acidity Descriptors\", \"Cupping Protocol\"."
+    },
+    {
+      "id": "S7",
+      "start": 383,
+      "end": 419,
+      "text": "Those are the required topic labels."
+    },
+    {
+      "id": "S8",
+      "start": 420,
+      "end": 490,
+      "text": "Please produce the schedule now without asking me follow-up questions."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": "Keep each daily total at or below 40 minutes across all study blocks.",
+    "topics": "I need 15 minutes or more in total on each of \"Aroma Wheel\", \"Acidity Descriptors\", \"Cupping Protocol\".\nThose are the required topic labels.",
+    "priorities": null
+  },
+  "evidence": {
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 133,
+        "end": 202,
+        "quote": "Keep each daily total at or below 40 minutes across all study blocks."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 279,
+        "end": 382,
+        "quote": "I need 15 minutes or more in total on each of \"Aroma Wheel\", \"Acidity Descriptors\", \"Cupping Protocol\"."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 383,
+        "end": 419,
+        "quote": "Those are the required topic labels."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "deadline",
+      "proposed_evidence": [
+        "S5"
+      ],
+      "proposed_value": "I can still study on 2027-02-03, but no study should be scheduled after it.",
+      "reason": "quote_has_no_explicit_endpoint_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S5\"],\"available_time\":[\"S4\"],\"topics\":[\"S6\",\"S7\"],\"priorities\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S5"
+          ],
+          "available_time": [
+            "S4"
+          ],
+          "topics": [
+            "S6",
+            "S7"
+          ],
+          "priorities": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

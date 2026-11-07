@@ -1,0 +1,72 @@
+{
+  "key": "2526e47faa2103fb042f20707f589bb409c43c54e6f858f4f6e7d88aada7539c",
+  "raw": "{\n  \"text\": \"Facilitators, begin the exercise. At Depot Seven, the parcel labels have vanished while the inventory list remains intact. The team must decide whether to pause the dispatch. Consider the risks of proceeding without visible labels versus operational delays. What evidence would justify resuming dispatch? This is an imaginary discussion exercise. Address the scenario with a neutral, concrete voice. Focus on decision-making under uncertainty. The inject states that at Depot Seven the parcel labels have vanished while the inventory list remains intact. Ask the team whether to pause the dispatch and what evidence would justify resuming. This is an imaginary discussion exercise.\"\n}",
+  "source_case_id": "NVCW06",
+  "source_variant": "value_lambda_0",
+  "response_sha256": "df86471d57727359b8136314c3ca928730b84e398ce64a09e89433b633ad3551",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "generation",
+    "repair": true,
+    "repair_kind": "constraint",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Complete the user's task using only the original request, public context and the visible clarification exchanges.\nDo not ask more questions. Honor all available requirements, including exact phrases and the full-text word count.\nvisible_constraints is a deterministic, partial checklist derived only from that visible text, not new user requirements.\nAlways honor the original visible text as well; absence from the checklist does not remove a requirement.\nDo not invent event details, promises, historical facts or beneficiary groups. Omit unavailable specifics or use clearly marked placeholders.\nTreat concrete dates, clock times, addresses, names, contact details, links, services and free-access claims as facts requiring visible support.\nPlausibility is not evidence. Do not add these details to make a notice sound complete or to reach its minimum word count.\nDo not claim a link is provided when none is available. Use neutral connective wording without adding factual commitments.\nReturn exactly one JSON object matching the supplied output schema, without Markdown fences or surrounding commentary.\nFor writing, put ALL headings, greetings, body and signature inside text.\nCopy required literal phrases unchanged. Draft near the middle of the full-text word range, then check the complete text length.\nWhen revising a length failure, rewrite the whole text toward the range midpoint while retaining every required literal; do not merely append or trim a final sentence.\nWord counting includes every heading and signature: letter/digit sequences, with internal apostrophes or hyphens, count as words.\nFor study plans, each schedule item has one complete topic name, a real ISO date and positive integer minutes;\nfirst compute each topic's required total, then allocate those minutes across the permitted days without exceeding any day's combined limit.\nA topic-specific minimum replaces a smaller general minimum for that topic; it is not an extra requirement to add twice.\nSplit a topic across days when needed. Use a compact schedule with only necessary sessions; do not repeat every topic on every day.\nCheck the sum of ALL sessions per date and the sum per exact topic label before returning. Keep summary short and consistent with schedule.\nIf a deadline or daily allowance is unknown, use a short conservative plan without claiming a guessed bound was supplied.\nNever add an unsupported numeric constraint. If visible requirements conflict, explain the conflict in the output rather than claim compliance.\nWrite in English."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"constrained_writing\", \"initial_request\": \"Write a scenario inject for a fictional tabletop exercise. The full text must be between 65 and 95 words. Use a neutral and concrete voice.\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [{\"field_id\": \"audience\", \"question\": \"Who is the intended audience?\", \"status\": \"available\", \"answer_text\": \"Address this to facilitators running an invented logistics exercise.\"}, {\"field_id\": \"required_content\", \"question\": \"What information or exact wording must the text include?\", \"status\": \"available\", \"answer_text\": \"Build the piece around these synthetic facts: The fictional inject states that at Depot Seven the parcel labels have vanished while the inventory list remains intact. Ask the team whether to pause the dispatch and what evidence would justify resuming. This is an imaginary discussion exercise. The text must contain \\\"Depot Seven\\\", \\\"labels have vanished\\\", \\\"pause the dispatch\\\" verbatim.\"}], \"visible_constraints\": {\"version\": \"visible-constraints-0.4.0\", \"domain\": \"constrained_writing\", \"constraints\": [{\"kind\": \"word_count\", \"parameters\": {\"min_words\": 65, \"max_words\": 95}, \"source\": [{\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"The full text must be between 65 and 95 words.\"}]}], \"warnings\": []}, \"output_schema\": {\"$schema\": \"https://json-schema.org/draft/2020-12/schema\", \"type\": \"object\", \"properties\": {\"text\": {\"type\": \"string\", \"minLength\": 1, \"pattern\": \"\\\\S\"}}, \"required\": [\"text\"], \"additionalProperties\": false}}"
+      },
+      {
+        "role": "assistant",
+        "content": "{\n  \"text\": \"Facilitators, begin the exercise. At Depot Seven, the parcel labels have vanished while the inventory list remains intact. The team must decide whether to pause the dispatch. Consider the risks of proceeding without visible labels versus the operational delays of halting. What evidence would justify resuming dispatch? This is an imaginary discussion exercise. Address the scenario with a neutral, concrete voice. Focus on decision-making under uncertainty. The inject states that at Depot Seven the parcel labels have vanished while the inventory list remains intact. Ask the team whether to pause the dispatch and what evidence would justify resuming. This is an imaginary discussion exercise.\"\n}"
+      },
+      {
+        "role": "user",
+        "content": "A deterministic check of requirements already visible above found these issues: [\"word_count: {\\\"max_words\\\": 95, \\\"min_words\\\": 65, \\\"observed_words\\\": 104}\"] Complete measurements of the same visible requirements, including passing requirements: {\"domain\": \"constrained_writing\", \"observed\": {\"full_text_words\": 104}, \"requirements\": [{\"kind\": \"word_count\", \"parameters\": {\"min_words\": 65, \"max_words\": 95}}], \"violations\": [\"word_count: {\\\"max_words\\\": 95, \\\"min_words\\\": 65, \\\"observed_words\\\": 104}\"], \"interpretation_warnings\": []}. Return one corrected complete JSON object. Fix the listed issues while preserving all other visible requirements. No new facts or requirements have been added. Recheck word count and verbatim phrases for writing; rewrite toward the word-range midpoint without inventing dates, addresses, times, services or other facts. For schedules, jointly satisfy date bounds, combined daily sums and all topic minimum totals. A topic minimum is a total across dates; reducing a daily excess must not make that topic total too small. This is the only constraint revision. Return your complete best effort even if some requirements remain unmet; do not claim compliance with a requirement that still fails. Keep the output compact."
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^N(?:D(?:CW|SP)(?:0[1-9]|1[0-9]|20)|V(?:CW|SP)(?:0[1-9]|10)|T(?:CW|SP)(?:0[1-9]|[12][0-9]|30))$"
+    },
+    "answers": {
+      "type": "object",
+      "minProperties": 4,
+      "maxProperties": 4,
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "enum": [
+              "available",
+              "unknown",
+              "declined"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "status",
+          "text"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "case_id",
+    "answers"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,234 @@
+{
+  "cache_key": "fb8be95e8836e652ad6f5cbebff8ceeb387a9bcbabf002883ea8b7017afd6ad2",
+  "source_case_id": "NTSP20",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Stroke Entry",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Ink Loading",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Brush Pressure",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Stroke Entry",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Ink Loading",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Brush Pressure",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-07",
+        "topic": "Stroke Entry",
+        "minutes": 15
+      }
+    ],
+    "summary": "Calculated from the schedule: 105 minutes in total. Daily totals: 2027-02-01: 15 minutes; 2027-02-02: 15 minutes; 2027-02-03: 15 minutes; 2027-02-04: 15 minutes; 2027-02-05: 15 minutes; 2027-02-06: 15 minutes; 2027-02-07: 15 minutes. Topic totals: Brush Pressure: 30 minutes; Ink Loading: 30 minutes; Stroke Entry: 45 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Stroke Entry\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Ink Loading\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Brush Pressure\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Stroke Entry\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Ink Loading\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Brush Pressure\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-07\",\n      \"topic\": \"Stroke Entry\",\n      \"minutes\": 15\n    }\n  ],\n  \"summary\": \"All three topics—Stroke Entry, Ink Loading, and Brush Pressure—have been scheduled for a minimum of 15 minutes each, totaling 45 minutes across the study window from 2027-02-01 to 2027-02-07. Each session adheres to the 70-minute daily limit, with no date exceeding this cap. The schedule ensures balanced practice and meets all specified constraints.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Stroke Entry",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Ink Loading",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Brush Pressure",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Stroke Entry",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Ink Loading",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Brush Pressure",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-07",
+            "topic": "Stroke Entry",
+            "minutes": 15
+          }
+        ],
+        "summary": "All three topics—Stroke Entry, Ink Loading, and Brush Pressure—have been scheduled for a minimum of 15 minutes each, totaling 45 minutes across the study window from 2027-02-01 to 2027-02-07. Each session adheres to the 70-minute daily limit, with no date exceeding this cap. The schedule ensures balanced practice and meets all specified constraints."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-07; that date is still available."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 105,
+      "daily_minutes": {
+        "2027-02-01": 15,
+        "2027-02-02": 15,
+        "2027-02-03": 15,
+        "2027-02-04": 15,
+        "2027-02-05": 15,
+        "2027-02-06": 15,
+        "2027-02-07": 15
+      },
+      "topic_minutes": [
+        {
+          "topic": "Brush Pressure",
+          "normalized_topic": "brush pressure",
+          "minutes": 30
+        },
+        {
+          "topic": "Ink Loading",
+          "normalized_topic": "ink loading",
+          "minutes": 30
+        },
+        {
+          "topic": "Stroke Entry",
+          "normalized_topic": "stroke entry",
+          "minutes": 45
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-07; that date is still available."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 105,
+      "daily_minutes": {
+        "2027-02-01": 15,
+        "2027-02-02": 15,
+        "2027-02-03": 15,
+        "2027-02-04": 15,
+        "2027-02-05": 15,
+        "2027-02-06": 15,
+        "2027-02-07": 15
+      },
+      "topic_minutes": [
+        {
+          "topic": "Brush Pressure",
+          "normalized_topic": "brush pressure",
+          "minutes": 30
+        },
+        {
+          "topic": "Ink Loading",
+          "normalized_topic": "ink loading",
+          "minutes": 30
+        },
+        {
+          "topic": "Stroke Entry",
+          "normalized_topic": "stroke entry",
+          "minutes": 45
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-07; that date is still available."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "All three topics—Stroke Entry, Ink Loading, and Brush Pressure—have been scheduled for a minimum of 15 minutes each, totaling 45 minutes across the study window from 2027-02-01 to 2027-02-07. Each session adheres to the 70-minute daily limit, with no date exceeding this cap. The schedule ensures balanced practice and meets all specified constraints.",
+    "derived_summary": "Calculated from the schedule: 105 minutes in total. Daily totals: 2027-02-01: 15 minutes; 2027-02-02: 15 minutes; 2027-02-03: 15 minutes; 2027-02-04: 15 minutes; 2027-02-05: 15 minutes; 2027-02-06: 15 minutes; 2027-02-07: 15 minutes. Topic totals: Brush Pressure: 30 minutes; Ink Loading: 30 minutes; Stroke Entry: 45 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

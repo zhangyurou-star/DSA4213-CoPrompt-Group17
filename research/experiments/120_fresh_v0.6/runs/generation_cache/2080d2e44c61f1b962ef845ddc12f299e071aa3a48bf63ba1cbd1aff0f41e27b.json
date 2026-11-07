@@ -1,0 +1,159 @@
+{
+  "cache_key": "2080d2e44c61f1b962ef845ddc12f299e071aa3a48bf63ba1cbd1aff0f41e27b",
+  "source_case_id": "NDSP15",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Chawan Handling",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Chasen Care",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Utensil Placement",
+        "minutes": 20
+      }
+    ],
+    "summary": "Calculated from the schedule: 60 minutes in total. Daily totals: 2027-02-01: 20 minutes; 2027-02-02: 20 minutes; 2027-02-03: 20 minutes. Topic totals: Chasen Care: 20 minutes; Chawan Handling: 20 minutes; Utensil Placement: 20 minutes. Recognized visible constraint checks passed; this does not verify every user requirement."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Chawan Handling\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Chasen Care\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Utensil Placement\",\n      \"minutes\": 20\n    }\n  ],\n  \"summary\": \"Study plan completed with 20 minutes allocated to each of the three required topics—Chawan Handling, Chasen Care, and Utensil Placement—starting on 2027-02-01, with one session per day to ensure focused practice.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Chawan Handling",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Chasen Care",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Utensil Placement",
+            "minutes": 20
+          }
+        ],
+        "summary": "Study plan completed with 20 minutes allocated to each of the three required topics—Chawan Handling, Chasen Care, and Utensil Placement—starting on 2027-02-01, with one session per day to ensure focused practice."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 60,
+      "daily_minutes": {
+        "2027-02-01": 20,
+        "2027-02-02": 20,
+        "2027-02-03": 20
+      },
+      "topic_minutes": [
+        {
+          "topic": "Chasen Care",
+          "normalized_topic": "chasen care",
+          "minutes": 20
+        },
+        {
+          "topic": "Chawan Handling",
+          "normalized_topic": "chawan handling",
+          "minutes": 20
+        },
+        {
+          "topic": "Utensil Placement",
+          "normalized_topic": "utensil placement",
+          "minutes": 20
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 60,
+      "daily_minutes": {
+        "2027-02-01": 20,
+        "2027-02-02": 20,
+        "2027-02-03": 20
+      },
+      "topic_minutes": [
+        {
+          "topic": "Chasen Care",
+          "normalized_topic": "chasen care",
+          "minutes": 20
+        },
+        {
+          "topic": "Chawan Handling",
+          "normalized_topic": "chawan handling",
+          "minutes": 20
+        },
+        {
+          "topic": "Utensil Placement",
+          "normalized_topic": "utensil placement",
+          "minutes": 20
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "Study plan completed with 20 minutes allocated to each of the three required topics—Chawan Handling, Chasen Care, and Utensil Placement—starting on 2027-02-01, with one session per day to ensure focused practice.",
+    "derived_summary": "Calculated from the schedule: 60 minutes in total. Daily totals: 2027-02-01: 20 minutes; 2027-02-02: 20 minutes; 2027-02-03: 20 minutes. Topic totals: Chasen Care: 20 minutes; Chawan Handling: 20 minutes; Utensil Placement: 20 minutes. Recognized visible constraint checks passed; this does not verify every user requirement."
+  }
+}

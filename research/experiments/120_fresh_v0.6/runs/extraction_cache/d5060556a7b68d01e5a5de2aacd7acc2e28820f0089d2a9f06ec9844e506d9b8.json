@@ -1,0 +1,136 @@
+{
+  "cache_key": "d5060556a7b68d01e5a5de2aacd7acc2e28820f0089d2a9f06ec9844e506d9b8",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [],
+    "available_time": [
+      "S4"
+    ],
+    "topics": [
+      "S5",
+      "S6",
+      "S7"
+    ],
+    "priorities": [
+      "S7"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 80,
+      "text": "A local-history transcription group has given me an unfamiliar handwritten page."
+    },
+    {
+      "id": "S2",
+      "start": 81,
+      "end": 118,
+      "text": "Organize my palaeography preparation."
+    },
+    {
+      "id": "S3",
+      "start": 119,
+      "end": 139,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 140,
+      "end": 210,
+      "text": "I can spare at most 45 minutes per day, counting every topic together."
+    },
+    {
+      "id": "S5",
+      "start": 211,
+      "end": 283,
+      "text": "Include \"Secretary Hand\", \"Abbreviation Marks\", using those topic names."
+    },
+    {
+      "id": "S6",
+      "start": 284,
+      "end": 339,
+      "text": "Allocate at least 10 cumulative minutes to every topic."
+    },
+    {
+      "id": "S7",
+      "start": 340,
+      "end": 411,
+      "text": "Within that coverage, \"Secretary Hand\" needs at least 20 total minutes."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": "I can spare at most 45 minutes per day, counting every topic together.",
+    "topics": "Include \"Secretary Hand\", \"Abbreviation Marks\", using those topic names.\nAllocate at least 10 cumulative minutes to every topic.\nWithin that coverage, \"Secretary Hand\" needs at least 20 total minutes.",
+    "priorities": "Within that coverage, \"Secretary Hand\" needs at least 20 total minutes."
+  },
+  "evidence": {
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 140,
+        "end": 210,
+        "quote": "I can spare at most 45 minutes per day, counting every topic together."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 211,
+        "end": 283,
+        "quote": "Include \"Secretary Hand\", \"Abbreviation Marks\", using those topic names."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 284,
+        "end": 339,
+        "quote": "Allocate at least 10 cumulative minutes to every topic."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 340,
+        "end": 411,
+        "quote": "Within that coverage, \"Secretary Hand\" needs at least 20 total minutes."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 340,
+        "end": 411,
+        "quote": "Within that coverage, \"Secretary Hand\" needs at least 20 total minutes."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[],\"available_time\":[\"S4\"],\"topics\":[\"S5\",\"S6\",\"S7\"],\"priorities\":[\"S7\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [],
+          "available_time": [
+            "S4"
+          ],
+          "topics": [
+            "S5",
+            "S6",
+            "S7"
+          ],
+          "priorities": [
+            "S7"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

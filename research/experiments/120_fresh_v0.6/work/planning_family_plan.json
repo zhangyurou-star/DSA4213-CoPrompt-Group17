@@ -1,0 +1,788 @@
+{
+  "registered_utc": "2026-10-19T14:41:55.087920+00:00",
+  "status": "families_fixed_before_case_authoring",
+  "domain": "study_planning",
+  "provenance": "Authored from blank context using allocation, catalog, schemas, rules code and the prior-family exclusion list only; no historical requests, answers, feasible examples, outputs or results read.",
+  "families": [
+    {
+      "case_id": "NDSP01",
+      "family_id": "nsp_apiary_inspection",
+      "title_zh": "蜂箱巡检入门",
+      "subject": "seasonal apiary inspection",
+      "topics": [
+        "Brood Pattern Checks",
+        "Queen Presence Signs",
+        "Hive Recordkeeping"
+      ],
+      "split": "design",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NDSP02",
+      "family_id": "nsp_railway_signalling",
+      "title_zh": "铁路信号原理",
+      "subject": "railway signalling theory",
+      "topics": [
+        "Block Sections",
+        "Interlocking",
+        "Signal Aspects"
+      ],
+      "split": "design",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NDSP03",
+      "family_id": "nsp_collection_pest_monitoring",
+      "title_zh": "藏品虫害监测",
+      "subject": "collection pest monitoring",
+      "topics": [
+        "Quarantine Checks",
+        "Sticky Trap Logs",
+        "Pest Evidence Recognition"
+      ],
+      "split": "design",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NDSP04",
+      "family_id": "nsp_stage_rigging_theory",
+      "title_zh": "舞台吊挂理论",
+      "subject": "theatre rigging theory",
+      "topics": [
+        "Load Paths",
+        "Counterweight Systems",
+        "Rigging Inspections"
+      ],
+      "split": "design",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NDSP05",
+      "family_id": "nsp_braille_literacy",
+      "title_zh": "盲文识读入门",
+      "subject": "Braille literacy",
+      "topics": [
+        "Six-dot Cells",
+        "Braille Contractions"
+      ],
+      "split": "design",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NDSP06",
+      "family_id": "nsp_coffee_sensory",
+      "title_zh": "咖啡感官训练",
+      "subject": "coffee sensory vocabulary",
+      "topics": [
+        "Aroma Wheel",
+        "Acidity Descriptors",
+        "Cupping Protocol"
+      ],
+      "split": "design",
+      "omission_type": "execute_now"
+    },
+    {
+      "case_id": "NDSP07",
+      "family_id": "nsp_water_treatment",
+      "title_zh": "净水流程学习",
+      "subject": "drinking-water treatment stages",
+      "topics": [
+        "Coagulation",
+        "Sedimentation",
+        "Disinfection"
+      ],
+      "split": "design",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NDSP08",
+      "family_id": "nsp_pedestrian_design",
+      "title_zh": "步行空间设计",
+      "subject": "pedestrian street design",
+      "topics": [
+        "Crossing Visibility",
+        "Kerb Ramps",
+        "Pedestrian Desire Lines",
+        "Footway Width"
+      ],
+      "split": "design",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NDSP09",
+      "family_id": "nsp_origami_foundations",
+      "title_zh": "折纸技法学习",
+      "subject": "origami fold techniques",
+      "topics": [
+        "Valley Folds",
+        "Mountain Folds",
+        "Reverse Folds"
+      ],
+      "split": "design",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NDSP10",
+      "family_id": "nsp_bicycle_transmission",
+      "title_zh": "自行车传动检修理论",
+      "subject": "bicycle drivetrain maintenance theory",
+      "topics": [
+        "Chain Wear",
+        "Derailleur Indexing",
+        "Cassette Inspection"
+      ],
+      "split": "design",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NDSP11",
+      "family_id": "nsp_semaphore_signalling",
+      "title_zh": "旗语通信训练",
+      "subject": "maritime semaphore reading",
+      "topics": [
+        "Semaphore Positions",
+        "Letter Pairs",
+        "Message Breaks"
+      ],
+      "split": "design",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NDSP12",
+      "family_id": "nsp_records_appraisal",
+      "title_zh": "档案价值鉴定",
+      "subject": "archival records appraisal",
+      "topics": [
+        "Retention Triggers",
+        "Provenance Appraisal",
+        "Disposal Documentation"
+      ],
+      "split": "design",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NDSP13",
+      "family_id": "nsp_palaeography",
+      "title_zh": "历史手稿识读",
+      "subject": "English palaeography",
+      "topics": [
+        "Secretary Hand",
+        "Abbreviation Marks"
+      ],
+      "split": "design",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NDSP14",
+      "family_id": "nsp_leather_stitching",
+      "title_zh": "皮革手缝学习",
+      "subject": "hand-stitched leatherwork",
+      "topics": [
+        "Saddle Stitching",
+        "Stitching Grooves",
+        "Edge Burnishing"
+      ],
+      "split": "design",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NDSP15",
+      "family_id": "nsp_tea_utensils",
+      "title_zh": "茶道器具学习",
+      "subject": "Japanese tea ceremony utensils",
+      "topics": [
+        "Chawan Handling",
+        "Chasen Care",
+        "Utensil Placement"
+      ],
+      "split": "design",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NDSP16",
+      "family_id": "nsp_human_factors",
+      "title_zh": "人因设计入门",
+      "subject": "workstation human factors",
+      "topics": [
+        "Display Legibility",
+        "Control Compatibility",
+        "Workstation Reach"
+      ],
+      "split": "design",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NDSP17",
+      "family_id": "nsp_morse_listening",
+      "title_zh": "摩尔斯听辨训练",
+      "subject": "Morse listening practice",
+      "topics": [
+        "Dot-dash Patterns",
+        "Character Spacing",
+        "Call-sign Copying"
+      ],
+      "split": "design",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NDSP18",
+      "family_id": "nsp_manuscript_illumination",
+      "title_zh": "手稿彩饰工艺",
+      "subject": "manuscript illumination techniques",
+      "topics": [
+        "Gold Leaf Grounds",
+        "Pigment Layering",
+        "Decorated Initials"
+      ],
+      "split": "design",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NDSP19",
+      "family_id": "nsp_go_life_death",
+      "title_zh": "围棋死活练习",
+      "subject": "Go life-and-death problems",
+      "topics": [
+        "Eye Formation",
+        "Capturing Races",
+        "Seki"
+      ],
+      "split": "design",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NDSP20",
+      "family_id": "nsp_dry_stone_walling",
+      "title_zh": "干砌石墙理论",
+      "subject": "dry-stone wall construction theory",
+      "topics": [
+        "Batter Angles",
+        "Through Stones",
+        "Hearting"
+      ],
+      "split": "design",
+      "omission_type": "execute_now"
+    },
+    {
+      "case_id": "NVSP01",
+      "family_id": "nsp_rope_knots",
+      "title_zh": "绳结识别练习",
+      "subject": "basic rope-knot recognition",
+      "topics": [
+        "Bowline",
+        "Clove Hitch",
+        "Sheet Bend"
+      ],
+      "split": "validation",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NVSP02",
+      "family_id": "nsp_fungal_cultivation",
+      "title_zh": "食用菌栽培流程",
+      "subject": "edible mushroom cultivation stages",
+      "topics": [
+        "Sterile Inoculation",
+        "Substrate Colonization",
+        "Fruiting Conditions"
+      ],
+      "split": "validation",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NVSP03",
+      "family_id": "nsp_typographic_anatomy",
+      "title_zh": "字体结构学习",
+      "subject": "typographic anatomy and spacing",
+      "topics": [
+        "Counters",
+        "Ascenders",
+        "Kerning"
+      ],
+      "split": "validation",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NVSP04",
+      "family_id": "nsp_bat_call_identification",
+      "title_zh": "蝙蝠声学识别",
+      "subject": "bat call identification",
+      "topics": [
+        "Echolocation Calls",
+        "Spectrogram Shapes",
+        "Feeding Buzzes"
+      ],
+      "split": "validation",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NVSP05",
+      "family_id": "nsp_forensic_linguistics",
+      "title_zh": "文本作者特征分析",
+      "subject": "forensic authorship analysis",
+      "topics": [
+        "Authorship Markers",
+        "Register Shifts",
+        "Idiolect Features"
+      ],
+      "split": "validation",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NVSP06",
+      "family_id": "nsp_electrochemical_cells",
+      "title_zh": "电化学电池原理",
+      "subject": "electrochemical cell theory",
+      "topics": [
+        "Electrode Reactions",
+        "Electrolytes",
+        "Cell Voltage"
+      ],
+      "split": "validation",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NVSP07",
+      "family_id": "nsp_mask_acting",
+      "title_zh": "面具表演训练",
+      "subject": "neutral-mask acting",
+      "topics": [
+        "Mask Focus",
+        "Neutral Mask Posture",
+        "Gesture Economy"
+      ],
+      "split": "validation",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NVSP08",
+      "family_id": "nsp_dance_floorcraft",
+      "title_zh": "社交舞舞池意识",
+      "subject": "social dance floorcraft",
+      "topics": [
+        "Line of Dance",
+        "Spatial Awareness",
+        "Partner Signalling"
+      ],
+      "split": "validation",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NVSP09",
+      "family_id": "nsp_numismatics",
+      "title_zh": "钱币辨识学习",
+      "subject": "numismatic coin identification",
+      "topics": [
+        "Mint Marks",
+        "Coin Legends",
+        "Die Varieties"
+      ],
+      "split": "validation",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NVSP10",
+      "family_id": "nsp_juggling_cascade",
+      "title_zh": "三球杂耍分解练习",
+      "subject": "three-ball juggling",
+      "topics": [
+        "Cascade Pattern",
+        "Throw Height",
+        "Catch Timing"
+      ],
+      "split": "validation",
+      "omission_type": "execute_now"
+    },
+    {
+      "case_id": "NTSP01",
+      "family_id": "nsp_volcanology",
+      "title_zh": "火山过程学习",
+      "subject": "volcanic eruption processes",
+      "topics": [
+        "Magma Viscosity",
+        "Eruption Styles",
+        "Volcanic Deposits"
+      ],
+      "split": "test",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NTSP02",
+      "family_id": "nsp_glaciology",
+      "title_zh": "冰川运动学习",
+      "subject": "glacier dynamics",
+      "topics": [
+        "Glacier Mass Balance",
+        "Crevasse Formation",
+        "Basal Sliding"
+      ],
+      "split": "test",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NTSP03",
+      "family_id": "nsp_groundwater_hydrology",
+      "title_zh": "地下水水文学",
+      "subject": "groundwater hydrology",
+      "topics": [
+        "Aquifer Recharge",
+        "Hydraulic Head",
+        "Well Drawdown"
+      ],
+      "split": "test",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NTSP04",
+      "family_id": "nsp_heraldry",
+      "title_zh": "纹章识读学习",
+      "subject": "heraldic shield interpretation",
+      "topics": [
+        "Tinctures",
+        "Shield Divisions",
+        "Heraldic Charges"
+      ],
+      "split": "test",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NTSP05",
+      "family_id": "nsp_canine_scent_work",
+      "title_zh": "犬类嗅闻训练理论",
+      "subject": "canine scent-work theory",
+      "topics": [
+        "Scent Imprinting",
+        "Search Grids",
+        "Indication Cues"
+      ],
+      "split": "test",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NTSP06",
+      "family_id": "nsp_cnc_milling",
+      "title_zh": "数控铣削路径理论",
+      "subject": "CNC milling toolpath concepts",
+      "topics": [
+        "Work Offsets",
+        "Tool Compensation",
+        "Stepovers",
+        "Climb Milling"
+      ],
+      "split": "test",
+      "omission_type": "complete"
+    },
+    {
+      "case_id": "NTSP07",
+      "family_id": "nsp_consecutive_interpreting",
+      "title_zh": "交替传译笔记",
+      "subject": "consecutive interpreting notes",
+      "topics": [
+        "Idea Units",
+        "Note Symbols",
+        "Reformulation"
+      ],
+      "split": "test",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NTSP08",
+      "family_id": "nsp_furniture_upholstery",
+      "title_zh": "家具软包工艺",
+      "subject": "traditional upholstery methods",
+      "topics": [
+        "Webbing Tension",
+        "Spring Lashing",
+        "Fabric Cutting"
+      ],
+      "split": "test",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NTSP09",
+      "family_id": "nsp_clock_escapements",
+      "title_zh": "机械钟擒纵原理",
+      "subject": "mechanical clock movements",
+      "topics": [
+        "Anchor Escapements",
+        "Balance Wheels",
+        "Gear Trains"
+      ],
+      "split": "test",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NTSP10",
+      "family_id": "nsp_dental_anatomy",
+      "title_zh": "牙齿形态识别",
+      "subject": "tooth anatomy identification",
+      "topics": [
+        "Incisors",
+        "Premolars",
+        "Molars"
+      ],
+      "split": "test",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NTSP11",
+      "family_id": "nsp_contract_bridge_bidding",
+      "title_zh": "桥牌叫牌学习",
+      "subject": "contract bridge bidding",
+      "topics": [
+        "Opening Bids",
+        "Response Bids",
+        "Competitive Auctions"
+      ],
+      "split": "test",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NTSP12",
+      "family_id": "nsp_incident_coordination",
+      "title_zh": "事件协调角色学习",
+      "subject": "incident coordination concepts",
+      "topics": [
+        "Incident Roles",
+        "Resource Staging",
+        "Situation Reports"
+      ],
+      "split": "test",
+      "omission_type": "critical_omission"
+    },
+    {
+      "case_id": "NTSP13",
+      "family_id": "nsp_scientific_peer_review",
+      "title_zh": "论文同行评审学习",
+      "subject": "scientific peer-review practice",
+      "topics": [
+        "Methods Appraisal",
+        "Reviewer Conflicts",
+        "Constructive Reports"
+      ],
+      "split": "test",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NTSP14",
+      "family_id": "nsp_insurance_concepts",
+      "title_zh": "保险基础概念学习",
+      "subject": "introductory insurance concepts",
+      "topics": [
+        "Indemnity",
+        "Insurable Interest",
+        "Subrogation"
+      ],
+      "split": "test",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NTSP15",
+      "family_id": "nsp_stained_glass",
+      "title_zh": "彩色玻璃拼接理论",
+      "subject": "stained-glass assembly theory",
+      "topics": [
+        "Copper Foiling",
+        "Solder Seams",
+        "Panel Reinforcement"
+      ],
+      "split": "test",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NTSP16",
+      "family_id": "nsp_coiled_basketry",
+      "title_zh": "盘筑篮编工艺",
+      "subject": "coiled basket construction",
+      "topics": [
+        "Foundation Bundles",
+        "Stitch Spacing",
+        "Rim Finishing"
+      ],
+      "split": "test",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NTSP17",
+      "family_id": "nsp_pastry_lamination",
+      "title_zh": "起酥面团层压学习",
+      "subject": "pastry lamination",
+      "topics": [
+        "Butter Lock-in",
+        "Letter Folds",
+        "Dough Resting"
+      ],
+      "split": "test",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NTSP18",
+      "family_id": "nsp_cheese_affinage",
+      "title_zh": "奶酪熟成学习",
+      "subject": "cheese affinage",
+      "topics": [
+        "Rind Development",
+        "Affinage Humidity",
+        "Ripening Microbes"
+      ],
+      "split": "test",
+      "omission_type": "critical_and_optional"
+    },
+    {
+      "case_id": "NTSP19",
+      "family_id": "nsp_perfume_structure",
+      "title_zh": "香水结构学习",
+      "subject": "perfume composition structure",
+      "topics": [
+        "Top Notes",
+        "Heart Notes",
+        "Base Notes"
+      ],
+      "split": "test",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NTSP20",
+      "family_id": "nsp_brush_calligraphy",
+      "title_zh": "毛笔运笔训练",
+      "subject": "brush calligraphy mechanics",
+      "topics": [
+        "Stroke Entry",
+        "Ink Loading",
+        "Brush Pressure"
+      ],
+      "split": "test",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NTSP21",
+      "family_id": "nsp_dance_notation",
+      "title_zh": "舞蹈记谱识读",
+      "subject": "dance notation reading",
+      "topics": [
+        "Movement Symbols",
+        "Staff Layout",
+        "Direction Signs"
+      ],
+      "split": "test",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NTSP22",
+      "family_id": "nsp_rugby_officiating",
+      "title_zh": "橄榄球判罚学习",
+      "subject": "rugby officiating concepts",
+      "topics": [
+        "Advantage Decisions",
+        "Offside Lines",
+        "Restart Procedures"
+      ],
+      "split": "test",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NTSP23",
+      "family_id": "nsp_sign_language_space",
+      "title_zh": "手语空间表达学习",
+      "subject": "sign-language spatial expression",
+      "topics": [
+        "Referent Placement",
+        "Classifier Handshapes",
+        "Role Shifts"
+      ],
+      "split": "test",
+      "omission_type": "optional_only"
+    },
+    {
+      "case_id": "NTSP24",
+      "family_id": "nsp_inventory_operations",
+      "title_zh": "零售库存管理学习",
+      "subject": "retail inventory control",
+      "topics": [
+        "Stock Counts",
+        "Reorder Points",
+        "Safety Stock"
+      ],
+      "split": "test",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NTSP25",
+      "family_id": "nsp_aircraft_marshalling",
+      "title_zh": "机场地面引导理论",
+      "subject": "aircraft ground-marshalling theory",
+      "topics": [
+        "Wand Signals",
+        "Stand Clearances",
+        "Pushback Coordination"
+      ],
+      "split": "test",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NTSP26",
+      "family_id": "nsp_usability_testing",
+      "title_zh": "产品可用性测试学习",
+      "subject": "usability test facilitation",
+      "topics": [
+        "Task Scenarios",
+        "Think-aloud Prompts",
+        "Usability Findings"
+      ],
+      "split": "test",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NTSP27",
+      "family_id": "nsp_drum_tuning",
+      "title_zh": "鼓面调音学习",
+      "subject": "acoustic drum tuning",
+      "topics": [
+        "Lug Sequencing",
+        "Head Seating",
+        "Resonant Head Tension"
+      ],
+      "split": "test",
+      "omission_type": "unavailable_answer"
+    },
+    {
+      "case_id": "NTSP28",
+      "family_id": "nsp_stain_removal_chemistry",
+      "title_zh": "衣物污渍化学学习",
+      "subject": "laundry stain chemistry",
+      "topics": [
+        "Protein Stains",
+        "Oil Emulsification",
+        "Dye Transfer"
+      ],
+      "split": "test",
+      "omission_type": "execute_now"
+    },
+    {
+      "case_id": "NTSP29",
+      "family_id": "nsp_hockey_tactics",
+      "title_zh": "冰球战术学习",
+      "subject": "ice-hockey team tactics",
+      "topics": [
+        "Forechecking",
+        "Defensive Zones",
+        "Line Changes"
+      ],
+      "split": "test",
+      "omission_type": "execute_now"
+    },
+    {
+      "case_id": "NTSP30",
+      "family_id": "nsp_fountain_pen_restoration",
+      "title_zh": "钢笔修复结构学习",
+      "subject": "fountain-pen restoration concepts",
+      "topics": [
+        "Nib Alignment",
+        "Feed Channels",
+        "Sac Replacement"
+      ],
+      "split": "test",
+      "omission_type": "execute_now"
+    }
+  ]
+}

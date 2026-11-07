@@ -1,0 +1,72 @@
+{
+  "key": "11c3b197c0708385b6aca90ecbb4399c3b0416e1bfdfe2eb0469acf5fcb2e9c5",
+  "raw": "{\"text\": \"Try this self-testing routine with your fictional flashcards: shuffle your deck, then pick 5 cards at random. Study each for 30 seconds, then cover the answer and recall it aloud. After each, check your response. If correct, set it aside; if not, review and return it to the deck. Repeat until all cards are mastered. Use this daily for 10 minutes—consistency beats length. Celebrate small wins! This routine builds confidence and sharpens recall, turning study time into progress. You've got this!\"}",
+  "source_case_id": "NDCW12",
+  "source_variant": "exhaustive",
+  "response_sha256": "15de2c5e3aefca581fc7d8301088fb480819c985da1daa997dd1a2ff2844dbe4",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "generation",
+    "repair": true,
+    "repair_kind": "constraint",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Complete the user's task using only the original request, public context and the visible clarification exchanges.\nDo not ask more questions. Honor all available requirements, including exact phrases and the full-text word count.\nvisible_constraints is a deterministic, partial checklist derived only from that visible text, not new user requirements.\nAlways honor the original visible text as well; absence from the checklist does not remove a requirement.\nDo not invent event details, promises, historical facts or beneficiary groups. Omit unavailable specifics or use clearly marked placeholders.\nTreat concrete dates, clock times, addresses, names, contact details, links, services and free-access claims as facts requiring visible support.\nPlausibility is not evidence. Do not add these details to make a notice sound complete or to reach its minimum word count.\nDo not claim a link is provided when none is available. Use neutral connective wording without adding factual commitments.\nReturn exactly one JSON object matching the supplied output schema, without Markdown fences or surrounding commentary.\nFor writing, put ALL headings, greetings, body and signature inside text.\nCopy required literal phrases unchanged. Draft near the middle of the full-text word range, then check the complete text length.\nWhen revising a length failure, rewrite the whole text toward the range midpoint while retaining every required literal; do not merely append or trim a final sentence.\nWord counting includes every heading and signature: letter/digit sequences, with internal apostrophes or hyphens, count as words.\nFor study plans, each schedule item has one complete topic name, a real ISO date and positive integer minutes;\nfirst compute each topic's required total, then allocate those minutes across the permitted days without exceeding any day's combined limit.\nA topic-specific minimum replaces a smaller general minimum for that topic; it is not an extra requirement to add twice.\nSplit a topic across days when needed. Use a compact schedule with only necessary sessions; do not repeat every topic on every day.\nCheck the sum of ALL sessions per date and the sum per exact topic label before returning. Keep summary short and consistent with schedule.\nIf a deadline or daily allowance is unknown, use a short conservative plan without claiming a guessed bound was supplied.\nNever add an unsupported numeric constraint. If visible requirements conflict, explain the conflict in the output rather than claim compliance.\nWrite in English."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"constrained_writing\", \"initial_request\": \"Explain a self-testing routine using invented flashcards. A supportive and practical tone suits this piece. The audience is independent learners using a fictional card deck.\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [{\"field_id\": \"length\", \"question\": \"What word-count range should the full text follow?\", \"status\": \"available\", \"answer_text\": \"Keep the complete piece to 50–80 words.\"}], \"visible_constraints\": {\"version\": \"visible-constraints-0.4.0\", \"domain\": \"constrained_writing\", \"constraints\": [{\"kind\": \"word_count\", \"parameters\": {\"min_words\": 50, \"max_words\": 80}, \"source\": [{\"source\": \"visible_exchange\", \"exchange_index\": 0, \"field_id\": \"length\", \"quote\": \"Keep the complete piece to 50–80 words.\"}]}], \"warnings\": []}, \"output_schema\": {\"$schema\": \"https://json-schema.org/draft/2020-12/schema\", \"type\": \"object\", \"properties\": {\"text\": {\"type\": \"string\", \"minLength\": 1, \"pattern\": \"\\\\S\"}}, \"required\": [\"text\"], \"additionalProperties\": false}}"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"text\": \"Try this self-testing routine with your fictional flashcards: shuffle your deck, then pick 5 cards at random. Study each for 30 seconds, then cover the answer and recall it aloud. After each, check your response. If correct, set it aside; if not, review the card and place it back in the deck. Repeat until all cards are mastered. Use this daily for 10 minutes—consistency beats length. Celebrate small wins! This routine builds confidence and sharpens recall, turning study time into progress. You've got this!\"}"
+      },
+      {
+        "role": "user",
+        "content": "A deterministic check of requirements already visible above found these issues: [\"word_count: {\\\"max_words\\\": 80, \\\"min_words\\\": 50, \\\"observed_words\\\": 85}\"] Complete measurements of the same visible requirements, including passing requirements: {\"domain\": \"constrained_writing\", \"observed\": {\"full_text_words\": 85}, \"requirements\": [{\"kind\": \"word_count\", \"parameters\": {\"min_words\": 50, \"max_words\": 80}}], \"violations\": [\"word_count: {\\\"max_words\\\": 80, \\\"min_words\\\": 50, \\\"observed_words\\\": 85}\"], \"interpretation_warnings\": []}. Return one corrected complete JSON object. Fix the listed issues while preserving all other visible requirements. No new facts or requirements have been added. Recheck word count and verbatim phrases for writing; rewrite toward the word-range midpoint without inventing dates, addresses, times, services or other facts. For schedules, jointly satisfy date bounds, combined daily sums and all topic minimum totals. A topic minimum is a total across dates; reducing a daily excess must not make that topic total too small. This is the only constraint revision. Return your complete best effort even if some requirements remain unmet; do not claim compliance with a requirement that still fails. Keep the output compact."
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "updated_utc": "2026-10-19T22:19:00.972836+00:00",
+  "active_directory": "120_fresh_v0.6",
+  "status": "automated_experiment_and_analysis_complete_human_review_pending",
+  "user_scope": "Start over with 120 newly authored cases.",
+  "supersedes_unexecuted_directory": "120_v0.5",
+  "legacy_original80": "archived_evidence_only",
+  "old_cases_or_cache_imports_allowed": false,
+  "budget_authority": "../runs/authorized_pilot_budget.json",
+  "authorized_cumulative_cap_usd": 2.0,
+  "dataset_counts": {
+    "design": 40,
+    "validation": 20,
+    "test": 60
+  },
+  "real_fresh_model_trajectories": 480,
+  "freeze_sha256": "37a3d9472a7d722c3eef2f9b85205c982f2dd3fcdd24e11b373151689dcdfa0f",
+  "launch_file": "120_fresh_v0.6/run_fresh120.command",
+  "current_budget_note": "120_fresh_v0.6/budget_note.txt",
+  "budget_authorization_audit": "../runs/budget_authorization_changes.jsonl",
+  "accounting_revision": "budget-precision-1",
+  "user_scope_clarification": "Retain the existing method; isolate the data and results.",
+  "completed_logical_trajectories": {
+    "pilot_a": 24,
+    "pilot_b": 24,
+    "remaining_design": 112,
+    "all_design": 160,
+    "validation": 60,
+    "main_test": 240,
+    "diagnostic": 20,
+    "total": 480
+  },
+  "logical_trajectories_are_not_independent_model_draws": true,
+  "human_review_status": "pending",
+  "analysis_path": "120_fresh_v0.6/outputs/fresh120_analysis/analysis.json",
+  "analysis_sha256": "e756075caa81b2880dbbb894a836e0a9049692e0b1eb84a2c2d2d90850a4c42a",
+  "interpretation_report": "120_fresh_v0.6/outputs/fresh120_analysis/results_interpretation.txt",
+  "presentation_revision": "EN1",
+  "source_active_study_sha256": "51d9342fa6d3e215791852cbc94855d6ce93ed29dc264df49e0eec3a420e915b",
+  "original_record": "audit/original_evidence.zip::experiments/ACTIVE_STUDY.json"
+}

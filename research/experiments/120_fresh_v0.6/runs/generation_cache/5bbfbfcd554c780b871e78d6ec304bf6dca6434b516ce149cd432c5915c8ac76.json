@@ -1,0 +1,288 @@
+{
+  "cache_key": "5bbfbfcd554c780b871e78d6ec304bf6dca6434b516ce149cd432c5915c8ac76",
+  "source_case_id": "NTSP13",
+  "source_policy": "exhaustive",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Methods Appraisal",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-01",
+        "topic": "Reviewer Conflicts",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Methods Appraisal",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Constructive Reports",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Constructive Reports",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Reviewer Conflicts",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Methods Appraisal",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Constructive Reports",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Reviewer Conflicts",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Constructive Reports",
+        "minutes": 15
+      }
+    ],
+    "summary": "Calculated from the schedule: 165 minutes in total. Daily totals: 2027-02-01: 45 minutes; 2027-02-02: 30 minutes; 2027-02-03: 30 minutes; 2027-02-04: 30 minutes; 2027-02-05: 30 minutes. Topic totals: Constructive Reports: 60 minutes; Methods Appraisal: 60 minutes; Reviewer Conflicts: 45 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Methods Appraisal\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Reviewer Conflicts\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Methods Appraisal\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Constructive Reports\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Constructive Reports\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Reviewer Conflicts\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Methods Appraisal\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Constructive Reports\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Reviewer Conflicts\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Constructive Reports\",\n      \"minutes\": 15\n    }\n  ],\n  \"summary\": \"The study plan covers all required topics—Methods Appraisal (30 minutes), Reviewer Conflicts (20 minutes), and Constructive Reports (20 minutes)—within the 2027-02-01 to 2027-02-05 window. Daily sessions do not exceed 45 minutes. Methods Appraisal meets the 30-minute minimum, and all topics meet the 20-minute cumulative minimum. The schedule is distributed across five days with balanced daily loads.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Methods Appraisal",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-01",
+            "topic": "Reviewer Conflicts",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Methods Appraisal",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Constructive Reports",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Constructive Reports",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Reviewer Conflicts",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Methods Appraisal",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Constructive Reports",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Reviewer Conflicts",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Constructive Reports",
+            "minutes": 15
+          }
+        ],
+        "summary": "The study plan covers all required topics—Methods Appraisal (30 minutes), Reviewer Conflicts (20 minutes), and Constructive Reports (20 minutes)—within the 2027-02-01 to 2027-02-05 window. Daily sessions do not exceed 45 minutes. Methods Appraisal meets the 30-minute minimum, and all topics meet the 20-minute cumulative minimum. The schedule is distributed across five days with balanced daily loads."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 45
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "I can spare at most 45 minutes per day, counting every topic together."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "Use only dates from 2027-02-01 through 2027-02-05, including the final date."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 165,
+      "daily_minutes": {
+        "2027-02-01": 45,
+        "2027-02-02": 30,
+        "2027-02-03": 30,
+        "2027-02-04": 30,
+        "2027-02-05": 30
+      },
+      "topic_minutes": [
+        {
+          "topic": "Constructive Reports",
+          "normalized_topic": "constructive reports",
+          "minutes": 60
+        },
+        {
+          "topic": "Methods Appraisal",
+          "normalized_topic": "methods appraisal",
+          "minutes": 60
+        },
+        {
+          "topic": "Reviewer Conflicts",
+          "normalized_topic": "reviewer conflicts",
+          "minutes": 45
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 45
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "Use only dates from 2027-02-01 through 2027-02-05, including the final date."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 165,
+      "daily_minutes": {
+        "2027-02-01": 45,
+        "2027-02-02": 30,
+        "2027-02-03": 30,
+        "2027-02-04": 30,
+        "2027-02-05": 30
+      },
+      "topic_minutes": [
+        {
+          "topic": "Constructive Reports",
+          "normalized_topic": "constructive reports",
+          "minutes": 60
+        },
+        {
+          "topic": "Methods Appraisal",
+          "normalized_topic": "methods appraisal",
+          "minutes": 60
+        },
+        {
+          "topic": "Reviewer Conflicts",
+          "normalized_topic": "reviewer conflicts",
+          "minutes": 45
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 45
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "Use only dates from 2027-02-01 through 2027-02-05, including the final date."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study plan covers all required topics—Methods Appraisal (30 minutes), Reviewer Conflicts (20 minutes), and Constructive Reports (20 minutes)—within the 2027-02-01 to 2027-02-05 window. Daily sessions do not exceed 45 minutes. Methods Appraisal meets the 30-minute minimum, and all topics meet the 20-minute cumulative minimum. The schedule is distributed across five days with balanced daily loads.",
+    "derived_summary": "Calculated from the schedule: 165 minutes in total. Daily totals: 2027-02-01: 45 minutes; 2027-02-02: 30 minutes; 2027-02-03: 30 minutes; 2027-02-04: 30 minutes; 2027-02-05: 30 minutes. Topic totals: Constructive Reports: 60 minutes; Methods Appraisal: 60 minutes; Reviewer Conflicts: 45 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

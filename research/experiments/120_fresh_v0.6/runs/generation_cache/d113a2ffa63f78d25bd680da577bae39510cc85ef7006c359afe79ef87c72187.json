@@ -1,0 +1,91 @@
+{
+  "cache_key": "d113a2ffa63f78d25bd680da577bae39510cc85ef7006c359afe79ef87c72187",
+  "source_case_id": "NTCW20",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "Hi Ren! I’m so excited to start writing to you. I collect odd buttons—my collection began when I found a tiny blue one in an old coat pocket. I ride a yellow bicycle everywhere, and it’s my favorite way to explore. I’d love to hear about the smallest adventure in your week—something small but meaningful. Maybe a new coffee shop you tried, or a chat with a stranger that made your day brighter. Let’s share our quiet moments. I’m looking forward to your letter!"
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"Hi Ren! I’m so excited to start writing to you. I collect odd buttons—my collection began when I found a tiny blue one in an old coat pocket. It sparked a habit I still love. I ride a yellow bicycle everywhere, and it’s my favorite way to explore the neighborhood. I’d love to hear about the smallest adventure in your week—something small but meaningful. Maybe a new coffee shop you tried, or a chat with a stranger that made your day brighter. Let’s share our quiet moments. I’m looking forward to your letter!\"}",
+      "parsed": {
+        "text": "Hi Ren! I’m so excited to start writing to you. I collect odd buttons—my collection began when I found a tiny blue one in an old coat pocket. It sparked a habit I still love. I ride a yellow bicycle everywhere, and it’s my favorite way to explore the neighborhood. I’d love to hear about the smallest adventure in your week—something small but meaningful. Maybe a new coffee shop you tried, or a chat with a stranger that made your day brighter. Let’s share our quiet moments. I’m looking forward to your letter!"
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Write 60 to 90 words altogether."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 95}"
+  ],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\"text\": \"Hi Ren! I’m so excited to start writing to you. I collect odd buttons—my collection began when I found a tiny blue one in an old coat pocket. I ride a yellow bicycle everywhere, and it’s my favorite way to explore. I’d love to hear about the smallest adventure in your week—something small but meaningful. Maybe a new coffee shop you tried, or a chat with a stranger that made your day brighter. Let’s share our quiet moments. I’m looking forward to your letter!\"}",
+    "parsed": {
+      "text": "Hi Ren! I’m so excited to start writing to you. I collect odd buttons—my collection began when I found a tiny blue one in an old coat pocket. I ride a yellow bicycle everywhere, and it’s my favorite way to explore. I’d love to hear about the smallest adventure in your week—something small but meaningful. Maybe a new coffee shop you tried, or a chat with a stranger that made your day brighter. Let’s share our quiet moments. I’m looking forward to your letter!"
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 95
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 95}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 86
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

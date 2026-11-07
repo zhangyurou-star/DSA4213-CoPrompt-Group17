@@ -1,0 +1,164 @@
+{
+  "cache_key": "1bb45503ae9d6f4d3b285d4d24b6a1f43df06ef097c1aed4ab088cc16af3b474",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S8"
+    ],
+    "tone": [
+      "S2"
+    ],
+    "length": [
+      "S3"
+    ],
+    "required_content": [
+      "S4",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 57,
+      "text": "Describe a cutting layout for a fictional sewing pattern."
+    },
+    {
+      "id": "S2",
+      "start": 58,
+      "end": 89,
+      "text": "Use a direct and orderly voice."
+    },
+    {
+      "id": "S3",
+      "start": 90,
+      "end": 147,
+      "text": "Use at least 60 words and no more than 90 words in total."
+    },
+    {
+      "id": "S4",
+      "start": 148,
+      "end": 270,
+      "text": "Use this fictional material: The mock pattern places the body against the folded edge and two cuffs beside the outer edge."
+    },
+    {
+      "id": "S5",
+      "start": 271,
+      "end": 304,
+      "text": "Keep the printed arrows parallel."
+    },
+    {
+      "id": "S6",
+      "start": 305,
+      "end": 363,
+      "text": "Instruct the reader to leave the center strip for the tie."
+    },
+    {
+      "id": "S7",
+      "start": 364,
+      "end": 445,
+      "text": "Required wording, verbatim: \"folded edge\", \"two cuffs\", \"leave the center strip\"."
+    },
+    {
+      "id": "S8",
+      "start": 446,
+      "end": 511,
+      "text": "Use wording suitable for home sewists using the invented pattern."
+    }
+  ],
+  "field_values": {
+    "audience": "Use wording suitable for home sewists using the invented pattern.",
+    "tone": "Use a direct and orderly voice.",
+    "length": "Use at least 60 words and no more than 90 words in total.",
+    "required_content": "Use this fictional material: The mock pattern places the body against the folded edge and two cuffs beside the outer edge.\nKeep the printed arrows parallel.\nInstruct the reader to leave the center strip for the tie.\nRequired wording, verbatim: \"folded edge\", \"two cuffs\", \"leave the center strip\"."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 446,
+        "end": 511,
+        "quote": "Use wording suitable for home sewists using the invented pattern."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 58,
+        "end": 89,
+        "quote": "Use a direct and orderly voice."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 90,
+        "end": 147,
+        "quote": "Use at least 60 words and no more than 90 words in total."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 148,
+        "end": 270,
+        "quote": "Use this fictional material: The mock pattern places the body against the folded edge and two cuffs beside the outer edge."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 271,
+        "end": 304,
+        "quote": "Keep the printed arrows parallel."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 305,
+        "end": 363,
+        "quote": "Instruct the reader to leave the center strip for the tie."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 364,
+        "end": 445,
+        "quote": "Required wording, verbatim: \"folded edge\", \"two cuffs\", \"leave the center strip\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S8\"],\"tone\":[\"S2\"],\"length\":[\"S3\"],\"required_content\":[\"S4\",\"S5\",\"S6\",\"S7\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S8"
+          ],
+          "tone": [
+            "S2"
+          ],
+          "length": [
+            "S3"
+          ],
+          "required_content": [
+            "S4",
+            "S5",
+            "S6",
+            "S7"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

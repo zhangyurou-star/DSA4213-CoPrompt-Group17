@@ -1,0 +1,136 @@
+{
+  "cache_key": "cd839dd538a4b3009f82ef046f9b3fef6f4e44b9716b77797a0cb412ec25e2a9",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S7"
+    ],
+    "available_time": [],
+    "topics": [
+      "S4",
+      "S5",
+      "S6"
+    ],
+    "priorities": [
+      "S6"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 86,
+      "text": "Before a supervised bicycle workshop, I need to understand the drivetrain terminology."
+    },
+    {
+      "id": "S2",
+      "start": 87,
+      "end": 111,
+      "text": "Map out my theory study."
+    },
+    {
+      "id": "S3",
+      "start": 112,
+      "end": 132,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 133,
+      "end": 278,
+      "text": "Use the exact labels \"Chain Wear\", \"Derailleur Indexing\", \"Cassette Inspection\" in the schedule, with at least 15 total minutes assigned to each."
+    },
+    {
+      "id": "S5",
+      "start": 279,
+      "end": 346,
+      "text": "Within that coverage, \"Chain Wear\" needs at least 25 total minutes."
+    },
+    {
+      "id": "S6",
+      "start": 347,
+      "end": 441,
+      "text": "My priority is \"Cassette Inspection\": its cumulative study time must reach 30 minutes or more."
+    },
+    {
+      "id": "S7",
+      "start": 442,
+      "end": 518,
+      "text": "The last usable study date is 2027-02-07, and sessions may fall on that day."
+    }
+  ],
+  "field_values": {
+    "deadline": "The last usable study date is 2027-02-07, and sessions may fall on that day.",
+    "available_time": null,
+    "topics": "Use the exact labels \"Chain Wear\", \"Derailleur Indexing\", \"Cassette Inspection\" in the schedule, with at least 15 total minutes assigned to each.\nWithin that coverage, \"Chain Wear\" needs at least 25 total minutes.\nMy priority is \"Cassette Inspection\": its cumulative study time must reach 30 minutes or more.",
+    "priorities": "My priority is \"Cassette Inspection\": its cumulative study time must reach 30 minutes or more."
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 442,
+        "end": 518,
+        "quote": "The last usable study date is 2027-02-07, and sessions may fall on that day."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 133,
+        "end": 278,
+        "quote": "Use the exact labels \"Chain Wear\", \"Derailleur Indexing\", \"Cassette Inspection\" in the schedule, with at least 15 total minutes assigned to each."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 279,
+        "end": 346,
+        "quote": "Within that coverage, \"Chain Wear\" needs at least 25 total minutes."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 347,
+        "end": 441,
+        "quote": "My priority is \"Cassette Inspection\": its cumulative study time must reach 30 minutes or more."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 347,
+        "end": 441,
+        "quote": "My priority is \"Cassette Inspection\": its cumulative study time must reach 30 minutes or more."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S7\"],\"available_time\":[],\"topics\":[\"S4\",\"S5\",\"S6\"],\"priorities\":[\"S6\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S7"
+          ],
+          "available_time": [],
+          "topics": [
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "priorities": [
+            "S6"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

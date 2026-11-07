@@ -1,0 +1,96 @@
+{
+  "cache_key": "a6d73394a2b90738478a1a5ff6986fe21b32641a7a6c8a426606eb47a49c2662",
+  "source_case_id": "NTCW16",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "I am the rook, stationed at the edge of the board, where straight lines are my only law. I once envied the knight—his leaps, his freedom, his chaos. But now I see: my path is not prison. It is power. I move in clean, unbroken lines, each step a declaration. I am the rook, and the edge of the board is not a boundary—it is my foundation. My pride is in the line, not the leap. I am the rook. I am the edge of the board. I am the straight line."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"I am the rook, anchored to the edge of the board, where silence hums in straight lines. I watch the knight leap—graceful, unpredictable—while I march in rigid order, a prisoner of my own precision. I envied his freedom, his zigzags, his chaos. But today, I stood tall at the corner, and for the first time, I felt the weight of my path. Straight lines are not chains; they are purpose. I am the rook, and the edge of the board is not a limit—it is my throne. My truth is in the line, not the leap. I am the rook. I am the edge of the board. I am proud.\"\n}",
+      "parsed": {
+        "text": "I am the rook, anchored to the edge of the board, where silence hums in straight lines. I watch the knight leap—graceful, unpredictable—while I march in rigid order, a prisoner of my own precision. I envied his freedom, his zigzags, his chaos. But today, I stood tall at the corner, and for the first time, I felt the weight of my path. Straight lines are not chains; they are purpose. I am the rook, and the edge of the board is not a limit—it is my throne. My truth is in the line, not the leap. I am the rook. I am the edge of the board. I am proud."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        },
+        "source": [
+          {
+            "source": "visible_exchange",
+            "exchange_index": 1,
+            "field_id": "length",
+            "quote": "The full text must be between 60 and 90 words."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 113}"
+  ],
+  "constraint_checks_final": [
+    "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 94}"
+  ],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"I am the rook, stationed at the edge of the board, where straight lines are my only law. I once envied the knight—his leaps, his freedom, his chaos. But now I see: my path is not prison. It is power. I move in clean, unbroken lines, each step a declaration. I am the rook, and the edge of the board is not a boundary—it is my foundation. My pride is in the line, not the leap. I am the rook. I am the edge of the board. I am the straight line.\"\n}",
+    "parsed": {
+      "text": "I am the rook, stationed at the edge of the board, where straight lines are my only law. I once envied the knight—his leaps, his freedom, his chaos. But now I see: my path is not prison. It is power. I move in clean, unbroken lines, each step a declaration. I am the rook, and the edge of the board is not a boundary—it is my foundation. My pride is in the line, not the leap. I am the rook. I am the edge of the board. I am the straight line."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 113
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 113}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 94
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 94}"
+    ],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

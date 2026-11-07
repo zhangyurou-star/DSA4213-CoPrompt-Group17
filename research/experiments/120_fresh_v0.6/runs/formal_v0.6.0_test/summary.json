@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "statistics": {
+    "direct": {
+      "n": 60,
+      "quality": 0.7072222222222222,
+      "questions": 0.0,
+      "fully_passed": 30
+    },
+    "exhaustive": {
+      "n": 60,
+      "quality": 0.7877777777777778,
+      "questions": 1.1833333333333333,
+      "fully_passed": 35
+    },
+    "prompt_only": {
+      "n": 60,
+      "quality": 0.7794444444444444,
+      "questions": 1.0166666666666666,
+      "fully_passed": 35
+    },
+    "value_based": {
+      "n": 60,
+      "quality": 0.7988888888888889,
+      "questions": 1.1833333333333333,
+      "fully_passed": 36
+    },
+    "importance_one": {
+      "n": 20,
+      "quality": 0.805,
+      "questions": 1.25,
+      "fully_passed": 13
+    }
+  },
+  "completed_trajectories": 260,
+  "planned_trajectories": 260,
+  "cumulative_accounted_usd": 0.17262309,
+  "remaining_usd": 1.82737691
+}

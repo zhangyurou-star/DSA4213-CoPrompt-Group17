@@ -1,0 +1,143 @@
+{
+  "cache_key": "b6e9789cddb09739862fef81a86c7c48b1b3b1fb85c78734322e22f5aea027b4",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S4"
+    ],
+    "available_time": [
+      "S5"
+    ],
+    "topics": [
+      "S1",
+      "S2",
+      "S6"
+    ],
+    "priorities": [
+      "S6"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 63,
+      "text": "I am practising consecutive interpreting with short recordings."
+    },
+    {
+      "id": "S2",
+      "start": 64,
+      "end": 104,
+      "text": "Help me schedule the note-taking skills."
+    },
+    {
+      "id": "S3",
+      "start": 105,
+      "end": 125,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 126,
+      "end": 202,
+      "text": "Use only dates from 2027-02-01 through 2027-02-04, including the final date."
+    },
+    {
+      "id": "S5",
+      "start": 203,
+      "end": 273,
+      "text": "I can spare at most 55 minutes per day, counting every topic together."
+    },
+    {
+      "id": "S6",
+      "start": 274,
+      "end": 358,
+      "text": "Give \"Reformulation\" at least 25 minutes in total; this is a firm extra requirement."
+    }
+  ],
+  "field_values": {
+    "deadline": "Use only dates from 2027-02-01 through 2027-02-04, including the final date.",
+    "available_time": "I can spare at most 55 minutes per day, counting every topic together.",
+    "topics": "I am practising consecutive interpreting with short recordings.\nHelp me schedule the note-taking skills.\nGive \"Reformulation\" at least 25 minutes in total; this is a firm extra requirement.",
+    "priorities": "Give \"Reformulation\" at least 25 minutes in total; this is a firm extra requirement."
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 126,
+        "end": 202,
+        "quote": "Use only dates from 2027-02-01 through 2027-02-04, including the final date."
+      }
+    ],
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 203,
+        "end": 273,
+        "quote": "I can spare at most 55 minutes per day, counting every topic together."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S1",
+        "start": 0,
+        "end": 63,
+        "quote": "I am practising consecutive interpreting with short recordings."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 64,
+        "end": 104,
+        "quote": "Help me schedule the note-taking skills."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 274,
+        "end": 358,
+        "quote": "Give \"Reformulation\" at least 25 minutes in total; this is a firm extra requirement."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 274,
+        "end": 358,
+        "quote": "Give \"Reformulation\" at least 25 minutes in total; this is a firm extra requirement."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S4\"],\"available_time\":[\"S5\"],\"topics\":[\"S1\",\"S2\",\"S6\"],\"priorities\":[\"S6\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S4"
+          ],
+          "available_time": [
+            "S5"
+          ],
+          "topics": [
+            "S1",
+            "S2",
+            "S6"
+          ],
+          "priorities": [
+            "S6"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

@@ -1,0 +1,301 @@
+{
+  "cache_key": "9a69e845c651f7fcd33388cd2c76bd4764ea60581e524e60950f2e320598fad0",
+  "source_case_id": "NDSP07",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Coagulation",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-01",
+        "topic": "Sedimentation",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Coagulation",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Disinfection",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Sedimentation",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Disinfection",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Disinfection",
+        "minutes": 20
+      }
+    ],
+    "summary": "Calculated from the schedule: 170 minutes in total. Daily totals: 2027-02-01: 50 minutes; 2027-02-02: 55 minutes; 2027-02-03: 45 minutes; 2027-02-04: 20 minutes. Topic totals: Coagulation: 55 minutes; Disinfection: 75 minutes; Sedimentation: 40 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Coagulation\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Sedimentation\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Coagulation\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Disinfection\",\n      \"minutes\": 35\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Sedimentation\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Disinfection\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Disinfection\",\n      \"minutes\": 20\n    }\n  ],\n  \"summary\": \"The study schedule covers all required topics—Coagulation, Sedimentation, and Disinfection—within the specified date window from 2027-02-01 to 2027-02-04. Coagulation is allocated 55 minutes total (30 + 25), meeting the 30-minute minimum. Sedimentation receives 40 minutes total (20 + 20), satisfying the 20-minute cumulative minimum. Disinfection is assigned 75 minutes total (35 + 20 + 20), exceeding the required 35-minute minimum. Daily study time never exceeds 55 minutes, with all sessions scheduled within the allowed dates.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Coagulation",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-01",
+            "topic": "Sedimentation",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Coagulation",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Disinfection",
+            "minutes": 35
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Sedimentation",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Disinfection",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Disinfection",
+            "minutes": 20
+          }
+        ],
+        "summary": "The study schedule covers all required topics—Coagulation, Sedimentation, and Disinfection—within the specified date window from 2027-02-01 to 2027-02-04. Coagulation is allocated 55 minutes total (30 + 25), meeting the 30-minute minimum. Sedimentation receives 40 minutes total (20 + 20), satisfying the 20-minute cumulative minimum. Disinfection is assigned 75 minutes total (35 + 20 + 20), exceeding the required 35-minute minimum. Daily study time never exceeds 55 minutes, with all sessions scheduled within the allowed dates."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 55
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "I can spare at most 55 minutes per day, counting every topic together."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use only dates from 2027-02-01 through 2027-02-04, including the final date."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [
+    "daily_minutes_cap: {\"daily_totals_over_cap\": {\"2027-02-02\": 60}, \"max_minutes\": 55}"
+  ],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Coagulation\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Sedimentation\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Coagulation\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Disinfection\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Sedimentation\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Disinfection\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Disinfection\",\n      \"minutes\": 20\n    }\n  ],\n  \"summary\": \"The study schedule covers all required topics—Coagulation, Sedimentation, and Disinfection—within the specified date window from 2027-02-01 to 2027-02-04. Coagulation is allocated 55 minutes total (30 + 25), meeting the 30-minute minimum. Sedimentation receives 40 minutes total (20 + 20), satisfying the 20-minute cumulative minimum. Disinfection is assigned 75 minutes total (30 + 25 + 20), exceeding the required 35-minute minimum. Daily study time does not exceed 55 minutes: 50 minutes on 2027-02-01, 55 minutes on 2027-02-02, 45 minutes on 2027-02-03, and 20 minutes on 2027-02-04. All sessions are scheduled within the allowed dates.\"\n}",
+    "parsed": {
+      "schedule": [
+        {
+          "date": "2027-02-01",
+          "topic": "Coagulation",
+          "minutes": 30
+        },
+        {
+          "date": "2027-02-01",
+          "topic": "Sedimentation",
+          "minutes": 20
+        },
+        {
+          "date": "2027-02-02",
+          "topic": "Coagulation",
+          "minutes": 25
+        },
+        {
+          "date": "2027-02-02",
+          "topic": "Disinfection",
+          "minutes": 30
+        },
+        {
+          "date": "2027-02-03",
+          "topic": "Sedimentation",
+          "minutes": 20
+        },
+        {
+          "date": "2027-02-03",
+          "topic": "Disinfection",
+          "minutes": 25
+        },
+        {
+          "date": "2027-02-04",
+          "topic": "Disinfection",
+          "minutes": 20
+        }
+      ],
+      "summary": "The study schedule covers all required topics—Coagulation, Sedimentation, and Disinfection—within the specified date window from 2027-02-01 to 2027-02-04. Coagulation is allocated 55 minutes total (30 + 25), meeting the 30-minute minimum. Sedimentation receives 40 minutes total (20 + 20), satisfying the 20-minute cumulative minimum. Disinfection is assigned 75 minutes total (30 + 25 + 20), exceeding the required 35-minute minimum. Daily study time does not exceed 55 minutes: 50 minutes on 2027-02-01, 55 minutes on 2027-02-02, 45 minutes on 2027-02-03, and 20 minutes on 2027-02-04. All sessions are scheduled within the allowed dates."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 170,
+      "daily_minutes": {
+        "2027-02-01": 50,
+        "2027-02-02": 60,
+        "2027-02-03": 40,
+        "2027-02-04": 20
+      },
+      "topic_minutes": [
+        {
+          "topic": "Coagulation",
+          "normalized_topic": "coagulation",
+          "minutes": 55
+        },
+        {
+          "topic": "Disinfection",
+          "normalized_topic": "disinfection",
+          "minutes": 75
+        },
+        {
+          "topic": "Sedimentation",
+          "normalized_topic": "sedimentation",
+          "minutes": 40
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 55
+        }
+      }
+    ],
+    "violations": [
+      "daily_minutes_cap: {\"daily_totals_over_cap\": {\"2027-02-02\": 60}, \"max_minutes\": 55}"
+    ],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use only dates from 2027-02-01 through 2027-02-04, including the final date."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 170,
+      "daily_minutes": {
+        "2027-02-01": 50,
+        "2027-02-02": 55,
+        "2027-02-03": 45,
+        "2027-02-04": 20
+      },
+      "topic_minutes": [
+        {
+          "topic": "Coagulation",
+          "normalized_topic": "coagulation",
+          "minutes": 55
+        },
+        {
+          "topic": "Disinfection",
+          "normalized_topic": "disinfection",
+          "minutes": 75
+        },
+        {
+          "topic": "Sedimentation",
+          "normalized_topic": "sedimentation",
+          "minutes": 40
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 55
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use only dates from 2027-02-01 through 2027-02-04, including the final date."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study schedule covers all required topics—Coagulation, Sedimentation, and Disinfection—within the specified date window from 2027-02-01 to 2027-02-04. Coagulation is allocated 55 minutes total (30 + 25), meeting the 30-minute minimum. Sedimentation receives 40 minutes total (20 + 20), satisfying the 20-minute cumulative minimum. Disinfection is assigned 75 minutes total (30 + 25 + 20), exceeding the required 35-minute minimum. Daily study time does not exceed 55 minutes: 50 minutes on 2027-02-01, 55 minutes on 2027-02-02, 45 minutes on 2027-02-03, and 20 minutes on 2027-02-04. All sessions are scheduled within the allowed dates.",
+    "derived_summary": "Calculated from the schedule: 170 minutes in total. Daily totals: 2027-02-01: 50 minutes; 2027-02-02: 55 minutes; 2027-02-03: 45 minutes; 2027-02-04: 20 minutes. Topic totals: Coagulation: 55 minutes; Disinfection: 75 minutes; Sedimentation: 40 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

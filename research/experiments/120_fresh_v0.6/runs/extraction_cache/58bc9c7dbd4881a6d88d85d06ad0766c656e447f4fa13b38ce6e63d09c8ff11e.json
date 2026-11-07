@@ -1,0 +1,112 @@
+{
+  "cache_key": "58bc9c7dbd4881a6d88d85d06ad0766c656e447f4fa13b38ce6e63d09c8ff11e",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [],
+    "available_time": [
+      "S6"
+    ],
+    "topics": [
+      "S4"
+    ],
+    "priorities": [
+      "S5"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 67,
+      "text": "I am using a model railway to understand why trains are kept apart."
+    },
+    {
+      "id": "S2",
+      "start": 68,
+      "end": 117,
+      "text": "Turn my signalling reading into a study schedule."
+    },
+    {
+      "id": "S3",
+      "start": 118,
+      "end": 138,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 139,
+      "end": 272,
+      "text": "The syllabus consists of \"Block Sections\", \"Interlocking\", \"Signal Aspects\"; each named topic needs a minimum of 15 minutes in total."
+    },
+    {
+      "id": "S5",
+      "start": 273,
+      "end": 349,
+      "text": "I have no preferred topic order and no additional minimum-time requirements."
+    },
+    {
+      "id": "S6",
+      "start": 350,
+      "end": 419,
+      "text": "The total of all sessions on any one date must not exceed 35 minutes."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": null,
+    "topics": "The syllabus consists of \"Block Sections\", \"Interlocking\", \"Signal Aspects\"; each named topic needs a minimum of 15 minutes in total.",
+    "priorities": "I have no preferred topic order and no additional minimum-time requirements."
+  },
+  "evidence": {
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 139,
+        "end": 272,
+        "quote": "The syllabus consists of \"Block Sections\", \"Interlocking\", \"Signal Aspects\"; each named topic needs a minimum of 15 minutes in total."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 273,
+        "end": 349,
+        "quote": "I have no preferred topic order and no additional minimum-time requirements."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "available_time",
+      "proposed_evidence": [
+        "S6"
+      ],
+      "proposed_value": "The total of all sessions on any one date must not exceed 35 minutes.",
+      "reason": "quote_has_no_daily_time_allowance_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[],\"available_time\":[\"S6\"],\"topics\":[\"S4\"],\"priorities\":[\"S5\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [],
+          "available_time": [
+            "S6"
+          ],
+          "topics": [
+            "S4"
+          ],
+          "priorities": [
+            "S5"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

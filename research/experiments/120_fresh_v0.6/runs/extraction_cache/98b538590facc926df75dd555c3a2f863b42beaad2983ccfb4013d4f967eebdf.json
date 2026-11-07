@@ -1,0 +1,145 @@
+{
+  "cache_key": "98b538590facc926df75dd555c3a2f863b42beaad2983ccfb4013d4f967eebdf",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S7"
+    ],
+    "tone": [],
+    "length": [
+      "S2"
+    ],
+    "required_content": [
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 72,
+      "text": "Write a dialogue in which two fictional siblings resolve a disagreement."
+    },
+    {
+      "id": "S2",
+      "start": 73,
+      "end": 130,
+      "text": "Use at least 60 words and no more than 90 words in total."
+    },
+    {
+      "id": "S3",
+      "start": 131,
+      "end": 222,
+      "text": "Use this fictional material: One sibling borrowed the red scarf without asking and tore it."
+    },
+    {
+      "id": "S4",
+      "start": 223,
+      "end": 260,
+      "text": "The other asks them to ask next time."
+    },
+    {
+      "id": "S5",
+      "start": 261,
+      "end": 342,
+      "text": "End with a shared decision that we can mend it, rather than buying a replacement."
+    },
+    {
+      "id": "S6",
+      "start": 343,
+      "end": 422,
+      "text": "Required wording, verbatim: \"the red scarf\", \"ask next time\", \"we can mend it\"."
+    },
+    {
+      "id": "S7",
+      "start": 423,
+      "end": 475,
+      "text": "The audience is readers of an original family scene."
+    }
+  ],
+  "field_values": {
+    "audience": "The audience is readers of an original family scene.",
+    "tone": null,
+    "length": "Use at least 60 words and no more than 90 words in total.",
+    "required_content": "Use this fictional material: One sibling borrowed the red scarf without asking and tore it.\nThe other asks them to ask next time.\nEnd with a shared decision that we can mend it, rather than buying a replacement.\nRequired wording, verbatim: \"the red scarf\", \"ask next time\", \"we can mend it\"."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 423,
+        "end": 475,
+        "quote": "The audience is readers of an original family scene."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 73,
+        "end": 130,
+        "quote": "Use at least 60 words and no more than 90 words in total."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 131,
+        "end": 222,
+        "quote": "Use this fictional material: One sibling borrowed the red scarf without asking and tore it."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 223,
+        "end": 260,
+        "quote": "The other asks them to ask next time."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 261,
+        "end": 342,
+        "quote": "End with a shared decision that we can mend it, rather than buying a replacement."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 343,
+        "end": 422,
+        "quote": "Required wording, verbatim: \"the red scarf\", \"ask next time\", \"we can mend it\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S7\"],\"tone\":[],\"length\":[\"S2\"],\"required_content\":[\"S3\",\"S4\",\"S5\",\"S6\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S7"
+          ],
+          "tone": [],
+          "length": [
+            "S2"
+          ],
+          "required_content": [
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

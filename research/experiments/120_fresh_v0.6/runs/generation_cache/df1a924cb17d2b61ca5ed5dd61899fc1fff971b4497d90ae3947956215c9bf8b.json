@@ -1,0 +1,208 @@
+{
+  "cache_key": "df1a924cb17d2b61ca5ed5dd61899fc1fff971b4497d90ae3947956215c9bf8b",
+  "source_case_id": "NVSP02",
+  "source_policy": "value_based",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Sterile Inoculation",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Substrate Colonization",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Fruiting Conditions",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Substrate Colonization",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Fruiting Conditions",
+        "minutes": 20
+      }
+    ],
+    "summary": "Calculated from the schedule: 95 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 30 minutes; 2027-02-03: 20 minutes; 2027-02-04: 20 minutes. Topic totals: Fruiting Conditions: 35 minutes; Sterile Inoculation: 25 minutes; Substrate Colonization: 35 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Sterile Inoculation\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Substrate Colonization\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Fruiting Conditions\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Substrate Colonization\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Fruiting Conditions\",\n      \"minutes\": 20\n    }\n  ],\n  \"summary\": \"The study schedule covers all required topics—Sterile Inoculation (25 minutes), Substrate Colonization (35 minutes), and Fruiting Conditions (35 minutes)—within the date window from 2027-02-01 to 2027-02-04, with no more than 35 minutes of study per day. All topics meet or exceed the minimum required time, and the schedule respects the firm daily ceiling.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Sterile Inoculation",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Substrate Colonization",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Fruiting Conditions",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Substrate Colonization",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Fruiting Conditions",
+            "minutes": 20
+          }
+        ],
+        "summary": "The study schedule covers all required topics—Sterile Inoculation (25 minutes), Substrate Colonization (35 minutes), and Fruiting Conditions (35 minutes)—within the date window from 2027-02-01 to 2027-02-04, with no more than 35 minutes of study per day. All topics meet or exceed the minimum required time, and the schedule respects the firm daily ceiling."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "The last usable study date is 2027-02-04, and sessions may fall on that day."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 95,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 30,
+        "2027-02-03": 20,
+        "2027-02-04": 20
+      },
+      "topic_minutes": [
+        {
+          "topic": "Fruiting Conditions",
+          "normalized_topic": "fruiting conditions",
+          "minutes": 35
+        },
+        {
+          "topic": "Sterile Inoculation",
+          "normalized_topic": "sterile inoculation",
+          "minutes": 25
+        },
+        {
+          "topic": "Substrate Colonization",
+          "normalized_topic": "substrate colonization",
+          "minutes": 35
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "The last usable study date is 2027-02-04, and sessions may fall on that day."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 95,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 30,
+        "2027-02-03": 20,
+        "2027-02-04": 20
+      },
+      "topic_minutes": [
+        {
+          "topic": "Fruiting Conditions",
+          "normalized_topic": "fruiting conditions",
+          "minutes": 35
+        },
+        {
+          "topic": "Sterile Inoculation",
+          "normalized_topic": "sterile inoculation",
+          "minutes": 25
+        },
+        {
+          "topic": "Substrate Colonization",
+          "normalized_topic": "substrate colonization",
+          "minutes": 35
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "The last usable study date is 2027-02-04, and sessions may fall on that day."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study schedule covers all required topics—Sterile Inoculation (25 minutes), Substrate Colonization (35 minutes), and Fruiting Conditions (35 minutes)—within the date window from 2027-02-01 to 2027-02-04, with no more than 35 minutes of study per day. All topics meet or exceed the minimum required time, and the schedule respects the firm daily ceiling.",
+    "derived_summary": "Calculated from the schedule: 95 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 30 minutes; 2027-02-03: 20 minutes; 2027-02-04: 20 minutes. Topic totals: Fruiting Conditions: 35 minutes; Sterile Inoculation: 25 minutes; Substrate Colonization: 35 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

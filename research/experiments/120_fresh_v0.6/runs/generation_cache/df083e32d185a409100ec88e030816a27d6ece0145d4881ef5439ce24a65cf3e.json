@@ -1,0 +1,49 @@
+{
+  "cache_key": "df083e32d185a409100ec88e030816a27d6ece0145d4881ef5439ce24a65cf3e",
+  "source_case_id": "NTCW09",
+  "source_policy": "direct",
+  "output": {
+    "text": "Welcome to the Box Garden puzzle—a clever spatial challenge where you must fit a set of uniquely shaped wooden pieces into a fixed cubic box, with no gaps and no overlaps. The goal isn’t just to fit them all, but to do so in a way that creates a stable, balanced arrangement, as if each piece were a plant in a garden bed. Here’s a strategy to approach it with clarity and confidence.\n\nStart by sorting the pieces by size and complexity. Identify the largest piece—this is your anchor. Place it first, ideally in a corner or along an edge, where it can serve as a structural base. This reduces the number of possible configurations early on and prevents the larger piece from being trapped later.\n\nNext, examine the remaining space. Think in layers: divide the box mentally into horizontal slices or vertical sections. For each section, ask: What shape of gap remains? Match the next largest piece to the most constrained space. This is the 'fill the tightest spot' principle—always prioritize the area with the fewest viable options.\n\nUse symmetry to your advantage. If the box is symmetrical and the pieces allow it, mirror placements can reduce trial and error. But don’t force symmetry—sometimes the optimal solution is asymmetric. Instead, test one configuration, then rotate or flip the piece to see if it fits better elsewhere.\n\nKeep a mental or physical log of failed attempts. Note which piece failed where and why—was it a height mismatch? A rotational block? This builds intuition over time. After 3–5 attempts, you’ll start recognizing patterns: certain pieces only fit in specific orientations, or certain corners are nearly always occupied by the same piece.\n\nFinally, when you’re down to the last few pieces, pause. Step back. Look at the overall shape of the remaining space. If it’s irregular, the last piece must be the most irregular. If it’s nearly a rectangle, the last piece is likely flat and wide. Trust the geometry.\n\nRemember: the Box Garden isn’t about speed. It’s about thoughtful exploration. Each puzzle is a new garden to cultivate. With patience and this methodical approach, you’ll grow not just a solution, but a deeper understanding of spatial logic."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Welcome to the Box Garden puzzle—a clever spatial challenge where you must fit a set of uniquely shaped wooden pieces into a fixed cubic box, with no gaps and no overlaps. The goal isn’t just to fit them all, but to do so in a way that creates a stable, balanced arrangement, as if each piece were a plant in a garden bed. Here’s a strategy to approach it with clarity and confidence.\\n\\nStart by sorting the pieces by size and complexity. Identify the largest piece—this is your anchor. Place it first, ideally in a corner or along an edge, where it can serve as a structural base. This reduces the number of possible configurations early on and prevents the larger piece from being trapped later.\\n\\nNext, examine the remaining space. Think in layers: divide the box mentally into horizontal slices or vertical sections. For each section, ask: What shape of gap remains? Match the next largest piece to the most constrained space. This is the 'fill the tightest spot' principle—always prioritize the area with the fewest viable options.\\n\\nUse symmetry to your advantage. If the box is symmetrical and the pieces allow it, mirror placements can reduce trial and error. But don’t force symmetry—sometimes the optimal solution is asymmetric. Instead, test one configuration, then rotate or flip the piece to see if it fits better elsewhere.\\n\\nKeep a mental or physical log of failed attempts. Note which piece failed where and why—was it a height mismatch? A rotational block? This builds intuition over time. After 3–5 attempts, you’ll start recognizing patterns: certain pieces only fit in specific orientations, or certain corners are nearly always occupied by the same piece.\\n\\nFinally, when you’re down to the last few pieces, pause. Step back. Look at the overall shape of the remaining space. If it’s irregular, the last piece must be the most irregular. If it’s nearly a rectangle, the last piece is likely flat and wide. Trust the geometry.\\n\\nRemember: the Box Garden isn’t about speed. It’s about thoughtful exploration. Each puzzle is a new garden to cultivate. With patience and this methodical approach, you’ll grow not just a solution, but a deeper understanding of spatial logic.\"\n}",
+      "parsed": {
+        "text": "Welcome to the Box Garden puzzle—a clever spatial challenge where you must fit a set of uniquely shaped wooden pieces into a fixed cubic box, with no gaps and no overlaps. The goal isn’t just to fit them all, but to do so in a way that creates a stable, balanced arrangement, as if each piece were a plant in a garden bed. Here’s a strategy to approach it with clarity and confidence.\n\nStart by sorting the pieces by size and complexity. Identify the largest piece—this is your anchor. Place it first, ideally in a corner or along an edge, where it can serve as a structural base. This reduces the number of possible configurations early on and prevents the larger piece from being trapped later.\n\nNext, examine the remaining space. Think in layers: divide the box mentally into horizontal slices or vertical sections. For each section, ask: What shape of gap remains? Match the next largest piece to the most constrained space. This is the 'fill the tightest spot' principle—always prioritize the area with the fewest viable options.\n\nUse symmetry to your advantage. If the box is symmetrical and the pieces allow it, mirror placements can reduce trial and error. But don’t force symmetry—sometimes the optimal solution is asymmetric. Instead, test one configuration, then rotate or flip the piece to see if it fits better elsewhere.\n\nKeep a mental or physical log of failed attempts. Note which piece failed where and why—was it a height mismatch? A rotational block? This builds intuition over time. After 3–5 attempts, you’ll start recognizing patterns: certain pieces only fit in specific orientations, or certain corners are nearly always occupied by the same piece.\n\nFinally, when you’re down to the last few pieces, pause. Step back. Look at the overall shape of the remaining space. If it’s irregular, the last piece must be the most irregular. If it’s nearly a rectangle, the last piece is likely flat and wide. Trust the geometry.\n\nRemember: the Box Garden isn’t about speed. It’s about thoughtful exploration. Each puzzle is a new garden to cultivate. With patience and this methodical approach, you’ll grow not just a solution, but a deeper understanding of spatial logic."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 372
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 372
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

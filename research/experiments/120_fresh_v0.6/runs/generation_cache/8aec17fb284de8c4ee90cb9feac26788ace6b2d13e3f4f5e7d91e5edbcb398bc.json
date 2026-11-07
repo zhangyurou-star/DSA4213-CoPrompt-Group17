@@ -1,0 +1,79 @@
+{
+  "cache_key": "8aec17fb284de8c4ee90cb9feac26788ace6b2d13e3f4f5e7d91e5edbcb398bc",
+  "source_case_id": "NVCW04",
+  "source_policy": "value_based",
+  "output": {
+    "text": "In the quiet hush of a workshop where time moves like a slow breath, a single stick of ink rests in the palm of a maker’s hand. It is dry, ancient, its surface cracked with the memory of centuries. With deliberate care, the stick is ground against a stone, releasing a fine dust that spirals into the air like smoke from a forgotten fire. This dust settles into the center of a shallow bowl—dark, deep, still. The black pool. \n\nThen, the first drop of water falls. Clear, pure, trembling on the edge of the pool’s surface. One drop at a time. Each drop sinks in, not with a splash, but with a quiet surrender, deepening the darkness, awakening the pigment. The pool stirs, not with motion, but with presence—alive with potential.\n\nA brush, slender and worn, is lifted. The tip touches the surface, drawing a single line across a sheet of rice paper. Thin at first, then thickening with intent. The line trembles, then steadies. And in that moment, something shifts. A line becomes a river. \n\nNot in size, but in meaning. A single stroke, born of patience and silence, carries the weight of a journey. It flows not just across paper, but through time, through thought, through the quiet alchemy of making. The ink, once dry, now speaks. And the world, for a breath, listens."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"In the quiet hush of a workshop where time moves like a slow breath, a single stick of ink rests in the palm of a maker’s hand. It is dry, ancient, its surface cracked with the memory of centuries. With deliberate care, the stick is ground against a stone, releasing a fine dust that spirals into the air like smoke from a forgotten fire. This dust settles into the center of a shallow bowl—dark, deep, still. The black pool. \\n\\nThen, the first drop of water falls. Clear, pure, trembling on the edge of the pool’s surface. One drop at a time. Each drop sinks in, not with a splash, but with a quiet surrender, deepening the darkness, awakening the pigment. The pool stirs, not with motion, but with presence—alive with potential.\\n\\nA brush, slender and worn, is lifted. The tip touches the surface, drawing a single line across a sheet of rice paper. Thin at first, then thickening with intent. The line trembles, then steadies. And in that moment, something shifts. A line becomes a river. \\n\\nNot in size, but in meaning. A single stroke, born of patience and silence, carries the weight of a journey. It flows not just across paper, but through time, through thought, through the quiet alchemy of making. The ink, once dry, now speaks. And the world, for a breath, listens.\"\n}",
+      "parsed": {
+        "text": "In the quiet hush of a workshop where time moves like a slow breath, a single stick of ink rests in the palm of a maker’s hand. It is dry, ancient, its surface cracked with the memory of centuries. With deliberate care, the stick is ground against a stone, releasing a fine dust that spirals into the air like smoke from a forgotten fire. This dust settles into the center of a shallow bowl—dark, deep, still. The black pool. \n\nThen, the first drop of water falls. Clear, pure, trembling on the edge of the pool’s surface. One drop at a time. Each drop sinks in, not with a splash, but with a quiet surrender, deepening the darkness, awakening the pigment. The pool stirs, not with motion, but with presence—alive with potential.\n\nA brush, slender and worn, is lifted. The tip touches the surface, drawing a single line across a sheet of rice paper. Thin at first, then thickening with intent. The line trembles, then steadies. And in that moment, something shifts. A line becomes a river. \n\nNot in size, but in meaning. A single stroke, born of patience and silence, carries the weight of a journey. It flows not just across paper, but through time, through thought, through the quiet alchemy of making. The ink, once dry, now speaks. And the world, for a breath, listens."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "required_content",
+          "quote": "Required wording, verbatim: \"the black pool\", \"one drop at a time\", \"a line becomes a river\"."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 228
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "required_content",
+          "quote": "Required wording, verbatim: \"the black pool\", \"one drop at a time\", \"a line becomes a river\"."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 228
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "required_content",
+          "quote": "Required wording, verbatim: \"the black pool\", \"one drop at a time\", \"a line becomes a river\"."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

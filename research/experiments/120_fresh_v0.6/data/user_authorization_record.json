@@ -1,0 +1,10 @@
+{
+  "recorded_utc": "2026-10-19T14:44:25.283740+00:00",
+  "scope": "User: 我想从头开始用120个新的. Replaces80+40 expansion with wholly new120.",
+  "cumulative_budget_usd": 0.25,
+  "budget_authorization_source": "Prior explicit reply: 累计上限 $0.25（推荐，包含已花费用，逐次硬拦截）",
+  "budget_authority": "../../runs/authorized_pilot_budget.json",
+  "no_additional_authorization_inferred": true,
+  "historical_spend_preserved": true,
+  "credentials": "Local hidden entry only; never included in this record."
+}

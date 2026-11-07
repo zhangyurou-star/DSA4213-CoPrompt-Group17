@@ -1,0 +1,81 @@
+{
+  "cache_key": "88143b4ee7a931f873c22b6bee9c10c9b5791c918e68e8614efe1a2faa54dcb3",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [],
+    "tone": [
+      "S3"
+    ],
+    "length": [
+      "S2"
+    ],
+    "required_content": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 56,
+      "text": "Create the opening premise for an imaginary escape room."
+    },
+    {
+      "id": "S2",
+      "start": 57,
+      "end": 113,
+      "text": "The total word count must fall from 60 to 90, inclusive."
+    },
+    {
+      "id": "S3",
+      "start": 114,
+      "end": 151,
+      "text": "Use a mysterious but welcoming voice."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": "Use a mysterious but welcoming voice.",
+    "length": "The total word count must fall from 60 to 90, inclusive.",
+    "required_content": null
+  },
+  "evidence": {
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 114,
+        "end": 151,
+        "quote": "Use a mysterious but welcoming voice."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 57,
+        "end": 113,
+        "quote": "The total word count must fall from 60 to 90, inclusive."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[],\"tone\":[\"S3\"],\"length\":[\"S2\"],\"required_content\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [],
+          "tone": [
+            "S3"
+          ],
+          "length": [
+            "S2"
+          ],
+          "required_content": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

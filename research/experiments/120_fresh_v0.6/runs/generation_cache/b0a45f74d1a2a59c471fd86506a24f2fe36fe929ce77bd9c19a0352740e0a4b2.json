@@ -1,0 +1,79 @@
+{
+  "cache_key": "b0a45f74d1a2a59c471fd86506a24f2fe36fe929ce77bd9c19a0352740e0a4b2",
+  "source_case_id": "NTCW18",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "A river does not carve its bed in a day, nor does a heart mend in a single dawn. So too, patience shapes the soul as water shapes stone. When young Elara planted her first sapling in the cracked earth of her village, she watered it each morning, though no green appeared for months. Yet when spring came, the tree stood tall, its roots deep and strong. In stillness, growth finds its voice; in quiet, the world remembers what it means to endure."
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"A river does not carve its bed in a day, nor does a heart mend in a single dawn. So too, patience shapes the soul as water shapes stone. When young Elara planted her first sapling in the cracked earth of her village, she watered it each morning, though no green appeared for months. Yet when spring came, the tree stood tall, its roots deep and strong. In stillness, growth finds its voice; in quiet, the world remembers what it means to endure.\"}",
+      "parsed": {
+        "text": "A river does not carve its bed in a day, nor does a heart mend in a single dawn. So too, patience shapes the soul as water shapes stone. When young Elara planted her first sapling in the cracked earth of her village, she watered it each morning, though no green appeared for months. Yet when spring came, the tree stood tall, its roots deep and strong. In stillness, growth finds its voice; in quiet, the world remembers what it means to endure."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 1,
+          "field_id": "length",
+          "quote": "Use at least 55 words and no more than 85 words in total."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 83
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 1,
+          "field_id": "length",
+          "quote": "Use at least 55 words and no more than 85 words in total."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 83
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 1,
+          "field_id": "length",
+          "quote": "Use at least 55 words and no more than 85 words in total."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

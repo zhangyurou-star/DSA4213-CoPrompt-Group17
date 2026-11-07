@@ -1,0 +1,49 @@
+{
+  "cache_key": "008970754bad20c4d2c7db4394dfa3c7b99281460a5a55109a404e37602d8ba8",
+  "source_case_id": "NTCW15",
+  "source_policy": "direct",
+  "output": {
+    "text": "Welcome, traveler, to the Chalk Maze—where every path is drawn in white, every turn a choice, and every step a story. Begin at the central stone, marked with a single circle. Face the first chalk line: it points left. Take one step forward. Now, the path splits. The upper line is bold; follow it. When you reach a T-junction, the left path is faint—follow the faint line. At the next square, the floor glows. Step onto the glowing tile only if the wall to your right is unbroken. If it’s cracked, step back and take the lower path instead. A new line appears: it curves right, then down. Follow it until you see a chalk star. Stand on it. The maze will whisper your next move. Listen. If the sound is high, turn left. If low, go straight. The final path is a spiral. Walk it slowly. When the chalk fades beneath your feet, you’ve reached the center. The maze is not a test of speed, but of sight. Trust the lines. They are always true."
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"Welcome, traveler, to the Chalk Maze—where every path is drawn in white, every turn a choice, and every step a story. Begin at the central stone, marked with a single circle. Face the first chalk line: it points left. Take one step forward. Now, the path splits. The upper line is bold; follow it. When you reach a T-junction, the left path is faint—follow the faint line. At the next square, the floor glows. Step onto the glowing tile only if the wall to your right is unbroken. If it’s cracked, step back and take the lower path instead. A new line appears: it curves right, then down. Follow it until you see a chalk star. Stand on it. The maze will whisper your next move. Listen. If the sound is high, turn left. If low, go straight. The final path is a spiral. Walk it slowly. When the chalk fades beneath your feet, you’ve reached the center. The maze is not a test of speed, but of sight. Trust the lines. They are always true.\"}",
+      "parsed": {
+        "text": "Welcome, traveler, to the Chalk Maze—where every path is drawn in white, every turn a choice, and every step a story. Begin at the central stone, marked with a single circle. Face the first chalk line: it points left. Take one step forward. Now, the path splits. The upper line is bold; follow it. When you reach a T-junction, the left path is faint—follow the faint line. At the next square, the floor glows. Step onto the glowing tile only if the wall to your right is unbroken. If it’s cracked, step back and take the lower path instead. A new line appears: it curves right, then down. Follow it until you see a chalk star. Stand on it. The maze will whisper your next move. Listen. If the sound is high, turn left. If low, go straight. The final path is a spiral. Walk it slowly. When the chalk fades beneath your feet, you’ve reached the center. The maze is not a test of speed, but of sight. Trust the lines. They are always true."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 178
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 178
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

@@ -1,0 +1,213 @@
+{
+  "cache_key": "90bff39939b2e77cae343fb5de4a9372cd8e293c0668ac277e698ed9b197f8d3",
+  "source_case_id": "NVSP06",
+  "source_policy": "value_based",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Cell Theory Fundamentals",
+        "minutes": 60
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Electrode Reactions in Batteries",
+        "minutes": 60
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Battery Diagram Interpretation",
+        "minutes": 60
+      }
+    ],
+    "summary": "Calculated from the schedule: 180 minutes in total. Daily totals: 2027-02-01: 60 minutes; 2027-02-02: 60 minutes; 2027-02-03: 60 minutes. Topic totals: Battery Diagram Interpretation: 60 minutes; Cell Theory Fundamentals: 60 minutes; Electrode Reactions in Batteries: 60 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Cell Theory Fundamentals\",\n      \"minutes\": 60\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Electrode Reactions in Batteries\",\n      \"minutes\": 60\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Battery Diagram Interpretation\",\n      \"minutes\": 60\n    }\n  ],\n  \"summary\": \"A three-day study plan covering cell theory fundamentals, electrode reactions, and battery diagram interpretation, with 60 minutes allocated per day from 2027-02-01 to 2027-02-03, inclusive.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Cell Theory Fundamentals",
+            "minutes": 60
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Electrode Reactions in Batteries",
+            "minutes": 60
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Battery Diagram Interpretation",
+            "minutes": 60
+          }
+        ],
+        "summary": "A three-day study plan covering cell theory fundamentals, electrode reactions, and battery diagram interpretation, with 60 minutes allocated per day from 2027-02-01 to 2027-02-03, inclusive."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-03; that date is still available."
+        }
+      },
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "My study window closes on 2027-02-03; that date is still available."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 180,
+      "daily_minutes": {
+        "2027-02-01": 60,
+        "2027-02-02": 60,
+        "2027-02-03": 60
+      },
+      "topic_minutes": [
+        {
+          "topic": "Battery Diagram Interpretation",
+          "normalized_topic": "battery diagram interpretation",
+          "minutes": 60
+        },
+        {
+          "topic": "Cell Theory Fundamentals",
+          "normalized_topic": "cell theory fundamentals",
+          "minutes": 60
+        },
+        {
+          "topic": "Electrode Reactions in Batteries",
+          "normalized_topic": "electrode reactions in batteries",
+          "minutes": 60
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-03; that date is still available."
+        }
+      },
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "My study window closes on 2027-02-03; that date is still available."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 180,
+      "daily_minutes": {
+        "2027-02-01": 60,
+        "2027-02-02": 60,
+        "2027-02-03": 60
+      },
+      "topic_minutes": [
+        {
+          "topic": "Battery Diagram Interpretation",
+          "normalized_topic": "battery diagram interpretation",
+          "minutes": 60
+        },
+        {
+          "topic": "Cell Theory Fundamentals",
+          "normalized_topic": "cell theory fundamentals",
+          "minutes": 60
+        },
+        {
+          "topic": "Electrode Reactions in Batteries",
+          "normalized_topic": "electrode reactions in batteries",
+          "minutes": 60
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-03; that date is still available."
+        }
+      },
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "My study window closes on 2027-02-03; that date is still available."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "A three-day study plan covering cell theory fundamentals, electrode reactions, and battery diagram interpretation, with 60 minutes allocated per day from 2027-02-01 to 2027-02-03, inclusive.",
+    "derived_summary": "Calculated from the schedule: 180 minutes in total. Daily totals: 2027-02-01: 60 minutes; 2027-02-02: 60 minutes; 2027-02-03: 60 minutes. Topic totals: Battery Diagram Interpretation: 60 minutes; Cell Theory Fundamentals: 60 minutes; Electrode Reactions in Batteries: 60 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

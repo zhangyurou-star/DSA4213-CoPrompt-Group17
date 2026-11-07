@@ -1,0 +1,237 @@
+{
+  "cache_key": "a5e062b9f737d9a1516adc9f80f8e06518a858c26962a32899d978dcac8c63b1",
+  "source_case_id": "NDSP15",
+  "source_policy": "exhaustive",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Chawan Handling",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Chasen Care",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Utensil Placement",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Chawan Handling",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Chasen Care",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Utensil Placement",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-07",
+        "topic": "Chawan Handling",
+        "minutes": 20
+      }
+    ],
+    "summary": "Calculated from the schedule: 160 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 20 minutes; 2027-02-03: 20 minutes; 2027-02-04: 25 minutes; 2027-02-05: 25 minutes; 2027-02-06: 25 minutes; 2027-02-07: 20 minutes. Topic totals: Chasen Care: 45 minutes; Chawan Handling: 70 minutes; Utensil Placement: 45 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Chawan Handling\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Chasen Care\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Utensil Placement\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Chawan Handling\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Chasen Care\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Utensil Placement\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-07\",\n      \"topic\": \"Chawan Handling\",\n      \"minutes\": 20\n    }\n  ],\n  \"summary\": \"Study plan completed within the 2027-02-01 to 2027-02-07 window, with each topic receiving at least 20 minutes. Total study time is 160 minutes, distributed across 7 days with no day exceeding 50 minutes. Topics are varied in order as requested.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Chawan Handling",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Chasen Care",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Utensil Placement",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Chawan Handling",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Chasen Care",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Utensil Placement",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-07",
+            "topic": "Chawan Handling",
+            "minutes": 20
+          }
+        ],
+        "summary": "Study plan completed within the 2027-02-01 to 2027-02-07 window, with each topic receiving at least 20 minutes. Total study time is 160 minutes, distributed across 7 days with no day exceeding 50 minutes. Topics are varied in order as requested."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "Finish all scheduled study no later than 2027-02-07, inclusive."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 160,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 20,
+        "2027-02-03": 20,
+        "2027-02-04": 25,
+        "2027-02-05": 25,
+        "2027-02-06": 25,
+        "2027-02-07": 20
+      },
+      "topic_minutes": [
+        {
+          "topic": "Chasen Care",
+          "normalized_topic": "chasen care",
+          "minutes": 45
+        },
+        {
+          "topic": "Chawan Handling",
+          "normalized_topic": "chawan handling",
+          "minutes": 70
+        },
+        {
+          "topic": "Utensil Placement",
+          "normalized_topic": "utensil placement",
+          "minutes": 45
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "Finish all scheduled study no later than 2027-02-07, inclusive."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 160,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 20,
+        "2027-02-03": 20,
+        "2027-02-04": 25,
+        "2027-02-05": 25,
+        "2027-02-06": 25,
+        "2027-02-07": 20
+      },
+      "topic_minutes": [
+        {
+          "topic": "Chasen Care",
+          "normalized_topic": "chasen care",
+          "minutes": 45
+        },
+        {
+          "topic": "Chawan Handling",
+          "normalized_topic": "chawan handling",
+          "minutes": 70
+        },
+        {
+          "topic": "Utensil Placement",
+          "normalized_topic": "utensil placement",
+          "minutes": 45
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "Finish all scheduled study no later than 2027-02-07, inclusive."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "Study plan completed within the 2027-02-01 to 2027-02-07 window, with each topic receiving at least 20 minutes. Total study time is 160 minutes, distributed across 7 days with no day exceeding 50 minutes. Topics are varied in order as requested.",
+    "derived_summary": "Calculated from the schedule: 160 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 20 minutes; 2027-02-03: 20 minutes; 2027-02-04: 25 minutes; 2027-02-05: 25 minutes; 2027-02-06: 25 minutes; 2027-02-07: 20 minutes. Topic totals: Chasen Care: 45 minutes; Chawan Handling: 70 minutes; Utensil Placement: 45 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

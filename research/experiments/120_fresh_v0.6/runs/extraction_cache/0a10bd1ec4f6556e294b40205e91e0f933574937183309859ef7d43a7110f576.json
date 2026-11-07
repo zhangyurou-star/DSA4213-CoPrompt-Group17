@@ -1,0 +1,130 @@
+{
+  "cache_key": "0a10bd1ec4f6556e294b40205e91e0f933574937183309859ef7d43a7110f576",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S5"
+    ],
+    "available_time": [
+      "S7"
+    ],
+    "topics": [
+      "S4"
+    ],
+    "priorities": [
+      "S6"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 52,
+      "text": "I will critique a pedestrian-street design in class."
+    },
+    {
+      "id": "S2",
+      "start": 53,
+      "end": 122,
+      "text": "Please create a focused preparation schedule for the design concepts."
+    },
+    {
+      "id": "S3",
+      "start": 123,
+      "end": 143,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 144,
+      "end": 306,
+      "text": "The syllabus consists of \"Crossing Visibility\", \"Kerb Ramps\", \"Pedestrian Desire Lines\", \"Footway Width\"; each named topic needs a minimum of 25 minutes in total."
+    },
+    {
+      "id": "S5",
+      "start": 307,
+      "end": 374,
+      "text": "My study window closes on 2027-02-05; that date is still available."
+    },
+    {
+      "id": "S6",
+      "start": 375,
+      "end": 482,
+      "text": "I would prefer to encounter \"Footway Width\" early; treat that as a suggestion only, not a time requirement."
+    },
+    {
+      "id": "S7",
+      "start": 483,
+      "end": 552,
+      "text": "The total of all sessions on any one date must not exceed 60 minutes."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": null,
+    "topics": "The syllabus consists of \"Crossing Visibility\", \"Kerb Ramps\", \"Pedestrian Desire Lines\", \"Footway Width\"; each named topic needs a minimum of 25 minutes in total.",
+    "priorities": "I would prefer to encounter \"Footway Width\" early; treat that as a suggestion only, not a time requirement."
+  },
+  "evidence": {
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 144,
+        "end": 306,
+        "quote": "The syllabus consists of \"Crossing Visibility\", \"Kerb Ramps\", \"Pedestrian Desire Lines\", \"Footway Width\"; each named topic needs a minimum of 25 minutes in total."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 375,
+        "end": 482,
+        "quote": "I would prefer to encounter \"Footway Width\" early; treat that as a suggestion only, not a time requirement."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "deadline",
+      "proposed_evidence": [
+        "S5"
+      ],
+      "proposed_value": "My study window closes on 2027-02-05; that date is still available.",
+      "reason": "quote_has_no_explicit_endpoint_cue"
+    },
+    {
+      "field_id": "available_time",
+      "proposed_evidence": [
+        "S7"
+      ],
+      "proposed_value": "The total of all sessions on any one date must not exceed 60 minutes.",
+      "reason": "quote_has_no_daily_time_allowance_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S5\"],\"available_time\":[\"S7\"],\"topics\":[\"S4\"],\"priorities\":[\"S6\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S5"
+          ],
+          "available_time": [
+            "S7"
+          ],
+          "topics": [
+            "S4"
+          ],
+          "priorities": [
+            "S6"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

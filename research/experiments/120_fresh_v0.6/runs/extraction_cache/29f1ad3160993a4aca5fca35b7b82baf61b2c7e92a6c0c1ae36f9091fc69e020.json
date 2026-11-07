@@ -1,0 +1,100 @@
+{
+  "cache_key": "29f1ad3160993a4aca5fca35b7b82baf61b2c7e92a6c0c1ae36f9091fc69e020",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [
+      "S4"
+    ],
+    "length": [
+      "S3"
+    ],
+    "required_content": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 52,
+      "text": "Write a weather bulletin set on an imaginary planet."
+    },
+    {
+      "id": "S2",
+      "start": 53,
+      "end": 121,
+      "text": "This will be read by listeners in the imaginary settlement of Nacre."
+    },
+    {
+      "id": "S3",
+      "start": 122,
+      "end": 179,
+      "text": "Use at least 60 words and no more than 90 words in total."
+    },
+    {
+      "id": "S4",
+      "start": 180,
+      "end": 211,
+      "text": "Use a composed and vivid voice."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": "Use a composed and vivid voice.",
+    "length": "Use at least 60 words and no more than 90 words in total.",
+    "required_content": null
+  },
+  "evidence": {
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 180,
+        "end": 211,
+        "quote": "Use a composed and vivid voice."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 122,
+        "end": 179,
+        "quote": "Use at least 60 words and no more than 90 words in total."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "audience",
+      "proposed_evidence": [
+        "S2"
+      ],
+      "proposed_value": "This will be read by listeners in the imaginary settlement of Nacre.",
+      "reason": "quote_has_no_explicit_reader_relation_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[\"S4\"],\"length\":[\"S3\"],\"required_content\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [
+            "S4"
+          ],
+          "length": [
+            "S3"
+          ],
+          "required_content": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

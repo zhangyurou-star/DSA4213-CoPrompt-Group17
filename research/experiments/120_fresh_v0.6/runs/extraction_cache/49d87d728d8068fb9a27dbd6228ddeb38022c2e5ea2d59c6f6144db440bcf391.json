@@ -1,0 +1,117 @@
+{
+  "cache_key": "49d87d728d8068fb9a27dbd6228ddeb38022c2e5ea2d59c6f6144db440bcf391",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [],
+    "tone": [],
+    "length": [
+      "S2"
+    ],
+    "required_content": [
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 64,
+      "text": "Write empty-state guidance for a fictional collection interface."
+    },
+    {
+      "id": "S2",
+      "start": 65,
+      "end": 97,
+      "text": "Write 50 to 80 words altogether."
+    },
+    {
+      "id": "S3",
+      "start": 98,
+      "end": 211,
+      "text": "Use this fictional material: The empty collection screen should say Your shelf is empty and offer Add a keepsake."
+    },
+    {
+      "id": "S4",
+      "start": 212,
+      "end": 308,
+      "text": "Explain that each entry needs a title and a note, and that the first entry can be revised later."
+    },
+    {
+      "id": "S5",
+      "start": 309,
+      "end": 399,
+      "text": "Required wording, verbatim: \"Your shelf is empty\", \"Add a keepsake\", \"a title and a note\"."
+    },
+    {
+      "id": "S6",
+      "start": 400,
+      "end": 447,
+      "text": "Execute now and do not pause for clarification."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": null,
+    "length": "Write 50 to 80 words altogether.",
+    "required_content": "Use this fictional material: The empty collection screen should say Your shelf is empty and offer Add a keepsake.\nExplain that each entry needs a title and a note, and that the first entry can be revised later.\nRequired wording, verbatim: \"Your shelf is empty\", \"Add a keepsake\", \"a title and a note\"."
+  },
+  "evidence": {
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 65,
+        "end": 97,
+        "quote": "Write 50 to 80 words altogether."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 98,
+        "end": 211,
+        "quote": "Use this fictional material: The empty collection screen should say Your shelf is empty and offer Add a keepsake."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 212,
+        "end": 308,
+        "quote": "Explain that each entry needs a title and a note, and that the first entry can be revised later."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 309,
+        "end": 399,
+        "quote": "Required wording, verbatim: \"Your shelf is empty\", \"Add a keepsake\", \"a title and a note\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[],\"tone\":[],\"length\":[\"S2\"],\"required_content\":[\"S3\",\"S4\",\"S5\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [],
+          "tone": [],
+          "length": [
+            "S2"
+          ],
+          "required_content": [
+            "S3",
+            "S4",
+            "S5"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

@@ -1,0 +1,49 @@
+{
+  "cache_key": "378d9884e692ce3e3840b8af7811c95ddabc3ad2dff01eead00a1ab0a54b8004",
+  "source_case_id": "NTCW24",
+  "source_policy": "direct",
+  "output": {
+    "text": "The imaginary clock features thin silver hands over a pale dial, creating a delicate aesthetic. However, the weak visual contrast between the hands and the dial compromises legibility, especially in low light. To improve readability without disrupting the uncluttered face, a darker hour hand is recommended. This subtle change enhances the hour markers' visibility while maintaining the design's minimalist charm. The thin silver hands remain unchanged for consistency, but a darker hour hand ensures better time recognition. The pale dial preserves its serene appearance, now balanced with improved functionality. This adjustment honors both form and function."
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"The imaginary clock features thin silver hands over a pale dial, creating a delicate aesthetic. However, the weak visual contrast between the hands and the dial compromises legibility, especially in low light. To improve readability without disrupting the uncluttered face, a darker hour hand is recommended. This subtle change enhances the hour markers' visibility while maintaining the design's minimalist charm. The thin silver hands remain unchanged for consistency, but a darker hour hand ensures better time recognition. The pale dial preserves its serene appearance, now balanced with improved functionality. This adjustment honors both form and function.\"}",
+      "parsed": {
+        "text": "The imaginary clock features thin silver hands over a pale dial, creating a delicate aesthetic. However, the weak visual contrast between the hands and the dial compromises legibility, especially in low light. To improve readability without disrupting the uncluttered face, a darker hour hand is recommended. This subtle change enhances the hour markers' visibility while maintaining the design's minimalist charm. The thin silver hands remain unchanged for consistency, but a darker hour hand ensures better time recognition. The pale dial preserves its serene appearance, now balanced with improved functionality. This adjustment honors both form and function."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 96
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 96
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

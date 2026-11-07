@@ -1,0 +1,102 @@
+{
+  "cache_key": "0eb567827c19d42061cf4ae26d9fd28b0628a1ff92d6156e11a68c714c2fb306",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [],
+    "tone": [],
+    "length": [
+      "S5"
+    ],
+    "required_content": [
+      "S2",
+      "S4"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 49,
+      "text": "Describe a design concept for imaginary currency."
+    },
+    {
+      "id": "S2",
+      "start": 50,
+      "end": 200,
+      "text": "These invented details are required: The imaginary banknote centers a woven sun, carries nine square windows on its reverse, and uses a violet border."
+    },
+    {
+      "id": "S3",
+      "start": 201,
+      "end": 283,
+      "text": "The sun represents shared work; the windows represent the invented city districts."
+    },
+    {
+      "id": "S4",
+      "start": 284,
+      "end": 375,
+      "text": "Include each of these exact strings: \"a woven sun\", \"nine square windows\", \"violet border\"."
+    },
+    {
+      "id": "S5",
+      "start": 376,
+      "end": 415,
+      "text": "Keep the complete piece to 60–90 words."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": null,
+    "length": "Keep the complete piece to 60–90 words.",
+    "required_content": "These invented details are required: The imaginary banknote centers a woven sun, carries nine square windows on its reverse, and uses a violet border.\nInclude each of these exact strings: \"a woven sun\", \"nine square windows\", \"violet border\"."
+  },
+  "evidence": {
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 376,
+        "end": 415,
+        "quote": "Keep the complete piece to 60–90 words."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 50,
+        "end": 200,
+        "quote": "These invented details are required: The imaginary banknote centers a woven sun, carries nine square windows on its reverse, and uses a violet border."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 284,
+        "end": 375,
+        "quote": "Include each of these exact strings: \"a woven sun\", \"nine square windows\", \"violet border\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[],\"tone\":[],\"length\":[\"S5\"],\"required_content\":[\"S2\",\"S4\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [],
+          "tone": [],
+          "length": [
+            "S5"
+          ],
+          "required_content": [
+            "S2",
+            "S4"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

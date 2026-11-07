@@ -1,0 +1,149 @@
+{
+  "cache_key": "04674a7e47c78ad522b21f0d8164aac42c454afb03fa239f1c279ce61c289f2f",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S5"
+    ],
+    "tone": [
+      "S7"
+    ],
+    "length": [
+      "S6"
+    ],
+    "required_content": [
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 55,
+      "text": "Write an alternative ending for an original fairy tale."
+    },
+    {
+      "id": "S2",
+      "start": 56,
+      "end": 219,
+      "text": "Build the piece around these synthetic facts: The alternate ending has the glass fox give up its jeweled key and use an ordinary stone to hold open the tower door."
+    },
+    {
+      "id": "S3",
+      "start": 220,
+      "end": 264,
+      "text": "Include the conclusion the door stayed open."
+    },
+    {
+      "id": "S4",
+      "start": 265,
+      "end": 357,
+      "text": "The text must contain \"the glass fox\", \"an ordinary stone\", \"the door stayed open\" verbatim."
+    },
+    {
+      "id": "S5",
+      "start": 358,
+      "end": 426,
+      "text": "Address this to readers who know the invented tale of the glass fox."
+    },
+    {
+      "id": "S6",
+      "start": 427,
+      "end": 483,
+      "text": "The total word count must fall from 60 to 90, inclusive."
+    },
+    {
+      "id": "S7",
+      "start": 484,
+      "end": 526,
+      "text": "The style should feel lyrical and hopeful."
+    }
+  ],
+  "field_values": {
+    "audience": "Address this to readers who know the invented tale of the glass fox.",
+    "tone": "The style should feel lyrical and hopeful.",
+    "length": "The total word count must fall from 60 to 90, inclusive.",
+    "required_content": "Build the piece around these synthetic facts: The alternate ending has the glass fox give up its jeweled key and use an ordinary stone to hold open the tower door.\nInclude the conclusion the door stayed open.\nThe text must contain \"the glass fox\", \"an ordinary stone\", \"the door stayed open\" verbatim."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 358,
+        "end": 426,
+        "quote": "Address this to readers who know the invented tale of the glass fox."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 484,
+        "end": 526,
+        "quote": "The style should feel lyrical and hopeful."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 427,
+        "end": 483,
+        "quote": "The total word count must fall from 60 to 90, inclusive."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 56,
+        "end": 219,
+        "quote": "Build the piece around these synthetic facts: The alternate ending has the glass fox give up its jeweled key and use an ordinary stone to hold open the tower door."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 220,
+        "end": 264,
+        "quote": "Include the conclusion the door stayed open."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 265,
+        "end": 357,
+        "quote": "The text must contain \"the glass fox\", \"an ordinary stone\", \"the door stayed open\" verbatim."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S5\"],\"tone\":[\"S7\"],\"length\":[\"S6\"],\"required_content\":[\"S2\",\"S3\",\"S4\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S5"
+          ],
+          "tone": [
+            "S7"
+          ],
+          "length": [
+            "S6"
+          ],
+          "required_content": [
+            "S2",
+            "S3",
+            "S4"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

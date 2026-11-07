@@ -1,0 +1,155 @@
+{
+  "cache_key": "04ad3d6e6bd89a28b452c55b0300e790834bf270266bb0dd8c6695d55f3190c9",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S7"
+    ],
+    "available_time": [
+      "S4"
+    ],
+    "topics": [
+      "S5",
+      "S6",
+      "S8"
+    ],
+    "priorities": [
+      "S8"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 68,
+      "text": "I need to interpret groundwater diagrams in an environmental course."
+    },
+    {
+      "id": "S2",
+      "start": 69,
+      "end": 111,
+      "text": "Organize the relevant study into sessions."
+    },
+    {
+      "id": "S3",
+      "start": 112,
+      "end": 132,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 133,
+      "end": 225,
+      "text": "Even if a day has several short sessions, their combined length must stay within 45 minutes."
+    },
+    {
+      "id": "S5",
+      "start": 226,
+      "end": 312,
+      "text": "Cover these exact topic labels: \"Aquifer Recharge\", \"Hydraulic Head\", \"Well Drawdown\"."
+    },
+    {
+      "id": "S6",
+      "start": 313,
+      "end": 367,
+      "text": "Give each one at least 10 minutes over the whole plan."
+    },
+    {
+      "id": "S7",
+      "start": 368,
+      "end": 431,
+      "text": "Finish all scheduled study no later than 2027-02-05, inclusive."
+    },
+    {
+      "id": "S8",
+      "start": 432,
+      "end": 516,
+      "text": "Give \"Well Drawdown\" at least 35 minutes in total; this is a firm extra requirement."
+    }
+  ],
+  "field_values": {
+    "deadline": "Finish all scheduled study no later than 2027-02-05, inclusive.",
+    "available_time": "Even if a day has several short sessions, their combined length must stay within 45 minutes.",
+    "topics": "Cover these exact topic labels: \"Aquifer Recharge\", \"Hydraulic Head\", \"Well Drawdown\".\nGive each one at least 10 minutes over the whole plan.\nGive \"Well Drawdown\" at least 35 minutes in total; this is a firm extra requirement.",
+    "priorities": "Give \"Well Drawdown\" at least 35 minutes in total; this is a firm extra requirement."
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 368,
+        "end": 431,
+        "quote": "Finish all scheduled study no later than 2027-02-05, inclusive."
+      }
+    ],
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 133,
+        "end": 225,
+        "quote": "Even if a day has several short sessions, their combined length must stay within 45 minutes."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 226,
+        "end": 312,
+        "quote": "Cover these exact topic labels: \"Aquifer Recharge\", \"Hydraulic Head\", \"Well Drawdown\"."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 313,
+        "end": 367,
+        "quote": "Give each one at least 10 minutes over the whole plan."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 432,
+        "end": 516,
+        "quote": "Give \"Well Drawdown\" at least 35 minutes in total; this is a firm extra requirement."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 432,
+        "end": 516,
+        "quote": "Give \"Well Drawdown\" at least 35 minutes in total; this is a firm extra requirement."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S7\"],\"available_time\":[\"S4\"],\"topics\":[\"S5\",\"S6\",\"S8\"],\"priorities\":[\"S8\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S7"
+          ],
+          "available_time": [
+            "S4"
+          ],
+          "topics": [
+            "S5",
+            "S6",
+            "S8"
+          ],
+          "priorities": [
+            "S8"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

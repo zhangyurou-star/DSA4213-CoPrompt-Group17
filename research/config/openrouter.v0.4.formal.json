@@ -1,0 +1,36 @@
+{
+  "provider": "openrouter",
+  "base_url": "https://openrouter.ai/api/v1",
+  "model": "qwen/qwen3-30b-a3b-instruct-2507",
+  "temperature": 0,
+  "top_p": 1,
+  "seed": 20261013,
+  "max_output_tokens": {
+    "extraction": 512,
+    "decision": 1024,
+    "generation": 1024
+  },
+  "timeout_seconds": 90,
+  "max_api_calls": 1000,
+  "max_cost_usd": 0.1,
+  "provider_routing": {
+    "order": [
+      "nebius/fp8"
+    ],
+    "only": [
+      "nebius/fp8"
+    ],
+    "allow_fallbacks": false,
+    "require_parameters": true,
+    "max_price": {
+      "prompt": 0.11,
+      "completion": 0.35
+    }
+  },
+  "input_price_usd_per_million": 0.1,
+  "output_price_usd_per_million": 0.3,
+  "price_source": "https://openrouter.ai/api/v1/models/qwen/qwen3-30b-a3b-instruct-2507/endpoints",
+  "status": "frozen_for_validation_and_test",
+  "authorized_total_budget_usd": 0.1,
+  "setup_change_note": "v0.4.0 finite shared generation repair with complete public measurements; derived schedule summary; unchanged extractor and decision prompts, fixed candidates {0,.25,.5}. Exact input first-response decision reuse, including malformed replies, to reduce repeated calls across candidates and importance diagnostic. Dollar authorization remains cumulative 0.10 USD."
+}

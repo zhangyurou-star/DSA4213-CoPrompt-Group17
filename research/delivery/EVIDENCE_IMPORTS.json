@@ -1,0 +1,291 @@
+{
+  "date": "2026-10-28",
+  "sources": [
+    {
+      "path": "human_review/agreement.csv",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/agreement.csv",
+      "sha256": "bf8cc7f2a23b8c957b4bf171f545a562c9891d5d6c5ecc40b606ce9eb9e72312",
+      "treatment": "Copied unchanged",
+      "current_sha256": "bf8cc7f2a23b8c957b4bf171f545a562c9891d5d6c5ecc40b606ce9eb9e72312"
+    },
+    {
+      "path": "human_review/confusion_matrices.csv",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/confusion_matrices.csv",
+      "sha256": "ad60a2d5ebc33d9243a3e073da60996b3dda0e9bf2ba098ed70b82f918d09907",
+      "treatment": "Copied unchanged",
+      "current_sha256": "ad60a2d5ebc33d9243a3e073da60996b3dda0e9bf2ba098ed70b82f918d09907"
+    },
+    {
+      "path": "human_review/inputs/packet_compatibility.json",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/inputs/packet_compatibility.json",
+      "sha256": "7f319911915f9164212c31179012a1f27cfaca1ae337797606cef3c57972580f",
+      "treatment": "Copied unchanged",
+      "current_sha256": "7f319911915f9164212c31179012a1f27cfaca1ae337797606cef3c57972580f"
+    },
+    {
+      "path": "human_review/inputs/proposal.pdf",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/inputs/proposal.pdf",
+      "sha256": "15aea481997f6d6ab31be96585627f4bd32f082c8db657fcbcd73f79d52c795f",
+      "treatment": "Copied unchanged",
+      "current_sha256": "15aea481997f6d6ab31be96585627f4bd32f082c8db657fcbcd73f79d52c795f"
+    },
+    {
+      "path": "human_review/inputs/reviewer_1_returned.json",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/inputs/reviewer_1_returned.json",
+      "sha256": "c993ad1a047f1bf4f6876383adfb6b6710ae64653804fbc4089c79418a7c2535",
+      "treatment": "Copied unchanged",
+      "current_sha256": "c993ad1a047f1bf4f6876383adfb6b6710ae64653804fbc4089c79418a7c2535"
+    },
+    {
+      "path": "human_review/inputs/reviewer_1_source_packet.json",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/inputs/reviewer_1_source_packet.json",
+      "sha256": "4ddef17300b9fc9472303f9b5ba9142d91f1da36fb4e2959c6a761130c32c703",
+      "treatment": "Copied unchanged",
+      "current_sha256": "4ddef17300b9fc9472303f9b5ba9142d91f1da36fb4e2959c6a761130c32c703"
+    },
+    {
+      "path": "human_review/inputs/reviewer_2_returned.json",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/inputs/reviewer_2_returned.json",
+      "sha256": "9379cfa3c8495e6168663872bef582e24a7372b086311ae9a75113a3245abf68",
+      "treatment": "Copied unchanged",
+      "current_sha256": "9379cfa3c8495e6168663872bef582e24a7372b086311ae9a75113a3245abf68"
+    },
+    {
+      "path": "human_review/inputs/reviewer_2_source_packet.json",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/inputs/reviewer_2_source_packet.json",
+      "sha256": "9b5facd71a63f89c5309d7e1ad71ef0f89f5d4087f5c8bce118327390b92f365",
+      "treatment": "Copied unchanged",
+      "current_sha256": "9b5facd71a63f89c5309d7e1ad71ef0f89f5d4087f5c8bce118327390b92f365"
+    },
+    {
+      "path": "human_review/inputs/reviewer_policy_mapping.json",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/inputs/reviewer_policy_mapping.json",
+      "sha256": "7223c32cfc1fd09c50f8d20dcee12639ebd83b640a2a37a37594c12638f54944",
+      "treatment": "Copied unchanged",
+      "current_sha256": "7223c32cfc1fd09c50f8d20dcee12639ebd83b640a2a37a37594c12638f54944"
+    },
+    {
+      "path": "human_review/paired_ratings.csv",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/paired_ratings.csv",
+      "sha256": "d91c46dc55166916a6ac10a13147aedaeb3edaa17c061dadd1aec3e49056441f",
+      "treatment": "Copied unchanged",
+      "current_sha256": "d91c46dc55166916a6ac10a13147aedaeb3edaa17c061dadd1aec3e49056441f"
+    },
+    {
+      "path": "human_review/reproduce_statistics.py",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/reproduce_statistics.py",
+      "sha256": "f4b1ffb4f2b21d9b9b915ead45c8cbbd1387cdc4577bf75f843a9618732c4c27",
+      "treatment": "Copied unchanged",
+      "current_sha256": "f4b1ffb4f2b21d9b9b915ead45c8cbbd1387cdc4577bf75f843a9618732c4c27"
+    },
+    {
+      "path": "human_review/reviewer_system_summary.csv",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/reviewer_system_summary.csv",
+      "sha256": "49abd8613c9d38473ffa5ddb6a546f7a0e4a15fc7e41d244feab7b35518e5c85",
+      "treatment": "Copied unchanged",
+      "current_sha256": "49abd8613c9d38473ffa5ddb6a546f7a0e4a15fc7e41d244feab7b35518e5c85"
+    },
+    {
+      "path": "human_review/source_manifest.json",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/source_manifest.json",
+      "sha256": "e42b6a0c5515b05338f53f2d4617eec0b96dd6e0fef23defaeae3dbb6bf79d65",
+      "treatment": "Copied unchanged",
+      "current_sha256": "e42b6a0c5515b05338f53f2d4617eec0b96dd6e0fef23defaeae3dbb6bf79d65"
+    },
+    {
+      "path": "human_review/statistics.json",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/statistics.json",
+      "sha256": "c71cb5e02a5c8e250f813c1c3bdc89659fa5aa2831dbee8ce73ebca68432bee8",
+      "treatment": "Copied unchanged",
+      "current_sha256": "c71cb5e02a5c8e250f813c1c3bdc89659fa5aa2831dbee8ce73ebca68432bee8"
+    },
+    {
+      "path": "human_review/system_summary.csv",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/system_summary.csv",
+      "sha256": "26f7ef135ff3caeee6b1830d194b7732ef4d34cb083cb336e9dd7b63fd18c656",
+      "treatment": "Copied unchanged",
+      "current_sha256": "26f7ef135ff3caeee6b1830d194b7732ef4d34cb083cb336e9dd7b63fd18c656"
+    },
+    {
+      "path": "human_review/validation_receipt.json",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/validation_receipt.json",
+      "sha256": "8a2fe294d18e0257abfafb4d225c4ca5fc236c12f6528256ce82eb12f449dd50",
+      "treatment": "Copied unchanged",
+      "current_sha256": "8a2fe294d18e0257abfafb4d225c4ca5fc236c12f6528256ce82eb12f449dd50"
+    },
+    {
+      "path": "case_analysis/README.txt",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/README.txt",
+      "sha256": "63235b05b9b8d166fe6db38b0a24d5bffcd97313e8ec9f7ef09a3973aa00627c",
+      "treatment": "Submission-facing README wording revised; original source fingerprint retained; scientific evidence unchanged",
+      "current_sha256": "b9c939ab8ff2fa76f727b01f03e19f746c5c6ed69bf0aa904a702e18df25312d"
+    },
+    {
+      "path": "case_analysis/case_comparison.csv",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/case_comparison.csv",
+      "sha256": "5580ca558eb23d1fac2d8f024b293cc4637a0d61b433c2674daf9e9816d280d8",
+      "treatment": "Copied unchanged",
+      "current_sha256": "5580ca558eb23d1fac2d8f024b293cc4637a0d61b433c2674daf9e9816d280d8"
+    },
+    {
+      "path": "case_analysis/case_error_analysis_en.md",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/case_error_analysis_en.md",
+      "sha256": "1ccd3db244640b78ac4e005c6355b7ebc0d6a3b55d9a31640c205eb54bf2d67e",
+      "treatment": "Copied unchanged",
+      "current_sha256": "1ccd3db244640b78ac4e005c6355b7ebc0d6a3b55d9a31640c205eb54bf2d67e"
+    },
+    {
+      "path": "case_analysis/constraint_failures.csv",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/constraint_failures.csv",
+      "sha256": "83da1f653063b17cfb3dcce5cfd838b349171b0a298b6b5d154e67b6a9df3ee8",
+      "treatment": "Copied unchanged",
+      "current_sha256": "83da1f653063b17cfb3dcce5cfd838b349171b0a298b6b5d154e67b6a9df3ee8"
+    },
+    {
+      "path": "case_analysis/domain_summary.csv",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/domain_summary.csv",
+      "sha256": "5d1e1d20a0724ffef151c86c6b99150e66142403d61303ca3d519132854bf8cc",
+      "treatment": "Copied unchanged",
+      "current_sha256": "5d1e1d20a0724ffef151c86c6b99150e66142403d61303ca3d519132854bf8cc"
+    },
+    {
+      "path": "case_analysis/findings.json",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/findings.json",
+      "sha256": "1d8a65491d4c70eaa12ba3e5b424054929003266579171319637a45bd6134886",
+      "treatment": "Copied unchanged",
+      "current_sha256": "1d8a65491d4c70eaa12ba3e5b424054929003266579171319637a45bd6134886"
+    },
+    {
+      "path": "case_analysis/human_review_evidence.csv",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/human_review_evidence.csv",
+      "sha256": "de95a9453574c467186da69dd73d2170c4d98b29b1202aed0d186f5e20470bad",
+      "treatment": "Copied unchanged",
+      "current_sha256": "de95a9453574c467186da69dd73d2170c4d98b29b1202aed0d186f5e20470bad"
+    },
+    {
+      "path": "case_analysis/inputs/human_statistics.json",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/inputs/human_statistics.json",
+      "sha256": "c71cb5e02a5c8e250f813c1c3bdc89659fa5aa2831dbee8ce73ebca68432bee8",
+      "treatment": "Copied unchanged",
+      "current_sha256": "c71cb5e02a5c8e250f813c1c3bdc89659fa5aa2831dbee8ce73ebca68432bee8"
+    },
+    {
+      "path": "case_analysis/inputs/lambda_selection.json",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/inputs/lambda_selection.json",
+      "sha256": "56ffbd218f3d66d7589a1104a6a43cb12c6f8406cd5ed5eaf08aeab7c00d18b8",
+      "treatment": "Copied unchanged",
+      "current_sha256": "56ffbd218f3d66d7589a1104a6a43cb12c6f8406cd5ed5eaf08aeab7c00d18b8"
+    },
+    {
+      "path": "case_analysis/inputs/official_analysis.json",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/inputs/official_analysis.json",
+      "sha256": "cd7c3ff74172be1a12d624d10d6834bced4af8bb6cdf0b94564a2e01daeac06a",
+      "treatment": "Copied unchanged",
+      "current_sha256": "cd7c3ff74172be1a12d624d10d6834bced4af8bb6cdf0b94564a2e01daeac06a"
+    },
+    {
+      "path": "case_analysis/inputs/proposal.pdf",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/inputs/proposal.pdf",
+      "sha256": "15aea481997f6d6ab31be96585627f4bd32f082c8db657fcbcd73f79d52c795f",
+      "treatment": "Copied unchanged",
+      "current_sha256": "15aea481997f6d6ab31be96585627f4bd32f082c8db657fcbcd73f79d52c795f"
+    },
+    {
+      "path": "case_analysis/inputs/reviewer_1_returned.json",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/inputs/reviewer_1_returned.json",
+      "sha256": "c993ad1a047f1bf4f6876383adfb6b6710ae64653804fbc4089c79418a7c2535",
+      "treatment": "Copied unchanged",
+      "current_sha256": "c993ad1a047f1bf4f6876383adfb6b6710ae64653804fbc4089c79418a7c2535"
+    },
+    {
+      "path": "case_analysis/inputs/reviewer_2_returned.json",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/inputs/reviewer_2_returned.json",
+      "sha256": "9379cfa3c8495e6168663872bef582e24a7372b086311ae9a75113a3245abf68",
+      "treatment": "Copied unchanged",
+      "current_sha256": "9379cfa3c8495e6168663872bef582e24a7372b086311ae9a75113a3245abf68"
+    },
+    {
+      "path": "case_analysis/inputs/reviewer_policy_mapping.json",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/inputs/reviewer_policy_mapping.json",
+      "sha256": "7223c32cfc1fd09c50f8d20dcee12639ebd83b640a2a37a37594c12638f54944",
+      "treatment": "Copied unchanged",
+      "current_sha256": "7223c32cfc1fd09c50f8d20dcee12639ebd83b640a2a37a37594c12638f54944"
+    },
+    {
+      "path": "case_analysis/inputs/test_annotations.jsonl",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/inputs/test_annotations.jsonl",
+      "sha256": "98457b4ee5b61e7e303457ea3eece37539b4cc2deb42d0b4b160e5efc8f8d0e5",
+      "treatment": "Copied unchanged",
+      "current_sha256": "98457b4ee5b61e7e303457ea3eece37539b4cc2deb42d0b4b160e5efc8f8d0e5"
+    },
+    {
+      "path": "case_analysis/inputs/test_answers.jsonl",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/inputs/test_answers.jsonl",
+      "sha256": "32ad6222bd6b2c148a7d5d594e8363e2d9c720d9d47671bf138cebbff5928dea",
+      "treatment": "Copied unchanged",
+      "current_sha256": "32ad6222bd6b2c148a7d5d594e8363e2d9c720d9d47671bf138cebbff5928dea"
+    },
+    {
+      "path": "case_analysis/inputs/test_requests.jsonl",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/inputs/test_requests.jsonl",
+      "sha256": "545b91dbc822d922e2216b6b625d780f8a8dd06a2ccf2bb9648ccb385d7bb2a9",
+      "treatment": "Copied unchanged",
+      "current_sha256": "545b91dbc822d922e2216b6b625d780f8a8dd06a2ccf2bb9648ccb385d7bb2a9"
+    },
+    {
+      "path": "case_analysis/inputs/test_trajectories.jsonl",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/inputs/test_trajectories.jsonl",
+      "sha256": "6427594dca5c8e801f15ac0c2c1c24d6c6617e4aaea929aae15f13df7a64c513",
+      "treatment": "Copied unchanged",
+      "current_sha256": "6427594dca5c8e801f15ac0c2c1c24d6c6617e4aaea929aae15f13df7a64c513"
+    },
+    {
+      "path": "case_analysis/main_test_summary.csv",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/main_test_summary.csv",
+      "sha256": "2f2e3cc0f23487408bcb2fb0d9c5baa42d64bd24aa199de16273dfaaf955c271",
+      "treatment": "Copied unchanged",
+      "current_sha256": "2f2e3cc0f23487408bcb2fb0d9c5baa42d64bd24aa199de16273dfaaf955c271"
+    },
+    {
+      "path": "case_analysis/main_trajectory_index.csv",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/main_trajectory_index.csv",
+      "sha256": "f6d66ee03a57eb598d9ef077f8e99617e1fa366f05ec37e8db01de48ecb6acdd",
+      "treatment": "Copied unchanged",
+      "current_sha256": "f6d66ee03a57eb598d9ef077f8e99617e1fa366f05ec37e8db01de48ecb6acdd"
+    },
+    {
+      "path": "case_analysis/reproduce_analysis.py",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/reproduce_analysis.py",
+      "sha256": "4fcd5835d6756b3ffeb7521e9927dcfe047c2429ada018cfa09cef0884e3e452",
+      "treatment": "Copied unchanged",
+      "current_sha256": "4fcd5835d6756b3ffeb7521e9927dcfe047c2429ada018cfa09cef0884e3e452"
+    },
+    {
+      "path": "case_analysis/selected_case_evidence.json",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/selected_case_evidence.json",
+      "sha256": "479d9b93e8074374420301a082390c8afebc59ecc61998c89283004cde7a8c9a",
+      "treatment": "Copied unchanged",
+      "current_sha256": "479d9b93e8074374420301a082390c8afebc59ecc61998c89283004cde7a8c9a"
+    },
+    {
+      "path": "case_analysis/source_manifest.json",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/source_manifest.json",
+      "sha256": "0440f0a5a068db8c185c3d7f3367e54a3c9f93a47c690a512044c3ed6d1fbf0e",
+      "treatment": "Copied unchanged",
+      "current_sha256": "0440f0a5a068db8c185c3d7f3367e54a3c9f93a47c690a512044c3ed6d1fbf0e"
+    },
+    {
+      "path": "case_analysis/validation_receipt.json",
+      "source": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Case_Error_Analysis_2026-10-27/validation_receipt.json",
+      "sha256": "37b6a1e6f625b53a4853b138699a951798d811653ed595e3af54636fdca81798",
+      "treatment": "Copied unchanged",
+      "current_sha256": "37b6a1e6f625b53a4853b138699a951798d811653ed595e3af54636fdca81798"
+    }
+  ],
+  "not_imported": [
+    "human_review_statistics.md (earlier Chinese narrative; English guide supplied)",
+    "case_error_analysis.md (earlier Chinese narrative; existing English report supplied)"
+  ],
+  "case_analysis_readme_adapted": true,
+  "all_imported_code_inputs_numeric_results_and_returned_ratings_byte_identical": true
+}

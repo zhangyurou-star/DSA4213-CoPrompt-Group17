@@ -1,0 +1,80 @@
+{
+  "cache_key": "bfd6093942adfff9eb320420d09096d5d61a81b514a04f393d6332b9e3aefbd8",
+  "source_case_id": "NDCW02",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "Welcome, first-time user! To get one paper kite, insert your blue token into the upper opening of the machine. Wait a moment—kites appear quickly. If no kite comes out, do not insert another token. Instead, retrieve your blue token from the return slot. This ensures fair use for everyone. The machine only releases one paper kite per blue token. Always check the return slot if your kite doesn’t appear. Your blue token is safe there. Enjoy your kite!"
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"Welcome, first-time user! To get one paper kite, insert your blue token into the upper opening of the machine. Wait a moment—kites appear quickly. If no kite comes out, do not insert another token. Instead, retrieve your blue token from the return slot. This ensures fair use for everyone. The machine only releases one paper kite per blue token. Always check the return slot if your kite doesn’t appear. Your blue token is safe there. Enjoy your kite!\"}",
+      "parsed": {
+        "text": "Welcome, first-time user! To get one paper kite, insert your blue token into the upper opening of the machine. Wait a moment—kites appear quickly. If no kite comes out, do not insert another token. Instead, retrieve your blue token from the return slot. This ensures fair use for everyone. The machine only releases one paper kite per blue token. Always check the return slot if your kite doesn’t appear. Your blue token is safe there. Enjoy your kite!"
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Keep the complete piece to 50–80 words."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 79
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 79
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

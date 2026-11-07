@@ -1,0 +1,96 @@
+{
+  "cache_key": "cc9dd8ec403adac9613a054145c9e315558bf854a3a7cecff1ae4e6a1e828819",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [],
+    "available_time": [],
+    "topics": [
+      "S1",
+      "S2"
+    ],
+    "priorities": [
+      "S4"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 63,
+      "text": "I am preparing to discuss which records an archive should keep."
+    },
+    {
+      "id": "S2",
+      "start": 64,
+      "end": 113,
+      "text": "Build a revision timetable for records appraisal."
+    },
+    {
+      "id": "S3",
+      "start": 114,
+      "end": 134,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 135,
+      "end": 251,
+      "text": "I would prefer to encounter \"Disposal Documentation\" early; treat that as a suggestion only, not a time requirement."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": null,
+    "topics": "I am preparing to discuss which records an archive should keep.\nBuild a revision timetable for records appraisal.",
+    "priorities": "I would prefer to encounter \"Disposal Documentation\" early; treat that as a suggestion only, not a time requirement."
+  },
+  "evidence": {
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S1",
+        "start": 0,
+        "end": 63,
+        "quote": "I am preparing to discuss which records an archive should keep."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 64,
+        "end": 113,
+        "quote": "Build a revision timetable for records appraisal."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 135,
+        "end": 251,
+        "quote": "I would prefer to encounter \"Disposal Documentation\" early; treat that as a suggestion only, not a time requirement."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[],\"available_time\":[],\"topics\":[\"S1\",\"S2\"],\"priorities\":[\"S4\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [],
+          "available_time": [],
+          "topics": [
+            "S1",
+            "S2"
+          ],
+          "priorities": [
+            "S4"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

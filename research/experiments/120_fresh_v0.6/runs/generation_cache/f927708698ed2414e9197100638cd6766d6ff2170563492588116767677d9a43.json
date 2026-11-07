@@ -1,0 +1,76 @@
+{
+  "cache_key": "f927708698ed2414e9197100638cd6766d6ff2170563492588116767677d9a43",
+  "source_case_id": "NDCW18",
+  "source_policy": "direct",
+  "output": {
+    "text": "Panel C may retain a two millimeter gap because it is decorative only. In the fictional fabrication specification, this panel bears no load and serves solely to enhance visual appeal. All other panels must maintain the drawn fit, as the exception is not a general tolerance change. The two millimeter gap is explicitly permitted only for Panel C, ensuring aesthetic continuity without compromising structural integrity. This deviation is intentional and limited to a single component, preserving the model's functional accuracy while allowing for design flexibility. The specification remains strict elsewhere, confirming that the exception applies exclusively to Panel C."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Panel C may retain a two millimeter gap because it is decorative only. In the fictional fabrication specification, this panel bears no load and serves solely to enhance visual appeal. All other panels must maintain the drawn fit, as the exception is not a general tolerance change. The two millimeter gap is explicitly permitted only for Panel C, ensuring aesthetic continuity without compromising structural integrity. This deviation is intentional and limited to a single component, preserving the model's functional accuracy while allowing for design flexibility. The specification remains strict elsewhere, confirming that the exception applies exclusively to Panel C.\"\n}",
+      "parsed": {
+        "text": "Panel C may retain a two millimeter gap because it is decorative only. In the fictional fabrication specification, this panel bears no load and serves solely to enhance visual appeal. All other panels must maintain the drawn fit, as the exception is not a general tolerance change. The two millimeter gap is explicitly permitted only for Panel C, ensuring aesthetic continuity without compromising structural integrity. This deviation is intentional and limited to a single component, preserving the model's functional accuracy while allowing for design flexibility. The specification remains strict elsewhere, confirming that the exception applies exclusively to Panel C."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 99
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 99
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

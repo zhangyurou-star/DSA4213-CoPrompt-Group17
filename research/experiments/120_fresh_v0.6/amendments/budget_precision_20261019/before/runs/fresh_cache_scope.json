@@ -1,0 +1,9 @@
+{
+  "experiment": "fresh120-v0.6.0",
+  "freeze_sha256": "ac80ddaf91e7345c4e96ca0c92dfa118a67abac1baa7bc41be11d5b3edd73bb7",
+  "directories": [
+    "formal_raw_response_cache",
+    "extraction_cache",
+    "generation_cache"
+  ]
+}

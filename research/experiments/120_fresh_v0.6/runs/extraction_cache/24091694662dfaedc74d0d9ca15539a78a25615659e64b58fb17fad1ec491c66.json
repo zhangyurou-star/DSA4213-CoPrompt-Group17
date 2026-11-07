@@ -1,0 +1,126 @@
+{
+  "cache_key": "24091694662dfaedc74d0d9ca15539a78a25615659e64b58fb17fad1ec491c66",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [],
+    "length": [],
+    "required_content": [
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 51,
+      "text": "Write a closing argument in a fictional mock trial."
+    },
+    {
+      "id": "S2",
+      "start": 52,
+      "end": 116,
+      "text": "Aim the wording at the jury in a fictional classroom mock trial."
+    },
+    {
+      "id": "S3",
+      "start": 117,
+      "end": 206,
+      "text": "Include the following invented details: The invented case concerns a missing silver bell."
+    },
+    {
+      "id": "S4",
+      "start": 207,
+      "end": 313,
+      "text": "The evidence is an open window and a feather on the sill, while no witness saw the accused enter the room."
+    },
+    {
+      "id": "S5",
+      "start": 314,
+      "end": 367,
+      "text": "Argue that suspicion alone does not settle the story."
+    },
+    {
+      "id": "S6",
+      "start": 368,
+      "end": 452,
+      "text": "Preserve these exact phrases: \"the silver bell\", \"an open window\", \"no witness saw\"."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": null,
+    "length": null,
+    "required_content": "Include the following invented details: The invented case concerns a missing silver bell.\nThe evidence is an open window and a feather on the sill, while no witness saw the accused enter the room.\nArgue that suspicion alone does not settle the story.\nPreserve these exact phrases: \"the silver bell\", \"an open window\", \"no witness saw\"."
+  },
+  "evidence": {
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 117,
+        "end": 206,
+        "quote": "Include the following invented details: The invented case concerns a missing silver bell."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 207,
+        "end": 313,
+        "quote": "The evidence is an open window and a feather on the sill, while no witness saw the accused enter the room."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 314,
+        "end": 367,
+        "quote": "Argue that suspicion alone does not settle the story."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 368,
+        "end": 452,
+        "quote": "Preserve these exact phrases: \"the silver bell\", \"an open window\", \"no witness saw\"."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "audience",
+      "proposed_evidence": [
+        "S2"
+      ],
+      "proposed_value": "Aim the wording at the jury in a fictional classroom mock trial.",
+      "reason": "quote_has_no_explicit_reader_relation_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[],\"length\":[],\"required_content\":[\"S3\",\"S4\",\"S5\",\"S6\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [],
+          "length": [],
+          "required_content": [
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

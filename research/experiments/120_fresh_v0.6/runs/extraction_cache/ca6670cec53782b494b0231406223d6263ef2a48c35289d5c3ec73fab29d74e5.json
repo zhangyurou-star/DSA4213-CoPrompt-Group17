@@ -1,0 +1,75 @@
+{
+  "cache_key": "ca6670cec53782b494b0231406223d6263ef2a48c35289d5c3ec73fab29d74e5",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [],
+    "length": [],
+    "required_content": [
+      "S1"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 31,
+      "text": "Compose a fable about a shadow."
+    },
+    {
+      "id": "S2",
+      "start": 32,
+      "end": 69,
+      "text": "Write for readers aged ten and above."
+    }
+  ],
+  "field_values": {
+    "audience": "Write for readers aged ten and above.",
+    "tone": null,
+    "length": null,
+    "required_content": "Compose a fable about a shadow."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 32,
+        "end": 69,
+        "quote": "Write for readers aged ten and above."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S1",
+        "start": 0,
+        "end": 31,
+        "quote": "Compose a fable about a shadow."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[],\"length\":[],\"required_content\":[\"S1\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [],
+          "length": [],
+          "required_content": [
+            "S1"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

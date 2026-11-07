@@ -1,0 +1,247 @@
+{
+  "cache_key": "e19ec435a6c22123b547ff3c8596e1bc535b625fa4c5e43dc492df0c53435d85",
+  "source_case_id": "NDSP19",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Eye Formation",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Capturing Races",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Seki",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Eye Formation",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Capturing Races",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Seki",
+        "minutes": 20
+      }
+    ],
+    "summary": "Calculated from the schedule: 135 minutes in total. Daily totals: 2027-02-01: 30 minutes; 2027-02-02: 25 minutes; 2027-02-03: 20 minutes; 2027-02-04: 20 minutes; 2027-02-05: 20 minutes; 2027-02-06: 20 minutes. Topic totals: Capturing Races: 45 minutes; Eye Formation: 50 minutes; Seki: 40 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Eye Formation\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Capturing Races\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Seki\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Eye Formation\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Capturing Races\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Seki\",\n      \"minutes\": 20\n    }\n  ],\n  \"summary\": \"The study plan covers all required topics—Eye Formation, Capturing Races, and Seki—within the specified date window (2027-02-01 to 2027-02-06). Each topic receives at least 20 cumulative minutes, with Eye Formation receiving 50 total minutes (exceeding the 30-minute minimum). Daily sessions stay under the 65-minute cap, with no day exceeding 50 minutes. All sessions are distributed across the six days as required.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Eye Formation",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Capturing Races",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Seki",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Eye Formation",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Capturing Races",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Seki",
+            "minutes": 20
+          }
+        ],
+        "summary": "The study plan covers all required topics—Eye Formation, Capturing Races, and Seki—within the specified date window (2027-02-01 to 2027-02-06). Each topic receives at least 20 cumulative minutes, with Eye Formation receiving 50 total minutes (exceeding the 30-minute minimum). Daily sessions stay under the 65-minute cap, with no day exceeding 50 minutes. All sessions are distributed across the six days as required."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 65
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "I can spare at most 65 minutes per day, counting every topic together."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use only dates from 2027-02-01 through 2027-02-06, including the final date."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 135,
+      "daily_minutes": {
+        "2027-02-01": 30,
+        "2027-02-02": 25,
+        "2027-02-03": 20,
+        "2027-02-04": 20,
+        "2027-02-05": 20,
+        "2027-02-06": 20
+      },
+      "topic_minutes": [
+        {
+          "topic": "Capturing Races",
+          "normalized_topic": "capturing races",
+          "minutes": 45
+        },
+        {
+          "topic": "Eye Formation",
+          "normalized_topic": "eye formation",
+          "minutes": 50
+        },
+        {
+          "topic": "Seki",
+          "normalized_topic": "seki",
+          "minutes": 40
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 65
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use only dates from 2027-02-01 through 2027-02-06, including the final date."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 135,
+      "daily_minutes": {
+        "2027-02-01": 30,
+        "2027-02-02": 25,
+        "2027-02-03": 20,
+        "2027-02-04": 20,
+        "2027-02-05": 20,
+        "2027-02-06": 20
+      },
+      "topic_minutes": [
+        {
+          "topic": "Capturing Races",
+          "normalized_topic": "capturing races",
+          "minutes": 45
+        },
+        {
+          "topic": "Eye Formation",
+          "normalized_topic": "eye formation",
+          "minutes": 50
+        },
+        {
+          "topic": "Seki",
+          "normalized_topic": "seki",
+          "minutes": 40
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 65
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use only dates from 2027-02-01 through 2027-02-06, including the final date."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study plan covers all required topics—Eye Formation, Capturing Races, and Seki—within the specified date window (2027-02-01 to 2027-02-06). Each topic receives at least 20 cumulative minutes, with Eye Formation receiving 50 total minutes (exceeding the 30-minute minimum). Daily sessions stay under the 65-minute cap, with no day exceeding 50 minutes. All sessions are distributed across the six days as required.",
+    "derived_summary": "Calculated from the schedule: 135 minutes in total. Daily totals: 2027-02-01: 30 minutes; 2027-02-02: 25 minutes; 2027-02-03: 20 minutes; 2027-02-04: 20 minutes; 2027-02-05: 20 minutes; 2027-02-06: 20 minutes. Topic totals: Capturing Races: 45 minutes; Eye Formation: 50 minutes; Seki: 40 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

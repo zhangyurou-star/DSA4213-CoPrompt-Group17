@@ -1,0 +1,95 @@
+{
+  "cache_key": "012c740c142e748566753f823e0fba273f501f9c1753e1609fa8e8edabc6143e",
+  "source_case_id": "NDCW11",
+  "source_policy": "direct",
+  "output": {
+    "text": "By the Grace of the Reed Sovereign, this day doth mark the solemn Festival of Whispering Reeds, held in the sacred month of Virel. All citizens of the Kingdom of Reeds are summoned to the Great Marsh Circle at dawn, when mist still clings to the stalks. Wear silver and green, and carry reed flutes to join the sacred chorus. Let the air tremble with song, and the earth remember its ancient rhythm. This festival honours the First Reed, who gave voice to silence and life to the marsh. May peace and harmony flourish in our hearts and fields. So be it, under the watchful gaze of the Twin Moons."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"By the Grace of the Reed Sovereign, this day doth mark the solemn proclamation of the Festival of Whispering Reeds, held in the sacred month of Virel. Let all citizens of the Kingdom of Reeds gather at the Great Marsh Circle at the hour of dawn, when the mist still clings to the stalks. Wear garments of silver and green, and carry reed flutes to join the sacred chorus. Let the air tremble with song, and the earth remember its ancient rhythm. This festival honours the First Reed, who gave voice to silence and life to the marsh. May peace and harmony flourish in our hearts and in our fields. So be it, under the watchful gaze of the Twin Moons.\"\n}",
+      "parsed": {
+        "text": "By the Grace of the Reed Sovereign, this day doth mark the solemn proclamation of the Festival of Whispering Reeds, held in the sacred month of Virel. Let all citizens of the Kingdom of Reeds gather at the Great Marsh Circle at the hour of dawn, when the mist still clings to the stalks. Wear garments of silver and green, and carry reed flutes to join the sacred chorus. Let the air tremble with song, and the earth remember its ancient rhythm. This festival honours the First Reed, who gave voice to silence and life to the marsh. May peace and harmony flourish in our hearts and in our fields. So be it, under the watchful gaze of the Twin Moons."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "The full text must be between 55 and 85 words."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 121}"
+  ],
+  "constraint_checks_final": [
+    "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 110}"
+  ],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"By the Grace of the Reed Sovereign, this day doth mark the solemn Festival of Whispering Reeds, held in the sacred month of Virel. All citizens of the Kingdom of Reeds are summoned to the Great Marsh Circle at dawn, when mist still clings to the stalks. Wear silver and green, and carry reed flutes to join the sacred chorus. Let the air tremble with song, and the earth remember its ancient rhythm. This festival honours the First Reed, who gave voice to silence and life to the marsh. May peace and harmony flourish in our hearts and fields. So be it, under the watchful gaze of the Twin Moons.\"\n}",
+    "parsed": {
+      "text": "By the Grace of the Reed Sovereign, this day doth mark the solemn Festival of Whispering Reeds, held in the sacred month of Virel. All citizens of the Kingdom of Reeds are summoned to the Great Marsh Circle at dawn, when mist still clings to the stalks. Wear silver and green, and carry reed flutes to join the sacred chorus. Let the air tremble with song, and the earth remember its ancient rhythm. This festival honours the First Reed, who gave voice to silence and life to the marsh. May peace and harmony flourish in our hearts and fields. So be it, under the watchful gaze of the Twin Moons."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 121
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 121}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 110
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 110}"
+    ],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

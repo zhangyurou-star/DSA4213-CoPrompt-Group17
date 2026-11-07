@@ -1,0 +1,258 @@
+{
+  "cache_key": "a24d37304eebfc43dd347476f8fbf2c6127a8886d2f865e53238ce2fa19f3ee5",
+  "source_case_id": "NDSP13",
+  "source_policy": "exhaustive",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Secretary Hand",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-01",
+        "topic": "Abbreviation Marks",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Secretary Hand",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Abbreviation Marks",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Secretary Hand",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Abbreviation Marks",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Abbreviation Marks",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Abbreviation Marks",
+        "minutes": 10
+      }
+    ],
+    "summary": "Calculated from the schedule: 85 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 20 minutes; 2027-02-03: 20 minutes; 2027-02-04: 10 minutes; 2027-02-05: 10 minutes. Topic totals: Abbreviation Marks: 50 minutes; Secretary Hand: 35 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Secretary Hand\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Abbreviation Marks\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Secretary Hand\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Abbreviation Marks\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Secretary Hand\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Abbreviation Marks\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Abbreviation Marks\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Abbreviation Marks\",\n      \"minutes\": 10\n    }\n  ],\n  \"summary\": \"Prepared for palaeography study from 2027-02-01 to 2027-02-05, allocating at least 20 minutes to 'Secretary Hand' (total 35 minutes) and at least 10 minutes to 'Abbreviation Marks' (total 50 minutes), with no more than 45 minutes per day across all topics.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Secretary Hand",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-01",
+            "topic": "Abbreviation Marks",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Secretary Hand",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Abbreviation Marks",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Secretary Hand",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Abbreviation Marks",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Abbreviation Marks",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Abbreviation Marks",
+            "minutes": 10
+          }
+        ],
+        "summary": "Prepared for palaeography study from 2027-02-01 to 2027-02-05, allocating at least 20 minutes to 'Secretary Hand' (total 35 minutes) and at least 10 minutes to 'Abbreviation Marks' (total 50 minutes), with no more than 45 minutes per day across all topics."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 45
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "I can spare at most 45 minutes per day, counting every topic together."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "Use only dates from 2027-02-01 through 2027-02-05, including the final date."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 85,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 20,
+        "2027-02-03": 20,
+        "2027-02-04": 10,
+        "2027-02-05": 10
+      },
+      "topic_minutes": [
+        {
+          "topic": "Abbreviation Marks",
+          "normalized_topic": "abbreviation marks",
+          "minutes": 50
+        },
+        {
+          "topic": "Secretary Hand",
+          "normalized_topic": "secretary hand",
+          "minutes": 35
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 45
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "Use only dates from 2027-02-01 through 2027-02-05, including the final date."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 85,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 20,
+        "2027-02-03": 20,
+        "2027-02-04": 10,
+        "2027-02-05": 10
+      },
+      "topic_minutes": [
+        {
+          "topic": "Abbreviation Marks",
+          "normalized_topic": "abbreviation marks",
+          "minutes": 50
+        },
+        {
+          "topic": "Secretary Hand",
+          "normalized_topic": "secretary hand",
+          "minutes": 35
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 45
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "Use only dates from 2027-02-01 through 2027-02-05, including the final date."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "Prepared for palaeography study from 2027-02-01 to 2027-02-05, allocating at least 20 minutes to 'Secretary Hand' (total 35 minutes) and at least 10 minutes to 'Abbreviation Marks' (total 50 minutes), with no more than 45 minutes per day across all topics.",
+    "derived_summary": "Calculated from the schedule: 85 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 20 minutes; 2027-02-03: 20 minutes; 2027-02-04: 10 minutes; 2027-02-05: 10 minutes. Topic totals: Abbreviation Marks: 50 minutes; Secretary Hand: 35 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

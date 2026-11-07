@@ -1,0 +1,295 @@
+{
+  "cache_key": "12e575c297a73cb74643b737c6065c5b13e6db3fa6d7f45a6b750c36af34f400",
+  "source_case_id": "NTSP17",
+  "source_policy": "exhaustive",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Introduction to Laminated Pastry: Basic Principles and Structure",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-01",
+        "topic": "Understanding Butter and Dough Layers: The Role of Fat Distribution",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Rolling and Folding Techniques: Single and Double Turns",
+        "minutes": 35
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Temperature Control: Preventing Butter Melting and Dough Overworking",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Shaping Methods: Puff Pastry vs. Danish Pastry",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Baking Considerations: Oven Temperature and Steam",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Common Mistakes and Troubleshooting: Soggy Layers and Poor Rise",
+        "minutes": 55
+      }
+    ],
+    "summary": "Calculated from the schedule: 220 minutes in total. Daily totals: 2027-02-01: 55 minutes; 2027-02-02: 55 minutes; 2027-02-03: 55 minutes; 2027-02-04: 55 minutes. Topic totals: Baking Considerations: Oven Temperature and Steam: 25 minutes; Common Mistakes and Troubleshooting: Soggy Layers and Poor Rise: 55 minutes; Introduction to Laminated Pastry: Basic Principles and Structure: 30 minutes; Rolling and Folding Techniques: Single and Double Turns: 35 minutes; Shaping Methods: Puff Pastry vs. Danish Pastry: 30 minutes; Temperature Control: Preventing Butter Melting and Dough Overworking: 20 minutes; Understanding Butter and Dough Layers: The Role of Fat Distribution: 25 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Introduction to Laminated Pastry: Basic Principles and Structure\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Understanding Butter and Dough Layers: The Role of Fat Distribution\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Rolling and Folding Techniques: Single and Double Turns\",\n      \"minutes\": 35\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Temperature Control: Preventing Butter Melting and Dough Overworking\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Shaping Methods: Puff Pastry vs. Danish Pastry\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Baking Considerations: Oven Temperature and Steam\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Common Mistakes and Troubleshooting: Soggy Layers and Poor Rise\",\n      \"minutes\": 55\n    }\n  ],\n  \"summary\": \"The study plan covers key aspects of laminated pastry preparation across four days, from February 1 to February 4, 2027. Each session respects the 55-minute daily limit, with topics distributed to ensure variety and logical progression. Total study time is 245 minutes, spread across seven sessions, with no single topic exceeding the daily allowance.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Introduction to Laminated Pastry: Basic Principles and Structure",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-01",
+            "topic": "Understanding Butter and Dough Layers: The Role of Fat Distribution",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Rolling and Folding Techniques: Single and Double Turns",
+            "minutes": 35
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Temperature Control: Preventing Butter Melting and Dough Overworking",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Shaping Methods: Puff Pastry vs. Danish Pastry",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Baking Considerations: Oven Temperature and Steam",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Common Mistakes and Troubleshooting: Soggy Layers and Poor Rise",
+            "minutes": 55
+          }
+        ],
+        "summary": "The study plan covers key aspects of laminated pastry preparation across four days, from February 1 to February 4, 2027. Each session respects the 55-minute daily limit, with topics distributed to ensure variety and logical progression. Total study time is 245 minutes, spread across seven sessions, with no single topic exceeding the daily allowance."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "Keep the timetable within the window ending 2027-02-04, with the end date included."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My daily study allowance is 55 minutes maximum, not 55 minutes per topic."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 220,
+      "daily_minutes": {
+        "2027-02-01": 55,
+        "2027-02-02": 55,
+        "2027-02-03": 55,
+        "2027-02-04": 55
+      },
+      "topic_minutes": [
+        {
+          "topic": "Baking Considerations: Oven Temperature and Steam",
+          "normalized_topic": "baking considerations: oven temperature and steam",
+          "minutes": 25
+        },
+        {
+          "topic": "Common Mistakes and Troubleshooting: Soggy Layers and Poor Rise",
+          "normalized_topic": "common mistakes and troubleshooting: soggy layers and poor rise",
+          "minutes": 55
+        },
+        {
+          "topic": "Introduction to Laminated Pastry: Basic Principles and Structure",
+          "normalized_topic": "introduction to laminated pastry: basic principles and structure",
+          "minutes": 30
+        },
+        {
+          "topic": "Rolling and Folding Techniques: Single and Double Turns",
+          "normalized_topic": "rolling and folding techniques: single and double turns",
+          "minutes": 35
+        },
+        {
+          "topic": "Shaping Methods: Puff Pastry vs. Danish Pastry",
+          "normalized_topic": "shaping methods: puff pastry vs. danish pastry",
+          "minutes": 30
+        },
+        {
+          "topic": "Temperature Control: Preventing Butter Melting and Dough Overworking",
+          "normalized_topic": "temperature control: preventing butter melting and dough overworking",
+          "minutes": 20
+        },
+        {
+          "topic": "Understanding Butter and Dough Layers: The Role of Fat Distribution",
+          "normalized_topic": "understanding butter and dough layers: the role of fat distribution",
+          "minutes": 25
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "Keep the timetable within the window ending 2027-02-04, with the end date included."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My daily study allowance is 55 minutes maximum, not 55 minutes per topic."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 220,
+      "daily_minutes": {
+        "2027-02-01": 55,
+        "2027-02-02": 55,
+        "2027-02-03": 55,
+        "2027-02-04": 55
+      },
+      "topic_minutes": [
+        {
+          "topic": "Baking Considerations: Oven Temperature and Steam",
+          "normalized_topic": "baking considerations: oven temperature and steam",
+          "minutes": 25
+        },
+        {
+          "topic": "Common Mistakes and Troubleshooting: Soggy Layers and Poor Rise",
+          "normalized_topic": "common mistakes and troubleshooting: soggy layers and poor rise",
+          "minutes": 55
+        },
+        {
+          "topic": "Introduction to Laminated Pastry: Basic Principles and Structure",
+          "normalized_topic": "introduction to laminated pastry: basic principles and structure",
+          "minutes": 30
+        },
+        {
+          "topic": "Rolling and Folding Techniques: Single and Double Turns",
+          "normalized_topic": "rolling and folding techniques: single and double turns",
+          "minutes": 35
+        },
+        {
+          "topic": "Shaping Methods: Puff Pastry vs. Danish Pastry",
+          "normalized_topic": "shaping methods: puff pastry vs. danish pastry",
+          "minutes": 30
+        },
+        {
+          "topic": "Temperature Control: Preventing Butter Melting and Dough Overworking",
+          "normalized_topic": "temperature control: preventing butter melting and dough overworking",
+          "minutes": 20
+        },
+        {
+          "topic": "Understanding Butter and Dough Layers: The Role of Fat Distribution",
+          "normalized_topic": "understanding butter and dough layers: the role of fat distribution",
+          "minutes": 25
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "Keep the timetable within the window ending 2027-02-04, with the end date included."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My daily study allowance is 55 minutes maximum, not 55 minutes per topic."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study plan covers key aspects of laminated pastry preparation across four days, from February 1 to February 4, 2027. Each session respects the 55-minute daily limit, with topics distributed to ensure variety and logical progression. Total study time is 245 minutes, spread across seven sessions, with no single topic exceeding the daily allowance.",
+    "derived_summary": "Calculated from the schedule: 220 minutes in total. Daily totals: 2027-02-01: 55 minutes; 2027-02-02: 55 minutes; 2027-02-03: 55 minutes; 2027-02-04: 55 minutes. Topic totals: Baking Considerations: Oven Temperature and Steam: 25 minutes; Common Mistakes and Troubleshooting: Soggy Layers and Poor Rise: 55 minutes; Introduction to Laminated Pastry: Basic Principles and Structure: 30 minutes; Rolling and Folding Techniques: Single and Double Turns: 35 minutes; Shaping Methods: Puff Pastry vs. Danish Pastry: 30 minutes; Temperature Control: Preventing Butter Melting and Dough Overworking: 20 minutes; Understanding Butter and Dough Layers: The Role of Fat Distribution: 25 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

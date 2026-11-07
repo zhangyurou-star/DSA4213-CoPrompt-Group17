@@ -1,0 +1,216 @@
+{
+  "cache_key": "b871d89431de87f3fd03d1929c170d1c010dc0a380e282bc56a74473098bdc9d",
+  "source_case_id": "NTSP21",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Movement Symbols",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-01",
+        "topic": "Staff Layout",
+        "minutes": 5
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Direction Signs",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Movement Symbols",
+        "minutes": 5
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Staff Layout",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Direction Signs",
+        "minutes": 5
+      }
+    ],
+    "summary": "Calculated from the schedule: 70 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 25 minutes; 2027-02-03: 20 minutes. Topic totals: Direction Signs: 25 minutes; Movement Symbols: 25 minutes; Staff Layout: 20 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Movement Symbols\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Staff Layout\",\n      \"minutes\": 5\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Direction Signs\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Movement Symbols\",\n      \"minutes\": 5\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Staff Layout\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Direction Signs\",\n      \"minutes\": 5\n    }\n  ],\n  \"summary\": \"The study plan covers all required topics—Movement Symbols, Staff Layout, and Direction Signs—within the date window from 2027-02-01 to 2027-02-03. Each topic receives at least 20 minutes of study time: Movement Symbols (25 minutes), Staff Layout (20 minutes), and Direction Signs (25 minutes). All sessions are scheduled within the 25-minute daily limit, with no single day exceeding that cap.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Movement Symbols",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-01",
+            "topic": "Staff Layout",
+            "minutes": 5
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Direction Signs",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Movement Symbols",
+            "minutes": 5
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Staff Layout",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Direction Signs",
+            "minutes": 5
+          }
+        ],
+        "summary": "The study plan covers all required topics—Movement Symbols, Staff Layout, and Direction Signs—within the date window from 2027-02-01 to 2027-02-03. Each topic receives at least 20 minutes of study time: Movement Symbols (25 minutes), Staff Layout (20 minutes), and Direction Signs (25 minutes). All sessions are scheduled within the 25-minute daily limit, with no single day exceeding that cap."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Finish all scheduled study no later than 2027-02-03, inclusive."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 70,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 25,
+        "2027-02-03": 20
+      },
+      "topic_minutes": [
+        {
+          "topic": "Direction Signs",
+          "normalized_topic": "direction signs",
+          "minutes": 25
+        },
+        {
+          "topic": "Movement Symbols",
+          "normalized_topic": "movement symbols",
+          "minutes": 25
+        },
+        {
+          "topic": "Staff Layout",
+          "normalized_topic": "staff layout",
+          "minutes": 20
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Finish all scheduled study no later than 2027-02-03, inclusive."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 70,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 25,
+        "2027-02-03": 20
+      },
+      "topic_minutes": [
+        {
+          "topic": "Direction Signs",
+          "normalized_topic": "direction signs",
+          "minutes": 25
+        },
+        {
+          "topic": "Movement Symbols",
+          "normalized_topic": "movement symbols",
+          "minutes": 25
+        },
+        {
+          "topic": "Staff Layout",
+          "normalized_topic": "staff layout",
+          "minutes": 20
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Finish all scheduled study no later than 2027-02-03, inclusive."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study plan covers all required topics—Movement Symbols, Staff Layout, and Direction Signs—within the date window from 2027-02-01 to 2027-02-03. Each topic receives at least 20 minutes of study time: Movement Symbols (25 minutes), Staff Layout (20 minutes), and Direction Signs (25 minutes). All sessions are scheduled within the 25-minute daily limit, with no single day exceeding that cap.",
+    "derived_summary": "Calculated from the schedule: 70 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 25 minutes; 2027-02-03: 20 minutes. Topic totals: Direction Signs: 25 minutes; Movement Symbols: 25 minutes; Staff Layout: 20 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

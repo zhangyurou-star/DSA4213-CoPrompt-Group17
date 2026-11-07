@@ -1,0 +1,64 @@
+{
+  "key": "858cb6935a635dcf93a18cb78a8558198bb1d6867b6014bb935e55ade6169540",
+  "raw": "{\n  \"text\": \"✨ UNLEASH THE MAGIC, ONE DROP AT A TIME! ✨\\n\\nDear Dreamers, Dabblers, and Daily Wonder-Seekers of *The Quirky Quarterly*—\\n\\nHave you ever stood beneath a storm cloud and thought, *‘I wish this rain would dance instead of drizzle’*? Well, your wish has just been granted—by the most enchanted, mischievous, and utterly delightful invention since the first floating teacup: THE AETHERWAND UMBRELLA!\\n\\nImagine: You open it, and instead of a simple canopy, a shimmering aurora of bioluminescent petals unfurls—each one humming a different note from a forgotten lullaby. Raindrops don’t just fall… they *butterfly*. They spiral into tiny rainbows, tickle your nose with giggles, and vanish into the air like dandelion seeds on a summer breeze.\\n\\nBut wait—there’s more! When the skies grow bold, the Aetherwand doesn’t just shield you… it *sings*. A gentle, chime-like melody swells from its handle, harmonizing with the storm’s rhythm. And if you’re feeling particularly whimsical? Tap the silver phoenix finial three times, and—voilà!—you’re lifted gently into the air, floating above puddles like a dandelion seed on a sigh.\\n\\nCrafted from moonlit willow and stitched with threads spun from starlight, the Aetherwand is not just an umbrella—it’s a companion. It remembers your favorite songs, changes color with your mood, and occasionally offers cryptic advice in riddles. (‘Why did the cloud blush? Because it saw the sky!’)\\n\\nPerfect for enchanted commutes, surprise picnics in the clouds, or simply turning a rainy Tuesday into a fairy tale. And yes—your cat will love it too. (They’re already plotting to steal it.)\\n\\nDon’t just survive the weather. *Waltz through it.*\\n\\n👉 Order your Aetherwand today at www.aetherwand.com (no, really—just tap the sky and it appears). Limited edition: Only 1,000 enchanted units exist. Once they’re gone, the rain will never be the same.\\n\\nWith sparkling mischief,\\n\\nThe Aetherwand Team\\nP.S. If your umbrella starts whispering poetry, don’t panic. It’s just the magic settling in. 🌧️💫\"\n}",
+  "source_case_id": "NTCW12",
+  "source_variant": "direct",
+  "response_sha256": "abbbe3c40bfa5715bc0ee1636ac5129a6c18bb7241ac92fb667b78a597187d0a",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "generation",
+    "repair": false,
+    "repair_kind": null,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Complete the user's task using only the original request, public context and the visible clarification exchanges.\nDo not ask more questions. Honor all available requirements, including exact phrases and the full-text word count.\nvisible_constraints is a deterministic, partial checklist derived only from that visible text, not new user requirements.\nAlways honor the original visible text as well; absence from the checklist does not remove a requirement.\nDo not invent event details, promises, historical facts or beneficiary groups. Omit unavailable specifics or use clearly marked placeholders.\nTreat concrete dates, clock times, addresses, names, contact details, links, services and free-access claims as facts requiring visible support.\nPlausibility is not evidence. Do not add these details to make a notice sound complete or to reach its minimum word count.\nDo not claim a link is provided when none is available. Use neutral connective wording without adding factual commitments.\nReturn exactly one JSON object matching the supplied output schema, without Markdown fences or surrounding commentary.\nFor writing, put ALL headings, greetings, body and signature inside text.\nCopy required literal phrases unchanged. Draft near the middle of the full-text word range, then check the complete text length.\nWhen revising a length failure, rewrite the whole text toward the range midpoint while retaining every required literal; do not merely append or trim a final sentence.\nWord counting includes every heading and signature: letter/digit sequences, with internal apostrophes or hyphens, count as words.\nFor study plans, each schedule item has one complete topic name, a real ISO date and positive integer minutes;\nfirst compute each topic's required total, then allocate those minutes across the permitted days without exceeding any day's combined limit.\nA topic-specific minimum replaces a smaller general minimum for that topic; it is not an extra requirement to add twice.\nSplit a topic across days when needed. Use a compact schedule with only necessary sessions; do not repeat every topic on every day.\nCheck the sum of ALL sessions per date and the sum per exact topic label before returning. Keep summary short and consistent with schedule.\nIf a deadline or daily allowance is unknown, use a short conservative plan without claiming a guessed bound was supplied.\nNever add an unsupported numeric constraint. If visible requirements conflict, explain the conflict in the output rather than claim compliance.\nWrite in English."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"constrained_writing\", \"initial_request\": \"Write an advertisement for a fantastical umbrella. Address this to readers of an imaginary novelty magazine. A whimsical and exuberant tone suits this piece.\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [], \"visible_constraints\": {\"version\": \"visible-constraints-0.4.0\", \"domain\": \"constrained_writing\", \"constraints\": [], \"warnings\": []}, \"output_schema\": {\"$schema\": \"https://json-schema.org/draft/2020-12/schema\", \"type\": \"object\", \"properties\": {\"text\": {\"type\": \"string\", \"minLength\": 1, \"pattern\": \"\\\\S\"}}, \"required\": [\"text\"], \"additionalProperties\": false}}"
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

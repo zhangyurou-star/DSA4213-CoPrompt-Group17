@@ -1,0 +1,72 @@
+{
+  "key": "ab1ae037f39115f1559735113c2bb280e9736038e88c01022cab44189e9d5d72",
+  "raw": "{\n  \"text\": \"This certificate recognizes outstanding patient experimentation in the development of the paper turbine. Your approach—turning questions into trials—demonstrates a rare commitment to discovery. Each hypothesis was tested with care, and every failed version was documented as rigorously as success. This methodical process advanced the design through persistent inquiry. The paper turbine stands as a testament to your resilience, curiosity, and dedication. No external prize is claimed; this honor celebrates the intrinsic value of learning through trial. Your work exemplifies how careful, thoughtful effort transforms ideas into innovation.\"\n}",
+  "source_case_id": "NTCW27",
+  "source_variant": "direct",
+  "response_sha256": "1e5fd17f287d1fae95c498366919a423df18f05130b28a2fd5202f66987ce8ae",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "generation",
+    "repair": true,
+    "repair_kind": "constraint",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Complete the user's task using only the original request, public context and the visible clarification exchanges.\nDo not ask more questions. Honor all available requirements, including exact phrases and the full-text word count.\nvisible_constraints is a deterministic, partial checklist derived only from that visible text, not new user requirements.\nAlways honor the original visible text as well; absence from the checklist does not remove a requirement.\nDo not invent event details, promises, historical facts or beneficiary groups. Omit unavailable specifics or use clearly marked placeholders.\nTreat concrete dates, clock times, addresses, names, contact details, links, services and free-access claims as facts requiring visible support.\nPlausibility is not evidence. Do not add these details to make a notice sound complete or to reach its minimum word count.\nDo not claim a link is provided when none is available. Use neutral connective wording without adding factual commitments.\nReturn exactly one JSON object matching the supplied output schema, without Markdown fences or surrounding commentary.\nFor writing, put ALL headings, greetings, body and signature inside text.\nCopy required literal phrases unchanged. Draft near the middle of the full-text word range, then check the complete text length.\nWhen revising a length failure, rewrite the whole text toward the range midpoint while retaining every required literal; do not merely append or trim a final sentence.\nWord counting includes every heading and signature: letter/digit sequences, with internal apostrophes or hyphens, count as words.\nFor study plans, each schedule item has one complete topic name, a real ISO date and positive integer minutes;\nfirst compute each topic's required total, then allocate those minutes across the permitted days without exceeding any day's combined limit.\nA topic-specific minimum replaces a smaller general minimum for that topic; it is not an extra requirement to add twice.\nSplit a topic across days when needed. Use a compact schedule with only necessary sessions; do not repeat every topic on every day.\nCheck the sum of ALL sessions per date and the sum per exact topic label before returning. Keep summary short and consistent with schedule.\nIf a deadline or daily allowance is unknown, use a short conservative plan without claiming a guessed bound was supplied.\nNever add an unsupported numeric constraint. If visible requirements conflict, explain the conflict in the output rather than claim compliance.\nWrite in English."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"constrained_writing\", \"initial_request\": \"Compose the citation on a fictional achievement certificate. Keep the complete piece to 50–80 words. Include the following invented details: The fictional certificate recognizes patient experimentation in developing the paper turbine. Praise turning questions into trials and recording failed versions as carefully as successful ones; do not claim an external prize. Preserve these exact phrases: \\\"patient experimentation\\\", \\\"the paper turbine\\\", \\\"turning questions into trials\\\".\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [], \"visible_constraints\": {\"version\": \"visible-constraints-0.4.0\", \"domain\": \"constrained_writing\", \"constraints\": [{\"kind\": \"word_count\", \"parameters\": {\"min_words\": 50, \"max_words\": 80}, \"source\": [{\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"Keep the complete piece to 50–80 words.\"}]}, {\"kind\": \"contains_all\", \"parameters\": {\"literals\": [\"patient experimentation\", \"the paper turbine\", \"turning questions into trials\"]}, \"source\": [{\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"Preserve these exact phrases: \\\"patient experimentation\\\", \\\"the paper turbine\\\", \\\"turning questions into trials\\\".\"}]}], \"warnings\": []}, \"output_schema\": {\"$schema\": \"https://json-schema.org/draft/2020-12/schema\", \"type\": \"object\", \"properties\": {\"text\": {\"type\": \"string\", \"minLength\": 1, \"pattern\": \"\\\\S\"}}, \"required\": [\"text\"], \"additionalProperties\": false}}"
+      },
+      {
+        "role": "assistant",
+        "content": "{\n  \"text\": \"This certificate honors exceptional dedication in the development of the paper turbine through patient experimentation. Your relentless pursuit of innovation is exemplified by turning questions into trials, meticulously testing each hypothesis. Every failed version was recorded with the same care as successful iterations, demonstrating a profound commitment to learning. This approach not only advanced the design of the paper turbine but also established a model for thoughtful discovery. Your work reflects the spirit of inquiry, resilience, and precision. This recognition celebrates your journey, not an external prize, but the intrinsic value of persistent, curious effort in transforming ideas into reality.\"\n}"
+      },
+      {
+        "role": "user",
+        "content": "A deterministic check of requirements already visible above found these issues: [\"word_count: {\\\"max_words\\\": 80, \\\"min_words\\\": 50, \\\"observed_words\\\": 100}\"] Complete measurements of the same visible requirements, including passing requirements: {\"domain\": \"constrained_writing\", \"observed\": {\"full_text_words\": 100}, \"requirements\": [{\"kind\": \"word_count\", \"parameters\": {\"min_words\": 50, \"max_words\": 80}}, {\"kind\": \"contains_all\", \"parameters\": {\"literals\": [\"patient experimentation\", \"the paper turbine\", \"turning questions into trials\"]}}], \"violations\": [\"word_count: {\\\"max_words\\\": 80, \\\"min_words\\\": 50, \\\"observed_words\\\": 100}\"], \"interpretation_warnings\": []}. Return one corrected complete JSON object. Fix the listed issues while preserving all other visible requirements. No new facts or requirements have been added. Recheck word count and verbatim phrases for writing; rewrite toward the word-range midpoint without inventing dates, addresses, times, services or other facts. For schedules, jointly satisfy date bounds, combined daily sums and all topic minimum totals. A topic minimum is a total across dates; reducing a daily excess must not make that topic total too small. This is the only constraint revision. Return your complete best effort even if some requirements remain unmet; do not claim compliance with a requirement that still fails. Keep the output compact."
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

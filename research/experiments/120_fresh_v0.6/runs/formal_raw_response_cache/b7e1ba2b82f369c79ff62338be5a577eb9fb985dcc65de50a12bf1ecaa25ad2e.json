@@ -1,0 +1,64 @@
+{
+  "key": "b7e1ba2b82f369c79ff62338be5a577eb9fb985dcc65de50a12bf1ecaa25ad2e",
+  "raw": "{\"action\":\"ACT\"}",
+  "source_case_id": "NDSP08",
+  "source_variant": "prompt_only",
+  "response_sha256": "d5ab1a0a587b1722056e15a1f6a83c0d0b2745ce4c2037361479b18f77e47c3f",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "decision",
+    "repair": false,
+    "repair_kind": null,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Choose whether to clarify one unresolved field or act now to complete the user's task.\nAsk only when its likely benefit to the result justifies another question. Optional preferences may have reasonable defaults.\nConsider only the public request, visible exchanges, current field state, eligible fields and remaining question budget.\nReturn exactly {\"action\":\"ASK\",\"field_id\":\"one_field_id\"} or {\"action\":\"ACT\"}.\nNo explanation, extra keys or Markdown. Do not predict unavailable hidden answers."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"study_planning\", \"initial_request\": \"I will critique a pedestrian-street design in class. Please create a focused preparation schedule for the design concepts. Start on 2027-02-01. The syllabus consists of \\\"Crossing Visibility\\\", \\\"Kerb Ramps\\\", \\\"Pedestrian Desire Lines\\\", \\\"Footway Width\\\"; each named topic needs a minimum of 25 minutes in total. My study window closes on 2027-02-05; that date is still available. I would prefer to encounter \\\"Footway Width\\\" early; treat that as a suggestion only, not a time requirement. The total of all sessions on any one date must not exceed 60 minutes.\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [{\"field_id\": \"available_time\", \"question\": \"How many minutes can you study per day at most?\", \"status\": \"available\", \"answer_text\": \"The total of all sessions on any one date must not exceed 60 minutes.\"}], \"field_values\": {\"deadline\": null, \"available_time\": \"The total of all sessions on any one date must not exceed 60 minutes.\", \"topics\": \"The syllabus consists of \\\"Crossing Visibility\\\", \\\"Kerb Ramps\\\", \\\"Pedestrian Desire Lines\\\", \\\"Footway Width\\\"; each named topic needs a minimum of 25 minutes in total.\", \"priorities\": \"I would prefer to encounter \\\"Footway Width\\\" early; treat that as a suggestion only, not a time requirement.\"}, \"eligible_fields\": [\"deadline\"], \"remaining_question_items\": 2, \"fields\": [{\"field_id\": \"deadline\", \"label_zh\": \"截止日\", \"description_zh\": \"最后可学习日期，包含当日。起始日始终在初始请求给定。\", \"question_template\": \"What is the last date available for study, inclusive?\"}, {\"field_id\": \"available_time\", \"label_zh\": \"每日时长\", \"description_zh\": \"每天可学习的分钟上限。本试跑采用统一每日上限。\", \"question_template\": \"How many minutes can you study per day at most?\"}, {\"field_id\": \"topics\", \"label_zh\": \"学习主题\", \"description_zh\": \"主题名称与覆盖要求，可含每个主题的最低总分钟数。\", \"question_template\": \"Which topics must be covered, and are there minimum minutes for each?\"}, {\"field_id\": \"priorities\", \"label_zh\": \"优先要求\", \"description_zh\": \"优先主题及相关硬性时长，或明确无偏好；软偏好不自动计分。\", \"question_template\": \"Do you have topic priorities or additional minimum-time requirements?\"}]}"
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

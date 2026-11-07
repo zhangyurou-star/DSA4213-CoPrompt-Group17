@@ -1,0 +1,118 @@
+{
+  "cache_key": "255839c14a4f4be790ae0cce2a41478030afe66aba25bb34e15963726063d435",
+  "source_case_id": "NTCW26",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "Our shared workspace balances privacy and collaboration through thoughtful desk placement. Each person has a private corner for focused work. Frequently used stationery is kept in a shared tray, accessible to all. Drawing materials are positioned on the window side to take advantage of natural light. A clear center area remains unobstructed, enabling easy exchange of large sheets. This layout supports both individual focus and teamwork. The shared tray, window side, and clear center are essential to our design, ensuring efficiency and consideration for everyone."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"To foster collaboration and respect in our shared workspace, we’ve arranged desks with practical care. Each person has a private corner for personal focus. The shared tray holds frequently used stationery, placed within easy reach for all. Drawing materials are positioned on the window side, where natural light enhances creativity. A clear center area remains unobstructed, allowing smooth exchange of large sheets and collaborative work. This layout balances privacy with teamwork, ensuring everyone feels included and supported. The shared tray, window side, and clear center are key to our thoughtful design.\"\n}",
+      "parsed": {
+        "text": "To foster collaboration and respect in our shared workspace, we’ve arranged desks with practical care. Each person has a private corner for personal focus. The shared tray holds frequently used stationery, placed within easy reach for all. Drawing materials are positioned on the window side, where natural light enhances creativity. A clear center area remains unobstructed, allowing smooth exchange of large sheets and collaborative work. This layout balances privacy with teamwork, ensuring everyone feels included and supported. The shared tray, window side, and clear center are key to our thoughtful design."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "The full text must be between 55 and 85 words."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"shared tray\", \"window side\", \"clear center\"."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 91}"
+  ],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"Our shared workspace balances privacy and collaboration through thoughtful desk placement. Each person has a private corner for focused work. Frequently used stationery is kept in a shared tray, accessible to all. Drawing materials are positioned on the window side to take advantage of natural light. A clear center area remains unobstructed, enabling easy exchange of large sheets. This layout supports both individual focus and teamwork. The shared tray, window side, and clear center are essential to our design, ensuring efficiency and consideration for everyone.\"\n}",
+    "parsed": {
+      "text": "Our shared workspace balances privacy and collaboration through thoughtful desk placement. Each person has a private corner for focused work. Frequently used stationery is kept in a shared tray, accessible to all. Drawing materials are positioned on the window side to take advantage of natural light. A clear center area remains unobstructed, enabling easy exchange of large sheets. This layout supports both individual focus and teamwork. The shared tray, window side, and clear center are essential to our design, ensuring efficiency and consideration for everyone."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 91
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 91}"
+    ],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"shared tray\", \"window side\", \"clear center\"."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 85
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"shared tray\", \"window side\", \"clear center\"."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

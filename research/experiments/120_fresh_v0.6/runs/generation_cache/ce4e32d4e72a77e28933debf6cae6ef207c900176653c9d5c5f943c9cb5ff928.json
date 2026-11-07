@@ -1,0 +1,132 @@
+{
+  "cache_key": "ce4e32d4e72a77e28933debf6cae6ef207c900176653c9d5c5f943c9cb5ff928",
+  "source_case_id": "NTCW27",
+  "source_policy": "direct",
+  "output": {
+    "text": "This certificate recognizes outstanding patient experimentation in the development of the paper turbine. Your approach—turning questions into trials—demonstrates a rare commitment to discovery. Each hypothesis was tested with care, and every failed version was documented as rigorously as success. This methodical process advanced the design through persistent inquiry. The paper turbine stands as a testament to your resilience, curiosity, and dedication. No external prize is claimed; this honor celebrates the intrinsic value of learning through trial. Your work exemplifies how careful, thoughtful effort transforms ideas into innovation."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"This certificate honors exceptional dedication in the development of the paper turbine through patient experimentation. Your relentless pursuit of innovation is exemplified by turning questions into trials, meticulously testing each hypothesis. Every failed version was recorded with the same care as successful iterations, demonstrating a profound commitment to learning. This approach not only advanced the design of the paper turbine but also established a model for thoughtful discovery. Your work reflects the spirit of inquiry, resilience, and precision. This recognition celebrates your journey, not an external prize, but the intrinsic value of persistent, curious effort in transforming ideas into reality.\"\n}",
+      "parsed": {
+        "text": "This certificate honors exceptional dedication in the development of the paper turbine through patient experimentation. Your relentless pursuit of innovation is exemplified by turning questions into trials, meticulously testing each hypothesis. Every failed version was recorded with the same care as successful iterations, demonstrating a profound commitment to learning. This approach not only advanced the design of the paper turbine but also established a model for thoughtful discovery. Your work reflects the spirit of inquiry, resilience, and precision. This recognition celebrates your journey, not an external prize, but the intrinsic value of persistent, curious effort in transforming ideas into reality."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Keep the complete piece to 50–80 words."
+          }
+        ]
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "patient experimentation",
+            "the paper turbine",
+            "turning questions into trials"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Preserve these exact phrases: \"patient experimentation\", \"the paper turbine\", \"turning questions into trials\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 100}"
+  ],
+  "constraint_checks_final": [
+    "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 89}"
+  ],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"This certificate recognizes outstanding patient experimentation in the development of the paper turbine. Your approach—turning questions into trials—demonstrates a rare commitment to discovery. Each hypothesis was tested with care, and every failed version was documented as rigorously as success. This methodical process advanced the design through persistent inquiry. The paper turbine stands as a testament to your resilience, curiosity, and dedication. No external prize is claimed; this honor celebrates the intrinsic value of learning through trial. Your work exemplifies how careful, thoughtful effort transforms ideas into innovation.\"\n}",
+    "parsed": {
+      "text": "This certificate recognizes outstanding patient experimentation in the development of the paper turbine. Your approach—turning questions into trials—demonstrates a rare commitment to discovery. Each hypothesis was tested with care, and every failed version was documented as rigorously as success. This methodical process advanced the design through persistent inquiry. The paper turbine stands as a testament to your resilience, curiosity, and dedication. No external prize is claimed; this honor celebrates the intrinsic value of learning through trial. Your work exemplifies how careful, thoughtful effort transforms ideas into innovation."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 100
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        }
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "patient experimentation",
+            "the paper turbine",
+            "turning questions into trials"
+          ]
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 100}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 89
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 50,
+          "max_words": 80
+        }
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "patient experimentation",
+            "the paper turbine",
+            "turning questions into trials"
+          ]
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 80, \"min_words\": 50, \"observed_words\": 89}"
+    ],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

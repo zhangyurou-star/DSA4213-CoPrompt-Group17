@@ -1,0 +1,49 @@
+{
+  "cache_key": "9251682565705ef52581f4bdba1fc6af2091d2647d8d8be57d17e03f9a6b13df",
+  "source_case_id": "NTCW18",
+  "source_policy": "prompt_only",
+  "output": {
+    "text": "A still pond reflects the sky; a restless one only churns the clouds. \n\nIn the village of Lirin, an elder named Mael kept a small, clear pool behind his cottage. Each morning, he would sit by its edge, silent, watching the water. When the wind stirred, he did not stir with it. One day, a traveler arrived, breathless and anxious, asking for guidance on a path he feared he had lost. Mael said nothing, only pointed to the pool. The traveler stared, then saw his own face—tired, uncertain—reflected in the still surface. He sat down, quieted his thoughts, and in that stillness, the answer came not from words, but from within. The pond had not spoken, yet it had taught him everything. \n\nStillness does not mean emptiness. It means space—space to see, to know, to be."
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"A still pond reflects the sky; a restless one only churns the clouds. \\n\\nIn the village of Lirin, an elder named Mael kept a small, clear pool behind his cottage. Each morning, he would sit by its edge, silent, watching the water. When the wind stirred, he did not stir with it. One day, a traveler arrived, breathless and anxious, asking for guidance on a path he feared he had lost. Mael said nothing, only pointed to the pool. The traveler stared, then saw his own face—tired, uncertain—reflected in the still surface. He sat down, quieted his thoughts, and in that stillness, the answer came not from words, but from within. The pond had not spoken, yet it had taught him everything. \\n\\nStillness does not mean emptiness. It means space—space to see, to know, to be.\"}",
+      "parsed": {
+        "text": "A still pond reflects the sky; a restless one only churns the clouds. \n\nIn the village of Lirin, an elder named Mael kept a small, clear pool behind his cottage. Each morning, he would sit by its edge, silent, watching the water. When the wind stirred, he did not stir with it. One day, a traveler arrived, breathless and anxious, asking for guidance on a path he feared he had lost. Mael said nothing, only pointed to the pool. The traveler stared, then saw his own face—tired, uncertain—reflected in the still surface. He sat down, quieted his thoughts, and in that stillness, the answer came not from words, but from within. The pond had not spoken, yet it had taught him everything. \n\nStillness does not mean emptiness. It means space—space to see, to know, to be."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 139
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 139
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

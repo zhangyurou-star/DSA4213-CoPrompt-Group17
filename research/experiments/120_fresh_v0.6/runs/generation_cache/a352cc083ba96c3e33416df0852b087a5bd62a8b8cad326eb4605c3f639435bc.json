@@ -1,0 +1,248 @@
+{
+  "cache_key": "a352cc083ba96c3e33416df0852b087a5bd62a8b8cad326eb4605c3f639435bc",
+  "source_case_id": "NTSP27",
+  "source_policy": "exhaustive",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Lug Sequencing",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-01",
+        "topic": "Head Seating",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Resonant Head Tension",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Lug Sequencing",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Head Seating",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Resonant Head Tension",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Lug Sequencing",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Head Seating",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Resonant Head Tension",
+        "minutes": 10
+      }
+    ],
+    "summary": "Calculated from the schedule: 100 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 25 minutes; 2027-02-03: 20 minutes; 2027-02-04: 30 minutes. Topic totals: Head Seating: 30 minutes; Lug Sequencing: 35 minutes; Resonant Head Tension: 35 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Lug Sequencing\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Head Seating\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Resonant Head Tension\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Lug Sequencing\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Head Seating\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Resonant Head Tension\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Lug Sequencing\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Head Seating\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Resonant Head Tension\",\n      \"minutes\": 10\n    }\n  ],\n  \"summary\": \"The study plan covers all required topics—Lug Sequencing, Head Seating, and Resonant Head Tension—with a total of at least 10 minutes per topic. Sessions are distributed across five days (2027-02-01 to 2027-02-04), with no day exceeding 55 minutes of combined study time. Each topic is addressed in multiple short sessions to support retention and practical application.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Lug Sequencing",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-01",
+            "topic": "Head Seating",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Resonant Head Tension",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Lug Sequencing",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Head Seating",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Resonant Head Tension",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Lug Sequencing",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Head Seating",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Resonant Head Tension",
+            "minutes": 10
+          }
+        ],
+        "summary": "The study plan covers all required topics—Lug Sequencing, Head Seating, and Resonant Head Tension—with a total of at least 10 minutes per topic. Sessions are distributed across five days (2027-02-01 to 2027-02-04), with no day exceeding 55 minutes of combined study time. Each topic is addressed in multiple short sessions to support retention and practical application."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Finish all scheduled study no later than 2027-02-04, inclusive."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 100,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 25,
+        "2027-02-03": 20,
+        "2027-02-04": 30
+      },
+      "topic_minutes": [
+        {
+          "topic": "Head Seating",
+          "normalized_topic": "head seating",
+          "minutes": 30
+        },
+        {
+          "topic": "Lug Sequencing",
+          "normalized_topic": "lug sequencing",
+          "minutes": 35
+        },
+        {
+          "topic": "Resonant Head Tension",
+          "normalized_topic": "resonant head tension",
+          "minutes": 35
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Finish all scheduled study no later than 2027-02-04, inclusive."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 100,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 25,
+        "2027-02-03": 20,
+        "2027-02-04": 30
+      },
+      "topic_minutes": [
+        {
+          "topic": "Head Seating",
+          "normalized_topic": "head seating",
+          "minutes": 30
+        },
+        {
+          "topic": "Lug Sequencing",
+          "normalized_topic": "lug sequencing",
+          "minutes": 35
+        },
+        {
+          "topic": "Resonant Head Tension",
+          "normalized_topic": "resonant head tension",
+          "minutes": 35
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Finish all scheduled study no later than 2027-02-04, inclusive."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study plan covers all required topics—Lug Sequencing, Head Seating, and Resonant Head Tension—with a total of at least 10 minutes per topic. Sessions are distributed across five days (2027-02-01 to 2027-02-04), with no day exceeding 55 minutes of combined study time. Each topic is addressed in multiple short sessions to support retention and practical application.",
+    "derived_summary": "Calculated from the schedule: 100 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 25 minutes; 2027-02-03: 20 minutes; 2027-02-04: 30 minutes. Topic totals: Head Seating: 30 minutes; Lug Sequencing: 35 minutes; Resonant Head Tension: 35 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

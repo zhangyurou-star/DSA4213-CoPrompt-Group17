@@ -1,0 +1,80 @@
+{
+  "cache_key": "d9a9c62065ad84cd3bb65b5ac1e09c1094eb3a6c009254382c9f71c7a601d42f",
+  "source_case_id": "NTCW20",
+  "source_policy": "direct",
+  "output": {
+    "text": "Dear Ren,\n\nI hope this letter finds you well! I’m a collector of odd buttons—my hobby began when I found a tiny blue one in an old coat pocket. Now, I keep them in glass jars, each with its own story. I ride a yellow bicycle to the library and around town, always on the lookout for new finds. I’d love to hear about the smallest adventure in your week—something small but meaningful. What tiny moment made your day brighter? I’m curious to know.\n\nWarmly,\n[Your Name]"
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"Dear Ren,\\n\\nI hope this letter finds you well! I’m a collector of odd buttons—my hobby began when I found a tiny blue one in an old coat pocket. Now, I keep them in glass jars, each with its own story. I ride a yellow bicycle to the library and around town, always on the lookout for new finds. I’d love to hear about the smallest adventure in your week—something small but meaningful. What tiny moment made your day brighter? I’m curious to know.\\n\\nWarmly,\\n[Your Name]\"}",
+      "parsed": {
+        "text": "Dear Ren,\n\nI hope this letter finds you well! I’m a collector of odd buttons—my hobby began when I found a tiny blue one in an old coat pocket. Now, I keep them in glass jars, each with its own story. I ride a yellow bicycle to the library and around town, always on the lookout for new finds. I’d love to hear about the smallest adventure in your week—something small but meaningful. What tiny moment made your day brighter? I’m curious to know.\n\nWarmly,\n[Your Name]"
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Write 60 to 90 words altogether."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 89
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 89
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

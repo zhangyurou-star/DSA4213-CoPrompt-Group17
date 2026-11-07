@@ -1,0 +1,15 @@
+{
+  "date_local": "2026-10-27",
+  "timezone": "Asia/Singapore",
+  "action": "Open submission/evidence/trace_viewer.html with the in-app browser",
+  "status": "blocked_by_browser_security_policy",
+  "reason": "The browser URL policy disallowed the file: protocol; only http: and https: were allowed. No workaround or alternate browser surface was attempted.",
+  "actual_browser_interaction_verified": false,
+  "separate_offline_checks": [
+    "JavaScript syntax checked with node --check",
+    "Every exported request and trajectory compared with its source record",
+    "Embedded JSON script-termination escaping tested",
+    "Deterministic re-export and no-overwrite behavior tested"
+  ],
+  "limit": "These checks do not certify visual rendering, browser interaction or real-model behavior."
+}

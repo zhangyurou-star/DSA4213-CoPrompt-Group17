@@ -1,0 +1,117 @@
+{
+  "cache_key": "456ad60c1d2e5c4dd4009efdbf53b4705f8649c9f62cf0792ea565bf3cfca3b2",
+  "source_case_id": "NTCW05",
+  "source_policy": "direct",
+  "output": {
+    "text": "Hurry! The Lantern Orchard lies beyond the misty glade—its fruit has fallen, and only three silver seeds remain. I need them to relight the village clock before the hour strikes silent. Do not wake the giant—his slumber guards the orchard’s heart. Move swiftly, softly, and take only what you must. The seeds glow faintly beneath the fallen branches. If you return with them, the village will remember its time. But if you wake the giant… darkness will fall forever. Go now—before the last light fades!"
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Hurry! The Lantern Orchard lies beyond the misty glade—its fruit has fallen, and only three silver seeds remain. I need them to relight the village clock before the hour strikes silent. Do not wake the giant—his slumber guards the orchard’s heart. Move swiftly, softly, and take only what you must. The seeds glow faintly beneath the fallen branches. If you return with them, the village will remember its time. But if you wake the giant… darkness will fall forever. Go now—before the last light fades!\"\n}",
+      "parsed": {
+        "text": "Hurry! The Lantern Orchard lies beyond the misty glade—its fruit has fallen, and only three silver seeds remain. I need them to relight the village clock before the hour strikes silent. Do not wake the giant—his slumber guards the orchard’s heart. Move swiftly, softly, and take only what you must. The seeds glow faintly beneath the fallen branches. If you return with them, the village will remember its time. But if you wake the giant… darkness will fall forever. Go now—before the last light fades!"
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the Lantern Orchard",
+            "three silver seeds",
+            "do not wake the giant"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Include each of these exact strings: \"the Lantern Orchard\", \"three silver seeds\", \"do not wake the giant\"."
+          }
+        ]
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Write 60 to 90 words altogether."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 88
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the Lantern Orchard",
+            "three silver seeds",
+            "do not wake the giant"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 88
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the Lantern Orchard",
+            "three silver seeds",
+            "do not wake the giant"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

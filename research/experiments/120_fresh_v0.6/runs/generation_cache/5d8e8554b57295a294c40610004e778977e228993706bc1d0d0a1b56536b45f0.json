@@ -1,0 +1,248 @@
+{
+  "cache_key": "5d8e8554b57295a294c40610004e778977e228993706bc1d0d0a1b56536b45f0",
+  "source_case_id": "NVSP07",
+  "source_policy": "value_based",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Mask Focus",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-01",
+        "topic": "Neutral Mask Posture",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Neutral Mask Posture",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Gesture Economy",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Mask Focus",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Gesture Economy",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Mask Focus",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Neutral Mask Posture",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Gesture Economy",
+        "minutes": 10
+      }
+    ],
+    "summary": "Calculated from the schedule: 135 minutes in total. Daily totals: 2027-02-01: 35 minutes; 2027-02-02: 35 minutes; 2027-02-03: 35 minutes; 2027-02-04: 30 minutes. Topic totals: Gesture Economy: 45 minutes; Mask Focus: 45 minutes; Neutral Mask Posture: 45 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Mask Focus\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Neutral Mask Posture\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Neutral Mask Posture\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Gesture Economy\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Mask Focus\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Gesture Economy\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Mask Focus\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Neutral Mask Posture\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Gesture Economy\",\n      \"minutes\": 10\n    }\n  ],\n  \"summary\": \"The study plan spans from 2027-02-01 to 2027-02-04, covering all three required topics: Mask Focus (total 45 minutes), Neutral Mask Posture (total 45 minutes), and Gesture Economy (total 45 minutes). Each topic meets the minimum 20-minute requirement. Sessions are distributed across the days with no single day exceeding 55 minutes of combined study time. The order introduces variety as requested, without imposing priority constraints.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Mask Focus",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-01",
+            "topic": "Neutral Mask Posture",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Neutral Mask Posture",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Gesture Economy",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Mask Focus",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Gesture Economy",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Mask Focus",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Neutral Mask Posture",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Gesture Economy",
+            "minutes": 10
+          }
+        ],
+        "summary": "The study plan spans from 2027-02-01 to 2027-02-04, covering all three required topics: Mask Focus (total 45 minutes), Neutral Mask Posture (total 45 minutes), and Gesture Economy (total 45 minutes). Each topic meets the minimum 20-minute requirement. Sessions are distributed across the days with no single day exceeding 55 minutes of combined study time. The order introduces variety as requested, without imposing priority constraints."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Finish all scheduled study no later than 2027-02-04, inclusive."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 135,
+      "daily_minutes": {
+        "2027-02-01": 35,
+        "2027-02-02": 35,
+        "2027-02-03": 35,
+        "2027-02-04": 30
+      },
+      "topic_minutes": [
+        {
+          "topic": "Gesture Economy",
+          "normalized_topic": "gesture economy",
+          "minutes": 45
+        },
+        {
+          "topic": "Mask Focus",
+          "normalized_topic": "mask focus",
+          "minutes": 45
+        },
+        {
+          "topic": "Neutral Mask Posture",
+          "normalized_topic": "neutral mask posture",
+          "minutes": 45
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Finish all scheduled study no later than 2027-02-04, inclusive."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 135,
+      "daily_minutes": {
+        "2027-02-01": 35,
+        "2027-02-02": 35,
+        "2027-02-03": 35,
+        "2027-02-04": 30
+      },
+      "topic_minutes": [
+        {
+          "topic": "Gesture Economy",
+          "normalized_topic": "gesture economy",
+          "minutes": 45
+        },
+        {
+          "topic": "Mask Focus",
+          "normalized_topic": "mask focus",
+          "minutes": 45
+        },
+        {
+          "topic": "Neutral Mask Posture",
+          "normalized_topic": "neutral mask posture",
+          "minutes": 45
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Finish all scheduled study no later than 2027-02-04, inclusive."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study plan spans from 2027-02-01 to 2027-02-04, covering all three required topics: Mask Focus (total 45 minutes), Neutral Mask Posture (total 45 minutes), and Gesture Economy (total 45 minutes). Each topic meets the minimum 20-minute requirement. Sessions are distributed across the days with no single day exceeding 55 minutes of combined study time. The order introduces variety as requested, without imposing priority constraints.",
+    "derived_summary": "Calculated from the schedule: 135 minutes in total. Daily totals: 2027-02-01: 35 minutes; 2027-02-02: 35 minutes; 2027-02-03: 35 minutes; 2027-02-04: 30 minutes. Topic totals: Gesture Economy: 45 minutes; Mask Focus: 45 minutes; Neutral Mask Posture: 45 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

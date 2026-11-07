@@ -1,0 +1,111 @@
+{
+  "cache_key": "5570a66f78148e21f143c92d81eb4e7b9efc270f9bf4c29f9426fd13bfea4169",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S5"
+    ],
+    "available_time": [
+      "S6"
+    ],
+    "topics": [
+      "S4"
+    ],
+    "priorities": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 77,
+      "text": "I am trying to make my brush strokes more deliberate in calligraphy practice."
+    },
+    {
+      "id": "S2",
+      "start": 78,
+      "end": 124,
+      "text": "Please schedule the mechanics I need to study."
+    },
+    {
+      "id": "S3",
+      "start": 125,
+      "end": 145,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 146,
+      "end": 276,
+      "text": "The syllabus consists of \"Stroke Entry\", \"Ink Loading\", \"Brush Pressure\"; each named topic needs a minimum of 15 minutes in total."
+    },
+    {
+      "id": "S5",
+      "start": 277,
+      "end": 344,
+      "text": "My study window closes on 2027-02-07; that date is still available."
+    },
+    {
+      "id": "S6",
+      "start": 345,
+      "end": 414,
+      "text": "The total of all sessions on any one date must not exceed 70 minutes."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": null,
+    "topics": "The syllabus consists of \"Stroke Entry\", \"Ink Loading\", \"Brush Pressure\"; each named topic needs a minimum of 15 minutes in total.",
+    "priorities": null
+  },
+  "evidence": {
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 146,
+        "end": 276,
+        "quote": "The syllabus consists of \"Stroke Entry\", \"Ink Loading\", \"Brush Pressure\"; each named topic needs a minimum of 15 minutes in total."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "deadline",
+      "proposed_evidence": [
+        "S5"
+      ],
+      "proposed_value": "My study window closes on 2027-02-07; that date is still available.",
+      "reason": "quote_has_no_explicit_endpoint_cue"
+    },
+    {
+      "field_id": "available_time",
+      "proposed_evidence": [
+        "S6"
+      ],
+      "proposed_value": "The total of all sessions on any one date must not exceed 70 minutes.",
+      "reason": "quote_has_no_daily_time_allowance_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S5\"],\"available_time\":[\"S6\"],\"topics\":[\"S4\"],\"priorities\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S5"
+          ],
+          "available_time": [
+            "S6"
+          ],
+          "topics": [
+            "S4"
+          ],
+          "priorities": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

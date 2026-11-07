@@ -1,0 +1,64 @@
+{
+  "key": "736ff55484be8ad44958199cc40040fa630c09fbb732c548ae6c76e49a18a549",
+  "raw": "{\"ratings\":[{\"field_id\":\"length\",\"importance\":0.5,\"uncertainty\":1,\"reason\":\"A reflective and concrete tone may require variable length, and without a word-count range, the output could vary significantly in depth or detail, affecting the suitability for an imaginary collection of sayings.\"}]}",
+  "source_case_id": "NTCW18",
+  "source_variant": "value_based",
+  "response_sha256": "f08a58fff25f65e84fdd16dc3e59855cb5bd8c67b9ef04251a39e71fa1a8ac25",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "decision",
+    "repair": false,
+    "repair_kind": null,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Rate EVERY eligible unresolved field using the public request and visible interaction only.\nImportance I: 0 = little effect; 0.5 = local preference; 1 = could change core content or feasibility.\nUncertainty U: 0.5 = a reasonable default exists; 1 = different possible answers may materially change the result.\nThese are heuristic levels, not calibrated probabilities. Never inspect or infer hidden answer availability or grading labels.\nReturn exactly {\"ratings\":[{\"field_id\":\"...\",\"importance\":0.5,\"uncertainty\":1,\"reason\":\"brief rationale\"}, ...]}.\nCover each eligible field exactly once. Importance must be 0, 0.5 or 1. Uncertainty must be 0.5 or 1.\nNo action recommendation, extra keys or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"constrained_writing\", \"initial_request\": \"Interpret an invented proverb with a concrete example. Use wording suitable for readers of an imaginary collection of sayings.\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [{\"field_id\": \"tone\", \"question\": \"What tone would you like?\", \"status\": \"available\", \"answer_text\": \"A reflective and concrete tone suits this piece.\"}], \"field_values\": {\"audience\": \"Use wording suitable for readers of an imaginary collection of sayings.\", \"tone\": \"A reflective and concrete tone suits this piece.\", \"length\": null, \"required_content\": \"Interpret an invented proverb with a concrete example.\"}, \"eligible_fields\": [\"length\"], \"remaining_question_items\": 2, \"fields\": [{\"field_id\": \"audience\", \"label_zh\": \"受众\", \"description_zh\": \"目标读者或收件人。不得凭体裁猜测具体受众。\", \"question_template\": \"Who is the intended audience?\"}, {\"field_id\": \"tone\", \"label_zh\": \"语气\", \"description_zh\": \"语气或明确无偏好。缺省语气不视为已提供。\", \"question_template\": \"What tone would you like?\"}, {\"field_id\": \"length\", \"label_zh\": \"长度\", \"description_zh\": \"全文英文词数范围或明确无长度要求。\", \"question_template\": \"What word-count range should the full text follow?\"}, {\"field_id\": \"required_content\", \"label_zh\": \"必含内容\", \"description_zh\": \"用户明确要求的具体事实或逐字内容。仅有主题或体裁不算已提供；明确无必含内容则算已解决。\", \"question_template\": \"What information or exact wording must the text include?\"}]}"
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

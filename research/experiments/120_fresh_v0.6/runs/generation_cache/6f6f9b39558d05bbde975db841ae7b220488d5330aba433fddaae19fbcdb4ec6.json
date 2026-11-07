@@ -1,0 +1,216 @@
+{
+  "cache_key": "6f6f9b39558d05bbde975db841ae7b220488d5330aba433fddaae19fbcdb4ec6",
+  "source_case_id": "NTSP26",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Task Scenarios",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-01",
+        "topic": "Think-aloud Prompts",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Think-aloud Prompts",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Usability Findings",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Usability Findings",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Task Scenarios",
+        "minutes": 10
+      }
+    ],
+    "summary": "Calculated from the schedule: 100 minutes in total. Daily totals: 2027-02-01: 40 minutes; 2027-02-02: 35 minutes; 2027-02-03: 25 minutes. Topic totals: Task Scenarios: 35 minutes; Think-aloud Prompts: 25 minutes; Usability Findings: 40 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Task Scenarios\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Think-aloud Prompts\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Think-aloud Prompts\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Usability Findings\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Usability Findings\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Task Scenarios\",\n      \"minutes\": 10\n    }\n  ],\n  \"summary\": \"The schedule allocates a minimum of 25 minutes per topic across the study window from 2027-02-01 to 2027-02-03, with no single day exceeding 40 minutes. All sessions are distributed to meet the minimum topic requirements while respecting the daily time limit.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Task Scenarios",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-01",
+            "topic": "Think-aloud Prompts",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Think-aloud Prompts",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Usability Findings",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Usability Findings",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Task Scenarios",
+            "minutes": 10
+          }
+        ],
+        "summary": "The schedule allocates a minimum of 25 minutes per topic across the study window from 2027-02-01 to 2027-02-03, with no single day exceeding 40 minutes. All sessions are distributed to meet the minimum topic requirements while respecting the daily time limit."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-03; that date is still available."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 100,
+      "daily_minutes": {
+        "2027-02-01": 40,
+        "2027-02-02": 35,
+        "2027-02-03": 25
+      },
+      "topic_minutes": [
+        {
+          "topic": "Task Scenarios",
+          "normalized_topic": "task scenarios",
+          "minutes": 35
+        },
+        {
+          "topic": "Think-aloud Prompts",
+          "normalized_topic": "think-aloud prompts",
+          "minutes": 25
+        },
+        {
+          "topic": "Usability Findings",
+          "normalized_topic": "usability findings",
+          "minutes": 40
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-03; that date is still available."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 100,
+      "daily_minutes": {
+        "2027-02-01": 40,
+        "2027-02-02": 35,
+        "2027-02-03": 25
+      },
+      "topic_minutes": [
+        {
+          "topic": "Task Scenarios",
+          "normalized_topic": "task scenarios",
+          "minutes": 35
+        },
+        {
+          "topic": "Think-aloud Prompts",
+          "normalized_topic": "think-aloud prompts",
+          "minutes": 25
+        },
+        {
+          "topic": "Usability Findings",
+          "normalized_topic": "usability findings",
+          "minutes": 40
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-03; that date is still available."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The schedule allocates a minimum of 25 minutes per topic across the study window from 2027-02-01 to 2027-02-03, with no single day exceeding 40 minutes. All sessions are distributed to meet the minimum topic requirements while respecting the daily time limit.",
+    "derived_summary": "Calculated from the schedule: 100 minutes in total. Daily totals: 2027-02-01: 40 minutes; 2027-02-02: 35 minutes; 2027-02-03: 25 minutes. Topic totals: Task Scenarios: 35 minutes; Think-aloud Prompts: 25 minutes; Usability Findings: 40 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

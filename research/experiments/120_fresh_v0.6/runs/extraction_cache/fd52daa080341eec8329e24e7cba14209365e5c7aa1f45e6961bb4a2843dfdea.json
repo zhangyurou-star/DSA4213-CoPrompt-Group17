@@ -1,0 +1,94 @@
+{
+  "cache_key": "fd52daa080341eec8329e24e7cba14209365e5c7aa1f45e6961bb4a2843dfdea",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S3"
+    ],
+    "tone": [
+      "S2"
+    ],
+    "length": [],
+    "required_content": [
+      "S1"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 57,
+      "text": "Explain a self-testing routine using invented flashcards."
+    },
+    {
+      "id": "S2",
+      "start": 58,
+      "end": 107,
+      "text": "A supportive and practical tone suits this piece."
+    },
+    {
+      "id": "S3",
+      "start": 108,
+      "end": 173,
+      "text": "The audience is independent learners using a fictional card deck."
+    }
+  ],
+  "field_values": {
+    "audience": "The audience is independent learners using a fictional card deck.",
+    "tone": "A supportive and practical tone suits this piece.",
+    "length": null,
+    "required_content": "Explain a self-testing routine using invented flashcards."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 108,
+        "end": 173,
+        "quote": "The audience is independent learners using a fictional card deck."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 58,
+        "end": 107,
+        "quote": "A supportive and practical tone suits this piece."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S1",
+        "start": 0,
+        "end": 57,
+        "quote": "Explain a self-testing routine using invented flashcards."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S3\"],\"tone\":[\"S2\"],\"length\":[],\"required_content\":[\"S1\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S3"
+          ],
+          "tone": [
+            "S2"
+          ],
+          "length": [],
+          "required_content": [
+            "S1"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

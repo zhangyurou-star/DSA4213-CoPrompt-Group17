@@ -1,0 +1,96 @@
+{
+  "cache_key": "f31a7ad6a1d1883eda7a339d8073f4e48886fee8ef93c447696e9839664e6947",
+  "source_case_id": "NTCW12",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "Meet the Upside Umbrella—the whimsical wonder that collects sunshine in its handle and releases it at rainy birthdays! No more soggy parties or sad faces. When clouds gather and candles flicker, open your Upside Umbrella and watch golden light spill forth, turning dreary downpours into dazzling celebrations. It’s magic with a purpose: transforming rainy birthdays into joyful, luminous moments. The Upside Umbrella collects sunshine and turns gloom into glitter. Perfect for dreamers, pranksters, and anyone who believes in the impossible. Because life’s too short for ordinary umbrellas. The Upside Umbrella—where every storm brings a spark. Order yours today and make every rainy birthday shine!"
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Dear Seekers of the Sparkling Unexpected, meet the Upside Umbrella—the only umbrella that turns gloom into glitter! Crafted from moonlit silk and stardust filaments, it collects sunshine in its golden handle, storing radiant joy for rainy birthdays. When clouds weep and cake candles flicker, simply open the Upside Umbrella and watch it release a cascade of warm, golden light—perfect for turning sad showers into magical celebrations. No more damp socks or drooping spirits! The Upside Umbrella transforms rainy birthdays into luminous, laughter-filled moments. Because life’s too short for dull weather and ordinary umbrellas. Embrace the impossible. The Upside Umbrella collects sunshine and turns rainy birthdays into dazzling wonders. Order yours today—your next birthday deserves a miracle!\"\n}",
+      "parsed": {
+        "text": "Dear Seekers of the Sparkling Unexpected, meet the Upside Umbrella—the only umbrella that turns gloom into glitter! Crafted from moonlit silk and stardust filaments, it collects sunshine in its golden handle, storing radiant joy for rainy birthdays. When clouds weep and cake candles flicker, simply open the Upside Umbrella and watch it release a cascade of warm, golden light—perfect for turning sad showers into magical celebrations. No more damp socks or drooping spirits! The Upside Umbrella transforms rainy birthdays into luminous, laughter-filled moments. Because life’s too short for dull weather and ordinary umbrellas. Embrace the impossible. The Upside Umbrella collects sunshine and turns rainy birthdays into dazzling wonders. Order yours today—your next birthday deserves a miracle!"
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        },
+        "source": [
+          {
+            "source": "visible_exchange",
+            "exchange_index": 0,
+            "field_id": "length",
+            "quote": "Keep the complete piece to 55–85 words."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 119}"
+  ],
+  "constraint_checks_final": [
+    "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 106}"
+  ],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"Meet the Upside Umbrella—the whimsical wonder that collects sunshine in its handle and releases it at rainy birthdays! No more soggy parties or sad faces. When clouds gather and candles flicker, open your Upside Umbrella and watch golden light spill forth, turning dreary downpours into dazzling celebrations. It’s magic with a purpose: transforming rainy birthdays into joyful, luminous moments. The Upside Umbrella collects sunshine and turns gloom into glitter. Perfect for dreamers, pranksters, and anyone who believes in the impossible. Because life’s too short for ordinary umbrellas. The Upside Umbrella—where every storm brings a spark. Order yours today and make every rainy birthday shine!\"\n}",
+    "parsed": {
+      "text": "Meet the Upside Umbrella—the whimsical wonder that collects sunshine in its handle and releases it at rainy birthdays! No more soggy parties or sad faces. When clouds gather and candles flicker, open your Upside Umbrella and watch golden light spill forth, turning dreary downpours into dazzling celebrations. It’s magic with a purpose: transforming rainy birthdays into joyful, luminous moments. The Upside Umbrella collects sunshine and turns gloom into glitter. Perfect for dreamers, pranksters, and anyone who believes in the impossible. Because life’s too short for ordinary umbrellas. The Upside Umbrella—where every storm brings a spark. Order yours today and make every rainy birthday shine!"
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 119
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 119}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 106
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 106}"
+    ],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

@@ -1,0 +1,49 @@
+{
+  "cache_key": "22c826292caf82230fa6851922ad203bb54fc7307e425b8c9cdf25f33a8aa4d0",
+  "source_case_id": "NTCW04",
+  "source_policy": "direct",
+  "output": {
+    "text": "To those who know the tale of the glass fox, hear now a softer ending. When the final moon rose, the glass fox stood before the tower, its heart a quiet flame. It did not reach for the jeweled key, nor did it weep for what it had lost. Instead, it laid an ordinary stone upon the threshold—simple, unadorned, true. And the door stayed open. Not by magic, but by choice. The glass fox stepped through, not as a prisoner, but as a friend. And the door stayed open, waiting not for a key, but for the courage to enter. The glass fox, the ordinary stone, the door stayed open."
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"To those who know the tale of the glass fox, hear now a softer ending. When the final moon rose, the glass fox stood before the tower, its heart a quiet flame. It did not reach for the jeweled key, nor did it weep for what it had lost. Instead, it laid an ordinary stone upon the threshold—simple, unadorned, true. And the door stayed open. Not by magic, but by choice. The glass fox stepped through, not as a prisoner, but as a friend. And the door stayed open, waiting not for a key, but for the courage to enter. The glass fox, the ordinary stone, the door stayed open.\"}",
+      "parsed": {
+        "text": "To those who know the tale of the glass fox, hear now a softer ending. When the final moon rose, the glass fox stood before the tower, its heart a quiet flame. It did not reach for the jeweled key, nor did it weep for what it had lost. Instead, it laid an ordinary stone upon the threshold—simple, unadorned, true. And the door stayed open. Not by magic, but by choice. The glass fox stepped through, not as a prisoner, but as a friend. And the door stayed open, waiting not for a key, but for the courage to enter. The glass fox, the ordinary stone, the door stayed open."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 111
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 111
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

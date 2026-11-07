@@ -1,0 +1,145 @@
+{
+  "cache_key": "8c0fd92d5e64d00d9b0bd5b0ad7f5bedf82fc636a4172931f350f385b6cd8600",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [],
+    "tone": [
+      "S2"
+    ],
+    "length": [
+      "S3"
+    ],
+    "required_content": [
+      "S4",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 52,
+      "text": "Draft a creative commission brief for a fantasy map."
+    },
+    {
+      "id": "S2",
+      "start": 53,
+      "end": 92,
+      "text": "Make the voice precise and imaginative."
+    },
+    {
+      "id": "S3",
+      "start": 93,
+      "end": 125,
+      "text": "Write 65 to 95 words altogether."
+    },
+    {
+      "id": "S4",
+      "start": 126,
+      "end": 271,
+      "text": "Include the following invented details: The commissioned map depicts Glass Marsh with three floating islands connected by dotted migration paths."
+    },
+    {
+      "id": "S5",
+      "start": 272,
+      "end": 306,
+      "text": "Water is shown as uncolored paper."
+    },
+    {
+      "id": "S6",
+      "start": 307,
+      "end": 380,
+      "text": "Include no compass rose because direction changes in this invented world."
+    },
+    {
+      "id": "S7",
+      "start": 381,
+      "end": 470,
+      "text": "Preserve these exact phrases: \"Glass Marsh\", \"three floating islands\", \"no compass rose\"."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": "Make the voice precise and imaginative.",
+    "length": "Write 65 to 95 words altogether.",
+    "required_content": "Include the following invented details: The commissioned map depicts Glass Marsh with three floating islands connected by dotted migration paths.\nWater is shown as uncolored paper.\nInclude no compass rose because direction changes in this invented world.\nPreserve these exact phrases: \"Glass Marsh\", \"three floating islands\", \"no compass rose\"."
+  },
+  "evidence": {
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 53,
+        "end": 92,
+        "quote": "Make the voice precise and imaginative."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 93,
+        "end": 125,
+        "quote": "Write 65 to 95 words altogether."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 126,
+        "end": 271,
+        "quote": "Include the following invented details: The commissioned map depicts Glass Marsh with three floating islands connected by dotted migration paths."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 272,
+        "end": 306,
+        "quote": "Water is shown as uncolored paper."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 307,
+        "end": 380,
+        "quote": "Include no compass rose because direction changes in this invented world."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 381,
+        "end": 470,
+        "quote": "Preserve these exact phrases: \"Glass Marsh\", \"three floating islands\", \"no compass rose\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[],\"tone\":[\"S2\"],\"length\":[\"S3\"],\"required_content\":[\"S4\",\"S5\",\"S6\",\"S7\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [],
+          "tone": [
+            "S2"
+          ],
+          "length": [
+            "S3"
+          ],
+          "required_content": [
+            "S4",
+            "S5",
+            "S6",
+            "S7"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

@@ -1,0 +1,49 @@
+{
+  "cache_key": "6e50784924bb953062f11e5ba6e4f09858ea7b2fbc09c3c7aac49c7f85604919",
+  "source_case_id": "NTCW12",
+  "source_policy": "direct",
+  "output": {
+    "text": "✨ UNLEASH THE MAGIC, ONE DROP AT A TIME! ✨\n\nDear Dreamers, Dabblers, and Daily Wonder-Seekers of *The Quirky Quarterly*—\n\nHave you ever stood beneath a storm cloud and thought, *‘I wish this rain would dance instead of drizzle’*? Well, your wish has just been granted—by the most enchanted, mischievous, and utterly delightful invention since the first floating teacup: THE AETHERWAND UMBRELLA!\n\nImagine: You open it, and instead of a simple canopy, a shimmering aurora of bioluminescent petals unfurls—each one humming a different note from a forgotten lullaby. Raindrops don’t just fall… they *butterfly*. They spiral into tiny rainbows, tickle your nose with giggles, and vanish into the air like dandelion seeds on a summer breeze.\n\nBut wait—there’s more! When the skies grow bold, the Aetherwand doesn’t just shield you… it *sings*. A gentle, chime-like melody swells from its handle, harmonizing with the storm’s rhythm. And if you’re feeling particularly whimsical? Tap the silver phoenix finial three times, and—voilà!—you’re lifted gently into the air, floating above puddles like a dandelion seed on a sigh.\n\nCrafted from moonlit willow and stitched with threads spun from starlight, the Aetherwand is not just an umbrella—it’s a companion. It remembers your favorite songs, changes color with your mood, and occasionally offers cryptic advice in riddles. (‘Why did the cloud blush? Because it saw the sky!’)\n\nPerfect for enchanted commutes, surprise picnics in the clouds, or simply turning a rainy Tuesday into a fairy tale. And yes—your cat will love it too. (They’re already plotting to steal it.)\n\nDon’t just survive the weather. *Waltz through it.*\n\n👉 Order your Aetherwand today at www.aetherwand.com (no, really—just tap the sky and it appears). Limited edition: Only 1,000 enchanted units exist. Once they’re gone, the rain will never be the same.\n\nWith sparkling mischief,\n\nThe Aetherwand Team\nP.S. If your umbrella starts whispering poetry, don’t panic. It’s just the magic settling in. 🌧️💫"
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"✨ UNLEASH THE MAGIC, ONE DROP AT A TIME! ✨\\n\\nDear Dreamers, Dabblers, and Daily Wonder-Seekers of *The Quirky Quarterly*—\\n\\nHave you ever stood beneath a storm cloud and thought, *‘I wish this rain would dance instead of drizzle’*? Well, your wish has just been granted—by the most enchanted, mischievous, and utterly delightful invention since the first floating teacup: THE AETHERWAND UMBRELLA!\\n\\nImagine: You open it, and instead of a simple canopy, a shimmering aurora of bioluminescent petals unfurls—each one humming a different note from a forgotten lullaby. Raindrops don’t just fall… they *butterfly*. They spiral into tiny rainbows, tickle your nose with giggles, and vanish into the air like dandelion seeds on a summer breeze.\\n\\nBut wait—there’s more! When the skies grow bold, the Aetherwand doesn’t just shield you… it *sings*. A gentle, chime-like melody swells from its handle, harmonizing with the storm’s rhythm. And if you’re feeling particularly whimsical? Tap the silver phoenix finial three times, and—voilà!—you’re lifted gently into the air, floating above puddles like a dandelion seed on a sigh.\\n\\nCrafted from moonlit willow and stitched with threads spun from starlight, the Aetherwand is not just an umbrella—it’s a companion. It remembers your favorite songs, changes color with your mood, and occasionally offers cryptic advice in riddles. (‘Why did the cloud blush? Because it saw the sky!’)\\n\\nPerfect for enchanted commutes, surprise picnics in the clouds, or simply turning a rainy Tuesday into a fairy tale. And yes—your cat will love it too. (They’re already plotting to steal it.)\\n\\nDon’t just survive the weather. *Waltz through it.*\\n\\n👉 Order your Aetherwand today at www.aetherwand.com (no, really—just tap the sky and it appears). Limited edition: Only 1,000 enchanted units exist. Once they’re gone, the rain will never be the same.\\n\\nWith sparkling mischief,\\n\\nThe Aetherwand Team\\nP.S. If your umbrella starts whispering poetry, don’t panic. It’s just the magic settling in. 🌧️💫\"\n}",
+      "parsed": {
+        "text": "✨ UNLEASH THE MAGIC, ONE DROP AT A TIME! ✨\n\nDear Dreamers, Dabblers, and Daily Wonder-Seekers of *The Quirky Quarterly*—\n\nHave you ever stood beneath a storm cloud and thought, *‘I wish this rain would dance instead of drizzle’*? Well, your wish has just been granted—by the most enchanted, mischievous, and utterly delightful invention since the first floating teacup: THE AETHERWAND UMBRELLA!\n\nImagine: You open it, and instead of a simple canopy, a shimmering aurora of bioluminescent petals unfurls—each one humming a different note from a forgotten lullaby. Raindrops don’t just fall… they *butterfly*. They spiral into tiny rainbows, tickle your nose with giggles, and vanish into the air like dandelion seeds on a summer breeze.\n\nBut wait—there’s more! When the skies grow bold, the Aetherwand doesn’t just shield you… it *sings*. A gentle, chime-like melody swells from its handle, harmonizing with the storm’s rhythm. And if you’re feeling particularly whimsical? Tap the silver phoenix finial three times, and—voilà!—you’re lifted gently into the air, floating above puddles like a dandelion seed on a sigh.\n\nCrafted from moonlit willow and stitched with threads spun from starlight, the Aetherwand is not just an umbrella—it’s a companion. It remembers your favorite songs, changes color with your mood, and occasionally offers cryptic advice in riddles. (‘Why did the cloud blush? Because it saw the sky!’)\n\nPerfect for enchanted commutes, surprise picnics in the clouds, or simply turning a rainy Tuesday into a fairy tale. And yes—your cat will love it too. (They’re already plotting to steal it.)\n\nDon’t just survive the weather. *Waltz through it.*\n\n👉 Order your Aetherwand today at www.aetherwand.com (no, really—just tap the sky and it appears). Limited edition: Only 1,000 enchanted units exist. Once they’re gone, the rain will never be the same.\n\nWith sparkling mischief,\n\nThe Aetherwand Team\nP.S. If your umbrella starts whispering poetry, don’t panic. It’s just the magic settling in. 🌧️💫"
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 323
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 323
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

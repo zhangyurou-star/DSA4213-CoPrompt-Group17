@@ -1,0 +1,286 @@
+{
+  "protocol_version": "0.6.0",
+  "created_utc": "2026-10-19T14:44:25.283740+00:00",
+  "status": "fixed_before_fresh_pilot_outputs",
+  "execution_mode": "solo_execution_with_context_separated_AI_case_authors",
+  "case_language": "en",
+  "explanation_language": "zh-CN",
+  "reference_date": "2027-02-01",
+  "research_question": "In newly authored constrained-writing and study-planning tasks, how does value-based clarification trade critical-constraint satisfaction against question burden compared with direct, exhaustive and prompt-only strategies?",
+  "dataset": {
+    "case_count": 120,
+    "split_targets": {
+      "design": 40,
+      "validation": 20,
+      "test": 60
+    },
+    "domain_balance": "Half constrained_writing and half study_planning within every split.",
+    "one_case_per_registered_family": true,
+    "allocation_plan": "data/allocation_plan.json",
+    "case_plan": "data/case_plan.json",
+    "old_cases_reused": 0,
+    "old_model_outputs_reused": 0,
+    "prior_extension40_reused": 0,
+    "newness_limit": "New authored situations, facts, requests and constraints; common task schemas and templates remain. Distinct registered families are a design control, not proof of semantic independence or broad representativeness."
+  },
+  "design_order": {
+    "pilot_a": {
+      "cases": 12,
+      "policies": [
+        "direct",
+        "exhaustive"
+      ],
+      "trajectories": 24,
+      "gate": "All24 records must be committed; at least10/12 cases must have both outputs parsed and scored. A scored quality of0 does not itself fail this engineering gate."
+    },
+    "pilot_b": {
+      "cases": 12,
+      "policies": [
+        "prompt_only",
+        "value_based"
+      ],
+      "trajectories": 24,
+      "provisional_lambda": 0.25
+    },
+    "design": {
+      "remaining_cases": 28,
+      "policies": [
+        "direct",
+        "exhaustive",
+        "prompt_only",
+        "value_based"
+      ],
+      "trajectories": 112,
+      "provisional_lambda": 0.25
+    },
+    "pilot_case_ids": [
+      "NDCW01",
+      "NDCW02",
+      "NDCW03",
+      "NDCW04",
+      "NDCW05",
+      "NDCW06",
+      "NDSP01",
+      "NDSP02",
+      "NDSP03",
+      "NDSP04",
+      "NDSP05",
+      "NDSP06"
+    ],
+    "design_total_trajectories": 160,
+    "pilot_is_subset_not_extra_cases": true,
+    "method_change_policy": "Fixed method for this version. On implementation failure stop and preserve records. Any change to prompts, scoring or experimental behavior requires an explicitly documented new version before further validation/test, not silent mutation or replacement of failed cases."
+  },
+  "systems": [
+    "direct",
+    "exhaustive",
+    "prompt_only",
+    "value_based"
+  ],
+  "max_question_items": 3,
+  "stopping_conditions": [
+    "ACT chosen",
+    "no eligible fields",
+    "public execute_now",
+    "question budget exhausted"
+  ],
+  "skip_decision_call_when_stopped": true,
+  "model": {
+    "provider": "openrouter",
+    "base_url": "https://openrouter.ai/api/v1",
+    "model": "qwen/qwen3-30b-a3b-instruct-2507",
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 20261013,
+    "max_output_tokens": {
+      "extraction": 512,
+      "decision": 1024,
+      "generation": 1024
+    },
+    "provider_routing": {
+      "order": [
+        "nebius/fp8"
+      ],
+      "only": [
+        "nebius/fp8"
+      ],
+      "allow_fallbacks": false,
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.11,
+        "completion": 0.35
+      }
+    }
+  },
+  "model_reproducibility_limit": "Fixed request seed does not guarantee hosted-model bitwise determinism.",
+  "value_policy": {
+    "importance_values": [
+      0,
+      0.5,
+      1
+    ],
+    "uncertainty_values": [
+      0.5,
+      1
+    ],
+    "score": "importance * uncertainty - lambda",
+    "ask_if": "max(score) > 0",
+    "lambda_candidates": [
+      0,
+      0.25,
+      0.5
+    ],
+    "selected_lambda": null,
+    "validation_cases": 20,
+    "validation_trajectories": 60,
+    "validation_target_mean_questions": 2,
+    "eligible_selection_order": [
+      "quality_desc",
+      "mean_questions_asc",
+      "lambda_desc"
+    ],
+    "no_eligible_selection_order": [
+      "mean_questions_asc",
+      "quality_desc",
+      "lambda_desc"
+    ],
+    "field_tie_break": "field_catalog_order",
+    "selection_result_file": "outputs/CoPrompt_正式验证_v0.6.0/lambda_selection.json",
+    "interpretation": "Mean questions<=2 is a burden ceiling, not a guarantee of fewer questions than exhaustive. No old selected threshold is inherited."
+  },
+  "generation": {
+    "shared_across_all_variants": true,
+    "format_repair_per_failed_call_max": 1,
+    "additional_public_constraint_repair_max": 1,
+    "max_generation_calls_including_both_repairs": 3,
+    "constraint_repair_information": "Only original public request and released field answers; never private annotations or feasible witnesses.",
+    "selection_of_repair": "Use a valid revised output even if its private score is lower; preserve valid draft if revision is invalid. No best-of selection using hidden scores.",
+    "plan_summary": "Derived from final schedule by the same deterministic rule for every variant."
+  },
+  "information_boundary": {
+    "model_inputs": "Public request, reference date, field catalog and already released answers only.",
+    "private_answers": "Fixed simulator response revealed only for the specifically asked field; unknown/declined remains unavailable.",
+    "annotations": "Used for offline validation and scoring, never prompts.",
+    "feasible_examples": "Authored hard-constraint feasibility witnesses only, not model results, comprehensive gold-quality outputs, model training examples or proof of full semantic correctness."
+  },
+  "cache_policy": {
+    "scope": "Fresh study only, starts empty. No imports from original80 or discarded120 extension.",
+    "allowed": "Exact same public request/settings/stage/repair first raw response, including malformed responses; shared extraction and final-generation pipeline results only within fresh study.",
+    "not_allowed": "Semantic similarity substitution, best-of responses, treating cache hits as independent model draws.",
+    "ownership": "Namespace plus fresh freeze hash marker; reject prepopulated unregistered cache directories."
+  },
+  "evaluation": {
+    "primary_quality": "Mean within-case critical-constraint pass fraction.",
+    "primary_burden": "Requested field items including repeated and invalid ASK.",
+    "failed_output_score": 0,
+    "scorer_exception": "unscored_pending_fix; blocks completion",
+    "primary_test_cases": 60,
+    "main_test_trajectories": 240,
+    "diagnostic": {
+      "size": 20,
+      "per_domain": 10,
+      "case_ids": [
+        "NTCW01",
+        "NTCW02",
+        "NTCW07",
+        "NTCW08",
+        "NTCW13",
+        "NTCW14",
+        "NTCW19",
+        "NTCW20",
+        "NTCW24",
+        "NTCW28",
+        "NTSP01",
+        "NTSP02",
+        "NTSP07",
+        "NTSP08",
+        "NTSP13",
+        "NTSP14",
+        "NTSP19",
+        "NTSP20",
+        "NTSP24",
+        "NTSP28"
+      ],
+      "selection_rule": "Per domain first2 complete, first2 critical, first2 mixed, first2 optional, first1 unavailable, first1 execute_now; fixed before writing and all new outputs.",
+      "variant": "importance=1; same selected lambda, uncertainty and question budget",
+      "additional_trajectories": 20,
+      "interpretation": "Paired diagnostic subset, not another independent experiment; may structurally overlap exhaustive at small lambda."
+    },
+    "paired_comparisons": [
+      "value_based - direct",
+      "value_based - exhaustive",
+      "value_based - prompt_only"
+    ],
+    "bootstrap": {
+      "unit": "matched_case",
+      "resamples": 10000,
+      "seed": 20261013,
+      "interval": "percentile_2.5_97.5",
+      "domain_stratified": true,
+      "family_policy": "one case per registered family"
+    },
+    "limitations": [
+      "Intervals reflect case variation within this synthetic distribution, not repeated model draws or model/provider uncertainty.",
+      "No multiple-comparison adjustment; comparisons and diagnostic subset are related.",
+      "Hard-constraint quality is not comprehensive usefulness; optional-field clarification may improve style or audience fit.",
+      "Writing automated checks measure length and required literal coverage, not all facts, narrative relations or creative merit; planning checks do not measure pedagogical quality. Witnesses are not comprehensive semantic gold answers.",
+      "Templates for date, time, topic coverage, length and literal inclusion are shared across splits. The test addresses new cases under shared task templates, not generalization to entirely unseen templates."
+    ],
+    "human_review": {
+      "cases": 20,
+      "variants_per_case": 5,
+      "outputs": 100,
+      "reviewers_required": 2,
+      "planned_individual_assessments": 200,
+      "completed_assessments": 0,
+      "status": "pending_actual_human_assignment_and_review",
+      "independent_ordering_and_identity_masking": true,
+      "review_dimensions": [
+        "usefulness",
+        "coherence",
+        "audience_fit",
+        "feasibility",
+        "unsupported_assumptions",
+        "unnecessary_questions"
+      ],
+      "authorship_exclusions": "Human coordinator must confirm actual reviewer eligibility, authorship/crossreview exclusions and whether outputs were previously seen.",
+      "deviation": "Reviewers have not been fixed before authoring. This differs from the original proposal; author/audit tasks do not satisfy human review."
+    }
+  },
+  "authoring_provenance": {
+    "authors_started_without_prior_conversation": true,
+    "allowed_author_inputs": [
+      "field catalog and schemas",
+      "fixed allocation",
+      "old family titles and planning topics for exclusion only",
+      "scoring and validation implementation source"
+    ],
+    "forbidden_author_inputs": [
+      "old initial requests and private answers",
+      "old model outputs or outcome statistics",
+      "old dataset builder with embedded cases"
+    ],
+    "coordinator_has_seen_historical_results": true,
+    "limits": "This is a new dataset evaluated with a historically developed method. Do not call it zero historical influence, double-blind authoring, or an untouched method-development process. Author isolation is an operational context boundary, not proof against all contamination.",
+    "pre_freeze_corrections": "Coordinator resolved four offline data issues documented in work/data_corrections_before_freeze.json; no model outputs existed. Original allocation and family registrations retained."
+  },
+  "budget_usd": {
+    "authority": "../../runs/authorized_pilot_budget.json",
+    "authorized_cumulative_total_at_preparation": 0.25,
+    "accounted_before_fresh": 0.08857385,
+    "remaining_at_preparation": 0.16142615,
+    "rule": "Each API call guarded by unchanged cumulative ledger; no reset, no automatic increase. Failed unknown-cost reserves remain. Budget exhaustion saves progress and stops.",
+    "forecast": "work/budget_forecast.json",
+    "interruption_rule": "Fresh runtime additionally reserves a conservative per-request amount durably before dispatch. Unknown interruptions retain the reserve; settlement recovery is narrowly journaled and does not reset other historical evidence."
+  },
+  "total_logical_trajectories": 480,
+  "changes_from_proposal": [
+    "New120 authored after historical method development; all data and outputs newly generated, with history disclosed.",
+    "Public-constraint generation repair and derived schedule summary retained from version0.4 and applied equally.",
+    "Two human reviewers not assigned before case authoring; review not yet completed.",
+    "Budget follows explicit user cumulative USD0.25 authorization, not the proposal planning budget."
+  ],
+  "supersedes_for_future_execution": "../120_v0.5 (80+40 unexecuted expansion retained as archive)",
+  "runtime_config": "config/openrouter.v0.6.formal.json",
+  "freeze_file": "data/formal_freeze_v0.6.0.json"
+}

@@ -1,0 +1,213 @@
+{
+  "cache_key": "b7f7d7a6ee94c1e614d77e37a58b0047217420e8e6158f32e90d7e8d6e1c88a1",
+  "source_case_id": "NTSP07",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Reformulation",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Reformulation",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Reformulation",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Note-Taking Techniques",
+        "minutes": 55
+      }
+    ],
+    "summary": "Calculated from the schedule: 110 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 20 minutes; 2027-02-03: 10 minutes; 2027-02-04: 55 minutes. Topic totals: Note-Taking Techniques: 55 minutes; Reformulation: 55 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Reformulation\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Reformulation\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Reformulation\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Note-Taking Techniques\",\n      \"minutes\": 55\n    }\n  ],\n  \"summary\": \"Reformulation is allocated a total of 55 minutes across the first three days, meeting the 25-minute minimum requirement. The final day is dedicated to Note-Taking Techniques, using the full 55-minute daily cap. All sessions fall within the specified date window and respect the daily 55-minute limit.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Reformulation",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Reformulation",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Reformulation",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Note-Taking Techniques",
+            "minutes": 55
+          }
+        ],
+        "summary": "Reformulation is allocated a total of 55 minutes across the first three days, meeting the 25-minute minimum requirement. The final day is dedicated to Note-Taking Techniques, using the full 55-minute daily cap. All sessions fall within the specified date window and respect the daily 55-minute limit."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 55
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "I can spare at most 55 minutes per day, counting every topic together."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use only dates from 2027-02-01 through 2027-02-04, including the final date."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 110,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 20,
+        "2027-02-03": 10,
+        "2027-02-04": 55
+      },
+      "topic_minutes": [
+        {
+          "topic": "Note-Taking Techniques",
+          "normalized_topic": "note-taking techniques",
+          "minutes": 55
+        },
+        {
+          "topic": "Reformulation",
+          "normalized_topic": "reformulation",
+          "minutes": 55
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 55
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use only dates from 2027-02-01 through 2027-02-04, including the final date."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 110,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 20,
+        "2027-02-03": 10,
+        "2027-02-04": 55
+      },
+      "topic_minutes": [
+        {
+          "topic": "Note-Taking Techniques",
+          "normalized_topic": "note-taking techniques",
+          "minutes": 55
+        },
+        {
+          "topic": "Reformulation",
+          "normalized_topic": "reformulation",
+          "minutes": 55
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 55
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use only dates from 2027-02-01 through 2027-02-04, including the final date."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "Reformulation is allocated a total of 55 minutes across the first three days, meeting the 25-minute minimum requirement. The final day is dedicated to Note-Taking Techniques, using the full 55-minute daily cap. All sessions fall within the specified date window and respect the daily 55-minute limit.",
+    "derived_summary": "Calculated from the schedule: 110 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 20 minutes; 2027-02-03: 10 minutes; 2027-02-04: 55 minutes. Topic totals: Note-Taking Techniques: 55 minutes; Reformulation: 55 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

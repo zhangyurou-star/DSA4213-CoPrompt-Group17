@@ -1,0 +1,213 @@
+{
+  "cache_key": "a69651445c6ac90db87cdbcb835ff815b8359b888f740e28678e853909434fff",
+  "source_case_id": "NVSP06",
+  "source_policy": "value_based",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Battery diagrams and cell theory basics",
+        "minutes": 40
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Electrode reactions in galvanic cells",
+        "minutes": 40
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Cell potential and diagram interpretation",
+        "minutes": 40
+      }
+    ],
+    "summary": "Calculated from the schedule: 120 minutes in total. Daily totals: 2027-02-01: 40 minutes; 2027-02-02: 40 minutes; 2027-02-03: 40 minutes. Topic totals: Battery diagrams and cell theory basics: 40 minutes; Cell potential and diagram interpretation: 40 minutes; Electrode reactions in galvanic cells: 40 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Battery diagrams and cell theory basics\",\n      \"minutes\": 40\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Electrode reactions in galvanic cells\",\n      \"minutes\": 40\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Cell potential and diagram interpretation\",\n      \"minutes\": 40\n    }\n  ],\n  \"summary\": \"The study plan covers battery diagrams and cell theory across three days, with 40 minutes of focused study each day, fully utilizing the available window from 2027-02-01 to 2027-02-03.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Battery diagrams and cell theory basics",
+            "minutes": 40
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Electrode reactions in galvanic cells",
+            "minutes": 40
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Cell potential and diagram interpretation",
+            "minutes": 40
+          }
+        ],
+        "summary": "The study plan covers battery diagrams and cell theory across three days, with 40 minutes of focused study each day, fully utilizing the available window from 2027-02-01 to 2027-02-03."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-03; that date is still available."
+        }
+      },
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "My study window closes on 2027-02-03; that date is still available."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 120,
+      "daily_minutes": {
+        "2027-02-01": 40,
+        "2027-02-02": 40,
+        "2027-02-03": 40
+      },
+      "topic_minutes": [
+        {
+          "topic": "Battery diagrams and cell theory basics",
+          "normalized_topic": "battery diagrams and cell theory basics",
+          "minutes": 40
+        },
+        {
+          "topic": "Cell potential and diagram interpretation",
+          "normalized_topic": "cell potential and diagram interpretation",
+          "minutes": 40
+        },
+        {
+          "topic": "Electrode reactions in galvanic cells",
+          "normalized_topic": "electrode reactions in galvanic cells",
+          "minutes": 40
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-03; that date is still available."
+        }
+      },
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "My study window closes on 2027-02-03; that date is still available."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 120,
+      "daily_minutes": {
+        "2027-02-01": 40,
+        "2027-02-02": 40,
+        "2027-02-03": 40
+      },
+      "topic_minutes": [
+        {
+          "topic": "Battery diagrams and cell theory basics",
+          "normalized_topic": "battery diagrams and cell theory basics",
+          "minutes": 40
+        },
+        {
+          "topic": "Cell potential and diagram interpretation",
+          "normalized_topic": "cell potential and diagram interpretation",
+          "minutes": 40
+        },
+        {
+          "topic": "Electrode reactions in galvanic cells",
+          "normalized_topic": "electrode reactions in galvanic cells",
+          "minutes": 40
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-03; that date is still available."
+        }
+      },
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "My study window closes on 2027-02-03; that date is still available."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study plan covers battery diagrams and cell theory across three days, with 40 minutes of focused study each day, fully utilizing the available window from 2027-02-01 to 2027-02-03.",
+    "derived_summary": "Calculated from the schedule: 120 minutes in total. Daily totals: 2027-02-01: 40 minutes; 2027-02-02: 40 minutes; 2027-02-03: 40 minutes. Topic totals: Battery diagrams and cell theory basics: 40 minutes; Cell potential and diagram interpretation: 40 minutes; Electrode reactions in galvanic cells: 40 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

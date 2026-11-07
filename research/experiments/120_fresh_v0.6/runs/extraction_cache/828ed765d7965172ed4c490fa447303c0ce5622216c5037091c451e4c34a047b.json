@@ -1,0 +1,111 @@
+{
+  "cache_key": "828ed765d7965172ed4c490fa447303c0ce5622216c5037091c451e4c34a047b",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [],
+    "tone": [],
+    "length": [
+      "S5"
+    ],
+    "required_content": [
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 48,
+      "text": "Write a silent-film scene using visible actions."
+    },
+    {
+      "id": "S2",
+      "start": 49,
+      "end": 240,
+      "text": "These invented details are required: The scene shows a person hanging an empty picture frame, noticing a passing cloud through its open center, and repositioning it until the cloud is framed."
+    },
+    {
+      "id": "S3",
+      "start": 241,
+      "end": 278,
+      "text": "End with the person bows to the wall."
+    },
+    {
+      "id": "S4",
+      "start": 279,
+      "end": 380,
+      "text": "Include each of these exact strings: \"an empty picture frame\", \"a passing cloud\", \"bows to the wall\"."
+    },
+    {
+      "id": "S5",
+      "start": 381,
+      "end": 427,
+      "text": "The full text must be between 60 and 90 words."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": null,
+    "length": "The full text must be between 60 and 90 words.",
+    "required_content": "These invented details are required: The scene shows a person hanging an empty picture frame, noticing a passing cloud through its open center, and repositioning it until the cloud is framed.\nEnd with the person bows to the wall.\nInclude each of these exact strings: \"an empty picture frame\", \"a passing cloud\", \"bows to the wall\"."
+  },
+  "evidence": {
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 381,
+        "end": 427,
+        "quote": "The full text must be between 60 and 90 words."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 49,
+        "end": 240,
+        "quote": "These invented details are required: The scene shows a person hanging an empty picture frame, noticing a passing cloud through its open center, and repositioning it until the cloud is framed."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 241,
+        "end": 278,
+        "quote": "End with the person bows to the wall."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 279,
+        "end": 380,
+        "quote": "Include each of these exact strings: \"an empty picture frame\", \"a passing cloud\", \"bows to the wall\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[],\"tone\":[],\"length\":[\"S5\"],\"required_content\":[\"S2\",\"S3\",\"S4\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [],
+          "tone": [],
+          "length": [
+            "S5"
+          ],
+          "required_content": [
+            "S2",
+            "S3",
+            "S4"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

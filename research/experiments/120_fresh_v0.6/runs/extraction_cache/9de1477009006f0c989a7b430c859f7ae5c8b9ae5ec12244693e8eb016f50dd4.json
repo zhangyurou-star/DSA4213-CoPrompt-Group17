@@ -1,0 +1,93 @@
+{
+  "cache_key": "9de1477009006f0c989a7b430c859f7ae5c8b9ae5ec12244693e8eb016f50dd4",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S5"
+    ],
+    "available_time": [],
+    "topics": [
+      "S4"
+    ],
+    "priorities": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 59,
+      "text": "I am studying an introductory insurance glossary for class."
+    },
+    {
+      "id": "S2",
+      "start": 60,
+      "end": 107,
+      "text": "Make a revision schedule for the core concepts."
+    },
+    {
+      "id": "S3",
+      "start": 108,
+      "end": 128,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 129,
+      "end": 260,
+      "text": "The syllabus consists of \"Indemnity\", \"Insurable Interest\", \"Subrogation\"; each named topic needs a minimum of 25 minutes in total."
+    },
+    {
+      "id": "S5",
+      "start": 261,
+      "end": 328,
+      "text": "My study window closes on 2027-02-06; that date is still available."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": null,
+    "topics": "The syllabus consists of \"Indemnity\", \"Insurable Interest\", \"Subrogation\"; each named topic needs a minimum of 25 minutes in total.",
+    "priorities": null
+  },
+  "evidence": {
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 129,
+        "end": 260,
+        "quote": "The syllabus consists of \"Indemnity\", \"Insurable Interest\", \"Subrogation\"; each named topic needs a minimum of 25 minutes in total."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "deadline",
+      "proposed_evidence": [
+        "S5"
+      ],
+      "proposed_value": "My study window closes on 2027-02-06; that date is still available.",
+      "reason": "quote_has_no_explicit_endpoint_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S5\"],\"available_time\":[],\"topics\":[\"S4\"],\"priorities\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S5"
+          ],
+          "available_time": [],
+          "topics": [
+            "S4"
+          ],
+          "priorities": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

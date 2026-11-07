@@ -1,0 +1,130 @@
+{
+  "cache_key": "7c6eafcfe109fda2a1f8d96a432a1e9778b73f561368c54d05fa86dd03c3a254",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [],
+    "length": [
+      "S6"
+    ],
+    "required_content": [
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 62,
+      "text": "Offer a literary interpretation of an invented dream sequence."
+    },
+    {
+      "id": "S2",
+      "start": 63,
+      "end": 118,
+      "text": "Write for readers discussing an invented surreal story."
+    },
+    {
+      "id": "S3",
+      "start": 119,
+      "end": 223,
+      "text": "These invented details are required: The dream shows a staircase of cups reaching toward the locked sky."
+    },
+    {
+      "id": "S4",
+      "start": 224,
+      "end": 323,
+      "text": "Interpret it as an unfinished conversation, while allowing a second reading about fragile ambition."
+    },
+    {
+      "id": "S5",
+      "start": 324,
+      "end": 431,
+      "text": "Include each of these exact strings: \"a staircase of cups\", \"the locked sky\", \"an unfinished conversation\"."
+    },
+    {
+      "id": "S6",
+      "start": 432,
+      "end": 488,
+      "text": "The total word count must fall from 55 to 85, inclusive."
+    }
+  ],
+  "field_values": {
+    "audience": "Write for readers discussing an invented surreal story.",
+    "tone": null,
+    "length": "The total word count must fall from 55 to 85, inclusive.",
+    "required_content": "These invented details are required: The dream shows a staircase of cups reaching toward the locked sky.\nInterpret it as an unfinished conversation, while allowing a second reading about fragile ambition.\nInclude each of these exact strings: \"a staircase of cups\", \"the locked sky\", \"an unfinished conversation\"."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 63,
+        "end": 118,
+        "quote": "Write for readers discussing an invented surreal story."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 432,
+        "end": 488,
+        "quote": "The total word count must fall from 55 to 85, inclusive."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 119,
+        "end": 223,
+        "quote": "These invented details are required: The dream shows a staircase of cups reaching toward the locked sky."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 224,
+        "end": 323,
+        "quote": "Interpret it as an unfinished conversation, while allowing a second reading about fragile ambition."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 324,
+        "end": 431,
+        "quote": "Include each of these exact strings: \"a staircase of cups\", \"the locked sky\", \"an unfinished conversation\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[],\"length\":[\"S6\"],\"required_content\":[\"S3\",\"S4\",\"S5\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [],
+          "length": [
+            "S6"
+          ],
+          "required_content": [
+            "S3",
+            "S4",
+            "S5"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

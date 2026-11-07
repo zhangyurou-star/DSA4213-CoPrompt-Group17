@@ -1,0 +1,76 @@
+{
+  "cache_key": "b765f59c49058e9af0fb6f8f905316b9fa08ee9b9b519765bb90c2a2f2b2c8ce",
+  "source_case_id": "NTCW08",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "Attention, Nacre: a rare atmospheric event unfolds. Violet snow will descend upon the western dome during two short moons, casting an ethereal glow across the settlement. Unlike terrestrial snow, this crystalline precipitation floats upward when warmed by the low sun, creating a mesmerizing ascent. Residents should expect roofs to clear swiftly, while courtyards remain dusted longer. The phenomenon is both beautiful and fleeting—observe from sheltered walkways, and avoid direct exposure to the swirling hues. This is not a storm, but a celestial dance. Stay safe, stay awed. The western dome awaits its violet veil."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Attention, Nacre: a rare atmospheric event unfolds. Violet snow will descend upon the western dome during two short moons, casting an ethereal glow across the settlement. Unlike terrestrial snow, this crystalline precipitation floats upward when warmed by the low sun, creating a mesmerizing ascent. Residents should expect roofs to clear swiftly, while courtyards remain dusted longer. The phenomenon is both beautiful and fleeting—observe from sheltered walkways, and avoid direct exposure to the swirling hues. This is not a storm, but a celestial dance. Stay safe, stay awed. The western dome awaits its violet veil.\"\n}",
+      "parsed": {
+        "text": "Attention, Nacre: a rare atmospheric event unfolds. Violet snow will descend upon the western dome during two short moons, casting an ethereal glow across the settlement. Unlike terrestrial snow, this crystalline precipitation floats upward when warmed by the low sun, creating a mesmerizing ascent. Residents should expect roofs to clear swiftly, while courtyards remain dusted longer. The phenomenon is both beautiful and fleeting—observe from sheltered walkways, and avoid direct exposure to the swirling hues. This is not a storm, but a celestial dance. Stay safe, stay awed. The western dome awaits its violet veil."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 95
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 95
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

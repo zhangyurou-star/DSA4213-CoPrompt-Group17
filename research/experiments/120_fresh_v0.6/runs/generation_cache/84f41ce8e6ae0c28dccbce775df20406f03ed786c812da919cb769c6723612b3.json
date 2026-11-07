@@ -1,0 +1,119 @@
+{
+  "cache_key": "84f41ce8e6ae0c28dccbce775df20406f03ed786c812da919cb769c6723612b3",
+  "source_case_id": "NTCW13",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "One copper beetle, wiggling low, \nOn a leaf that glows with moonlit glow! \nTwo velvet moths, in silken flight, \nDance through the dark with gentle light. \nThree sleepy stars, in sky so wide, \nYawn and blink with sleepy pride. \nThey march in line, a tiny parade, \nWith twinkles bright and soft, unafraid. \nOne copper beetle, two velvet moths, \nThree sleepy stars—what a night of looms! \nThey giggle soft as the night winds play, \nIn this magical, moonlit ballet. \nOne copper beetle, two velvet moths, \nThree sleepy stars—what a dreamy troth!"
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"One copper beetle, wiggling low, \\nOn a leaf that glows with moonlit glow! \\nTwo velvet moths, in silken flight, \\nDance through the dark with gentle light. \\nThree sleepy stars, in sky so wide, \\nYawn and blink with sleepy pride. \\nThey march in line, a tiny parade, \\nWith twinkles bright and soft, unafraid. \\nOne copper beetle, two velvet moths, \\nThree sleepy stars—what a night of looms! \\nThey giggle soft as the night winds play, \\nIn this magical, moonlit ballet. \\nOne copper beetle, two velvet moths, \\nThree sleepy stars—what a dreamy troth!\"\n}",
+      "parsed": {
+        "text": "One copper beetle, wiggling low, \nOn a leaf that glows with moonlit glow! \nTwo velvet moths, in silken flight, \nDance through the dark with gentle light. \nThree sleepy stars, in sky so wide, \nYawn and blink with sleepy pride. \nThey march in line, a tiny parade, \nWith twinkles bright and soft, unafraid. \nOne copper beetle, two velvet moths, \nThree sleepy stars—what a night of looms! \nThey giggle soft as the night winds play, \nIn this magical, moonlit ballet. \nOne copper beetle, two velvet moths, \nThree sleepy stars—what a dreamy troth!"
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "one copper beetle",
+            "two velvet moths",
+            "three sleepy stars"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Include each of these exact strings: \"one copper beetle\", \"two velvet moths\", \"three sleepy stars\"."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 1,
+          "field_id": "length",
+          "quote": "Use at least 50 words and no more than 80 words in total."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 92
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "one copper beetle",
+            "two velvet moths",
+            "three sleepy stars"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 1,
+          "field_id": "length",
+          "quote": "Use at least 50 words and no more than 80 words in total."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 92
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "one copper beetle",
+            "two velvet moths",
+            "three sleepy stars"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 1,
+          "field_id": "length",
+          "quote": "Use at least 50 words and no more than 80 words in total."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

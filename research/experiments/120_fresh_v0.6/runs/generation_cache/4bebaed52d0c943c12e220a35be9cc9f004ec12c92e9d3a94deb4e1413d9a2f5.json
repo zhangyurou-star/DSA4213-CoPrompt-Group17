@@ -1,0 +1,128 @@
+{
+  "cache_key": "4bebaed52d0c943c12e220a35be9cc9f004ec12c92e9d3a94deb4e1413d9a2f5",
+  "source_case_id": "NDCW17",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "To the gathered townsfolk, we honor the Willow Span, that bridge of timber worn by forty winters. Its planks held market baskets and the light steps of brides, each footprint a memory. Now, in silence, we hear only footsteps in the wood—echoes of joy, of farewells, of lives crossed in quiet trust. May its spirit endure as steadfastly as its beams once did, and may we walk forward with the grace it taught us."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"To the gathered townsfolk, we bid farewell to the Willow Span, that steadfast arch of weathered timber, which has borne forty winters with quiet grace. Its boards, kissed by rain and sun, once bore market baskets heavy with harvest and the light steps of brides. Now, in stillness, we hear only the echo of footsteps in the wood—ghosts of laughter, of love, of lives crossed in quiet trust. May its memory hold as firm as its beams once did, and may we carry its quiet strength in our own steps forward.\"\n}",
+      "parsed": {
+        "text": "To the gathered townsfolk, we bid farewell to the Willow Span, that steadfast arch of weathered timber, which has borne forty winters with quiet grace. Its boards, kissed by rain and sun, once bore market baskets heavy with harvest and the light steps of brides. Now, in stillness, we hear only the echo of footsteps in the wood—ghosts of laughter, of love, of lives crossed in quiet trust. May its memory hold as firm as its beams once did, and may we carry its quiet strength in our own steps forward."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Keep the complete piece to 55–85 words."
+          }
+        ]
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the Willow Span",
+            "forty winters",
+            "footsteps in the wood"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Preserve these exact phrases: \"the Willow Span\", \"forty winters\", \"footsteps in the wood\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 92}"
+  ],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"To the gathered townsfolk, we honor the Willow Span, that bridge of timber worn by forty winters. Its planks held market baskets and the light steps of brides, each footprint a memory. Now, in silence, we hear only footsteps in the wood—echoes of joy, of farewells, of lives crossed in quiet trust. May its spirit endure as steadfastly as its beams once did, and may we walk forward with the grace it taught us.\"\n}",
+    "parsed": {
+      "text": "To the gathered townsfolk, we honor the Willow Span, that bridge of timber worn by forty winters. Its planks held market baskets and the light steps of brides, each footprint a memory. Now, in silence, we hear only footsteps in the wood—echoes of joy, of farewells, of lives crossed in quiet trust. May its spirit endure as steadfastly as its beams once did, and may we walk forward with the grace it taught us."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 92
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the Willow Span",
+            "forty winters",
+            "footsteps in the wood"
+          ]
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 92}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 75
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the Willow Span",
+            "forty winters",
+            "footsteps in the wood"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

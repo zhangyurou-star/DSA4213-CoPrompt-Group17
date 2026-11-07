@@ -1,0 +1,145 @@
+{
+  "cache_key": "2fff43154010029134e68cd585c23a879aca155076efbd4d02c5d495ad55b511",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [],
+    "tone": [
+      "S2"
+    ],
+    "length": [
+      "S3"
+    ],
+    "required_content": [
+      "S4",
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 46,
+      "text": "Compose a prose elegy for an imaginary bridge."
+    },
+    {
+      "id": "S2",
+      "start": 47,
+      "end": 84,
+      "text": "Make the voice dignified and wistful."
+    },
+    {
+      "id": "S3",
+      "start": 85,
+      "end": 124,
+      "text": "Keep the complete piece to 55–85 words."
+    },
+    {
+      "id": "S4",
+      "start": 125,
+      "end": 240,
+      "text": "Include the following invented details: The Willow Span is an imaginary timber bridge retiring after forty winters."
+    },
+    {
+      "id": "S5",
+      "start": 241,
+      "end": 299,
+      "text": "Its boards carried market baskets and wedding processions."
+    },
+    {
+      "id": "S6",
+      "start": 300,
+      "end": 336,
+      "text": "Use the image footsteps in the wood."
+    },
+    {
+      "id": "S7",
+      "start": 337,
+      "end": 427,
+      "text": "Preserve these exact phrases: \"the Willow Span\", \"forty winters\", \"footsteps in the wood\"."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": "Make the voice dignified and wistful.",
+    "length": "Keep the complete piece to 55–85 words.",
+    "required_content": "Include the following invented details: The Willow Span is an imaginary timber bridge retiring after forty winters.\nIts boards carried market baskets and wedding processions.\nUse the image footsteps in the wood.\nPreserve these exact phrases: \"the Willow Span\", \"forty winters\", \"footsteps in the wood\"."
+  },
+  "evidence": {
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 47,
+        "end": 84,
+        "quote": "Make the voice dignified and wistful."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 85,
+        "end": 124,
+        "quote": "Keep the complete piece to 55–85 words."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 125,
+        "end": 240,
+        "quote": "Include the following invented details: The Willow Span is an imaginary timber bridge retiring after forty winters."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 241,
+        "end": 299,
+        "quote": "Its boards carried market baskets and wedding processions."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 300,
+        "end": 336,
+        "quote": "Use the image footsteps in the wood."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 337,
+        "end": 427,
+        "quote": "Preserve these exact phrases: \"the Willow Span\", \"forty winters\", \"footsteps in the wood\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[],\"tone\":[\"S2\"],\"length\":[\"S3\"],\"required_content\":[\"S4\",\"S5\",\"S6\",\"S7\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [],
+          "tone": [
+            "S2"
+          ],
+          "length": [
+            "S3"
+          ],
+          "required_content": [
+            "S4",
+            "S5",
+            "S6",
+            "S7"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

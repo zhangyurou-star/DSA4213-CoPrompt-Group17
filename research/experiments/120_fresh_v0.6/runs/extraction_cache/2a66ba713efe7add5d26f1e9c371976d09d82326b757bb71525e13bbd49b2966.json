@@ -1,0 +1,100 @@
+{
+  "cache_key": "2a66ba713efe7add5d26f1e9c371976d09d82326b757bb71525e13bbd49b2966",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [
+      "S3"
+    ],
+    "length": [
+      "S4"
+    ],
+    "required_content": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 49,
+      "text": "Describe a fictional stage prop for a fabricator."
+    },
+    {
+      "id": "S2",
+      "start": 50,
+      "end": 100,
+      "text": "Its intended audience: a theatrical prop workshop."
+    },
+    {
+      "id": "S3",
+      "start": 101,
+      "end": 139,
+      "text": "Make the voice specific and practical."
+    },
+    {
+      "id": "S4",
+      "start": 140,
+      "end": 197,
+      "text": "Use at least 65 words and no more than 95 words in total."
+    }
+  ],
+  "field_values": {
+    "audience": "Its intended audience: a theatrical prop workshop.",
+    "tone": "Make the voice specific and practical.",
+    "length": "Use at least 65 words and no more than 95 words in total.",
+    "required_content": null
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 50,
+        "end": 100,
+        "quote": "Its intended audience: a theatrical prop workshop."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 101,
+        "end": 139,
+        "quote": "Make the voice specific and practical."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 140,
+        "end": 197,
+        "quote": "Use at least 65 words and no more than 95 words in total."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[\"S3\"],\"length\":[\"S4\"],\"required_content\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [
+            "S3"
+          ],
+          "length": [
+            "S4"
+          ],
+          "required_content": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

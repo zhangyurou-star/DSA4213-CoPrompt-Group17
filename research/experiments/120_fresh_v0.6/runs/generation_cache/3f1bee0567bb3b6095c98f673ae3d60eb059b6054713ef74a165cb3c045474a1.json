@@ -1,0 +1,89 @@
+{
+  "cache_key": "3f1bee0567bb3b6095c98f673ae3d60eb059b6054713ef74a165cb3c045474a1",
+  "source_case_id": "NDCW13",
+  "source_policy": "prompt_only",
+  "output": {
+    "text": "Ladies and gentlemen of the jury, we are asked to convict based on suspicion, on a single feather and an open window. But let us be clear: suspicion is not proof. The prosecution points to an open window and a feather on the sill as if they tell a complete story. Yet they do not. They do not tell us who opened the window. They do not tell us when. They do not tell us why. All we know is that the silver bell is missing. But missing does not mean stolen. Missing does not mean the accused took it. There is no evidence linking the accused to the bell. No fingerprints. No confession. No witness saw the accused enter the room. No witness saw the accused leave. No witness saw the accused near the bell at all. The only thing we have is an open window and a feather. And from that, the prosecution asks you to believe the accused is guilty. But that is not justice. That is fear dressed as fact. You must not let fear decide this case. You must let reason. You must let truth. The burden of proof is on the prosecution. And they have not met it. The silver bell may be gone, but the truth is still here. And the truth is this: without a single witness, without a single piece of direct evidence, we cannot convict. Not on a feather. Not on an open window. Not on suspicion. You must return a verdict of not guilty. Because in this courtroom, justice demands more than what is imagined. It demands what is proven."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Ladies and gentlemen of the jury, we are asked to convict based on suspicion, on a single feather and an open window. But let us be clear: suspicion is not proof. The prosecution points to an open window and a feather on the sill as if they tell a complete story. Yet they do not. They do not tell us who opened the window. They do not tell us when. They do not tell us why. All we know is that the silver bell is missing. But missing does not mean stolen. Missing does not mean the accused took it. There is no evidence linking the accused to the bell. No fingerprints. No confession. No witness saw the accused enter the room. No witness saw the accused leave. No witness saw the accused near the bell at all. The only thing we have is an open window and a feather. And from that, the prosecution asks you to believe the accused is guilty. But that is not justice. That is fear dressed as fact. You must not let fear decide this case. You must let reason. You must let truth. The burden of proof is on the prosecution. And they have not met it. The silver bell may be gone, but the truth is still here. And the truth is this: without a single witness, without a single piece of direct evidence, we cannot convict. Not on a feather. Not on an open window. Not on suspicion. You must return a verdict of not guilty. Because in this courtroom, justice demands more than what is imagined. It demands what is proven.\"\n}",
+      "parsed": {
+        "text": "Ladies and gentlemen of the jury, we are asked to convict based on suspicion, on a single feather and an open window. But let us be clear: suspicion is not proof. The prosecution points to an open window and a feather on the sill as if they tell a complete story. Yet they do not. They do not tell us who opened the window. They do not tell us when. They do not tell us why. All we know is that the silver bell is missing. But missing does not mean stolen. Missing does not mean the accused took it. There is no evidence linking the accused to the bell. No fingerprints. No confession. No witness saw the accused enter the room. No witness saw the accused leave. No witness saw the accused near the bell at all. The only thing we have is an open window and a feather. And from that, the prosecution asks you to believe the accused is guilty. But that is not justice. That is fear dressed as fact. You must not let fear decide this case. You must let reason. You must let truth. The burden of proof is on the prosecution. And they have not met it. The silver bell may be gone, but the truth is still here. And the truth is this: without a single witness, without a single piece of direct evidence, we cannot convict. Not on a feather. Not on an open window. Not on suspicion. You must return a verdict of not guilty. Because in this courtroom, justice demands more than what is imagined. It demands what is proven."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the silver bell",
+            "an open window",
+            "no witness saw"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Preserve these exact phrases: \"the silver bell\", \"an open window\", \"no witness saw\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 271
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the silver bell",
+            "an open window",
+            "no witness saw"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 271
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the silver bell",
+            "an open window",
+            "no witness saw"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

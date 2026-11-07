@@ -1,0 +1,49 @@
+{
+  "cache_key": "c57028cdc24531794025ce213298cefb9579cb995e87384ef227eddfa4aac9bb",
+  "source_case_id": "NDCW14",
+  "source_policy": "value_based",
+  "output": {
+    "text": "Welcome, seeker of stars, to the Sleepless Observatory—where time stands still and the sky holds its breath. Four sealed drawers lie before you, each hiding a fragment of a forgotten sky chart. Before dawn breaks, you must restore the celestial map so the keeper may find the missing constellation. The stars are waiting. Begin."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Welcome, seeker of stars, to the Sleepless Observatory—where time stands still and the sky holds its breath. Four sealed drawers lie before you, each hiding a fragment of a forgotten sky chart. Before dawn breaks, you must restore the celestial map so the keeper may find the missing constellation. The stars are waiting. Begin.\"\n}",
+      "parsed": {
+        "text": "Welcome, seeker of stars, to the Sleepless Observatory—where time stands still and the sky holds its breath. Four sealed drawers lie before you, each hiding a fragment of a forgotten sky chart. Before dawn breaks, you must restore the celestial map so the keeper may find the missing constellation. The stars are waiting. Begin."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 55
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 55
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

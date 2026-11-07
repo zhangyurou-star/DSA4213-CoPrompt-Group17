@@ -1,0 +1,126 @@
+{
+  "cache_key": "e6e8dd1f2467d39ab02cb870cf1c5f0c01b3309cc8a188ac39c6b5a159d42f29",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [],
+    "tone": [],
+    "length": [
+      "S6"
+    ],
+    "required_content": [
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 62,
+      "text": "Explain an exception in a fictional fabrication specification."
+    },
+    {
+      "id": "S2",
+      "start": 63,
+      "end": 179,
+      "text": "Build the piece around these synthetic facts: Panel C may retain a two millimeter gap because it is decorative only."
+    },
+    {
+      "id": "S3",
+      "start": 180,
+      "end": 220,
+      "text": "It bears no load in the fictional model."
+    },
+    {
+      "id": "S4",
+      "start": 221,
+      "end": 306,
+      "text": "All other panels keep the drawn fit; the exception is not a general tolerance change."
+    },
+    {
+      "id": "S5",
+      "start": 307,
+      "end": 391,
+      "text": "The text must contain \"Panel C\", \"a two millimeter gap\", \"decorative only\" verbatim."
+    },
+    {
+      "id": "S6",
+      "start": 392,
+      "end": 449,
+      "text": "Use at least 60 words and no more than 90 words in total."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": null,
+    "length": "Use at least 60 words and no more than 90 words in total.",
+    "required_content": "Build the piece around these synthetic facts: Panel C may retain a two millimeter gap because it is decorative only.\nIt bears no load in the fictional model.\nAll other panels keep the drawn fit; the exception is not a general tolerance change.\nThe text must contain \"Panel C\", \"a two millimeter gap\", \"decorative only\" verbatim."
+  },
+  "evidence": {
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 392,
+        "end": 449,
+        "quote": "Use at least 60 words and no more than 90 words in total."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 63,
+        "end": 179,
+        "quote": "Build the piece around these synthetic facts: Panel C may retain a two millimeter gap because it is decorative only."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 180,
+        "end": 220,
+        "quote": "It bears no load in the fictional model."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 221,
+        "end": 306,
+        "quote": "All other panels keep the drawn fit; the exception is not a general tolerance change."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 307,
+        "end": 391,
+        "quote": "The text must contain \"Panel C\", \"a two millimeter gap\", \"decorative only\" verbatim."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[],\"tone\":[],\"length\":[\"S6\"],\"required_content\":[\"S2\",\"S3\",\"S4\",\"S5\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [],
+          "tone": [],
+          "length": [
+            "S6"
+          ],
+          "required_content": [
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

@@ -1,0 +1,210 @@
+{
+  "cache_key": "831ee31f3551fc100c69247e8747d9c21f592ebde0056e9492023526986580d7",
+  "source_case_id": "NDSP03",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Quarantine Checks",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Sticky Trap Logs",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Pest Evidence Recognition",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Quarantine Checks",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Sticky Trap Logs",
+        "minutes": 10
+      }
+    ],
+    "summary": "Calculated from the schedule: 100 minutes in total. Daily totals: 2027-02-01: 20 minutes; 2027-02-02: 25 minutes; 2027-02-03: 30 minutes; 2027-02-04: 15 minutes; 2027-02-05: 10 minutes. Topic totals: Pest Evidence Recognition: 30 minutes; Quarantine Checks: 35 minutes; Sticky Trap Logs: 35 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Quarantine Checks\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Sticky Trap Logs\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Pest Evidence Recognition\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Quarantine Checks\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Sticky Trap Logs\",\n      \"minutes\": 10\n    }\n  ],\n  \"summary\": \"The study plan covers all required topics—Quarantine Checks, Sticky Trap Logs, and Pest Evidence Recognition—with a total of at least 20 minutes per topic. All sessions are scheduled between 2027-02-01 and 2027-02-05, inclusive, and no session exceeds a single day's study limit. The total time allocated is 100 minutes, distributed across five sessions to ensure balanced preparation before the volunteer task.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Quarantine Checks",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Sticky Trap Logs",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Pest Evidence Recognition",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Quarantine Checks",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Sticky Trap Logs",
+            "minutes": 10
+          }
+        ],
+        "summary": "The study plan covers all required topics—Quarantine Checks, Sticky Trap Logs, and Pest Evidence Recognition—with a total of at least 20 minutes per topic. All sessions are scheduled between 2027-02-01 and 2027-02-05, inclusive, and no session exceeds a single day's study limit. The total time allocated is 100 minutes, distributed across five sessions to ensure balanced preparation before the volunteer task."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Finish all scheduled study no later than 2027-02-05, inclusive."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 100,
+      "daily_minutes": {
+        "2027-02-01": 20,
+        "2027-02-02": 25,
+        "2027-02-03": 30,
+        "2027-02-04": 15,
+        "2027-02-05": 10
+      },
+      "topic_minutes": [
+        {
+          "topic": "Pest Evidence Recognition",
+          "normalized_topic": "pest evidence recognition",
+          "minutes": 30
+        },
+        {
+          "topic": "Quarantine Checks",
+          "normalized_topic": "quarantine checks",
+          "minutes": 35
+        },
+        {
+          "topic": "Sticky Trap Logs",
+          "normalized_topic": "sticky trap logs",
+          "minutes": 35
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Finish all scheduled study no later than 2027-02-05, inclusive."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 100,
+      "daily_minutes": {
+        "2027-02-01": 20,
+        "2027-02-02": 25,
+        "2027-02-03": 30,
+        "2027-02-04": 15,
+        "2027-02-05": 10
+      },
+      "topic_minutes": [
+        {
+          "topic": "Pest Evidence Recognition",
+          "normalized_topic": "pest evidence recognition",
+          "minutes": 30
+        },
+        {
+          "topic": "Quarantine Checks",
+          "normalized_topic": "quarantine checks",
+          "minutes": 35
+        },
+        {
+          "topic": "Sticky Trap Logs",
+          "normalized_topic": "sticky trap logs",
+          "minutes": 35
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Finish all scheduled study no later than 2027-02-05, inclusive."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study plan covers all required topics—Quarantine Checks, Sticky Trap Logs, and Pest Evidence Recognition—with a total of at least 20 minutes per topic. All sessions are scheduled between 2027-02-01 and 2027-02-05, inclusive, and no session exceeds a single day's study limit. The total time allocated is 100 minutes, distributed across five sessions to ensure balanced preparation before the volunteer task.",
+    "derived_summary": "Calculated from the schedule: 100 minutes in total. Daily totals: 2027-02-01: 20 minutes; 2027-02-02: 25 minutes; 2027-02-03: 30 minutes; 2027-02-04: 15 minutes; 2027-02-05: 10 minutes. Topic totals: Pest Evidence Recognition: 30 minutes; Quarantine Checks: 35 minutes; Sticky Trap Logs: 35 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

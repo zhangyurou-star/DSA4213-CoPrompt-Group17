@@ -1,0 +1,104 @@
+{
+  "cache_key": "5dcc95335c49844b467fdbcc0dbf206366325a05f2c419cf5b967dce1070cf6e",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [],
+    "tone": [],
+    "length": [],
+    "required_content": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 46,
+      "text": "Write an entry in a fictional space probe log."
+    },
+    {
+      "id": "S2",
+      "start": 47,
+      "end": 222,
+      "text": "Build the piece around these synthetic facts: Probe Lark receives seven pulses from below an icy ridge, but obtains no surface image because its camera shutter remains closed."
+    },
+    {
+      "id": "S3",
+      "start": 223,
+      "end": 268,
+      "text": "End with a plan to repeat the listening pass."
+    },
+    {
+      "id": "S4",
+      "start": 269,
+      "end": 349,
+      "text": "The text must contain \"Probe Lark\", \"seven pulses\", \"no surface image\" verbatim."
+    },
+    {
+      "id": "S5",
+      "start": 350,
+      "end": 417,
+      "text": "Address this to mission analysts reading fictional telemetry prose."
+    },
+    {
+      "id": "S6",
+      "start": 418,
+      "end": 466,
+      "text": "The style should feel observant and unemotional."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": null,
+    "length": null,
+    "required_content": null
+  },
+  "evidence": {},
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S5\"],\"tone\":[\"S6\"],\"length\":[],\"required_content\":[\"S2\",\"S4\",\"S3\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S5"
+          ],
+          "tone": [
+            "S6"
+          ],
+          "length": [],
+          "required_content": [
+            "S2",
+            "S4",
+            "S3"
+          ]
+        }
+      },
+      "format_errors": [
+        "required_content: source_unit_ids_not_in_source_order; use [] or valid, unique source unit IDs in source order"
+      ]
+    },
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S5\"],\"tone\":[\"S6\"],\"length\":[],\"required_content\":[\"S2\",\"S4\",\"S3\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S5"
+          ],
+          "tone": [
+            "S6"
+          ],
+          "length": [],
+          "required_content": [
+            "S2",
+            "S4",
+            "S3"
+          ]
+        }
+      },
+      "format_errors": [
+        "required_content: source_unit_ids_not_in_source_order; use [] or valid, unique source unit IDs in source order"
+      ]
+    }
+  ],
+  "repaired": true,
+  "failed": true
+}

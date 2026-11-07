@@ -1,0 +1,90 @@
+{
+  "cache_key": "ea9e37ff54ee0971091bd4351ada6b0478154003c0ea1cdba306c91ccc42296c",
+  "source_case_id": "NTCW09",
+  "source_policy": "value_based",
+  "output": {
+    "text": "To master the Box Garden puzzle, start by placing the long block first along the bottom edge—this sets a stable foundation. Next, reserve the corner pocket for a triangular piece, ensuring it fits snugly without blocking access to the center. As you near completion, remember to rotate the small square before filling the central gap. This small adjustment often unlocks the final fit, turning a frustrating dead end into a satisfying solution. By following these steps—long block first, the corner pocket, rotate the small square—you’ll approach the puzzle with confidence and clarity."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"To master the Box Garden puzzle, start by placing the long block first along the bottom edge—this sets a stable foundation. Next, reserve the corner pocket for a triangular piece, ensuring it fits snugly without blocking access to the center. As you near completion, remember to rotate the small square before filling the central gap. This small adjustment often unlocks the final fit, turning a frustrating dead end into a satisfying solution. By following these steps—long block first, the corner pocket, rotate the small square—you’ll approach the puzzle with confidence and clarity.\"\n}",
+      "parsed": {
+        "text": "To master the Box Garden puzzle, start by placing the long block first along the bottom edge—this sets a stable foundation. Next, reserve the corner pocket for a triangular piece, ensuring it fits snugly without blocking access to the center. As you near completion, remember to rotate the small square before filling the central gap. This small adjustment often unlocks the final fit, turning a frustrating dead end into a satisfying solution. By following these steps—long block first, the corner pocket, rotate the small square—you’ll approach the puzzle with confidence and clarity."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "long block first",
+            "the corner pocket",
+            "rotate the small square"
+          ]
+        },
+        "source": [
+          {
+            "source": "visible_exchange",
+            "exchange_index": 0,
+            "field_id": "required_content",
+            "quote": "Include each of these exact strings: \"long block first\", \"the corner pocket\", \"rotate the small square\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 95
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "long block first",
+            "the corner pocket",
+            "rotate the small square"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 95
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "long block first",
+            "the corner pocket",
+            "rotate the small square"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

@@ -1,0 +1,64 @@
+{
+  "key": "045e0f1ce5ad03c16cf12ed7e696df5c303518dcf44c37a0ff3461d8cce1158f",
+  "raw": "{\"field_evidence\":{\"audience\":[\"S5\"],\"tone\":[],\"length\":[\"S6\"],\"required_content\":[\"S4\"]}}",
+  "source_case_id": "NTCW28",
+  "source_variant": "direct",
+  "response_sha256": "3c98dfffdfdbec0b3c471c0f1ca81760fa9a650d060d58ac3cca3244e8a21a75",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "extraction",
+    "repair": false,
+    "repair_kind": null,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Identify explicit evidence for the four listed fields using the numbered source_units.\nReturn exactly one JSON object: {\"field_evidence\": {<each field ID>: [<source unit IDs>]}}.\nInclude every listed field and no other keys. Each value must be [] or a list such as [\"S2\", \"S4\"].\nUse only IDs from the supplied source_units, without duplicates, in source order. Do not copy or rewrite text.\nChoose the units that explicitly supply that field; the same unit can support more than one field.\nChoose all units needed to retain the stated requirement, including relevant coverage and minimum times.\nUse [] when not stated. Reference_date is context, never a deadline. Missing information stays missing.\nDo not infer a specific audience from a genre or infer a preference from silence.\nAn explicit statement of no preference/no requirement is resolved: select its source unit.\nFor audience, an explicitly named group being addressed or thanked is evidence of the intended reader.\nAn institution, location or industry modifying a document type is not an explicit reader group.\nFor example, \"a company newsletter\" does not specify employees, customers or investors as its audience.\nFor tone, explicit style adjectives describing the requested writing count even when the word 'tone' is absent.\nEvaluate each field independently: one sentence can explicitly supply both audience and tone.\nFor length, select an explicit full-text word count/range or an explicit statement of no length requirement.\nFor required_content, a topic or genre alone is insufficient: specific required facts or literal phrases are needed.\nAn announcement about an event does not by itself supply concrete required facts about that event.\nFor deadline, select evidence of an explicit finish/end/last study date or deadline.\nA start date is NOT a deadline. If only a starting date is given, deadline MUST be [].\nFor available_time, select evidence of a daily study allowance/limit including duration and daily frequency.\nA topic's minimum total minutes and the output instruction to use integer minutes are NOT a daily allowance.\nFor topics, select actual specified topic names with their coverage/minimum-time requirements.\nA course title or a promise to specify topics later does NOT supply the topics: use [].\nFor priorities, select explicit priority requirements or an explicit statement of no priority preference.\nNever invent dates, daily time limits, topic lists or hidden answers. Choose [] rather than a plausible guess.\n\nThe following independent examples illustrate the rule. For the actual request, inspect only its own source_units:\nStudy example: S1=\"Plan revision for my geology course, beginning on 2033-02-05.\"\nS2=\"I have no topic priority preference.\"\nOutput: {\"field_evidence\":{\"deadline\":[],\"available_time\":[],\"topics\":[],\"priorities\":[\"S2\"]}}\nWriting example: S1=\"Draft a notice to tenants about elevator repairs.\"\nOutput: {\"field_evidence\":{\"audience\":[\"S1\"],\"tone\":[],\"length\":[],\"required_content\":[]}}\nIf that writing example adds S2='Include the exact phrases \"Lift B\" and \"closed on 12 May\".',\nthe output becomes {\"field_evidence\":{\"audience\":[\"S1\"],\"tone\":[],\"length\":[],\"required_content\":[\"S2\"]}}.\nAnother writing example: S1=\"Write a formal invitation for donors.\"\nOutput: {\"field_evidence\":{\"audience\":[\"S1\"],\"tone\":[\"S1\"],\"length\":[],\"required_content\":[]}}\nAnother writing example: S1=\"Draft a company newsletter about a forthcoming reorganization.\"\nOutput: {\"field_evidence\":{\"audience\":[],\"tone\":[],\"length\":[],\"required_content\":[]}}\nNo Markdown fences or commentary."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"constrained_writing\", \"initial_request\": \"Write a synopsis of an original play for a program. Build the piece around these synthetic facts: The fictional play The Unsent Window follows a retired locksmith finding letters addressed to nobody in a wall cavity. Describe the central conflict over whether to read them, without disclosing the final choice. The text must contain \\\"The Unsent Window\\\", \\\"a retired locksmith\\\", \\\"letters addressed to nobody\\\" verbatim. Address this to theatergoers choosing the invented play. Use at least 60 words and no more than 90 words in total. Please produce the text now without asking follow-up questions.\", \"reference_date\": \"2027-02-01\", \"user_control\": \"execute_now\", \"fields\": [{\"field_id\": \"audience\", \"label_zh\": \"受众\", \"description_zh\": \"目标读者或收件人。不得凭体裁猜测具体受众。\", \"question_template\": \"Who is the intended audience?\"}, {\"field_id\": \"tone\", \"label_zh\": \"语气\", \"description_zh\": \"语气或明确无偏好。缺省语气不视为已提供。\", \"question_template\": \"What tone would you like?\"}, {\"field_id\": \"length\", \"label_zh\": \"长度\", \"description_zh\": \"全文英文词数范围或明确无长度要求。\", \"question_template\": \"What word-count range should the full text follow?\"}, {\"field_id\": \"required_content\", \"label_zh\": \"必含内容\", \"description_zh\": \"用户明确要求的具体事实或逐字内容。仅有主题或体裁不算已提供；明确无必含内容则算已解决。\", \"question_template\": \"What information or exact wording must the text include?\"}], \"source_units\": [{\"id\": \"S1\", \"start\": 0, \"end\": 51, \"text\": \"Write a synopsis of an original play for a program.\"}, {\"id\": \"S2\", \"start\": 52, \"end\": 216, \"text\": \"Build the piece around these synthetic facts: The fictional play The Unsent Window follows a retired locksmith finding letters addressed to nobody in a wall cavity.\"}, {\"id\": \"S3\", \"start\": 217, \"end\": 310, \"text\": \"Describe the central conflict over whether to read them, without disclosing the final choice.\"}, {\"id\": \"S4\", \"start\": 311, \"end\": 416, \"text\": \"The text must contain \\\"The Unsent Window\\\", \\\"a retired locksmith\\\", \\\"letters addressed to nobody\\\" verbatim.\"}, {\"id\": \"S5\", \"start\": 417, \"end\": 473, \"text\": \"Address this to theatergoers choosing the invented play.\"}, {\"id\": \"S6\", \"start\": 474, \"end\": 531, \"text\": \"Use at least 60 words and no more than 90 words in total.\"}, {\"id\": \"S7\", \"start\": 532, \"end\": 595, \"text\": \"Please produce the text now without asking follow-up questions.\"}]}"
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

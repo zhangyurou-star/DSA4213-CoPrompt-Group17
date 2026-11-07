@@ -1,0 +1,108 @@
+{
+  "cache_key": "de1fdea0b55ec2735669fec6fb5db06a40d39026a5ca31a5de827787954179d6",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [],
+    "tone": [],
+    "length": [
+      "S5"
+    ],
+    "required_content": [
+      "S3",
+      "S4"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 61,
+      "text": "Write a graduated hint card for an invented crossword answer."
+    },
+    {
+      "id": "S2",
+      "start": 62,
+      "end": 158,
+      "text": "Build the piece around these synthetic facts: Write three increasingly revealing hints for echo."
+    },
+    {
+      "id": "S3",
+      "start": 159,
+      "end": 257,
+      "text": "The first mentions returning, the second mentions sound, and the final line includes Answer: echo."
+    },
+    {
+      "id": "S4",
+      "start": 258,
+      "end": 333,
+      "text": "The text must contain \"First hint\", \"Second hint\", \"Answer: echo\" verbatim."
+    },
+    {
+      "id": "S5",
+      "start": 334,
+      "end": 380,
+      "text": "The full text must be between 45 and 75 words."
+    },
+    {
+      "id": "S6",
+      "start": 381,
+      "end": 428,
+      "text": "Execute now and do not pause for clarification."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": null,
+    "length": "The full text must be between 45 and 75 words.",
+    "required_content": "The first mentions returning, the second mentions sound, and the final line includes Answer: echo.\nThe text must contain \"First hint\", \"Second hint\", \"Answer: echo\" verbatim."
+  },
+  "evidence": {
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 334,
+        "end": 380,
+        "quote": "The full text must be between 45 and 75 words."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 159,
+        "end": 257,
+        "quote": "The first mentions returning, the second mentions sound, and the final line includes Answer: echo."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 258,
+        "end": 333,
+        "quote": "The text must contain \"First hint\", \"Second hint\", \"Answer: echo\" verbatim."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[],\"tone\":[],\"length\":[\"S5\"],\"required_content\":[\"S3\",\"S4\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [],
+          "tone": [],
+          "length": [
+            "S5"
+          ],
+          "required_content": [
+            "S3",
+            "S4"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

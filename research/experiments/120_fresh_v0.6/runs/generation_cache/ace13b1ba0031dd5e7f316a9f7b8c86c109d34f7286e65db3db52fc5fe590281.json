@@ -1,0 +1,89 @@
+{
+  "cache_key": "ace13b1ba0031dd5e7f316a9f7b8c86c109d34f7286e65db3db52fc5fe590281",
+  "source_case_id": "NTCW19",
+  "source_policy": "direct",
+  "output": {
+    "text": "To all gathered here today, raise your glasses to the Small Tomorrow. This vessel, modest in name but vast in promise, sets sail not for grand conquests, but for the quiet courage of beginning. May it find a steady harbor in every storm, and always have room for wonder in its wake. For every great journey starts with a small step—and today, that step is yours. To the Small Tomorrow: may it carry us gently, boldly, and with wonder, into what comes next."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"To all gathered here today, raise your glasses to the Small Tomorrow. This vessel, modest in name but vast in promise, sets sail not for grand conquests, but for the quiet courage of beginning. May it find a steady harbor in every storm, and always have room for wonder in its wake. For every great journey starts with a small step—and today, that step is yours. To the Small Tomorrow: may it carry us gently, boldly, and with wonder, into what comes next.\"\n}",
+      "parsed": {
+        "text": "To all gathered here today, raise your glasses to the Small Tomorrow. This vessel, modest in name but vast in promise, sets sail not for grand conquests, but for the quiet courage of beginning. May it find a steady harbor in every storm, and always have room for wonder in its wake. For every great journey starts with a small step—and today, that step is yours. To the Small Tomorrow: may it carry us gently, boldly, and with wonder, into what comes next."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Small Tomorrow",
+            "a steady harbor",
+            "room for wonder"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Preserve these exact phrases: \"Small Tomorrow\", \"a steady harbor\", \"room for wonder\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 84
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Small Tomorrow",
+            "a steady harbor",
+            "room for wonder"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 84
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Small Tomorrow",
+            "a steady harbor",
+            "room for wonder"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

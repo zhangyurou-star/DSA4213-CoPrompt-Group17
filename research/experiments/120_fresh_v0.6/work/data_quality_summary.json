@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-19T14:58:18.304771+00:00",
+  "status": "new_data_passed_offline_checks_no_model_results",
+  "cases": 120,
+  "hard_constraints_checked": 334,
+  "targeted_violations_detected": 334,
+  "all_authored_hard_witnesses_passed": true,
+  "split_counts": {
+    "design_all": 40,
+    "validation": 20,
+    "test": 60
+  },
+  "original_and_discarded_extension_case_reuse": 0,
+  "normalized_planning_contracts": 60,
+  "real_model_calls": 0,
+  "actual_human_ratings": 0,
+  "reports": {
+    "work/design_all_offline_audit.json": "b4275d3c19cbae5005840ad7017ead46f3b0f2eed32ecf9de7e0becb158c6922",
+    "work/validation_offline_audit.json": "2730994175f614d1029088d62dc0afc30f4b0a570aefae5605f3a5d2b8af4b97",
+    "work/test_offline_audit.json": "7c47e4248592a754a37213dc8c136f848ec2142a0caf25e5ca70abf0e78252c8"
+  },
+  "interpretation": "Offline checks establish data consistency and hard-constraint feasibility only, not experiment success or content quality."
+}

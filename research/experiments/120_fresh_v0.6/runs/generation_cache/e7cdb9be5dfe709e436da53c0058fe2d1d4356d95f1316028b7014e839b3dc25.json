@@ -1,0 +1,100 @@
+{
+  "cache_key": "e7cdb9be5dfe709e436da53c0058fe2d1d4356d95f1316028b7014e839b3dc25",
+  "source_case_id": "NVCW08",
+  "source_policy": "value_based",
+  "output": {
+    "text": "Lena: I found the red scarf in shreds—did you borrow it without asking? \nJake: I’m sorry, I didn’t mean to. I just needed it for the walk. \nLena: Next time, ask next time. It’s not just a piece of cloth—it’s Mom’s gift. \nJake: I know. I’ll fix it. \nLena: We can mend it. Let’s use the needle and thread from the drawer. \nJake: Yes, we can mend it. Together. \nLena: Good. The red scarf will be better than new."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Lena: I found the red scarf in shreds—did you borrow it without asking? \\nJake: I’m sorry, I didn’t mean to. I just needed it for the walk. \\nLena: Next time, ask next time. It’s not just a piece of cloth—it’s Mom’s gift. \\nJake: I know. I’ll fix it. \\nLena: We can mend it. Let’s use the needle and thread from the drawer. \\nJake: Yes, we can mend it. Together. \\nLena: Good. The red scarf will be better than new.\"\n}",
+      "parsed": {
+        "text": "Lena: I found the red scarf in shreds—did you borrow it without asking? \nJake: I’m sorry, I didn’t mean to. I just needed it for the walk. \nLena: Next time, ask next time. It’s not just a piece of cloth—it’s Mom’s gift. \nJake: I know. I’ll fix it. \nLena: We can mend it. Let’s use the needle and thread from the drawer. \nJake: Yes, we can mend it. Together. \nLena: Good. The red scarf will be better than new."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      },
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"the red scarf\", \"ask next time\", \"we can mend it\"."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 81
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      },
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"the red scarf\", \"ask next time\", \"we can mend it\"."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 81
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      },
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"the red scarf\", \"ask next time\", \"we can mend it\"."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

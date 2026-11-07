@@ -1,0 +1,222 @@
+{
+  "cache_key": "1259496754fbcd98ee958148838be2932ec62f5ad8d9d609c50706ad7e31d971",
+  "source_case_id": "NTSP04",
+  "source_policy": "exhaustive",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Tinctures",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Shield Divisions",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Heraldic Charges",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Tinctures",
+        "minutes": 5
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Shield Divisions",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Heraldic Charges",
+        "minutes": 15
+      }
+    ],
+    "summary": "Calculated from the schedule: 90 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 15 minutes; 2027-02-03: 15 minutes; 2027-02-04: 5 minutes; 2027-02-05: 15 minutes; 2027-02-06: 15 minutes. Topic totals: Heraldic Charges: 30 minutes; Shield Divisions: 30 minutes; Tinctures: 30 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Tinctures\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Shield Divisions\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Heraldic Charges\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Tinctures\",\n      \"minutes\": 5\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Shield Divisions\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Heraldic Charges\",\n      \"minutes\": 15\n    }\n  ],\n  \"summary\": \"The study plan covers all required topics—Tinctures, Shield Divisions, and Heraldic Charges—with a total of at least 15 minutes per topic and 25 minutes specifically for Tinctures. All sessions are scheduled within the date window from 2027-02-01 to 2027-02-06, with no more than 30 minutes of study per day. The total allocated time is 85 minutes, distributed across six sessions, meeting all constraints.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Tinctures",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Shield Divisions",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Heraldic Charges",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Tinctures",
+            "minutes": 5
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Shield Divisions",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Heraldic Charges",
+            "minutes": 15
+          }
+        ],
+        "summary": "The study plan covers all required topics—Tinctures, Shield Divisions, and Heraldic Charges—with a total of at least 15 minutes per topic and 25 minutes specifically for Tinctures. All sessions are scheduled within the date window from 2027-02-01 to 2027-02-06, with no more than 30 minutes of study per day. The total allocated time is 85 minutes, distributed across six sessions, meeting all constraints."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "The last usable study date is 2027-02-06, and sessions may fall on that day."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 90,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 15,
+        "2027-02-03": 15,
+        "2027-02-04": 5,
+        "2027-02-05": 15,
+        "2027-02-06": 15
+      },
+      "topic_minutes": [
+        {
+          "topic": "Heraldic Charges",
+          "normalized_topic": "heraldic charges",
+          "minutes": 30
+        },
+        {
+          "topic": "Shield Divisions",
+          "normalized_topic": "shield divisions",
+          "minutes": 30
+        },
+        {
+          "topic": "Tinctures",
+          "normalized_topic": "tinctures",
+          "minutes": 30
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "The last usable study date is 2027-02-06, and sessions may fall on that day."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 90,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 15,
+        "2027-02-03": 15,
+        "2027-02-04": 5,
+        "2027-02-05": 15,
+        "2027-02-06": 15
+      },
+      "topic_minutes": [
+        {
+          "topic": "Heraldic Charges",
+          "normalized_topic": "heraldic charges",
+          "minutes": 30
+        },
+        {
+          "topic": "Shield Divisions",
+          "normalized_topic": "shield divisions",
+          "minutes": 30
+        },
+        {
+          "topic": "Tinctures",
+          "normalized_topic": "tinctures",
+          "minutes": 30
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "The last usable study date is 2027-02-06, and sessions may fall on that day."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study plan covers all required topics—Tinctures, Shield Divisions, and Heraldic Charges—with a total of at least 15 minutes per topic and 25 minutes specifically for Tinctures. All sessions are scheduled within the date window from 2027-02-01 to 2027-02-06, with no more than 30 minutes of study per day. The total allocated time is 85 minutes, distributed across six sessions, meeting all constraints.",
+    "derived_summary": "Calculated from the schedule: 90 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 15 minutes; 2027-02-03: 15 minutes; 2027-02-04: 5 minutes; 2027-02-05: 15 minutes; 2027-02-06: 15 minutes. Topic totals: Heraldic Charges: 30 minutes; Shield Divisions: 30 minutes; Tinctures: 30 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

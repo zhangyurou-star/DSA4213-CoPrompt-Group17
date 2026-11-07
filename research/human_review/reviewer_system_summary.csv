@@ -1,0 +1,11 @@
+﻿reviewer_slot,system,outputs,usefulness_1_to_5_mean,coherence_1_to_5_mean,audience_fit_1_to_5_mean,feasibility_1_to_5_mean,unsupported_assumptions_count_mean,unnecessary_questions_count_mean
+1,direct,20,4.45,4.7,4.7,4.55,0.0,0.0
+2,direct,20,4.4,4.65,4.5,4.5,0.15,0.15
+1,exhaustive,20,4.5,4.7,4.7,4.6,0.0,0.45
+2,exhaustive,20,4.3,4.65,4.4,4.35,0.15,0.45
+1,prompt_only,20,4.55,4.75,4.75,4.65,0.0,0.45
+2,prompt_only,20,4.4,4.75,4.6,4.55,0.15,0.45
+1,value_based,20,4.5,4.7,4.7,4.6,0.0,0.45
+2,value_based,20,4.3,4.65,4.45,4.35,0.15,0.45
+1,importance_one,20,4.5,4.7,4.7,4.6,0.0,0.45
+2,importance_one,20,4.3,4.65,4.45,4.35,0.15,0.45

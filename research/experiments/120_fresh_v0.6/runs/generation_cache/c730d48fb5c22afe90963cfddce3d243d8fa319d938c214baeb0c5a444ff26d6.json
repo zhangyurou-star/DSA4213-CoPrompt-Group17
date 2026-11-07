@@ -1,0 +1,49 @@
+{
+  "cache_key": "c730d48fb5c22afe90963cfddce3d243d8fa319d938c214baeb0c5a444ff26d6",
+  "source_case_id": "NTCW18",
+  "source_policy": "direct",
+  "output": {
+    "text": "A stitch in time saves nine: When a small tear in a garment is mended promptly, it prevents the fabric from unraveling further, avoiding the need for extensive repair later. For instance, a tailor who notices a loose thread on a coat’s sleeve on a rainy morning takes a moment to secure it with a few stitches. Weeks later, when the coat is worn through a storm, the small fix holds firm—no larger patch is needed, and the coat remains whole. Thus, a timely act of care preserves both the object and the effort required to maintain it."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"A stitch in time saves nine: When a small tear in a garment is mended promptly, it prevents the fabric from unraveling further, avoiding the need for extensive repair later. For instance, a tailor who notices a loose thread on a coat’s sleeve on a rainy morning takes a moment to secure it with a few stitches. Weeks later, when the coat is worn through a storm, the small fix holds firm—no larger patch is needed, and the coat remains whole. Thus, a timely act of care preserves both the object and the effort required to maintain it.\"\n}",
+      "parsed": {
+        "text": "A stitch in time saves nine: When a small tear in a garment is mended promptly, it prevents the fabric from unraveling further, avoiding the need for extensive repair later. For instance, a tailor who notices a loose thread on a coat’s sleeve on a rainy morning takes a moment to secure it with a few stitches. Weeks later, when the coat is worn through a storm, the small fix holds firm—no larger patch is needed, and the coat remains whole. Thus, a timely act of care preserves both the object and the effort required to maintain it."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 99
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 99
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

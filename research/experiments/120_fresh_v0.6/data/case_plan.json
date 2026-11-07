@@ -1,0 +1,1437 @@
+{
+  "version": "fresh120-0.6.0",
+  "registered_utc": "2026-10-19T14:38:01.883434+00:00",
+  "status": "all120_new_cases_assembled_before_model_outputs",
+  "case_count": 120,
+  "split_targets": {
+    "design": 40,
+    "validation": 20,
+    "test": 60
+  },
+  "pilot_case_ids": [
+    "NDCW01",
+    "NDCW02",
+    "NDCW03",
+    "NDCW04",
+    "NDCW05",
+    "NDCW06",
+    "NDSP01",
+    "NDSP02",
+    "NDSP03",
+    "NDSP04",
+    "NDSP05",
+    "NDSP06"
+  ],
+  "diagnostic_case_ids": [
+    "NTCW01",
+    "NTCW02",
+    "NTCW07",
+    "NTCW08",
+    "NTCW13",
+    "NTCW14",
+    "NTCW19",
+    "NTCW20",
+    "NTCW24",
+    "NTCW28",
+    "NTSP01",
+    "NTSP02",
+    "NTSP07",
+    "NTSP08",
+    "NTSP13",
+    "NTSP14",
+    "NTSP19",
+    "NTSP20",
+    "NTSP24",
+    "NTSP28"
+  ],
+  "diagnostic_rule": "Per domain first2 complete, first2 critical, first2 mixed, first2 optional, first1 unavailable, first1 execute_now; fixed before writing and all new outputs.",
+  "authoring_separation": "Domain authors start in separate empty-context sessions; receive task contracts and exclusions of earlier families/topics only, no prior model outputs or results. Coordinator has historical knowledge and documents this limitation.",
+  "cache_policy": "Empty new local caches; no legacy source or cache imports. Exact first-response reuse only within this fresh study.",
+  "cases": [
+    {
+      "case_id": "NDCW01",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_board_game_dispute",
+      "title_zh": "桌游争议规则裁定",
+      "task_intent": "Clarify a disputed move in a fictional board game."
+    },
+    {
+      "case_id": "NDCW02",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_vending_token_explanation",
+      "title_zh": "虚构自动售货代币说明",
+      "task_intent": "Explain how a fictional vending token is used."
+    },
+    {
+      "case_id": "NDCW03",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_shadow_fable",
+      "title_zh": "影子寓言",
+      "task_intent": "Compose a fable about a shadow."
+    },
+    {
+      "case_id": "NDCW04",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only",
+      "family_id": "fresh_cw_cultivar_name_rationale",
+      "title_zh": "植物品种命名理由",
+      "task_intent": "Give a naming rationale for an invented plant cultivar."
+    },
+    {
+      "case_id": "NDCW05",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer",
+      "family_id": "fresh_cw_fantasy_map_commission",
+      "title_zh": "幻想地图委托简述",
+      "task_intent": "Draft a creative commission brief for a fantasy map."
+    },
+    {
+      "case_id": "NDCW06",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "execute_now",
+      "family_id": "fresh_cw_crossword_hint_ladder",
+      "title_zh": "填字谜分层提示",
+      "task_intent": "Write a graduated hint card for an invented crossword answer."
+    },
+    {
+      "case_id": "NDCW07",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_translation_glossary_policy",
+      "title_zh": "翻译词汇一致性说明",
+      "task_intent": "Explain a terminology policy for a fictional translation project."
+    },
+    {
+      "case_id": "NDCW08",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_sewing_layout_instruction",
+      "title_zh": "缝纫布料布局步骤",
+      "task_intent": "Describe a cutting layout for a fictional sewing pattern."
+    },
+    {
+      "case_id": "NDCW09",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_soap_package_story",
+      "title_zh": "手工皂包装故事",
+      "task_intent": "Write an origin story for an imaginary soap package."
+    },
+    {
+      "case_id": "NDCW10",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_space_probe_log",
+      "title_zh": "太空探测器日志",
+      "task_intent": "Write an entry in a fictional space probe log."
+    },
+    {
+      "case_id": "NDCW11",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_court_herald_proclamation",
+      "title_zh": "宫廷传令官宣告",
+      "task_intent": "Compose a ceremonial proclamation for an invented kingdom."
+    },
+    {
+      "case_id": "NDCW12",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_flashcard_self_test",
+      "title_zh": "自测卡片使用提示",
+      "task_intent": "Explain a self-testing routine using invented flashcards."
+    },
+    {
+      "case_id": "NDCW13",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_fictional_closing_argument",
+      "title_zh": "虚构审判结案陈词",
+      "task_intent": "Write a closing argument in a fictional mock trial."
+    },
+    {
+      "case_id": "NDCW14",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_escape_room_premise",
+      "title_zh": "密室开场情节",
+      "task_intent": "Create the opening premise for an imaginary escape room."
+    },
+    {
+      "case_id": "NDCW15",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_soundscape_score",
+      "title_zh": "声景演出指令",
+      "task_intent": "Write performance directions for an invented soundscape."
+    },
+    {
+      "case_id": "NDCW16",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only",
+      "family_id": "fresh_cw_future_self_letter",
+      "title_zh": "给未来自己的信",
+      "task_intent": "Write a letter addressed to a future self."
+    },
+    {
+      "case_id": "NDCW17",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only",
+      "family_id": "fresh_cw_bridge_retirement_elegy",
+      "title_zh": "桥梁退役挽歌",
+      "task_intent": "Compose a prose elegy for an imaginary bridge."
+    },
+    {
+      "case_id": "NDCW18",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer",
+      "family_id": "fresh_cw_fabrication_exception_rationale",
+      "title_zh": "制造公差例外理由",
+      "task_intent": "Explain an exception in a fictional fabrication specification."
+    },
+    {
+      "case_id": "NDCW19",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer",
+      "family_id": "fresh_cw_dream_sequence_interpretation",
+      "title_zh": "梦境创作阐释",
+      "task_intent": "Offer a literary interpretation of an invented dream sequence."
+    },
+    {
+      "case_id": "NDCW20",
+      "split": "design",
+      "domain": "constrained_writing",
+      "omission_type": "execute_now",
+      "family_id": "fresh_cw_origami_step_caption",
+      "title_zh": "折纸图步骤说明",
+      "task_intent": "Draft instructions to accompany an invented paper-folding diagram."
+    },
+    {
+      "case_id": "NDSP01",
+      "family_id": "nsp_apiary_inspection",
+      "title_zh": "蜂箱巡检入门",
+      "subject": "seasonal apiary inspection",
+      "topics": [
+        "Brood Pattern Checks",
+        "Queen Presence Signs",
+        "Hive Recordkeeping"
+      ],
+      "split": "design",
+      "omission_type": "complete",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NDSP02",
+      "family_id": "nsp_railway_signalling",
+      "title_zh": "铁路信号原理",
+      "subject": "railway signalling theory",
+      "topics": [
+        "Block Sections",
+        "Interlocking",
+        "Signal Aspects"
+      ],
+      "split": "design",
+      "omission_type": "critical_omission",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NDSP03",
+      "family_id": "nsp_collection_pest_monitoring",
+      "title_zh": "藏品虫害监测",
+      "subject": "collection pest monitoring",
+      "topics": [
+        "Quarantine Checks",
+        "Sticky Trap Logs",
+        "Pest Evidence Recognition"
+      ],
+      "split": "design",
+      "omission_type": "critical_and_optional",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NDSP04",
+      "family_id": "nsp_stage_rigging_theory",
+      "title_zh": "舞台吊挂理论",
+      "subject": "theatre rigging theory",
+      "topics": [
+        "Load Paths",
+        "Counterweight Systems",
+        "Rigging Inspections"
+      ],
+      "split": "design",
+      "omission_type": "optional_only",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NDSP05",
+      "family_id": "nsp_braille_literacy",
+      "title_zh": "盲文识读入门",
+      "subject": "Braille literacy",
+      "topics": [
+        "Six-dot Cells",
+        "Braille Contractions"
+      ],
+      "split": "design",
+      "omission_type": "unavailable_answer",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NDSP06",
+      "family_id": "nsp_coffee_sensory",
+      "title_zh": "咖啡感官训练",
+      "subject": "coffee sensory vocabulary",
+      "topics": [
+        "Aroma Wheel",
+        "Acidity Descriptors",
+        "Cupping Protocol"
+      ],
+      "split": "design",
+      "omission_type": "execute_now",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NDSP07",
+      "family_id": "nsp_water_treatment",
+      "title_zh": "净水流程学习",
+      "subject": "drinking-water treatment stages",
+      "topics": [
+        "Coagulation",
+        "Sedimentation",
+        "Disinfection"
+      ],
+      "split": "design",
+      "omission_type": "complete",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NDSP08",
+      "family_id": "nsp_pedestrian_design",
+      "title_zh": "步行空间设计",
+      "subject": "pedestrian street design",
+      "topics": [
+        "Crossing Visibility",
+        "Kerb Ramps",
+        "Pedestrian Desire Lines",
+        "Footway Width"
+      ],
+      "split": "design",
+      "omission_type": "complete",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NDSP09",
+      "family_id": "nsp_origami_foundations",
+      "title_zh": "折纸技法学习",
+      "subject": "origami fold techniques",
+      "topics": [
+        "Valley Folds",
+        "Mountain Folds",
+        "Reverse Folds"
+      ],
+      "split": "design",
+      "omission_type": "complete",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NDSP10",
+      "family_id": "nsp_bicycle_transmission",
+      "title_zh": "自行车传动检修理论",
+      "subject": "bicycle drivetrain maintenance theory",
+      "topics": [
+        "Chain Wear",
+        "Derailleur Indexing",
+        "Cassette Inspection"
+      ],
+      "split": "design",
+      "omission_type": "critical_omission",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NDSP11",
+      "family_id": "nsp_semaphore_signalling",
+      "title_zh": "旗语通信训练",
+      "subject": "maritime semaphore reading",
+      "topics": [
+        "Semaphore Positions",
+        "Letter Pairs",
+        "Message Breaks"
+      ],
+      "split": "design",
+      "omission_type": "critical_omission",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NDSP12",
+      "family_id": "nsp_records_appraisal",
+      "title_zh": "档案价值鉴定",
+      "subject": "archival records appraisal",
+      "topics": [
+        "Retention Triggers",
+        "Provenance Appraisal",
+        "Disposal Documentation"
+      ],
+      "split": "design",
+      "omission_type": "critical_omission",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NDSP13",
+      "family_id": "nsp_palaeography",
+      "title_zh": "历史手稿识读",
+      "subject": "English palaeography",
+      "topics": [
+        "Secretary Hand",
+        "Abbreviation Marks"
+      ],
+      "split": "design",
+      "omission_type": "critical_and_optional",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NDSP14",
+      "family_id": "nsp_leather_stitching",
+      "title_zh": "皮革手缝学习",
+      "subject": "hand-stitched leatherwork",
+      "topics": [
+        "Saddle Stitching",
+        "Stitching Grooves",
+        "Edge Burnishing"
+      ],
+      "split": "design",
+      "omission_type": "critical_and_optional",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NDSP15",
+      "family_id": "nsp_tea_utensils",
+      "title_zh": "茶道器具学习",
+      "subject": "Japanese tea ceremony utensils",
+      "topics": [
+        "Chawan Handling",
+        "Chasen Care",
+        "Utensil Placement"
+      ],
+      "split": "design",
+      "omission_type": "critical_and_optional",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NDSP16",
+      "family_id": "nsp_human_factors",
+      "title_zh": "人因设计入门",
+      "subject": "workstation human factors",
+      "topics": [
+        "Display Legibility",
+        "Control Compatibility",
+        "Workstation Reach"
+      ],
+      "split": "design",
+      "omission_type": "optional_only",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NDSP17",
+      "family_id": "nsp_morse_listening",
+      "title_zh": "摩尔斯听辨训练",
+      "subject": "Morse listening practice",
+      "topics": [
+        "Dot-dash Patterns",
+        "Character Spacing",
+        "Call-sign Copying"
+      ],
+      "split": "design",
+      "omission_type": "optional_only",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NDSP18",
+      "family_id": "nsp_manuscript_illumination",
+      "title_zh": "手稿彩饰工艺",
+      "subject": "manuscript illumination techniques",
+      "topics": [
+        "Gold Leaf Grounds",
+        "Pigment Layering",
+        "Decorated Initials"
+      ],
+      "split": "design",
+      "omission_type": "unavailable_answer",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NDSP19",
+      "family_id": "nsp_go_life_death",
+      "title_zh": "围棋死活练习",
+      "subject": "Go life-and-death problems",
+      "topics": [
+        "Eye Formation",
+        "Capturing Races",
+        "Seki"
+      ],
+      "split": "design",
+      "omission_type": "unavailable_answer",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NDSP20",
+      "family_id": "nsp_dry_stone_walling",
+      "title_zh": "干砌石墙理论",
+      "subject": "dry-stone wall construction theory",
+      "topics": [
+        "Batter Angles",
+        "Through Stones",
+        "Hearting"
+      ],
+      "split": "design",
+      "omission_type": "execute_now",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NVCW01",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_tournament_tiebreak_example",
+      "title_zh": "比赛同分规则算例",
+      "task_intent": "Explain a fictional tournament tiebreak using a worked example."
+    },
+    {
+      "case_id": "NVCW02",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_joke_night_anecdote",
+      "title_zh": "笑话之夜段子",
+      "task_intent": "Write an original anecdote with a punchline."
+    },
+    {
+      "case_id": "NVCW03",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_stage_prop_specification",
+      "title_zh": "舞台道具制作规范",
+      "task_intent": "Describe a fictional stage prop for a fabricator."
+    },
+    {
+      "case_id": "NVCW04",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_ink_documentary_voiceover",
+      "title_zh": "墨水微纪录片旁白",
+      "task_intent": "Create narration for a fictional microdocumentary about ink."
+    },
+    {
+      "case_id": "NVCW05",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_shelving_exception_reason",
+      "title_zh": "书架分类例外说明",
+      "task_intent": "Explain a shelving exception in an invented collection."
+    },
+    {
+      "case_id": "NVCW06",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_tabletop_drill_scenario",
+      "title_zh": "桌面演练情境注入",
+      "task_intent": "Write a scenario inject for a fictional tabletop exercise."
+    },
+    {
+      "case_id": "NVCW07",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only",
+      "family_id": "fresh_cw_fictional_currency_design",
+      "title_zh": "虚构货币视觉设计",
+      "task_intent": "Describe a design concept for imaginary currency."
+    },
+    {
+      "case_id": "NVCW08",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only",
+      "family_id": "fresh_cw_sibling_reconciliation_dialogue",
+      "title_zh": "手足和解对话",
+      "task_intent": "Write a dialogue in which two fictional siblings resolve a disagreement."
+    },
+    {
+      "case_id": "NVCW09",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer",
+      "family_id": "fresh_cw_riddle_solution_reasoning",
+      "title_zh": "谜题解法推理",
+      "task_intent": "Explain the reasoning behind an invented riddle solution."
+    },
+    {
+      "case_id": "NVCW10",
+      "split": "validation",
+      "domain": "constrained_writing",
+      "omission_type": "execute_now",
+      "family_id": "fresh_cw_comic_panel_script",
+      "title_zh": "漫画分镜脚本",
+      "task_intent": "Write a panel-by-panel script for an original short comic."
+    },
+    {
+      "case_id": "NVSP01",
+      "family_id": "nsp_rope_knots",
+      "title_zh": "绳结识别练习",
+      "subject": "basic rope-knot recognition",
+      "topics": [
+        "Bowline",
+        "Clove Hitch",
+        "Sheet Bend"
+      ],
+      "split": "validation",
+      "omission_type": "complete",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NVSP02",
+      "family_id": "nsp_fungal_cultivation",
+      "title_zh": "食用菌栽培流程",
+      "subject": "edible mushroom cultivation stages",
+      "topics": [
+        "Sterile Inoculation",
+        "Substrate Colonization",
+        "Fruiting Conditions"
+      ],
+      "split": "validation",
+      "omission_type": "complete",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NVSP03",
+      "family_id": "nsp_typographic_anatomy",
+      "title_zh": "字体结构学习",
+      "subject": "typographic anatomy and spacing",
+      "topics": [
+        "Counters",
+        "Ascenders",
+        "Kerning"
+      ],
+      "split": "validation",
+      "omission_type": "critical_omission",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NVSP04",
+      "family_id": "nsp_bat_call_identification",
+      "title_zh": "蝙蝠声学识别",
+      "subject": "bat call identification",
+      "topics": [
+        "Echolocation Calls",
+        "Spectrogram Shapes",
+        "Feeding Buzzes"
+      ],
+      "split": "validation",
+      "omission_type": "critical_omission",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NVSP05",
+      "family_id": "nsp_forensic_linguistics",
+      "title_zh": "文本作者特征分析",
+      "subject": "forensic authorship analysis",
+      "topics": [
+        "Authorship Markers",
+        "Register Shifts",
+        "Idiolect Features"
+      ],
+      "split": "validation",
+      "omission_type": "critical_and_optional",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NVSP06",
+      "family_id": "nsp_electrochemical_cells",
+      "title_zh": "电化学电池原理",
+      "subject": "electrochemical cell theory",
+      "topics": [
+        "Electrode Reactions",
+        "Electrolytes",
+        "Cell Voltage"
+      ],
+      "split": "validation",
+      "omission_type": "critical_and_optional",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NVSP07",
+      "family_id": "nsp_mask_acting",
+      "title_zh": "面具表演训练",
+      "subject": "neutral-mask acting",
+      "topics": [
+        "Mask Focus",
+        "Neutral Mask Posture",
+        "Gesture Economy"
+      ],
+      "split": "validation",
+      "omission_type": "optional_only",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NVSP08",
+      "family_id": "nsp_dance_floorcraft",
+      "title_zh": "社交舞舞池意识",
+      "subject": "social dance floorcraft",
+      "topics": [
+        "Line of Dance",
+        "Spatial Awareness",
+        "Partner Signalling"
+      ],
+      "split": "validation",
+      "omission_type": "optional_only",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NVSP09",
+      "family_id": "nsp_numismatics",
+      "title_zh": "钱币辨识学习",
+      "subject": "numismatic coin identification",
+      "topics": [
+        "Mint Marks",
+        "Coin Legends",
+        "Die Varieties"
+      ],
+      "split": "validation",
+      "omission_type": "unavailable_answer",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NVSP10",
+      "family_id": "nsp_juggling_cascade",
+      "title_zh": "三球杂耍分解练习",
+      "subject": "three-ball juggling",
+      "topics": [
+        "Cascade Pattern",
+        "Throw Height",
+        "Catch Timing"
+      ],
+      "split": "validation",
+      "omission_type": "execute_now",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTCW01",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_appliance_first_use_microcopy",
+      "title_zh": "虚构家电首次使用文案",
+      "task_intent": "Draft first-use screen copy for an imaginary appliance."
+    },
+    {
+      "case_id": "NTCW02",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_barter_negotiation_offer",
+      "title_zh": "物物交换协商提议",
+      "task_intent": "Write an opening proposal for a fictional barter exchange."
+    },
+    {
+      "case_id": "NTCW03",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_civic_ceremonial_oath",
+      "title_zh": "虚构城市仪式誓言",
+      "task_intent": "Compose an oath for an invented civic ceremony."
+    },
+    {
+      "case_id": "NTCW04",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_fairytale_alternate_ending",
+      "title_zh": "童话改写结尾",
+      "task_intent": "Write an alternative ending for an original fairy tale."
+    },
+    {
+      "case_id": "NTCW05",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_game_quest_instruction",
+      "title_zh": "游戏任务引导台词",
+      "task_intent": "Write a quest-giver speech for an imaginary adventure game."
+    },
+    {
+      "case_id": "NTCW06",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "complete",
+      "family_id": "fresh_cw_contest_rubric_preface",
+      "title_zh": "甜点评比规则导言",
+      "task_intent": "Explain the judging priorities of a fictional dessert contest."
+    },
+    {
+      "case_id": "NTCW07",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_invented_language_sound_key",
+      "title_zh": "虚构语言发音说明",
+      "task_intent": "Provide a pronunciation key for an invented language."
+    },
+    {
+      "case_id": "NTCW08",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_alien_weather_bulletin",
+      "title_zh": "外星天气播报",
+      "task_intent": "Write a weather bulletin set on an imaginary planet."
+    },
+    {
+      "case_id": "NTCW09",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_packing_puzzle_strategy",
+      "title_zh": "装箱谜题策略说明",
+      "task_intent": "Explain a strategy for an invented packing puzzle."
+    },
+    {
+      "case_id": "NTCW10",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_book_dedication",
+      "title_zh": "虚构书籍题献",
+      "task_intent": "Compose a dedication for an imaginary book."
+    },
+    {
+      "case_id": "NTCW11",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_time_travel_paradox",
+      "title_zh": "时间旅行悖论阐释",
+      "task_intent": "Explain the internal logic of an invented time-travel paradox."
+    },
+    {
+      "case_id": "NTCW12",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_omission",
+      "family_id": "fresh_cw_impossible_umbrella_ad",
+      "title_zh": "不可能雨伞广告",
+      "task_intent": "Write an advertisement for a fantastical umbrella."
+    },
+    {
+      "case_id": "NTCW13",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_counting_rhyme",
+      "title_zh": "原创数数短诗",
+      "task_intent": "Compose an original counting rhyme."
+    },
+    {
+      "case_id": "NTCW14",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_fictional_invention_abstract",
+      "title_zh": "虚构发明摘要",
+      "task_intent": "Write a plain-language abstract for an imaginary invention."
+    },
+    {
+      "case_id": "NTCW15",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_maze_navigation_instruction",
+      "title_zh": "迷宫行动指示",
+      "task_intent": "Explain how to navigate an invented maze."
+    },
+    {
+      "case_id": "NTCW16",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_chess_piece_monologue",
+      "title_zh": "棋子独白",
+      "task_intent": "Write a monologue spoken by an imaginary chess piece."
+    },
+    {
+      "case_id": "NTCW17",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_moral_thought_experiment",
+      "title_zh": "道德思想实验",
+      "task_intent": "Present an original moral thought experiment without resolving it."
+    },
+    {
+      "case_id": "NTCW18",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "critical_and_optional",
+      "family_id": "fresh_cw_proverb_interpretation",
+      "title_zh": "虚构谚语解读",
+      "task_intent": "Interpret an invented proverb with a concrete example."
+    },
+    {
+      "case_id": "NTCW19",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only",
+      "family_id": "fresh_cw_naming_ceremony_toast",
+      "title_zh": "命名仪式祝酒词",
+      "task_intent": "Compose a toast for a fictional naming ceremony."
+    },
+    {
+      "case_id": "NTCW20",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only",
+      "family_id": "fresh_cw_penpal_introduction",
+      "title_zh": "虚构笔友自我介绍",
+      "task_intent": "Write a personal introduction to an imaginary pen pal."
+    },
+    {
+      "case_id": "NTCW21",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only",
+      "family_id": "fresh_cw_silent_film_scene",
+      "title_zh": "默片场景动作脚本",
+      "task_intent": "Write a silent-film scene using visible actions."
+    },
+    {
+      "case_id": "NTCW22",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only",
+      "family_id": "fresh_cw_metadata_policy_snippet",
+      "title_zh": "藏品元数据编目政策",
+      "task_intent": "Explain a metadata convention for an invented catalog."
+    },
+    {
+      "case_id": "NTCW23",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "optional_only",
+      "family_id": "fresh_cw_poem_translation_commentary",
+      "title_zh": "诗歌翻译取舍说明",
+      "task_intent": "Discuss a translation choice in an invented poem."
+    },
+    {
+      "case_id": "NTCW24",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer",
+      "family_id": "fresh_cw_clock_face_design_critique",
+      "title_zh": "钟面设计评议",
+      "task_intent": "Critique the legibility of an imaginary clock design."
+    },
+    {
+      "case_id": "NTCW25",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer",
+      "family_id": "fresh_cw_audio_drama_cliffhanger",
+      "title_zh": "广播剧悬念结尾",
+      "task_intent": "Write the final suspenseful beat of an original audio drama."
+    },
+    {
+      "case_id": "NTCW26",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer",
+      "family_id": "fresh_cw_desk_layout_proposal",
+      "title_zh": "工作桌布局提案",
+      "task_intent": "Propose a desk arrangement for a fictional shared workspace."
+    },
+    {
+      "case_id": "NTCW27",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "unavailable_answer",
+      "family_id": "fresh_cw_achievement_certificate_citation",
+      "title_zh": "成就证书表彰语",
+      "task_intent": "Compose the citation on a fictional achievement certificate."
+    },
+    {
+      "case_id": "NTCW28",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "execute_now",
+      "family_id": "fresh_cw_theatrical_synopsis",
+      "title_zh": "虚构戏剧梗概",
+      "task_intent": "Write a synopsis of an original play for a program."
+    },
+    {
+      "case_id": "NTCW29",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "execute_now",
+      "family_id": "fresh_cw_radio_station_identifier",
+      "title_zh": "虚构电台台呼",
+      "task_intent": "Create a station identification script for an imaginary radio channel."
+    },
+    {
+      "case_id": "NTCW30",
+      "split": "test",
+      "domain": "constrained_writing",
+      "omission_type": "execute_now",
+      "family_id": "fresh_cw_empty_state_guidance",
+      "title_zh": "空白收藏页引导",
+      "task_intent": "Write empty-state guidance for a fictional collection interface."
+    },
+    {
+      "case_id": "NTSP01",
+      "family_id": "nsp_volcanology",
+      "title_zh": "火山过程学习",
+      "subject": "volcanic eruption processes",
+      "topics": [
+        "Magma Viscosity",
+        "Eruption Styles",
+        "Volcanic Deposits"
+      ],
+      "split": "test",
+      "omission_type": "complete",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP02",
+      "family_id": "nsp_glaciology",
+      "title_zh": "冰川运动学习",
+      "subject": "glacier dynamics",
+      "topics": [
+        "Glacier Mass Balance",
+        "Crevasse Formation",
+        "Basal Sliding"
+      ],
+      "split": "test",
+      "omission_type": "complete",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP03",
+      "family_id": "nsp_groundwater_hydrology",
+      "title_zh": "地下水水文学",
+      "subject": "groundwater hydrology",
+      "topics": [
+        "Aquifer Recharge",
+        "Hydraulic Head",
+        "Well Drawdown"
+      ],
+      "split": "test",
+      "omission_type": "complete",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP04",
+      "family_id": "nsp_heraldry",
+      "title_zh": "纹章识读学习",
+      "subject": "heraldic shield interpretation",
+      "topics": [
+        "Tinctures",
+        "Shield Divisions",
+        "Heraldic Charges"
+      ],
+      "split": "test",
+      "omission_type": "complete",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP05",
+      "family_id": "nsp_canine_scent_work",
+      "title_zh": "犬类嗅闻训练理论",
+      "subject": "canine scent-work theory",
+      "topics": [
+        "Scent Imprinting",
+        "Search Grids",
+        "Indication Cues"
+      ],
+      "split": "test",
+      "omission_type": "complete",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP06",
+      "family_id": "nsp_cnc_milling",
+      "title_zh": "数控铣削路径理论",
+      "subject": "CNC milling toolpath concepts",
+      "topics": [
+        "Work Offsets",
+        "Tool Compensation",
+        "Stepovers",
+        "Climb Milling"
+      ],
+      "split": "test",
+      "omission_type": "complete",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP07",
+      "family_id": "nsp_consecutive_interpreting",
+      "title_zh": "交替传译笔记",
+      "subject": "consecutive interpreting notes",
+      "topics": [
+        "Idea Units",
+        "Note Symbols",
+        "Reformulation"
+      ],
+      "split": "test",
+      "omission_type": "critical_omission",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP08",
+      "family_id": "nsp_furniture_upholstery",
+      "title_zh": "家具软包工艺",
+      "subject": "traditional upholstery methods",
+      "topics": [
+        "Webbing Tension",
+        "Spring Lashing",
+        "Fabric Cutting"
+      ],
+      "split": "test",
+      "omission_type": "critical_omission",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP09",
+      "family_id": "nsp_clock_escapements",
+      "title_zh": "机械钟擒纵原理",
+      "subject": "mechanical clock movements",
+      "topics": [
+        "Anchor Escapements",
+        "Balance Wheels",
+        "Gear Trains"
+      ],
+      "split": "test",
+      "omission_type": "critical_omission",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP10",
+      "family_id": "nsp_dental_anatomy",
+      "title_zh": "牙齿形态识别",
+      "subject": "tooth anatomy identification",
+      "topics": [
+        "Incisors",
+        "Premolars",
+        "Molars"
+      ],
+      "split": "test",
+      "omission_type": "critical_omission",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP11",
+      "family_id": "nsp_contract_bridge_bidding",
+      "title_zh": "桥牌叫牌学习",
+      "subject": "contract bridge bidding",
+      "topics": [
+        "Opening Bids",
+        "Response Bids",
+        "Competitive Auctions"
+      ],
+      "split": "test",
+      "omission_type": "critical_omission",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP12",
+      "family_id": "nsp_incident_coordination",
+      "title_zh": "事件协调角色学习",
+      "subject": "incident coordination concepts",
+      "topics": [
+        "Incident Roles",
+        "Resource Staging",
+        "Situation Reports"
+      ],
+      "split": "test",
+      "omission_type": "critical_omission",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP13",
+      "family_id": "nsp_scientific_peer_review",
+      "title_zh": "论文同行评审学习",
+      "subject": "scientific peer-review practice",
+      "topics": [
+        "Methods Appraisal",
+        "Reviewer Conflicts",
+        "Constructive Reports"
+      ],
+      "split": "test",
+      "omission_type": "critical_and_optional",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP14",
+      "family_id": "nsp_insurance_concepts",
+      "title_zh": "保险基础概念学习",
+      "subject": "introductory insurance concepts",
+      "topics": [
+        "Indemnity",
+        "Insurable Interest",
+        "Subrogation"
+      ],
+      "split": "test",
+      "omission_type": "critical_and_optional",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP15",
+      "family_id": "nsp_stained_glass",
+      "title_zh": "彩色玻璃拼接理论",
+      "subject": "stained-glass assembly theory",
+      "topics": [
+        "Copper Foiling",
+        "Solder Seams",
+        "Panel Reinforcement"
+      ],
+      "split": "test",
+      "omission_type": "critical_and_optional",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP16",
+      "family_id": "nsp_coiled_basketry",
+      "title_zh": "盘筑篮编工艺",
+      "subject": "coiled basket construction",
+      "topics": [
+        "Foundation Bundles",
+        "Stitch Spacing",
+        "Rim Finishing"
+      ],
+      "split": "test",
+      "omission_type": "critical_and_optional",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP17",
+      "family_id": "nsp_pastry_lamination",
+      "title_zh": "起酥面团层压学习",
+      "subject": "pastry lamination",
+      "topics": [
+        "Butter Lock-in",
+        "Letter Folds",
+        "Dough Resting"
+      ],
+      "split": "test",
+      "omission_type": "critical_and_optional",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP18",
+      "family_id": "nsp_cheese_affinage",
+      "title_zh": "奶酪熟成学习",
+      "subject": "cheese affinage",
+      "topics": [
+        "Rind Development",
+        "Affinage Humidity",
+        "Ripening Microbes"
+      ],
+      "split": "test",
+      "omission_type": "critical_and_optional",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP19",
+      "family_id": "nsp_perfume_structure",
+      "title_zh": "香水结构学习",
+      "subject": "perfume composition structure",
+      "topics": [
+        "Top Notes",
+        "Heart Notes",
+        "Base Notes"
+      ],
+      "split": "test",
+      "omission_type": "optional_only",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP20",
+      "family_id": "nsp_brush_calligraphy",
+      "title_zh": "毛笔运笔训练",
+      "subject": "brush calligraphy mechanics",
+      "topics": [
+        "Stroke Entry",
+        "Ink Loading",
+        "Brush Pressure"
+      ],
+      "split": "test",
+      "omission_type": "optional_only",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP21",
+      "family_id": "nsp_dance_notation",
+      "title_zh": "舞蹈记谱识读",
+      "subject": "dance notation reading",
+      "topics": [
+        "Movement Symbols",
+        "Staff Layout",
+        "Direction Signs"
+      ],
+      "split": "test",
+      "omission_type": "optional_only",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP22",
+      "family_id": "nsp_rugby_officiating",
+      "title_zh": "橄榄球判罚学习",
+      "subject": "rugby officiating concepts",
+      "topics": [
+        "Advantage Decisions",
+        "Offside Lines",
+        "Restart Procedures"
+      ],
+      "split": "test",
+      "omission_type": "optional_only",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP23",
+      "family_id": "nsp_sign_language_space",
+      "title_zh": "手语空间表达学习",
+      "subject": "sign-language spatial expression",
+      "topics": [
+        "Referent Placement",
+        "Classifier Handshapes",
+        "Role Shifts"
+      ],
+      "split": "test",
+      "omission_type": "optional_only",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP24",
+      "family_id": "nsp_inventory_operations",
+      "title_zh": "零售库存管理学习",
+      "subject": "retail inventory control",
+      "topics": [
+        "Stock Counts",
+        "Reorder Points",
+        "Safety Stock"
+      ],
+      "split": "test",
+      "omission_type": "unavailable_answer",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP25",
+      "family_id": "nsp_aircraft_marshalling",
+      "title_zh": "机场地面引导理论",
+      "subject": "aircraft ground-marshalling theory",
+      "topics": [
+        "Wand Signals",
+        "Stand Clearances",
+        "Pushback Coordination"
+      ],
+      "split": "test",
+      "omission_type": "unavailable_answer",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP26",
+      "family_id": "nsp_usability_testing",
+      "title_zh": "产品可用性测试学习",
+      "subject": "usability test facilitation",
+      "topics": [
+        "Task Scenarios",
+        "Think-aloud Prompts",
+        "Usability Findings"
+      ],
+      "split": "test",
+      "omission_type": "unavailable_answer",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP27",
+      "family_id": "nsp_drum_tuning",
+      "title_zh": "鼓面调音学习",
+      "subject": "acoustic drum tuning",
+      "topics": [
+        "Lug Sequencing",
+        "Head Seating",
+        "Resonant Head Tension"
+      ],
+      "split": "test",
+      "omission_type": "unavailable_answer",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP28",
+      "family_id": "nsp_stain_removal_chemistry",
+      "title_zh": "衣物污渍化学学习",
+      "subject": "laundry stain chemistry",
+      "topics": [
+        "Protein Stains",
+        "Oil Emulsification",
+        "Dye Transfer"
+      ],
+      "split": "test",
+      "omission_type": "execute_now",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP29",
+      "family_id": "nsp_hockey_tactics",
+      "title_zh": "冰球战术学习",
+      "subject": "ice-hockey team tactics",
+      "topics": [
+        "Forechecking",
+        "Defensive Zones",
+        "Line Changes"
+      ],
+      "split": "test",
+      "omission_type": "execute_now",
+      "domain": "study_planning"
+    },
+    {
+      "case_id": "NTSP30",
+      "family_id": "nsp_fountain_pen_restoration",
+      "title_zh": "钢笔修复结构学习",
+      "subject": "fountain-pen restoration concepts",
+      "topics": [
+        "Nib Alignment",
+        "Feed Channels",
+        "Sac Replacement"
+      ],
+      "split": "test",
+      "omission_type": "execute_now",
+      "domain": "study_planning"
+    }
+  ],
+  "assembled_utc": "2026-10-19T14:55:25.343620+00:00",
+  "author_family_plan_sha256": {
+    "work/writing_family_plan.json": "18a72be5fdfdca9ccdc5234db90cc7c145592945c2b15021a5015461657270a8",
+    "work/planning_family_plan.json": "ac85b39baf1a36c058d42dde55323e2ebb04fa915df050b7315cbbad5780607c"
+  }
+}

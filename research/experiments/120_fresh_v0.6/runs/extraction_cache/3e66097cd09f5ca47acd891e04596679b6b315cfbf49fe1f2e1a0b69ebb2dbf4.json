@@ -1,0 +1,81 @@
+{
+  "cache_key": "3e66097cd09f5ca47acd891e04596679b6b315cfbf49fe1f2e1a0b69ebb2dbf4",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [
+      "S3"
+    ],
+    "length": [],
+    "required_content": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 50,
+      "text": "Write an advertisement for a fantastical umbrella."
+    },
+    {
+      "id": "S2",
+      "start": 51,
+      "end": 108,
+      "text": "Address this to readers of an imaginary novelty magazine."
+    },
+    {
+      "id": "S3",
+      "start": 109,
+      "end": 157,
+      "text": "A whimsical and exuberant tone suits this piece."
+    }
+  ],
+  "field_values": {
+    "audience": "Address this to readers of an imaginary novelty magazine.",
+    "tone": "A whimsical and exuberant tone suits this piece.",
+    "length": null,
+    "required_content": null
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 51,
+        "end": 108,
+        "quote": "Address this to readers of an imaginary novelty magazine."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 109,
+        "end": 157,
+        "quote": "A whimsical and exuberant tone suits this piece."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[\"S3\"],\"length\":[],\"required_content\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [
+            "S3"
+          ],
+          "length": [],
+          "required_content": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

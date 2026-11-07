@@ -1,0 +1,64 @@
+{
+  "key": "c35e9afd8c99284c0a4dd838525478eae3460c87e4ef52bc9ef6ead1d838674f",
+  "raw": "{\"text\": \"To foster collaboration and respect in our shared workspace, we’ve arranged desks thoughtfully. The shared tray holds frequently used stationery, placed within easy reach for all. Drawing materials are positioned on the window side, maximizing natural light and inspiring creativity. A clear center remains unobstructed, allowing smooth exchange of large sheets and collaborative work. Each person maintains a private corner for focused tasks, ensuring personal space. This layout balances openness with privacy, supports daily routines, and honors shared resources. The shared tray, window side, and clear center are key to our functional, considerate design.\"}",
+  "source_case_id": "NTCW26",
+  "source_variant": "direct",
+  "response_sha256": "79ee331f9bb6a30af52b0df3c28aa9236abc69ac8624c93cdbc2f1c3e8803760",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "generation",
+    "repair": false,
+    "repair_kind": null,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Complete the user's task using only the original request, public context and the visible clarification exchanges.\nDo not ask more questions. Honor all available requirements, including exact phrases and the full-text word count.\nvisible_constraints is a deterministic, partial checklist derived only from that visible text, not new user requirements.\nAlways honor the original visible text as well; absence from the checklist does not remove a requirement.\nDo not invent event details, promises, historical facts or beneficiary groups. Omit unavailable specifics or use clearly marked placeholders.\nTreat concrete dates, clock times, addresses, names, contact details, links, services and free-access claims as facts requiring visible support.\nPlausibility is not evidence. Do not add these details to make a notice sound complete or to reach its minimum word count.\nDo not claim a link is provided when none is available. Use neutral connective wording without adding factual commitments.\nReturn exactly one JSON object matching the supplied output schema, without Markdown fences or surrounding commentary.\nFor writing, put ALL headings, greetings, body and signature inside text.\nCopy required literal phrases unchanged. Draft near the middle of the full-text word range, then check the complete text length.\nWhen revising a length failure, rewrite the whole text toward the range midpoint while retaining every required literal; do not merely append or trim a final sentence.\nWord counting includes every heading and signature: letter/digit sequences, with internal apostrophes or hyphens, count as words.\nFor study plans, each schedule item has one complete topic name, a real ISO date and positive integer minutes;\nfirst compute each topic's required total, then allocate those minutes across the permitted days without exceeding any day's combined limit.\nA topic-specific minimum replaces a smaller general minimum for that topic; it is not an extra requirement to add twice.\nSplit a topic across days when needed. Use a compact schedule with only necessary sessions; do not repeat every topic on every day.\nCheck the sum of ALL sessions per date and the sum per exact topic label before returning. Keep summary short and consistent with schedule.\nIf a deadline or daily allowance is unknown, use a short conservative plan without claiming a guessed bound was supplied.\nNever add an unsupported numeric constraint. If visible requirements conflict, explain the conflict in the output rather than claim compliance.\nWrite in English."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"constrained_writing\", \"initial_request\": \"Propose a desk arrangement for a fictional shared workspace. Use a practical and considerate voice. The full text must be between 55 and 85 words. Use this fictional material: The layout places frequently shared stationery in a shared tray, drawing materials on the window side, and keeps a clear center for exchanging large sheets. Each person retains one private corner. Required wording, verbatim: \\\"shared tray\\\", \\\"window side\\\", \\\"clear center\\\".\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [], \"visible_constraints\": {\"version\": \"visible-constraints-0.4.0\", \"domain\": \"constrained_writing\", \"constraints\": [{\"kind\": \"word_count\", \"parameters\": {\"min_words\": 55, \"max_words\": 85}, \"source\": [{\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"The full text must be between 55 and 85 words.\"}]}], \"warnings\": [{\"reason\": \"quoted_text_not_clearly_a_positive_literal_requirement\", \"source\": {\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"Required wording, verbatim: \\\"shared tray\\\", \\\"window side\\\", \\\"clear center\\\".\"}}]}, \"output_schema\": {\"$schema\": \"https://json-schema.org/draft/2020-12/schema\", \"type\": \"object\", \"properties\": {\"text\": {\"type\": \"string\", \"minLength\": 1, \"pattern\": \"\\\\S\"}}, \"required\": [\"text\"], \"additionalProperties\": false}}"
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

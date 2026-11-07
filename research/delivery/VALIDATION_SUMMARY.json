@@ -1,0 +1,254 @@
+{
+  "date": "2026-10-28",
+  "timezone": "Asia/Singapore",
+  "scope": "Current documentation/evidence packaging revision; existing experiment, scores and returned assessments preserved.",
+  "environments": [
+    "macOS CPython 3.12",
+    "macOS CPython 3.13"
+  ],
+  "checks": [
+    {
+      "check": "py312_verify",
+      "command": [
+        "/Users/klesmad/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "submission.py",
+        "verify"
+      ],
+      "working_directory_role": "current package root",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "stdout_characters": 510,
+      "stderr_characters": 0
+    },
+    {
+      "check": "py312_exporter_tests",
+      "command": [
+        "/Users/klesmad/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "submission/tests",
+        "-v"
+      ],
+      "working_directory_role": "current package root",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "stdout_characters": 0,
+      "stderr_characters": 737
+    },
+    {
+      "check": "py312_inspect",
+      "command": [
+        "/Users/klesmad/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "submission.py",
+        "inspect",
+        "--case",
+        "NTSP13",
+        "--system",
+        "value_based"
+      ],
+      "working_directory_role": "current package root",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "stdout_characters": 22486,
+      "stderr_characters": 0
+    },
+    {
+      "check": "py312_export",
+      "command": [
+        "/Users/klesmad/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "submission.py",
+        "export",
+        "--out",
+        "/Users/klesmad/Documents/Codex/2026-10-27/gao/work/submission_optimize_2026-10-28/validation/new_evidence_export"
+      ],
+      "working_directory_role": "current package root",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "stdout_characters": 89,
+      "stderr_characters": 0
+    },
+    {
+      "check": "all_nine_export_files_match_existing_bytes",
+      "passed": true,
+      "files": 9
+    },
+    {
+      "check": "py312_existing_export_rejected",
+      "command": [
+        "/Users/klesmad/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "submission.py",
+        "export",
+        "--out",
+        "/Users/klesmad/Documents/Codex/2026-10-27/gao/work/submission_optimize_2026-10-28/validation/new_evidence_export"
+      ],
+      "working_directory_role": "current package root",
+      "exit_code": 2,
+      "expected_exit": 2,
+      "passed": true,
+      "stdout_characters": 0,
+      "stderr_characters": 164
+    },
+    {
+      "check": "py312_invalid_case_rejected",
+      "command": [
+        "/Users/klesmad/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "submission.py",
+        "inspect",
+        "--case",
+        "NO_SUCH_CASE"
+      ],
+      "working_directory_role": "current package root",
+      "exit_code": 2,
+      "expected_exit": 2,
+      "passed": true,
+      "stdout_characters": 0,
+      "stderr_characters": 135
+    },
+    {
+      "check": "py312_full_offline_reproduction",
+      "command": [
+        "/Users/klesmad/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "submission.py",
+        "reproduce"
+      ],
+      "working_directory_role": "current package root",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "stdout_characters": 1229,
+      "stderr_characters": 0
+    },
+    {
+      "check": "py313_verify",
+      "command": [
+        "/Users/klesmad/Documents/Codex/2026-10-09/gu/experiments/coprompt_v0.6.1/.venv-demo/bin/python",
+        "-B",
+        "submission.py",
+        "verify"
+      ],
+      "working_directory_role": "current package root",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "stdout_characters": 510,
+      "stderr_characters": 0
+    },
+    {
+      "check": "py313_exporter_tests",
+      "command": [
+        "/Users/klesmad/Documents/Codex/2026-10-09/gu/experiments/coprompt_v0.6.1/.venv-demo/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "submission/tests",
+        "-v"
+      ],
+      "working_directory_role": "current package root",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "stdout_characters": 0,
+      "stderr_characters": 737
+    },
+    {
+      "check": "human_review_numeric_reproduction",
+      "command": [
+        "/Users/klesmad/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "reproduce_statistics.py"
+      ],
+      "working_directory_role": "external disposable working copy",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "stdout_characters": 3078,
+      "stderr_characters": 0
+    },
+    {
+      "check": "human_review_saved_numeric_outputs_unchanged",
+      "passed": true,
+      "outputs_compared": 7
+    },
+    {
+      "check": "case_analysis_numeric_reproduction",
+      "command": [
+        "/Users/klesmad/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "reproduce_analysis.py"
+      ],
+      "working_directory_role": "external disposable working copy",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "stdout_characters": 3816,
+      "stderr_characters": 0
+    },
+    {
+      "check": "case_analysis_saved_numeric_outputs_unchanged",
+      "passed": true,
+      "outputs_compared": 9
+    },
+    {
+      "check": "existing_case_inputs_match_supplied_study_scientific_records",
+      "passed": true,
+      "trajectories": 260,
+      "ignored_only_historical_provenance_fields": [
+        "freeze_sha256",
+        "record_sha256"
+      ],
+      "requests_answers_annotations_byte_equal": true
+    },
+    {
+      "check": "viewer_script_0_syntax",
+      "command": [
+        "/Users/klesmad/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "--check",
+        "/Users/klesmad/Documents/Codex/2026-10-27/gao/work/submission_optimize_2026-10-28/validation/viewer_script_0.cjs"
+      ],
+      "working_directory_role": "current package root",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true,
+      "stdout_characters": 0,
+      "stderr_characters": 0
+    },
+    {
+      "check": "viewer_embedded_data_and_javascript_static_checks",
+      "passed": true,
+      "embedded_records": 260,
+      "actual_browser_rendering": false
+    }
+  ],
+  "full_offline_reproduction": {
+    "original_tests": 65,
+    "english_edition_tests": 65,
+    "same_suite_not_130_independent_tests": true,
+    "frozen_source_files": 71,
+    "logical_trajectories": 480,
+    "selected_lambda": 0.25
+  },
+  "model_calls": 0,
+  "new_model_experiments": false,
+  "new_or_changed_ratings": false,
+  "native_windows_executed": false,
+  "linux_or_wsl_executed": false,
+  "actual_html_browser_rendering": false,
+  "browser_limit": "The browser tool rejects file: URLs. No alternative browser path was attempted; JavaScript syntax, embedded data and source-correspondence checks were used.",
+  "unchanged_submitted_numeric_outputs_verified_in_external_copies": true,
+  "all_checks_passed": true
+}

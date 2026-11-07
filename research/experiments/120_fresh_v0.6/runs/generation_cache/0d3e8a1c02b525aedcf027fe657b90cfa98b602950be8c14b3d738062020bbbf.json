@@ -1,0 +1,234 @@
+{
+  "cache_key": "0d3e8a1c02b525aedcf027fe657b90cfa98b602950be8c14b3d738062020bbbf",
+  "source_case_id": "NTSP10",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Incisors",
+        "minutes": 35
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Premolars",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Molars",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Incisors",
+        "minutes": 35
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Premolars",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Molars",
+        "minutes": 25
+      },
+      {
+        "date": "2027-02-07",
+        "topic": "Incisors",
+        "minutes": 35
+      }
+    ],
+    "summary": "Calculated from the schedule: 205 minutes in total. Daily totals: 2027-02-01: 35 minutes; 2027-02-02: 25 minutes; 2027-02-03: 25 minutes; 2027-02-04: 35 minutes; 2027-02-05: 25 minutes; 2027-02-06: 25 minutes; 2027-02-07: 35 minutes. Topic totals: Incisors: 105 minutes; Molars: 50 minutes; Premolars: 50 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Incisors\",\n      \"minutes\": 35\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Premolars\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Molars\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Incisors\",\n      \"minutes\": 35\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Premolars\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Molars\",\n      \"minutes\": 25\n    },\n    {\n      \"date\": \"2027-02-07\",\n      \"topic\": \"Incisors\",\n      \"minutes\": 35\n    }\n  ],\n  \"summary\": \"The schedule covers all required topics—Incisors, Premolars, and Molars—with a total of at least 35 minutes for Incisors and at least 25 minutes each for Premolars and Molars. All sessions are within the date window from 2027-02-01 to 2027-02-07, and no day exceeds the 70-minute ceiling. The total study time is 200 minutes, distributed across seven sessions.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Incisors",
+            "minutes": 35
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Premolars",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Molars",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Incisors",
+            "minutes": 35
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Premolars",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Molars",
+            "minutes": 25
+          },
+          {
+            "date": "2027-02-07",
+            "topic": "Incisors",
+            "minutes": 35
+          }
+        ],
+        "summary": "The schedule covers all required topics—Incisors, Premolars, and Molars—with a total of at least 35 minutes for Incisors and at least 25 minutes each for Premolars and Molars. All sessions are within the date window from 2027-02-01 to 2027-02-07, and no day exceeds the 70-minute ceiling. The total study time is 200 minutes, distributed across seven sessions."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "The last usable study date is 2027-02-07, and sessions may fall on that day."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 205,
+      "daily_minutes": {
+        "2027-02-01": 35,
+        "2027-02-02": 25,
+        "2027-02-03": 25,
+        "2027-02-04": 35,
+        "2027-02-05": 25,
+        "2027-02-06": 25,
+        "2027-02-07": 35
+      },
+      "topic_minutes": [
+        {
+          "topic": "Incisors",
+          "normalized_topic": "incisors",
+          "minutes": 105
+        },
+        {
+          "topic": "Molars",
+          "normalized_topic": "molars",
+          "minutes": 50
+        },
+        {
+          "topic": "Premolars",
+          "normalized_topic": "premolars",
+          "minutes": 50
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "The last usable study date is 2027-02-07, and sessions may fall on that day."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 205,
+      "daily_minutes": {
+        "2027-02-01": 35,
+        "2027-02-02": 25,
+        "2027-02-03": 25,
+        "2027-02-04": 35,
+        "2027-02-05": 25,
+        "2027-02-06": 25,
+        "2027-02-07": 35
+      },
+      "topic_minutes": [
+        {
+          "topic": "Incisors",
+          "normalized_topic": "incisors",
+          "minutes": 105
+        },
+        {
+          "topic": "Molars",
+          "normalized_topic": "molars",
+          "minutes": 50
+        },
+        {
+          "topic": "Premolars",
+          "normalized_topic": "premolars",
+          "minutes": 50
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "The last usable study date is 2027-02-07, and sessions may fall on that day."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The schedule covers all required topics—Incisors, Premolars, and Molars—with a total of at least 35 minutes for Incisors and at least 25 minutes each for Premolars and Molars. All sessions are within the date window from 2027-02-01 to 2027-02-07, and no day exceeds the 70-minute ceiling. The total study time is 200 minutes, distributed across seven sessions.",
+    "derived_summary": "Calculated from the schedule: 205 minutes in total. Daily totals: 2027-02-01: 35 minutes; 2027-02-02: 25 minutes; 2027-02-03: 25 minutes; 2027-02-04: 35 minutes; 2027-02-05: 25 minutes; 2027-02-06: 25 minutes; 2027-02-07: 35 minutes. Topic totals: Incisors: 105 minutes; Molars: 50 minutes; Premolars: 50 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

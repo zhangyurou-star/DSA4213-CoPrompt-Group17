@@ -1,0 +1,27 @@
+{
+  "experimental_source": {
+    "files_compared": 11,
+    "changed_files": []
+  },
+  "public_and_private_data": {
+    "files_compared": 17,
+    "changed_files": []
+  },
+  "raw_response_cache": {
+    "files_compared": 642,
+    "changed_files": []
+  },
+  "session_logs": {
+    "files_compared": 6,
+    "changed_files": []
+  },
+  "quantitative_analysis_equal": true,
+  "logical_trajectory_payloads_equal_except_provenance_fields": 480,
+  "updated_metadata_fields": {
+    "freeze_sha256": 480,
+    "record_sha256": 480
+  },
+  "interpretation": "The uploaded ZIP is a postprocessed edition with rebased fingerprints. This comparison confirms unchanged listed content; it does not certify the rebased metadata as original preregistration.",
+  "source_sha256": "c8e0dcfef7de7485d4f96c277092ccbdcf71be75448ed3c627d318763b9db27d",
+  "comparison_archive_sha256": "cf126c81a0ca84d02a416c669ce399cbd4370533602c29971e8b842c08ab2a7d"
+}

@@ -1,0 +1,89 @@
+{
+  "cache_key": "f1769294b7edeaf925425299ad441da493365d4a042145077fd7cf0cb7392346",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [],
+    "available_time": [],
+    "topics": [
+      "S4",
+      "S5"
+    ],
+    "priorities": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 107,
+      "text": "Before a tea-ceremony demonstration, I would like to recognize the utensils and their handling conventions."
+    },
+    {
+      "id": "S2",
+      "start": 108,
+      "end": 122,
+      "text": "Plan my study."
+    },
+    {
+      "id": "S3",
+      "start": 123,
+      "end": 143,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 144,
+      "end": 230,
+      "text": "Cover these exact topic labels: \"Chawan Handling\", \"Chasen Care\", \"Utensil Placement\"."
+    },
+    {
+      "id": "S5",
+      "start": 231,
+      "end": 285,
+      "text": "Give each one at least 20 minutes over the whole plan."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": null,
+    "topics": "Cover these exact topic labels: \"Chawan Handling\", \"Chasen Care\", \"Utensil Placement\".\nGive each one at least 20 minutes over the whole plan.",
+    "priorities": null
+  },
+  "evidence": {
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 144,
+        "end": 230,
+        "quote": "Cover these exact topic labels: \"Chawan Handling\", \"Chasen Care\", \"Utensil Placement\"."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 231,
+        "end": 285,
+        "quote": "Give each one at least 20 minutes over the whole plan."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[],\"available_time\":[],\"topics\":[\"S4\",\"S5\"],\"priorities\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [],
+          "available_time": [],
+          "topics": [
+            "S4",
+            "S5"
+          ],
+          "priorities": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

@@ -1,0 +1,7 @@
+﻿dimension,dimension_zh,paired_outputs,linearly_weighted_kappa,exact_agreement_count,exact_agreement_proportion,mean_absolute_difference_count_items_only
+usefulness_1_to_5,有用性,100,0.7905759162303665,84,0.84,
+coherence_1_to_5,连贯性,100,0.9226903749516815,96,0.96,
+audience_fit_1_to_5,受众适配,100,0.5992305226033985,75,0.75,
+feasibility_1_to_5,可行性,100,0.7304582210242587,80,0.8,
+unsupported_assumptions_count,无依据假设数,100,,90,0.9,0.15
+unnecessary_questions_count,不必要提问数,100,,99,0.99,0.03

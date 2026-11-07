@@ -1,0 +1,130 @@
+{
+  "cache_key": "2f8ea0df77354ff0d76490aa3cb33f769a79a85da3706b11338cc4939b191ba2",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S6"
+    ],
+    "tone": [
+      "S2"
+    ],
+    "length": [],
+    "required_content": [
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 43,
+      "text": "Compose a dedication for an imaginary book."
+    },
+    {
+      "id": "S2",
+      "start": 44,
+      "end": 88,
+      "text": "The style should feel intimate and grateful."
+    },
+    {
+      "id": "S3",
+      "start": 89,
+      "end": 236,
+      "text": "Use this fictional material: The dedication recalls an older sister keeping the spare chair beside her lamp and listening to every unfinished page."
+    },
+    {
+      "id": "S4",
+      "start": 237,
+      "end": 285,
+      "text": "The author thanks her with the words you waited."
+    },
+    {
+      "id": "S5",
+      "start": 286,
+      "end": 371,
+      "text": "Required wording, verbatim: \"the spare chair\", \"every unfinished page\", \"you waited\"."
+    },
+    {
+      "id": "S6",
+      "start": 372,
+      "end": 433,
+      "text": "Use wording suitable for the fictional author's older sister."
+    }
+  ],
+  "field_values": {
+    "audience": "Use wording suitable for the fictional author's older sister.",
+    "tone": "The style should feel intimate and grateful.",
+    "length": null,
+    "required_content": "Use this fictional material: The dedication recalls an older sister keeping the spare chair beside her lamp and listening to every unfinished page.\nThe author thanks her with the words you waited.\nRequired wording, verbatim: \"the spare chair\", \"every unfinished page\", \"you waited\"."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 372,
+        "end": 433,
+        "quote": "Use wording suitable for the fictional author's older sister."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 44,
+        "end": 88,
+        "quote": "The style should feel intimate and grateful."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 89,
+        "end": 236,
+        "quote": "Use this fictional material: The dedication recalls an older sister keeping the spare chair beside her lamp and listening to every unfinished page."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 237,
+        "end": 285,
+        "quote": "The author thanks her with the words you waited."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 286,
+        "end": 371,
+        "quote": "Required wording, verbatim: \"the spare chair\", \"every unfinished page\", \"you waited\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S6\"],\"tone\":[\"S2\"],\"length\":[],\"required_content\":[\"S3\",\"S4\",\"S5\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S6"
+          ],
+          "tone": [
+            "S2"
+          ],
+          "length": [],
+          "required_content": [
+            "S3",
+            "S4",
+            "S5"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

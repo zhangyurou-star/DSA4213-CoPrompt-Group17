@@ -1,0 +1,89 @@
+{
+  "cache_key": "81b033394e70000ee41f638247528f6fd7d6a1e192ee87b8125fa5ad3d29ec00",
+  "source_case_id": "NDCW09",
+  "source_policy": "direct",
+  "output": {
+    "text": "Harbor Thread began in a quiet corner of a seaside workshop, where empty cedar boxes became the first molds for handcrafted soap. Each bar was shaped by hand, its surface bearing a spiral stamp—our quiet tribute to the curled wood shavings that once danced across the workbench. Today, every bar still carries that mark, a small echo of origin. Made with care, using simple ingredients and a steady rhythm, Harbor Thread is a quiet promise: that something simple, made with intention, can still feel like home."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Harbor Thread began in a quiet corner of a seaside workshop, where empty cedar boxes became the first molds for handcrafted soap. Each bar was shaped by hand, its surface bearing a spiral stamp—our quiet tribute to the curled wood shavings that once danced across the workbench. Today, every bar still carries that mark, a small echo of origin. Made with care, using simple ingredients and a steady rhythm, Harbor Thread is a quiet promise: that something simple, made with intention, can still feel like home.\"\n}",
+      "parsed": {
+        "text": "Harbor Thread began in a quiet corner of a seaside workshop, where empty cedar boxes became the first molds for handcrafted soap. Each bar was shaped by hand, its surface bearing a spiral stamp—our quiet tribute to the curled wood shavings that once danced across the workbench. Today, every bar still carries that mark, a small echo of origin. Made with care, using simple ingredients and a steady rhythm, Harbor Thread is a quiet promise: that something simple, made with intention, can still feel like home."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Harbor Thread",
+            "cedar boxes",
+            "a spiral stamp"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Preserve these exact phrases: \"Harbor Thread\", \"cedar boxes\", \"a spiral stamp\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 87
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Harbor Thread",
+            "cedar boxes",
+            "a spiral stamp"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 87
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Harbor Thread",
+            "cedar boxes",
+            "a spiral stamp"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

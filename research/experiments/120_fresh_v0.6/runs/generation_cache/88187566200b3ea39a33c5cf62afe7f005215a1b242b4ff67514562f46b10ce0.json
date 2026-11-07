@@ -1,0 +1,241 @@
+{
+  "cache_key": "88187566200b3ea39a33c5cf62afe7f005215a1b242b4ff67514562f46b10ce0",
+  "source_case_id": "NDSP01",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Brood Pattern Checks",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-01",
+        "topic": "Queen Presence Signs",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Brood Pattern Checks",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Hive Recordkeeping",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Hive Recordkeeping",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Queen Presence Signs",
+        "minutes": 10
+      }
+    ],
+    "summary": "Calculated from the schedule: 70 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 25 minutes; 2027-02-03: 20 minutes. Topic totals: Brood Pattern Checks: 25 minutes; Hive Recordkeeping: 25 minutes; Queen Presence Signs: 20 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Brood Pattern Checks\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Queen Presence Signs\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Brood Pattern Checks\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Hive Recordkeeping\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Hive Recordkeeping\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Queen Presence Signs\",\n      \"minutes\": 10\n    }\n  ],\n  \"summary\": \"The study plan covers all required topics—Brood Pattern Checks, Queen Presence Signs, and Hive Recordkeeping—within the 2027-02-01 to 2027-02-03 window. Brood Pattern Checks total 25 minutes (15 + 10), meeting the 20-minute minimum. Hive Recordkeeping totals 25 minutes, fulfilling the firm requirement. Queen Presence Signs total 20 minutes (10 + 10), exceeding the 10-minute cumulative minimum. Daily limits of 25 minutes are respected: Feb 1 (25), Feb 2 (25), Feb 3 (20).\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Brood Pattern Checks",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-01",
+            "topic": "Queen Presence Signs",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Brood Pattern Checks",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Hive Recordkeeping",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Hive Recordkeeping",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Queen Presence Signs",
+            "minutes": 10
+          }
+        ],
+        "summary": "The study plan covers all required topics—Brood Pattern Checks, Queen Presence Signs, and Hive Recordkeeping—within the 2027-02-01 to 2027-02-03 window. Brood Pattern Checks total 25 minutes (15 + 10), meeting the 20-minute minimum. Hive Recordkeeping totals 25 minutes, fulfilling the firm requirement. Queen Presence Signs total 20 minutes (10 + 10), exceeding the 10-minute cumulative minimum. Daily limits of 25 minutes are respected: Feb 1 (25), Feb 2 (25), Feb 3 (20)."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 25
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "I can spare at most 25 minutes per day, counting every topic together."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use only dates from 2027-02-01 through 2027-02-03, including the final date."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 70,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 25,
+        "2027-02-03": 20
+      },
+      "topic_minutes": [
+        {
+          "topic": "Brood Pattern Checks",
+          "normalized_topic": "brood pattern checks",
+          "minutes": 25
+        },
+        {
+          "topic": "Hive Recordkeeping",
+          "normalized_topic": "hive recordkeeping",
+          "minutes": 25
+        },
+        {
+          "topic": "Queen Presence Signs",
+          "normalized_topic": "queen presence signs",
+          "minutes": 20
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 25
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use only dates from 2027-02-01 through 2027-02-03, including the final date."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 70,
+      "daily_minutes": {
+        "2027-02-01": 25,
+        "2027-02-02": 25,
+        "2027-02-03": 20
+      },
+      "topic_minutes": [
+        {
+          "topic": "Brood Pattern Checks",
+          "normalized_topic": "brood pattern checks",
+          "minutes": 25
+        },
+        {
+          "topic": "Hive Recordkeeping",
+          "normalized_topic": "hive recordkeeping",
+          "minutes": 25
+        },
+        {
+          "topic": "Queen Presence Signs",
+          "normalized_topic": "queen presence signs",
+          "minutes": 20
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 25
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use only dates from 2027-02-01 through 2027-02-03, including the final date."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study plan covers all required topics—Brood Pattern Checks, Queen Presence Signs, and Hive Recordkeeping—within the 2027-02-01 to 2027-02-03 window. Brood Pattern Checks total 25 minutes (15 + 10), meeting the 20-minute minimum. Hive Recordkeeping totals 25 minutes, fulfilling the firm requirement. Queen Presence Signs total 20 minutes (10 + 10), exceeding the 10-minute cumulative minimum. Daily limits of 25 minutes are respected: Feb 1 (25), Feb 2 (25), Feb 3 (20).",
+    "derived_summary": "Calculated from the schedule: 70 minutes in total. Daily totals: 2027-02-01: 25 minutes; 2027-02-02: 25 minutes; 2027-02-03: 20 minutes. Topic totals: Brood Pattern Checks: 25 minutes; Hive Recordkeeping: 25 minutes; Queen Presence Signs: 20 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

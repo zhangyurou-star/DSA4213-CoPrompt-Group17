@@ -1,0 +1,76 @@
+{
+  "cache_key": "4fb6da251141b4845339ad5c4b38fc953c997626fb045520b9cd164303f2a00f",
+  "source_case_id": "NTCW28",
+  "source_policy": "direct",
+  "output": {
+    "text": "Step into The Unsent Window, a haunting play centered on a retired locksmith who discovers a hidden cavity in his home’s wall—filled with letters addressed to nobody. As he holds the fragile envelopes, each bearing no return address, the weight of curiosity presses against his quiet life. Should he open them? To read is to trespass on secrets not meant for him; to leave them sealed is to surrender a mystery that may define his solitude. The Unsent Window invites you to witness the quiet storm of a single choice—what will he do? The answer remains, like the letters themselves, unsent."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Step into The Unsent Window, a haunting play centered on a retired locksmith who discovers a hidden cavity in his home’s wall—filled with letters addressed to nobody. As he holds the fragile envelopes, each bearing no return address, the weight of curiosity presses against his quiet life. Should he open them? To read is to trespass on secrets not meant for him; to leave them sealed is to surrender a mystery that may define his solitude. The Unsent Window invites you to witness the quiet storm of a single choice—what will he do? The answer remains, like the letters themselves, unsent.\"\n}",
+      "parsed": {
+        "text": "Step into The Unsent Window, a haunting play centered on a retired locksmith who discovers a hidden cavity in his home’s wall—filled with letters addressed to nobody. As he holds the fragile envelopes, each bearing no return address, the weight of curiosity presses against his quiet life. Should he open them? To read is to trespass on secrets not meant for him; to leave them sealed is to surrender a mystery that may define his solitude. The Unsent Window invites you to witness the quiet storm of a single choice—what will he do? The answer remains, like the letters themselves, unsent."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 103
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 103
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

@@ -1,0 +1,132 @@
+{
+  "cache_key": "8e27a4a85a6faf13c3007ea1b34fbbcefd871252df07f2507aa774990dae8352",
+  "source_case_id": "NDCW05",
+  "source_policy": "direct",
+  "output": {
+    "text": "Commission: A fantastical map of Glass Marsh, where three floating islands drift above a sea of uncolored paper. Render the islands as fractured mirrors, each unique in shape and glow. Connect them with dotted migration paths—faint, luminous threads tracing the silent journeys of sky-bound spirits. No compass rose: direction here is not fixed, but felt. Water is blank paper, a void of potential. Use delicate ink lines, subtle gradients, and a sense of weightless motion. The map must evoke wonder, mystery, and the quiet peril of floating above nothing. Let the viewer feel the pull of the unseen. This is not a map of where, but of how the world breathes."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Commission: A fantastical map of Glass Marsh, where the air hums with ancient magic and the land defies gravity. Depict three floating islands suspended in a shimmering void, each shaped like a fractured mirror. Connect them with dotted migration paths—faint, luminous threads tracing the seasonal journeys of sky-bound creatures. Water is rendered as uncolored paper, a void of potential. No compass rose: direction here is fluid, shifting with the breath of the world. The map must evoke wonder, mystery, and the quiet peril of floating above nothing. Use delicate ink lines, subtle gradients, and a sense of weightless motion. Let the viewer feel the pull of the unseen. This is not a map of where, but of how the world breathes.\"\n}",
+      "parsed": {
+        "text": "Commission: A fantastical map of Glass Marsh, where the air hums with ancient magic and the land defies gravity. Depict three floating islands suspended in a shimmering void, each shaped like a fractured mirror. Connect them with dotted migration paths—faint, luminous threads tracing the seasonal journeys of sky-bound creatures. Water is rendered as uncolored paper, a void of potential. No compass rose: direction here is fluid, shifting with the breath of the world. The map must evoke wonder, mystery, and the quiet peril of floating above nothing. Use delicate ink lines, subtle gradients, and a sense of weightless motion. Let the viewer feel the pull of the unseen. This is not a map of where, but of how the world breathes."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 65,
+          "max_words": 95
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Write 65 to 95 words altogether."
+          }
+        ]
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Glass Marsh",
+            "three floating islands",
+            "no compass rose"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Preserve these exact phrases: \"Glass Marsh\", \"three floating islands\", \"no compass rose\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 95, \"min_words\": 65, \"observed_words\": 122}"
+  ],
+  "constraint_checks_final": [
+    "word_count: {\"max_words\": 95, \"min_words\": 65, \"observed_words\": 112}"
+  ],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"Commission: A fantastical map of Glass Marsh, where three floating islands drift above a sea of uncolored paper. Render the islands as fractured mirrors, each unique in shape and glow. Connect them with dotted migration paths—faint, luminous threads tracing the silent journeys of sky-bound spirits. No compass rose: direction here is not fixed, but felt. Water is blank paper, a void of potential. Use delicate ink lines, subtle gradients, and a sense of weightless motion. The map must evoke wonder, mystery, and the quiet peril of floating above nothing. Let the viewer feel the pull of the unseen. This is not a map of where, but of how the world breathes.\"\n}",
+    "parsed": {
+      "text": "Commission: A fantastical map of Glass Marsh, where three floating islands drift above a sea of uncolored paper. Render the islands as fractured mirrors, each unique in shape and glow. Connect them with dotted migration paths—faint, luminous threads tracing the silent journeys of sky-bound spirits. No compass rose: direction here is not fixed, but felt. Water is blank paper, a void of potential. Use delicate ink lines, subtle gradients, and a sense of weightless motion. The map must evoke wonder, mystery, and the quiet peril of floating above nothing. Let the viewer feel the pull of the unseen. This is not a map of where, but of how the world breathes."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 122
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 65,
+          "max_words": 95
+        }
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Glass Marsh",
+            "three floating islands",
+            "no compass rose"
+          ]
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 95, \"min_words\": 65, \"observed_words\": 122}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 112
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 65,
+          "max_words": 95
+        }
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Glass Marsh",
+            "three floating islands",
+            "no compass rose"
+          ]
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 95, \"min_words\": 65, \"observed_words\": 112}"
+    ],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

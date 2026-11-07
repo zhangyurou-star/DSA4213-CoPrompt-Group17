@@ -1,0 +1,76 @@
+{
+  "cache_key": "77ed3c256b05a1779d04ded1e6d30534fcfd6afcfc750598db310b37ad1a479e",
+  "source_case_id": "NTCW10",
+  "source_policy": "direct",
+  "output": {
+    "text": "To you, who kept the spare chair beside your lamp through every late night, listening to every unfinished page as if it were the most important story in the world—thank you for the quiet courage of your presence. You waited, not for a finished book, but for me. And in that waiting, you gave me the space to become who I am. This is for you, always."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"To you, who kept the spare chair beside your lamp through every late night, listening to every unfinished page as if it were the most important story in the world—thank you for the quiet courage of your presence. You waited, not for a finished book, but for me. And in that waiting, you gave me the space to become who I am. This is for you, always.\"\n}",
+      "parsed": {
+        "text": "To you, who kept the spare chair beside your lamp through every late night, listening to every unfinished page as if it were the most important story in the world—thank you for the quiet courage of your presence. You waited, not for a finished book, but for me. And in that waiting, you gave me the space to become who I am. This is for you, always."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"the spare chair\", \"every unfinished page\", \"you waited\"."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 68
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"the spare chair\", \"every unfinished page\", \"you waited\"."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 68
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"the spare chair\", \"every unfinished page\", \"you waited\"."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

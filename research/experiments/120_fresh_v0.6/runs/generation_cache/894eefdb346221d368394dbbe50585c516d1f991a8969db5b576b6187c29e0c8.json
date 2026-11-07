@@ -1,0 +1,128 @@
+{
+  "cache_key": "894eefdb346221d368394dbbe50585c516d1f991a8969db5b576b6187c29e0c8",
+  "source_case_id": "NDCW07",
+  "source_policy": "direct",
+  "output": {
+    "text": "For the Riverglass translation project, the device name 'moonwell' must remain unchanged—do not translate it in any language. Localize descriptive content as appropriate, but record all alternate spellings in a glossary entry before drafting. Each entry should include the term, variants, and context. This ensures consistency and clarity. Always verify 'moonwell' appears unaltered in final output. Use the glossary entry to resolve ambiguities and maintain fidelity. This policy supports accurate, uniform translation across all versions. Adherence is mandatory for all translators."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"For the Riverglass translation project, maintain consistency using the fixed device name 'moonwell'—do not translate it across languages. Localize descriptive text as needed, but ensure all variations are documented. Before drafting, record any alternate spellings in a glossary entry. This entry must include the original term, approved variants, and context. Adhering to this policy ensures clarity and uniformity. Always verify that 'moonwell' appears unchanged in final output. Use the glossary entry to resolve ambiguities and maintain fidelity to the source. This practice supports accurate, consistent translation across all language versions.\"\n}",
+      "parsed": {
+        "text": "For the Riverglass translation project, maintain consistency using the fixed device name 'moonwell'—do not translate it across languages. Localize descriptive text as needed, but ensure all variations are documented. Before drafting, record any alternate spellings in a glossary entry. This entry must include the original term, approved variants, and context. Adhering to this policy ensures clarity and uniformity. Always verify that 'moonwell' appears unchanged in final output. Use the glossary entry to resolve ambiguities and maintain fidelity to the source. This practice supports accurate, consistent translation across all language versions."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "moonwell",
+            "do not translate",
+            "glossary entry"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Include each of these exact strings: \"moonwell\", \"do not translate\", \"glossary entry\"."
+          }
+        ]
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Keep the complete piece to 55–85 words."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 91}"
+  ],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"For the Riverglass translation project, the device name 'moonwell' must remain unchanged—do not translate it in any language. Localize descriptive content as appropriate, but record all alternate spellings in a glossary entry before drafting. Each entry should include the term, variants, and context. This ensures consistency and clarity. Always verify 'moonwell' appears unaltered in final output. Use the glossary entry to resolve ambiguities and maintain fidelity. This policy supports accurate, uniform translation across all versions. Adherence is mandatory for all translators.\"\n}",
+    "parsed": {
+      "text": "For the Riverglass translation project, the device name 'moonwell' must remain unchanged—do not translate it in any language. Localize descriptive content as appropriate, but record all alternate spellings in a glossary entry before drafting. Each entry should include the term, variants, and context. This ensures consistency and clarity. Always verify 'moonwell' appears unaltered in final output. Use the glossary entry to resolve ambiguities and maintain fidelity. This policy supports accurate, uniform translation across all versions. Adherence is mandatory for all translators."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 91
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "moonwell",
+            "do not translate",
+            "glossary entry"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 91}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 82
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "moonwell",
+            "do not translate",
+            "glossary entry"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

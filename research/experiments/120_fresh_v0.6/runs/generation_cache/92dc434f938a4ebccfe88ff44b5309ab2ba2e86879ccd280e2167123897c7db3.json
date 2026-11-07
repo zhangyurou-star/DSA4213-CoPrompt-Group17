@@ -1,0 +1,49 @@
+{
+  "cache_key": "92dc434f938a4ebccfe88ff44b5309ab2ba2e86879ccd280e2167123897c7db3",
+  "source_case_id": "NTCW14",
+  "source_policy": "direct",
+  "output": {
+    "text": "The AirSip is a portable, battery-powered device that filters and purifies ambient air in real time. Designed for urban environments, it removes pollutants like PM2.5, pollen, and volatile organic compounds. The unit features a compact, ergonomic shape with a built-in fan and replaceable multi-stage filters. It connects to a smartphone app to display real-time air quality data and filter life. Ideal for commuters, allergy sufferers, and outdoor workers, the AirSip delivers clean, breathable air on demand. It operates quietly and lasts up to 8 hours on a single charge. The device is lightweight, easy to carry, and requires no external power source. AirSip enhances personal air quality in polluted areas without relying on fixed infrastructure."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"The AirSip is a portable, battery-powered device that filters and purifies ambient air in real time. Designed for urban environments, it removes pollutants like PM2.5, pollen, and volatile organic compounds. The unit features a compact, ergonomic shape with a built-in fan and replaceable multi-stage filters. It connects to a smartphone app to display real-time air quality data and filter life. Ideal for commuters, allergy sufferers, and outdoor workers, the AirSip delivers clean, breathable air on demand. It operates quietly and lasts up to 8 hours on a single charge. The device is lightweight, easy to carry, and requires no external power source. AirSip enhances personal air quality in polluted areas without relying on fixed infrastructure.\"\n}",
+      "parsed": {
+        "text": "The AirSip is a portable, battery-powered device that filters and purifies ambient air in real time. Designed for urban environments, it removes pollutants like PM2.5, pollen, and volatile organic compounds. The unit features a compact, ergonomic shape with a built-in fan and replaceable multi-stage filters. It connects to a smartphone app to display real-time air quality data and filter life. Ideal for commuters, allergy sufferers, and outdoor workers, the AirSip delivers clean, breathable air on demand. It operates quietly and lasts up to 8 hours on a single charge. The device is lightweight, easy to carry, and requires no external power source. AirSip enhances personal air quality in polluted areas without relying on fixed infrastructure."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 116
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 116
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

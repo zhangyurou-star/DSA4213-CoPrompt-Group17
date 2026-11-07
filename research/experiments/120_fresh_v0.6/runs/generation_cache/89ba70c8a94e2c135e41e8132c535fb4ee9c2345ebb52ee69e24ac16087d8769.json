@@ -1,0 +1,278 @@
+{
+  "cache_key": "89ba70c8a94e2c135e41e8132c535fb4ee9c2345ebb52ee69e24ac16087d8769",
+  "source_case_id": "NVSP10",
+  "source_policy": "value_based",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Cascade Pattern",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Throw Height",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Catch Timing",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Cascade Pattern",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Throw Height",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Catch Timing",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-07",
+        "topic": "Cascade Pattern",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-07",
+        "topic": "Throw Height",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-07",
+        "topic": "Catch Timing",
+        "minutes": 10
+      }
+    ],
+    "summary": "Calculated from the schedule: 120 minutes in total. Daily totals: 2027-02-01: 15 minutes; 2027-02-02: 15 minutes; 2027-02-03: 15 minutes; 2027-02-04: 15 minutes; 2027-02-05: 15 minutes; 2027-02-06: 15 minutes; 2027-02-07: 30 minutes. Topic totals: Cascade Pattern: 40 minutes; Catch Timing: 40 minutes; Throw Height: 40 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Cascade Pattern\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Throw Height\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Catch Timing\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Cascade Pattern\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Throw Height\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Catch Timing\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-07\",\n      \"topic\": \"Cascade Pattern\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-07\",\n      \"topic\": \"Throw Height\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-07\",\n      \"topic\": \"Catch Timing\",\n      \"minutes\": 10\n    }\n  ],\n  \"summary\": \"A compact practice timetable for learning the three-ball cascade was created starting on 2027-02-01, with all study sessions completed by 2027-02-07. Each required topic—Cascade Pattern, Throw Height, and Catch Timing—receives at least 15 minutes of study time. Daily totals do not exceed 70 minutes, and no study is scheduled after 2027-02-07.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Cascade Pattern",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Throw Height",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Catch Timing",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Cascade Pattern",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Throw Height",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Catch Timing",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-07",
+            "topic": "Cascade Pattern",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-07",
+            "topic": "Throw Height",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-07",
+            "topic": "Catch Timing",
+            "minutes": 10
+          }
+        ],
+        "summary": "A compact practice timetable for learning the three-ball cascade was created starting on 2027-02-01, with all study sessions completed by 2027-02-07. Each required topic—Cascade Pattern, Throw Height, and Catch Timing—receives at least 15 minutes of study time. Daily totals do not exceed 70 minutes, and no study is scheduled after 2027-02-07."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-07, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Keep each daily total at or below 70 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 120,
+      "daily_minutes": {
+        "2027-02-01": 15,
+        "2027-02-02": 15,
+        "2027-02-03": 15,
+        "2027-02-04": 15,
+        "2027-02-05": 15,
+        "2027-02-06": 15,
+        "2027-02-07": 30
+      },
+      "topic_minutes": [
+        {
+          "topic": "Cascade Pattern",
+          "normalized_topic": "cascade pattern",
+          "minutes": 40
+        },
+        {
+          "topic": "Catch Timing",
+          "normalized_topic": "catch timing",
+          "minutes": 40
+        },
+        {
+          "topic": "Throw Height",
+          "normalized_topic": "throw height",
+          "minutes": 40
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-07, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Keep each daily total at or below 70 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 120,
+      "daily_minutes": {
+        "2027-02-01": 15,
+        "2027-02-02": 15,
+        "2027-02-03": 15,
+        "2027-02-04": 15,
+        "2027-02-05": 15,
+        "2027-02-06": 15,
+        "2027-02-07": 30
+      },
+      "topic_minutes": [
+        {
+          "topic": "Cascade Pattern",
+          "normalized_topic": "cascade pattern",
+          "minutes": 40
+        },
+        {
+          "topic": "Catch Timing",
+          "normalized_topic": "catch timing",
+          "minutes": 40
+        },
+        {
+          "topic": "Throw Height",
+          "normalized_topic": "throw height",
+          "minutes": 40
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-07, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Keep each daily total at or below 70 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "A compact practice timetable for learning the three-ball cascade was created starting on 2027-02-01, with all study sessions completed by 2027-02-07. Each required topic—Cascade Pattern, Throw Height, and Catch Timing—receives at least 15 minutes of study time. Daily totals do not exceed 70 minutes, and no study is scheduled after 2027-02-07.",
+    "derived_summary": "Calculated from the schedule: 120 minutes in total. Daily totals: 2027-02-01: 15 minutes; 2027-02-02: 15 minutes; 2027-02-03: 15 minutes; 2027-02-04: 15 minutes; 2027-02-05: 15 minutes; 2027-02-06: 15 minutes; 2027-02-07: 30 minutes. Topic totals: Cascade Pattern: 40 minutes; Catch Timing: 40 minutes; Throw Height: 40 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

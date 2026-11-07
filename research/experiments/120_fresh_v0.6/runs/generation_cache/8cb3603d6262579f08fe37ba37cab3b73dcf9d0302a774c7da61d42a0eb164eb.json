@@ -1,0 +1,80 @@
+{
+  "cache_key": "8cb3603d6262579f08fe37ba37cab3b73dcf9d0302a774c7da61d42a0eb164eb",
+  "source_case_id": "NVCW10",
+  "source_policy": "value_based",
+  "output": {
+    "text": "Panel one: A child stands on tiptoes, taping a paper moon onto the window. The paper moon glows faintly in the dim room. Panel two: A cat crouches below, paws outstretched, eyes fixed on the reflection of the paper moon in the glass. It bats at the shimmering image, confused. Panel three: The child smiles, gently shifting the paper moon lower. Now the cat can reach it, paw brushing the paper. The paper moon is real to the cat, and the child knows it. A paper moon, a moment of connection, a quiet magic."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Panel one: A child stands on tiptoes, taping a paper moon onto the window. The paper moon glows faintly in the dim room. Panel two: A cat crouches below, paws outstretched, eyes fixed on the reflection of the paper moon in the glass. It bats at the shimmering image, confused. Panel three: The child smiles, gently shifting the paper moon lower. Now the cat can reach it, paw brushing the paper. The paper moon is real to the cat, and the child knows it. A paper moon, a moment of connection, a quiet magic.\"\n}",
+      "parsed": {
+        "text": "Panel one: A child stands on tiptoes, taping a paper moon onto the window. The paper moon glows faintly in the dim room. Panel two: A cat crouches below, paws outstretched, eyes fixed on the reflection of the paper moon in the glass. It bats at the shimmering image, confused. Panel three: The child smiles, gently shifting the paper moon lower. Now the cat can reach it, paw brushing the paper. The paper moon is real to the cat, and the child knows it. A paper moon, a moment of connection, a quiet magic."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 65,
+          "max_words": 95
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Write 65 to 95 words altogether."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 94
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 65,
+          "max_words": 95
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 94
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 65,
+          "max_words": 95
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

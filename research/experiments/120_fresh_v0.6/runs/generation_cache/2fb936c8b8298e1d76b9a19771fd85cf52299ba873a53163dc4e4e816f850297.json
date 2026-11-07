@@ -1,0 +1,246 @@
+{
+  "cache_key": "2fb936c8b8298e1d76b9a19771fd85cf52299ba873a53163dc4e4e816f850297",
+  "source_case_id": "NTSP24",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Stock Counts",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Reorder Points",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Safety Stock",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Stock Counts",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Reorder Points",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Safety Stock",
+        "minutes": 15
+      }
+    ],
+    "summary": "Calculated from the schedule: 90 minutes in total. Daily totals: 2027-02-01: 15 minutes; 2027-02-02: 15 minutes; 2027-02-03: 15 minutes; 2027-02-04: 15 minutes; 2027-02-05: 15 minutes; 2027-02-06: 15 minutes. Topic totals: Reorder Points: 30 minutes; Safety Stock: 30 minutes; Stock Counts: 30 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Stock Counts\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Reorder Points\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Safety Stock\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Stock Counts\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Reorder Points\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Safety Stock\",\n      \"minutes\": 15\n    }\n  ],\n  \"summary\": \"The study plan covers the required topics—Stock Counts, Reorder Points, and Safety Stock—with at least 15 minutes dedicated to each. All sessions are scheduled between 2027-02-01 and 2027-02-06, with no study scheduled after 2027-02-06. Each day's total study time is exactly 15 minutes, staying within the 30-minute daily limit. The plan meets all specified constraints.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Stock Counts",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Reorder Points",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Safety Stock",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Stock Counts",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Reorder Points",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Safety Stock",
+            "minutes": 15
+          }
+        ],
+        "summary": "The study plan covers the required topics—Stock Counts, Reorder Points, and Safety Stock—with at least 15 minutes dedicated to each. All sessions are scheduled between 2027-02-01 and 2027-02-06, with no study scheduled after 2027-02-06. Each day's total study time is exactly 15 minutes, staying within the 30-minute daily limit. The plan meets all specified constraints."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-06, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Keep each daily total at or below 30 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 90,
+      "daily_minutes": {
+        "2027-02-01": 15,
+        "2027-02-02": 15,
+        "2027-02-03": 15,
+        "2027-02-04": 15,
+        "2027-02-05": 15,
+        "2027-02-06": 15
+      },
+      "topic_minutes": [
+        {
+          "topic": "Reorder Points",
+          "normalized_topic": "reorder points",
+          "minutes": 30
+        },
+        {
+          "topic": "Safety Stock",
+          "normalized_topic": "safety stock",
+          "minutes": 30
+        },
+        {
+          "topic": "Stock Counts",
+          "normalized_topic": "stock counts",
+          "minutes": 30
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-06, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Keep each daily total at or below 30 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 90,
+      "daily_minutes": {
+        "2027-02-01": 15,
+        "2027-02-02": 15,
+        "2027-02-03": 15,
+        "2027-02-04": 15,
+        "2027-02-05": 15,
+        "2027-02-06": 15
+      },
+      "topic_minutes": [
+        {
+          "topic": "Reorder Points",
+          "normalized_topic": "reorder points",
+          "minutes": 30
+        },
+        {
+          "topic": "Safety Stock",
+          "normalized_topic": "safety stock",
+          "minutes": 30
+        },
+        {
+          "topic": "Stock Counts",
+          "normalized_topic": "stock counts",
+          "minutes": 30
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-06, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Keep each daily total at or below 30 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study plan covers the required topics—Stock Counts, Reorder Points, and Safety Stock—with at least 15 minutes dedicated to each. All sessions are scheduled between 2027-02-01 and 2027-02-06, with no study scheduled after 2027-02-06. Each day's total study time is exactly 15 minutes, staying within the 30-minute daily limit. The plan meets all specified constraints.",
+    "derived_summary": "Calculated from the schedule: 90 minutes in total. Daily totals: 2027-02-01: 15 minutes; 2027-02-02: 15 minutes; 2027-02-03: 15 minutes; 2027-02-04: 15 minutes; 2027-02-05: 15 minutes; 2027-02-06: 15 minutes. Topic totals: Reorder Points: 30 minutes; Safety Stock: 30 minutes; Stock Counts: 30 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

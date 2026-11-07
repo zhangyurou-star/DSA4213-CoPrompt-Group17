@@ -1,0 +1,5 @@
+﻿system,cases,mean_quality,mean_questions,total_questions,fully_passing_cases,cases_with_failed_constraints,noncritical_question_items,format_failures,invalid_question_items,generation_revision_trajectories
+direct,60,0.7072222222222222,0,0,30,30,0,0,0,8
+exhaustive,60,0.7877777777777778,1.1833333333333333,71,35,25,31,0,0,12
+prompt_only,60,0.7794444444444445,1.0166666666666666,61,35,25,30,0,0,10
+value_based,60,0.7988888888888889,1.1833333333333333,71,36,24,31,0,0,11

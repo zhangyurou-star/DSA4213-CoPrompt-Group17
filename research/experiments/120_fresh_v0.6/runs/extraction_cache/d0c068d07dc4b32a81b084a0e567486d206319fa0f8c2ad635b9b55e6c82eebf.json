@@ -1,0 +1,136 @@
+{
+  "cache_key": "d0c068d07dc4b32a81b084a0e567486d206319fa0f8c2ad635b9b55e6c82eebf",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [],
+    "tone": [
+      "S5"
+    ],
+    "length": [
+      "S6"
+    ],
+    "required_content": [
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 70,
+      "text": "Create a station identification script for an imaginary radio channel."
+    },
+    {
+      "id": "S2",
+      "start": 71,
+      "end": 182,
+      "text": "These invented details are required: The imaginary station is Lantern Frequency, carrying stories after sunset."
+    },
+    {
+      "id": "S3",
+      "start": 183,
+      "end": 294,
+      "text": "Its identification script should connect a small lamp image with listening and close with stay a little longer."
+    },
+    {
+      "id": "S4",
+      "start": 295,
+      "end": 400,
+      "text": "Include each of these exact strings: \"Lantern Frequency\", \"stories after sunset\", \"stay a little longer\"."
+    },
+    {
+      "id": "S5",
+      "start": 401,
+      "end": 439,
+      "text": "Make the voice calm and companionable."
+    },
+    {
+      "id": "S6",
+      "start": 440,
+      "end": 496,
+      "text": "The total word count must fall from 50 to 80, inclusive."
+    },
+    {
+      "id": "S7",
+      "start": 497,
+      "end": 572,
+      "text": "Go ahead immediately; use your judgment for any remaining stylistic choice."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": "Make the voice calm and companionable.",
+    "length": "The total word count must fall from 50 to 80, inclusive.",
+    "required_content": "These invented details are required: The imaginary station is Lantern Frequency, carrying stories after sunset.\nIts identification script should connect a small lamp image with listening and close with stay a little longer.\nInclude each of these exact strings: \"Lantern Frequency\", \"stories after sunset\", \"stay a little longer\"."
+  },
+  "evidence": {
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 401,
+        "end": 439,
+        "quote": "Make the voice calm and companionable."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 440,
+        "end": 496,
+        "quote": "The total word count must fall from 50 to 80, inclusive."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 71,
+        "end": 182,
+        "quote": "These invented details are required: The imaginary station is Lantern Frequency, carrying stories after sunset."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 183,
+        "end": 294,
+        "quote": "Its identification script should connect a small lamp image with listening and close with stay a little longer."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 295,
+        "end": 400,
+        "quote": "Include each of these exact strings: \"Lantern Frequency\", \"stories after sunset\", \"stay a little longer\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[],\"tone\":[\"S5\"],\"length\":[\"S6\"],\"required_content\":[\"S2\",\"S3\",\"S4\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [],
+          "tone": [
+            "S5"
+          ],
+          "length": [
+            "S6"
+          ],
+          "required_content": [
+            "S2",
+            "S3",
+            "S4"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

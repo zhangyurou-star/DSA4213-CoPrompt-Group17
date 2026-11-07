@@ -1,0 +1,127 @@
+{
+  "cache_key": "8d944732b707c7a44d839c4c74161154b107d9e6a4a665abe8e02f81c001cb0e",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S5"
+    ],
+    "available_time": [
+      "S4"
+    ],
+    "topics": [
+      "S6",
+      "S7"
+    ],
+    "priorities": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 68,
+      "text": "I need to understand a training workbook about retail stock control."
+    },
+    {
+      "id": "S2",
+      "start": 69,
+      "end": 107,
+      "text": "Arrange the learning into a timetable."
+    },
+    {
+      "id": "S3",
+      "start": 108,
+      "end": 128,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 129,
+      "end": 198,
+      "text": "Keep each daily total at or below 30 minutes across all study blocks."
+    },
+    {
+      "id": "S5",
+      "start": 199,
+      "end": 274,
+      "text": "I can still study on 2027-02-06, but no study should be scheduled after it."
+    },
+    {
+      "id": "S6",
+      "start": 275,
+      "end": 370,
+      "text": "I need 15 minutes or more in total on each of \"Stock Counts\", \"Reorder Points\", \"Safety Stock\"."
+    },
+    {
+      "id": "S7",
+      "start": 371,
+      "end": 407,
+      "text": "Those are the required topic labels."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": "Keep each daily total at or below 30 minutes across all study blocks.",
+    "topics": "I need 15 minutes or more in total on each of \"Stock Counts\", \"Reorder Points\", \"Safety Stock\".\nThose are the required topic labels.",
+    "priorities": null
+  },
+  "evidence": {
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 129,
+        "end": 198,
+        "quote": "Keep each daily total at or below 30 minutes across all study blocks."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 275,
+        "end": 370,
+        "quote": "I need 15 minutes or more in total on each of \"Stock Counts\", \"Reorder Points\", \"Safety Stock\"."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 371,
+        "end": 407,
+        "quote": "Those are the required topic labels."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "deadline",
+      "proposed_evidence": [
+        "S5"
+      ],
+      "proposed_value": "I can still study on 2027-02-06, but no study should be scheduled after it.",
+      "reason": "quote_has_no_explicit_endpoint_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S5\"],\"available_time\":[\"S4\"],\"topics\":[\"S6\",\"S7\"],\"priorities\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S5"
+          ],
+          "available_time": [
+            "S4"
+          ],
+          "topics": [
+            "S6",
+            "S7"
+          ],
+          "priorities": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

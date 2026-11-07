@@ -1,0 +1,1 @@
+The docs-1 wording amendment and its original before/ documents are preserved in audit/original_evidence.zip at the package root. EN1 provides English reading documents, not replacement historical records.

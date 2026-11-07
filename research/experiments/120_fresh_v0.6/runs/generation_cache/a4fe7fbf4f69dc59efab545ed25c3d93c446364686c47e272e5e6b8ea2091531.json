@@ -1,0 +1,90 @@
+{
+  "cache_key": "a4fe7fbf4f69dc59efab545ed25c3d93c446364686c47e272e5e6b8ea2091531",
+  "source_case_id": "NTCW15",
+  "source_policy": "value_based",
+  "output": {
+    "text": "Welcome, player, to the Chalk Maze. Stay calm and trust your path. Follow the dotted line as it winds through the chalked walls. Do not deviate—this line leads you forward. When you reach the end of the dotted line, pause. Skip the painted arrow, as it marks a dead end and will not lead to freedom. Instead, look for the square door. The square door is your exit. Approach it carefully and step through. You’ve made it. The maze is behind you."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Welcome, player, to the Chalk Maze. Stay calm and trust your path. Follow the dotted line as it winds through the chalked walls. Do not deviate—this line leads you forward. When you reach the end of the dotted line, pause. Skip the painted arrow, as it marks a dead end and will not lead to freedom. Instead, look for the square door. The square door is your exit. Approach it carefully and step through. You’ve made it. The maze is behind you.\"\n}",
+      "parsed": {
+        "text": "Welcome, player, to the Chalk Maze. Stay calm and trust your path. Follow the dotted line as it winds through the chalked walls. Do not deviate—this line leads you forward. When you reach the end of the dotted line, pause. Skip the painted arrow, as it marks a dead end and will not lead to freedom. Instead, look for the square door. The square door is your exit. Approach it carefully and step through. You’ve made it. The maze is behind you."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "follow the dotted line",
+            "skip the painted arrow",
+            "the square door"
+          ]
+        },
+        "source": [
+          {
+            "source": "visible_exchange",
+            "exchange_index": 1,
+            "field_id": "required_content",
+            "quote": "Preserve these exact phrases: \"follow the dotted line\", \"skip the painted arrow\", \"the square door\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 83
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "follow the dotted line",
+            "skip the painted arrow",
+            "the square door"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 83
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "follow the dotted line",
+            "skip the painted arrow",
+            "the square door"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

@@ -1,0 +1,102 @@
+{
+  "cache_key": "e5d32de7d8acb767e5d37d6841192933377c1c54ccd56eaf65a71f6f9b5027f8",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S5"
+    ],
+    "tone": [],
+    "length": [],
+    "required_content": [
+      "S3",
+      "S4"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 53,
+      "text": "Write a monologue spoken by an imaginary chess piece."
+    },
+    {
+      "id": "S2",
+      "start": 54,
+      "end": 182,
+      "text": "Build the piece around these synthetic facts: The speaker is a rook who envies the knight but discovers pride in straight lines."
+    },
+    {
+      "id": "S3",
+      "start": 183,
+      "end": 231,
+      "text": "Include I am the rook and the edge of the board."
+    },
+    {
+      "id": "S4",
+      "start": 232,
+      "end": 322,
+      "text": "The text must contain \"I am the rook\", \"straight lines\", \"the edge of the board\" verbatim."
+    },
+    {
+      "id": "S5",
+      "start": 323,
+      "end": 387,
+      "text": "This will be read by readers of an original miniature monologue."
+    }
+  ],
+  "field_values": {
+    "audience": "This will be read by readers of an original miniature monologue.",
+    "tone": null,
+    "length": null,
+    "required_content": "Include I am the rook and the edge of the board.\nThe text must contain \"I am the rook\", \"straight lines\", \"the edge of the board\" verbatim."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 323,
+        "end": 387,
+        "quote": "This will be read by readers of an original miniature monologue."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 183,
+        "end": 231,
+        "quote": "Include I am the rook and the edge of the board."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 232,
+        "end": 322,
+        "quote": "The text must contain \"I am the rook\", \"straight lines\", \"the edge of the board\" verbatim."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S5\"],\"tone\":[],\"length\":[],\"required_content\":[\"S3\",\"S4\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S5"
+          ],
+          "tone": [],
+          "length": [],
+          "required_content": [
+            "S3",
+            "S4"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

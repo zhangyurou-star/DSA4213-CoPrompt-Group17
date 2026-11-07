@@ -1,0 +1,155 @@
+{
+  "cache_key": "84f7456bfb539155801895e0239991202c9648e027dd153438f672a2223981a5",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S7"
+    ],
+    "available_time": [
+      "S4"
+    ],
+    "topics": [
+      "S5",
+      "S6",
+      "S8"
+    ],
+    "priorities": [
+      "S8"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 43,
+      "text": "I keep losing my place in origami diagrams."
+    },
+    {
+      "id": "S2",
+      "start": 44,
+      "end": 95,
+      "text": "Give me a study sequence for recognizing the folds."
+    },
+    {
+      "id": "S3",
+      "start": 96,
+      "end": 116,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 117,
+      "end": 209,
+      "text": "Even if a day has several short sessions, their combined length must stay within 65 minutes."
+    },
+    {
+      "id": "S5",
+      "start": 210,
+      "end": 292,
+      "text": "Cover these exact topic labels: \"Valley Folds\", \"Mountain Folds\", \"Reverse Folds\"."
+    },
+    {
+      "id": "S6",
+      "start": 293,
+      "end": 347,
+      "text": "Give each one at least 10 minutes over the whole plan."
+    },
+    {
+      "id": "S7",
+      "start": 348,
+      "end": 411,
+      "text": "Finish all scheduled study no later than 2027-02-06, inclusive."
+    },
+    {
+      "id": "S8",
+      "start": 412,
+      "end": 496,
+      "text": "Give \"Reverse Folds\" at least 35 minutes in total; this is a firm extra requirement."
+    }
+  ],
+  "field_values": {
+    "deadline": "Finish all scheduled study no later than 2027-02-06, inclusive.",
+    "available_time": "Even if a day has several short sessions, their combined length must stay within 65 minutes.",
+    "topics": "Cover these exact topic labels: \"Valley Folds\", \"Mountain Folds\", \"Reverse Folds\".\nGive each one at least 10 minutes over the whole plan.\nGive \"Reverse Folds\" at least 35 minutes in total; this is a firm extra requirement.",
+    "priorities": "Give \"Reverse Folds\" at least 35 minutes in total; this is a firm extra requirement."
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 348,
+        "end": 411,
+        "quote": "Finish all scheduled study no later than 2027-02-06, inclusive."
+      }
+    ],
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 117,
+        "end": 209,
+        "quote": "Even if a day has several short sessions, their combined length must stay within 65 minutes."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 210,
+        "end": 292,
+        "quote": "Cover these exact topic labels: \"Valley Folds\", \"Mountain Folds\", \"Reverse Folds\"."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 293,
+        "end": 347,
+        "quote": "Give each one at least 10 minutes over the whole plan."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 412,
+        "end": 496,
+        "quote": "Give \"Reverse Folds\" at least 35 minutes in total; this is a firm extra requirement."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 412,
+        "end": 496,
+        "quote": "Give \"Reverse Folds\" at least 35 minutes in total; this is a firm extra requirement."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S7\"],\"available_time\":[\"S4\"],\"topics\":[\"S5\",\"S6\",\"S8\"],\"priorities\":[\"S8\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S7"
+          ],
+          "available_time": [
+            "S4"
+          ],
+          "topics": [
+            "S5",
+            "S6",
+            "S8"
+          ],
+          "priorities": [
+            "S8"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

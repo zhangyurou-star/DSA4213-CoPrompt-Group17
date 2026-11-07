@@ -1,0 +1,110 @@
+{
+  "constrained_writing": {
+    "type": "object",
+    "properties": {
+      "field_evidence": {
+        "type": "object",
+        "properties": {
+          "audience": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^S[1-9][0-9]*$"
+            },
+            "uniqueItems": true
+          },
+          "tone": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^S[1-9][0-9]*$"
+            },
+            "uniqueItems": true
+          },
+          "length": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^S[1-9][0-9]*$"
+            },
+            "uniqueItems": true
+          },
+          "required_content": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^S[1-9][0-9]*$"
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "audience",
+          "tone",
+          "length",
+          "required_content"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "field_evidence"
+    ],
+    "additionalProperties": false,
+    "description": "v0.2.1 extraction contract: select valid source-unit IDs in source order; empty array means unresolved. IDs are validated against this request at runtime."
+  },
+  "study_planning": {
+    "type": "object",
+    "properties": {
+      "field_evidence": {
+        "type": "object",
+        "properties": {
+          "deadline": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^S[1-9][0-9]*$"
+            },
+            "uniqueItems": true
+          },
+          "available_time": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^S[1-9][0-9]*$"
+            },
+            "uniqueItems": true
+          },
+          "topics": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^S[1-9][0-9]*$"
+            },
+            "uniqueItems": true
+          },
+          "priorities": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^S[1-9][0-9]*$"
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "deadline",
+          "available_time",
+          "topics",
+          "priorities"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "field_evidence"
+    ],
+    "additionalProperties": false,
+    "description": "v0.2.1 extraction contract: select valid source-unit IDs in source order; empty array means unresolved. IDs are validated against this request at runtime."
+  }
+}

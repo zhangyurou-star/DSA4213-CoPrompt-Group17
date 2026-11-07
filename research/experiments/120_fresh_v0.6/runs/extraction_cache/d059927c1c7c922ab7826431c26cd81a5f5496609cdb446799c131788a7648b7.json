@@ -1,0 +1,108 @@
+{
+  "cache_key": "d059927c1c7c922ab7826431c26cd81a5f5496609cdb446799c131788a7648b7",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S6"
+    ],
+    "available_time": [],
+    "topics": [
+      "S4",
+      "S5"
+    ],
+    "priorities": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 84,
+      "text": "I have volunteered to help a small collection team read its pest-monitoring records."
+    },
+    {
+      "id": "S2",
+      "start": 85,
+      "end": 113,
+      "text": "Build me a preparation plan."
+    },
+    {
+      "id": "S3",
+      "start": 114,
+      "end": 134,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 135,
+      "end": 236,
+      "text": "Cover these exact topic labels: \"Quarantine Checks\", \"Sticky Trap Logs\", \"Pest Evidence Recognition\"."
+    },
+    {
+      "id": "S5",
+      "start": 237,
+      "end": 291,
+      "text": "Give each one at least 20 minutes over the whole plan."
+    },
+    {
+      "id": "S6",
+      "start": 292,
+      "end": 355,
+      "text": "Finish all scheduled study no later than 2027-02-05, inclusive."
+    }
+  ],
+  "field_values": {
+    "deadline": "Finish all scheduled study no later than 2027-02-05, inclusive.",
+    "available_time": null,
+    "topics": "Cover these exact topic labels: \"Quarantine Checks\", \"Sticky Trap Logs\", \"Pest Evidence Recognition\".\nGive each one at least 20 minutes over the whole plan.",
+    "priorities": null
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 292,
+        "end": 355,
+        "quote": "Finish all scheduled study no later than 2027-02-05, inclusive."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 135,
+        "end": 236,
+        "quote": "Cover these exact topic labels: \"Quarantine Checks\", \"Sticky Trap Logs\", \"Pest Evidence Recognition\"."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 237,
+        "end": 291,
+        "quote": "Give each one at least 20 minutes over the whole plan."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S6\"],\"available_time\":[],\"topics\":[\"S4\",\"S5\"],\"priorities\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S6"
+          ],
+          "available_time": [],
+          "topics": [
+            "S4",
+            "S5"
+          ],
+          "priorities": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

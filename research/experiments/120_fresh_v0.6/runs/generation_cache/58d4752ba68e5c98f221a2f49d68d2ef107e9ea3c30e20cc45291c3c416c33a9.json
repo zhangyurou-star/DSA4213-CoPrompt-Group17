@@ -1,0 +1,92 @@
+{
+  "cache_key": "58d4752ba68e5c98f221a2f49d68d2ef107e9ea3c30e20cc45291c3c416c33a9",
+  "source_case_id": "NTCW15",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "Welcome, explorer, to the Chalk Maze. Step in with calm focus. Follow white chalk lines—never rush. At a fork, pause and check all paths. A left curve means take it. A dead end? Retrace. The maze shifts—what opens may close. Watch for symbols: a circle means go forward; a square means turn. Stay aware. You are not lost—you are finding your way. Keep moving, one step at a time. The exit waits for you."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Welcome, explorer, to the Chalk Maze. Step inside with calm focus. Each path is drawn in white chalk—follow the lines, but never rush. When you reach a fork, pause and check all three directions. If a path curves left, take it. If it ends in a dead end, retrace your steps. Trust your instincts, but stay patient. The maze shifts subtly—what was open may close. Watch for chalk symbols: a circle means go forward; a square means turn. Stay aware. You are not lost—you are finding your way. Keep moving, one step at a time. The exit waits for you.\"\n}",
+      "parsed": {
+        "text": "Welcome, explorer, to the Chalk Maze. Step inside with calm focus. Each path is drawn in white chalk—follow the lines, but never rush. When you reach a fork, pause and check all three directions. If a path curves left, take it. If it ends in a dead end, retrace your steps. Trust your instincts, but stay patient. The maze shifts subtly—what was open may close. Watch for chalk symbols: a circle means go forward; a square means turn. Stay aware. You are not lost—you are finding your way. Keep moving, one step at a time. The exit waits for you."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        },
+        "source": [
+          {
+            "source": "visible_exchange",
+            "exchange_index": 2,
+            "field_id": "length",
+            "quote": "Write 55 to 85 words altogether."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 103}"
+  ],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"Welcome, explorer, to the Chalk Maze. Step in with calm focus. Follow white chalk lines—never rush. At a fork, pause and check all paths. A left curve means take it. A dead end? Retrace. The maze shifts—what opens may close. Watch for symbols: a circle means go forward; a square means turn. Stay aware. You are not lost—you are finding your way. Keep moving, one step at a time. The exit waits for you.\"\n}",
+    "parsed": {
+      "text": "Welcome, explorer, to the Chalk Maze. Step in with calm focus. Follow white chalk lines—never rush. At a fork, pause and check all paths. A left curve means take it. A dead end? Retrace. The maze shifts—what opens may close. Watch for symbols: a circle means go forward; a square means turn. Stay aware. You are not lost—you are finding your way. Keep moving, one step at a time. The exit waits for you."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 103
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 103}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 77
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

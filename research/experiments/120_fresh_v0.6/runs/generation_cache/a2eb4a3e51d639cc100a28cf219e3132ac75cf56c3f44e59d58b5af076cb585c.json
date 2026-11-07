@@ -1,0 +1,116 @@
+{
+  "cache_key": "a2eb4a3e51d639cc100a28cf219e3132ac75cf56c3f44e59d58b5af076cb585c",
+  "source_case_id": "NTCW23",
+  "source_policy": "direct",
+  "output": {
+    "text": "In translating this poem, I chose to keep a pocket of rain—its quiet weight a symbol of portable sadness. Though I lost the rhyme, the image remained intact, and that felt essential. Matching both the original image and its rhyme would have forced the line into awkwardness, distorting the emotion. By keeping the image, I preserved the poem’s emotional core. The pocket of rain now carries sorrow not just in meaning, but in motion—something you can hold, carry, and feel. It’s not perfect, but it’s true. Lost the rhyme, kept the image, and let the sadness travel."
+  },
+  "attempts": [
+    {
+      "raw": "{\"text\": \"In translating this poem, I chose to keep a pocket of rain—its quiet weight a symbol of portable sadness. Though I lost the rhyme, the image remained intact, and that felt essential. Matching both the original image and its rhyme would have forced the line into awkwardness, distorting the emotion. By keeping the image, I preserved the poem’s emotional core. The pocket of rain now carries sorrow not just in meaning, but in motion—something you can hold, carry, and feel. It’s not perfect, but it’s true. Lost the rhyme, kept the image, and let the sadness travel.\"}",
+      "parsed": {
+        "text": "In translating this poem, I chose to keep a pocket of rain—its quiet weight a symbol of portable sadness. Though I lost the rhyme, the image remained intact, and that felt essential. Matching both the original image and its rhyme would have forced the line into awkwardness, distorting the emotion. By keeping the image, I preserved the poem’s emotional core. The pocket of rain now carries sorrow not just in meaning, but in motion—something you can hold, carry, and feel. It’s not perfect, but it’s true. Lost the rhyme, kept the image, and let the sadness travel."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "a pocket of rain",
+            "kept the image",
+            "lost the rhyme"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Preserve these exact phrases: \"a pocket of rain\", \"kept the image\", \"lost the rhyme\"."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 99
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "a pocket of rain",
+            "kept the image",
+            "lost the rhyme"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 99
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "a pocket of rain",
+            "kept the image",
+            "lost the rhyme"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

@@ -1,0 +1,111 @@
+{
+  "cache_key": "878ca90f775d3acd8acddd77dd98b54eaa6d3529a542fccb3271983ae2632352",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S5"
+    ],
+    "available_time": [
+      "S6"
+    ],
+    "topics": [
+      "S4"
+    ],
+    "priorities": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 44,
+      "text": "I will help run a classroom usability study."
+    },
+    {
+      "id": "S2",
+      "start": 45,
+      "end": 103,
+      "text": "Prepare a learning schedule for facilitating the sessions."
+    },
+    {
+      "id": "S3",
+      "start": 104,
+      "end": 124,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 125,
+      "end": 269,
+      "text": "The syllabus consists of \"Task Scenarios\", \"Think-aloud Prompts\", \"Usability Findings\"; each named topic needs a minimum of 25 minutes in total."
+    },
+    {
+      "id": "S5",
+      "start": 270,
+      "end": 337,
+      "text": "My study window closes on 2027-02-03; that date is still available."
+    },
+    {
+      "id": "S6",
+      "start": 338,
+      "end": 407,
+      "text": "The total of all sessions on any one date must not exceed 40 minutes."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": null,
+    "topics": "The syllabus consists of \"Task Scenarios\", \"Think-aloud Prompts\", \"Usability Findings\"; each named topic needs a minimum of 25 minutes in total.",
+    "priorities": null
+  },
+  "evidence": {
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 125,
+        "end": 269,
+        "quote": "The syllabus consists of \"Task Scenarios\", \"Think-aloud Prompts\", \"Usability Findings\"; each named topic needs a minimum of 25 minutes in total."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "deadline",
+      "proposed_evidence": [
+        "S5"
+      ],
+      "proposed_value": "My study window closes on 2027-02-03; that date is still available.",
+      "reason": "quote_has_no_explicit_endpoint_cue"
+    },
+    {
+      "field_id": "available_time",
+      "proposed_evidence": [
+        "S6"
+      ],
+      "proposed_value": "The total of all sessions on any one date must not exceed 40 minutes.",
+      "reason": "quote_has_no_daily_time_allowance_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S5\"],\"available_time\":[\"S6\"],\"topics\":[\"S4\"],\"priorities\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S5"
+          ],
+          "available_time": [
+            "S6"
+          ],
+          "topics": [
+            "S4"
+          ],
+          "priorities": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

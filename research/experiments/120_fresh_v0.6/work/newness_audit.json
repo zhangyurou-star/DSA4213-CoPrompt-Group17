@@ -1,0 +1,312 @@
+{
+  "created_utc": "2026-10-19T14:55:46.897578+00:00",
+  "status": "exact_reuse_checks_passed_similarity_flags_for_coordinator_review",
+  "api_calls": 0,
+  "prior_reference": "Discarded80+40 dataset, including all original80 and additional40; data texts only, no model outcomes.",
+  "new_case_count": 120,
+  "prior_reference_case_count": 120,
+  "exact_normalized_prior_request_matches": [],
+  "exact_normalized_within_fresh_request_matches": [],
+  "prior_family_id_overlap": [],
+  "new_id_count": 120,
+  "fresh_registered_family_count": 120,
+  "newness_scope": "Initial requests and registered family identities checked. Common field values, schema, English instruction phrases and constraint types may repeat legitimately.",
+  "nearest_prior_pairs": [
+    {
+      "new_case_id": "NVSP05",
+      "prior_case_id": "VSP08",
+      "new_family": "nsp_forensic_linguistics",
+      "prior_family": "sp_agricultural_soils",
+      "five_word_jaccard": 0.04225
+    },
+    {
+      "new_case_id": "NDSP13",
+      "prior_case_id": "TSP10",
+      "new_family": "nsp_palaeography",
+      "prior_family": "sp_german_cases",
+      "five_word_jaccard": 0.03371
+    },
+    {
+      "new_case_id": "NTSP13",
+      "prior_case_id": "TSP10",
+      "new_family": "nsp_scientific_peer_review",
+      "prior_family": "sp_german_cases",
+      "five_word_jaccard": 0.03226
+    },
+    {
+      "new_case_id": "NTSP07",
+      "prior_case_id": "TSP11",
+      "new_family": "nsp_consecutive_interpreting",
+      "prior_family": "sp_japanese_kana",
+      "five_word_jaccard": 0.03158
+    },
+    {
+      "new_case_id": "NTSP25",
+      "prior_case_id": "VSP08",
+      "new_family": "nsp_aircraft_marshalling",
+      "prior_family": "sp_agricultural_soils",
+      "five_word_jaccard": 0.02655
+    },
+    {
+      "new_case_id": "NDSP07",
+      "prior_case_id": "TSP11",
+      "new_family": "nsp_water_treatment",
+      "prior_family": "sp_japanese_kana",
+      "five_word_jaccard": 0.02479
+    },
+    {
+      "new_case_id": "NTSP03",
+      "prior_case_id": "VSP03",
+      "new_family": "nsp_groundwater_hydrology",
+      "prior_family": "sp_robotics_basics",
+      "five_word_jaccard": 0.01869
+    },
+    {
+      "new_case_id": "NDSP09",
+      "prior_case_id": "VSP03",
+      "new_family": "nsp_origami_foundations",
+      "prior_family": "sp_robotics_basics",
+      "five_word_jaccard": 0.01852
+    },
+    {
+      "new_case_id": "NVSP01",
+      "prior_case_id": "VSP03",
+      "new_family": "nsp_rope_knots",
+      "prior_family": "sp_robotics_basics",
+      "five_word_jaccard": 0.01852
+    },
+    {
+      "new_case_id": "NTSP01",
+      "prior_case_id": "SP02",
+      "new_family": "nsp_volcanology",
+      "prior_family": "sp_intro_programming",
+      "five_word_jaccard": 0.01389
+    },
+    {
+      "new_case_id": "NTSP12",
+      "prior_case_id": "TSP08",
+      "new_family": "nsp_incident_coordination",
+      "prior_family": "sp_french_grammar",
+      "five_word_jaccard": 0.01176
+    },
+    {
+      "new_case_id": "NDSP02",
+      "prior_case_id": "TSP08",
+      "new_family": "nsp_railway_signalling",
+      "prior_family": "sp_french_grammar",
+      "five_word_jaccard": 0.00935
+    },
+    {
+      "new_case_id": "NTSP04",
+      "prior_case_id": "TSP08",
+      "new_family": "nsp_heraldry",
+      "prior_family": "sp_french_grammar",
+      "five_word_jaccard": 0.00781
+    },
+    {
+      "new_case_id": "NVSP09",
+      "prior_case_id": "SP06",
+      "new_family": "nsp_numismatics",
+      "prior_family": "sp_web_foundations",
+      "five_word_jaccard": 0.00775
+    },
+    {
+      "new_case_id": "NVSP02",
+      "prior_case_id": "TSP08",
+      "new_family": "nsp_fungal_cultivation",
+      "prior_family": "sp_french_grammar",
+      "five_word_jaccard": 0.00763
+    },
+    {
+      "new_case_id": "NTSP24",
+      "prior_case_id": "SP07",
+      "new_family": "nsp_inventory_operations",
+      "prior_family": "sp_music_theory",
+      "five_word_jaccard": 0.00699
+    },
+    {
+      "new_case_id": "NDSP18",
+      "prior_case_id": "SP07",
+      "new_family": "nsp_manuscript_illumination",
+      "prior_family": "sp_music_theory",
+      "five_word_jaccard": 0.00694
+    },
+    {
+      "new_case_id": "NVSP10",
+      "prior_case_id": "SP07",
+      "new_family": "nsp_juggling_cascade",
+      "prior_family": "sp_music_theory",
+      "five_word_jaccard": 0.00658
+    },
+    {
+      "new_case_id": "NTSP30",
+      "prior_case_id": "SP07",
+      "new_family": "nsp_fountain_pen_restoration",
+      "prior_family": "sp_music_theory",
+      "five_word_jaccard": 0.00649
+    },
+    {
+      "new_case_id": "NDSP06",
+      "prior_case_id": "SP07",
+      "new_family": "nsp_coffee_sensory",
+      "prior_family": "sp_music_theory",
+      "five_word_jaccard": 0.00641
+    }
+  ],
+  "nearest_cross_split_pairs": [
+    {
+      "a": "NDSP06",
+      "b": "NVSP10",
+      "a_family": "nsp_coffee_sensory",
+      "b_family": "nsp_juggling_cascade",
+      "five_word_jaccard": 0.37288
+    },
+    {
+      "a": "NVSP02",
+      "b": "NTSP04",
+      "a_family": "nsp_fungal_cultivation",
+      "b_family": "nsp_heraldry",
+      "five_word_jaccard": 0.3609
+    },
+    {
+      "a": "NVSP03",
+      "b": "NTSP23",
+      "a_family": "nsp_typographic_anatomy",
+      "b_family": "nsp_sign_language_space",
+      "five_word_jaccard": 0.35644
+    },
+    {
+      "a": "NDSP07",
+      "b": "NTSP01",
+      "a_family": "nsp_water_treatment",
+      "b_family": "nsp_volcanology",
+      "five_word_jaccard": 0.34375
+    },
+    {
+      "a": "NDSP08",
+      "b": "NTSP02",
+      "a_family": "nsp_pedestrian_design",
+      "b_family": "nsp_glaciology",
+      "five_word_jaccard": 0.34375
+    },
+    {
+      "a": "NDSP09",
+      "b": "NTSP03",
+      "a_family": "nsp_origami_foundations",
+      "b_family": "nsp_groundwater_hydrology",
+      "five_word_jaccard": 0.33607
+    },
+    {
+      "a": "NVSP01",
+      "b": "NTSP03",
+      "a_family": "nsp_rope_knots",
+      "b_family": "nsp_groundwater_hydrology",
+      "five_word_jaccard": 0.33607
+    },
+    {
+      "a": "NDSP09",
+      "b": "NVSP01",
+      "a_family": "nsp_origami_foundations",
+      "b_family": "nsp_rope_knots",
+      "five_word_jaccard": 0.33333
+    },
+    {
+      "a": "NVSP07",
+      "b": "NTSP27",
+      "a_family": "nsp_mask_acting",
+      "b_family": "nsp_drum_tuning",
+      "five_word_jaccard": 0.33019
+    },
+    {
+      "a": "NVSP10",
+      "b": "NTSP30",
+      "a_family": "nsp_juggling_cascade",
+      "b_family": "nsp_fountain_pen_restoration",
+      "five_word_jaccard": 0.32231
+    },
+    {
+      "a": "NDSP05",
+      "b": "NTSP05",
+      "a_family": "nsp_braille_literacy",
+      "b_family": "nsp_canine_scent_work",
+      "five_word_jaccard": 0.31858
+    },
+    {
+      "a": "NVSP09",
+      "b": "NTSP29",
+      "a_family": "nsp_numismatics",
+      "b_family": "nsp_hockey_tactics",
+      "five_word_jaccard": 0.31858
+    },
+    {
+      "a": "NDSP04",
+      "b": "NTSP10",
+      "a_family": "nsp_stage_rigging_theory",
+      "b_family": "nsp_dental_anatomy",
+      "five_word_jaccard": 0.31304
+    },
+    {
+      "a": "NDSP06",
+      "b": "NTSP30",
+      "a_family": "nsp_coffee_sensory",
+      "b_family": "nsp_fountain_pen_restoration",
+      "five_word_jaccard": 0.312
+    },
+    {
+      "a": "NVSP07",
+      "b": "NTSP21",
+      "a_family": "nsp_mask_acting",
+      "b_family": "nsp_dance_notation",
+      "five_word_jaccard": 0.30841
+    },
+    {
+      "a": "NDSP18",
+      "b": "NTSP24",
+      "a_family": "nsp_manuscript_illumination",
+      "b_family": "nsp_inventory_operations",
+      "five_word_jaccard": 0.30556
+    },
+    {
+      "a": "NDSP16",
+      "b": "NTSP10",
+      "a_family": "nsp_human_factors",
+      "b_family": "nsp_dental_anatomy",
+      "five_word_jaccard": 0.30508
+    },
+    {
+      "a": "NVSP08",
+      "b": "NTSP10",
+      "a_family": "nsp_dance_floorcraft",
+      "b_family": "nsp_dental_anatomy",
+      "five_word_jaccard": 0.30252
+    },
+    {
+      "a": "NDSP04",
+      "b": "NVSP08",
+      "a_family": "nsp_stage_rigging_theory",
+      "b_family": "nsp_dance_floorcraft",
+      "five_word_jaccard": 0.30081
+    },
+    {
+      "a": "NDSP19",
+      "b": "NTSP19",
+      "a_family": "nsp_go_life_death",
+      "b_family": "nsp_perfume_structure",
+      "five_word_jaccard": 0.30081
+    }
+  ],
+  "limitations": [
+    "Text similarity is only a duplicate screen; changing family IDs alone is not enough.",
+    "Task families share domain-level templates; this check does not prove independent sampling or zero semantic overlap.",
+    "Coordinator may examine new data against prior texts to check reuse, but does not use performance outcomes for replacement or split selection."
+  ],
+  "coordinator_review": {
+    "reviewed_utc": "2026-10-19T14:56:29.916134+00:00",
+    "type": "Review, not human review",
+    "scope": "All120 registered family intentions and prior exclusion titles/topics; top20 old and cross-split similarity flags; selected full case triplets plus independent full writing review and all four corrections.",
+    "finding": "No exact prior initial-request reuse and no current exact normalized planning contract duplicates. New situation families are preserved; common task templates remain.",
+    "cross_split_similarity_max_current": 0.37288,
+    "no_semantic_independence_certificate": true,
+    "supporting_review": "work/independent_data_review.json"
+  }
+}

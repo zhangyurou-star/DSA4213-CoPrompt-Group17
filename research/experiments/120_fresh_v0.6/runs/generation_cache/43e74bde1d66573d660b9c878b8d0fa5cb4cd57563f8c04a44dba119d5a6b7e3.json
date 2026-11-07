@@ -1,0 +1,100 @@
+{
+  "cache_key": "43e74bde1d66573d660b9c878b8d0fa5cb4cd57563f8c04a44dba119d5a6b7e3",
+  "source_case_id": "NDCW08",
+  "source_policy": "direct",
+  "output": {
+    "text": "Begin by aligning the mock pattern with the folded edge of the fabric, ensuring the body lies flat against it. Position two cuffs along the outer edge, maintaining even spacing. Keep all printed arrows parallel to guide accurate placement. Leave the center strip uncut and undisturbed—it will form the tie. Do not extend any cuts into this central area. Press the fabric lightly to preserve alignment. Once confirmed, proceed with cutting along the marked lines. This layout optimizes fabric use and ensures a clean, symmetrical finish. Follow the arrows precisely to avoid misalignment. The folded edge provides stability, while the two cuffs are ready for attachment. Always leave the center strip intact for the final tie."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Begin by aligning the mock pattern with the folded edge of the fabric, ensuring the body lies flat against it. Position two cuffs along the outer edge, maintaining even spacing. Keep all printed arrows parallel to guide accurate placement. Leave the center strip uncut and undisturbed—it will form the tie. Do not extend any cuts into this central area. Press the fabric lightly to preserve alignment. Once confirmed, proceed with cutting along the marked lines. This layout optimizes fabric use and ensures a clean, symmetrical finish. Follow the arrows precisely to avoid misalignment. The folded edge provides stability, while the two cuffs are ready for attachment. Always leave the center strip intact for the final tie.\"\n}",
+      "parsed": {
+        "text": "Begin by aligning the mock pattern with the folded edge of the fabric, ensuring the body lies flat against it. Position two cuffs along the outer edge, maintaining even spacing. Keep all printed arrows parallel to guide accurate placement. Leave the center strip uncut and undisturbed—it will form the tie. Do not extend any cuts into this central area. Press the fabric lightly to preserve alignment. Once confirmed, proceed with cutting along the marked lines. This layout optimizes fabric use and ensures a clean, symmetrical finish. Follow the arrows precisely to avoid misalignment. The folded edge provides stability, while the two cuffs are ready for attachment. Always leave the center strip intact for the final tie."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      },
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"folded edge\", \"two cuffs\", \"leave the center strip\"."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 117
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      },
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"folded edge\", \"two cuffs\", \"leave the center strip\"."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 117
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 60 words and no more than 90 words in total."
+        }
+      },
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"folded edge\", \"two cuffs\", \"leave the center strip\"."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

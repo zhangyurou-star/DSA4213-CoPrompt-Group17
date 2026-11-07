@@ -1,0 +1,95 @@
+{
+  "cache_key": "c8c21fdfeb866030902b7094f981de57a6620107b539fa6cd0dedd9eeb0c7a60",
+  "source_case_id": "NVCW06",
+  "source_policy": "value_based",
+  "output": {
+    "text": "Facilitators, begin the exercise. At Depot Seven, the parcel labels have vanished while the inventory list remains intact. The team must decide whether to pause the dispatch. Consider the risks of proceeding without visible labels versus operational delays. What evidence would justify resuming dispatch? This is an imaginary discussion exercise. Address the scenario with a neutral, concrete voice. Focus on decision-making under uncertainty. The inject states that at Depot Seven the parcel labels have vanished while the inventory list remains intact. Ask the team whether to pause the dispatch and what evidence would justify resuming. This is an imaginary discussion exercise."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Facilitators, begin the exercise. At Depot Seven, the parcel labels have vanished while the inventory list remains intact. The team must decide whether to pause the dispatch. Consider the risks of proceeding without visible labels versus the operational delays of halting. What evidence would justify resuming dispatch? This is an imaginary discussion exercise. Address the scenario with a neutral, concrete voice. Focus on decision-making under uncertainty. The inject states that at Depot Seven the parcel labels have vanished while the inventory list remains intact. Ask the team whether to pause the dispatch and what evidence would justify resuming. This is an imaginary discussion exercise.\"\n}",
+      "parsed": {
+        "text": "Facilitators, begin the exercise. At Depot Seven, the parcel labels have vanished while the inventory list remains intact. The team must decide whether to pause the dispatch. Consider the risks of proceeding without visible labels versus the operational delays of halting. What evidence would justify resuming dispatch? This is an imaginary discussion exercise. Address the scenario with a neutral, concrete voice. Focus on decision-making under uncertainty. The inject states that at Depot Seven the parcel labels have vanished while the inventory list remains intact. Ask the team whether to pause the dispatch and what evidence would justify resuming. This is an imaginary discussion exercise."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 65,
+          "max_words": 95
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "The full text must be between 65 and 95 words."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 95, \"min_words\": 65, \"observed_words\": 104}"
+  ],
+  "constraint_checks_final": [
+    "word_count: {\"max_words\": 95, \"min_words\": 65, \"observed_words\": 101}"
+  ],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"Facilitators, begin the exercise. At Depot Seven, the parcel labels have vanished while the inventory list remains intact. The team must decide whether to pause the dispatch. Consider the risks of proceeding without visible labels versus operational delays. What evidence would justify resuming dispatch? This is an imaginary discussion exercise. Address the scenario with a neutral, concrete voice. Focus on decision-making under uncertainty. The inject states that at Depot Seven the parcel labels have vanished while the inventory list remains intact. Ask the team whether to pause the dispatch and what evidence would justify resuming. This is an imaginary discussion exercise.\"\n}",
+    "parsed": {
+      "text": "Facilitators, begin the exercise. At Depot Seven, the parcel labels have vanished while the inventory list remains intact. The team must decide whether to pause the dispatch. Consider the risks of proceeding without visible labels versus operational delays. What evidence would justify resuming dispatch? This is an imaginary discussion exercise. Address the scenario with a neutral, concrete voice. Focus on decision-making under uncertainty. The inject states that at Depot Seven the parcel labels have vanished while the inventory list remains intact. Ask the team whether to pause the dispatch and what evidence would justify resuming. This is an imaginary discussion exercise."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 104
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 65,
+          "max_words": 95
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 95, \"min_words\": 65, \"observed_words\": 104}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 101
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 65,
+          "max_words": 95
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 95, \"min_words\": 65, \"observed_words\": 101}"
+    ],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

@@ -1,0 +1,143 @@
+{
+  "cache_key": "379f98dd3a20535ad00a52af3fa853bb2831010ef33d0c9f4116ee8b11cbe718",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S1"
+    ],
+    "tone": [
+      "S6"
+    ],
+    "length": [
+      "S2"
+    ],
+    "required_content": [
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 42,
+      "text": "Write a letter addressed to a future self."
+    },
+    {
+      "id": "S2",
+      "start": 43,
+      "end": 89,
+      "text": "The full text must be between 60 and 90 words."
+    },
+    {
+      "id": "S3",
+      "start": 90,
+      "end": 195,
+      "text": "Use this fictional material: The speaker is building an unfinished bench and worries about abandoning it."
+    },
+    {
+      "id": "S4",
+      "start": 196,
+      "end": 281,
+      "text": "Refer to one small promise to finish a useful thing, and close with keep making room."
+    },
+    {
+      "id": "S5",
+      "start": 282,
+      "end": 374,
+      "text": "Required wording, verbatim: \"the unfinished bench\", \"one small promise\", \"keep making room\"."
+    },
+    {
+      "id": "S6",
+      "start": 375,
+      "end": 442,
+      "text": "Use wording suitable for myself opening the letter ten years later."
+    }
+  ],
+  "field_values": {
+    "audience": "Write a letter addressed to a future self.",
+    "tone": "Use wording suitable for myself opening the letter ten years later.",
+    "length": "The full text must be between 60 and 90 words.",
+    "required_content": "Use this fictional material: The speaker is building an unfinished bench and worries about abandoning it.\nRefer to one small promise to finish a useful thing, and close with keep making room.\nRequired wording, verbatim: \"the unfinished bench\", \"one small promise\", \"keep making room\"."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S1",
+        "start": 0,
+        "end": 42,
+        "quote": "Write a letter addressed to a future self."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 375,
+        "end": 442,
+        "quote": "Use wording suitable for myself opening the letter ten years later."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 43,
+        "end": 89,
+        "quote": "The full text must be between 60 and 90 words."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 90,
+        "end": 195,
+        "quote": "Use this fictional material: The speaker is building an unfinished bench and worries about abandoning it."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 196,
+        "end": 281,
+        "quote": "Refer to one small promise to finish a useful thing, and close with keep making room."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 282,
+        "end": 374,
+        "quote": "Required wording, verbatim: \"the unfinished bench\", \"one small promise\", \"keep making room\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S1\"],\"tone\":[\"S6\"],\"length\":[\"S2\"],\"required_content\":[\"S3\",\"S4\",\"S5\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S1"
+          ],
+          "tone": [
+            "S6"
+          ],
+          "length": [
+            "S2"
+          ],
+          "required_content": [
+            "S3",
+            "S4",
+            "S5"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

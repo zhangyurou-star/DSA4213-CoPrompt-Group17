@@ -1,0 +1,76 @@
+{
+  "cache_key": "496821c03a83fee9a9cd60f046139e6d614d45459138f2bd53d35f323d6a007c",
+  "source_case_id": "NDCW04",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "Copper Lantern is a thoughtful choice for this cultivar, evoking both visual richness and a quiet, deliberate rhythm. The name captures the plant’s striking bronze petals, which shimmer like aged metal in twilight light. More than mere color, the bronze hue suggests warmth and endurance, qualities that mirror the plant’s resilient character. The evening bloom further deepens the name’s resonance—this is a flower that awakens when others sleep, unfurling its petals as the day’s energy fades. It does not compete with daytime blooms but instead offers a serene, luminous presence in the garden’s quiet hours. Copper Lantern, therefore, is not just a name—it is a promise of beauty that emerges in stillness, a quiet celebration of the night’s gentle transition."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Copper Lantern is a thoughtful choice for this cultivar, evoking both visual richness and a quiet, deliberate rhythm. The name captures the plant’s striking bronze petals, which shimmer like aged metal in twilight light. More than mere color, the bronze hue suggests warmth and endurance, qualities that mirror the plant’s resilient character. The evening bloom further deepens the name’s resonance—this is a flower that awakens when others sleep, unfurling its petals as the day’s energy fades. It does not compete with daytime blooms but instead offers a serene, luminous presence in the garden’s quiet hours. Copper Lantern, therefore, is not just a name—it is a promise of beauty that emerges in stillness, a quiet celebration of the night’s gentle transition.\"\n}",
+      "parsed": {
+        "text": "Copper Lantern is a thoughtful choice for this cultivar, evoking both visual richness and a quiet, deliberate rhythm. The name captures the plant’s striking bronze petals, which shimmer like aged metal in twilight light. More than mere color, the bronze hue suggests warmth and endurance, qualities that mirror the plant’s resilient character. The evening bloom further deepens the name’s resonance—this is a flower that awakens when others sleep, unfurling its petals as the day’s energy fades. It does not compete with daytime blooms but instead offers a serene, luminous presence in the garden’s quiet hours. Copper Lantern, therefore, is not just a name—it is a promise of beauty that emerges in stillness, a quiet celebration of the night’s gentle transition."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"Copper Lantern\", \"bronze petals\", \"evening bloom\"."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 122
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"Copper Lantern\", \"bronze petals\", \"evening bloom\"."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 122
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "quoted_text_not_clearly_a_positive_literal_requirement",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Required wording, verbatim: \"Copper Lantern\", \"bronze petals\", \"evening bloom\"."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

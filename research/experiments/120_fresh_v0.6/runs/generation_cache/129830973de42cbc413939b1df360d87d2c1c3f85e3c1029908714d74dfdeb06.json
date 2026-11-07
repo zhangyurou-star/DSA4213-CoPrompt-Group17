@@ -1,0 +1,279 @@
+{
+  "cache_key": "129830973de42cbc413939b1df360d87d2c1c3f85e3c1029908714d74dfdeb06",
+  "source_case_id": "NDSP14",
+  "source_policy": "value_based",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Leather Hand-Stitching Demonstration: Introduction to Tools and Materials",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Leather Hand-Stitching Demonstration: Basic Stitch Techniques (Whipstitch, Backstitch)",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Leather Hand-Stitching Demonstration: Threading Needles and Tension Control",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Leather Hand-Stitching Demonstration: Edge Finishing and Seam Reinforcement",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Leather Hand-Stitching Demonstration: Pattern Layout and Marking on Leather",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Leather Hand-Stitching Demonstration: Full Practice Session and Term Review",
+        "minutes": 30
+      }
+    ],
+    "summary": "Calculated from the schedule: 180 minutes in total. Daily totals: 2027-02-01: 30 minutes; 2027-02-02: 30 minutes; 2027-02-03: 30 minutes; 2027-02-04: 30 minutes; 2027-02-05: 30 minutes; 2027-02-06: 30 minutes. Topic totals: Leather Hand-Stitching Demonstration: Basic Stitch Techniques (Whipstitch, Backstitch): 30 minutes; Leather Hand-Stitching Demonstration: Edge Finishing and Seam Reinforcement: 30 minutes; Leather Hand-Stitching Demonstration: Full Practice Session and Term Review: 30 minutes; Leather Hand-Stitching Demonstration: Introduction to Tools and Materials: 30 minutes; Leather Hand-Stitching Demonstration: Pattern Layout and Marking on Leather: 30 minutes; Leather Hand-Stitching Demonstration: Threading Needles and Tension Control: 30 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Leather Hand-Stitching Demonstration: Introduction to Tools and Materials\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Leather Hand-Stitching Demonstration: Basic Stitch Techniques (Whipstitch, Backstitch)\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Leather Hand-Stitching Demonstration: Threading Needles and Tension Control\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Leather Hand-Stitching Demonstration: Edge Finishing and Seam Reinforcement\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Leather Hand-Stitching Demonstration: Pattern Layout and Marking on Leather\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Leather Hand-Stitching Demonstration: Full Practice Session and Term Review\",\n      \"minutes\": 30\n    }\n  ],\n  \"summary\": \"Six study sessions were scheduled from 2027-02-01 to 2027-02-06, with each session lasting 30 minutes. Topics progress logically through tools, techniques, and practice, ensuring full coverage of the demonstration while adhering to the 30-minute daily limit. All sessions are completed within the study window.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Leather Hand-Stitching Demonstration: Introduction to Tools and Materials",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Leather Hand-Stitching Demonstration: Basic Stitch Techniques (Whipstitch, Backstitch)",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Leather Hand-Stitching Demonstration: Threading Needles and Tension Control",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Leather Hand-Stitching Demonstration: Edge Finishing and Seam Reinforcement",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Leather Hand-Stitching Demonstration: Pattern Layout and Marking on Leather",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Leather Hand-Stitching Demonstration: Full Practice Session and Term Review",
+            "minutes": 30
+          }
+        ],
+        "summary": "Six study sessions were scheduled from 2027-02-01 to 2027-02-06, with each session lasting 30 minutes. Topics progress logically through tools, techniques, and practice, ensuring full coverage of the demonstration while adhering to the 30-minute daily limit. All sessions are completed within the study window."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-06; that date is still available."
+        }
+      },
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "My study window closes on 2027-02-06; that date is still available."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 180,
+      "daily_minutes": {
+        "2027-02-01": 30,
+        "2027-02-02": 30,
+        "2027-02-03": 30,
+        "2027-02-04": 30,
+        "2027-02-05": 30,
+        "2027-02-06": 30
+      },
+      "topic_minutes": [
+        {
+          "topic": "Leather Hand-Stitching Demonstration: Basic Stitch Techniques (Whipstitch, Backstitch)",
+          "normalized_topic": "leather hand-stitching demonstration: basic stitch techniques (whipstitch, backstitch)",
+          "minutes": 30
+        },
+        {
+          "topic": "Leather Hand-Stitching Demonstration: Edge Finishing and Seam Reinforcement",
+          "normalized_topic": "leather hand-stitching demonstration: edge finishing and seam reinforcement",
+          "minutes": 30
+        },
+        {
+          "topic": "Leather Hand-Stitching Demonstration: Full Practice Session and Term Review",
+          "normalized_topic": "leather hand-stitching demonstration: full practice session and term review",
+          "minutes": 30
+        },
+        {
+          "topic": "Leather Hand-Stitching Demonstration: Introduction to Tools and Materials",
+          "normalized_topic": "leather hand-stitching demonstration: introduction to tools and materials",
+          "minutes": 30
+        },
+        {
+          "topic": "Leather Hand-Stitching Demonstration: Pattern Layout and Marking on Leather",
+          "normalized_topic": "leather hand-stitching demonstration: pattern layout and marking on leather",
+          "minutes": 30
+        },
+        {
+          "topic": "Leather Hand-Stitching Demonstration: Threading Needles and Tension Control",
+          "normalized_topic": "leather hand-stitching demonstration: threading needles and tension control",
+          "minutes": 30
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-06; that date is still available."
+        }
+      },
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "My study window closes on 2027-02-06; that date is still available."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 180,
+      "daily_minutes": {
+        "2027-02-01": 30,
+        "2027-02-02": 30,
+        "2027-02-03": 30,
+        "2027-02-04": 30,
+        "2027-02-05": 30,
+        "2027-02-06": 30
+      },
+      "topic_minutes": [
+        {
+          "topic": "Leather Hand-Stitching Demonstration: Basic Stitch Techniques (Whipstitch, Backstitch)",
+          "normalized_topic": "leather hand-stitching demonstration: basic stitch techniques (whipstitch, backstitch)",
+          "minutes": 30
+        },
+        {
+          "topic": "Leather Hand-Stitching Demonstration: Edge Finishing and Seam Reinforcement",
+          "normalized_topic": "leather hand-stitching demonstration: edge finishing and seam reinforcement",
+          "minutes": 30
+        },
+        {
+          "topic": "Leather Hand-Stitching Demonstration: Full Practice Session and Term Review",
+          "normalized_topic": "leather hand-stitching demonstration: full practice session and term review",
+          "minutes": 30
+        },
+        {
+          "topic": "Leather Hand-Stitching Demonstration: Introduction to Tools and Materials",
+          "normalized_topic": "leather hand-stitching demonstration: introduction to tools and materials",
+          "minutes": 30
+        },
+        {
+          "topic": "Leather Hand-Stitching Demonstration: Pattern Layout and Marking on Leather",
+          "normalized_topic": "leather hand-stitching demonstration: pattern layout and marking on leather",
+          "minutes": 30
+        },
+        {
+          "topic": "Leather Hand-Stitching Demonstration: Threading Needles and Tension Control",
+          "normalized_topic": "leather hand-stitching demonstration: threading needles and tension control",
+          "minutes": 30
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-06; that date is still available."
+        }
+      },
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "My study window closes on 2027-02-06; that date is still available."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "Six study sessions were scheduled from 2027-02-01 to 2027-02-06, with each session lasting 30 minutes. Topics progress logically through tools, techniques, and practice, ensuring full coverage of the demonstration while adhering to the 30-minute daily limit. All sessions are completed within the study window.",
+    "derived_summary": "Calculated from the schedule: 180 minutes in total. Daily totals: 2027-02-01: 30 minutes; 2027-02-02: 30 minutes; 2027-02-03: 30 minutes; 2027-02-04: 30 minutes; 2027-02-05: 30 minutes; 2027-02-06: 30 minutes. Topic totals: Leather Hand-Stitching Demonstration: Basic Stitch Techniques (Whipstitch, Backstitch): 30 minutes; Leather Hand-Stitching Demonstration: Edge Finishing and Seam Reinforcement: 30 minutes; Leather Hand-Stitching Demonstration: Full Practice Session and Term Review: 30 minutes; Leather Hand-Stitching Demonstration: Introduction to Tools and Materials: 30 minutes; Leather Hand-Stitching Demonstration: Pattern Layout and Marking on Leather: 30 minutes; Leather Hand-Stitching Demonstration: Threading Needles and Tension Control: 30 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

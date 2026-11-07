@@ -1,0 +1,372 @@
+{
+  "cache_key": "f587363f689e0eafa0e0528981bae72506faded18aa067de9d8890f5388d920f",
+  "source_case_id": "NDSP14",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Introduction to Leather Hand-Stitching Tools and Materials",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-01",
+        "topic": "Basic Stitching Techniques: Running Stitch and Backstitch",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Preparing Leather: Cutting and Marking Patterns",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Piercing Holes and Aligning Stitch Lines",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Executing the Double-Needle Lacing Stitch",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Tightening and Finishing the Stitch",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Understanding Thread Types and Their Uses",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Securing Knots and Preventing Fraying",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Practice Session: Repeating Key Stitches on Scrap Leather",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Review of Terminology and Technique Corrections",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Full Demonstration Recap: Step-by-Step Stitching Process",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Self-Assessment and Reflection on Learning",
+        "minutes": 15
+      }
+    ],
+    "summary": "Calculated from the schedule: 180 minutes in total. Daily totals: 2027-02-01: 30 minutes; 2027-02-02: 30 minutes; 2027-02-03: 30 minutes; 2027-02-04: 30 minutes; 2027-02-05: 30 minutes; 2027-02-06: 30 minutes. Topic totals: Basic Stitching Techniques: Running Stitch and Backstitch: 15 minutes; Executing the Double-Needle Lacing Stitch: 15 minutes; Full Demonstration Recap: Step-by-Step Stitching Process: 15 minutes; Introduction to Leather Hand-Stitching Tools and Materials: 15 minutes; Piercing Holes and Aligning Stitch Lines: 15 minutes; Practice Session: Repeating Key Stitches on Scrap Leather: 15 minutes; Preparing Leather: Cutting and Marking Patterns: 15 minutes; Review of Terminology and Technique Corrections: 15 minutes; Securing Knots and Preventing Fraying: 15 minutes; Self-Assessment and Reflection on Learning: 15 minutes; Tightening and Finishing the Stitch: 15 minutes; Understanding Thread Types and Their Uses: 15 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Introduction to Leather Hand-Stitching Tools and Materials\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Basic Stitching Techniques: Running Stitch and Backstitch\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Preparing Leather: Cutting and Marking Patterns\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Piercing Holes and Aligning Stitch Lines\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Executing the Double-Needle Lacing Stitch\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Tightening and Finishing the Stitch\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Understanding Thread Types and Their Uses\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Securing Knots and Preventing Fraying\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Practice Session: Repeating Key Stitches on Scrap Leather\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Review of Terminology and Technique Corrections\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Full Demonstration Recap: Step-by-Step Stitching Process\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Self-Assessment and Reflection on Learning\",\n      \"minutes\": 15\n    }\n  ],\n  \"summary\": \"The study schedule spans six days from 2027-02-01 to 2027-02-06, with two 15-minute sessions per day, ensuring no single day exceeds the 30-minute limit. Each session focuses on a distinct aspect of leather hand-stitching, progressing from tools and materials to technique execution and final review. All key terms and steps from the demonstration are covered systematically, enabling consistent tracking and retention.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Introduction to Leather Hand-Stitching Tools and Materials",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-01",
+            "topic": "Basic Stitching Techniques: Running Stitch and Backstitch",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Preparing Leather: Cutting and Marking Patterns",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Piercing Holes and Aligning Stitch Lines",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Executing the Double-Needle Lacing Stitch",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Tightening and Finishing the Stitch",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Understanding Thread Types and Their Uses",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Securing Knots and Preventing Fraying",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Practice Session: Repeating Key Stitches on Scrap Leather",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Review of Terminology and Technique Corrections",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Full Demonstration Recap: Step-by-Step Stitching Process",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Self-Assessment and Reflection on Learning",
+            "minutes": 15
+          }
+        ],
+        "summary": "The study schedule spans six days from 2027-02-01 to 2027-02-06, with two 15-minute sessions per day, ensuring no single day exceeds the 30-minute limit. Each session focuses on a distinct aspect of leather hand-stitching, progressing from tools and materials to technique execution and final review. All key terms and steps from the demonstration are covered systematically, enabling consistent tracking and retention."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-06; that date is still available."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 180,
+      "daily_minutes": {
+        "2027-02-01": 30,
+        "2027-02-02": 30,
+        "2027-02-03": 30,
+        "2027-02-04": 30,
+        "2027-02-05": 30,
+        "2027-02-06": 30
+      },
+      "topic_minutes": [
+        {
+          "topic": "Basic Stitching Techniques: Running Stitch and Backstitch",
+          "normalized_topic": "basic stitching techniques: running stitch and backstitch",
+          "minutes": 15
+        },
+        {
+          "topic": "Executing the Double-Needle Lacing Stitch",
+          "normalized_topic": "executing the double-needle lacing stitch",
+          "minutes": 15
+        },
+        {
+          "topic": "Full Demonstration Recap: Step-by-Step Stitching Process",
+          "normalized_topic": "full demonstration recap: step-by-step stitching process",
+          "minutes": 15
+        },
+        {
+          "topic": "Introduction to Leather Hand-Stitching Tools and Materials",
+          "normalized_topic": "introduction to leather hand-stitching tools and materials",
+          "minutes": 15
+        },
+        {
+          "topic": "Piercing Holes and Aligning Stitch Lines",
+          "normalized_topic": "piercing holes and aligning stitch lines",
+          "minutes": 15
+        },
+        {
+          "topic": "Practice Session: Repeating Key Stitches on Scrap Leather",
+          "normalized_topic": "practice session: repeating key stitches on scrap leather",
+          "minutes": 15
+        },
+        {
+          "topic": "Preparing Leather: Cutting and Marking Patterns",
+          "normalized_topic": "preparing leather: cutting and marking patterns",
+          "minutes": 15
+        },
+        {
+          "topic": "Review of Terminology and Technique Corrections",
+          "normalized_topic": "review of terminology and technique corrections",
+          "minutes": 15
+        },
+        {
+          "topic": "Securing Knots and Preventing Fraying",
+          "normalized_topic": "securing knots and preventing fraying",
+          "minutes": 15
+        },
+        {
+          "topic": "Self-Assessment and Reflection on Learning",
+          "normalized_topic": "self-assessment and reflection on learning",
+          "minutes": 15
+        },
+        {
+          "topic": "Tightening and Finishing the Stitch",
+          "normalized_topic": "tightening and finishing the stitch",
+          "minutes": 15
+        },
+        {
+          "topic": "Understanding Thread Types and Their Uses",
+          "normalized_topic": "understanding thread types and their uses",
+          "minutes": 15
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-06; that date is still available."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 180,
+      "daily_minutes": {
+        "2027-02-01": 30,
+        "2027-02-02": 30,
+        "2027-02-03": 30,
+        "2027-02-04": 30,
+        "2027-02-05": 30,
+        "2027-02-06": 30
+      },
+      "topic_minutes": [
+        {
+          "topic": "Basic Stitching Techniques: Running Stitch and Backstitch",
+          "normalized_topic": "basic stitching techniques: running stitch and backstitch",
+          "minutes": 15
+        },
+        {
+          "topic": "Executing the Double-Needle Lacing Stitch",
+          "normalized_topic": "executing the double-needle lacing stitch",
+          "minutes": 15
+        },
+        {
+          "topic": "Full Demonstration Recap: Step-by-Step Stitching Process",
+          "normalized_topic": "full demonstration recap: step-by-step stitching process",
+          "minutes": 15
+        },
+        {
+          "topic": "Introduction to Leather Hand-Stitching Tools and Materials",
+          "normalized_topic": "introduction to leather hand-stitching tools and materials",
+          "minutes": 15
+        },
+        {
+          "topic": "Piercing Holes and Aligning Stitch Lines",
+          "normalized_topic": "piercing holes and aligning stitch lines",
+          "minutes": 15
+        },
+        {
+          "topic": "Practice Session: Repeating Key Stitches on Scrap Leather",
+          "normalized_topic": "practice session: repeating key stitches on scrap leather",
+          "minutes": 15
+        },
+        {
+          "topic": "Preparing Leather: Cutting and Marking Patterns",
+          "normalized_topic": "preparing leather: cutting and marking patterns",
+          "minutes": 15
+        },
+        {
+          "topic": "Review of Terminology and Technique Corrections",
+          "normalized_topic": "review of terminology and technique corrections",
+          "minutes": 15
+        },
+        {
+          "topic": "Securing Knots and Preventing Fraying",
+          "normalized_topic": "securing knots and preventing fraying",
+          "minutes": 15
+        },
+        {
+          "topic": "Self-Assessment and Reflection on Learning",
+          "normalized_topic": "self-assessment and reflection on learning",
+          "minutes": 15
+        },
+        {
+          "topic": "Tightening and Finishing the Stitch",
+          "normalized_topic": "tightening and finishing the stitch",
+          "minutes": 15
+        },
+        {
+          "topic": "Understanding Thread Types and Their Uses",
+          "normalized_topic": "understanding thread types and their uses",
+          "minutes": 15
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "My study window closes on 2027-02-06; that date is still available."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study schedule spans six days from 2027-02-01 to 2027-02-06, with two 15-minute sessions per day, ensuring no single day exceeds the 30-minute limit. Each session focuses on a distinct aspect of leather hand-stitching, progressing from tools and materials to technique execution and final review. All key terms and steps from the demonstration are covered systematically, enabling consistent tracking and retention.",
+    "derived_summary": "Calculated from the schedule: 180 minutes in total. Daily totals: 2027-02-01: 30 minutes; 2027-02-02: 30 minutes; 2027-02-03: 30 minutes; 2027-02-04: 30 minutes; 2027-02-05: 30 minutes; 2027-02-06: 30 minutes. Topic totals: Basic Stitching Techniques: Running Stitch and Backstitch: 15 minutes; Executing the Double-Needle Lacing Stitch: 15 minutes; Full Demonstration Recap: Step-by-Step Stitching Process: 15 minutes; Introduction to Leather Hand-Stitching Tools and Materials: 15 minutes; Piercing Holes and Aligning Stitch Lines: 15 minutes; Practice Session: Repeating Key Stitches on Scrap Leather: 15 minutes; Preparing Leather: Cutting and Marking Patterns: 15 minutes; Review of Terminology and Technique Corrections: 15 minutes; Securing Knots and Preventing Fraying: 15 minutes; Self-Assessment and Reflection on Learning: 15 minutes; Tightening and Finishing the Stitch: 15 minutes; Understanding Thread Types and Their Uses: 15 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "cache_key": "38e508ed3fba9e8ecfd6f2e556b08f39a2a7e2789d217a465f2c3a637ba39ee8",
+  "source_case_id": "NDCW13",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "Members of the jury, we are asked to convict based on suspicion alone. But let us be clear: the silver bell is missing, yes—but no witness saw the accused enter the room. An open window suggests a possible entry, but it does not prove guilt. A single feather on the sill is not evidence of intent or action. Without direct proof, we cannot convict on mere possibility. Reasonable doubt remains. The burden of proof lies with the prosecution, and that burden has not been met. Do not let speculation replace facts. Return a verdict of not guilty."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Members of the jury, we are asked to convict based on suspicion alone. But let us be clear: the silver bell is missing, yes—but no witness saw the accused enter the room. An open window suggests a possible entry, but it does not prove guilt. A single feather on the sill is not evidence of intent or action. Without direct proof, we cannot convict on mere possibility. Reasonable doubt remains. The burden of proof lies with the prosecution, and that burden has not been met. Do not let speculation replace facts. Return a verdict of not guilty.\"\n}",
+      "parsed": {
+        "text": "Members of the jury, we are asked to convict based on suspicion alone. But let us be clear: the silver bell is missing, yes—but no witness saw the accused enter the room. An open window suggests a possible entry, but it does not prove guilt. A single feather on the sill is not evidence of intent or action. Without direct proof, we cannot convict on mere possibility. Reasonable doubt remains. The burden of proof lies with the prosecution, and that burden has not been met. Do not let speculation replace facts. Return a verdict of not guilty."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the silver bell",
+            "an open window",
+            "no witness saw"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Preserve these exact phrases: \"the silver bell\", \"an open window\", \"no witness saw\"."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 2,
+          "field_id": "length",
+          "quote": "Use at least 65 words and no more than 95 words in total."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 98
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the silver bell",
+            "an open window",
+            "no witness saw"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 2,
+          "field_id": "length",
+          "quote": "Use at least 65 words and no more than 95 words in total."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 98
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the silver bell",
+            "an open window",
+            "no witness saw"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 2,
+          "field_id": "length",
+          "quote": "Use at least 65 words and no more than 95 words in total."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

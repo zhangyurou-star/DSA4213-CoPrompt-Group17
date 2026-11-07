@@ -1,0 +1,81 @@
+{
+  "cache_key": "4599b2331ac1e4f7160d0a7e4a065f5e78ecb6bb29f0cafe6361b890d46cd526",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S3"
+    ],
+    "tone": [
+      "S2"
+    ],
+    "length": [],
+    "required_content": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 60,
+      "text": "Create narration for a fictional microdocumentary about ink."
+    },
+    {
+      "id": "S2",
+      "start": 61,
+      "end": 111,
+      "text": "A sensory and contemplative tone suits this piece."
+    },
+    {
+      "id": "S3",
+      "start": 112,
+      "end": 185,
+      "text": "Use wording suitable for viewers of an imaginary short craft documentary."
+    }
+  ],
+  "field_values": {
+    "audience": "Use wording suitable for viewers of an imaginary short craft documentary.",
+    "tone": "A sensory and contemplative tone suits this piece.",
+    "length": null,
+    "required_content": null
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 112,
+        "end": 185,
+        "quote": "Use wording suitable for viewers of an imaginary short craft documentary."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 61,
+        "end": 111,
+        "quote": "A sensory and contemplative tone suits this piece."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S3\"],\"tone\":[\"S2\"],\"length\":[],\"required_content\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S3"
+          ],
+          "tone": [
+            "S2"
+          ],
+          "length": [],
+          "required_content": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

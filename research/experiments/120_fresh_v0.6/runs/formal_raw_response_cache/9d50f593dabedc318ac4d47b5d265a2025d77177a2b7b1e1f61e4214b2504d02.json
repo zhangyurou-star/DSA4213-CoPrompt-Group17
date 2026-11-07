@@ -1,0 +1,64 @@
+{
+  "key": "9d50f593dabedc318ac4d47b5d265a2025d77177a2b7b1e1f61e4214b2504d02",
+  "raw": "{\"action\":\"ASK\",\"field_id\":\"required_content\"}",
+  "source_case_id": "NTCW08",
+  "source_variant": "prompt_only",
+  "response_sha256": "7a12291f37300024fb9d139f4776c4fe3a1b8e958ede4b45df566a6ef04bd61c",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "decision",
+    "repair": false,
+    "repair_kind": null,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Choose whether to clarify one unresolved field or act now to complete the user's task.\nAsk only when its likely benefit to the result justifies another question. Optional preferences may have reasonable defaults.\nConsider only the public request, visible exchanges, current field state, eligible fields and remaining question budget.\nReturn exactly {\"action\":\"ASK\",\"field_id\":\"one_field_id\"} or {\"action\":\"ACT\"}.\nNo explanation, extra keys or Markdown. Do not predict unavailable hidden answers."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"constrained_writing\", \"initial_request\": \"Write a weather bulletin set on an imaginary planet. This will be read by listeners in the imaginary settlement of Nacre. Use at least 60 words and no more than 90 words in total. Use a composed and vivid voice.\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [{\"field_id\": \"audience\", \"question\": \"Who is the intended audience?\", \"status\": \"available\", \"answer_text\": \"This will be read by listeners in the imaginary settlement of Nacre.\"}], \"field_values\": {\"audience\": \"This will be read by listeners in the imaginary settlement of Nacre.\", \"tone\": \"Use a composed and vivid voice.\", \"length\": \"Use at least 60 words and no more than 90 words in total.\", \"required_content\": null}, \"eligible_fields\": [\"required_content\"], \"remaining_question_items\": 2, \"fields\": [{\"field_id\": \"audience\", \"label_zh\": \"受众\", \"description_zh\": \"目标读者或收件人。不得凭体裁猜测具体受众。\", \"question_template\": \"Who is the intended audience?\"}, {\"field_id\": \"tone\", \"label_zh\": \"语气\", \"description_zh\": \"语气或明确无偏好。缺省语气不视为已提供。\", \"question_template\": \"What tone would you like?\"}, {\"field_id\": \"length\", \"label_zh\": \"长度\", \"description_zh\": \"全文英文词数范围或明确无长度要求。\", \"question_template\": \"What word-count range should the full text follow?\"}, {\"field_id\": \"required_content\", \"label_zh\": \"必含内容\", \"description_zh\": \"用户明确要求的具体事实或逐字内容。仅有主题或体裁不算已提供；明确无必含内容则算已解决。\", \"question_template\": \"What information or exact wording must the text include?\"}]}"
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "cache_key": "899cb1f3dae371f2b20fcd3e46d915f07cf7a27d3dc598cae740e75719d04ca2",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S5"
+    ],
+    "available_time": [
+      "S4"
+    ],
+    "topics": [
+      "S6",
+      "S7"
+    ],
+    "priorities": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 64,
+      "text": "A repair-history workshop has diagrams of vintage fountain pens."
+    },
+    {
+      "id": "S2",
+      "start": 65,
+      "end": 109,
+      "text": "Plan my study of their restoration concepts."
+    },
+    {
+      "id": "S3",
+      "start": 110,
+      "end": 130,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 131,
+      "end": 200,
+      "text": "Keep each daily total at or below 45 minutes across all study blocks."
+    },
+    {
+      "id": "S5",
+      "start": 201,
+      "end": 276,
+      "text": "I can still study on 2027-02-04, but no study should be scheduled after it."
+    },
+    {
+      "id": "S6",
+      "start": 277,
+      "end": 375,
+      "text": "I need 30 minutes or more in total on each of \"Nib Alignment\", \"Feed Channels\", \"Sac Replacement\"."
+    },
+    {
+      "id": "S7",
+      "start": 376,
+      "end": 412,
+      "text": "Those are the required topic labels."
+    },
+    {
+      "id": "S8",
+      "start": 413,
+      "end": 483,
+      "text": "Please produce the schedule now without asking me follow-up questions."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": "Keep each daily total at or below 45 minutes across all study blocks.",
+    "topics": "I need 30 minutes or more in total on each of \"Nib Alignment\", \"Feed Channels\", \"Sac Replacement\".\nThose are the required topic labels.",
+    "priorities": null
+  },
+  "evidence": {
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 131,
+        "end": 200,
+        "quote": "Keep each daily total at or below 45 minutes across all study blocks."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 277,
+        "end": 375,
+        "quote": "I need 30 minutes or more in total on each of \"Nib Alignment\", \"Feed Channels\", \"Sac Replacement\"."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 376,
+        "end": 412,
+        "quote": "Those are the required topic labels."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "deadline",
+      "proposed_evidence": [
+        "S5"
+      ],
+      "proposed_value": "I can still study on 2027-02-04, but no study should be scheduled after it.",
+      "reason": "quote_has_no_explicit_endpoint_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S5\"],\"available_time\":[\"S4\"],\"topics\":[\"S6\",\"S7\"],\"priorities\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S5"
+          ],
+          "available_time": [
+            "S4"
+          ],
+          "topics": [
+            "S6",
+            "S7"
+          ],
+          "priorities": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

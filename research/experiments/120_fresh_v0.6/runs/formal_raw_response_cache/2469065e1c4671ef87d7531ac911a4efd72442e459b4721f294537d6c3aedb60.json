@@ -1,0 +1,64 @@
+{
+  "key": "2469065e1c4671ef87d7531ac911a4efd72442e459b4721f294537d6c3aedb60",
+  "raw": "{\"ratings\":[{\"field_id\":\"length\",\"importance\":0.5,\"uncertainty\":1,\"reason\":\"The length is unspecified, and the tone suggests a contemplative, sensory narrative that may vary in duration; without a word count range, the output could be too brief or overly extended, affecting the intended immersive experience.\"}]}",
+  "source_case_id": "NVCW04",
+  "source_variant": "value_lambda_0",
+  "response_sha256": "bad729e2aaaa8f07f617666a41886449e03aaf8f813f9d29d276327b55065e62",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "decision",
+    "repair": false,
+    "repair_kind": null,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Rate EVERY eligible unresolved field using the public request and visible interaction only.\nImportance I: 0 = little effect; 0.5 = local preference; 1 = could change core content or feasibility.\nUncertainty U: 0.5 = a reasonable default exists; 1 = different possible answers may materially change the result.\nThese are heuristic levels, not calibrated probabilities. Never inspect or infer hidden answer availability or grading labels.\nReturn exactly {\"ratings\":[{\"field_id\":\"...\",\"importance\":0.5,\"uncertainty\":1,\"reason\":\"brief rationale\"}, ...]}.\nCover each eligible field exactly once. Importance must be 0, 0.5 or 1. Uncertainty must be 0.5 or 1.\nNo action recommendation, extra keys or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"constrained_writing\", \"initial_request\": \"Create narration for a fictional microdocumentary about ink. A sensory and contemplative tone suits this piece. Use wording suitable for viewers of an imaginary short craft documentary.\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [{\"field_id\": \"required_content\", \"question\": \"What information or exact wording must the text include?\", \"status\": \"available\", \"answer_text\": \"Use this fictional material: The fictional film shows an ink maker grinding a dry stick into the black pool, adding water one drop at a time, and drawing across rice paper. Include the phrase a line becomes a river. Required wording, verbatim: \\\"the black pool\\\", \\\"one drop at a time\\\", \\\"a line becomes a river\\\".\"}], \"field_values\": {\"audience\": \"Use wording suitable for viewers of an imaginary short craft documentary.\", \"tone\": \"A sensory and contemplative tone suits this piece.\", \"length\": null, \"required_content\": \"Use this fictional material: The fictional film shows an ink maker grinding a dry stick into the black pool, adding water one drop at a time, and drawing across rice paper. Include the phrase a line becomes a river. Required wording, verbatim: \\\"the black pool\\\", \\\"one drop at a time\\\", \\\"a line becomes a river\\\".\"}, \"eligible_fields\": [\"length\"], \"remaining_question_items\": 2, \"fields\": [{\"field_id\": \"audience\", \"label_zh\": \"受众\", \"description_zh\": \"目标读者或收件人。不得凭体裁猜测具体受众。\", \"question_template\": \"Who is the intended audience?\"}, {\"field_id\": \"tone\", \"label_zh\": \"语气\", \"description_zh\": \"语气或明确无偏好。缺省语气不视为已提供。\", \"question_template\": \"What tone would you like?\"}, {\"field_id\": \"length\", \"label_zh\": \"长度\", \"description_zh\": \"全文英文词数范围或明确无长度要求。\", \"question_template\": \"What word-count range should the full text follow?\"}, {\"field_id\": \"required_content\", \"label_zh\": \"必含内容\", \"description_zh\": \"用户明确要求的具体事实或逐字内容。仅有主题或体裁不算已提供；明确无必含内容则算已解决。\", \"question_template\": \"What information or exact wording must the text include?\"}]}"
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

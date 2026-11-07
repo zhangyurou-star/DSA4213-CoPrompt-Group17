@@ -1,0 +1,134 @@
+{
+  "cache_key": "6a63f0424f3a2a44adc44ab76b8af58b0c06b48689399b5e8378475689e38cf7",
+  "source_case_id": "NDCW15",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "Begin with paper rain: rub sheets of paper together softly. Allow two silent beats—no sound, no movement. Then, one performer begins the lowest hum they can sustain comfortably. Others join individually, each adding their hum at will. No signals, no cues. When the paper falls, the last performer stops. The piece ends when the final sheet settles. Maintain a spare and exact tone. Each hum must be precise, each silence deliberate. The lowest hum must remain steady. The paper rain must be the only initial gesture. Two silent beats must be absolute. Let the sound dissolve with the fall."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Begin the score with paper rain: gently rub sheets of paper together to create a soft, textured sound. Allow two silent beats to pass—no movement, no breath. After the silence, one performer begins the lowest hum they can sustain comfortably, a tone just above silence. Others join individually, each adding their hum at will. No cues, no signals—only the sound of breath and resonance. When the paper falls, the last performer stops. The piece ends when the final sheet settles. Maintain a spare and exact tone throughout. Let each hum be precise, each silence deliberate. The lowest hum must remain steady, unbroken. The paper rain must be the only initial gesture. Two silent beats must be absolute. Let the sound dissolve with the fall.\"\n}",
+      "parsed": {
+        "text": "Begin the score with paper rain: gently rub sheets of paper together to create a soft, textured sound. Allow two silent beats to pass—no movement, no breath. After the silence, one performer begins the lowest hum they can sustain comfortably, a tone just above silence. Others join individually, each adding their hum at will. No cues, no signals—only the sound of breath and resonance. When the paper falls, the last performer stops. The piece ends when the final sheet settles. Maintain a spare and exact tone throughout. Let each hum be precise, each silence deliberate. The lowest hum must remain steady, unbroken. The paper rain must be the only initial gesture. Two silent beats must be absolute. Let the sound dissolve with the fall."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        },
+        "source": [
+          {
+            "source": "visible_exchange",
+            "exchange_index": 1,
+            "field_id": "length",
+            "quote": "Write 55 to 85 words altogether."
+          }
+        ]
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "paper rain",
+            "two silent beats",
+            "the lowest hum"
+          ]
+        },
+        "source": [
+          {
+            "source": "visible_exchange",
+            "exchange_index": 2,
+            "field_id": "required_content",
+            "quote": "Include each of these exact strings: \"paper rain\", \"two silent beats\", \"the lowest hum\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 126}"
+  ],
+  "constraint_checks_final": [
+    "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 100}"
+  ],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"Begin with paper rain: rub sheets of paper together softly. Allow two silent beats—no sound, no movement. Then, one performer begins the lowest hum they can sustain comfortably. Others join individually, each adding their hum at will. No signals, no cues. When the paper falls, the last performer stops. The piece ends when the final sheet settles. Maintain a spare and exact tone. Each hum must be precise, each silence deliberate. The lowest hum must remain steady. The paper rain must be the only initial gesture. Two silent beats must be absolute. Let the sound dissolve with the fall.\"\n}",
+    "parsed": {
+      "text": "Begin with paper rain: rub sheets of paper together softly. Allow two silent beats—no sound, no movement. Then, one performer begins the lowest hum they can sustain comfortably. Others join individually, each adding their hum at will. No signals, no cues. When the paper falls, the last performer stops. The piece ends when the final sheet settles. Maintain a spare and exact tone. Each hum must be precise, each silence deliberate. The lowest hum must remain steady. The paper rain must be the only initial gesture. Two silent beats must be absolute. Let the sound dissolve with the fall."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 126
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "paper rain",
+            "two silent beats",
+            "the lowest hum"
+          ]
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 126}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 100
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "paper rain",
+            "two silent beats",
+            "the lowest hum"
+          ]
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 85, \"min_words\": 55, \"observed_words\": 100}"
+    ],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

@@ -1,0 +1,149 @@
+{
+  "cache_key": "84838fa99751143be0c95b8edb7159813bf146031e4e908d68361da0af4ed087",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [
+      "S3"
+    ],
+    "length": [
+      "S4"
+    ],
+    "required_content": [
+      "S5",
+      "S6",
+      "S7"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 52,
+      "text": "Write an origin story for an imaginary soap package."
+    },
+    {
+      "id": "S2",
+      "start": 53,
+      "end": 119,
+      "text": "The intended readers are shoppers reading a fictional craft label."
+    },
+    {
+      "id": "S3",
+      "start": 120,
+      "end": 155,
+      "text": "I want a warm and understated tone."
+    },
+    {
+      "id": "S4",
+      "start": 156,
+      "end": 212,
+      "text": "The total word count must fall from 50 to 80, inclusive."
+    },
+    {
+      "id": "S5",
+      "start": 213,
+      "end": 336,
+      "text": "Include the following invented details: Harbor Thread began as an imaginary soap workshop using empty cedar boxes as molds."
+    },
+    {
+      "id": "S6",
+      "start": 337,
+      "end": 441,
+      "text": "Its maker marks every bar with a spiral stamp to recall the curled wood shavings on the first workbench."
+    },
+    {
+      "id": "S7",
+      "start": 442,
+      "end": 521,
+      "text": "Preserve these exact phrases: \"Harbor Thread\", \"cedar boxes\", \"a spiral stamp\"."
+    }
+  ],
+  "field_values": {
+    "audience": "The intended readers are shoppers reading a fictional craft label.",
+    "tone": "I want a warm and understated tone.",
+    "length": "The total word count must fall from 50 to 80, inclusive.",
+    "required_content": "Include the following invented details: Harbor Thread began as an imaginary soap workshop using empty cedar boxes as molds.\nIts maker marks every bar with a spiral stamp to recall the curled wood shavings on the first workbench.\nPreserve these exact phrases: \"Harbor Thread\", \"cedar boxes\", \"a spiral stamp\"."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 53,
+        "end": 119,
+        "quote": "The intended readers are shoppers reading a fictional craft label."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 120,
+        "end": 155,
+        "quote": "I want a warm and understated tone."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 156,
+        "end": 212,
+        "quote": "The total word count must fall from 50 to 80, inclusive."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 213,
+        "end": 336,
+        "quote": "Include the following invented details: Harbor Thread began as an imaginary soap workshop using empty cedar boxes as molds."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 337,
+        "end": 441,
+        "quote": "Its maker marks every bar with a spiral stamp to recall the curled wood shavings on the first workbench."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 442,
+        "end": 521,
+        "quote": "Preserve these exact phrases: \"Harbor Thread\", \"cedar boxes\", \"a spiral stamp\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[\"S3\"],\"length\":[\"S4\"],\"required_content\":[\"S5\",\"S6\",\"S7\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [
+            "S3"
+          ],
+          "length": [
+            "S4"
+          ],
+          "required_content": [
+            "S5",
+            "S6",
+            "S7"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

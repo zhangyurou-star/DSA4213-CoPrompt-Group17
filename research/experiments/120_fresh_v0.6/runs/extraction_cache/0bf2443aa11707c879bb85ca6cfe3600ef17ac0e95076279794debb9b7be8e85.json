@@ -1,0 +1,133 @@
+{
+  "cache_key": "0bf2443aa11707c879bb85ca6cfe3600ef17ac0e95076279794debb9b7be8e85",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S5"
+    ],
+    "available_time": [
+      "S4"
+    ],
+    "topics": [
+      "S6",
+      "S7"
+    ],
+    "priorities": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 53,
+      "text": "I am learning a three-ball cascade from lesson clips."
+    },
+    {
+      "id": "S2",
+      "start": 54,
+      "end": 88,
+      "text": "Make a compact practice timetable."
+    },
+    {
+      "id": "S3",
+      "start": 89,
+      "end": 109,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 110,
+      "end": 179,
+      "text": "Keep each daily total at or below 70 minutes across all study blocks."
+    },
+    {
+      "id": "S5",
+      "start": 180,
+      "end": 255,
+      "text": "I can still study on 2027-02-07, but no study should be scheduled after it."
+    },
+    {
+      "id": "S6",
+      "start": 256,
+      "end": 352,
+      "text": "I need 15 minutes or more in total on each of \"Cascade Pattern\", \"Throw Height\", \"Catch Timing\"."
+    },
+    {
+      "id": "S7",
+      "start": 353,
+      "end": 389,
+      "text": "Those are the required topic labels."
+    },
+    {
+      "id": "S8",
+      "start": 390,
+      "end": 460,
+      "text": "Please produce the schedule now without asking me follow-up questions."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": "Keep each daily total at or below 70 minutes across all study blocks.",
+    "topics": "I need 15 minutes or more in total on each of \"Cascade Pattern\", \"Throw Height\", \"Catch Timing\".\nThose are the required topic labels.",
+    "priorities": null
+  },
+  "evidence": {
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 110,
+        "end": 179,
+        "quote": "Keep each daily total at or below 70 minutes across all study blocks."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 256,
+        "end": 352,
+        "quote": "I need 15 minutes or more in total on each of \"Cascade Pattern\", \"Throw Height\", \"Catch Timing\"."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 353,
+        "end": 389,
+        "quote": "Those are the required topic labels."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "deadline",
+      "proposed_evidence": [
+        "S5"
+      ],
+      "proposed_value": "I can still study on 2027-02-07, but no study should be scheduled after it.",
+      "reason": "quote_has_no_explicit_endpoint_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S5\"],\"available_time\":[\"S4\"],\"topics\":[\"S6\",\"S7\"],\"priorities\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S5"
+          ],
+          "available_time": [
+            "S4"
+          ],
+          "topics": [
+            "S6",
+            "S7"
+          ],
+          "priorities": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

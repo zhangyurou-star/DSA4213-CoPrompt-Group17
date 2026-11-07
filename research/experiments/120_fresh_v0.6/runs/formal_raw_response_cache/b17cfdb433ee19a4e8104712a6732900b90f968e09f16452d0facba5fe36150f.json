@@ -1,0 +1,64 @@
+{
+  "key": "b17cfdb433ee19a4e8104712a6732900b90f968e09f16452d0facba5fe36150f",
+  "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Lug Sequencing\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Head Seating\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Resonant Head Tension\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Lug Sequencing\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Head Seating\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Resonant Head Tension\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Lug Sequencing\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Head Seating\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Resonant Head Tension\",\n      \"minutes\": 10\n    }\n  ],\n  \"summary\": \"The study plan covers all required topics—Lug Sequencing, Head Seating, and Resonant Head Tension—with a total of at least 10 minutes per topic. Sessions are distributed across five days (2027-02-01 to 2027-02-04), with no day exceeding 55 minutes of combined study time. Each topic is addressed in multiple short sessions to support retention and practical application.\"\n}",
+  "source_case_id": "NTSP27",
+  "source_variant": "exhaustive",
+  "response_sha256": "2d844cfd2d9b6d7774aea87053369f7a9d6cbfc5bea996e5f61e2855fcc9403b",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "generation",
+    "repair": false,
+    "repair_kind": null,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Complete the user's task using only the original request, public context and the visible clarification exchanges.\nDo not ask more questions. Honor all available requirements, including exact phrases and the full-text word count.\nvisible_constraints is a deterministic, partial checklist derived only from that visible text, not new user requirements.\nAlways honor the original visible text as well; absence from the checklist does not remove a requirement.\nDo not invent event details, promises, historical facts or beneficiary groups. Omit unavailable specifics or use clearly marked placeholders.\nTreat concrete dates, clock times, addresses, names, contact details, links, services and free-access claims as facts requiring visible support.\nPlausibility is not evidence. Do not add these details to make a notice sound complete or to reach its minimum word count.\nDo not claim a link is provided when none is available. Use neutral connective wording without adding factual commitments.\nReturn exactly one JSON object matching the supplied output schema, without Markdown fences or surrounding commentary.\nFor writing, put ALL headings, greetings, body and signature inside text.\nCopy required literal phrases unchanged. Draft near the middle of the full-text word range, then check the complete text length.\nWhen revising a length failure, rewrite the whole text toward the range midpoint while retaining every required literal; do not merely append or trim a final sentence.\nWord counting includes every heading and signature: letter/digit sequences, with internal apostrophes or hyphens, count as words.\nFor study plans, each schedule item has one complete topic name, a real ISO date and positive integer minutes;\nfirst compute each topic's required total, then allocate those minutes across the permitted days without exceeding any day's combined limit.\nA topic-specific minimum replaces a smaller general minimum for that topic; it is not an extra requirement to add twice.\nSplit a topic across days when needed. Use a compact schedule with only necessary sessions; do not repeat every topic on every day.\nCheck the sum of ALL sessions per date and the sum per exact topic label before returning. Keep summary short and consistent with schedule.\nIf a deadline or daily allowance is unknown, use a short conservative plan without claiming a guessed bound was supplied.\nNever add an unsupported numeric constraint. If visible requirements conflict, explain the conflict in the output rather than claim compliance.\nWrite in English."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"study_planning\", \"initial_request\": \"I want to understand the steps described in an acoustic drum-tuning lesson. Create a short study-and-practice plan. Start on 2027-02-01. Even if a day has several short sessions, their combined length must stay within 55 minutes. Cover these exact topic labels: \\\"Lug Sequencing\\\", \\\"Head Seating\\\", \\\"Resonant Head Tension\\\". Give each one at least 10 minutes over the whole plan. Finish all scheduled study no later than 2027-02-04, inclusive.\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [{\"field_id\": \"priorities\", \"question\": \"Do you have topic priorities or additional minimum-time requirements?\", \"status\": \"unknown\", \"answer_text\": \"I do not know what topic order would suit me, and I cannot supply a preference.\"}], \"visible_constraints\": {\"version\": \"visible-constraints-0.4.0\", \"domain\": \"study_planning\", \"constraints\": [{\"kind\": \"date_window\", \"parameters\": {\"start_date\": \"2027-02-01\"}, \"source\": [{\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"Start on 2027-02-01.\"}]}], \"warnings\": [{\"reason\": \"date_without_unambiguous_study_window_role\", \"source\": {\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"Finish all scheduled study no later than 2027-02-04, inclusive.\"}}]}, \"output_schema\": {\"$schema\": \"https://json-schema.org/draft/2020-12/schema\", \"type\": \"object\", \"properties\": {\"schedule\": {\"type\": \"array\", \"minItems\": 1, \"items\": {\"type\": \"object\", \"properties\": {\"date\": {\"type\": \"string\", \"format\": \"date\", \"pattern\": \"^\\\\d{4}-\\\\d{2}-\\\\d{2}$\"}, \"topic\": {\"type\": \"string\", \"minLength\": 1, \"pattern\": \"\\\\S\"}, \"minutes\": {\"type\": \"integer\", \"minimum\": 1}}, \"required\": [\"date\", \"topic\", \"minutes\"], \"additionalProperties\": false}}, \"summary\": {\"type\": \"string\", \"minLength\": 1, \"pattern\": \"\\\\S\"}}, \"required\": [\"schedule\", \"summary\"], \"additionalProperties\": false}}"
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

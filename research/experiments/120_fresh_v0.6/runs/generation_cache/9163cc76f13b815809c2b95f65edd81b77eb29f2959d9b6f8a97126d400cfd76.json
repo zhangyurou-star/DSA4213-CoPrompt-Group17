@@ -1,0 +1,95 @@
+{
+  "cache_key": "9163cc76f13b815809c2b95f65edd81b77eb29f2959d9b6f8a97126d400cfd76",
+  "source_case_id": "NTCW11",
+  "source_policy": "direct",
+  "output": {
+    "text": "What if a time traveler prevents their own birth? The paradox unfolds: to exist, they must travel back; to travel back, they must exist. Yet their intervention erases the condition of their existence. Causality collapses—cause and effect negate each other. No origin, no destination. The traveler becomes a ghost in their own past, a memory that never was. This is not mere contradiction; it is ontological self-annihilation. The universe may reject such a loop—time could fold inward, sealing the breach. Or perhaps the paradox is the universe’s silent correction: some doors, once opened, must remain closed."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"What if a time traveler prevents their own birth? The paradox unfolds: to exist, they must travel back; to travel back, they must exist. Yet their intervention erases the very condition of their existence. The timeline fractures—causality collapses into a loop where cause and effect negate each other. No origin, no destination. The traveler becomes a ghost in their own past, a memory that never was. This is not mere contradiction; it is ontological self-annihilation. The universe, in its precision, may reject such a loop—perhaps time folds inward, sealing the breach. Or perhaps the paradox is the universe’s silent correction: some doors, once opened, must remain closed.\"\n}",
+      "parsed": {
+        "text": "What if a time traveler prevents their own birth? The paradox unfolds: to exist, they must travel back; to travel back, they must exist. Yet their intervention erases the very condition of their existence. The timeline fractures—causality collapses into a loop where cause and effect negate each other. No origin, no destination. The traveler becomes a ghost in their own past, a memory that never was. This is not mere contradiction; it is ontological self-annihilation. The universe, in its precision, may reject such a loop—perhaps time folds inward, sealing the breach. Or perhaps the paradox is the universe’s silent correction: some doors, once opened, must remain closed."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 65,
+          "max_words": 95
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "The full text must be between 65 and 95 words."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 95, \"min_words\": 65, \"observed_words\": 109}"
+  ],
+  "constraint_checks_final": [
+    "word_count: {\"max_words\": 95, \"min_words\": 65, \"observed_words\": 98}"
+  ],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"What if a time traveler prevents their own birth? The paradox unfolds: to exist, they must travel back; to travel back, they must exist. Yet their intervention erases the condition of their existence. Causality collapses—cause and effect negate each other. No origin, no destination. The traveler becomes a ghost in their own past, a memory that never was. This is not mere contradiction; it is ontological self-annihilation. The universe may reject such a loop—time could fold inward, sealing the breach. Or perhaps the paradox is the universe’s silent correction: some doors, once opened, must remain closed.\"\n}",
+    "parsed": {
+      "text": "What if a time traveler prevents their own birth? The paradox unfolds: to exist, they must travel back; to travel back, they must exist. Yet their intervention erases the condition of their existence. Causality collapses—cause and effect negate each other. No origin, no destination. The traveler becomes a ghost in their own past, a memory that never was. This is not mere contradiction; it is ontological self-annihilation. The universe may reject such a loop—time could fold inward, sealing the breach. Or perhaps the paradox is the universe’s silent correction: some doors, once opened, must remain closed."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 109
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 65,
+          "max_words": 95
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 95, \"min_words\": 65, \"observed_words\": 109}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 98
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 65,
+          "max_words": 95
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 95, \"min_words\": 65, \"observed_words\": 98}"
+    ],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

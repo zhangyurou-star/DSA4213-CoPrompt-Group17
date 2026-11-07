@@ -1,0 +1,29 @@
+{
+  "authorized_total_usd": 2.0,
+  "accounted_spend_usd": 0.17262309,
+  "source_session_logs": [
+    "pilot_20261013T063312_111392Z_session.jsonl",
+    "pilot_20261013T063631_294704Z_session.jsonl",
+    "pilot_20261013T063808_883314Z_session.jsonl",
+    "pilot_20261013T063855_619863Z_session.jsonl",
+    "pilot_20261013T070711_779583Z_session.jsonl",
+    "extraction_20261013T071538_667982Z_session.jsonl",
+    "extraction_20261013T071708_835506Z_session.jsonl",
+    "extraction_20261013T071916_179228Z_session.jsonl",
+    "pilot_20261013T072618_852972Z_session.jsonl",
+    "pilot_20261013T074702_295938Z_session.jsonl",
+    "pilot_20261013T083509_615141Z_session.jsonl",
+    "formal_validation_20261013T120435_638315Z_session.jsonl",
+    "formal_test_20261013T121643_032151Z_session.jsonl",
+    "formal_test_20261013T122804_443205Z_session.jsonl",
+    "formal_test_20261013T124214_693128Z_session.jsonl",
+    "formal_test_20261013T125141_073721Z_session.jsonl",
+    "../experiments/120_fresh_v0.6/runs/formal_pilot_a_20261019T150527_807702Z_session.jsonl",
+    "../experiments/120_fresh_v0.6/runs/formal_pilot_a_20261019T151444_648929Z_session.jsonl",
+    "../experiments/120_fresh_v0.6/runs/formal_pilot_b_20261019T151802_426951Z_session.jsonl",
+    "../experiments/120_fresh_v0.6/runs/formal_design_20261019T151847_194310Z_session.jsonl",
+    "../experiments/120_fresh_v0.6/runs/formal_validation_20261019T152515_350191Z_session.jsonl",
+    "../experiments/120_fresh_v0.6/runs/formal_test_20261019T152842_397165Z_session.jsonl"
+  ],
+  "note": "Includes conservative reserves for failed calls with unknown actual cost; not all are actual charges."
+}

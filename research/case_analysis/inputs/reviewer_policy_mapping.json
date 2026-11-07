@@ -1,0 +1,1410 @@
+{
+  "source_evidence_sha256": "2ba4b8f5b8d02d6309a92dfb6a258ec5fde1ec4f7f80c5b073238feec5081098",
+  "confidentiality": "Coordinator only. Contains strategy identities and must not accompany reviewer packets.",
+  "reviewer_mappings": {
+    "1": [
+      {
+        "review_item_id": "R1-001",
+        "case_id": "NTSP01",
+        "variant": "direct",
+        "trajectory_record_sha256": "6dd88d6671b2e9934b1fee0673e0603557c86ae7e3aeb9d3dd3205b1636b03b6",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-002",
+        "case_id": "NTCW14",
+        "variant": "value_based",
+        "trajectory_record_sha256": "8d64476dd5dab82a1b6dd0312ebba4ef66dac123b2f242ea9d7f8989157e5f7f",
+        "hard_quality": 0.0
+      },
+      {
+        "review_item_id": "R1-003",
+        "case_id": "NTCW13",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "b03d0fcf5085d4c19bc5b76143956ecfe64a5c0cf92241a37374d6dd3634fdb4",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-004",
+        "case_id": "NTSP19",
+        "variant": "direct",
+        "trajectory_record_sha256": "96c32cc4b9ecfcb94b48b37003ce3585562cc32b47d308fac64dd27b9005ab1c",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-005",
+        "case_id": "NTCW08",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "1efacaba43edc14dc9a86be8c608416bef7a436fd1cf4ca9e79978f347a2afd0",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-006",
+        "case_id": "NTSP24",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "12bf05af661f8d6ec29e66dcf482623f6605ffa5e25f310e7b812d293dd46197",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-007",
+        "case_id": "NTSP07",
+        "variant": "value_based",
+        "trajectory_record_sha256": "ee9cc5c289b0b0af76f3727ccf443cdfc70863465d4e7404a5a8a01c85890e96",
+        "hard_quality": 0.6
+      },
+      {
+        "review_item_id": "R1-008",
+        "case_id": "NTCW01",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "630207c4cb2d49b5ef6db2b80b8da412a9d5d9109fd877d4ab667aa0246d1d22",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-009",
+        "case_id": "NTCW01",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "108215160508484de14f8f163cced13084babed0b0399a4dc59b3907252c7e0f",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-010",
+        "case_id": "NTCW24",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "879e03485293411e7783d676957cf7ebd5b827a76c0a473ecac607ed6182cdc7",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-011",
+        "case_id": "NTSP28",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "d8bef5dd1222fc75215eb1fe42125d93e04f303cb35344f8f1ced59a4a960dda",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-012",
+        "case_id": "NTCW01",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "d3dc71b8794318e037f27c73c6ca03941155b07189eeb7887931ad42158185ed",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-013",
+        "case_id": "NTSP14",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "3f133df7b97e22768cdddff1dae5b3e2348c231d2e3af88287dec5410ab621f5",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-014",
+        "case_id": "NTSP14",
+        "variant": "value_based",
+        "trajectory_record_sha256": "2eefbc75f037e5f74e04bb8100f7a79255e24141bfe868ace8dbe46304a859ca",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-015",
+        "case_id": "NTSP24",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "81a2a76da9f379cafbf50803931c9b652f9615af59212ce41325190c285cafb1",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-016",
+        "case_id": "NTCW07",
+        "variant": "direct",
+        "trajectory_record_sha256": "ecbdfa6dd92a89fdb731448034986afacee513f627392df1a88da033fe148f2c",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-017",
+        "case_id": "NTSP20",
+        "variant": "direct",
+        "trajectory_record_sha256": "970dd81d37858cc8f6df86a3bc2a19bcdb08680ed0777a9f2bf203d6d0e5f333",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-018",
+        "case_id": "NTCW20",
+        "variant": "value_based",
+        "trajectory_record_sha256": "d5dbd11bfa76f4be2182b9a56e9b756ffc3c6fbca1632aa08874f4a7264d09e5",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-019",
+        "case_id": "NTCW13",
+        "variant": "direct",
+        "trajectory_record_sha256": "aef2fbf4581f4d32521e9b3bfc7af933641b3f5eb901f23b9c0aa498f3e54ec9",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-020",
+        "case_id": "NTCW02",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "07d131e350938460ddbbfc1d87ff8646796be3a1f19c95df4518846f30731e30",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-021",
+        "case_id": "NTSP01",
+        "variant": "value_based",
+        "trajectory_record_sha256": "584169fd3ee849e7d67b70ad1f1621451e5ce3db8e49815bec6a13597f8138d9",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-022",
+        "case_id": "NTCW08",
+        "variant": "direct",
+        "trajectory_record_sha256": "0f9a93da3ef23c4ba8a868e5c5114cbf33faaddc8f654b5a8e5e1257bcef8f3b",
+        "hard_quality": 0.0
+      },
+      {
+        "review_item_id": "R1-023",
+        "case_id": "NTSP19",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "60a21e25e8e83471b2667524a56122eca63e5f4d7b8638f05a5eea2ecc75e801",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-024",
+        "case_id": "NTCW14",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "a931cfec5a7382ab00316006d792607a77ab6975a85567939a3c2754670cf8be",
+        "hard_quality": 0.0
+      },
+      {
+        "review_item_id": "R1-025",
+        "case_id": "NTCW14",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "2bc837aff21f8d3d2502da688465a98c19e6075b717c806834cad00c872075de",
+        "hard_quality": 0.0
+      },
+      {
+        "review_item_id": "R1-026",
+        "case_id": "NTCW24",
+        "variant": "value_based",
+        "trajectory_record_sha256": "722847d18d3447b3b1d28a525b4b3de1980d43c2a6ae34aff0e6b12bc9659a72",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-027",
+        "case_id": "NTCW20",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "bf4529681eec9bb00088547ce24524fb5af922eb0c737a1b2532a573d94571d2",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-028",
+        "case_id": "NTCW07",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "f6cabc442d973adcfc55b85a5e9c42e517a616a607b061a48273f544319587fe",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-029",
+        "case_id": "NTSP24",
+        "variant": "direct",
+        "trajectory_record_sha256": "5341cdb75c727b2c0e0c67e989dbd045349cefe856761f3248fc1b7319f35023",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-030",
+        "case_id": "NTSP20",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "6935e3c6d5f322ef046b3c2bf4d9ad5da4f6ace79fa1ee09477a288aee299ae9",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-031",
+        "case_id": "NTCW19",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "e1cd8b28c1eedb6f8738306f39368c6ba842f867e5f17e98257f4818a20ca8d1",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-032",
+        "case_id": "NTCW19",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "f7d7c57bbd0b90bac42ccc89888ea23280f7fb61d90a17b32b1df58f0b205992",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-033",
+        "case_id": "NTCW24",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "807f620fc5f0a2c5384ff41931821aaf5c53716998b8164386ee5d8b82c2a60b",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-034",
+        "case_id": "NTSP01",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "1c1718358e8b43838ee39544fba464341b831298ff6f3cc61fba08748e8b50dd",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-035",
+        "case_id": "NTCW28",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "6c66e4d626b49143ce2af17795d77cb91e1c9e0e4241ff5653157a55c8617773",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-036",
+        "case_id": "NTCW20",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "43210b43ebd2ca4f355ee76896f5f38073e5d130d6868fc8ac9908611cbf8875",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-037",
+        "case_id": "NTSP13",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "830759615b09230d337d772b1fc5c2c61264ebbed5007a4c82dfc62162f69bc3",
+        "hard_quality": 0.75
+      },
+      {
+        "review_item_id": "R1-038",
+        "case_id": "NTCW20",
+        "variant": "direct",
+        "trajectory_record_sha256": "d9f470d17f7f88d4d23bc8f0b8216a82b09c230a23e45c906e2a7c4b400acb65",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-039",
+        "case_id": "NTSP13",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "ffe8d76539600ddaef75f81545fc17822adbbad6f284fab3a1db6be2d0a43c71",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-040",
+        "case_id": "NTCW08",
+        "variant": "value_based",
+        "trajectory_record_sha256": "6a33f5041ac3b5e2de34240b59ac4d8b0926d673507fb9def1bcbba460e7dd8e",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-041",
+        "case_id": "NTSP07",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "b0337ca54ea214c38a0558e581e3460a7ef707461af2683f7dce3a5e84a57025",
+        "hard_quality": 0.6
+      },
+      {
+        "review_item_id": "R1-042",
+        "case_id": "NTCW07",
+        "variant": "value_based",
+        "trajectory_record_sha256": "960a9a4017a606bfa3ba9cc87696248796e831a727ffced2fcf0cfbd34d747e6",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-043",
+        "case_id": "NTSP28",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "82b31c55c8605516d3c41c83ab154d263c9b43a83313e70243407abdad41de63",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-044",
+        "case_id": "NTSP13",
+        "variant": "value_based",
+        "trajectory_record_sha256": "e4d56190e1573d269968242c384b0ede276dbae1e8f5c23621ccfab7270163e5",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-045",
+        "case_id": "NTCW28",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "6449a655999b61447a4f53ed043fb2b2f9952702cc9521266b1d0a61f1b7b33f",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-046",
+        "case_id": "NTSP02",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "fe2f41147e5526c6d68d3656fc64d32286bb534b583d53865e52277fd9d46707",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-047",
+        "case_id": "NTSP02",
+        "variant": "value_based",
+        "trajectory_record_sha256": "c9156f952a149f05b8619b4d9b050f30c974f9082349d452250e6a0669ca91e2",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-048",
+        "case_id": "NTSP14",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "443f2d02a6a79bafd26be890b6f771388ce2d7893ca473564d8469a0e7d68021",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-049",
+        "case_id": "NTSP13",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "5d1c0932d13e8d1efb6659937c849a7175ceecc28102948529ae7101dcb40d86",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-050",
+        "case_id": "NTSP07",
+        "variant": "direct",
+        "trajectory_record_sha256": "69d60177874a7d146b43d71a878e4b4f1811a008813d91a190ce5b9274eec1c0",
+        "hard_quality": 0.6
+      },
+      {
+        "review_item_id": "R1-051",
+        "case_id": "NTSP08",
+        "variant": "value_based",
+        "trajectory_record_sha256": "c7fde3f977902111bba0e0662fec1d1731cd9ccca4c73c85fd94ee8aa36d2bc2",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-052",
+        "case_id": "NTCW02",
+        "variant": "value_based",
+        "trajectory_record_sha256": "2ca15ad256b9c0e70f128892b81407b00d28caea322ec6e99620cba9c88ef1ad",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-053",
+        "case_id": "NTCW02",
+        "variant": "direct",
+        "trajectory_record_sha256": "46615787ab046f06b5c1868d6bd16dc4fd2767b3b17d556b10b9f70e42247eab",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-054",
+        "case_id": "NTCW13",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "8d79b45bb0473f8422de6d95a3c38f8905cca9bf9323dea8630d00e72ce41a94",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-055",
+        "case_id": "NTSP08",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "d670c15eed770b395b38b51baafd4f1d81e50daa81e4d31ae4e2d91d81c89ae3",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-056",
+        "case_id": "NTSP14",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "94881d71cab4c1a53ae50ef75aeb75d2c17a7dd1da21f2d0f061f469b0316834",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-057",
+        "case_id": "NTSP19",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "71f8f691d7f0189a1cf99ccc1d22fb057dd4d614a0885cd8695f89e646ae00aa",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-058",
+        "case_id": "NTCW08",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "a96d32dbd72491ba9ca2e599b2286eb6c95a68d4b49b4b9d26d8fdce8a8465d8",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-059",
+        "case_id": "NTCW13",
+        "variant": "value_based",
+        "trajectory_record_sha256": "1deb329458bba813528c0100f135aee87a1a1e73feabf8514d5763f442c2c38e",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-060",
+        "case_id": "NTCW01",
+        "variant": "value_based",
+        "trajectory_record_sha256": "3c7dd46d51d4397f3b549185aa0fb3006664094c1d1cb0dde88222bf08ed7738",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-061",
+        "case_id": "NTCW28",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "691cd08ec8c90fd663f1c3b6cfa5a1ae7a6008e2887aa5630a42a856da6ff0c7",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-062",
+        "case_id": "NTSP13",
+        "variant": "direct",
+        "trajectory_record_sha256": "5dbb0c8790136caffcfb184aee7934e7542a9e515bce817d06999f7d80ab04b8",
+        "hard_quality": 0.75
+      },
+      {
+        "review_item_id": "R1-063",
+        "case_id": "NTCW01",
+        "variant": "direct",
+        "trajectory_record_sha256": "04e133f79fc156e99d0b2707e71413993d31dcc33584cd77cda49e11867d40ae",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-064",
+        "case_id": "NTCW07",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "bec6474dcb6d922fd7e0bc92fdc571af5e7363b7781daca2e011e0321f7ca613",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-065",
+        "case_id": "NTCW28",
+        "variant": "value_based",
+        "trajectory_record_sha256": "404df3fb826e41fa3b8175b1aee866706a44c5c4b50d4f374d91f09441bb1758",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-066",
+        "case_id": "NTCW07",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "9a234067c425a0abe6fd251951390898956af678799cd7b6447a6d740d376d21",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-067",
+        "case_id": "NTCW14",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "07738810216d146863ceed1157adf0ecd39431fe5320c75e2e4675309f139709",
+        "hard_quality": 0.0
+      },
+      {
+        "review_item_id": "R1-068",
+        "case_id": "NTSP24",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "6f88f67c46afee7d606eeb742ffcab7d68d3e067f50b2b221438fb6ded9dead9",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-069",
+        "case_id": "NTCW02",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "c3baeccfe620b98864cfa83d6e6cd91b3798821ef09f64dcd24a65943fe2774e",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-070",
+        "case_id": "NTCW14",
+        "variant": "direct",
+        "trajectory_record_sha256": "2edb7c1d9e9c4e668730b6882d26275aa4fce2332920eaf2cf3986181dac3ff1",
+        "hard_quality": 0.0
+      },
+      {
+        "review_item_id": "R1-071",
+        "case_id": "NTSP01",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "bac5bf24a8fc38f751a07338c615b4341029b05d551941b9b783914a650b8c63",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-072",
+        "case_id": "NTCW19",
+        "variant": "value_based",
+        "trajectory_record_sha256": "0e04fe4ade1093f15faa6e61ef6ad3155419d9a617ca6d16732f4969c5e11368",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-073",
+        "case_id": "NTSP28",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "b2d0539b142dd38cd92312f8d8f5dc37be55fc6ea9c6444663de8f0b9bbc519c",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-074",
+        "case_id": "NTSP01",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "31b078f6016d3978cb6a059389159d8023f597b729bfbc2ea94b9c1d4fc30219",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-075",
+        "case_id": "NTSP07",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "388785464511c28c6c9a9c7414432f6297dea4b0b74c1fe70093b710f87ca487",
+        "hard_quality": 0.6
+      },
+      {
+        "review_item_id": "R1-076",
+        "case_id": "NTSP20",
+        "variant": "value_based",
+        "trajectory_record_sha256": "c00fe583432b60a5e68f2a43a493fde59a79cd670bd17158b444e13bdbd1cf83",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-077",
+        "case_id": "NTSP02",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "a574c2c25eddd355453353deae1dff91f1fec4ff80e601b9d89cce898351a67b",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-078",
+        "case_id": "NTCW02",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "2fb3225862216d5957b8813da572bdeaf45ee6bd9323a65de3065e0775bbb055",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-079",
+        "case_id": "NTCW19",
+        "variant": "direct",
+        "trajectory_record_sha256": "72f2b9da04805f8150c09529dc44e4b4295c73e9a5f819bb01c3a202c4ad51cb",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-080",
+        "case_id": "NTCW19",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "47315a7d7f67a85cbb7a214c7fbc36eb8e76a3c9ee2d39cb5a9e785bba3e6d92",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-081",
+        "case_id": "NTSP19",
+        "variant": "value_based",
+        "trajectory_record_sha256": "7a041bc792125b65a8b86d241e17d81587cc27fef1cc1a526d7eaeac8dbd2342",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-082",
+        "case_id": "NTSP02",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "25a64f3c2f594f46f92aa62549686a1b8f46583a1003ce699fec4b394b2bbe59",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-083",
+        "case_id": "NTCW20",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "64ebf7d318d764233356b55de7f18e3689abd55a21b5581f6fe77f4800cfeb70",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-084",
+        "case_id": "NTSP02",
+        "variant": "direct",
+        "trajectory_record_sha256": "aa56f8f12ac4b6719a483e0886cc3d7886da7081d0414b77518155df3e62020c",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-085",
+        "case_id": "NTSP28",
+        "variant": "value_based",
+        "trajectory_record_sha256": "fc9715e6ededbe75c1c108c5a1845bf9bab5a9149792e2d1026f2d66a1ef64b4",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-086",
+        "case_id": "NTSP28",
+        "variant": "direct",
+        "trajectory_record_sha256": "bd18476b08bb84834b5f00d70594098fe47b3e8122b739b53af528868910c4c6",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-087",
+        "case_id": "NTSP20",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "20f6630e1b870a3192fbc3ce5dc21cec6c01279b0b2b0677bdc4d2c0258d4a2a",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-088",
+        "case_id": "NTSP08",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "72616e9a3f19426c8e40d44212535d4dff2e3ed388b6f5ddd82eb8e7e0e4c537",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-089",
+        "case_id": "NTCW24",
+        "variant": "direct",
+        "trajectory_record_sha256": "1060d10f134f232f3799901ae80f05803bf59f06c840ac5c3f5496bbc520d285",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-090",
+        "case_id": "NTCW28",
+        "variant": "direct",
+        "trajectory_record_sha256": "5f89bf2d21f04711ff14ec72f168e8f43ebdd5bfbcc733613811f81b1d040446",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-091",
+        "case_id": "NTSP19",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "e072247a9c485694fdef275c2ad9f64076b65a554eda3b2fa788b1435b97ce22",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-092",
+        "case_id": "NTCW24",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "ceed7674407ac5650c10182b56c9c22b0d7fdcf51a13fa0f8d5ae87de053458b",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-093",
+        "case_id": "NTSP08",
+        "variant": "direct",
+        "trajectory_record_sha256": "67c64251ba04638da6a2bfcb357bedfd07833d2612d56fb7e635e90bb47eaf21",
+        "hard_quality": 0.75
+      },
+      {
+        "review_item_id": "R1-094",
+        "case_id": "NTSP14",
+        "variant": "direct",
+        "trajectory_record_sha256": "74ba3a1b21b28eb3cb84016a508c84b5745969020e313f29e845356074013ea7",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-095",
+        "case_id": "NTSP07",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "70030fbd75d9a357c887ca1075b4782bfde9e24cf7c4f5cc50640aaac688265c",
+        "hard_quality": 0.6
+      },
+      {
+        "review_item_id": "R1-096",
+        "case_id": "NTCW08",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "b44c436f17c08cb726153cdcfb5ac3831b604e54a41599b6e33aa2b9cf3052c5",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R1-097",
+        "case_id": "NTSP20",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "5e464ef8c1f8056b7bb855231eb10cd1966573db50e362b86509b0f9f23307ce",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-098",
+        "case_id": "NTCW13",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "309048dc3f37a8bb069f35f67d454ca1dd8a40fee68ced641185561b42364ebb",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-099",
+        "case_id": "NTSP08",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "33a94ee8037ebc792bf04335718698c911439276733ae26e460c75f605e21fcd",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R1-100",
+        "case_id": "NTSP24",
+        "variant": "value_based",
+        "trajectory_record_sha256": "d886c11eeec97022b98390825a684fef8abac57bc5091415d5b2ae5dfceee44b",
+        "hard_quality": 1.0
+      }
+    ],
+    "2": [
+      {
+        "review_item_id": "R2-001",
+        "case_id": "NTSP02",
+        "variant": "direct",
+        "trajectory_record_sha256": "aa56f8f12ac4b6719a483e0886cc3d7886da7081d0414b77518155df3e62020c",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-002",
+        "case_id": "NTCW13",
+        "variant": "direct",
+        "trajectory_record_sha256": "aef2fbf4581f4d32521e9b3bfc7af933641b3f5eb901f23b9c0aa498f3e54ec9",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-003",
+        "case_id": "NTCW13",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "b03d0fcf5085d4c19bc5b76143956ecfe64a5c0cf92241a37374d6dd3634fdb4",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-004",
+        "case_id": "NTSP08",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "d670c15eed770b395b38b51baafd4f1d81e50daa81e4d31ae4e2d91d81c89ae3",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-005",
+        "case_id": "NTSP02",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "a574c2c25eddd355453353deae1dff91f1fec4ff80e601b9d89cce898351a67b",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-006",
+        "case_id": "NTCW20",
+        "variant": "value_based",
+        "trajectory_record_sha256": "d5dbd11bfa76f4be2182b9a56e9b756ffc3c6fbca1632aa08874f4a7264d09e5",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-007",
+        "case_id": "NTCW28",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "6c66e4d626b49143ce2af17795d77cb91e1c9e0e4241ff5653157a55c8617773",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-008",
+        "case_id": "NTSP02",
+        "variant": "value_based",
+        "trajectory_record_sha256": "c9156f952a149f05b8619b4d9b050f30c974f9082349d452250e6a0669ca91e2",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-009",
+        "case_id": "NTCW08",
+        "variant": "value_based",
+        "trajectory_record_sha256": "6a33f5041ac3b5e2de34240b59ac4d8b0926d673507fb9def1bcbba460e7dd8e",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-010",
+        "case_id": "NTCW28",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "6449a655999b61447a4f53ed043fb2b2f9952702cc9521266b1d0a61f1b7b33f",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-011",
+        "case_id": "NTSP28",
+        "variant": "value_based",
+        "trajectory_record_sha256": "fc9715e6ededbe75c1c108c5a1845bf9bab5a9149792e2d1026f2d66a1ef64b4",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-012",
+        "case_id": "NTSP28",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "b2d0539b142dd38cd92312f8d8f5dc37be55fc6ea9c6444663de8f0b9bbc519c",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-013",
+        "case_id": "NTSP07",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "b0337ca54ea214c38a0558e581e3460a7ef707461af2683f7dce3a5e84a57025",
+        "hard_quality": 0.6
+      },
+      {
+        "review_item_id": "R2-014",
+        "case_id": "NTCW14",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "2bc837aff21f8d3d2502da688465a98c19e6075b717c806834cad00c872075de",
+        "hard_quality": 0.0
+      },
+      {
+        "review_item_id": "R2-015",
+        "case_id": "NTSP20",
+        "variant": "direct",
+        "trajectory_record_sha256": "970dd81d37858cc8f6df86a3bc2a19bcdb08680ed0777a9f2bf203d6d0e5f333",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-016",
+        "case_id": "NTSP01",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "31b078f6016d3978cb6a059389159d8023f597b729bfbc2ea94b9c1d4fc30219",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-017",
+        "case_id": "NTCW20",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "43210b43ebd2ca4f355ee76896f5f38073e5d130d6868fc8ac9908611cbf8875",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-018",
+        "case_id": "NTSP13",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "830759615b09230d337d772b1fc5c2c61264ebbed5007a4c82dfc62162f69bc3",
+        "hard_quality": 0.75
+      },
+      {
+        "review_item_id": "R2-019",
+        "case_id": "NTCW19",
+        "variant": "value_based",
+        "trajectory_record_sha256": "0e04fe4ade1093f15faa6e61ef6ad3155419d9a617ca6d16732f4969c5e11368",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-020",
+        "case_id": "NTCW02",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "c3baeccfe620b98864cfa83d6e6cd91b3798821ef09f64dcd24a65943fe2774e",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-021",
+        "case_id": "NTSP07",
+        "variant": "direct",
+        "trajectory_record_sha256": "69d60177874a7d146b43d71a878e4b4f1811a008813d91a190ce5b9274eec1c0",
+        "hard_quality": 0.6
+      },
+      {
+        "review_item_id": "R2-022",
+        "case_id": "NTSP14",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "443f2d02a6a79bafd26be890b6f771388ce2d7893ca473564d8469a0e7d68021",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-023",
+        "case_id": "NTCW07",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "9a234067c425a0abe6fd251951390898956af678799cd7b6447a6d740d376d21",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-024",
+        "case_id": "NTSP08",
+        "variant": "value_based",
+        "trajectory_record_sha256": "c7fde3f977902111bba0e0662fec1d1731cd9ccca4c73c85fd94ee8aa36d2bc2",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-025",
+        "case_id": "NTCW19",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "e1cd8b28c1eedb6f8738306f39368c6ba842f867e5f17e98257f4818a20ca8d1",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-026",
+        "case_id": "NTCW28",
+        "variant": "direct",
+        "trajectory_record_sha256": "5f89bf2d21f04711ff14ec72f168e8f43ebdd5bfbcc733613811f81b1d040446",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-027",
+        "case_id": "NTSP01",
+        "variant": "value_based",
+        "trajectory_record_sha256": "584169fd3ee849e7d67b70ad1f1621451e5ce3db8e49815bec6a13597f8138d9",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-028",
+        "case_id": "NTCW24",
+        "variant": "direct",
+        "trajectory_record_sha256": "1060d10f134f232f3799901ae80f05803bf59f06c840ac5c3f5496bbc520d285",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-029",
+        "case_id": "NTCW08",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "1efacaba43edc14dc9a86be8c608416bef7a436fd1cf4ca9e79978f347a2afd0",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-030",
+        "case_id": "NTSP08",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "33a94ee8037ebc792bf04335718698c911439276733ae26e460c75f605e21fcd",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-031",
+        "case_id": "NTCW24",
+        "variant": "value_based",
+        "trajectory_record_sha256": "722847d18d3447b3b1d28a525b4b3de1980d43c2a6ae34aff0e6b12bc9659a72",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-032",
+        "case_id": "NTCW28",
+        "variant": "value_based",
+        "trajectory_record_sha256": "404df3fb826e41fa3b8175b1aee866706a44c5c4b50d4f374d91f09441bb1758",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-033",
+        "case_id": "NTCW08",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "b44c436f17c08cb726153cdcfb5ac3831b604e54a41599b6e33aa2b9cf3052c5",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-034",
+        "case_id": "NTCW02",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "07d131e350938460ddbbfc1d87ff8646796be3a1f19c95df4518846f30731e30",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-035",
+        "case_id": "NTSP02",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "fe2f41147e5526c6d68d3656fc64d32286bb534b583d53865e52277fd9d46707",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-036",
+        "case_id": "NTSP20",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "6935e3c6d5f322ef046b3c2bf4d9ad5da4f6ace79fa1ee09477a288aee299ae9",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-037",
+        "case_id": "NTSP24",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "6f88f67c46afee7d606eeb742ffcab7d68d3e067f50b2b221438fb6ded9dead9",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-038",
+        "case_id": "NTCW08",
+        "variant": "direct",
+        "trajectory_record_sha256": "0f9a93da3ef23c4ba8a868e5c5114cbf33faaddc8f654b5a8e5e1257bcef8f3b",
+        "hard_quality": 0.0
+      },
+      {
+        "review_item_id": "R2-039",
+        "case_id": "NTCW08",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "a96d32dbd72491ba9ca2e599b2286eb6c95a68d4b49b4b9d26d8fdce8a8465d8",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-040",
+        "case_id": "NTCW20",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "bf4529681eec9bb00088547ce24524fb5af922eb0c737a1b2532a573d94571d2",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-041",
+        "case_id": "NTCW07",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "f6cabc442d973adcfc55b85a5e9c42e517a616a607b061a48273f544319587fe",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-042",
+        "case_id": "NTSP01",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "1c1718358e8b43838ee39544fba464341b831298ff6f3cc61fba08748e8b50dd",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-043",
+        "case_id": "NTSP24",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "12bf05af661f8d6ec29e66dcf482623f6605ffa5e25f310e7b812d293dd46197",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-044",
+        "case_id": "NTSP28",
+        "variant": "direct",
+        "trajectory_record_sha256": "bd18476b08bb84834b5f00d70594098fe47b3e8122b739b53af528868910c4c6",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-045",
+        "case_id": "NTSP13",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "ffe8d76539600ddaef75f81545fc17822adbbad6f284fab3a1db6be2d0a43c71",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-046",
+        "case_id": "NTCW07",
+        "variant": "value_based",
+        "trajectory_record_sha256": "960a9a4017a606bfa3ba9cc87696248796e831a727ffced2fcf0cfbd34d747e6",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-047",
+        "case_id": "NTCW20",
+        "variant": "direct",
+        "trajectory_record_sha256": "d9f470d17f7f88d4d23bc8f0b8216a82b09c230a23e45c906e2a7c4b400acb65",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-048",
+        "case_id": "NTSP28",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "82b31c55c8605516d3c41c83ab154d263c9b43a83313e70243407abdad41de63",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-049",
+        "case_id": "NTCW01",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "108215160508484de14f8f163cced13084babed0b0399a4dc59b3907252c7e0f",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-050",
+        "case_id": "NTSP14",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "94881d71cab4c1a53ae50ef75aeb75d2c17a7dd1da21f2d0f061f469b0316834",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-051",
+        "case_id": "NTCW07",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "bec6474dcb6d922fd7e0bc92fdc571af5e7363b7781daca2e011e0321f7ca613",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-052",
+        "case_id": "NTCW01",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "d3dc71b8794318e037f27c73c6ca03941155b07189eeb7887931ad42158185ed",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-053",
+        "case_id": "NTCW28",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "691cd08ec8c90fd663f1c3b6cfa5a1ae7a6008e2887aa5630a42a856da6ff0c7",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-054",
+        "case_id": "NTSP14",
+        "variant": "direct",
+        "trajectory_record_sha256": "74ba3a1b21b28eb3cb84016a508c84b5745969020e313f29e845356074013ea7",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-055",
+        "case_id": "NTSP24",
+        "variant": "direct",
+        "trajectory_record_sha256": "5341cdb75c727b2c0e0c67e989dbd045349cefe856761f3248fc1b7319f35023",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-056",
+        "case_id": "NTCW19",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "f7d7c57bbd0b90bac42ccc89888ea23280f7fb61d90a17b32b1df58f0b205992",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-057",
+        "case_id": "NTCW14",
+        "variant": "value_based",
+        "trajectory_record_sha256": "8d64476dd5dab82a1b6dd0312ebba4ef66dac123b2f242ea9d7f8989157e5f7f",
+        "hard_quality": 0.0
+      },
+      {
+        "review_item_id": "R2-058",
+        "case_id": "NTCW24",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "ceed7674407ac5650c10182b56c9c22b0d7fdcf51a13fa0f8d5ae87de053458b",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-059",
+        "case_id": "NTCW20",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "64ebf7d318d764233356b55de7f18e3689abd55a21b5581f6fe77f4800cfeb70",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-060",
+        "case_id": "NTCW24",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "879e03485293411e7783d676957cf7ebd5b827a76c0a473ecac607ed6182cdc7",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-061",
+        "case_id": "NTSP08",
+        "variant": "direct",
+        "trajectory_record_sha256": "67c64251ba04638da6a2bfcb357bedfd07833d2612d56fb7e635e90bb47eaf21",
+        "hard_quality": 0.75
+      },
+      {
+        "review_item_id": "R2-062",
+        "case_id": "NTSP07",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "388785464511c28c6c9a9c7414432f6297dea4b0b74c1fe70093b710f87ca487",
+        "hard_quality": 0.6
+      },
+      {
+        "review_item_id": "R2-063",
+        "case_id": "NTCW07",
+        "variant": "direct",
+        "trajectory_record_sha256": "ecbdfa6dd92a89fdb731448034986afacee513f627392df1a88da033fe148f2c",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-064",
+        "case_id": "NTSP20",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "20f6630e1b870a3192fbc3ce5dc21cec6c01279b0b2b0677bdc4d2c0258d4a2a",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-065",
+        "case_id": "NTSP28",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "d8bef5dd1222fc75215eb1fe42125d93e04f303cb35344f8f1ced59a4a960dda",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-066",
+        "case_id": "NTCW01",
+        "variant": "direct",
+        "trajectory_record_sha256": "04e133f79fc156e99d0b2707e71413993d31dcc33584cd77cda49e11867d40ae",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-067",
+        "case_id": "NTSP24",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "81a2a76da9f379cafbf50803931c9b652f9615af59212ce41325190c285cafb1",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-068",
+        "case_id": "NTSP24",
+        "variant": "value_based",
+        "trajectory_record_sha256": "d886c11eeec97022b98390825a684fef8abac57bc5091415d5b2ae5dfceee44b",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-069",
+        "case_id": "NTCW13",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "309048dc3f37a8bb069f35f67d454ca1dd8a40fee68ced641185561b42364ebb",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-070",
+        "case_id": "NTSP19",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "60a21e25e8e83471b2667524a56122eca63e5f4d7b8638f05a5eea2ecc75e801",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-071",
+        "case_id": "NTSP13",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "5d1c0932d13e8d1efb6659937c849a7175ceecc28102948529ae7101dcb40d86",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-072",
+        "case_id": "NTCW19",
+        "variant": "direct",
+        "trajectory_record_sha256": "72f2b9da04805f8150c09529dc44e4b4295c73e9a5f819bb01c3a202c4ad51cb",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-073",
+        "case_id": "NTCW24",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "807f620fc5f0a2c5384ff41931821aaf5c53716998b8164386ee5d8b82c2a60b",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-074",
+        "case_id": "NTCW02",
+        "variant": "value_based",
+        "trajectory_record_sha256": "2ca15ad256b9c0e70f128892b81407b00d28caea322ec6e99620cba9c88ef1ad",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-075",
+        "case_id": "NTCW19",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "47315a7d7f67a85cbb7a214c7fbc36eb8e76a3c9ee2d39cb5a9e785bba3e6d92",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-076",
+        "case_id": "NTSP14",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "3f133df7b97e22768cdddff1dae5b3e2348c231d2e3af88287dec5410ab621f5",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-077",
+        "case_id": "NTCW13",
+        "variant": "value_based",
+        "trajectory_record_sha256": "1deb329458bba813528c0100f135aee87a1a1e73feabf8514d5763f442c2c38e",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-078",
+        "case_id": "NTSP13",
+        "variant": "direct",
+        "trajectory_record_sha256": "5dbb0c8790136caffcfb184aee7934e7542a9e515bce817d06999f7d80ab04b8",
+        "hard_quality": 0.75
+      },
+      {
+        "review_item_id": "R2-079",
+        "case_id": "NTSP19",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "e072247a9c485694fdef275c2ad9f64076b65a554eda3b2fa788b1435b97ce22",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-080",
+        "case_id": "NTCW02",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "2fb3225862216d5957b8813da572bdeaf45ee6bd9323a65de3065e0775bbb055",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-081",
+        "case_id": "NTSP07",
+        "variant": "value_based",
+        "trajectory_record_sha256": "ee9cc5c289b0b0af76f3727ccf443cdfc70863465d4e7404a5a8a01c85890e96",
+        "hard_quality": 0.6
+      },
+      {
+        "review_item_id": "R2-082",
+        "case_id": "NTCW14",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "a931cfec5a7382ab00316006d792607a77ab6975a85567939a3c2754670cf8be",
+        "hard_quality": 0.0
+      },
+      {
+        "review_item_id": "R2-083",
+        "case_id": "NTSP20",
+        "variant": "value_based",
+        "trajectory_record_sha256": "c00fe583432b60a5e68f2a43a493fde59a79cd670bd17158b444e13bdbd1cf83",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-084",
+        "case_id": "NTSP19",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "71f8f691d7f0189a1cf99ccc1d22fb057dd4d614a0885cd8695f89e646ae00aa",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-085",
+        "case_id": "NTSP20",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "5e464ef8c1f8056b7bb855231eb10cd1966573db50e362b86509b0f9f23307ce",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-086",
+        "case_id": "NTSP19",
+        "variant": "direct",
+        "trajectory_record_sha256": "96c32cc4b9ecfcb94b48b37003ce3585562cc32b47d308fac64dd27b9005ab1c",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-087",
+        "case_id": "NTSP19",
+        "variant": "value_based",
+        "trajectory_record_sha256": "7a041bc792125b65a8b86d241e17d81587cc27fef1cc1a526d7eaeac8dbd2342",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-088",
+        "case_id": "NTSP13",
+        "variant": "value_based",
+        "trajectory_record_sha256": "e4d56190e1573d269968242c384b0ede276dbae1e8f5c23621ccfab7270163e5",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-089",
+        "case_id": "NTSP01",
+        "variant": "direct",
+        "trajectory_record_sha256": "6dd88d6671b2e9934b1fee0673e0603557c86ae7e3aeb9d3dd3205b1636b03b6",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-090",
+        "case_id": "NTSP01",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "bac5bf24a8fc38f751a07338c615b4341029b05d551941b9b783914a650b8c63",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-091",
+        "case_id": "NTSP08",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "72616e9a3f19426c8e40d44212535d4dff2e3ed388b6f5ddd82eb8e7e0e4c537",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-092",
+        "case_id": "NTCW13",
+        "variant": "importance_one",
+        "trajectory_record_sha256": "8d79b45bb0473f8422de6d95a3c38f8905cca9bf9323dea8630d00e72ce41a94",
+        "hard_quality": 0.5
+      },
+      {
+        "review_item_id": "R2-093",
+        "case_id": "NTSP14",
+        "variant": "value_based",
+        "trajectory_record_sha256": "2eefbc75f037e5f74e04bb8100f7a79255e24141bfe868ace8dbe46304a859ca",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-094",
+        "case_id": "NTCW01",
+        "variant": "value_based",
+        "trajectory_record_sha256": "3c7dd46d51d4397f3b549185aa0fb3006664094c1d1cb0dde88222bf08ed7738",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-095",
+        "case_id": "NTCW02",
+        "variant": "direct",
+        "trajectory_record_sha256": "46615787ab046f06b5c1868d6bd16dc4fd2767b3b17d556b10b9f70e42247eab",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-096",
+        "case_id": "NTCW01",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "630207c4cb2d49b5ef6db2b80b8da412a9d5d9109fd877d4ab667aa0246d1d22",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-097",
+        "case_id": "NTSP07",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "70030fbd75d9a357c887ca1075b4782bfde9e24cf7c4f5cc50640aaac688265c",
+        "hard_quality": 0.6
+      },
+      {
+        "review_item_id": "R2-098",
+        "case_id": "NTSP02",
+        "variant": "exhaustive",
+        "trajectory_record_sha256": "25a64f3c2f594f46f92aa62549686a1b8f46583a1003ce699fec4b394b2bbe59",
+        "hard_quality": 1.0
+      },
+      {
+        "review_item_id": "R2-099",
+        "case_id": "NTCW14",
+        "variant": "direct",
+        "trajectory_record_sha256": "2edb7c1d9e9c4e668730b6882d26275aa4fce2332920eaf2cf3986181dac3ff1",
+        "hard_quality": 0.0
+      },
+      {
+        "review_item_id": "R2-100",
+        "case_id": "NTCW14",
+        "variant": "prompt_only",
+        "trajectory_record_sha256": "07738810216d146863ceed1157adf0ecd39431fe5320c75e2e4675309f139709",
+        "hard_quality": 0.0
+      }
+    ]
+  }
+}

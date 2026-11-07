@@ -1,0 +1,64 @@
+{
+  "key": "7e10f359a8a9f5e4dd2ff5264e8cd95e504dc0ee896836432b111d7b96337826",
+  "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Six-dot Cells\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Six-dot Cells\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Six-dot Cells\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Six-dot Cells\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Six-dot Cells\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Braille Contractions\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-07\",\n      \"topic\": \"Braille Contractions\",\n      \"minutes\": 10\n    }\n  ],\n  \"summary\": \"A compact study timetable covering both required topics—Six-dot Cells and Braille Contractions—with a minimum of 10 minutes per topic across the 7-day window from 2027-02-01 to 2027-02-07. Each session respects the 50-minute daily maximum, with no topic exceeding the minimum requirement. The schedule is balanced and compact, using only the necessary sessions to meet all constraints.\"\n}",
+  "source_case_id": "NDSP05",
+  "source_variant": "exhaustive",
+  "response_sha256": "6b999bc73793ff17c9bd93bfcc777e4e1120f093c34b94ed28fb32ac325d54f9",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "generation",
+    "repair": false,
+    "repair_kind": null,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Complete the user's task using only the original request, public context and the visible clarification exchanges.\nDo not ask more questions. Honor all available requirements, including exact phrases and the full-text word count.\nvisible_constraints is a deterministic, partial checklist derived only from that visible text, not new user requirements.\nAlways honor the original visible text as well; absence from the checklist does not remove a requirement.\nDo not invent event details, promises, historical facts or beneficiary groups. Omit unavailable specifics or use clearly marked placeholders.\nTreat concrete dates, clock times, addresses, names, contact details, links, services and free-access claims as facts requiring visible support.\nPlausibility is not evidence. Do not add these details to make a notice sound complete or to reach its minimum word count.\nDo not claim a link is provided when none is available. Use neutral connective wording without adding factual commitments.\nReturn exactly one JSON object matching the supplied output schema, without Markdown fences or surrounding commentary.\nFor writing, put ALL headings, greetings, body and signature inside text.\nCopy required literal phrases unchanged. Draft near the middle of the full-text word range, then check the complete text length.\nWhen revising a length failure, rewrite the whole text toward the range midpoint while retaining every required literal; do not merely append or trim a final sentence.\nWord counting includes every heading and signature: letter/digit sequences, with internal apostrophes or hyphens, count as words.\nFor study plans, each schedule item has one complete topic name, a real ISO date and positive integer minutes;\nfirst compute each topic's required total, then allocate those minutes across the permitted days without exceeding any day's combined limit.\nA topic-specific minimum replaces a smaller general minimum for that topic; it is not an extra requirement to add twice.\nSplit a topic across days when needed. Use a compact schedule with only necessary sessions; do not repeat every topic on every day.\nCheck the sum of ALL sessions per date and the sum per exact topic label before returning. Keep summary short and consistent with schedule.\nIf a deadline or daily allowance is unknown, use a short conservative plan without claiming a guessed bound was supplied.\nNever add an unsupported numeric constraint. If visible requirements conflict, explain the conflict in the output rather than claim compliance.\nWrite in English."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"study_planning\", \"initial_request\": \"I want to read introductory Braille exercises more confidently. Lay out a compact learning timetable. Start on 2027-02-01. Keep the timetable within the window ending 2027-02-07, with the end date included. Required coverage is \\\"Six-dot Cells\\\", \\\"Braille Contractions\\\". The minimum study allocation for each topic is 10 minutes across all dates. My daily study allowance is 50 minutes maximum, not 50 minutes per topic.\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [{\"field_id\": \"priorities\", \"question\": \"Do you have topic priorities or additional minimum-time requirements?\", \"status\": \"unknown\", \"answer_text\": \"I do not know what topic order would suit me, and I cannot supply a preference.\"}], \"visible_constraints\": {\"version\": \"visible-constraints-0.4.0\", \"domain\": \"study_planning\", \"constraints\": [{\"kind\": \"date_window\", \"parameters\": {\"start_date\": \"2027-02-01\"}, \"source\": [{\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"Start on 2027-02-01.\"}]}], \"warnings\": [{\"reason\": \"date_without_unambiguous_study_window_role\", \"source\": {\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"Keep the timetable within the window ending 2027-02-07, with the end date included.\"}}, {\"reason\": \"unsupported_daily_time_expression\", \"source\": {\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"My daily study allowance is 50 minutes maximum, not 50 minutes per topic.\"}}]}, \"output_schema\": {\"$schema\": \"https://json-schema.org/draft/2020-12/schema\", \"type\": \"object\", \"properties\": {\"schedule\": {\"type\": \"array\", \"minItems\": 1, \"items\": {\"type\": \"object\", \"properties\": {\"date\": {\"type\": \"string\", \"format\": \"date\", \"pattern\": \"^\\\\d{4}-\\\\d{2}-\\\\d{2}$\"}, \"topic\": {\"type\": \"string\", \"minLength\": 1, \"pattern\": \"\\\\S\"}, \"minutes\": {\"type\": \"integer\", \"minimum\": 1}}, \"required\": [\"date\", \"topic\", \"minutes\"], \"additionalProperties\": false}}, \"summary\": {\"type\": \"string\", \"minLength\": 1, \"pattern\": \"\\\\S\"}}, \"required\": [\"schedule\", \"summary\"], \"additionalProperties\": false}}"
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

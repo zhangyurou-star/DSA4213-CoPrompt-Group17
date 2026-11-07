@@ -1,0 +1,146 @@
+{
+  "cache_key": "4f0c09fa0875e7b7c785cafb0a0d658e468c1328b84b792f9178ce26b587aa5b",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S8"
+    ],
+    "available_time": [
+      "S7"
+    ],
+    "topics": [
+      "S4",
+      "S5"
+    ],
+    "priorities": [
+      "S6"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 79,
+      "text": "I would like to identify the components of heraldic shields on a heritage walk."
+    },
+    {
+      "id": "S2",
+      "start": 80,
+      "end": 100,
+      "text": "Plan my preparation."
+    },
+    {
+      "id": "S3",
+      "start": 101,
+      "end": 121,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 122,
+      "end": 260,
+      "text": "Use the exact labels \"Tinctures\", \"Shield Divisions\", \"Heraldic Charges\" in the schedule, with at least 15 total minutes assigned to each."
+    },
+    {
+      "id": "S5",
+      "start": 261,
+      "end": 327,
+      "text": "Within that coverage, \"Tinctures\" needs at least 25 total minutes."
+    },
+    {
+      "id": "S6",
+      "start": 328,
+      "end": 404,
+      "text": "I have no preferred topic order and no additional minimum-time requirements."
+    },
+    {
+      "id": "S7",
+      "start": 405,
+      "end": 462,
+      "text": "There is a firm ceiling of 30 study minutes on each date."
+    },
+    {
+      "id": "S8",
+      "start": 463,
+      "end": 539,
+      "text": "The last usable study date is 2027-02-06, and sessions may fall on that day."
+    }
+  ],
+  "field_values": {
+    "deadline": "The last usable study date is 2027-02-06, and sessions may fall on that day.",
+    "available_time": null,
+    "topics": "Use the exact labels \"Tinctures\", \"Shield Divisions\", \"Heraldic Charges\" in the schedule, with at least 15 total minutes assigned to each.\nWithin that coverage, \"Tinctures\" needs at least 25 total minutes.",
+    "priorities": "I have no preferred topic order and no additional minimum-time requirements."
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 463,
+        "end": 539,
+        "quote": "The last usable study date is 2027-02-06, and sessions may fall on that day."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 122,
+        "end": 260,
+        "quote": "Use the exact labels \"Tinctures\", \"Shield Divisions\", \"Heraldic Charges\" in the schedule, with at least 15 total minutes assigned to each."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 261,
+        "end": 327,
+        "quote": "Within that coverage, \"Tinctures\" needs at least 25 total minutes."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 328,
+        "end": 404,
+        "quote": "I have no preferred topic order and no additional minimum-time requirements."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "available_time",
+      "proposed_evidence": [
+        "S7"
+      ],
+      "proposed_value": "There is a firm ceiling of 30 study minutes on each date.",
+      "reason": "quote_has_no_daily_time_allowance_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S8\"],\"available_time\":[\"S7\"],\"topics\":[\"S4\",\"S5\"],\"priorities\":[\"S6\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S8"
+          ],
+          "available_time": [
+            "S7"
+          ],
+          "topics": [
+            "S4",
+            "S5"
+          ],
+          "priorities": [
+            "S6"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

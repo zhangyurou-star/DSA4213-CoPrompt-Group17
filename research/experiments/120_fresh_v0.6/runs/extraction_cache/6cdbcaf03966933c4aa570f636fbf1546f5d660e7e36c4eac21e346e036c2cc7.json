@@ -1,0 +1,140 @@
+{
+  "cache_key": "6cdbcaf03966933c4aa570f636fbf1546f5d660e7e36c4eac21e346e036c2cc7",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S7"
+    ],
+    "available_time": [
+      "S6"
+    ],
+    "topics": [
+      "S4",
+      "S5"
+    ],
+    "priorities": [
+      "S5"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 56,
+      "text": "A theatre induction includes a paper-based rigging quiz."
+    },
+    {
+      "id": "S2",
+      "start": 57,
+      "end": 109,
+      "text": "Arrange my theory revision into manageable sessions."
+    },
+    {
+      "id": "S3",
+      "start": 110,
+      "end": 130,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 131,
+      "end": 278,
+      "text": "Use the exact labels \"Load Paths\", \"Counterweight Systems\", \"Rigging Inspections\" in the schedule, with at least 25 total minutes assigned to each."
+    },
+    {
+      "id": "S5",
+      "start": 279,
+      "end": 346,
+      "text": "Within that coverage, \"Load Paths\" needs at least 35 total minutes."
+    },
+    {
+      "id": "S6",
+      "start": 347,
+      "end": 404,
+      "text": "There is a firm ceiling of 30 study minutes on each date."
+    },
+    {
+      "id": "S7",
+      "start": 405,
+      "end": 481,
+      "text": "The last usable study date is 2027-02-06, and sessions may fall on that day."
+    }
+  ],
+  "field_values": {
+    "deadline": "The last usable study date is 2027-02-06, and sessions may fall on that day.",
+    "available_time": null,
+    "topics": "Use the exact labels \"Load Paths\", \"Counterweight Systems\", \"Rigging Inspections\" in the schedule, with at least 25 total minutes assigned to each.\nWithin that coverage, \"Load Paths\" needs at least 35 total minutes.",
+    "priorities": "Within that coverage, \"Load Paths\" needs at least 35 total minutes."
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 405,
+        "end": 481,
+        "quote": "The last usable study date is 2027-02-06, and sessions may fall on that day."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 131,
+        "end": 278,
+        "quote": "Use the exact labels \"Load Paths\", \"Counterweight Systems\", \"Rigging Inspections\" in the schedule, with at least 25 total minutes assigned to each."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 279,
+        "end": 346,
+        "quote": "Within that coverage, \"Load Paths\" needs at least 35 total minutes."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 279,
+        "end": 346,
+        "quote": "Within that coverage, \"Load Paths\" needs at least 35 total minutes."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "available_time",
+      "proposed_evidence": [
+        "S6"
+      ],
+      "proposed_value": "There is a firm ceiling of 30 study minutes on each date.",
+      "reason": "quote_has_no_daily_time_allowance_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S7\"],\"available_time\":[\"S6\"],\"topics\":[\"S4\",\"S5\"],\"priorities\":[\"S5\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S7"
+          ],
+          "available_time": [
+            "S6"
+          ],
+          "topics": [
+            "S4",
+            "S5"
+          ],
+          "priorities": [
+            "S5"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

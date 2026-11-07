@@ -1,0 +1,495 @@
+CoPrompt Fresh 120-Case Catalog
+
+New case inventory and initial requests; this is not a results report. All English requests were newly authored for this study, with reference date 2027-02-01.
+40 design / 20 validation / 60 test cases; each split has equal numbers from the two domains. The 12 pilot cases are included in the design split; the 20 diagnostic cases are included in the test split.
+This catalog does not display hidden scoring answers or author-provided feasible examples.
+
+Design split: 40 cases
+Complete information 8 / Critical field omitted 8 / Critical and optional fields omitted 8 / Only optional fields omitted 6 / Answer unavailable 6 / Execute immediately 4
+
+NDCW01  Resolving a disputed board-game rule  | Constrained writing | Complete information | Included in the 12-case pilot
+Family: fresh_cw_board_game_dispute
+Clarify a disputed move in a fictional board game. The intended readers are players who know the basic rules. Keep the tone patient and impartial. The full text must be between 55 and 85 words. Include the following invented details: In Amber Gate, a player spends one lantern to inspect a bridge. Inspection reveals its symbol but does not open it: the bridge remains closed. A separate key action opens it. Preserve these exact phrases: "Amber Gate", "one lantern", "the bridge remains closed".
+
+NDCW02  Instructions for fictional vending tokens  | Constrained writing | Critical field omitted | Included in the 12-case pilot
+Family: fresh_cw_vending_token_explanation
+Explain how a fictional vending token is used. Address this to first-time machine users. Keep the complete piece to 50–80 words. Use a clear and reassuring voice.
+
+NDCW03  A fable about shadows  | Constrained writing | Critical and optional fields omitted | Included in the 12-case pilot
+Family: fresh_cw_shadow_fable
+Compose a fable about a shadow. Write for readers aged ten and above.
+
+NDCW04  Rationale for naming a plant cultivar  | Constrained writing | Only optional fields omitted | Included in the 12-case pilot
+Family: fresh_cw_cultivar_name_rationale
+Give a naming rationale for an invented plant cultivar. The total word count must fall from 50 to 80, inclusive. Use this fictional material: Propose Copper Lantern as the cultivar name. Its invented traits are bronze petals and an evening bloom that opens after the surrounding flowers close. Required wording, verbatim: "Copper Lantern", "bronze petals", "evening bloom". The audience is a fictional nursery naming committee.
+
+NDCW05  Fantasy map commission brief  | Constrained writing | Answer unavailable | Included in the 12-case pilot
+Family: fresh_cw_fantasy_map_commission
+Draft a creative commission brief for a fantasy map. Make the voice precise and imaginative. Write 65 to 95 words altogether. Include the following invented details: The commissioned map depicts Glass Marsh with three floating islands connected by dotted migration paths. Water is shown as uncolored paper. Include no compass rose because direction changes in this invented world. Preserve these exact phrases: "Glass Marsh", "three floating islands", "no compass rose".
+
+NDCW06  Tiered crossword clues  | Constrained writing | Execute immediately | Included in the 12-case pilot
+Family: fresh_cw_crossword_hint_ladder
+Write a graduated hint card for an invented crossword answer. Build the piece around these synthetic facts: Write three increasingly revealing hints for echo. The first mentions returning, the second mentions sound, and the final line includes Answer: echo. The text must contain "First hint", "Second hint", "Answer: echo" verbatim. The full text must be between 45 and 75 words. Execute now and do not pause for clarification.
+
+NDCW07  Translation terminology consistency note  | Constrained writing | Complete information
+Family: fresh_cw_translation_glossary_policy
+Explain a terminology policy for a fictional translation project. Its intended audience: translators working on the invented Riverglass story. These invented details are required: The invented device name moonwell is fixed across languages: do not translate it. Its ordinary description can be localized. Any alternate spelling must be recorded in a glossary entry before drafting. Include each of these exact strings: "moonwell", "do not translate", "glossary entry". Keep the tone editorial and practical. Keep the complete piece to 55–85 words.
+
+NDCW08  Sewing fabric layout instructions  | Constrained writing | Complete information
+Family: fresh_cw_sewing_layout_instruction
+Describe a cutting layout for a fictional sewing pattern. Use a direct and orderly voice. Use at least 60 words and no more than 90 words in total. Use this fictional material: The mock pattern places the body against the folded edge and two cuffs beside the outer edge. Keep the printed arrows parallel. Instruct the reader to leave the center strip for the tie. Required wording, verbatim: "folded edge", "two cuffs", "leave the center strip". Use wording suitable for home sewists using the invented pattern.
+
+NDCW09  Handmade soap packaging story  | Constrained writing | Complete information
+Family: fresh_cw_soap_package_story
+Write an origin story for an imaginary soap package. The intended readers are shoppers reading a fictional craft label. I want a warm and understated tone. The total word count must fall from 50 to 80, inclusive. Include the following invented details: Harbor Thread began as an imaginary soap workshop using empty cedar boxes as molds. Its maker marks every bar with a spiral stamp to recall the curled wood shavings on the first workbench. Preserve these exact phrases: "Harbor Thread", "cedar boxes", "a spiral stamp".
+
+NDCW10  Space probe log  | Constrained writing | Critical field omitted
+Family: fresh_cw_space_probe_log
+Write an entry in a fictional space probe log. Build the piece around these synthetic facts: Probe Lark receives seven pulses from below an icy ridge, but obtains no surface image because its camera shutter remains closed. End with a plan to repeat the listening pass. The text must contain "Probe Lark", "seven pulses", "no surface image" verbatim. Address this to mission analysts reading fictional telemetry prose. The style should feel observant and unemotional.
+
+NDCW11  Royal herald proclamation  | Constrained writing | Critical field omitted
+Family: fresh_cw_court_herald_proclamation
+Compose a ceremonial proclamation for an invented kingdom. Write for residents of the invented Kingdom of Reeds. Make the voice formal and ceremonial. The full text must be between 55 and 85 words.
+
+NDCW12  Self-test flashcard instructions  | Constrained writing | Critical field omitted
+Family: fresh_cw_flashcard_self_test
+Explain a self-testing routine using invented flashcards. A supportive and practical tone suits this piece. The audience is independent learners using a fictional card deck.
+
+NDCW13  Closing argument in a fictional trial  | Constrained writing | Critical and optional fields omitted
+Family: fresh_cw_fictional_closing_argument
+Write a closing argument in a fictional mock trial. Aim the wording at the jury in a fictional classroom mock trial. Include the following invented details: The invented case concerns a missing silver bell. The evidence is an open window and a feather on the sill, while no witness saw the accused enter the room. Argue that suspicion alone does not settle the story. Preserve these exact phrases: "the silver bell", "an open window", "no witness saw".
+
+NDCW14  Escape-room opening scenario  | Constrained writing | Critical and optional fields omitted
+Family: fresh_cw_escape_room_premise
+Create the opening premise for an imaginary escape room. The total word count must fall from 60 to 90, inclusive. Use a mysterious but welcoming voice.
+
+NDCW15  Soundscape performance instructions  | Constrained writing | Critical and optional fields omitted
+Family: fresh_cw_soundscape_score
+Write performance directions for an invented soundscape. Its intended audience: performers rehearsing the invented piece.
+
+NDCW16  Letter to a future self  | Constrained writing | Only optional fields omitted
+Family: fresh_cw_future_self_letter
+Write a letter addressed to a future self. The full text must be between 60 and 90 words. Use this fictional material: The speaker is building an unfinished bench and worries about abandoning it. Refer to one small promise to finish a useful thing, and close with keep making room. Required wording, verbatim: "the unfinished bench", "one small promise", "keep making room". Use wording suitable for myself opening the letter ten years later.
+
+NDCW17  Elegy for a retired bridge  | Constrained writing | Only optional fields omitted
+Family: fresh_cw_bridge_retirement_elegy
+Compose a prose elegy for an imaginary bridge. Make the voice dignified and wistful. Keep the complete piece to 55–85 words. Include the following invented details: The Willow Span is an imaginary timber bridge retiring after forty winters. Its boards carried market baskets and wedding processions. Use the image footsteps in the wood. Preserve these exact phrases: "the Willow Span", "forty winters", "footsteps in the wood".
+
+NDCW18  Justification for a manufacturing tolerance exception  | Constrained writing | Answer unavailable
+Family: fresh_cw_fabrication_exception_rationale
+Explain an exception in a fictional fabrication specification. Build the piece around these synthetic facts: Panel C may retain a two millimeter gap because it is decorative only. It bears no load in the fictional model. All other panels keep the drawn fit; the exception is not a general tolerance change. The text must contain "Panel C", "a two millimeter gap", "decorative only" verbatim. Use at least 60 words and no more than 90 words in total.
+
+NDCW19  Interpretation of a dream-inspired work  | Constrained writing | Answer unavailable
+Family: fresh_cw_dream_sequence_interpretation
+Offer a literary interpretation of an invented dream sequence. Write for readers discussing an invented surreal story. These invented details are required: The dream shows a staircase of cups reaching toward the locked sky. Interpret it as an unfinished conversation, while allowing a second reading about fragile ambition. Include each of these exact strings: "a staircase of cups", "the locked sky", "an unfinished conversation". The total word count must fall from 55 to 85, inclusive.
+
+NDCW20  Origami diagram instructions  | Constrained writing | Execute immediately
+Family: fresh_cw_origami_step_caption
+Draft instructions to accompany an invented paper-folding diagram. Use a calm and explicit voice. Write 50 to 80 words altogether. Use this fictional material: The paper-folding step brings the marked corner to the center crease. Press only the lower half of the fold and keep the flap loose so it can open into a pocket in the next step. Required wording, verbatim: "marked corner", "center crease", "keep the flap loose". Go ahead immediately; use your judgment for any remaining stylistic choice.
+
+NDSP01  Introduction to beehive inspection  | Study planning | Complete information | Included in the 12-case pilot
+Family: nsp_apiary_inspection
+Before I join an apiary observation session, help me organize a short course in seasonal hive inspection. Start on 2027-02-01. Use only dates from 2027-02-01 through 2027-02-03, including the final date. I can spare at most 25 minutes per day, counting every topic together. Include "Brood Pattern Checks", "Queen Presence Signs", "Hive Recordkeeping", using those topic names. Allocate at least 10 cumulative minutes to every topic. Within that coverage, "Brood Pattern Checks" needs at least 20 total minutes. Give "Hive Recordkeeping" at least 25 minutes in total; this is a firm extra requirement.
+
+NDSP02  Principles of railway signaling  | Study planning | Critical field omitted | Included in the 12-case pilot
+Family: nsp_railway_signalling
+I am using a model railway to understand why trains are kept apart. Turn my signalling reading into a study schedule. Start on 2027-02-01. The syllabus consists of "Block Sections", "Interlocking", "Signal Aspects"; each named topic needs a minimum of 15 minutes in total. I have no preferred topic order and no additional minimum-time requirements. The total of all sessions on any one date must not exceed 35 minutes.
+
+NDSP03  Monitoring pests in collections  | Study planning | Critical and optional fields omitted | Included in the 12-case pilot
+Family: nsp_collection_pest_monitoring
+I have volunteered to help a small collection team read its pest-monitoring records. Build me a preparation plan. Start on 2027-02-01. Cover these exact topic labels: "Quarantine Checks", "Sticky Trap Logs", "Pest Evidence Recognition". Give each one at least 20 minutes over the whole plan. Finish all scheduled study no later than 2027-02-05, inclusive.
+
+NDSP04  Stage rigging theory  | Study planning | Only optional fields omitted | Included in the 12-case pilot
+Family: nsp_stage_rigging_theory
+A theatre induction includes a paper-based rigging quiz. Arrange my theory revision into manageable sessions. Start on 2027-02-01. Use the exact labels "Load Paths", "Counterweight Systems", "Rigging Inspections" in the schedule, with at least 25 total minutes assigned to each. Within that coverage, "Load Paths" needs at least 35 total minutes. There is a firm ceiling of 30 study minutes on each date. The last usable study date is 2027-02-06, and sessions may fall on that day.
+
+NDSP05  Introduction to reading Braille  | Study planning | Answer unavailable | Included in the 12-case pilot
+Family: nsp_braille_literacy
+I want to read introductory Braille exercises more confidently. Lay out a compact learning timetable. Start on 2027-02-01. Keep the timetable within the window ending 2027-02-07, with the end date included. Required coverage is "Six-dot Cells", "Braille Contractions". The minimum study allocation for each topic is 10 minutes across all dates. My daily study allowance is 50 minutes maximum, not 50 minutes per topic.
+
+NDSP06  Coffee sensory training  | Study planning | Execute immediately | Included in the 12-case pilot
+Family: nsp_coffee_sensory
+I am attending a coffee tasting and want to recognize the vocabulary in the tasting notes. Plan my preparation. Start on 2027-02-01. Keep each daily total at or below 40 minutes across all study blocks. I can still study on 2027-02-03, but no study should be scheduled after it. I need 15 minutes or more in total on each of "Aroma Wheel", "Acidity Descriptors", "Cupping Protocol". Those are the required topic labels. Please produce the schedule now without asking me follow-up questions.
+
+NDSP07  Learning water purification processes  | Study planning | Complete information
+Family: nsp_water_treatment
+A waterworks visitor course gives me several process diagrams to learn. Divide that learning into study sessions. Start on 2027-02-01. Use only dates from 2027-02-01 through 2027-02-04, including the final date. I can spare at most 55 minutes per day, counting every topic together. Include "Coagulation", "Sedimentation", "Disinfection", using those topic names. Allocate at least 20 cumulative minutes to every topic. Within that coverage, "Coagulation" needs at least 30 total minutes. I specifically require a minimum of 35 minutes altogether on "Disinfection".
+
+NDSP08  Pedestrian space design  | Study planning | Complete information
+Family: nsp_pedestrian_design
+I will critique a pedestrian-street design in class. Please create a focused preparation schedule for the design concepts. Start on 2027-02-01. The syllabus consists of "Crossing Visibility", "Kerb Ramps", "Pedestrian Desire Lines", "Footway Width"; each named topic needs a minimum of 25 minutes in total. My study window closes on 2027-02-05; that date is still available. I would prefer to encounter "Footway Width" early; treat that as a suggestion only, not a time requirement. The total of all sessions on any one date must not exceed 60 minutes.
+
+NDSP09  Learning origami techniques  | Study planning | Complete information
+Family: nsp_origami_foundations
+I keep losing my place in origami diagrams. Give me a study sequence for recognizing the folds. Start on 2027-02-01. Even if a day has several short sessions, their combined length must stay within 65 minutes. Cover these exact topic labels: "Valley Folds", "Mountain Folds", "Reverse Folds". Give each one at least 10 minutes over the whole plan. Finish all scheduled study no later than 2027-02-06, inclusive. Give "Reverse Folds" at least 35 minutes in total; this is a firm extra requirement.
+
+NDSP10  Bicycle drivetrain maintenance theory  | Study planning | Critical field omitted
+Family: nsp_bicycle_transmission
+Before a supervised bicycle workshop, I need to understand the drivetrain terminology. Map out my theory study. Start on 2027-02-01. Use the exact labels "Chain Wear", "Derailleur Indexing", "Cassette Inspection" in the schedule, with at least 15 total minutes assigned to each. Within that coverage, "Chain Wear" needs at least 25 total minutes. My priority is "Cassette Inspection": its cumulative study time must reach 30 minutes or more. The last usable study date is 2027-02-07, and sessions may fall on that day.
+
+NDSP11  Semaphore communication practice  | Study planning | Critical field omitted
+Family: nsp_semaphore_signalling
+Our maritime-history club is trying a semaphore-reading exercise. I need a short practice plan. Start on 2027-02-01. Keep the timetable within the window ending 2027-02-03, with the end date included. My daily study allowance is 30 minutes maximum, not 30 minutes per topic.
+
+NDSP12  Archival appraisal  | Study planning | Critical field omitted
+Family: nsp_records_appraisal
+I am preparing to discuss which records an archive should keep. Build a revision timetable for records appraisal. Start on 2027-02-01. I would prefer to encounter "Disposal Documentation" early; treat that as a suggestion only, not a time requirement.
+
+NDSP13  Reading historical manuscripts  | Study planning | Critical and optional fields omitted
+Family: nsp_palaeography
+A local-history transcription group has given me an unfamiliar handwritten page. Organize my palaeography preparation. Start on 2027-02-01. I can spare at most 45 minutes per day, counting every topic together. Include "Secretary Hand", "Abbreviation Marks", using those topic names. Allocate at least 10 cumulative minutes to every topic. Within that coverage, "Secretary Hand" needs at least 20 total minutes.
+
+NDSP14  Learning hand stitching for leather  | Study planning | Critical and optional fields omitted
+Family: nsp_leather_stitching
+I want to follow a leather hand-stitching demonstration without losing track of the terms. Arrange my learning sessions. Start on 2027-02-01. My study window closes on 2027-02-06; that date is still available. The total of all sessions on any one date must not exceed 30 minutes.
+
+NDSP15  Learning about tea ceremony utensils  | Study planning | Critical and optional fields omitted
+Family: nsp_tea_utensils
+Before a tea-ceremony demonstration, I would like to recognize the utensils and their handling conventions. Plan my study. Start on 2027-02-01. Cover these exact topic labels: "Chawan Handling", "Chasen Care", "Utensil Placement". Give each one at least 20 minutes over the whole plan.
+
+NDSP16  Introduction to human factors design  | Study planning | Only optional fields omitted
+Family: nsp_human_factors
+I have to evaluate a workstation mock-up in a human-factors class. Set out a short study timetable. Start on 2027-02-01. Use the exact labels "Display Legibility", "Control Compatibility", "Workstation Reach" in the schedule, with at least 25 total minutes assigned to each. Within that coverage, "Display Legibility" needs at least 35 total minutes. There is a firm ceiling of 40 study minutes on each date. The last usable study date is 2027-02-03, and sessions may fall on that day.
+
+NDSP17  Morse code listening practice  | Study planning | Only optional fields omitted
+Family: nsp_morse_listening
+I am starting to copy Morse by ear and need a structured listening-practice schedule. Start on 2027-02-01. Keep the timetable within the window ending 2027-02-04, with the end date included. Required coverage is "Dot-dash Patterns", "Character Spacing", "Call-sign Copying". The minimum study allocation for each topic is 10 minutes across all dates. My daily study allowance is 55 minutes maximum, not 55 minutes per topic.
+
+NDSP18  Manuscript illumination techniques  | Study planning | Answer unavailable
+Family: nsp_manuscript_illumination
+An art-history seminar will compare illuminated manuscript pages. Please arrange my study of the workshop techniques. Start on 2027-02-01. Keep each daily total at or below 60 minutes across all study blocks. I can still study on 2027-02-05, but no study should be scheduled after it. I need 15 minutes or more in total on each of "Gold Leaf Grounds", "Pigment Layering", "Decorated Initials". Those are the required topic labels.
+
+NDSP19  Go life-and-death practice  | Study planning | Answer unavailable
+Family: nsp_go_life_death
+I want to work through a beginner Go problem booklet. Help me divide the life-and-death study into small sessions. Start on 2027-02-01. Use only dates from 2027-02-01 through 2027-02-06, including the final date. I can spare at most 65 minutes per day, counting every topic together. Include "Eye Formation", "Capturing Races", "Seki", using those topic names. Allocate at least 20 cumulative minutes to every topic. Within that coverage, "Eye Formation" needs at least 30 total minutes.
+
+NDSP20  Dry stone wall theory  | Study planning | Execute immediately
+Family: nsp_dry_stone_walling
+I am taking a diagram-based course on dry-stone walls. Organize the construction theory into a study plan. Start on 2027-02-01. The syllabus consists of "Batter Angles", "Through Stones", "Hearting"; each named topic needs a minimum of 25 minutes in total. My study window closes on 2027-02-07; that date is still available. The total of all sessions on any one date must not exceed 70 minutes. Please produce the schedule now without asking me follow-up questions.
+
+Validation split: 20 cases
+Complete information 4 / Critical field omitted 4 / Critical and optional fields omitted 4 / Only optional fields omitted 4 / Answer unavailable 2 / Execute immediately 2
+
+NVCW01  Worked example of a tournament tie-break rule  | Constrained writing | Complete information
+Family: fresh_cw_tournament_tiebreak_example
+Explain a fictional tournament tiebreak using a worked example. Aim the wording at participants in the invented Marble Circuit. I want a neutral and explanatory tone. The full text must be between 55 and 85 words. Include the following invented details: The Marble Circuit breaks equal point totals by fewest retries. Mira and Sol each have twelve points; Mira used one retry and Sol used three. Therefore Mira ranks first. Preserve these exact phrases: "Marble Circuit", "fewest retries", "Mira ranks first".
+
+NVCW02  Comedy night routine  | Constrained writing | Complete information
+Family: fresh_cw_joke_night_anecdote
+Write an original anecdote with a punchline. Build the piece around these synthetic facts: The anecdote concerns a very punctual snail arriving a year late because it followed the wrong calendar. The punchline should claim it is still early for next year. The text must contain "a very punctual snail", "the wrong calendar", "still early" verbatim. This will be read by an audience at an invented storytelling club. Keep the complete piece to 60–90 words. The style should feel light and playful.
+
+NVCW03  Stage prop construction specifications  | Constrained writing | Critical field omitted
+Family: fresh_cw_stage_prop_specification
+Describe a fictional stage prop for a fabricator. Its intended audience: a theatrical prop workshop. Make the voice specific and practical. Use at least 65 words and no more than 95 words in total.
+
+NVCW04  Ink micro-documentary narration  | Constrained writing | Critical field omitted
+Family: fresh_cw_ink_documentary_voiceover
+Create narration for a fictional microdocumentary about ink. A sensory and contemplative tone suits this piece. Use wording suitable for viewers of an imaginary short craft documentary.
+
+NVCW05  Explanation of a shelving classification exception  | Constrained writing | Critical and optional fields omitted
+Family: fresh_cw_shelving_exception_reason
+Explain a shelving exception in an invented collection. The intended readers are volunteer catalogers in a fictional reading collection. Include the following invented details: The Atlas of Knots belongs on the craft shelf despite its atlas title because all its pages teach tying techniques. Add a shelf note under geography so title-based searches still lead to it. Preserve these exact phrases: "The Atlas of Knots", "craft shelf", "shelf note".
+
+NVCW06  Scenario inject for a tabletop exercise  | Constrained writing | Critical and optional fields omitted
+Family: fresh_cw_tabletop_drill_scenario
+Write a scenario inject for a fictional tabletop exercise. The full text must be between 65 and 95 words. Use a neutral and concrete voice.
+
+NVCW07  Visual design of a fictional currency  | Constrained writing | Only optional fields omitted
+Family: fresh_cw_fictional_currency_design
+Describe a design concept for imaginary currency. These invented details are required: The imaginary banknote centers a woven sun, carries nine square windows on its reverse, and uses a violet border. The sun represents shared work; the windows represent the invented city districts. Include each of these exact strings: "a woven sun", "nine square windows", "violet border". Keep the complete piece to 60–90 words.
+
+NVCW08  Dialogue for sibling reconciliation  | Constrained writing | Only optional fields omitted
+Family: fresh_cw_sibling_reconciliation_dialogue
+Write a dialogue in which two fictional siblings resolve a disagreement. Use at least 60 words and no more than 90 words in total. Use this fictional material: One sibling borrowed the red scarf without asking and tore it. The other asks them to ask next time. End with a shared decision that we can mend it, rather than buying a replacement. Required wording, verbatim: "the red scarf", "ask next time", "we can mend it". The audience is readers of an original family scene.
+
+NVCW09  Reasoning through a puzzle solution  | Constrained writing | Answer unavailable
+Family: fresh_cw_riddle_solution_reasoning
+Explain the reasoning behind an invented riddle solution. Make the voice clear and logical. The total word count must fall from 55 to 85, inclusive. Include the following invented details: The riddle describes silent roads and rivers without water. Explain why the answer is a map: its marks represent routes and rivers rather than containing physical traffic or flowing water. Preserve these exact phrases: "the answer is a map", "silent roads", "rivers without water".
+
+NVCW10  Comic storyboard script  | Constrained writing | Execute immediately
+Family: fresh_cw_comic_panel_script
+Write a panel-by-panel script for an original short comic. Build the piece around these synthetic facts: The three-panel comic shows a child taping a paper moon onto a window, a cat trying to catch its reflection, then the child moving the moon so the cat can reach it. The text must contain "Panel one", "Panel two", "Panel three", "a paper moon" verbatim. Write 65 to 95 words altogether. Execute now and do not pause for clarification.
+
+NVSP01  Knot identification practice  | Study planning | Complete information
+Family: nsp_rope_knots
+For a knot-identification activity, I need to distinguish several rope knots from photographs. Make a learning timetable. Start on 2027-02-01. Even if a day has several short sessions, their combined length must stay within 25 minutes. Cover these exact topic labels: "Bowline", "Clove Hitch", "Sheet Bend". Give each one at least 10 minutes over the whole plan. Finish all scheduled study no later than 2027-02-03, inclusive. Give "Sheet Bend" at least 35 minutes in total; this is a firm extra requirement.
+
+NVSP02  Edible mushroom cultivation processes  | Study planning | Complete information
+Family: nsp_fungal_cultivation
+I am preparing for a classroom discussion of edible mushroom cultivation. Schedule my reading of the production stages. Start on 2027-02-01. Use the exact labels "Sterile Inoculation", "Substrate Colonization", "Fruiting Conditions" in the schedule, with at least 15 total minutes assigned to each. Within that coverage, "Sterile Inoculation" needs at least 25 total minutes. I have no preferred topic order and no additional minimum-time requirements. There is a firm ceiling of 35 study minutes on each date. The last usable study date is 2027-02-04, and sessions may fall on that day.
+
+NVSP03  Learning letterform structure  | Study planning | Critical field omitted
+Family: nsp_typographic_anatomy
+My graphic-design assignment asks me to diagnose awkward lettering. Give me a study plan for type anatomy and spacing. Start on 2027-02-01. Keep the timetable within the window ending 2027-02-05, with the end date included. Required coverage is "Counters", "Ascenders", "Kerning". The minimum study allocation for each topic is 20 minutes across all dates. My daily study allowance is 45 minutes maximum, not 45 minutes per topic.
+
+NVSP04  Acoustic identification of bats  | Study planning | Critical field omitted
+Family: nsp_bat_call_identification
+I am learning to annotate recorded bat calls for a natural-history exercise. Arrange a compact study schedule. Start on 2027-02-01. Keep each daily total at or below 30 minutes across all study blocks. I would prefer to encounter "Feeding Buzzes" early; treat that as a suggestion only, not a time requirement.
+
+NVSP05  Textual authorship analysis  | Study planning | Critical and optional fields omitted
+Family: nsp_forensic_linguistics
+I have a seminar on comparing the language of anonymous documents. Plan my introductory authorship-analysis study. Start on 2027-02-01. I can spare at most 50 minutes per day, counting every topic together.
+
+NVSP06  Principles of electrochemical cells  | Study planning | Critical and optional fields omitted
+Family: nsp_electrochemical_cells
+Battery diagrams in my chemistry workbook still confuse me. Put the cell-theory revision into a timetable. Start on 2027-02-01. My study window closes on 2027-02-03; that date is still available.
+
+NVSP07  Mask performance training  | Study planning | Only optional fields omitted
+Family: nsp_mask_acting
+A drama workshop will use neutral masks. I would like a study-and-practice schedule for the preparatory concepts. Start on 2027-02-01. Even if a day has several short sessions, their combined length must stay within 55 minutes. Cover these exact topic labels: "Mask Focus", "Neutral Mask Posture", "Gesture Economy". Give each one at least 20 minutes over the whole plan. Finish all scheduled study no later than 2027-02-04, inclusive.
+
+NVSP08  Dance floor awareness for social dancing  | Study planning | Only optional fields omitted
+Family: nsp_dance_floorcraft
+I want to understand how social dancers share a crowded floor. Break the floorcraft learning into short sessions. Start on 2027-02-01. Use the exact labels "Line of Dance", "Spatial Awareness", "Partner Signalling" in the schedule, with at least 25 total minutes assigned to each. Within that coverage, "Line of Dance" needs at least 35 total minutes. There is a firm ceiling of 60 study minutes on each date. The last usable study date is 2027-02-05, and sessions may fall on that day.
+
+NVSP09  Learning coin identification  | Study planning | Answer unavailable
+Family: nsp_numismatics
+I inherited a box of old coins and want to learn how cataloguers describe them. Create a study schedule for identification. Start on 2027-02-01. Keep the timetable within the window ending 2027-02-06, with the end date included. Required coverage is "Mint Marks", "Coin Legends", "Die Varieties". The minimum study allocation for each topic is 10 minutes across all dates. My daily study allowance is 65 minutes maximum, not 65 minutes per topic.
+
+NVSP10  Component practice for three-ball juggling  | Study planning | Execute immediately
+Family: nsp_juggling_cascade
+I am learning a three-ball cascade from lesson clips. Make a compact practice timetable. Start on 2027-02-01. Keep each daily total at or below 70 minutes across all study blocks. I can still study on 2027-02-07, but no study should be scheduled after it. I need 15 minutes or more in total on each of "Cascade Pattern", "Throw Height", "Catch Timing". Those are the required topic labels. Please produce the schedule now without asking me follow-up questions.
+
+Test split: 60 cases
+Complete information 12 / Critical field omitted 12 / Critical and optional fields omitted 12 / Only optional fields omitted 10 / Answer unavailable 8 / Execute immediately 6
+
+NTCW01  First-use copy for a fictional appliance  | Constrained writing | Complete information | Included in the 20-case diagnostic subset
+Family: fresh_cw_appliance_first_use_microcopy
+Draft first-use screen copy for an imaginary appliance. Its intended audience: new owners of the imaginary Pebble Press. These invented details are required: The fictional Pebble Press stamps decorative cards. First place one blank card in the tray, then choose a pattern. Its first-use screen should explain that the sample print uses the selected pattern and invite the user to start. Include each of these exact strings: "Pebble Press", "place one blank card", "choose a pattern". Keep the tone friendly and concise. The full text must be between 50 and 80 words.
+
+NTCW02  Barter negotiation proposal  | Constrained writing | Complete information | Included in the 20-case diagnostic subset
+Family: fresh_cw_barter_negotiation_offer
+Write an opening proposal for a fictional barter exchange. Use a courteous and open voice. Keep the complete piece to 55–85 words. Use this fictional material: The speaker offers two woven baskets in exchange for one lamp repair. Suggest Sunday afternoon for the exchange, and make clear the other person can propose a different arrangement. Required wording, verbatim: "two woven baskets", "one lamp repair", "Sunday afternoon". Use wording suitable for the other participant in a fictional neighborhood exchange.
+
+NTCW03  Ceremonial oath for a fictional city  | Constrained writing | Complete information
+Family: fresh_cw_civic_ceremonial_oath
+Compose an oath for an invented civic ceremony. The intended readers are participants taking part in the invented city ceremony. I want a solemn and inclusive tone. Use at least 55 words and no more than 85 words in total. Include the following invented details: The oath centers the common table, promises to listen before speaking, and pledges to leave a place for someone not yet present. Do not attach the oath to a real institution. Preserve these exact phrases: "the common table", "listen before speaking", "leave a place".
+
+NTCW04  Rewritten fairy-tale ending  | Constrained writing | Complete information
+Family: fresh_cw_fairytale_alternate_ending
+Write an alternative ending for an original fairy tale. Build the piece around these synthetic facts: The alternate ending has the glass fox give up its jeweled key and use an ordinary stone to hold open the tower door. Include the conclusion the door stayed open. The text must contain "the glass fox", "an ordinary stone", "the door stayed open" verbatim. Address this to readers who know the invented tale of the glass fox. The total word count must fall from 60 to 90, inclusive. The style should feel lyrical and hopeful.
+
+NTCW05  Game quest introduction dialogue  | Constrained writing | Complete information
+Family: fresh_cw_game_quest_instruction
+Write a quest-giver speech for an imaginary adventure game. Write for players receiving the invented quest. These invented details are required: The quest asks players to enter the Lantern Orchard and collect three silver seeds from fallen fruit. The instruction is "do not wake the giant"; the quest giver needs the seeds to relight the village clock. Include each of these exact strings: "the Lantern Orchard", "three silver seeds", "do not wake the giant". Make the voice urgent and adventurous. Write 60 to 90 words altogether.
+
+NTCW06  Introduction to dessert judging rules  | Constrained writing | Complete information
+Family: fresh_cw_contest_rubric_preface
+Explain the judging priorities of a fictional dessert contest. A balanced and explanatory tone suits this piece. The full text must be between 55 and 85 words. Use this fictional material: The fictional dessert contest places texture first and presentation second. There are no points for size. Explain that a small, well-balanced entry can outperform a large decorative one. Required wording, verbatim: "texture first", "presentation second", "no points for size". The audience is judges in the imaginary Crumb Crown contest.
+
+NTCW07  Pronunciation guide for a fictional language  | Constrained writing | Critical field omitted | Included in the 20-case diagnostic subset
+Family: fresh_cw_invented_language_sound_key
+Provide a pronunciation key for an invented language. Aim the wording at actors speaking the invented language Orin. Keep the tone instructive and uncluttered. Include the following invented details: The invented word sela means welcome and is pronounced SEH-lah. Instruct actors to stress the first syllable and keep both vowels clear. It is a fictional pronunciation convention, not a claim about a real language. Preserve these exact phrases: "sela", "SEH-lah", "stress the first syllable".
+
+NTCW08  Alien weather forecast  | Constrained writing | Critical field omitted | Included in the 20-case diagnostic subset
+Family: fresh_cw_alien_weather_bulletin
+Write a weather bulletin set on an imaginary planet. This will be read by listeners in the imaginary settlement of Nacre. Use at least 60 words and no more than 90 words in total. Use a composed and vivid voice.
+
+NTCW09  Packing-puzzle strategy explanation  | Constrained writing | Critical field omitted
+Family: fresh_cw_packing_puzzle_strategy
+Explain a strategy for an invented packing puzzle. Its intended audience: players attempting the invented Box Garden puzzle. I want an analytical and approachable tone.
+
+NTCW10  Dedication for a fictional book  | Constrained writing | Critical field omitted
+Family: fresh_cw_book_dedication
+Compose a dedication for an imaginary book. The style should feel intimate and grateful. Use this fictional material: The dedication recalls an older sister keeping the spare chair beside her lamp and listening to every unfinished page. The author thanks her with the words you waited. Required wording, verbatim: "the spare chair", "every unfinished page", "you waited". Use wording suitable for the fictional author's older sister.
+
+NTCW11  Explanation of a time-travel paradox  | Constrained writing | Critical field omitted
+Family: fresh_cw_time_travel_paradox
+Explain the internal logic of an invented time-travel paradox. The intended readers are readers of a fictional speculative essay. Make the voice curious and precise. The full text must be between 65 and 95 words.
+
+NTCW12  Advertisement for an impossible umbrella  | Constrained writing | Critical field omitted
+Family: fresh_cw_impossible_umbrella_ad
+Write an advertisement for a fantastical umbrella. Address this to readers of an imaginary novelty magazine. A whimsical and exuberant tone suits this piece.
+
+NTCW13  Original counting poem  | Constrained writing | Critical and optional fields omitted | Included in the 20-case diagnostic subset
+Family: fresh_cw_counting_rhyme
+Compose an original counting rhyme. Write for children enjoying an invented read-aloud verse. These invented details are required: The rhyme must count one copper beetle, two velvet moths, and three sleepy stars in that order. Set the scene around a tiny nighttime parade. Include each of these exact strings: "one copper beetle", "two velvet moths", "three sleepy stars".
+
+NTCW14  Abstract for a fictional invention  | Constrained writing | Critical and optional fields omitted | Included in the 20-case diagnostic subset
+Family: fresh_cw_fictional_invention_abstract
+Write a plain-language abstract for an imaginary invention. Use a plain and informative voice. The total word count must fall from 65 to 95, inclusive.
+
+NTCW15  Maze navigation instructions  | Constrained writing | Critical and optional fields omitted
+Family: fresh_cw_maze_navigation_instruction
+Explain how to navigate an invented maze. Aim the wording at players entering the invented Chalk Maze.
+
+NTCW16  Chess-piece monologue  | Constrained writing | Critical and optional fields omitted
+Family: fresh_cw_chess_piece_monologue
+Write a monologue spoken by an imaginary chess piece. Build the piece around these synthetic facts: The speaker is a rook who envies the knight but discovers pride in straight lines. Include I am the rook and the edge of the board. The text must contain "I am the rook", "straight lines", "the edge of the board" verbatim. This will be read by readers of an original miniature monologue.
+
+NTCW17  Moral thought experiment  | Constrained writing | Critical and optional fields omitted
+Family: fresh_cw_moral_thought_experiment
+Present an original moral thought experiment without resolving it. Make the voice neutral and questioning. Keep the complete piece to 65–95 words.
+
+NTCW18  Interpretation of a fictional proverb  | Constrained writing | Critical and optional fields omitted
+Family: fresh_cw_proverb_interpretation
+Interpret an invented proverb with a concrete example. Use wording suitable for readers of an imaginary collection of sayings.
+
+NTCW19  Toast for a naming ceremony  | Constrained writing | Only optional fields omitted | Included in the 20-case diagnostic subset
+Family: fresh_cw_naming_ceremony_toast
+Compose a toast for a fictional naming ceremony. The intended readers are guests at an invented boat naming ceremony. The total word count must fall from 55 to 85, inclusive. Include the following invented details: The fictional boat is named Small Tomorrow. The toast wishes it a steady harbor and room for wonder, connecting the modest name to journeys that begin with a small step. Preserve these exact phrases: "Small Tomorrow", "a steady harbor", "room for wonder".
+
+NTCW20  Introduction to a fictional pen pal  | Constrained writing | Only optional fields omitted | Included in the 20-case diagnostic subset
+Family: fresh_cw_penpal_introduction
+Write a personal introduction to an imaginary pen pal. Build the piece around these synthetic facts: The fictional writer collects odd buttons, rides a yellow bicycle, and wants to hear about the smallest adventure in Ren's week. Mention that the button collection began with a coat pocket discovery. The text must contain "collecting odd buttons", "a yellow bicycle", "the smallest adventure" verbatim. Address this to an imaginary new pen pal named Ren. Write 60 to 90 words altogether.
+
+NTCW21  Action script for a silent-film scene  | Constrained writing | Only optional fields omitted
+Family: fresh_cw_silent_film_scene
+Write a silent-film scene using visible actions. These invented details are required: The scene shows a person hanging an empty picture frame, noticing a passing cloud through its open center, and repositioning it until the cloud is framed. End with the person bows to the wall. Include each of these exact strings: "an empty picture frame", "a passing cloud", "bows to the wall". The full text must be between 60 and 90 words.
+
+NTCW22  Collection metadata cataloging policy  | Constrained writing | Only optional fields omitted
+Family: fresh_cw_metadata_policy_snippet
+Explain a metadata convention for an invented catalog. Keep the complete piece to 55–85 words. Use this fictional material: The catalog uses maker unknown when attribution is missing and date not recorded when no creation date survives. Explain that blank is not a value because empty cells could also mean unfinished work. Required wording, verbatim: "maker unknown", "date not recorded", "blank is not a value". The audience is editors of an invented object catalog.
+
+NTCW23  Explanation of poetry translation choices  | Constrained writing | Only optional fields omitted
+Family: fresh_cw_poem_translation_commentary
+Discuss a translation choice in an invented poem. Make the voice thoughtful and accessible. Use at least 60 words and no more than 90 words in total. Include the following invented details: The invented translation retains a pocket of rain because it conveys portable sadness. Explain the choice using kept the image and lost the rhyme, and note that matching both would make the sentence awkward. Preserve these exact phrases: "a pocket of rain", "kept the image", "lost the rhyme".
+
+NTCW24  Clock-face design critique  | Constrained writing | Answer unavailable | Included in the 20-case diagnostic subset
+Family: fresh_cw_clock_face_design_critique
+Critique the legibility of an imaginary clock design. Build the piece around these synthetic facts: The imaginary clock uses thin silver hands over a pale dial. Critique the weak visual contrast and suggest a darker hour hand while preserving the uncluttered face. Do not invent test results. The text must contain "thin silver hands", "pale dial", "a darker hour hand" verbatim. The total word count must fall from 60 to 90, inclusive.
+
+NTCW25  Cliffhanger ending for a radio drama  | Constrained writing | Answer unavailable
+Family: fresh_cw_audio_drama_cliffhanger
+Write the final scene of an original audio drama. Its intended audience: listeners at the end of an original drama episode. These invented details are required: The final scene has three knocks on a sealed door. The protagonist hears her own voice from behind it saying Do not open it, although she is standing outside. End before the door opens. Include each of these exact strings: "three knocks", "her own voice", "Do not open it". Write 60 to 90 words altogether.
+
+NTCW26  Worktable layout proposal  | Constrained writing | Answer unavailable
+Family: fresh_cw_desk_layout_proposal
+Propose a desk arrangement for a fictional shared workspace. Use a practical and considerate voice. The full text must be between 55 and 85 words. Use this fictional material: The layout places frequently shared stationery in a shared tray, drawing materials on the window side, and keeps a clear center for exchanging large sheets. Each person retains one private corner. Required wording, verbatim: "shared tray", "window side", "clear center".
+
+NTCW27  Achievement certificate citation  | Constrained writing | Answer unavailable
+Family: fresh_cw_achievement_certificate_citation
+Compose the citation on a fictional achievement certificate. Keep the complete piece to 50–80 words. Include the following invented details: The fictional certificate recognizes patient experimentation in developing the paper turbine. Praise turning questions into trials and recording failed versions as carefully as successful ones; do not claim an external prize. Preserve these exact phrases: "patient experimentation", "the paper turbine", "turning questions into trials".
+
+NTCW28  Synopsis of a fictional play  | Constrained writing | Execute immediately | Included in the 20-case diagnostic subset
+Family: fresh_cw_theatrical_synopsis
+Write a synopsis of an original play for a program. Build the piece around these synthetic facts: The fictional play The Unsent Window follows a retired locksmith finding letters addressed to nobody in a wall cavity. Describe the central conflict over whether to read them, without disclosing the final choice. The text must contain "The Unsent Window", "a retired locksmith", "letters addressed to nobody" verbatim. Address this to theatergoers choosing the invented play. Use at least 60 words and no more than 90 words in total. Please produce the text now without asking follow-up questions.
+
+NTCW29  Station identification for a fictional radio station  | Constrained writing | Execute immediately
+Family: fresh_cw_radio_station_identifier
+Create a station identification script for an imaginary radio channel. These invented details are required: The imaginary station is Lantern Frequency, carrying stories after sunset. Its identification script should connect a small lamp image with listening and close with stay a little longer. Include each of these exact strings: "Lantern Frequency", "stories after sunset", "stay a little longer". Make the voice calm and companionable. The total word count must fall from 50 to 80, inclusive. Go ahead immediately; use your judgment for any remaining stylistic choice.
+
+NTCW30  Prompt for a blank collection page  | Constrained writing | Execute immediately
+Family: fresh_cw_empty_state_guidance
+Write empty-state guidance for a fictional collection interface. Write 50 to 80 words altogether. Use this fictional material: The empty collection screen should say Your shelf is empty and offer Add a keepsake. Explain that each entry needs a title and a note, and that the first entry can be revised later. Required wording, verbatim: "Your shelf is empty", "Add a keepsake", "a title and a note". Execute now and do not pause for clarification.
+
+NTSP01  Learning volcanic processes  | Study planning | Complete information | Included in the 20-case diagnostic subset
+Family: nsp_volcanology
+I am reading an illustrated introduction to volcanoes. Arrange revision of the eruption processes for me. Start on 2027-02-01. Use only dates from 2027-02-01 through 2027-02-03, including the final date. I can spare at most 30 minutes per day, counting every topic together. Include "Magma Viscosity", "Eruption Styles", "Volcanic Deposits", using those topic names. Allocate at least 20 cumulative minutes to every topic. Within that coverage, "Magma Viscosity" needs at least 30 total minutes. I specifically require a minimum of 35 minutes altogether on "Volcanic Deposits".
+
+NTSP02  Learning glacier movement  | Study planning | Complete information | Included in the 20-case diagnostic subset
+Family: nsp_glaciology
+A geography lesson includes photographs of moving ice. Build a study timetable for glacier dynamics. Start on 2027-02-01. The syllabus consists of "Glacier Mass Balance", "Crevasse Formation", "Basal Sliding"; each named topic needs a minimum of 25 minutes in total. My study window closes on 2027-02-04; that date is still available. I would prefer to encounter "Basal Sliding" early; treat that as a suggestion only, not a time requirement. The total of all sessions on any one date must not exceed 35 minutes.
+
+NTSP03  Groundwater hydrology  | Study planning | Complete information
+Family: nsp_groundwater_hydrology
+I need to interpret groundwater diagrams in an environmental course. Organize the relevant study into sessions. Start on 2027-02-01. Even if a day has several short sessions, their combined length must stay within 45 minutes. Cover these exact topic labels: "Aquifer Recharge", "Hydraulic Head", "Well Drawdown". Give each one at least 10 minutes over the whole plan. Finish all scheduled study no later than 2027-02-05, inclusive. Give "Well Drawdown" at least 35 minutes in total; this is a firm extra requirement.
+
+NTSP04  Learning to read heraldry  | Study planning | Complete information
+Family: nsp_heraldry
+I would like to identify the components of heraldic shields on a heritage walk. Plan my preparation. Start on 2027-02-01. Use the exact labels "Tinctures", "Shield Divisions", "Heraldic Charges" in the schedule, with at least 15 total minutes assigned to each. Within that coverage, "Tinctures" needs at least 25 total minutes. I have no preferred topic order and no additional minimum-time requirements. There is a firm ceiling of 30 study minutes on each date. The last usable study date is 2027-02-06, and sessions may fall on that day.
+
+NTSP05  Theory of canine scent training  | Study planning | Complete information
+Family: nsp_canine_scent_work
+I am observing a canine scent-work class and want to understand its training terms. Set up a theory-study plan. Start on 2027-02-01. Keep the timetable within the window ending 2027-02-07, with the end date included. Required coverage is "Scent Imprinting", "Search Grids", "Indication Cues". The minimum study allocation for each topic is 20 minutes across all dates. My daily study allowance is 50 minutes maximum, not 50 minutes per topic. I specifically require a minimum of 40 minutes altogether on "Indication Cues".
+
+NTSP06  CNC milling toolpath theory  | Study planning | Complete information
+Family: nsp_cnc_milling
+Before a supervised CNC class, I need to read toolpath illustrations. Lay out my study of the milling concepts. Start on 2027-02-01. Keep each daily total at or below 40 minutes across all study blocks. I can still study on 2027-02-03, but no study should be scheduled after it. I need 25 minutes or more in total on each of "Work Offsets", "Tool Compensation", "Stepovers", "Climb Milling". Those are the required topic labels. I would prefer to encounter "Climb Milling" early; treat that as a suggestion only, not a time requirement.
+
+NTSP07  Note-taking for consecutive interpreting  | Study planning | Critical field omitted | Included in the 20-case diagnostic subset
+Family: nsp_consecutive_interpreting
+I am practising consecutive interpreting with short recordings. Help me schedule the note-taking skills. Start on 2027-02-01. Use only dates from 2027-02-01 through 2027-02-04, including the final date. I can spare at most 55 minutes per day, counting every topic together. Give "Reformulation" at least 25 minutes in total; this is a firm extra requirement.
+
+NTSP08  Furniture upholstery techniques  | Study planning | Critical field omitted | Included in the 20-case diagnostic subset
+Family: nsp_furniture_upholstery
+I want to follow the stages shown in a traditional upholstery manual. Prepare a compact learning schedule. Start on 2027-02-01. The syllabus consists of "Webbing Tension", "Spring Lashing", "Fabric Cutting"; each named topic needs a minimum of 15 minutes in total. My study window closes on 2027-02-05; that date is still available.
+
+NTSP09  Principles of mechanical clock escapements  | Study planning | Critical field omitted
+Family: nsp_clock_escapements
+A horology club has shared diagrams of mechanical clock movements. Plan my study of how the parts relate. Start on 2027-02-01. Cover these exact topic labels: "Anchor Escapements", "Balance Wheels", "Gear Trains". Give each one at least 20 minutes over the whole plan. A little variety in the ordering would be nice, but it is optional and adds no minimum-time requirements.
+
+NTSP10  Identifying tooth morphology  | Study planning | Critical field omitted
+Family: nsp_dental_anatomy
+I have a tooth-identification worksheet for an anatomy class. Arrange a short revision schedule. Start on 2027-02-01. Use the exact labels "Incisors", "Premolars", "Molars" in the schedule, with at least 25 total minutes assigned to each. Within that coverage, "Incisors" needs at least 35 total minutes. There is a firm ceiling of 70 study minutes on each date. The last usable study date is 2027-02-07, and sessions may fall on that day.
+
+NTSP11  Learning bridge bidding  | Study planning | Critical field omitted
+Family: nsp_contract_bridge_bidding
+I want to make sense of a beginner contract-bridge bidding lesson. Divide the revision into study sessions. Start on 2027-02-01. My daily study allowance is 25 minutes maximum, not 25 minutes per topic.
+
+NTSP12  Learning incident coordination roles  | Study planning | Critical field omitted
+Family: nsp_incident_coordination
+A tabletop coordination exercise uses unfamiliar incident-management roles. Give me a study timetable for the concepts. Start on 2027-02-01. I can still study on 2027-02-04, but no study should be scheduled after it. I have no preferred topic order and no additional minimum-time requirements.
+
+NTSP13  Learning academic peer review  | Study planning | Critical and optional fields omitted | Included in the 20-case diagnostic subset
+Family: nsp_scientific_peer_review
+I will discuss sample referee reports in a research-skills seminar. Structure my preparation for scientific peer review. Start on 2027-02-01. I can spare at most 45 minutes per day, counting every topic together. Include "Methods Appraisal", "Reviewer Conflicts", "Constructive Reports", using those topic names. Allocate at least 20 cumulative minutes to every topic. Within that coverage, "Methods Appraisal" needs at least 30 total minutes.
+
+NTSP14  Learning basic insurance concepts  | Study planning | Critical and optional fields omitted | Included in the 20-case diagnostic subset
+Family: nsp_insurance_concepts
+I am studying an introductory insurance glossary for class. Make a revision schedule for the core concepts. Start on 2027-02-01. The syllabus consists of "Indemnity", "Insurable Interest", "Subrogation"; each named topic needs a minimum of 25 minutes in total. My study window closes on 2027-02-06; that date is still available.
+
+NTSP15  Stained-glass assembly theory  | Study planning | Critical and optional fields omitted
+Family: nsp_stained_glass
+I want to understand the assembly drawings in a stained-glass course. Schedule the theory learning before the demonstration. Start on 2027-02-01. Even if a day has several short sessions, their combined length must stay within 50 minutes. Finish all scheduled study no later than 2027-02-07, inclusive.
+
+NTSP16  Coiled basketry techniques  | Study planning | Critical and optional fields omitted
+Family: nsp_coiled_basketry
+A craft group is comparing coiled baskets. I need a study plan for recognizing how they are constructed. Start on 2027-02-01. Use the exact labels "Foundation Bundles", "Stitch Spacing", "Rim Finishing" in the schedule, with at least 15 total minutes assigned to each. Within that coverage, "Foundation Bundles" needs at least 25 total minutes.
+
+NTSP17  Learning dough lamination  | Study planning | Critical and optional fields omitted
+Family: nsp_pastry_lamination
+I am reviewing lesson diagrams about laminated pastry. Arrange the preparation as a few study sessions. Start on 2027-02-01. My daily study allowance is 55 minutes maximum, not 55 minutes per topic.
+
+NTSP18  Learning cheese maturation  | Study planning | Critical and optional fields omitted
+Family: nsp_cheese_affinage
+I want to understand the vocabulary used in a cheese-affinage lecture. Build a compact reading schedule. Start on 2027-02-01. I can still study on 2027-02-05, but no study should be scheduled after it.
+
+NTSP19  Learning perfume structure  | Study planning | Only optional fields omitted | Included in the 20-case diagnostic subset
+Family: nsp_perfume_structure
+A perfume appreciation class asks me to describe a fragrance as it changes. Organize my study of its composition structure. Start on 2027-02-01. Use only dates from 2027-02-01 through 2027-02-06, including the final date. I can spare at most 65 minutes per day, counting every topic together. Include "Top Notes", "Heart Notes", "Base Notes", using those topic names. Allocate at least 10 cumulative minutes to every topic. Within that coverage, "Top Notes" needs at least 20 total minutes.
+
+NTSP20  Brush movement practice  | Study planning | Only optional fields omitted | Included in the 20-case diagnostic subset
+Family: nsp_brush_calligraphy
+I am trying to make my brush strokes more deliberate in calligraphy practice. Please schedule the mechanics I need to study. Start on 2027-02-01. The syllabus consists of "Stroke Entry", "Ink Loading", "Brush Pressure"; each named topic needs a minimum of 15 minutes in total. My study window closes on 2027-02-07; that date is still available. The total of all sessions on any one date must not exceed 70 minutes.
+
+NTSP21  Reading dance notation  | Study planning | Only optional fields omitted
+Family: nsp_dance_notation
+A dance-history course includes notation examples that I cannot yet read. Lay out a study timetable for the symbols. Start on 2027-02-01. Even if a day has several short sessions, their combined length must stay within 25 minutes. Cover these exact topic labels: "Movement Symbols", "Staff Layout", "Direction Signs". Give each one at least 20 minutes over the whole plan. Finish all scheduled study no later than 2027-02-03, inclusive.
+
+NTSP22  Learning rugby officiating  | Study planning | Only optional fields omitted
+Family: nsp_rugby_officiating
+I am following a rugby officiating lesson and need to revise its decision categories. Make a study schedule. Start on 2027-02-01. Use the exact labels "Advantage Decisions", "Offside Lines", "Restart Procedures" in the schedule, with at least 25 total minutes assigned to each. Within that coverage, "Advantage Decisions" needs at least 35 total minutes. There is a firm ceiling of 35 study minutes on each date. The last usable study date is 2027-02-04, and sessions may fall on that day.
+
+NTSP23  Learning spatial expression in sign language  | Study planning | Only optional fields omitted
+Family: nsp_sign_language_space
+I am working through a sign-language lesson on using space to convey meaning. Plan short revision sessions. Start on 2027-02-01. Keep the timetable within the window ending 2027-02-05, with the end date included. Required coverage is "Referent Placement", "Classifier Handshapes", "Role Shifts". The minimum study allocation for each topic is 10 minutes across all dates. My daily study allowance is 45 minutes maximum, not 45 minutes per topic.
+
+NTSP24  Learning retail inventory management  | Study planning | Answer unavailable | Included in the 20-case diagnostic subset
+Family: nsp_inventory_operations
+I need to understand a training workbook about retail stock control. Arrange the learning into a timetable. Start on 2027-02-01. Keep each daily total at or below 30 minutes across all study blocks. I can still study on 2027-02-06, but no study should be scheduled after it. I need 15 minutes or more in total on each of "Stock Counts", "Reorder Points", "Safety Stock". Those are the required topic labels.
+
+NTSP25  Airport ground marshalling theory  | Study planning | Answer unavailable
+Family: nsp_aircraft_marshalling
+A ground-operations classroom exercise uses aircraft-marshalling diagrams. Organize my theory revision. Start on 2027-02-01. Use only dates from 2027-02-01 through 2027-02-07, including the final date. I can spare at most 50 minutes per day, counting every topic together. Include "Wand Signals", "Stand Clearances", "Pushback Coordination", using those topic names. Allocate at least 20 cumulative minutes to every topic. Within that coverage, "Wand Signals" needs at least 30 total minutes.
+
+NTSP26  Learning product usability testing  | Study planning | Answer unavailable
+Family: nsp_usability_testing
+I will help run a classroom usability study. Prepare a learning schedule for facilitating the sessions. Start on 2027-02-01. The syllabus consists of "Task Scenarios", "Think-aloud Prompts", "Usability Findings"; each named topic needs a minimum of 25 minutes in total. My study window closes on 2027-02-03; that date is still available. The total of all sessions on any one date must not exceed 40 minutes.
+
+NTSP27  Learning drumhead tuning  | Study planning | Answer unavailable
+Family: nsp_drum_tuning
+I want to understand the steps described in an acoustic drum-tuning lesson. Create a short study-and-practice plan. Start on 2027-02-01. Even if a day has several short sessions, their combined length must stay within 55 minutes. Cover these exact topic labels: "Lug Sequencing", "Head Seating", "Resonant Head Tension". Give each one at least 10 minutes over the whole plan. Finish all scheduled study no later than 2027-02-04, inclusive.
+
+NTSP28  Learning the chemistry of clothing stains  | Study planning | Execute immediately | Included in the 20-case diagnostic subset
+Family: nsp_stain_removal_chemistry
+A household-science class compares the chemistry of different laundry stains. Schedule my revision of those concepts. Start on 2027-02-01. Use the exact labels "Protein Stains", "Oil Emulsification", "Dye Transfer" in the schedule, with at least 15 total minutes assigned to each. Within that coverage, "Protein Stains" needs at least 25 total minutes. There is a firm ceiling of 60 study minutes on each date. The last usable study date is 2027-02-05, and sessions may fall on that day. Please produce the schedule now without asking me follow-up questions.
+
+NTSP29  Learning ice hockey tactics  | Study planning | Execute immediately
+Family: nsp_hockey_tactics
+I am reviewing ice-hockey game diagrams before a tactics discussion. Build a compact study timetable. Start on 2027-02-01. Keep the timetable within the window ending 2027-02-06, with the end date included. Required coverage is "Forechecking", "Defensive Zones", "Line Changes". The minimum study allocation for each topic is 20 minutes across all dates. My daily study allowance is 65 minutes maximum, not 65 minutes per topic. Please produce the schedule now without asking me follow-up questions.
+
+NTSP30  Learning fountain pen repair and structure  | Study planning | Execute immediately
+Family: nsp_fountain_pen_restoration
+A repair-history workshop has diagrams of vintage fountain pens. Plan my study of their restoration concepts. Start on 2027-02-01. Keep each daily total at or below 45 minutes across all study blocks. I can still study on 2027-02-04, but no study should be scheduled after it. I need 30 minutes or more in total on each of "Nib Alignment", "Feed Channels", "Sac Replacement". Those are the required topic labels. Please produce the schedule now without asking me follow-up questions.
+

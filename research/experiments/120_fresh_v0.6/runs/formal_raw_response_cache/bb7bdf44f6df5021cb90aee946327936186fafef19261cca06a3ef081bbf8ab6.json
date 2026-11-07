@@ -1,0 +1,64 @@
+{
+  "key": "bb7bdf44f6df5021cb90aee946327936186fafef19261cca06a3ef081bbf8ab6",
+  "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Advantage Decisions\",\n      \"minutes\": 35\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Offside Lines\",\n      \"minutes\": 35\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Restart Procedures\",\n      \"minutes\": 35\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Advantage Decisions\",\n      \"minutes\": 25\n    }\n  ],\n  \"summary\": \"The study schedule covers all required topics—'Advantage Decisions', 'Offside Lines', and 'Restart Procedures'—with a total of at least 35 minutes on 'Advantage Decisions' and at least 25 minutes on each of the other two topics. All sessions are within the allowed date window (2027-02-01 to 2027-02-04) and respect the 35-minute daily limit. The total study time is 130 minutes, distributed across four days.\"\n}",
+  "source_case_id": "NTSP22",
+  "source_variant": "exhaustive",
+  "response_sha256": "33160b2f4201e1c3ad4075b15b9ed3b64024e54e318f633c26947726e3776cee",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "generation",
+    "repair": false,
+    "repair_kind": null,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Complete the user's task using only the original request, public context and the visible clarification exchanges.\nDo not ask more questions. Honor all available requirements, including exact phrases and the full-text word count.\nvisible_constraints is a deterministic, partial checklist derived only from that visible text, not new user requirements.\nAlways honor the original visible text as well; absence from the checklist does not remove a requirement.\nDo not invent event details, promises, historical facts or beneficiary groups. Omit unavailable specifics or use clearly marked placeholders.\nTreat concrete dates, clock times, addresses, names, contact details, links, services and free-access claims as facts requiring visible support.\nPlausibility is not evidence. Do not add these details to make a notice sound complete or to reach its minimum word count.\nDo not claim a link is provided when none is available. Use neutral connective wording without adding factual commitments.\nReturn exactly one JSON object matching the supplied output schema, without Markdown fences or surrounding commentary.\nFor writing, put ALL headings, greetings, body and signature inside text.\nCopy required literal phrases unchanged. Draft near the middle of the full-text word range, then check the complete text length.\nWhen revising a length failure, rewrite the whole text toward the range midpoint while retaining every required literal; do not merely append or trim a final sentence.\nWord counting includes every heading and signature: letter/digit sequences, with internal apostrophes or hyphens, count as words.\nFor study plans, each schedule item has one complete topic name, a real ISO date and positive integer minutes;\nfirst compute each topic's required total, then allocate those minutes across the permitted days without exceeding any day's combined limit.\nA topic-specific minimum replaces a smaller general minimum for that topic; it is not an extra requirement to add twice.\nSplit a topic across days when needed. Use a compact schedule with only necessary sessions; do not repeat every topic on every day.\nCheck the sum of ALL sessions per date and the sum per exact topic label before returning. Keep summary short and consistent with schedule.\nIf a deadline or daily allowance is unknown, use a short conservative plan without claiming a guessed bound was supplied.\nNever add an unsupported numeric constraint. If visible requirements conflict, explain the conflict in the output rather than claim compliance.\nWrite in English."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"study_planning\", \"initial_request\": \"I am following a rugby officiating lesson and need to revise its decision categories. Make a study schedule. Start on 2027-02-01. Use the exact labels \\\"Advantage Decisions\\\", \\\"Offside Lines\\\", \\\"Restart Procedures\\\" in the schedule, with at least 25 total minutes assigned to each. Within that coverage, \\\"Advantage Decisions\\\" needs at least 35 total minutes. There is a firm ceiling of 35 study minutes on each date. The last usable study date is 2027-02-04, and sessions may fall on that day.\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [{\"field_id\": \"available_time\", \"question\": \"How many minutes can you study per day at most?\", \"status\": \"available\", \"answer_text\": \"There is a firm ceiling of 35 study minutes on each date.\"}], \"visible_constraints\": {\"version\": \"visible-constraints-0.4.0\", \"domain\": \"study_planning\", \"constraints\": [{\"kind\": \"date_window\", \"parameters\": {\"start_date\": \"2027-02-01\"}, \"source\": [{\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"Start on 2027-02-01.\"}]}], \"warnings\": [{\"reason\": \"date_without_unambiguous_study_window_role\", \"source\": {\"source\": \"initial_request\", \"field_id\": null, \"quote\": \"The last usable study date is 2027-02-04, and sessions may fall on that day.\"}}]}, \"output_schema\": {\"$schema\": \"https://json-schema.org/draft/2020-12/schema\", \"type\": \"object\", \"properties\": {\"schedule\": {\"type\": \"array\", \"minItems\": 1, \"items\": {\"type\": \"object\", \"properties\": {\"date\": {\"type\": \"string\", \"format\": \"date\", \"pattern\": \"^\\\\d{4}-\\\\d{2}-\\\\d{2}$\"}, \"topic\": {\"type\": \"string\", \"minLength\": 1, \"pattern\": \"\\\\S\"}, \"minutes\": {\"type\": \"integer\", \"minimum\": 1}}, \"required\": [\"date\", \"topic\", \"minutes\"], \"additionalProperties\": false}}, \"summary\": {\"type\": \"string\", \"minLength\": 1, \"pattern\": \"\\\\S\"}}, \"required\": [\"schedule\", \"summary\"], \"additionalProperties\": false}}"
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "key": "2daed57084f5e49286c637ac362aec095158fc876de9431d9a713d4eba9189bd",
+  "raw": "{\"action\":\"ACT\"}",
+  "source_case_id": "NTCW21",
+  "source_variant": "prompt_only",
+  "response_sha256": "d5ab1a0a587b1722056e15a1f6a83c0d0b2745ce4c2037361479b18f77e47c3f",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "decision",
+    "repair": false,
+    "repair_kind": null,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Choose whether to clarify one unresolved field or act now to complete the user's task.\nAsk only when its likely benefit to the result justifies another question. Optional preferences may have reasonable defaults.\nConsider only the public request, visible exchanges, current field state, eligible fields and remaining question budget.\nReturn exactly {\"action\":\"ASK\",\"field_id\":\"one_field_id\"} or {\"action\":\"ACT\"}.\nNo explanation, extra keys or Markdown. Do not predict unavailable hidden answers."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"constrained_writing\", \"initial_request\": \"Write a silent-film scene using visible actions. These invented details are required: The scene shows a person hanging an empty picture frame, noticing a passing cloud through its open center, and repositioning it until the cloud is framed. End with the person bows to the wall. Include each of these exact strings: \\\"an empty picture frame\\\", \\\"a passing cloud\\\", \\\"bows to the wall\\\". The full text must be between 60 and 90 words.\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [{\"field_id\": \"tone\", \"question\": \"What tone would you like?\", \"status\": \"available\", \"answer_text\": \"I want a visual and economical tone.\"}], \"field_values\": {\"audience\": null, \"tone\": \"I want a visual and economical tone.\", \"length\": \"The full text must be between 60 and 90 words.\", \"required_content\": \"These invented details are required: The scene shows a person hanging an empty picture frame, noticing a passing cloud through its open center, and repositioning it until the cloud is framed.\\nEnd with the person bows to the wall.\\nInclude each of these exact strings: \\\"an empty picture frame\\\", \\\"a passing cloud\\\", \\\"bows to the wall\\\".\"}, \"eligible_fields\": [\"audience\"], \"remaining_question_items\": 2, \"fields\": [{\"field_id\": \"audience\", \"label_zh\": \"受众\", \"description_zh\": \"目标读者或收件人。不得凭体裁猜测具体受众。\", \"question_template\": \"Who is the intended audience?\"}, {\"field_id\": \"tone\", \"label_zh\": \"语气\", \"description_zh\": \"语气或明确无偏好。缺省语气不视为已提供。\", \"question_template\": \"What tone would you like?\"}, {\"field_id\": \"length\", \"label_zh\": \"长度\", \"description_zh\": \"全文英文词数范围或明确无长度要求。\", \"question_template\": \"What word-count range should the full text follow?\"}, {\"field_id\": \"required_content\", \"label_zh\": \"必含内容\", \"description_zh\": \"用户明确要求的具体事实或逐字内容。仅有主题或体裁不算已提供；明确无必含内容则算已解决。\", \"question_template\": \"What information or exact wording must the text include?\"}]}"
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

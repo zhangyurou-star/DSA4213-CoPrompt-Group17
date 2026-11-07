@@ -1,0 +1,75 @@
+{
+  "cache_key": "536c84399ac1f13723f033c2efe6d9c4fc11505f420424f313c6b67aa6adc1d7",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [],
+    "length": [],
+    "required_content": [
+      "S1"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 54,
+      "text": "Interpret an invented proverb with a concrete example."
+    },
+    {
+      "id": "S2",
+      "start": 55,
+      "end": 126,
+      "text": "Use wording suitable for readers of an imaginary collection of sayings."
+    }
+  ],
+  "field_values": {
+    "audience": "Use wording suitable for readers of an imaginary collection of sayings.",
+    "tone": null,
+    "length": null,
+    "required_content": "Interpret an invented proverb with a concrete example."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 55,
+        "end": 126,
+        "quote": "Use wording suitable for readers of an imaginary collection of sayings."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S1",
+        "start": 0,
+        "end": 54,
+        "quote": "Interpret an invented proverb with a concrete example."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[],\"length\":[],\"required_content\":[\"S1\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [],
+          "length": [],
+          "required_content": [
+            "S1"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

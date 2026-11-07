@@ -1,0 +1,102 @@
+{
+  "cache_key": "ed07b788054ef8e6c252dce4167a7ae25fd1b5a5c0802bb745826cc73ffc5fcf",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [],
+    "length": [],
+    "required_content": [
+      "S3",
+      "S5"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 35,
+      "text": "Compose an original counting rhyme."
+    },
+    {
+      "id": "S2",
+      "start": 36,
+      "end": 93,
+      "text": "Write for children enjoying an invented read-aloud verse."
+    },
+    {
+      "id": "S3",
+      "start": 94,
+      "end": 226,
+      "text": "These invented details are required: The rhyme must count one copper beetle, two velvet moths, and three sleepy stars in that order."
+    },
+    {
+      "id": "S4",
+      "start": 227,
+      "end": 272,
+      "text": "Set the scene around a tiny nighttime parade."
+    },
+    {
+      "id": "S5",
+      "start": 273,
+      "end": 372,
+      "text": "Include each of these exact strings: \"one copper beetle\", \"two velvet moths\", \"three sleepy stars\"."
+    }
+  ],
+  "field_values": {
+    "audience": "Write for children enjoying an invented read-aloud verse.",
+    "tone": null,
+    "length": null,
+    "required_content": "These invented details are required: The rhyme must count one copper beetle, two velvet moths, and three sleepy stars in that order.\nInclude each of these exact strings: \"one copper beetle\", \"two velvet moths\", \"three sleepy stars\"."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 36,
+        "end": 93,
+        "quote": "Write for children enjoying an invented read-aloud verse."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 94,
+        "end": 226,
+        "quote": "These invented details are required: The rhyme must count one copper beetle, two velvet moths, and three sleepy stars in that order."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 273,
+        "end": 372,
+        "quote": "Include each of these exact strings: \"one copper beetle\", \"two velvet moths\", \"three sleepy stars\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[],\"length\":[],\"required_content\":[\"S3\",\"S5\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [],
+          "length": [],
+          "required_content": [
+            "S3",
+            "S5"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

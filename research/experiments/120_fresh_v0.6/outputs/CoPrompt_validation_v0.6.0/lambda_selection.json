@@ -1,0 +1,31 @@
+{
+  "selected_lambda": 0.25,
+  "target_mean_questions": 2,
+  "target_met": true,
+  "candidate_statistics": [
+    {
+      "lambda_value": 0,
+      "mean_quality": 0.7541666666666667,
+      "mean_question_items": 1.15,
+      "case_count": 20
+    },
+    {
+      "lambda_value": 0.25,
+      "mean_quality": 0.7541666666666667,
+      "mean_question_items": 1.15,
+      "case_count": 20
+    },
+    {
+      "lambda_value": 0.5,
+      "mean_quality": 0.75,
+      "mean_question_items": 0.45,
+      "case_count": 20
+    }
+  ],
+  "arithmetic": "exact fractions from per-case constraint passes; decimal-exact fallback for quality-only fixtures",
+  "selection_rule": "quality_desc, questions_asc, lambda_desc among questions<=2; otherwise questions_asc, quality_desc, lambda_desc",
+  "freeze_sha256": "37a3d9472a7d722c3eef2f9b85205c982f2dd3fcdd24e11b373151689dcdfa0f",
+  "validation_run": "runs/formal_v0.6.0_validation",
+  "validation_trajectories_sha256": "2dbb8d4d651bf5a6b1a9d30f334848220edddd97ca70032cccf072d643ef60d5",
+  "selected_utc": "2026-10-19T15:28:42.284457+00:00"
+}

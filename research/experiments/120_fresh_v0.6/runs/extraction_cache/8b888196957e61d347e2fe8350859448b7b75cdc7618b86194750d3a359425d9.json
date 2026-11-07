@@ -1,0 +1,127 @@
+{
+  "cache_key": "8b888196957e61d347e2fe8350859448b7b75cdc7618b86194750d3a359425d9",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S7"
+    ],
+    "available_time": [
+      "S4"
+    ],
+    "topics": [
+      "S5",
+      "S6"
+    ],
+    "priorities": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 75,
+      "text": "I want to understand the steps described in an acoustic drum-tuning lesson."
+    },
+    {
+      "id": "S2",
+      "start": 76,
+      "end": 115,
+      "text": "Create a short study-and-practice plan."
+    },
+    {
+      "id": "S3",
+      "start": 116,
+      "end": 136,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 137,
+      "end": 229,
+      "text": "Even if a day has several short sessions, their combined length must stay within 55 minutes."
+    },
+    {
+      "id": "S5",
+      "start": 230,
+      "end": 320,
+      "text": "Cover these exact topic labels: \"Lug Sequencing\", \"Head Seating\", \"Resonant Head Tension\"."
+    },
+    {
+      "id": "S6",
+      "start": 321,
+      "end": 375,
+      "text": "Give each one at least 10 minutes over the whole plan."
+    },
+    {
+      "id": "S7",
+      "start": 376,
+      "end": 439,
+      "text": "Finish all scheduled study no later than 2027-02-04, inclusive."
+    }
+  ],
+  "field_values": {
+    "deadline": "Finish all scheduled study no later than 2027-02-04, inclusive.",
+    "available_time": "Even if a day has several short sessions, their combined length must stay within 55 minutes.",
+    "topics": "Cover these exact topic labels: \"Lug Sequencing\", \"Head Seating\", \"Resonant Head Tension\".\nGive each one at least 10 minutes over the whole plan.",
+    "priorities": null
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 376,
+        "end": 439,
+        "quote": "Finish all scheduled study no later than 2027-02-04, inclusive."
+      }
+    ],
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 137,
+        "end": 229,
+        "quote": "Even if a day has several short sessions, their combined length must stay within 55 minutes."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 230,
+        "end": 320,
+        "quote": "Cover these exact topic labels: \"Lug Sequencing\", \"Head Seating\", \"Resonant Head Tension\"."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 321,
+        "end": 375,
+        "quote": "Give each one at least 10 minutes over the whole plan."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S7\"],\"available_time\":[\"S4\"],\"topics\":[\"S5\",\"S6\"],\"priorities\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S7"
+          ],
+          "available_time": [
+            "S4"
+          ],
+          "topics": [
+            "S5",
+            "S6"
+          ],
+          "priorities": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

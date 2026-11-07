@@ -1,0 +1,64 @@
+{
+  "key": "589582b9f959a55f4a1e0017f201684debfad4d6c37701b43d08816540645f52",
+  "raw": "{\"ratings\":[{\"field_id\":\"available_time\",\"importance\":0.5,\"uncertainty\":1,\"reason\":\"Daily study capacity affects schedule feasibility but a default assumption (e.g., 60 min/day) is reasonable without explicit input.\"},{\"field_id\":\"priorities\",\"importance\":0.5,\"uncertainty\":1,\"reason\":\"Topic priorities could influence scheduling order but no explicit preferences were stated; a neutral distribution is plausible.\"}]}",
+  "source_case_id": "NTSP14",
+  "source_variant": "value_based",
+  "response_sha256": "821b4188685b8dab68bc2a5d44595e6748be8d75ef0a7e926e28511881b5c710",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "decision",
+    "repair": false,
+    "repair_kind": null,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Rate EVERY eligible unresolved field using the public request and visible interaction only.\nImportance I: 0 = little effect; 0.5 = local preference; 1 = could change core content or feasibility.\nUncertainty U: 0.5 = a reasonable default exists; 1 = different possible answers may materially change the result.\nThese are heuristic levels, not calibrated probabilities. Never inspect or infer hidden answer availability or grading labels.\nReturn exactly {\"ratings\":[{\"field_id\":\"...\",\"importance\":0.5,\"uncertainty\":1,\"reason\":\"brief rationale\"}, ...]}.\nCover each eligible field exactly once. Importance must be 0, 0.5 or 1. Uncertainty must be 0.5 or 1.\nNo action recommendation, extra keys or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"study_planning\", \"initial_request\": \"I am studying an introductory insurance glossary for class. Make a revision schedule for the core concepts. Start on 2027-02-01. The syllabus consists of \\\"Indemnity\\\", \\\"Insurable Interest\\\", \\\"Subrogation\\\"; each named topic needs a minimum of 25 minutes in total. My study window closes on 2027-02-06; that date is still available.\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [{\"field_id\": \"deadline\", \"question\": \"What is the last date available for study, inclusive?\", \"status\": \"available\", \"answer_text\": \"My study window closes on 2027-02-06; that date is still available.\"}], \"field_values\": {\"deadline\": \"My study window closes on 2027-02-06; that date is still available.\", \"available_time\": null, \"topics\": \"The syllabus consists of \\\"Indemnity\\\", \\\"Insurable Interest\\\", \\\"Subrogation\\\"; each named topic needs a minimum of 25 minutes in total.\", \"priorities\": null}, \"eligible_fields\": [\"available_time\", \"priorities\"], \"remaining_question_items\": 2, \"fields\": [{\"field_id\": \"deadline\", \"label_zh\": \"截止日\", \"description_zh\": \"最后可学习日期，包含当日。起始日始终在初始请求给定。\", \"question_template\": \"What is the last date available for study, inclusive?\"}, {\"field_id\": \"available_time\", \"label_zh\": \"每日时长\", \"description_zh\": \"每天可学习的分钟上限。本试跑采用统一每日上限。\", \"question_template\": \"How many minutes can you study per day at most?\"}, {\"field_id\": \"topics\", \"label_zh\": \"学习主题\", \"description_zh\": \"主题名称与覆盖要求，可含每个主题的最低总分钟数。\", \"question_template\": \"Which topics must be covered, and are there minimum minutes for each?\"}, {\"field_id\": \"priorities\", \"label_zh\": \"优先要求\", \"description_zh\": \"优先主题及相关硬性时长，或明确无偏好；软偏好不自动计分。\", \"question_template\": \"Do you have topic priorities or additional minimum-time requirements?\"}]}"
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

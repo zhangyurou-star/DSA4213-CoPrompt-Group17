@@ -1,0 +1,399 @@
+{
+  "cache_key": "e9710e31e8ccf516f756a7843acad2cabc8df20f2204a0879b7cc42fcf528548",
+  "source_case_id": "NVSP04",
+  "source_policy": "value_based",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Feeding Buzzes",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-01",
+        "topic": "Social Calls",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Echolocation Pulses",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Flight Calls",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Roosting Calls",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Mating Calls",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Distress Calls",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Pup Calls",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Territorial Calls",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Foraging Patterns",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Call Annotation Practice",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Review and Consolidation",
+        "minutes": 15
+      }
+    ],
+    "summary": "Calculated from the schedule: 180 minutes in total. Daily totals: 2027-02-01: 30 minutes; 2027-02-02: 30 minutes; 2027-02-03: 30 minutes; 2027-02-04: 30 minutes; 2027-02-05: 30 minutes; 2027-02-06: 30 minutes. Topic totals: Call Annotation Practice: 15 minutes; Distress Calls: 15 minutes; Echolocation Pulses: 15 minutes; Feeding Buzzes: 15 minutes; Flight Calls: 15 minutes; Foraging Patterns: 15 minutes; Mating Calls: 15 minutes; Pup Calls: 15 minutes; Review and Consolidation: 15 minutes; Roosting Calls: 15 minutes; Social Calls: 15 minutes; Territorial Calls: 15 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Feeding Buzzes\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Social Calls\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Echolocation Pulses\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Flight Calls\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Roosting Calls\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Mating Calls\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Distress Calls\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Pup Calls\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Territorial Calls\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Foraging Patterns\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Call Annotation Practice\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Review and Consolidation\",\n      \"minutes\": 15\n    }\n  ],\n  \"summary\": \"A compact study schedule covering all key bat call types is provided from 2027-02-01 to 2027-02-06, with each day's total at or below 30 minutes. 'Feeding Buzzes' is introduced on the first day as preferred. All topics are covered in 12 sessions, with no session exceeding 15 minutes, ensuring efficient and manageable daily study blocks.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Feeding Buzzes",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-01",
+            "topic": "Social Calls",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Echolocation Pulses",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Flight Calls",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Roosting Calls",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Mating Calls",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Distress Calls",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Pup Calls",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Territorial Calls",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Foraging Patterns",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Call Annotation Practice",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Review and Consolidation",
+            "minutes": 15
+          }
+        ],
+        "summary": "A compact study schedule covering all key bat call types is provided from 2027-02-01 to 2027-02-06, with each day's total at or below 30 minutes. 'Feeding Buzzes' is introduced on the first day as preferred. All topics are covered in 12 sessions, with no session exceeding 15 minutes, ensuring efficient and manageable daily study blocks."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "I can still study on 2027-02-06, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Keep each daily total at or below 30 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 180,
+      "daily_minutes": {
+        "2027-02-01": 30,
+        "2027-02-02": 30,
+        "2027-02-03": 30,
+        "2027-02-04": 30,
+        "2027-02-05": 30,
+        "2027-02-06": 30
+      },
+      "topic_minutes": [
+        {
+          "topic": "Call Annotation Practice",
+          "normalized_topic": "call annotation practice",
+          "minutes": 15
+        },
+        {
+          "topic": "Distress Calls",
+          "normalized_topic": "distress calls",
+          "minutes": 15
+        },
+        {
+          "topic": "Echolocation Pulses",
+          "normalized_topic": "echolocation pulses",
+          "minutes": 15
+        },
+        {
+          "topic": "Feeding Buzzes",
+          "normalized_topic": "feeding buzzes",
+          "minutes": 15
+        },
+        {
+          "topic": "Flight Calls",
+          "normalized_topic": "flight calls",
+          "minutes": 15
+        },
+        {
+          "topic": "Foraging Patterns",
+          "normalized_topic": "foraging patterns",
+          "minutes": 15
+        },
+        {
+          "topic": "Mating Calls",
+          "normalized_topic": "mating calls",
+          "minutes": 15
+        },
+        {
+          "topic": "Pup Calls",
+          "normalized_topic": "pup calls",
+          "minutes": 15
+        },
+        {
+          "topic": "Review and Consolidation",
+          "normalized_topic": "review and consolidation",
+          "minutes": 15
+        },
+        {
+          "topic": "Roosting Calls",
+          "normalized_topic": "roosting calls",
+          "minutes": 15
+        },
+        {
+          "topic": "Social Calls",
+          "normalized_topic": "social calls",
+          "minutes": 15
+        },
+        {
+          "topic": "Territorial Calls",
+          "normalized_topic": "territorial calls",
+          "minutes": 15
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "I can still study on 2027-02-06, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Keep each daily total at or below 30 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 180,
+      "daily_minutes": {
+        "2027-02-01": 30,
+        "2027-02-02": 30,
+        "2027-02-03": 30,
+        "2027-02-04": 30,
+        "2027-02-05": 30,
+        "2027-02-06": 30
+      },
+      "topic_minutes": [
+        {
+          "topic": "Call Annotation Practice",
+          "normalized_topic": "call annotation practice",
+          "minutes": 15
+        },
+        {
+          "topic": "Distress Calls",
+          "normalized_topic": "distress calls",
+          "minutes": 15
+        },
+        {
+          "topic": "Echolocation Pulses",
+          "normalized_topic": "echolocation pulses",
+          "minutes": 15
+        },
+        {
+          "topic": "Feeding Buzzes",
+          "normalized_topic": "feeding buzzes",
+          "minutes": 15
+        },
+        {
+          "topic": "Flight Calls",
+          "normalized_topic": "flight calls",
+          "minutes": 15
+        },
+        {
+          "topic": "Foraging Patterns",
+          "normalized_topic": "foraging patterns",
+          "minutes": 15
+        },
+        {
+          "topic": "Mating Calls",
+          "normalized_topic": "mating calls",
+          "minutes": 15
+        },
+        {
+          "topic": "Pup Calls",
+          "normalized_topic": "pup calls",
+          "minutes": 15
+        },
+        {
+          "topic": "Review and Consolidation",
+          "normalized_topic": "review and consolidation",
+          "minutes": 15
+        },
+        {
+          "topic": "Roosting Calls",
+          "normalized_topic": "roosting calls",
+          "minutes": 15
+        },
+        {
+          "topic": "Social Calls",
+          "normalized_topic": "social calls",
+          "minutes": 15
+        },
+        {
+          "topic": "Territorial Calls",
+          "normalized_topic": "territorial calls",
+          "minutes": 15
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "I can still study on 2027-02-06, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Keep each daily total at or below 30 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "A compact study schedule covering all key bat call types is provided from 2027-02-01 to 2027-02-06, with each day's total at or below 30 minutes. 'Feeding Buzzes' is introduced on the first day as preferred. All topics are covered in 12 sessions, with no session exceeding 15 minutes, ensuring efficient and manageable daily study blocks.",
+    "derived_summary": "Calculated from the schedule: 180 minutes in total. Daily totals: 2027-02-01: 30 minutes; 2027-02-02: 30 minutes; 2027-02-03: 30 minutes; 2027-02-04: 30 minutes; 2027-02-05: 30 minutes; 2027-02-06: 30 minutes. Topic totals: Call Annotation Practice: 15 minutes; Distress Calls: 15 minutes; Echolocation Pulses: 15 minutes; Feeding Buzzes: 15 minutes; Flight Calls: 15 minutes; Foraging Patterns: 15 minutes; Mating Calls: 15 minutes; Pup Calls: 15 minutes; Review and Consolidation: 15 minutes; Roosting Calls: 15 minutes; Social Calls: 15 minutes; Territorial Calls: 15 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

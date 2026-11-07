@@ -1,0 +1,64 @@
+{
+  "key": "9d578262ac948a9d190e562ee44bb35ce95bbd7b7ea64d47e109ace19f7d059b",
+  "raw": "{\"ratings\":[{\"field_id\":\"deadline\",\"importance\":1,\"uncertainty\":1,\"reason\":\"The study window closes on 2027-02-03, which is explicitly stated as still available, so this directly affects scheduling feasibility and must be confirmed.\"},{\"field_id\":\"available_time\",\"importance\":1,\"uncertainty\":1,\"reason\":\"The constraint of no more than 40 minutes per day on any date is given, but the exact daily availability is not specified beyond that, so uncertainty remains about whether this is the only limit or if there are additional constraints.\"},{\"field_id\":\"priorities\",\"importance\":0.5,\"uncertainty\":1,\"reason\":\"The request mentions no priority preferences, but the presence of minimum time requirements per topic may imply implicit priorities; however, no explicit priority or hard requirement is stated.\"}]}",
+  "source_case_id": "NTSP26",
+  "source_variant": "value_based",
+  "response_sha256": "39cfca58aa3a7c67b41e106b15d41d50d7c63211b44a7cce10cf77dfd60415e2",
+  "request_identity": {
+    "version": "fresh120-v0.6.0-first-raw-response-1",
+    "stage": "decision",
+    "repair": false,
+    "repair_kind": null,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Rate EVERY eligible unresolved field using the public request and visible interaction only.\nImportance I: 0 = little effect; 0.5 = local preference; 1 = could change core content or feasibility.\nUncertainty U: 0.5 = a reasonable default exists; 1 = different possible answers may materially change the result.\nThese are heuristic levels, not calibrated probabilities. Never inspect or infer hidden answer availability or grading labels.\nReturn exactly {\"ratings\":[{\"field_id\":\"...\",\"importance\":0.5,\"uncertainty\":1,\"reason\":\"brief rationale\"}, ...]}.\nCover each eligible field exactly once. Importance must be 0, 0.5 or 1. Uncertainty must be 0.5 or 1.\nNo action recommendation, extra keys or Markdown."
+      },
+      {
+        "role": "user",
+        "content": "{\"domain\": \"study_planning\", \"initial_request\": \"I will help run a classroom usability study. Prepare a learning schedule for facilitating the sessions. Start on 2027-02-01. The syllabus consists of \\\"Task Scenarios\\\", \\\"Think-aloud Prompts\\\", \\\"Usability Findings\\\"; each named topic needs a minimum of 25 minutes in total. My study window closes on 2027-02-03; that date is still available. The total of all sessions on any one date must not exceed 40 minutes.\", \"reference_date\": \"2027-02-01\", \"user_control\": \"continue\", \"clarifications\": [], \"field_values\": {\"deadline\": null, \"available_time\": null, \"topics\": \"The syllabus consists of \\\"Task Scenarios\\\", \\\"Think-aloud Prompts\\\", \\\"Usability Findings\\\"; each named topic needs a minimum of 25 minutes in total.\", \"priorities\": null}, \"eligible_fields\": [\"deadline\", \"available_time\", \"priorities\"], \"remaining_question_items\": 3, \"fields\": [{\"field_id\": \"deadline\", \"label_zh\": \"截止日\", \"description_zh\": \"最后可学习日期，包含当日。起始日始终在初始请求给定。\", \"question_template\": \"What is the last date available for study, inclusive?\"}, {\"field_id\": \"available_time\", \"label_zh\": \"每日时长\", \"description_zh\": \"每天可学习的分钟上限。本试跑采用统一每日上限。\", \"question_template\": \"How many minutes can you study per day at most?\"}, {\"field_id\": \"topics\", \"label_zh\": \"学习主题\", \"description_zh\": \"主题名称与覆盖要求，可含每个主题的最低总分钟数。\", \"question_template\": \"Which topics must be covered, and are there minimum minutes for each?\"}, {\"field_id\": \"priorities\", \"label_zh\": \"优先要求\", \"description_zh\": \"优先主题及相关硬性时长，或明确无偏好；软偏好不自动计分。\", \"question_template\": \"Do you have topic priorities or additional minimum-time requirements?\"}]}"
+      }
+    ],
+    "settings": {
+      "provider": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "qwen/qwen3-30b-a3b-instruct-2507",
+      "temperature": 0,
+      "top_p": 1,
+      "seed": 20261013,
+      "max_output_tokens": {
+        "extraction": 512,
+        "decision": 1024,
+        "generation": 1024
+      },
+      "provider_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      },
+      "effective_routing": {
+        "order": [
+          "nebius/fp8"
+        ],
+        "only": [
+          "nebius/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.11,
+          "completion": 0.35
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "cache_key": "389b075324af02eec927d5ac82126659f09675277e02f4419b4a930300a48299",
+  "source_case_id": "NDSP10",
+  "source_policy": "direct",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Chain Wear",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Derailleur Indexing",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Cassette Inspection",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Chain Wear",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Cassette Inspection",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Chain Wear",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-07",
+        "topic": "Cassette Inspection",
+        "minutes": 10
+      }
+    ],
+    "summary": "Calculated from the schedule: 90 minutes in total. Daily totals: 2027-02-01: 15 minutes; 2027-02-02: 15 minutes; 2027-02-03: 15 minutes; 2027-02-04: 10 minutes; 2027-02-05: 15 minutes; 2027-02-06: 10 minutes; 2027-02-07: 10 minutes. Topic totals: Cassette Inspection: 40 minutes; Chain Wear: 35 minutes; Derailleur Indexing: 15 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Chain Wear\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Derailleur Indexing\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Cassette Inspection\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Chain Wear\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Cassette Inspection\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Chain Wear\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-07\",\n      \"topic\": \"Cassette Inspection\",\n      \"minutes\": 10\n    }\n  ],\n  \"summary\": \"The study schedule covers all required topics—Chain Wear, Derailleur Indexing, and Cassette Inspection—with a total of 25 minutes allocated to Chain Wear, 15 minutes to Derailleur Indexing, and 30 minutes to Cassette Inspection. All sessions are within the allowed date window from 2027-02-01 to 2027-02-07, and each topic meets its minimum time requirement. The priority topic, Cassette Inspection, reaches the required 30 minutes by the final study date.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Chain Wear",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Derailleur Indexing",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Cassette Inspection",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Chain Wear",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Cassette Inspection",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Chain Wear",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-07",
+            "topic": "Cassette Inspection",
+            "minutes": 10
+          }
+        ],
+        "summary": "The study schedule covers all required topics—Chain Wear, Derailleur Indexing, and Cassette Inspection—with a total of 25 minutes allocated to Chain Wear, 15 minutes to Derailleur Indexing, and 30 minutes to Cassette Inspection. All sessions are within the allowed date window from 2027-02-01 to 2027-02-07, and each topic meets its minimum time requirement. The priority topic, Cassette Inspection, reaches the required 30 minutes by the final study date."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "The last usable study date is 2027-02-07, and sessions may fall on that day."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 90,
+      "daily_minutes": {
+        "2027-02-01": 15,
+        "2027-02-02": 15,
+        "2027-02-03": 15,
+        "2027-02-04": 10,
+        "2027-02-05": 15,
+        "2027-02-06": 10,
+        "2027-02-07": 10
+      },
+      "topic_minutes": [
+        {
+          "topic": "Cassette Inspection",
+          "normalized_topic": "cassette inspection",
+          "minutes": 40
+        },
+        {
+          "topic": "Chain Wear",
+          "normalized_topic": "chain wear",
+          "minutes": 35
+        },
+        {
+          "topic": "Derailleur Indexing",
+          "normalized_topic": "derailleur indexing",
+          "minutes": 15
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "The last usable study date is 2027-02-07, and sessions may fall on that day."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 90,
+      "daily_minutes": {
+        "2027-02-01": 15,
+        "2027-02-02": 15,
+        "2027-02-03": 15,
+        "2027-02-04": 10,
+        "2027-02-05": 15,
+        "2027-02-06": 10,
+        "2027-02-07": 10
+      },
+      "topic_minutes": [
+        {
+          "topic": "Cassette Inspection",
+          "normalized_topic": "cassette inspection",
+          "minutes": 40
+        },
+        {
+          "topic": "Chain Wear",
+          "normalized_topic": "chain wear",
+          "minutes": 35
+        },
+        {
+          "topic": "Derailleur Indexing",
+          "normalized_topic": "derailleur indexing",
+          "minutes": 15
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "The last usable study date is 2027-02-07, and sessions may fall on that day."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study schedule covers all required topics—Chain Wear, Derailleur Indexing, and Cassette Inspection—with a total of 25 minutes allocated to Chain Wear, 15 minutes to Derailleur Indexing, and 30 minutes to Cassette Inspection. All sessions are within the allowed date window from 2027-02-01 to 2027-02-07, and each topic meets its minimum time requirement. The priority topic, Cassette Inspection, reaches the required 30 minutes by the final study date.",
+    "derived_summary": "Calculated from the schedule: 90 minutes in total. Daily totals: 2027-02-01: 15 minutes; 2027-02-02: 15 minutes; 2027-02-03: 15 minutes; 2027-02-04: 10 minutes; 2027-02-05: 15 minutes; 2027-02-06: 10 minutes; 2027-02-07: 10 minutes. Topic totals: Cassette Inspection: 40 minutes; Chain Wear: 35 minutes; Derailleur Indexing: 15 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

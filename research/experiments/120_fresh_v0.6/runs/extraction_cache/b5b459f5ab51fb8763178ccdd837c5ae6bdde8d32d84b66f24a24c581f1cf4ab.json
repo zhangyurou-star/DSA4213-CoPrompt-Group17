@@ -1,0 +1,164 @@
+{
+  "cache_key": "b5b459f5ab51fb8763178ccdd837c5ae6bdde8d32d84b66f24a24c581f1cf4ab",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [
+      "S7"
+    ],
+    "length": [
+      "S8"
+    ],
+    "required_content": [
+      "S3",
+      "S4",
+      "S5",
+      "S6"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 55,
+      "text": "Draft first-use screen copy for an imaginary appliance."
+    },
+    {
+      "id": "S2",
+      "start": 56,
+      "end": 120,
+      "text": "Its intended audience: new owners of the imaginary Pebble Press."
+    },
+    {
+      "id": "S3",
+      "start": 121,
+      "end": 209,
+      "text": "These invented details are required: The fictional Pebble Press stamps decorative cards."
+    },
+    {
+      "id": "S4",
+      "start": 210,
+      "end": 272,
+      "text": "First place one blank card in the tray, then choose a pattern."
+    },
+    {
+      "id": "S5",
+      "start": 273,
+      "end": 386,
+      "text": "Its first-use screen should explain that the sample print uses the selected pattern and invite the user to start."
+    },
+    {
+      "id": "S6",
+      "start": 387,
+      "end": 483,
+      "text": "Include each of these exact strings: \"Pebble Press\", \"place one blank card\", \"choose a pattern\"."
+    },
+    {
+      "id": "S7",
+      "start": 484,
+      "end": 519,
+      "text": "Keep the tone friendly and concise."
+    },
+    {
+      "id": "S8",
+      "start": 520,
+      "end": 566,
+      "text": "The full text must be between 50 and 80 words."
+    }
+  ],
+  "field_values": {
+    "audience": "Its intended audience: new owners of the imaginary Pebble Press.",
+    "tone": "Keep the tone friendly and concise.",
+    "length": "The full text must be between 50 and 80 words.",
+    "required_content": "These invented details are required: The fictional Pebble Press stamps decorative cards.\nFirst place one blank card in the tray, then choose a pattern.\nIts first-use screen should explain that the sample print uses the selected pattern and invite the user to start.\nInclude each of these exact strings: \"Pebble Press\", \"place one blank card\", \"choose a pattern\"."
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 56,
+        "end": 120,
+        "quote": "Its intended audience: new owners of the imaginary Pebble Press."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 484,
+        "end": 519,
+        "quote": "Keep the tone friendly and concise."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 520,
+        "end": 566,
+        "quote": "The full text must be between 50 and 80 words."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 121,
+        "end": 209,
+        "quote": "These invented details are required: The fictional Pebble Press stamps decorative cards."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 210,
+        "end": 272,
+        "quote": "First place one blank card in the tray, then choose a pattern."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 273,
+        "end": 386,
+        "quote": "Its first-use screen should explain that the sample print uses the selected pattern and invite the user to start."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 387,
+        "end": 483,
+        "quote": "Include each of these exact strings: \"Pebble Press\", \"place one blank card\", \"choose a pattern\"."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[\"S7\"],\"length\":[\"S8\"],\"required_content\":[\"S3\",\"S4\",\"S5\",\"S6\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [
+            "S7"
+          ],
+          "length": [
+            "S8"
+          ],
+          "required_content": [
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

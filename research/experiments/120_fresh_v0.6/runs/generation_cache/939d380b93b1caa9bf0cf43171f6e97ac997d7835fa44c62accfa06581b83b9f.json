@@ -1,0 +1,261 @@
+{
+  "cache_key": "939d380b93b1caa9bf0cf43171f6e97ac997d7835fa44c62accfa06581b83b9f",
+  "source_case_id": "NDSP18",
+  "source_policy": "exhaustive",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Gold Leaf Grounds",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Pigment Layering",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Decorated Initials",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Gold Leaf Grounds",
+        "minutes": 15
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Pigment Layering",
+        "minutes": 15
+      }
+    ],
+    "summary": "Calculated from the schedule: 75 minutes in total. Daily totals: 2027-02-01: 15 minutes; 2027-02-02: 15 minutes; 2027-02-03: 15 minutes; 2027-02-04: 15 minutes; 2027-02-05: 15 minutes. Topic totals: Decorated Initials: 15 minutes; Gold Leaf Grounds: 30 minutes; Pigment Layering: 30 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Gold Leaf Grounds\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Pigment Layering\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Decorated Initials\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Gold Leaf Grounds\",\n      \"minutes\": 15\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Pigment Layering\",\n      \"minutes\": 15\n    }\n  ],\n  \"summary\": \"Study schedule completed with 15 minutes allocated to each required topic—Gold Leaf Grounds, Pigment Layering, and Decorated Initials—across five days from 2027-02-01 to 2027-02-05. Each day's total is 15 minutes, staying within the 60-minute daily limit. All required topics meet the minimum 15-minute requirement.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Gold Leaf Grounds",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Pigment Layering",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Decorated Initials",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Gold Leaf Grounds",
+            "minutes": 15
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Pigment Layering",
+            "minutes": 15
+          }
+        ],
+        "summary": "Study schedule completed with 15 minutes allocated to each required topic—Gold Leaf Grounds, Pigment Layering, and Decorated Initials—across five days from 2027-02-01 to 2027-02-05. Each day's total is 15 minutes, staying within the 60-minute daily limit. All required topics meet the minimum 15-minute requirement."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-05, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "I can still study on 2027-02-05, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Keep each daily total at or below 60 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 75,
+      "daily_minutes": {
+        "2027-02-01": 15,
+        "2027-02-02": 15,
+        "2027-02-03": 15,
+        "2027-02-04": 15,
+        "2027-02-05": 15
+      },
+      "topic_minutes": [
+        {
+          "topic": "Decorated Initials",
+          "normalized_topic": "decorated initials",
+          "minutes": 15
+        },
+        {
+          "topic": "Gold Leaf Grounds",
+          "normalized_topic": "gold leaf grounds",
+          "minutes": 30
+        },
+        {
+          "topic": "Pigment Layering",
+          "normalized_topic": "pigment layering",
+          "minutes": 30
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-05, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "I can still study on 2027-02-05, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Keep each daily total at or below 60 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 75,
+      "daily_minutes": {
+        "2027-02-01": 15,
+        "2027-02-02": 15,
+        "2027-02-03": 15,
+        "2027-02-04": 15,
+        "2027-02-05": 15
+      },
+      "topic_minutes": [
+        {
+          "topic": "Decorated Initials",
+          "normalized_topic": "decorated initials",
+          "minutes": 15
+        },
+        {
+          "topic": "Gold Leaf Grounds",
+          "normalized_topic": "gold leaf grounds",
+          "minutes": 30
+        },
+        {
+          "topic": "Pigment Layering",
+          "normalized_topic": "pigment layering",
+          "minutes": 30
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "I can still study on 2027-02-05, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "visible_exchange",
+          "exchange_index": 0,
+          "field_id": "deadline",
+          "quote": "I can still study on 2027-02-05, but no study should be scheduled after it."
+        }
+      },
+      {
+        "reason": "unsupported_daily_time_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Keep each daily total at or below 60 minutes across all study blocks."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "Study schedule completed with 15 minutes allocated to each required topic—Gold Leaf Grounds, Pigment Layering, and Decorated Initials—across five days from 2027-02-01 to 2027-02-05. Each day's total is 15 minutes, staying within the 60-minute daily limit. All required topics meet the minimum 15-minute requirement.",
+    "derived_summary": "Calculated from the schedule: 75 minutes in total. Daily totals: 2027-02-01: 15 minutes; 2027-02-02: 15 minutes; 2027-02-03: 15 minutes; 2027-02-04: 15 minutes; 2027-02-05: 15 minutes. Topic totals: Decorated Initials: 15 minutes; Gold Leaf Grounds: 30 minutes; Pigment Layering: 30 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}

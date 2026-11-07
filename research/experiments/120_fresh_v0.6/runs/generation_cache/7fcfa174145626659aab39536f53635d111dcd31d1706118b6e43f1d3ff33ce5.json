@@ -1,0 +1,117 @@
+{
+  "cache_key": "7fcfa174145626659aab39536f53635d111dcd31d1706118b6e43f1d3ff33ce5",
+  "source_case_id": "NVCW03",
+  "source_policy": "value_based",
+  "output": {
+    "text": "This hollow crown is designed for a dramatic reveal in a royal tragedy. Constructed from lightweight aluminum with a polished finish, it appears solid at a glance. The magnetic seam runs vertically down the front, allowing a single-handed, smooth opening during the performance. Inside, three cloth feathers—dyed deep crimson with gold trim—unfold silently when the crown opens, catching the spotlight. The mechanism is tested for 500+ cycles and includes a fail-safe latch. Ensure the magnetic seam aligns precisely during assembly; misalignment causes resistance. The feathers must be hand-stitched and secured to a central pivot. Final inspection: crown must close flush, with no visible gap. This prop delivers a striking visual without compromising actor mobility. Use only approved adhesives and magnetic strips. The hollow crown, magnetic seam, and three cloth feathers are critical to the effect."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"This hollow crown is designed for a dramatic reveal in a royal tragedy. Constructed from lightweight aluminum with a polished finish, it appears solid at a glance. The magnetic seam runs vertically down the front, allowing a single-handed, smooth opening during the performance. Inside, three cloth feathers—dyed deep crimson with gold trim—unfold silently when the crown opens, catching the spotlight. The mechanism is tested for 500+ cycles and includes a fail-safe latch. Ensure the magnetic seam aligns precisely during assembly; misalignment causes resistance. The feathers must be hand-stitched and secured to a central pivot. Final inspection: crown must close flush, with no visible gap. This prop delivers a striking visual without compromising actor mobility. Use only approved adhesives and magnetic strips. The hollow crown, magnetic seam, and three cloth feathers are critical to the effect.\"\n}",
+      "parsed": {
+        "text": "This hollow crown is designed for a dramatic reveal in a royal tragedy. Constructed from lightweight aluminum with a polished finish, it appears solid at a glance. The magnetic seam runs vertically down the front, allowing a single-handed, smooth opening during the performance. Inside, three cloth feathers—dyed deep crimson with gold trim—unfold silently when the crown opens, catching the spotlight. The mechanism is tested for 500+ cycles and includes a fail-safe latch. Ensure the magnetic seam aligns precisely during assembly; misalignment causes resistance. The feathers must be hand-stitched and secured to a central pivot. Final inspection: crown must close flush, with no visible gap. This prop delivers a striking visual without compromising actor mobility. Use only approved adhesives and magnetic strips. The hollow crown, magnetic seam, and three cloth feathers are critical to the effect."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "hollow crown",
+            "magnetic seam",
+            "three cloth feathers"
+          ]
+        },
+        "source": [
+          {
+            "source": "visible_exchange",
+            "exchange_index": 0,
+            "field_id": "required_content",
+            "quote": "Include each of these exact strings: \"hollow crown\", \"magnetic seam\", \"three cloth feathers\"."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 65 words and no more than 95 words in total."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 137
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "hollow crown",
+            "magnetic seam",
+            "three cloth feathers"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 65 words and no more than 95 words in total."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 137
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "hollow crown",
+            "magnetic seam",
+            "three cloth feathers"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "unsupported_or_nonbinding_word_count_expression",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "Use at least 65 words and no more than 95 words in total."
+        }
+      }
+    ]
+  },
+  "summary_derivation": null
+}

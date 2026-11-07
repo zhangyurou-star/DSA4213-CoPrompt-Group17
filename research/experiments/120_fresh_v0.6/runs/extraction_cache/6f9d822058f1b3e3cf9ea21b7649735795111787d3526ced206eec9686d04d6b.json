@@ -1,0 +1,164 @@
+{
+  "cache_key": "6f9d822058f1b3e3cf9ea21b7649735795111787d3526ced206eec9686d04d6b",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [
+      "S3"
+    ],
+    "length": [
+      "S4"
+    ],
+    "required_content": [
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 63,
+      "text": "Explain a fictional tournament tiebreak using a worked example."
+    },
+    {
+      "id": "S2",
+      "start": 64,
+      "end": 127,
+      "text": "Aim the wording at participants in the invented Marble Circuit."
+    },
+    {
+      "id": "S3",
+      "start": 128,
+      "end": 166,
+      "text": "I want a neutral and explanatory tone."
+    },
+    {
+      "id": "S4",
+      "start": 167,
+      "end": 213,
+      "text": "The full text must be between 55 and 85 words."
+    },
+    {
+      "id": "S5",
+      "start": 214,
+      "end": 317,
+      "text": "Include the following invented details: The Marble Circuit breaks equal point totals by fewest retries."
+    },
+    {
+      "id": "S6",
+      "start": 318,
+      "end": 395,
+      "text": "Mira and Sol each have twelve points; Mira used one retry and Sol used three."
+    },
+    {
+      "id": "S7",
+      "start": 396,
+      "end": 423,
+      "text": "Therefore Mira ranks first."
+    },
+    {
+      "id": "S8",
+      "start": 424,
+      "end": 509,
+      "text": "Preserve these exact phrases: \"Marble Circuit\", \"fewest retries\", \"Mira ranks first\"."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": "I want a neutral and explanatory tone.",
+    "length": "The full text must be between 55 and 85 words.",
+    "required_content": "Include the following invented details: The Marble Circuit breaks equal point totals by fewest retries.\nMira and Sol each have twelve points; Mira used one retry and Sol used three.\nTherefore Mira ranks first.\nPreserve these exact phrases: \"Marble Circuit\", \"fewest retries\", \"Mira ranks first\"."
+  },
+  "evidence": {
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 128,
+        "end": 166,
+        "quote": "I want a neutral and explanatory tone."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 167,
+        "end": 213,
+        "quote": "The full text must be between 55 and 85 words."
+      }
+    ],
+    "required_content": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 214,
+        "end": 317,
+        "quote": "Include the following invented details: The Marble Circuit breaks equal point totals by fewest retries."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 318,
+        "end": 395,
+        "quote": "Mira and Sol each have twelve points; Mira used one retry and Sol used three."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 396,
+        "end": 423,
+        "quote": "Therefore Mira ranks first."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 424,
+        "end": 509,
+        "quote": "Preserve these exact phrases: \"Marble Circuit\", \"fewest retries\", \"Mira ranks first\"."
+      }
+    ]
+  },
+  "grounding_rejections": [
+    {
+      "field_id": "audience",
+      "proposed_evidence": [
+        "S2"
+      ],
+      "proposed_value": "Aim the wording at participants in the invented Marble Circuit.",
+      "reason": "quote_has_no_explicit_reader_relation_cue"
+    }
+  ],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[\"S3\"],\"length\":[\"S4\"],\"required_content\":[\"S5\",\"S6\",\"S7\",\"S8\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [
+            "S3"
+          ],
+          "length": [
+            "S4"
+          ],
+          "required_content": [
+            "S5",
+            "S6",
+            "S7",
+            "S8"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

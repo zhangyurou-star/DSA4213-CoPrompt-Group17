@@ -1,0 +1,136 @@
+{
+  "cache_key": "58a594f494424334b2bedd177ef54c2aa7156528140b6094ac1107cef90905cb",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [],
+    "available_time": [
+      "S4"
+    ],
+    "topics": [
+      "S5",
+      "S6",
+      "S7"
+    ],
+    "priorities": [
+      "S7"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 67,
+      "text": "I will discuss sample referee reports in a research-skills seminar."
+    },
+    {
+      "id": "S2",
+      "start": 68,
+      "end": 120,
+      "text": "Structure my preparation for scientific peer review."
+    },
+    {
+      "id": "S3",
+      "start": 121,
+      "end": 141,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 142,
+      "end": 212,
+      "text": "I can spare at most 45 minutes per day, counting every topic together."
+    },
+    {
+      "id": "S5",
+      "start": 213,
+      "end": 312,
+      "text": "Include \"Methods Appraisal\", \"Reviewer Conflicts\", \"Constructive Reports\", using those topic names."
+    },
+    {
+      "id": "S6",
+      "start": 313,
+      "end": 368,
+      "text": "Allocate at least 20 cumulative minutes to every topic."
+    },
+    {
+      "id": "S7",
+      "start": 369,
+      "end": 443,
+      "text": "Within that coverage, \"Methods Appraisal\" needs at least 30 total minutes."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": "I can spare at most 45 minutes per day, counting every topic together.",
+    "topics": "Include \"Methods Appraisal\", \"Reviewer Conflicts\", \"Constructive Reports\", using those topic names.\nAllocate at least 20 cumulative minutes to every topic.\nWithin that coverage, \"Methods Appraisal\" needs at least 30 total minutes.",
+    "priorities": "Within that coverage, \"Methods Appraisal\" needs at least 30 total minutes."
+  },
+  "evidence": {
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 142,
+        "end": 212,
+        "quote": "I can spare at most 45 minutes per day, counting every topic together."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 213,
+        "end": 312,
+        "quote": "Include \"Methods Appraisal\", \"Reviewer Conflicts\", \"Constructive Reports\", using those topic names."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 313,
+        "end": 368,
+        "quote": "Allocate at least 20 cumulative minutes to every topic."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 369,
+        "end": 443,
+        "quote": "Within that coverage, \"Methods Appraisal\" needs at least 30 total minutes."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 369,
+        "end": 443,
+        "quote": "Within that coverage, \"Methods Appraisal\" needs at least 30 total minutes."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[],\"available_time\":[\"S4\"],\"topics\":[\"S5\",\"S6\",\"S7\"],\"priorities\":[\"S7\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [],
+          "available_time": [
+            "S4"
+          ],
+          "topics": [
+            "S5",
+            "S6",
+            "S7"
+          ],
+          "priorities": [
+            "S7"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

@@ -1,0 +1,81 @@
+{
+  "cache_key": "3f98b30c62c7419c6d10597e37e0707dd86c03b27270c0c6ef8d6d6a95cd0365",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [],
+    "tone": [
+      "S3"
+    ],
+    "length": [
+      "S2"
+    ],
+    "required_content": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 58,
+      "text": "Write a scenario inject for a fictional tabletop exercise."
+    },
+    {
+      "id": "S2",
+      "start": 59,
+      "end": 105,
+      "text": "The full text must be between 65 and 95 words."
+    },
+    {
+      "id": "S3",
+      "start": 106,
+      "end": 139,
+      "text": "Use a neutral and concrete voice."
+    }
+  ],
+  "field_values": {
+    "audience": null,
+    "tone": "Use a neutral and concrete voice.",
+    "length": "The full text must be between 65 and 95 words.",
+    "required_content": null
+  },
+  "evidence": {
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 106,
+        "end": 139,
+        "quote": "Use a neutral and concrete voice."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 59,
+        "end": 105,
+        "quote": "The full text must be between 65 and 95 words."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[],\"tone\":[\"S3\"],\"length\":[\"S2\"],\"required_content\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [],
+          "tone": [
+            "S3"
+          ],
+          "length": [
+            "S2"
+          ],
+          "required_content": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

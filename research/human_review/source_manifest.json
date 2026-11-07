@@ -1,0 +1,55 @@
+{
+  "date_local": "2026-10-27",
+  "timezone": "Asia/Singapore",
+  "sources": [
+    {
+      "copied_path": "inputs/reviewer_1_returned.json",
+      "original_path": "/Users/klesmad/Library/Containers/com.tencent.xinWeChat/Data/Documents/xwechat_files/wxid_rz5glirn1vb512_35d5/temp/drag/CoPrompt_AI辅助_评审员1_备份_2026-10-24T08-19-34-228Z.json",
+      "original_filename": "CoPrompt_AI辅助_评审员1_备份_2026-10-24T08-19-34-228Z.json",
+      "bytes": 436587,
+      "sha256": "c993ad1a047f1bf4f6876383adfb6b6710ae64653804fbc4089c79418a7c2535"
+    },
+    {
+      "copied_path": "inputs/reviewer_2_returned.json",
+      "original_path": "/Users/klesmad/Library/Containers/com.tencent.xinWeChat/Data/Documents/xwechat_files/wxid_rz5glirn1vb512_35d5/temp/drag/CoPrompt_评审员2_备份_2026-10-24T12-02-39-965Z(1).json",
+      "original_filename": "CoPrompt_评审员2_备份_2026-10-24T12-02-39-965Z(1).json",
+      "bytes": 386842,
+      "sha256": "9379cfa3c8495e6168663872bef582e24a7372b086311ae9a75113a3245abf68"
+    },
+    {
+      "copied_path": "inputs/reviewer_1_source_packet.json",
+      "original_path": "/Users/klesmad/Documents/Codex/2026-10-27/gao/work/project/CoPrompt_Fresh120_v0.6.0_EN1_2026-10-20/experiments/120_fresh_v0.6/outputs/fresh120_analysis/reviewer_1_packet.json",
+      "original_filename": "reviewer_1_packet.json",
+      "bytes": 218429,
+      "sha256": "4ddef17300b9fc9472303f9b5ba9142d91f1da36fb4e2959c6a761130c32c703"
+    },
+    {
+      "copied_path": "inputs/reviewer_2_source_packet.json",
+      "original_path": "/Users/klesmad/Documents/Codex/2026-10-27/gao/work/project/CoPrompt_Fresh120_v0.6.0_EN1_2026-10-20/experiments/120_fresh_v0.6/outputs/fresh120_analysis/reviewer_2_packet.json",
+      "original_filename": "reviewer_2_packet.json",
+      "bytes": 218429,
+      "sha256": "9b5facd71a63f89c5309d7e1ad71ef0f89f5d4087f5c8bce118327390b92f365"
+    },
+    {
+      "copied_path": "inputs/reviewer_policy_mapping.json",
+      "original_path": "/Users/klesmad/Documents/Codex/2026-10-27/gao/work/project/CoPrompt_Fresh120_v0.6.0_EN1_2026-10-20/experiments/120_fresh_v0.6/outputs/fresh120_analysis/private/reviewer_policy_mapping.json",
+      "original_filename": "reviewer_policy_mapping.json",
+      "bytes": 49760,
+      "sha256": "7223c32cfc1fd09c50f8d20dcee12639ebd83b640a2a37a37594c12638f54944"
+    },
+    {
+      "copied_path": "inputs/packet_compatibility.json",
+      "original_path": "/Users/klesmad/Documents/Codex/2026-10-27/gao/work/project/CoPrompt_Fresh120_v0.6.0_EN1_2026-10-20/work/fresh120_review_form/packet_compatibility.json",
+      "original_filename": "packet_compatibility.json",
+      "bytes": 888,
+      "sha256": "7f319911915f9164212c31179012a1f27cfaca1ae337797606cef3c57972580f"
+    },
+    {
+      "copied_path": "inputs/proposal.pdf",
+      "original_path": "/Users/klesmad/Documents/Codex/2026-10-09/gu/outputs/CoPrompt_Fresh120_v0.6.0_EN1_2026-10-20/references/Group17_CoPrompt_Proposal_Final_edited.pdf",
+      "original_filename": "Group17_CoPrompt_Proposal_Final_edited.pdf",
+      "bytes": 148654,
+      "sha256": "15aea481997f6d6ab31be96585627f4bd32f082c8db657fcbcd73f79d52c795f"
+    }
+  ]
+}

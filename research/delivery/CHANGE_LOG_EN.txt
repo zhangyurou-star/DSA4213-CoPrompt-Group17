@@ -1,0 +1,13 @@
+Documentation and evidence revision - 28 October 2026
+Source: CoPrompt_v0.6_Final_Submission_2026-10-27_Windows_Verify_Fixed.zip
+Source SHA-256: be838170593a97734946cba007889115cfcaacd3b484c3699e9bcd8f638f7e07
+
+Changed submission guides: README.md, START_HERE.txt, submission/FILE_GUIDE.md, submission/EVALUATION_EVIDENCE.md, submission/ERROR_ANALYSIS.md and submission/verification/README.md.
+Regenerated only the current SUBMISSION_MANIFEST.json.
+Added completed human-review evidence, existing English case-analysis evidence and delivery/file-role records.
+No file from the supplied ZIP was removed. No executable source, experiment data, output, score, threshold, frozen manifest or original evidence archive was modified.
+The earlier Chinese narrative review/case summaries were not added; unchanged source notes/metadata and original reproduction scripts can still contain Chinese. Submission-facing guides are English.
+The current outer directory/ZIP is named Group17_CoPrompt_v0.6_Research_Artifacts; internal source paths retain their original spelling.
+
+Two changes predate this revision relative to the historical 1,180-file source inventory: PACKAGE_MANIFEST.json and handoff/verify_handoff.py. They are retained as supplied, and the README now states the exception rather than claiming all 1,180 are unchanged.
+See SOURCE_PRESERVATION.json for all treatments and FILE_REVIEW_EN.txt for retention choices.

@@ -1,0 +1,128 @@
+{
+  "cache_key": "36f1aa96a40a5cb7693ab34334ea2714da2e7917462cd9932e6ad1e168256fbd",
+  "source_case_id": "NTCW25",
+  "source_policy": "direct",
+  "output": {
+    "text": "The wind dies. Three knocks sound—three sharp raps on the sealed door. Her hand hovers over the handle. Then, from behind the wood, her own voice whispers: Do not open it. She steps back, heart pounding. The words are hers, yet not. The door stays shut. But the voice is certain. Do not open it. The silence presses in. She listens. The knock was not from outside. It was from inside. And she is not alone."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"The wind howls through the empty hall. Three knocks echo from the sealed door—sharp, deliberate. Her breath catches. She steps back, hand on the cold metal handle. Then, from behind the wood, her own voice whispers, clear and trembling: Do not open it. She freezes. The words hang in the silence, a warning from within. Her fingers tremble. The door remains shut. But the voice is certain. Do not open it. The air grows still. The knock was not from outside. It was from inside. And she is not alone.\"\n}",
+      "parsed": {
+        "text": "The wind howls through the empty hall. Three knocks echo from the sealed door—sharp, deliberate. Her breath catches. She steps back, hand on the cold metal handle. Then, from behind the wood, her own voice whispers, clear and trembling: Do not open it. She freezes. The words hang in the silence, a warning from within. Her fingers tremble. The door remains shut. But the voice is certain. Do not open it. The air grows still. The knock was not from outside. It was from inside. And she is not alone."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "three knocks",
+            "her own voice",
+            "Do not open it"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Include each of these exact strings: \"three knocks\", \"her own voice\", \"Do not open it\"."
+          }
+        ]
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Write 60 to 90 words altogether."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 91}"
+  ],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"The wind dies. Three knocks sound—three sharp raps on the sealed door. Her hand hovers over the handle. Then, from behind the wood, her own voice whispers: Do not open it. She steps back, heart pounding. The words are hers, yet not. The door stays shut. But the voice is certain. Do not open it. The silence presses in. She listens. The knock was not from outside. It was from inside. And she is not alone.\"\n}",
+    "parsed": {
+      "text": "The wind dies. Three knocks sound—three sharp raps on the sealed door. Her hand hovers over the handle. Then, from behind the wood, her own voice whispers: Do not open it. She steps back, heart pounding. The words are hers, yet not. The door stays shut. But the voice is certain. Do not open it. The silence presses in. She listens. The knock was not from outside. It was from inside. And she is not alone."
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 91
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "three knocks",
+            "her own voice",
+            "Do not open it"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 90, \"min_words\": 60, \"observed_words\": 91}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 77
+    },
+    "requirements": [
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "three knocks",
+            "her own voice",
+            "Do not open it"
+          ]
+        }
+      },
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 60,
+          "max_words": 90
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

@@ -1,0 +1,117 @@
+{
+  "cache_key": "7fd1eff3bbf8d32e0aadd59bb6d83338438c80be59875b58ddd7291394095181",
+  "source_case_id": "NDCW17",
+  "source_policy": "direct",
+  "output": {
+    "text": "The Willow Span, once proud and strong, now rests after forty winters of silent service. Its weathered boards, kissed by rain and sun, bore the weight of market baskets and the joy of wedding processions. Beneath each step, footsteps in the wood echoed with memory—children’s laughter, lovers’ whispers, elders’ slow, steady pace. Now, the river flows on, unburdened, while the bridge, though still, holds the quiet dignity of a life well-lived. Farewell, dear span, where time walked with grace."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"The Willow Span, once proud and strong, now rests after forty winters of silent service. Its weathered boards, kissed by rain and sun, bore the weight of market baskets and the joy of wedding processions. Beneath each step, footsteps in the wood echoed with memory—children’s laughter, lovers’ whispers, elders’ slow, steady pace. Now, the river flows on, unburdened, while the bridge, though still, holds the quiet dignity of a life well-lived. Farewell, dear span, where time walked with grace.\"\n}",
+      "parsed": {
+        "text": "The Willow Span, once proud and strong, now rests after forty winters of silent service. Its weathered boards, kissed by rain and sun, bore the weight of market baskets and the joy of wedding processions. Beneath each step, footsteps in the wood echoed with memory—children’s laughter, lovers’ whispers, elders’ slow, steady pace. Now, the river flows on, unburdened, while the bridge, though still, holds the quiet dignity of a life well-lived. Farewell, dear span, where time walked with grace."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Keep the complete piece to 55–85 words."
+          }
+        ]
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the Willow Span",
+            "forty winters",
+            "footsteps in the wood"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Preserve these exact phrases: \"the Willow Span\", \"forty winters\", \"footsteps in the wood\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 80
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the Willow Span",
+            "forty winters",
+            "footsteps in the wood"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 80
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 55,
+          "max_words": 85
+        }
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "the Willow Span",
+            "forty winters",
+            "footsteps in the wood"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

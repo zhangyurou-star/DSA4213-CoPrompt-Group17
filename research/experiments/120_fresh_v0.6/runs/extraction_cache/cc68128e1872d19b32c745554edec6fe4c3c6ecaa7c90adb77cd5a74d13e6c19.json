@@ -1,0 +1,155 @@
+{
+  "cache_key": "cc68128e1872d19b32c745554edec6fe4c3c6ecaa7c90adb77cd5a74d13e6c19",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S4"
+    ],
+    "available_time": [
+      "S5"
+    ],
+    "topics": [
+      "S6",
+      "S7",
+      "S8"
+    ],
+    "priorities": [
+      "S8"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 75,
+      "text": "A perfume appreciation class asks me to describe a fragrance as it changes."
+    },
+    {
+      "id": "S2",
+      "start": 76,
+      "end": 123,
+      "text": "Organize my study of its composition structure."
+    },
+    {
+      "id": "S3",
+      "start": 124,
+      "end": 144,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 145,
+      "end": 221,
+      "text": "Use only dates from 2027-02-01 through 2027-02-06, including the final date."
+    },
+    {
+      "id": "S5",
+      "start": 222,
+      "end": 292,
+      "text": "I can spare at most 65 minutes per day, counting every topic together."
+    },
+    {
+      "id": "S6",
+      "start": 293,
+      "end": 367,
+      "text": "Include \"Top Notes\", \"Heart Notes\", \"Base Notes\", using those topic names."
+    },
+    {
+      "id": "S7",
+      "start": 368,
+      "end": 423,
+      "text": "Allocate at least 10 cumulative minutes to every topic."
+    },
+    {
+      "id": "S8",
+      "start": 424,
+      "end": 490,
+      "text": "Within that coverage, \"Top Notes\" needs at least 20 total minutes."
+    }
+  ],
+  "field_values": {
+    "deadline": "Use only dates from 2027-02-01 through 2027-02-06, including the final date.",
+    "available_time": "I can spare at most 65 minutes per day, counting every topic together.",
+    "topics": "Include \"Top Notes\", \"Heart Notes\", \"Base Notes\", using those topic names.\nAllocate at least 10 cumulative minutes to every topic.\nWithin that coverage, \"Top Notes\" needs at least 20 total minutes.",
+    "priorities": "Within that coverage, \"Top Notes\" needs at least 20 total minutes."
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 145,
+        "end": 221,
+        "quote": "Use only dates from 2027-02-01 through 2027-02-06, including the final date."
+      }
+    ],
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 222,
+        "end": 292,
+        "quote": "I can spare at most 65 minutes per day, counting every topic together."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 293,
+        "end": 367,
+        "quote": "Include \"Top Notes\", \"Heart Notes\", \"Base Notes\", using those topic names."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 368,
+        "end": 423,
+        "quote": "Allocate at least 10 cumulative minutes to every topic."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 424,
+        "end": 490,
+        "quote": "Within that coverage, \"Top Notes\" needs at least 20 total minutes."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 424,
+        "end": 490,
+        "quote": "Within that coverage, \"Top Notes\" needs at least 20 total minutes."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S4\"],\"available_time\":[\"S5\"],\"topics\":[\"S6\",\"S7\",\"S8\"],\"priorities\":[\"S8\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S4"
+          ],
+          "available_time": [
+            "S5"
+          ],
+          "topics": [
+            "S6",
+            "S7",
+            "S8"
+          ],
+          "priorities": [
+            "S8"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

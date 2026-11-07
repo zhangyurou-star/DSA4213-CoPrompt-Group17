@@ -1,0 +1,310 @@
+{
+  "cache_key": "8645e110f64c65047c400b4c632c5f816819b7034708c807dfdb16bdd602e794",
+  "source_case_id": "NVSP05",
+  "source_policy": "value_based",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Introduction to Authorship Analysis: Core Concepts and Objectives",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-01",
+        "topic": "Overview of Linguistic Features in Anonymous Texts",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Stylometric Methods: Frequency of Function Words and Lexical Diversity",
+        "minutes": 30
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Case Study: Identifying Authorship in Historical Anonymous Documents",
+        "minutes": 20
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Statistical Tools in Authorship Attribution: Chi-Square and Kullback-Leibler Divergence",
+        "minutes": 40
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Introduction to Computational Approaches: N-grams and Machine Learning Basics",
+        "minutes": 10
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Hands-On Practice: Analyzing a Sample Anonymous Document Using Python (NLTK)",
+        "minutes": 50
+      },
+      {
+        "date": "2027-02-05",
+        "topic": "Comparative Analysis: Language Patterns in Multiple Anonymous Texts",
+        "minutes": 50
+      },
+      {
+        "date": "2027-02-06",
+        "topic": "Review of Key Findings and Preparation for Seminar Presentation",
+        "minutes": 50
+      }
+    ],
+    "summary": "Calculated from the schedule: 300 minutes in total. Daily totals: 2027-02-01: 50 minutes; 2027-02-02: 50 minutes; 2027-02-03: 50 minutes; 2027-02-04: 50 minutes; 2027-02-05: 50 minutes; 2027-02-06: 50 minutes. Topic totals: Case Study: Identifying Authorship in Historical Anonymous Documents: 20 minutes; Comparative Analysis: Language Patterns in Multiple Anonymous Texts: 50 minutes; Hands-On Practice: Analyzing a Sample Anonymous Document Using Python (NLTK): 50 minutes; Introduction to Authorship Analysis: Core Concepts and Objectives: 30 minutes; Introduction to Computational Approaches: N-grams and Machine Learning Basics: 10 minutes; Overview of Linguistic Features in Anonymous Texts: 20 minutes; Review of Key Findings and Preparation for Seminar Presentation: 50 minutes; Statistical Tools in Authorship Attribution: Chi-Square and Kullback-Leibler Divergence: 40 minutes; Stylometric Methods: Frequency of Function Words and Lexical Diversity: 30 minutes. Recognized visible constraint checks passed; this does not verify every user requirement."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Introduction to Authorship Analysis: Core Concepts and Objectives\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Overview of Linguistic Features in Anonymous Texts\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Stylometric Methods: Frequency of Function Words and Lexical Diversity\",\n      \"minutes\": 30\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Case Study: Identifying Authorship in Historical Anonymous Documents\",\n      \"minutes\": 20\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Statistical Tools in Authorship Attribution: Chi-Square and Kullback-Leibler Divergence\",\n      \"minutes\": 40\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Introduction to Computational Approaches: N-grams and Machine Learning Basics\",\n      \"minutes\": 10\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Hands-On Practice: Analyzing a Sample Anonymous Document Using Python (NLTK)\",\n      \"minutes\": 50\n    },\n    {\n      \"date\": \"2027-02-05\",\n      \"topic\": \"Comparative Analysis: Language Patterns in Multiple Anonymous Texts\",\n      \"minutes\": 50\n    },\n    {\n      \"date\": \"2027-02-06\",\n      \"topic\": \"Review of Key Findings and Preparation for Seminar Presentation\",\n      \"minutes\": 50\n    }\n  ],\n  \"summary\": \"This study plan introduces foundational concepts in authorship analysis, focusing on linguistic features, stylometric methods, and computational tools. It spans nine sessions from February 1 to February 6, 2027, with no more than 50 minutes of study per day. Topics progress from theory to practical application, culminating in a comparative analysis and seminar preparation.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Introduction to Authorship Analysis: Core Concepts and Objectives",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-01",
+            "topic": "Overview of Linguistic Features in Anonymous Texts",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Stylometric Methods: Frequency of Function Words and Lexical Diversity",
+            "minutes": 30
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Case Study: Identifying Authorship in Historical Anonymous Documents",
+            "minutes": 20
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Statistical Tools in Authorship Attribution: Chi-Square and Kullback-Leibler Divergence",
+            "minutes": 40
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Introduction to Computational Approaches: N-grams and Machine Learning Basics",
+            "minutes": 10
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Hands-On Practice: Analyzing a Sample Anonymous Document Using Python (NLTK)",
+            "minutes": 50
+          },
+          {
+            "date": "2027-02-05",
+            "topic": "Comparative Analysis: Language Patterns in Multiple Anonymous Texts",
+            "minutes": 50
+          },
+          {
+            "date": "2027-02-06",
+            "topic": "Review of Key Findings and Preparation for Seminar Presentation",
+            "minutes": 50
+          }
+        ],
+        "summary": "This study plan introduces foundational concepts in authorship analysis, focusing on linguistic features, stylometric methods, and computational tools. It spans nine sessions from February 1 to February 6, 2027, with no more than 50 minutes of study per day. Topics progress from theory to practical application, culminating in a comparative analysis and seminar preparation."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 50
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "I can spare at most 50 minutes per day, counting every topic together."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 300,
+      "daily_minutes": {
+        "2027-02-01": 50,
+        "2027-02-02": 50,
+        "2027-02-03": 50,
+        "2027-02-04": 50,
+        "2027-02-05": 50,
+        "2027-02-06": 50
+      },
+      "topic_minutes": [
+        {
+          "topic": "Case Study: Identifying Authorship in Historical Anonymous Documents",
+          "normalized_topic": "case study: identifying authorship in historical anonymous documents",
+          "minutes": 20
+        },
+        {
+          "topic": "Comparative Analysis: Language Patterns in Multiple Anonymous Texts",
+          "normalized_topic": "comparative analysis: language patterns in multiple anonymous texts",
+          "minutes": 50
+        },
+        {
+          "topic": "Hands-On Practice: Analyzing a Sample Anonymous Document Using Python (NLTK)",
+          "normalized_topic": "hands-on practice: analyzing a sample anonymous document using python (nltk)",
+          "minutes": 50
+        },
+        {
+          "topic": "Introduction to Authorship Analysis: Core Concepts and Objectives",
+          "normalized_topic": "introduction to authorship analysis: core concepts and objectives",
+          "minutes": 30
+        },
+        {
+          "topic": "Introduction to Computational Approaches: N-grams and Machine Learning Basics",
+          "normalized_topic": "introduction to computational approaches: n-grams and machine learning basics",
+          "minutes": 10
+        },
+        {
+          "topic": "Overview of Linguistic Features in Anonymous Texts",
+          "normalized_topic": "overview of linguistic features in anonymous texts",
+          "minutes": 20
+        },
+        {
+          "topic": "Review of Key Findings and Preparation for Seminar Presentation",
+          "normalized_topic": "review of key findings and preparation for seminar presentation",
+          "minutes": 50
+        },
+        {
+          "topic": "Statistical Tools in Authorship Attribution: Chi-Square and Kullback-Leibler Divergence",
+          "normalized_topic": "statistical tools in authorship attribution: chi-square and kullback-leibler divergence",
+          "minutes": 40
+        },
+        {
+          "topic": "Stylometric Methods: Frequency of Function Words and Lexical Diversity",
+          "normalized_topic": "stylometric methods: frequency of function words and lexical diversity",
+          "minutes": 30
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 50
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 300,
+      "daily_minutes": {
+        "2027-02-01": 50,
+        "2027-02-02": 50,
+        "2027-02-03": 50,
+        "2027-02-04": 50,
+        "2027-02-05": 50,
+        "2027-02-06": 50
+      },
+      "topic_minutes": [
+        {
+          "topic": "Case Study: Identifying Authorship in Historical Anonymous Documents",
+          "normalized_topic": "case study: identifying authorship in historical anonymous documents",
+          "minutes": 20
+        },
+        {
+          "topic": "Comparative Analysis: Language Patterns in Multiple Anonymous Texts",
+          "normalized_topic": "comparative analysis: language patterns in multiple anonymous texts",
+          "minutes": 50
+        },
+        {
+          "topic": "Hands-On Practice: Analyzing a Sample Anonymous Document Using Python (NLTK)",
+          "normalized_topic": "hands-on practice: analyzing a sample anonymous document using python (nltk)",
+          "minutes": 50
+        },
+        {
+          "topic": "Introduction to Authorship Analysis: Core Concepts and Objectives",
+          "normalized_topic": "introduction to authorship analysis: core concepts and objectives",
+          "minutes": 30
+        },
+        {
+          "topic": "Introduction to Computational Approaches: N-grams and Machine Learning Basics",
+          "normalized_topic": "introduction to computational approaches: n-grams and machine learning basics",
+          "minutes": 10
+        },
+        {
+          "topic": "Overview of Linguistic Features in Anonymous Texts",
+          "normalized_topic": "overview of linguistic features in anonymous texts",
+          "minutes": 20
+        },
+        {
+          "topic": "Review of Key Findings and Preparation for Seminar Presentation",
+          "normalized_topic": "review of key findings and preparation for seminar presentation",
+          "minutes": 50
+        },
+        {
+          "topic": "Statistical Tools in Authorship Attribution: Chi-Square and Kullback-Leibler Divergence",
+          "normalized_topic": "statistical tools in authorship attribution: chi-square and kullback-leibler divergence",
+          "minutes": 40
+        },
+        {
+          "topic": "Stylometric Methods: Frequency of Function Words and Lexical Diversity",
+          "normalized_topic": "stylometric methods: frequency of function words and lexical diversity",
+          "minutes": 30
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      },
+      {
+        "kind": "daily_minutes_cap",
+        "parameters": {
+          "max_minutes": 50
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "This study plan introduces foundational concepts in authorship analysis, focusing on linguistic features, stylometric methods, and computational tools. It spans nine sessions from February 1 to February 6, 2027, with no more than 50 minutes of study per day. Topics progress from theory to practical application, culminating in a comparative analysis and seminar preparation.",
+    "derived_summary": "Calculated from the schedule: 300 minutes in total. Daily totals: 2027-02-01: 50 minutes; 2027-02-02: 50 minutes; 2027-02-03: 50 minutes; 2027-02-04: 50 minutes; 2027-02-05: 50 minutes; 2027-02-06: 50 minutes. Topic totals: Case Study: Identifying Authorship in Historical Anonymous Documents: 20 minutes; Comparative Analysis: Language Patterns in Multiple Anonymous Texts: 50 minutes; Hands-On Practice: Analyzing a Sample Anonymous Document Using Python (NLTK): 50 minutes; Introduction to Authorship Analysis: Core Concepts and Objectives: 30 minutes; Introduction to Computational Approaches: N-grams and Machine Learning Basics: 10 minutes; Overview of Linguistic Features in Anonymous Texts: 20 minutes; Review of Key Findings and Preparation for Seminar Presentation: 50 minutes; Statistical Tools in Authorship Attribution: Chi-Square and Kullback-Leibler Divergence: 40 minutes; Stylometric Methods: Frequency of Function Words and Lexical Diversity: 30 minutes. Recognized visible constraint checks passed; this does not verify every user requirement."
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "cache_key": "509590b6bd242852bc2b293406ec33215ed5bcc1705c7faa3576f4e39ed4feb3",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [],
+    "available_time": [
+      "S4"
+    ],
+    "topics": [
+      "S1"
+    ],
+    "priorities": [
+      "S5"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 76,
+      "text": "I am learning to annotate recorded bat calls for a natural-history exercise."
+    },
+    {
+      "id": "S2",
+      "start": 77,
+      "end": 110,
+      "text": "Arrange a compact study schedule."
+    },
+    {
+      "id": "S3",
+      "start": 111,
+      "end": 131,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 132,
+      "end": 201,
+      "text": "Keep each daily total at or below 30 minutes across all study blocks."
+    },
+    {
+      "id": "S5",
+      "start": 202,
+      "end": 310,
+      "text": "I would prefer to encounter \"Feeding Buzzes\" early; treat that as a suggestion only, not a time requirement."
+    }
+  ],
+  "field_values": {
+    "deadline": null,
+    "available_time": "Keep each daily total at or below 30 minutes across all study blocks.",
+    "topics": "I am learning to annotate recorded bat calls for a natural-history exercise.",
+    "priorities": "I would prefer to encounter \"Feeding Buzzes\" early; treat that as a suggestion only, not a time requirement."
+  },
+  "evidence": {
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 132,
+        "end": 201,
+        "quote": "Keep each daily total at or below 30 minutes across all study blocks."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S1",
+        "start": 0,
+        "end": 76,
+        "quote": "I am learning to annotate recorded bat calls for a natural-history exercise."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 202,
+        "end": 310,
+        "quote": "I would prefer to encounter \"Feeding Buzzes\" early; treat that as a suggestion only, not a time requirement."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[],\"available_time\":[\"S4\"],\"topics\":[\"S1\"],\"priorities\":[\"S5\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [],
+          "available_time": [
+            "S4"
+          ],
+          "topics": [
+            "S1"
+          ],
+          "priorities": [
+            "S5"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

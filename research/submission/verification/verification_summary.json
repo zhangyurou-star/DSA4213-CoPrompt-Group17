@@ -1,0 +1,177 @@
+{
+  "date_local": "2026-10-27",
+  "timezone": "Asia/Singapore",
+  "status": "passed",
+  "environments": [
+    "macOS CPython 3.12.14",
+    "macOS CPython 3.13.15"
+  ],
+  "checks": [
+    {
+      "check": "py312_verify",
+      "command": [
+        "submission.py",
+        "verify"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0
+    },
+    {
+      "check": "py312_reproduce",
+      "command": [
+        "submission.py",
+        "reproduce"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0
+    },
+    {
+      "check": "py312_supplement_tests",
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "submission/tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0
+    },
+    {
+      "check": "py312_inspect",
+      "command": [
+        "submission.py",
+        "inspect",
+        "--case",
+        "NTSP07",
+        "--system",
+        "value_based"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0
+    },
+    {
+      "check": "py312_export",
+      "command": [
+        "submission.py",
+        "export",
+        "--out",
+        "/Users/klesmad/Documents/Codex/2026-10-09/gu/work/v06_final_submission_20261027/py312_export"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0
+    },
+    {
+      "check": "py312_existing_export_rejected",
+      "command": [
+        "submission.py",
+        "export",
+        "--out",
+        "/Users/klesmad/Documents/Codex/2026-10-09/gu/work/v06_final_submission_20261027/py312_export"
+      ],
+      "exit_code": 2,
+      "expected_exit": 2
+    },
+    {
+      "check": "py312_invalid_case_rejected",
+      "command": [
+        "submission.py",
+        "inspect",
+        "--case",
+        "NO_SUCH_CASE"
+      ],
+      "exit_code": 2,
+      "expected_exit": 2
+    },
+    {
+      "check": "py313_verify",
+      "command": [
+        "submission.py",
+        "verify"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0
+    },
+    {
+      "check": "py313_reproduce",
+      "command": [
+        "submission.py",
+        "reproduce"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0
+    },
+    {
+      "check": "py313_supplement_tests",
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "submission/tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0
+    },
+    {
+      "check": "py313_inspect",
+      "command": [
+        "submission.py",
+        "inspect",
+        "--case",
+        "NTSP07",
+        "--system",
+        "value_based"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0
+    },
+    {
+      "check": "py313_export",
+      "command": [
+        "submission.py",
+        "export",
+        "--out",
+        "/Users/klesmad/Documents/Codex/2026-10-09/gu/work/v06_final_submission_20261027/py313_export"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0
+    },
+    {
+      "check": "py313_existing_export_rejected",
+      "command": [
+        "submission.py",
+        "export",
+        "--out",
+        "/Users/klesmad/Documents/Codex/2026-10-09/gu/work/v06_final_submission_20261027/py313_export"
+      ],
+      "exit_code": 2,
+      "expected_exit": 2
+    },
+    {
+      "check": "py313_invalid_case_rejected",
+      "command": [
+        "submission.py",
+        "inspect",
+        "--case",
+        "NO_SUCH_CASE"
+      ],
+      "exit_code": 2,
+      "expected_exit": 2
+    }
+  ],
+  "unchanged_uploaded_files": 1180,
+  "original_tests_per_runtime": 65,
+  "localized_tests_per_runtime": 65,
+  "supplement_tests_per_runtime": 5,
+  "same_65_tests_in_original_and_localized_copies": true,
+  "all_260_display_records_equal_sources": true,
+  "paid_api_calls": 0,
+  "new_model_results": false,
+  "actual_browser_interaction_verified": false,
+  "native_windows_verified": false,
+  "browser_limit": "file: URLs rejected by browser tool security policy; separate syntax/data checks only.",
+  "guard_audit": "Used the original scorer and verifier. No experimental modules, labels, prompts or outputs were changed. Added only concrete offline entry, exporter and presentation."
+}

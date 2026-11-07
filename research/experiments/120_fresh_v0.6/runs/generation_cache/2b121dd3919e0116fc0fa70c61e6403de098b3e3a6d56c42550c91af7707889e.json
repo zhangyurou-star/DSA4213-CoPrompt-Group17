@@ -1,0 +1,49 @@
+{
+  "cache_key": "2b121dd3919e0116fc0fa70c61e6403de098b3e3a6d56c42550c91af7707889e",
+  "source_case_id": "NTCW14",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "The SmartGarden Pod is a self-contained indoor gardening system designed for people with little space or gardening experience. It uses automated lighting, moisture sensors, and a compact water reservoir to grow herbs, salad greens, and small vegetables year-round. The unit fits on a countertop and connects to a smartphone app that tracks plant health and sends reminders to water or harvest. Made from recycled materials, it uses 70% less water than traditional gardening. The system is easy to set up, requires no soil, and produces fresh food in as little as three weeks. Ideal for city dwellers and beginners, the SmartGarden Pod turns any kitchen into a productive green space."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"The SmartGarden Pod is a self-contained indoor gardening system designed for people with little space or gardening experience. It uses automated lighting, moisture sensors, and a compact water reservoir to grow herbs, salad greens, and small vegetables year-round. The unit fits on a countertop and connects to a smartphone app that tracks plant health and sends reminders to water or harvest. Made from recycled materials, it uses 70% less water than traditional gardening. The system is easy to set up, requires no soil, and produces fresh food in as little as three weeks. Ideal for city dwellers and beginners, the SmartGarden Pod turns any kitchen into a productive green space.\"\n}",
+      "parsed": {
+        "text": "The SmartGarden Pod is a self-contained indoor gardening system designed for people with little space or gardening experience. It uses automated lighting, moisture sensors, and a compact water reservoir to grow herbs, salad greens, and small vegetables year-round. The unit fits on a countertop and connects to a smartphone app that tracks plant health and sends reminders to water or harvest. Made from recycled materials, it uses 70% less water than traditional gardening. The system is easy to set up, requires no soil, and produces fresh food in as little as three weeks. Ideal for city dwellers and beginners, the SmartGarden Pod turns any kitchen into a productive green space."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [],
+    "warnings": []
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 110
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 110
+    },
+    "requirements": [],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

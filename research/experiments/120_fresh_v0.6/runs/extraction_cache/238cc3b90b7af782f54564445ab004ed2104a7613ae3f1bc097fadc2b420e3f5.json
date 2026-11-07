@@ -1,0 +1,100 @@
+{
+  "cache_key": "238cc3b90b7af782f54564445ab004ed2104a7613ae3f1bc097fadc2b420e3f5",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [
+      "S3"
+    ],
+    "length": [
+      "S4"
+    ],
+    "required_content": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 58,
+      "text": "Compose a ceremonial proclamation for an invented kingdom."
+    },
+    {
+      "id": "S2",
+      "start": 59,
+      "end": 112,
+      "text": "Write for residents of the invented Kingdom of Reeds."
+    },
+    {
+      "id": "S3",
+      "start": 113,
+      "end": 150,
+      "text": "Make the voice formal and ceremonial."
+    },
+    {
+      "id": "S4",
+      "start": 151,
+      "end": 197,
+      "text": "The full text must be between 55 and 85 words."
+    }
+  ],
+  "field_values": {
+    "audience": "Write for residents of the invented Kingdom of Reeds.",
+    "tone": "Make the voice formal and ceremonial.",
+    "length": "The full text must be between 55 and 85 words.",
+    "required_content": null
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 59,
+        "end": 112,
+        "quote": "Write for residents of the invented Kingdom of Reeds."
+      }
+    ],
+    "tone": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 113,
+        "end": 150,
+        "quote": "Make the voice formal and ceremonial."
+      }
+    ],
+    "length": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 151,
+        "end": 197,
+        "quote": "The full text must be between 55 and 85 words."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[\"S3\"],\"length\":[\"S4\"],\"required_content\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [
+            "S3"
+          ],
+          "length": [
+            "S4"
+          ],
+          "required_content": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

@@ -1,0 +1,155 @@
+{
+  "cache_key": "c6482aca20cfdb46dd2125e0e0c3b1ad561813e0079512dffd24adf31a0bb8ff",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S4"
+    ],
+    "available_time": [
+      "S5"
+    ],
+    "topics": [
+      "S6",
+      "S7",
+      "S8"
+    ],
+    "priorities": [
+      "S8"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 53,
+      "text": "I want to work through a beginner Go problem booklet."
+    },
+    {
+      "id": "S2",
+      "start": 54,
+      "end": 114,
+      "text": "Help me divide the life-and-death study into small sessions."
+    },
+    {
+      "id": "S3",
+      "start": 115,
+      "end": 135,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S4",
+      "start": 136,
+      "end": 212,
+      "text": "Use only dates from 2027-02-01 through 2027-02-06, including the final date."
+    },
+    {
+      "id": "S5",
+      "start": 213,
+      "end": 283,
+      "text": "I can spare at most 65 minutes per day, counting every topic together."
+    },
+    {
+      "id": "S6",
+      "start": 284,
+      "end": 360,
+      "text": "Include \"Eye Formation\", \"Capturing Races\", \"Seki\", using those topic names."
+    },
+    {
+      "id": "S7",
+      "start": 361,
+      "end": 416,
+      "text": "Allocate at least 20 cumulative minutes to every topic."
+    },
+    {
+      "id": "S8",
+      "start": 417,
+      "end": 487,
+      "text": "Within that coverage, \"Eye Formation\" needs at least 30 total minutes."
+    }
+  ],
+  "field_values": {
+    "deadline": "Use only dates from 2027-02-01 through 2027-02-06, including the final date.",
+    "available_time": "I can spare at most 65 minutes per day, counting every topic together.",
+    "topics": "Include \"Eye Formation\", \"Capturing Races\", \"Seki\", using those topic names.\nAllocate at least 20 cumulative minutes to every topic.\nWithin that coverage, \"Eye Formation\" needs at least 30 total minutes.",
+    "priorities": "Within that coverage, \"Eye Formation\" needs at least 30 total minutes."
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 136,
+        "end": 212,
+        "quote": "Use only dates from 2027-02-01 through 2027-02-06, including the final date."
+      }
+    ],
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 213,
+        "end": 283,
+        "quote": "I can spare at most 65 minutes per day, counting every topic together."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 284,
+        "end": 360,
+        "quote": "Include \"Eye Formation\", \"Capturing Races\", \"Seki\", using those topic names."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 361,
+        "end": 416,
+        "quote": "Allocate at least 20 cumulative minutes to every topic."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 417,
+        "end": 487,
+        "quote": "Within that coverage, \"Eye Formation\" needs at least 30 total minutes."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 417,
+        "end": 487,
+        "quote": "Within that coverage, \"Eye Formation\" needs at least 30 total minutes."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S4\"],\"available_time\":[\"S5\"],\"topics\":[\"S6\",\"S7\",\"S8\"],\"priorities\":[\"S8\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S4"
+          ],
+          "available_time": [
+            "S5"
+          ],
+          "topics": [
+            "S6",
+            "S7",
+            "S8"
+          ],
+          "priorities": [
+            "S8"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

@@ -1,0 +1,128 @@
+{
+  "cache_key": "8226c1c20f961a168a1ab155192455c5fb7beb5d5b22d2ed34c9e1c2bb886ac2",
+  "source_case_id": "NDCW05",
+  "source_policy": "exhaustive",
+  "output": {
+    "text": "Commission: A fantastical cartographic rendering of Glass Marsh, where three floating islands drift above a sea of uncolored paper, their forms shaped by forgotten winds. Connect them with delicate dotted migration paths—faint trails of stardust and memory—used by sky-whales and silent, winged scholars. No compass rose: direction here is felt, not fixed. The map must evoke wonder, mystery, and the quiet peril of a world where orientation shifts with the breath of the land. Let the silence between lines speak volumes. (84 words)"
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"text\": \"Commission: A fantastical cartographic rendering of Glass Marsh, a realm where reality bends and gravity wavers. Depict three floating islands suspended in a luminous haze, each shaped by ancient winds and crystalline tides. Connect them with delicate dotted migration paths—faint trails of stardust and memory—used by nomadic sky-whales and silent, winged scholars. Water is rendered as uncolored paper, a void that breathes and shifts. No compass rose: directions here are felt, not fixed. The map must evoke wonder, mystery, and the quiet peril of a world where orientation is a myth. Let the silence between lines speak volumes. (87 words)\"\n}",
+      "parsed": {
+        "text": "Commission: A fantastical cartographic rendering of Glass Marsh, a realm where reality bends and gravity wavers. Depict three floating islands suspended in a luminous haze, each shaped by ancient winds and crystalline tides. Connect them with delicate dotted migration paths—faint trails of stardust and memory—used by nomadic sky-whales and silent, winged scholars. Water is rendered as uncolored paper, a void that breathes and shifts. No compass rose: directions here are felt, not fixed. The map must evoke wonder, mystery, and the quiet peril of a world where orientation is a myth. Let the silence between lines speak volumes. (87 words)"
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "constrained_writing",
+    "constraints": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 65,
+          "max_words": 95
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Write 65 to 95 words altogether."
+          }
+        ]
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Glass Marsh",
+            "three floating islands",
+            "no compass rose"
+          ]
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Preserve these exact phrases: \"Glass Marsh\", \"three floating islands\", \"no compass rose\"."
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "constraint_checks_initial": [
+    "word_count: {\"max_words\": 95, \"min_words\": 65, \"observed_words\": 102}"
+  ],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": true,
+  "constraint_repair": {
+    "raw": "{\n  \"text\": \"Commission: A fantastical cartographic rendering of Glass Marsh, where three floating islands drift above a sea of uncolored paper, their forms shaped by forgotten winds. Connect them with delicate dotted migration paths—faint trails of stardust and memory—used by sky-whales and silent, winged scholars. No compass rose: direction here is felt, not fixed. The map must evoke wonder, mystery, and the quiet peril of a world where orientation shifts with the breath of the land. Let the silence between lines speak volumes. (84 words)\"\n}",
+    "parsed": {
+      "text": "Commission: A fantastical cartographic rendering of Glass Marsh, where three floating islands drift above a sea of uncolored paper, their forms shaped by forgotten winds. Connect them with delicate dotted migration paths—faint trails of stardust and memory—used by sky-whales and silent, winged scholars. No compass rose: direction here is felt, not fixed. The map must evoke wonder, mystery, and the quiet peril of a world where orientation shifts with the breath of the land. Let the silence between lines speak volumes. (84 words)"
+    },
+    "format_errors": [],
+    "accepted": true
+  },
+  "visible_measurements_initial": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 102
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 65,
+          "max_words": 95
+        }
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Glass Marsh",
+            "three floating islands",
+            "no compass rose"
+          ]
+        }
+      }
+    ],
+    "violations": [
+      "word_count: {\"max_words\": 95, \"min_words\": 65, \"observed_words\": 102}"
+    ],
+    "interpretation_warnings": []
+  },
+  "visible_measurements_final": {
+    "domain": "constrained_writing",
+    "observed": {
+      "full_text_words": 85
+    },
+    "requirements": [
+      {
+        "kind": "word_count",
+        "parameters": {
+          "min_words": 65,
+          "max_words": 95
+        }
+      },
+      {
+        "kind": "contains_all",
+        "parameters": {
+          "literals": [
+            "Glass Marsh",
+            "three floating islands",
+            "no compass rose"
+          ]
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": []
+  },
+  "summary_derivation": null
+}

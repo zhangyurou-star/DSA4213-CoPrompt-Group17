@@ -1,0 +1,173 @@
+{
+  "cache_key": "1c7db0baf957e9f8fda912f0102955e9a4ad4d6e58d16c034769d62978a04658",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "deadline": [
+      "S3"
+    ],
+    "available_time": [
+      "S4"
+    ],
+    "topics": [
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ],
+    "priorities": [
+      "S7",
+      "S8"
+    ]
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 105,
+      "text": "Before I join an apiary observation session, help me organize a short course in seasonal hive inspection."
+    },
+    {
+      "id": "S2",
+      "start": 106,
+      "end": 126,
+      "text": "Start on 2027-02-01."
+    },
+    {
+      "id": "S3",
+      "start": 127,
+      "end": 203,
+      "text": "Use only dates from 2027-02-01 through 2027-02-03, including the final date."
+    },
+    {
+      "id": "S4",
+      "start": 204,
+      "end": 274,
+      "text": "I can spare at most 25 minutes per day, counting every topic together."
+    },
+    {
+      "id": "S5",
+      "start": 275,
+      "end": 377,
+      "text": "Include \"Brood Pattern Checks\", \"Queen Presence Signs\", \"Hive Recordkeeping\", using those topic names."
+    },
+    {
+      "id": "S6",
+      "start": 378,
+      "end": 433,
+      "text": "Allocate at least 10 cumulative minutes to every topic."
+    },
+    {
+      "id": "S7",
+      "start": 434,
+      "end": 511,
+      "text": "Within that coverage, \"Brood Pattern Checks\" needs at least 20 total minutes."
+    },
+    {
+      "id": "S8",
+      "start": 512,
+      "end": 601,
+      "text": "Give \"Hive Recordkeeping\" at least 25 minutes in total; this is a firm extra requirement."
+    }
+  ],
+  "field_values": {
+    "deadline": "Use only dates from 2027-02-01 through 2027-02-03, including the final date.",
+    "available_time": "I can spare at most 25 minutes per day, counting every topic together.",
+    "topics": "Include \"Brood Pattern Checks\", \"Queen Presence Signs\", \"Hive Recordkeeping\", using those topic names.\nAllocate at least 10 cumulative minutes to every topic.\nWithin that coverage, \"Brood Pattern Checks\" needs at least 20 total minutes.\nGive \"Hive Recordkeeping\" at least 25 minutes in total; this is a firm extra requirement.",
+    "priorities": "Within that coverage, \"Brood Pattern Checks\" needs at least 20 total minutes.\nGive \"Hive Recordkeeping\" at least 25 minutes in total; this is a firm extra requirement."
+  },
+  "evidence": {
+    "deadline": [
+      {
+        "source": "initial_request",
+        "unit_id": "S3",
+        "start": 127,
+        "end": 203,
+        "quote": "Use only dates from 2027-02-01 through 2027-02-03, including the final date."
+      }
+    ],
+    "available_time": [
+      {
+        "source": "initial_request",
+        "unit_id": "S4",
+        "start": 204,
+        "end": 274,
+        "quote": "I can spare at most 25 minutes per day, counting every topic together."
+      }
+    ],
+    "topics": [
+      {
+        "source": "initial_request",
+        "unit_id": "S5",
+        "start": 275,
+        "end": 377,
+        "quote": "Include \"Brood Pattern Checks\", \"Queen Presence Signs\", \"Hive Recordkeeping\", using those topic names."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S6",
+        "start": 378,
+        "end": 433,
+        "quote": "Allocate at least 10 cumulative minutes to every topic."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 434,
+        "end": 511,
+        "quote": "Within that coverage, \"Brood Pattern Checks\" needs at least 20 total minutes."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 512,
+        "end": 601,
+        "quote": "Give \"Hive Recordkeeping\" at least 25 minutes in total; this is a firm extra requirement."
+      }
+    ],
+    "priorities": [
+      {
+        "source": "initial_request",
+        "unit_id": "S7",
+        "start": 434,
+        "end": 511,
+        "quote": "Within that coverage, \"Brood Pattern Checks\" needs at least 20 total minutes."
+      },
+      {
+        "source": "initial_request",
+        "unit_id": "S8",
+        "start": 512,
+        "end": 601,
+        "quote": "Give \"Hive Recordkeeping\" at least 25 minutes in total; this is a firm extra requirement."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"deadline\":[\"S3\"],\"available_time\":[\"S4\"],\"topics\":[\"S5\",\"S6\",\"S7\",\"S8\"],\"priorities\":[\"S7\",\"S8\"]}}",
+      "parsed": {
+        "field_evidence": {
+          "deadline": [
+            "S3"
+          ],
+          "available_time": [
+            "S4"
+          ],
+          "topics": [
+            "S5",
+            "S6",
+            "S7",
+            "S8"
+          ],
+          "priorities": [
+            "S7",
+            "S8"
+          ]
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

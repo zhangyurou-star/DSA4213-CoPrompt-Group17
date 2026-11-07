@@ -1,0 +1,62 @@
+{
+  "cache_key": "c00a06f8b061bd6728109c8c3f9ef148628925206b2d572c6799e295c61787fa",
+  "grounding_version": "source-unit-evidence-0.3.0",
+  "raw_field_evidence": {
+    "audience": [
+      "S2"
+    ],
+    "tone": [],
+    "length": [],
+    "required_content": []
+  },
+  "source_units": [
+    {
+      "id": "S1",
+      "start": 0,
+      "end": 56,
+      "text": "Write performance directions for an invented soundscape."
+    },
+    {
+      "id": "S2",
+      "start": 57,
+      "end": 121,
+      "text": "Its intended audience: performers rehearsing the invented piece."
+    }
+  ],
+  "field_values": {
+    "audience": "Its intended audience: performers rehearsing the invented piece.",
+    "tone": null,
+    "length": null,
+    "required_content": null
+  },
+  "evidence": {
+    "audience": [
+      {
+        "source": "initial_request",
+        "unit_id": "S2",
+        "start": 57,
+        "end": 121,
+        "quote": "Its intended audience: performers rehearsing the invented piece."
+      }
+    ]
+  },
+  "grounding_rejections": [],
+  "attempts": [
+    {
+      "raw": "{\"field_evidence\":{\"audience\":[\"S2\"],\"tone\":[],\"length\":[],\"required_content\":[]}}",
+      "parsed": {
+        "field_evidence": {
+          "audience": [
+            "S2"
+          ],
+          "tone": [],
+          "length": [],
+          "required_content": []
+        }
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false
+}

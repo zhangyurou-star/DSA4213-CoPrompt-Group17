@@ -1,0 +1,198 @@
+{
+  "cache_key": "285459c1ac4afee6901749c745f8fa5c9dd45b1dc58cdb0b9e5f2630b5c3cc14",
+  "source_case_id": "NTSP22",
+  "source_policy": "exhaustive",
+  "output": {
+    "schedule": [
+      {
+        "date": "2027-02-01",
+        "topic": "Advantage Decisions",
+        "minutes": 35
+      },
+      {
+        "date": "2027-02-02",
+        "topic": "Offside Lines",
+        "minutes": 35
+      },
+      {
+        "date": "2027-02-03",
+        "topic": "Restart Procedures",
+        "minutes": 35
+      },
+      {
+        "date": "2027-02-04",
+        "topic": "Advantage Decisions",
+        "minutes": 25
+      }
+    ],
+    "summary": "Calculated from the schedule: 130 minutes in total. Daily totals: 2027-02-01: 35 minutes; 2027-02-02: 35 minutes; 2027-02-03: 35 minutes; 2027-02-04: 25 minutes. Topic totals: Advantage Decisions: 60 minutes; Offside Lines: 35 minutes; Restart Procedures: 35 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  },
+  "attempts": [
+    {
+      "raw": "{\n  \"schedule\": [\n    {\n      \"date\": \"2027-02-01\",\n      \"topic\": \"Advantage Decisions\",\n      \"minutes\": 35\n    },\n    {\n      \"date\": \"2027-02-02\",\n      \"topic\": \"Offside Lines\",\n      \"minutes\": 35\n    },\n    {\n      \"date\": \"2027-02-03\",\n      \"topic\": \"Restart Procedures\",\n      \"minutes\": 35\n    },\n    {\n      \"date\": \"2027-02-04\",\n      \"topic\": \"Advantage Decisions\",\n      \"minutes\": 25\n    }\n  ],\n  \"summary\": \"The study schedule covers all required topics—'Advantage Decisions', 'Offside Lines', and 'Restart Procedures'—with a total of at least 35 minutes on 'Advantage Decisions' and at least 25 minutes on each of the other two topics. All sessions are within the allowed date window (2027-02-01 to 2027-02-04) and respect the 35-minute daily limit. The total study time is 130 minutes, distributed across four days.\"\n}",
+      "parsed": {
+        "schedule": [
+          {
+            "date": "2027-02-01",
+            "topic": "Advantage Decisions",
+            "minutes": 35
+          },
+          {
+            "date": "2027-02-02",
+            "topic": "Offside Lines",
+            "minutes": 35
+          },
+          {
+            "date": "2027-02-03",
+            "topic": "Restart Procedures",
+            "minutes": 35
+          },
+          {
+            "date": "2027-02-04",
+            "topic": "Advantage Decisions",
+            "minutes": 25
+          }
+        ],
+        "summary": "The study schedule covers all required topics—'Advantage Decisions', 'Offside Lines', and 'Restart Procedures'—with a total of at least 35 minutes on 'Advantage Decisions' and at least 25 minutes on each of the other two topics. All sessions are within the allowed date window (2027-02-01 to 2027-02-04) and respect the 35-minute daily limit. The total study time is 130 minutes, distributed across four days."
+      },
+      "format_errors": []
+    }
+  ],
+  "repaired": false,
+  "failed": false,
+  "constraint_version": "visible-constraints-0.4.0",
+  "constraint_contract": {
+    "version": "visible-constraints-0.4.0",
+    "domain": "study_planning",
+    "constraints": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        },
+        "source": [
+          {
+            "source": "initial_request",
+            "field_id": null,
+            "quote": "Start on 2027-02-01."
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "The last usable study date is 2027-02-04, and sessions may fall on that day."
+        }
+      }
+    ]
+  },
+  "constraint_checks_initial": [],
+  "constraint_checks_final": [],
+  "constraint_repair_attempted": false,
+  "constraint_repair": null,
+  "visible_measurements_initial": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 130,
+      "daily_minutes": {
+        "2027-02-01": 35,
+        "2027-02-02": 35,
+        "2027-02-03": 35,
+        "2027-02-04": 25
+      },
+      "topic_minutes": [
+        {
+          "topic": "Advantage Decisions",
+          "normalized_topic": "advantage decisions",
+          "minutes": 60
+        },
+        {
+          "topic": "Offside Lines",
+          "normalized_topic": "offside lines",
+          "minutes": 35
+        },
+        {
+          "topic": "Restart Procedures",
+          "normalized_topic": "restart procedures",
+          "minutes": 35
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "The last usable study date is 2027-02-04, and sessions may fall on that day."
+        }
+      }
+    ]
+  },
+  "visible_measurements_final": {
+    "domain": "study_planning",
+    "observed": {
+      "total_minutes": 130,
+      "daily_minutes": {
+        "2027-02-01": 35,
+        "2027-02-02": 35,
+        "2027-02-03": 35,
+        "2027-02-04": 25
+      },
+      "topic_minutes": [
+        {
+          "topic": "Advantage Decisions",
+          "normalized_topic": "advantage decisions",
+          "minutes": 60
+        },
+        {
+          "topic": "Offside Lines",
+          "normalized_topic": "offside lines",
+          "minutes": 35
+        },
+        {
+          "topic": "Restart Procedures",
+          "normalized_topic": "restart procedures",
+          "minutes": 35
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "date_window",
+        "parameters": {
+          "start_date": "2027-02-01"
+        }
+      }
+    ],
+    "violations": [],
+    "interpretation_warnings": [
+      {
+        "reason": "date_without_unambiguous_study_window_role",
+        "source": {
+          "source": "initial_request",
+          "field_id": null,
+          "quote": "The last usable study date is 2027-02-04, and sessions may fall on that day."
+        }
+      }
+    ]
+  },
+  "summary_derivation": {
+    "version": "schedule-summary-0.4.0",
+    "original_summary": "The study schedule covers all required topics—'Advantage Decisions', 'Offside Lines', and 'Restart Procedures'—with a total of at least 35 minutes on 'Advantage Decisions' and at least 25 minutes on each of the other two topics. All sessions are within the allowed date window (2027-02-01 to 2027-02-04) and respect the 35-minute daily limit. The total study time is 130 minutes, distributed across four days.",
+    "derived_summary": "Calculated from the schedule: 130 minutes in total. Daily totals: 2027-02-01: 35 minutes; 2027-02-02: 35 minutes; 2027-02-03: 35 minutes; 2027-02-04: 25 minutes. Topic totals: Advantage Decisions: 60 minutes; Offside Lines: 35 minutes; Restart Procedures: 35 minutes. Recognized visible constraint checks passed; this does not verify every user requirement. Some requirements could not be interpreted mechanically."
+  }
+}
