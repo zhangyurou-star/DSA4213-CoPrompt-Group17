@@ -1,0 +1,39 @@
+{
+  "source_evidence_sha256": "2ba4b8f5b8d02d6309a92dfb6a258ec5fde1ec4f7f80c5b073238feec5081098",
+  "paired_outputs": 100,
+  "assessments": 200,
+  "rating_agreement": [
+    {
+      "Dimension": "Usefulness",
+      "Exact agreement": "84%",
+      "Linear weighted \u03ba": 0.7906
+    },
+    {
+      "Dimension": "Coherence",
+      "Exact agreement": "96%",
+      "Linear weighted \u03ba": 0.9227
+    },
+    {
+      "Dimension": "Audience fit",
+      "Exact agreement": "75%",
+      "Linear weighted \u03ba": 0.5992
+    },
+    {
+      "Dimension": "Feasibility",
+      "Exact agreement": "80%",
+      "Linear weighted \u03ba": 0.7305
+    }
+  ],
+  "count_agreement": [
+    {
+      "Dimension": "Unsupported assumptions",
+      "Exact agreement": "90%",
+      "Mean absolute difference": 0.15
+    },
+    {
+      "Dimension": "Unnecessary questions",
+      "Exact agreement": "99%",
+      "Mean absolute difference": 0.03
+    }
+  ]
+}

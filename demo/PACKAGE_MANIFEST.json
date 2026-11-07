@@ -1,0 +1,53 @@
+{
+  "package_name": "CoPrompt_Streamlit_Demo_EN_UI5.1_r4_Final_2026-10-29",
+  "package_role": "standalone demo runtime",
+  "software_version": "2026-10-27-en-ui5.1-fixed-r4",
+  "packaging_revision": "r4-clean-3-text",
+  "date": "2026-10-29",
+  "source_archive_sha256": "7306f48823161f055ac81d6944e72b12943d1573ffd1a96077b96d8d5061f949",
+  "revision_scope": "README and displayed assessment wording only; data, scoring, outputs and decision logic unchanged.",
+  "file_count": 8,
+  "file_count_excludes_manifest": true,
+  "files": [
+    {
+      "path": ".streamlit/config.toml",
+      "bytes": 155,
+      "sha256": "798044a9d33eb3f5370fc29deb9de56eb2f33d7752481bbdb096d2963f51e14b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4952,
+      "sha256": "f3f5e75425b58bbe40272aebc78cf8fd0cdadc457531fd110e395a41ccc84286"
+    },
+    {
+      "path": "app.py",
+      "bytes": 46771,
+      "sha256": "45980208412a76f9e988e65f56e76faba95560a367f8e26a8fa50d0d6e25dfa1"
+    },
+    {
+      "path": "data/demo_data.json",
+      "bytes": 242811,
+      "sha256": "71abe071b2a5e4e977680ec74c1b1264acecec366acbe4c7df47423af883277b"
+    },
+    {
+      "path": "data/human_review_summary.json",
+      "bytes": 929,
+      "sha256": "f2f079a1d259f4e666b603e81cac3f7a98ef918f310f82fdd4ac9477ade5e252"
+    },
+    {
+      "path": "logic.py",
+      "bytes": 3193,
+      "sha256": "f97ce0e2c1d1a84d39e891cf6894b74c23e4b9126875593675ff2a86353faba5"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 33,
+      "sha256": "2e59cf5c11e462f32e91690112f66e04282d46af8848745ffe7c16097298935a"
+    },
+    {
+      "path": "start_demo.bat",
+      "bytes": 323,
+      "sha256": "9d5e9d661aa25b017e82d3eca8881f2388d87c67ea2a97d3cfc4501a3429fe48"
+    }
+  ]
+}
