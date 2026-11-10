@@ -6,7 +6,7 @@
   "date": "2026-10-29",
   "source_archive_sha256": "7306f48823161f055ac81d6944e72b12943d1573ffd1a96077b96d8d5061f949",
   "revision_scope": "README and displayed assessment wording only; data, scoring, outputs and decision logic unchanged.",
-  "file_count": 8,
+  "file_count": 9,
   "file_count_excludes_manifest": true,
   "files": [
     {
@@ -48,6 +48,11 @@
       "path": "start_demo.bat",
       "bytes": 323,
       "sha256": "9d5e9d661aa25b017e82d3eca8881f2388d87c67ea2a97d3cfc4501a3429fe48"
+    },
+    {
+      "path": "record.mp4",
+      "bytes": 1323146,
+      "sha256": "e5ba5eb6fd332d0764f05295994841417837dd54da31e999244726e601e0a2a5"
     }
   ]
 }
