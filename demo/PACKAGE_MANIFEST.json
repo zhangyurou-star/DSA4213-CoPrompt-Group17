@@ -26,8 +26,8 @@
     },
     {
       "path": "data/demo_data.json",
-      "bytes": 242811,
-      "sha256": "71abe071b2a5e4e977680ec74c1b1264acecec366acbe4c7df47423af883277b"
+      "bytes": 236506,
+      "sha256": "3a623f77342c16881e1158af5c5e151ee6efcd5f7eb118b379829087dc9932b6"
     },
     {
       "path": "data/human_review_summary.json",
