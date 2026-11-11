@@ -41,20 +41,29 @@
     {
       "copied_path": "inputs/human_statistics.json",
       "original_path": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/statistics.json",
-      "bytes": 17183,
-      "sha256": "c71cb5e02a5c8e250f813c1c3bdc89659fa5aa2831dbee8ce73ebca68432bee8"
+      "bytes": 18700,
+      "sha256": "3b66709b1bbd4299bec8b04530176cca33afc51298300fd05bc2a77fbcd1cebe",
+      "original_sha256": "c71cb5e02a5c8e250f813c1c3bdc89659fa5aa2831dbee8ce73ebca68432bee8",
+      "original_bytes": 17183,
+      "metadata_scope": "Human/AI role wording; rating values and recorded review history unchanged."
     },
     {
       "copied_path": "inputs/reviewer_1_returned.json",
       "original_path": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/inputs/reviewer_1_returned.json",
-      "bytes": 436587,
-      "sha256": "c993ad1a047f1bf4f6876383adfb6b6710ae64653804fbc4089c79418a7c2535"
+      "bytes": 437471,
+      "sha256": "a6a42dcbca6f83389dd37b56cf24cdbebfa710747385352a6203bc03b1cff364",
+      "original_sha256": "c993ad1a047f1bf4f6876383adfb6b6710ae64653804fbc4089c79418a7c2535",
+      "original_bytes": 436587,
+      "metadata_scope": "Human/AI role wording; rating values and recorded review history unchanged."
     },
     {
       "copied_path": "inputs/reviewer_2_returned.json",
       "original_path": "/Users/klesmad/Documents/Codex/2026-10-27/gao/outputs/CoPrompt_Human_Review_Statistics_2026-10-27/inputs/reviewer_2_returned.json",
-      "bytes": 386842,
-      "sha256": "9379cfa3c8495e6168663872bef582e24a7372b086311ae9a75113a3245abf68"
+      "bytes": 387888,
+      "sha256": "e58127c528f185da28fbbd78806d1803ab56e599097f637b584eaf4950ccf82d",
+      "original_sha256": "9379cfa3c8495e6168663872bef582e24a7372b086311ae9a75113a3245abf68",
+      "original_bytes": 386842,
+      "metadata_scope": "Human/AI role wording; rating values and recorded review history unchanged."
     },
     {
       "copied_path": "inputs/reviewer_policy_mapping.json",
