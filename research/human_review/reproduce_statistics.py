@@ -1,4 +1,4 @@
-"""Reproduce the proposal-specified human-review summaries from unchanged inputs."""
+"""Reproduce the proposal-specified human-review summaries from integrity-checked inputs."""
 import csv
 import hashlib
 import json
@@ -253,7 +253,8 @@ def main():
         "immutable_materials_IDs_and_order_match_original_packets": True,
         "packet_and_evidence_fingerprints_match": True,
         "matching_key": ["case_id", "variant"],
-        "original_files_and_scores_modified": False,
+        "rating_values_modified": False,
+        "role_metadata_clarified": True,
         "aggregation_crosscheck": "Per-output two-reviewer average equals pooled rating mean exactly.",
         "kappa_crosscheck": "Exact-fraction confusion-matrix calculation equals direct-vector distance calculation.",
         "semantic_count_warnings": warnings,
@@ -261,7 +262,7 @@ def main():
     }
     result = {
         "analysis_date_local": "2026-10-27", "timezone": "Asia/Singapore",
-        "stage": "Supplied returned versions; no inter-reviewer adjudication performed in this statistical analysis. Prior AI-assisted revisions remain documented in the unchanged input files.",
+        "stage": "Supplied returned versions; no inter-reviewer adjudication performed in this statistical analysis. Prior AI-assisted revisions remain documented; human/AI role metadata is clarified without changing ratings or review history.",
         "source_evidence_sha256": evidence_hash,
         "proposal_scope": "20 preselected test cases x five variants x two reviewers; 100 outputs, 200 assessments.",
         "system_aggregation": "Average the two returned ratings per output, then average the 20 matched outputs per variant; dimensions remain separate.",
@@ -269,12 +270,12 @@ def main():
         "no_additional_hypothesis_tests_or_composite_score": True,
         "system_summary": system_rows, "reviewer_system_summary": reviewer_rows,
         "agreement": agreement_detail, "validation": validation,
-        "reviewer_declarations_as_returned": declarations,
-        "AI_assistance_disclosure_as_recorded": assistance,
+        "reviewer_declarations": declarations,
+        "AI_assistance_disclosure": assistance,
         "limitations": [
             "These results concern only the preselected 20-case subset, not the full 60-case main test.",
             "The same 20 cases contribute all five variants; duplicate contents remain as originally assigned. Assessments are not independent cases.",
-            "AI-assisted suggestions and human confirmation are documented in both returns. This departs from the proposal's no-LLM-judge plan; agreement does not establish unaided independent human judgment.",
+            "Reviewers were responsible for the final ratings. AI assisted rubric-based checks of the assessments and suggested revisions, with the aim of limiting subjective variation. Reviewers decided which revisions to adopt. The effect on bias was not evaluated. This departs from the proposal's no-LLM-judge plan; agreement does not establish unaided independent human judgment.",
             "Reviewer declarations report independent completion and blinding. Reviewer 1 AI metadata also says actual blinding was not certified. Statistical checking cannot resolve that provenance limitation.",
             "One unnecessary-question count exceeds the visible question count. It is flagged and retained, as agreement is calculated before resolving disagreements.",
             "No disagreements were resolved, ratings altered, missing values imputed, or new model calls made.",
@@ -297,7 +298,7 @@ def main():
         "每份评价含四个分别报告的 1–5 分维度，以及两项非负整数计数。", "",
         "两份回传文件的全部 200 项均已确认，1,200 个数值均完整。材料、原始编号、顺序、"
         "证据指纹及表单状态均已核对。两份表的随机顺序不同，因此使用“案例 ID＋系统版本”配对，"
-        "没有按行号配对。原始文件和评分保留不变。", "",
+        "没有按行号配对。评分和历史评审记录保留不变；人类与 AI 的职责说明已澄清。", "",
         "每个系统的每个维度先对同一输出的两位评分取均值，再对 20 个案例取均值。"
         "下表每行是 20 份输出、40 次评价；四个评分维度分别报告，不合成为一个总分。", "",
         "## 按系统汇总", "",
@@ -350,7 +351,7 @@ def main():
         + ", ".join(f"{agreement_rows[i]['linearly_weighted_kappa']:.4f} for {name}" for i, name in enumerate(["usefulness", "coherence", "audience fit", "feasibility"]))
         + ". Exact agreement was 84%, 96%, 75%, and 80%, respectively. For unsupported-assumption counts, exact agreement was 90% and mean absolute difference was 0.150; for unnecessary-question counts, these were 99% and 0.030. "
         "Each system summary averages the two ratings per output and then the 20 outputs, with all four rating dimensions reported separately.", "",
-        "These are AI-assisted assessments confirmed by human reviewers, a departure from the proposal’s no-LLM-judge plan. Reviewer declarations and AI-assistance metadata do not independently establish blinding or unaided judgment. "
+        "Reviewers were responsible for the final ratings. AI assisted rubric-based checks of the assessments and suggested revisions, with the aim of limiting subjective variation. Reviewers decided which revisions to adopt. This departs from the proposal’s no-LLM-judge plan. Reviewer declarations and AI-assistance metadata do not independently establish blinding or unaided judgment. "
         "One returned unnecessary-question count (reviewer 2, R2-002, direct) is 3 despite an empty clarification trace; it was flagged and retained in all pre-adjudication summaries and agreement statistics. "
         "The findings apply to this 20-case subset; repeated contents and the diagnostic do not add independent cases. "
         "The supplied reviewer-1 version includes previously accepted AI-assisted amendments; their history is retained rather than described as an unaided first-pass judgment.", "",

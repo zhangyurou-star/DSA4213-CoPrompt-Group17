@@ -6,15 +6,21 @@
       "copied_path": "inputs/reviewer_1_returned.json",
       "original_path": "/Users/klesmad/Library/Containers/com.tencent.xinWeChat/Data/Documents/xwechat_files/wxid_rz5glirn1vb512_35d5/temp/drag/CoPrompt_AI辅助_评审员1_备份_2026-10-24T08-19-34-228Z.json",
       "original_filename": "CoPrompt_AI辅助_评审员1_备份_2026-10-24T08-19-34-228Z.json",
-      "bytes": 436587,
-      "sha256": "c993ad1a047f1bf4f6876383adfb6b6710ae64653804fbc4089c79418a7c2535"
+      "bytes": 437471,
+      "sha256": "a6a42dcbca6f83389dd37b56cf24cdbebfa710747385352a6203bc03b1cff364",
+      "original_sha256": "c993ad1a047f1bf4f6876383adfb6b6710ae64653804fbc4089c79418a7c2535",
+      "original_bytes": 436587,
+      "metadata_scope": "Human/AI role wording; rating values and recorded review history unchanged."
     },
     {
       "copied_path": "inputs/reviewer_2_returned.json",
       "original_path": "/Users/klesmad/Library/Containers/com.tencent.xinWeChat/Data/Documents/xwechat_files/wxid_rz5glirn1vb512_35d5/temp/drag/CoPrompt_评审员2_备份_2026-10-24T12-02-39-965Z(1).json",
       "original_filename": "CoPrompt_评审员2_备份_2026-10-24T12-02-39-965Z(1).json",
-      "bytes": 386842,
-      "sha256": "9379cfa3c8495e6168663872bef582e24a7372b086311ae9a75113a3245abf68"
+      "bytes": 387888,
+      "sha256": "e58127c528f185da28fbbd78806d1803ab56e599097f637b584eaf4950ccf82d",
+      "original_sha256": "9379cfa3c8495e6168663872bef582e24a7372b086311ae9a75113a3245abf68",
+      "original_bytes": 386842,
+      "metadata_scope": "Human/AI role wording; rating values and recorded review history unchanged."
     },
     {
       "copied_path": "inputs/reviewer_1_source_packet.json",

@@ -16,7 +16,8 @@
     "case_id",
     "variant"
   ],
-  "original_files_and_scores_modified": false,
+  "rating_values_modified": false,
+  "role_metadata_clarified": true,
   "aggregation_crosscheck": "Per-output two-reviewer average equals pooled rating mean exactly.",
   "kappa_crosscheck": "Exact-fraction confusion-matrix calculation equals direct-vector distance calculation.",
   "semantic_count_warnings": [

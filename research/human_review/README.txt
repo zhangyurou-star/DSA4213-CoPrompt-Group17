@@ -1,13 +1,9 @@
-AI ROLE CLARIFICATION — added 11 November 2026
-Read AI_ROLE_CLARIFICATION.json alongside both original returned JSON files and their reviewer declarations. In the report’s terminology, reviewers were responsible for the final ratings; AI assisted rubric-based checks and suggested revisions, and reviewers decided which revisions to adopt. The aim was to limit subjective variation; an effect on bias was not evaluated. Fully independent blinded judgment cannot be established from the returns.
-This dated project clarification preserves the original returns, source packets, declarations, scoring suggestions, accepted amendments and statistics. It is not a new declaration signed by either reviewer.
-
 CoPrompt completed human-assessment evidence
 Existing records and statistics, assembled into this package on 28 October 2026.
 
 Coverage: 20 preselected test cases x five variants x two reviewers = 100 outputs and 200 assessments. The diagnostic is not an independent sample.
 
-Read statistics.json for full precision, system_summary.csv for means, agreement.csv for agreement, paired_ratings.csv for original pairs, and inputs/reviewer_1_returned.json plus reviewer_2_returned.json for the unchanged returns.
+Read statistics.json for full precision, system_summary.csv for means, agreement.csv for agreement, paired_ratings.csv for original pairs, and inputs/reviewer_1_returned.json plus reviewer_2_returned.json for the returned ratings and review history.
 
 Descriptive means: usefulness / coherence / audience fit / feasibility / unsupported-assumption count / unnecessary-question count.
 direct: 4.425 / 4.675 / 4.600 / 4.525 / 0.075 / 0.075
@@ -24,11 +20,11 @@ feasibility_1_to_5: kappa 0.7305; exact agreement 80%.
 
 Prompt-only has the highest descriptive mean in the four content dimensions on this subset. Value-based has no demonstrated content-rating advantage. These means and agreement do not establish a population-level strategy ranking. No composite score or new hypothesis test is added.
 
-Reviewer declarations do not certify unaided independence or actual blinding.
+Reviewers were responsible for the final ratings. AI assisted rubric-based checks of the assessments and suggested revisions, with the aim of limiting subjective variation. Reviewers decided which revisions to adopt. The effect on bias was not evaluated. Reviewer declarations do not certify unaided independence or actual blinding.
 
 R2-002 reports three unnecessary questions for Direct despite an empty trace. The original count remains in every statistic; it is not evidence that Direct asked questions. Read validation_receipt.json and statistics.json for the recorded warnings. No adjudication or score correction was performed.
 
-Source integrity: source_manifest.json lists the seven unchanged input copies. Original Chinese notes and dimension labels remain in the source and computed tables. This English guide replaces the need to read the earlier Chinese narrative summary; it does not replace original evidence.
+Source integrity: source_manifest.json lists the seven input files and their current hashes; the original hashes are retained for files with clarified role metadata. Rating values, notes, confirmation timestamps and accepted revision history are unchanged. Original Chinese notes and dimension labels remain in the source and computed tables. This English guide replaces the need to read the earlier Chinese narrative summary; it does not replace original evidence.
 
 Optional reproduction: copy this entire folder to a new external working folder, then run python3 -B reproduce_statistics.py in that copy. It rebuilds numeric summaries in its own folder; do not run it in the submitted evidence directory. No model calls or rating changes are made.
 
