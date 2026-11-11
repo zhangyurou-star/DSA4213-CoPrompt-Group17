@@ -1,3 +1,7 @@
+AI ROLE CLARIFICATION — added 11 November 2026
+Read AI_ROLE_CLARIFICATION.json alongside both original returned JSON files and their reviewer declarations. In the report’s terminology, reviewers were responsible for the final ratings; AI assisted rubric-based checks and suggested revisions, and reviewers decided which revisions to adopt. The aim was to limit subjective variation; an effect on bias was not evaluated. Fully independent blinded judgment cannot be established from the returns.
+This dated project clarification preserves the original returns, source packets, declarations, scoring suggestions, accepted amendments and statistics. It is not a new declaration signed by either reviewer.
+
 CoPrompt completed human-assessment evidence
 Existing records and statistics, assembled into this package on 28 October 2026.
 
