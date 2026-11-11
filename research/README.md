@@ -65,7 +65,7 @@ The two output folders must not already exist. Exports create separate copies of
 
 ## Reproduce the completed review and case summaries
 
-Both evidence folders contain their original source manifests, unchanged input copies and standard-library reproduction scripts. Each script rebuilds derived summaries inside its own folder. To keep the submitted copies unchanged, first copy the whole evidence folder to a new working folder outside this package.
+Both evidence folders contain source manifests and standard-library reproduction scripts. The manifests retain original hashes alongside current hashes where human/AI role metadata has been clarified; ratings, notes and recorded revision history are unchanged. Each script rebuilds derived summaries inside its own folder. To keep the submitted copies unchanged, first copy the whole evidence folder to a new working folder outside this package.
 
 In a disposable copy of `human_review/`, run:
 
