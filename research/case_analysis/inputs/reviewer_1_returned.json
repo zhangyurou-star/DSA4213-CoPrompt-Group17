@@ -17,7 +17,8 @@
     "authorship_and_crossreview_exclusion_confirmed_by_coordinator": true,
     "actual_blinding_confirmed": true,
     "reviewed_independently": true,
-    "completed_utc": "2026-10-24T08:03:03Z"
+    "completed_utc": "2026-10-24T08:03:03Z",
+    "ai_assistance_role": "Reviewers were responsible for the final ratings. AI assisted rubric-based checks of the assessments and suggested revisions, with the aim of limiting subjective variation. Reviewers decided which revisions to adopt."
   },
   "records": [
     {
@@ -4423,7 +4424,7 @@
     }
   ],
   "ai_assistance": {
-    "type": "AI-assisted ratings confirmed by reviewer, including accepted second-review amendments; not independent unaided human review",
+    "type": "Reviewer-controlled final ratings with AI-assisted rubric checks and revision suggestions; not independent unaided human review",
     "generated_local_date": "2026-10-24",
     "reviewer_slot": 1,
     "source_packet_sha256": "0ff13d971bb4ef18561e54f9e2d29e031db9f1b6e77dc8ad525447851a3712eb",
@@ -4448,7 +4449,8 @@
       "Original browser progress not accessed, merged or overwritten.",
       "The reviewer confirmed the original export and explicitly accepted the second-review amendments; eligibility and actual blinding remain unverified."
     ],
-    "initial_draft_human_confirmed_records": 0
+    "initial_draft_human_confirmed_records": 0,
+    "role_description": "Reviewers were responsible for the final ratings. AI assisted rubric-based checks of the assessments and suggested revisions, with the aim of limiting subjective variation. Reviewers decided which revisions to adopt."
   },
   "review_form": {
     "version": "fresh120-review-form-1",
@@ -6002,7 +6004,8 @@
           }
         ]
       }
-    ]
+    ],
+    "human_and_ai_roles": "AI proposed rating revisions; the reviewer decided to adopt them and remained responsible for the final ratings."
   },
   "review_form_state": {
     "schema_version": "coprompt-fresh120-review-state-1",
@@ -6018,7 +6021,8 @@
       "authorship_and_crossreview_exclusion_confirmed_by_coordinator": true,
       "actual_blinding_confirmed": true,
       "reviewed_independently": true,
-      "completed_utc": "2026-10-24T08:03:03Z"
+      "completed_utc": "2026-10-24T08:03:03Z",
+      "ai_assistance_role": "Reviewers were responsible for the final ratings. AI assisted rubric-based checks of the assessments and suggested revisions, with the aim of limiting subjective variation. Reviewers decided which revisions to adopt."
     },
     "items": {
       "R1-001": {

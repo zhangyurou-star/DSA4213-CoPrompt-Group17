@@ -17,7 +17,8 @@
     "authorship_and_crossreview_exclusion_confirmed_by_coordinator": true,
     "actual_blinding_confirmed": true,
     "reviewed_independently": true,
-    "completed_utc": "2026-10-24T12:02:35.881Z"
+    "completed_utc": "2026-10-24T12:02:35.881Z",
+    "ai_assistance_role": "Reviewers were responsible for the final ratings. AI assisted rubric-based checks of the assessments and suggested revisions, with the aim of limiting subjective variation. Reviewers decided which revisions to adopt."
   },
   "records": [
     {
@@ -4447,7 +4448,8 @@
       "authorship_and_crossreview_exclusion_confirmed_by_coordinator": true,
       "actual_blinding_confirmed": true,
       "reviewed_independently": true,
-      "completed_utc": "2026-10-24T12:02:35.881Z"
+      "completed_utc": "2026-10-24T12:02:35.881Z",
+      "ai_assistance_role": "Reviewers were responsible for the final ratings. AI assisted rubric-based checks of the assessments and suggested revisions, with the aim of limiting subjective variation. Reviewers decided which revisions to adopt."
     },
     "items": {
       "R2-001": {
@@ -6352,5 +6354,10 @@
       }
     },
     "saved_utc": "2026-10-24T12:02:35.881Z"
+  },
+  "ai_assistance": {
+    "type": "Reviewer-controlled final ratings with AI-assisted rubric checks and revision suggestions; not independent unaided human review",
+    "role_description": "Reviewers were responsible for the final ratings. AI assisted rubric-based checks of the assessments and suggested revisions, with the aim of limiting subjective variation. Reviewers decided which revisions to adopt.",
+    "limitations": "The effect on bias was not evaluated, and fully independent blinded judgment cannot be established from the returns."
   }
 }

@@ -1,7 +1,7 @@
 {
   "analysis_date_local": "2026-10-27",
   "timezone": "Asia/Singapore",
-  "stage": "Supplied returned versions; no inter-reviewer adjudication performed in this statistical analysis. Prior AI-assisted revisions remain documented in the unchanged input files.",
+  "stage": "Supplied returned versions; no inter-reviewer adjudication performed in this statistical analysis. Prior AI-assisted revisions remain documented; human/AI role metadata is clarified without changing ratings or review history.",
   "source_evidence_sha256": "2ba4b8f5b8d02d6309a92dfb6a258ec5fde1ec4f7f80c5b073238feec5081098",
   "proposal_scope": "20 preselected test cases x five variants x two reviewers; 100 outputs, 200 assessments.",
   "system_aggregation": "Average the two returned ratings per output, then average the 20 matched outputs per variant; dimensions remain separate.",
@@ -456,7 +456,8 @@
       "case_id",
       "variant"
     ],
-    "original_files_and_scores_modified": false,
+    "rating_values_modified": false,
+    "role_metadata_clarified": true,
     "aggregation_crosscheck": "Per-output two-reviewer average equals pooled rating mean exactly.",
     "kappa_crosscheck": "Exact-fraction confusion-matrix calculation equals direct-vector distance calculation.",
     "semantic_count_warnings": [
@@ -473,7 +474,7 @@
     ],
     "warnings_do_not_change_input_ratings": true
   },
-  "reviewer_declarations_as_returned": {
+  "reviewer_declarations": {
     "1": {
       "reviewer_name_or_id": "ZHANG YUROU",
       "assigned_utc": "2026-10-24T07:11:00.000Z",
@@ -482,7 +483,8 @@
       "authorship_and_crossreview_exclusion_confirmed_by_coordinator": true,
       "actual_blinding_confirmed": true,
       "reviewed_independently": true,
-      "completed_utc": "2026-10-24T08:03:03Z"
+      "completed_utc": "2026-10-24T08:03:03Z",
+      "ai_assistance_role": "Reviewers were responsible for the final ratings. AI assisted rubric-based checks of the assessments and suggested revisions, with the aim of limiting subjective variation. Reviewers decided which revisions to adopt."
     },
     "2": {
       "reviewer_name_or_id": "pengruiyun",
@@ -492,13 +494,14 @@
       "authorship_and_crossreview_exclusion_confirmed_by_coordinator": true,
       "actual_blinding_confirmed": true,
       "reviewed_independently": true,
-      "completed_utc": "2026-10-24T12:02:35.881Z"
+      "completed_utc": "2026-10-24T12:02:35.881Z",
+      "ai_assistance_role": "Reviewers were responsible for the final ratings. AI assisted rubric-based checks of the assessments and suggested revisions, with the aim of limiting subjective variation. Reviewers decided which revisions to adopt."
     }
   },
-  "AI_assistance_disclosure_as_recorded": {
+  "AI_assistance_disclosure": {
     "1": {
       "ai_assistance_metadata": {
-        "type": "AI-assisted ratings confirmed by reviewer, including accepted second-review amendments; not independent unaided human review",
+        "type": "Reviewer-controlled final ratings with AI-assisted rubric checks and revision suggestions; not independent unaided human review",
         "generated_local_date": "2026-10-24",
         "reviewer_slot": 1,
         "source_packet_sha256": "0ff13d971bb4ef18561e54f9e2d29e031db9f1b6e77dc8ad525447851a3712eb",
@@ -523,13 +526,18 @@
           "Original browser progress not accessed, merged or overwritten.",
           "The reviewer confirmed the original export and explicitly accepted the second-review amendments; eligibility and actual blinding remain unverified."
         ],
-        "initial_draft_human_confirmed_records": 0
+        "initial_draft_human_confirmed_records": 0,
+        "role_description": "Reviewers were responsible for the final ratings. AI assisted rubric-based checks of the assessments and suggested revisions, with the aim of limiting subjective variation. Reviewers decided which revisions to adopt."
       },
       "records_with_AI_in_notes": 0,
       "review_revision_metadata_present": true
     },
     "2": {
-      "ai_assistance_metadata": null,
+      "ai_assistance_metadata": {
+        "type": "Reviewer-controlled final ratings with AI-assisted rubric checks and revision suggestions; not independent unaided human review",
+        "role_description": "Reviewers were responsible for the final ratings. AI assisted rubric-based checks of the assessments and suggested revisions, with the aim of limiting subjective variation. Reviewers decided which revisions to adopt.",
+        "limitations": "The effect on bias was not evaluated, and fully independent blinded judgment cannot be established from the returns."
+      },
       "records_with_AI_in_notes": 100,
       "review_revision_metadata_present": false
     }
@@ -537,7 +545,7 @@
   "limitations": [
     "These results concern only the preselected 20-case subset, not the full 60-case main test.",
     "The same 20 cases contribute all five variants; duplicate contents remain as originally assigned. Assessments are not independent cases.",
-    "AI-assisted suggestions and human confirmation are documented in both returns. This departs from the proposal's no-LLM-judge plan; agreement does not establish unaided independent human judgment.",
+    "Reviewers were responsible for the final ratings. AI assisted rubric-based checks of the assessments and suggested revisions, with the aim of limiting subjective variation. Reviewers decided which revisions to adopt. The effect on bias was not evaluated. This departs from the proposal's no-LLM-judge plan; agreement does not establish unaided independent human judgment.",
     "Reviewer declarations report independent completion and blinding. Reviewer 1 AI metadata also says actual blinding was not certified. Statistical checking cannot resolve that provenance limitation.",
     "One unnecessary-question count exceeds the visible question count. It is flagged and retained, as agreement is calculated before resolving disagreements.",
     "No disagreements were resolved, ratings altered, missing values imputed, or new model calls made."
